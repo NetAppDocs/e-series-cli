@@ -1,8 +1,7 @@
 settings:
   name: "Product Name"
-  platform: catalyst
   internal:
-    pdf_enabled: false
+    pdf_enabled: true
   prod:
     pdf_enabled: true
 sidebar: 
