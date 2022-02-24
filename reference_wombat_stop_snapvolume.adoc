@@ -1,0 +1,45 @@
+---
+permalink: reference_wombat_stop_snapvolume.html
+sidebar: sidebar
+keywords: 
+summary: 'The stop snapVolume command stops a snapshot volume operation.'
+---
+= Stop snapshot volume
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `stop snapVolume` command stops a snapshot volume operation.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+stop snapVolume ["snapVolumeName"]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`snapVolume`
+a|
+The name of the snapshot volume that you want to stop. Enclose the snapshot volume name in double quotation marks (" ") inside square brackets ([ ]).
+
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+== Minimum firmware level
+
+7.83

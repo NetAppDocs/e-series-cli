@@ -1,0 +1,122 @@
+---
+permalink: reference_mongoose_storage_monitor_personal_commands.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Storage monitor personnel commands
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+* *<<GUID-A2BE532D-A821-4B95-8238-492C36D9AAB3,d-show r>> | <<GUID-BB32F0FF-CA74-4EA5-977A-B442FC2EB098,show s-show v>>*
+
+xref:reference_wombat_show_storagearray_usersession.adoc[Display storage array user session]
+
+xref:reference_wombat_save_storagearray_loginbanner.adoc[Save storage array login banner]
+
+xref:reference_wombat_set_session_erroraction.adoc[Set session]
+
+xref:reference_wombat_set_storagearray_localusername.adoc[Set storage array local user password or SYMbol password]
+
+xref:reference_wombat_show_asyncmirrorgroup_synchronizationprogress.adoc[Show asynchronous mirror group synchronization progress]
+
+xref:reference_wombat_show_asyncmirrorgroup_summary.adoc[Show asynchronous mirror groups]
+
+xref:reference_wombat_show_storagearray_autosupport.adoc[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
+
+xref:reference_wombat_show_consistencygroup.adoc[Show consistency group]
+
+xref:reference_wombat_show_cgsnapimage.adoc[Show consistency group snapshot image]
+
+xref:reference_wombat_show_controller.adoc[Show controller]
+
+xref:reference_wombat_show_controller_nvsram.adoc[Show controller NVSRAM]
+
+xref:reference_wombat_show_iscsisessions.adoc[Show current iSCSI sessions]
+
+xref:reference_wombat_show_diskpool.adoc[Show disk pool]
+
+xref:reference_wombat_show_alldrives.adoc[Show drive]
+
+xref:reference_wombat_show_drivechannel_stats.adoc[Show drive channel statistics]
+
+xref:reference_wombat_show_alldrives_downloadprogress.adoc[Show drive download progress]
+
+xref:reference_wombat_show_alldrives_performancestats.adoc[Show drive performance statistics]
+
+xref:reference_wombat_show_emailalert_summary.adoc[Show email alert configuration]
+
+xref:reference_wombat_show_allhostports.adoc[Show host ports]
+
+xref:reference_wombat_show_replaceabledrives.adoc[Show replaceable drives]
+
+xref:reference_wombat_show_snapgroup.adoc[Show snapshot group]
+
+xref:reference_wombat_show_snapimage.adoc[Show snapshot image]
+
+xref:reference_wombat_show_snapvolume.adoc[Show snapshot volumes]
+
+xref:reference_wombat_show_allsnmpcommunities.adoc[Show SNMP communities]
+
+xref:reference_wombat_show_snmpsystemvariables.adoc[Show SNMP MIB II system group variables]
+
+xref:reference_wombat_show_ssdcache.adoc[Show SSD cache]
+
+xref:reference_wombat_show_ssdcache.adoc[Show SSD cache statistics]
+
+xref:reference_wombat_show_storagearray.adoc[Show storage array]
+
+xref:reference_wombat_show_storagearray_autoconfiguration.adoc[Show storage array auto configuration]
+
+xref:reference_wombat_show_storagearray_controllerhealthimage.adoc[Show storage array controller health image]
+
+xref:reference_wombat_show_storagearray_dbmdatabase.adoc[Show storage array DBM database]
+
+xref:reference_wombat_show_storagearray_hostconnectivityreporting.adoc[Show storage array host connectivity reporting]
+
+xref:reference_wombat_show_storagearray_hosttopology.adoc[Show storage array host topology]
+
+xref:reference_wombat_show_storagearray_lunmappings.adoc[Show storage array LUN mappings]
+
+xref:reference_wombat_show_storagearray_iscsinegotiationdefaults.adoc[Show storage array negotiation defaults]
+
+xref:reference_wombat_show_storagearray_odxsetting.adoc[Show storage array ODX setting]
+
+xref:reference_wombat_show_storagearray_powerinfo.adoc[Show storage array power information]
+
+xref:reference_wombat_show_storagearray_unconfigurediscsiinitiators.adoc[Show storage array unconfigured iSCSI initiators]
+
+xref:reference_wombat_show_storagearray_unreadablesectors.adoc[Show storage array unreadable sectors]
+
+xref:reference_wombat_show_textstring.adoc[Show string]
+
+xref:reference_wombat_show_syncmirror_candidates.adoc[Show synchronous mirroring volume candidates]
+
+xref:reference_wombat_show_syncmirror_synchronizationprogress.adoc[Show synchronous mirroring volume synchronization progress]
+
+xref:reference_wombat_show_syslog_summary.adoc[Show syslog configuration]
+
+xref:reference_wombat_show_volume.adoc[Show thin volume]
+
+xref:reference_wombat_show_storagearray_unconfiguredinitiators.adoc[Show unconfigured initiators]
+
+xref:reference_wombat_show_volume_summary.adoc[Show volume]
+
+xref:reference_wombat_show_volume_actionprogress.adoc[Show volume action progress]
+
+xref:reference_wombat_show_volumecopy.adoc[Show volume copy]
+
+xref:reference_wombat_show_volumecopy_sourcecandidates.adoc[Show volume copy source candidates]
+
+xref:reference_wombat_show_volumecopy_source_targetcandidates.adoc[Show volume copy target candidates]
+
+xref:reference_wombat_show_volumegroup.adoc[Show volume group]
+
+xref:reference_wombat_show_volumegroup_exportdependencies.adoc[Show volume group export dependencies]
+
+xref:reference_wombat_show_volumegroup_importdependencies.adoc[Show volume group import dependencies]
+
+xref:reference_wombat_show_volume_performancestats.adoc[Show volume performance statistics]
+
+xref:reference_wombat_show_volume_reservations.adoc[Show volume reservations]

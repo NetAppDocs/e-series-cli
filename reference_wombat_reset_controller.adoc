@@ -1,0 +1,56 @@
+---
+permalink: reference_wombat_reset_controller.html
+sidebar: sidebar
+keywords: 
+summary: 'The reset controller command resets a controller, and is disruptive to I/O operations.'
+---
+= Reset controller
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `reset controller` command resets a controller, and is disruptive to I/O operations.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+When you reset a controller, the controller is removed from the data path and is not available for I/O operations until the reset operation is complete. If a host is using volumes that are owned by the controller being reset, the I/O directed to the controller is rejected. Before resetting the controller, either make sure that the volumes that are owned by the controller are not in use or make sure that a multi-path driver is installed on all of the hosts that use these volumes.
+====
+
+[CAUTION]
+====
+If you use in-band management, you cannot control which controller any command is sent to, and this command can have unexpected results.
+====
+
+== Syntax
+
+----
+reset controller [(a|b)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+The controller that you want to reset. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the storage management software returns a syntax error.
+|===
+
+== Notes
+
+The controller that receives the reset controller command resets the controller specified. For example, if the reset controller command is sent to controller A to request a reset of controller A, then controller A reboots itself by doing a soft reboot. If the reset controller command is sent to controller A to request a reset of controller B, then controller A holds controller B in reset and then releases controller B from reset, which is a hard reboot. A soft reboot in some products only resets the IOC chip. A hard reboot resets both the IOC and the expander chips in the controller.
+
+== Minimum firmware level
+
+5.20

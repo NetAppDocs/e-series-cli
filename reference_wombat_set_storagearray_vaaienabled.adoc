@@ -1,0 +1,56 @@
+---
+permalink: reference_wombat_set_storagearray_vaaienabled.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray vaaiEnabled command turns on or turns off VMware vStorage API Array Architecture \(VAAI\) for a storage array.'
+---
+= Enable or disable VAAI
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray vaaiEnabled` command turns on or turns off VMware vStorage API Array Architecture (VAAI) for a storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+The storage array comes with VAAI turned on. Use this command to turn off VAAI if you do not want to run VAAI, or if VAAI is causing issues with the storage array. The only storage array that is affected is the storage array on which the command is run.
+
+== Syntax
+
+----
+set storageArray vaaiEnabled=(TRUE | FALSE)
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`vaaiEnabled`
+a|
+The setting to turn on or turn off VAAI. To turn on VAAI set this parameter to `TRUE`. To turn off VAAI set this parameter to `FALSE`. The default setting is that VAAI is turned on.
+|===
+
+== Notes
+
+[NOTE]
+====
+VAAI enables some storage tasks to be offloaded from the server hardware to a storage array. Offloading the storage tasks to a storage array increases host performance by reducing the tasks the host must perform.
+====
+
+[NOTE]
+====
+View the VAAI setting using the `show storageArray odxSetting` name.
+====
+
+== Minimum firmware level
+
+8.20

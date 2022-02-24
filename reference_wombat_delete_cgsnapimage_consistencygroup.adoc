@@ -1,0 +1,67 @@
+---
+permalink: reference_wombat_delete_cgsnapimage_consistencygroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The delete cgSnapImage consistencyGroup command deletes the snapshot images in a consistency group.'
+---
+= Delete consistency group snapshot image
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete cgSnapImage consistencyGroup` command deletes the snapshot images in a consistency group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+delete cgSnapImage consistencyGroup="consistencyGroupName"
+[deleteCount=numberOfSnapImages]
+[retainCount=numberOfSnapImages]
+[ignoreSnapVolume=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`consistencyGroup`
+a|
+The name of the consistency group from which you want to delete the snapshot images. Enclose the consistency group name in double quotation marks (" ").
+a|
+`deleteCount`
+a|
+The number of snapshot images that you want to delete from the consistency group. Use integer values.
+
+This parameter deletes the oldest snapshot image first and continues to delete the oldest snapshot images until reaching the number that you enter.
+
+a|
+`retainCount`
+a|
+The number of snapshot images that you want to keep in the consistency group. Use integer values.
+
+This parameter keeps the most recent snapshot images in the consistency group.
+
+a|
+`ignoreSnapVolume`
+a|
+Determines whether the associated consistency group snapshot volume is kept or deleted. This parameter applies only if the consistency group snapshot image is associated with a consistency group snapshot volume. To keep the snapshot volume, set this parameter to `TRUE`. To delete the snapshot volume, set this parameter to `FALSE`. The default value is `FALSE`.
+|===
+
+== Notes
+
+If the snapshot images cannot be deleted for all of the relevant member volumes of the consistency group, the operation fails and none of the snapshot images are deleted.
+
+When you delete a consistency group snapshot image that is associated with a consistency group snapshot volume, the corresponding snapshot volume member in the consistency group snapshot volume are transitioned to the Stopped state. A snapshot volume member in the Stopped state no longer has a relationship to the snapshot group of the deleted snapshot image. However, a snapshot volume member in the Stopped state keeps its relationship to its consistency group snapshot volume.
+
+== Minimum firmware level
+
+7.83

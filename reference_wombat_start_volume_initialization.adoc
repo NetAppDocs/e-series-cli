@@ -1,0 +1,48 @@
+---
+permalink: reference_wombat_start_volume_initialization.html
+sidebar: sidebar
+keywords: 
+summary: 'The start volume initialize command starts the formatting of a volume in a storage array.'
+---
+= Start volume initialization
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start volume initialize` command starts the formatting of a volume in a storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+Formatting a volume starts a long-running operation that you cannot stop.
+====
+
+== Syntax
+
+----
+start volume [volumeName] initialize
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`volume`
+a|
+The name of a volume that you want to format. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
+
+|===
+
+== Minimum firmware level
+
+6.10

@@ -1,0 +1,28 @@
+---
+permalink: concept_alpaca_detailed_error_reporting.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Detailed error reporting
+:icons: font
+:imagesdir: ./media/
+
+Data collected from an error encountered by the CLI is written to a file. Detailed error reporting under the CLI works as follows:
+
+* If the CLI must abnormally end running CLI commands and script commands, error data is collected and saved before the CLI finishes.
+* The CLI saves the error data by writing the data to a standard file name.
+* The CLI automatically saves the data to a file. Special command line options are not required to save the error data.
+* You are not required to perform any action to save the error data to a file.
+* The CLI does not have any provision to avoid over-writing an existing version of the file that contains error data.
+
+For error processing, errors appear as two types:
+
+* Terminal errors or syntax errors that you might enter.
+* Exceptions that occur as a result of an operational error.
+
+When the CLI encounters either type of error, the CLI writes information that describes the error directly to the command line and sets a return code. Depending on the return code, the CLI also might write additional information about which terminal caused the error. The CLI also writes information about what it was expecting in the command syntax to help you identify any syntax errors that you might have entered.
+
+When an exception occurs while a command is running, the CLI captures the error. At the end of processing the command (after the command processing information has been written to the command line), the CLI automatically saves the error information to a file.
+
+The name of the file to which error information is saved is `excprpt.txt`. The CLI tries to place the `excprpt.txt` file in the directory that is specified by the system property `devmgr.datadir`. If for any reason the CLI cannot place the file in the directory specified by `devmgr.datadir`, the CLI saves the `excprpt.txt` file in the same directory from which the CLI is running. You cannot change the file name or the location. The `excprpt.txt` file is overwritten every time that an exception occurs. If you want to save the information in the `excprpt.txt` file, you must copy the information to a new file or a new directory.

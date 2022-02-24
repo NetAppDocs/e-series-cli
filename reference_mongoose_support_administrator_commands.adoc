@@ -1,0 +1,124 @@
+---
+permalink: reference_mongoose_support_administrator_commands.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Support administrators commands
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+* *<<GUID-23E3CF6A-16C5-4AC9-8259-5AC96F20985A,A-R>> | <<SECTION_D1593EBFD73B4473B1CF9CD57E80C452,S-U>>*
+
+xref:reference_wombat_activate_storagearray_feature.adoc[Activate asynchronous mirroring]
+
+xref:reference_wombat_activate_storagearray_feature.adoc[Activate Synchronous Mirroring]
+
+xref:reference_wombat_clear_alldrivechannels_stats.adoc[Clear drive channel statistics]
+
+xref:reference_wombat_clear_emailalert_configuration.adoc[Clear email alert configuration]
+
+xref:reference_wombat_clear_syslog_configuration.adoc[Clear syslog configuration]
+
+xref:reference_wombat_set_syslog.adoc[Configure syslog settings]
+
+xref:reference_wombat_deactivate_storagearray.adoc[Deactivate asynchronous mirroring]
+
+xref:reference_wombat_deactivate_storagearray_feature.adoc[Deactivate synchronous mirroring]
+
+xref:reference_wombat_delete_emailalert.adoc[Delete email alert recipient]
+
+xref:reference_wombat_delete_syslog.adoc[Delete syslog server]
+
+xref:reference_wombat_disable_storagearray.adoc[Disable storage array feature]
+
+xref:reference_wombat_download_drive_firmware.adoc[Download drive firmware]
+
+xref:reference_wombat_download_tray_firmware_file.adoc[Download environmental card firmware]
+
+xref:reference_wombat_download_storagearray_drivefirmware_file.adoc[Download storage array drive firmware]
+
+xref:reference_wombat_download_storagearray_firmware.adoc[Download storage array firmware/NVSRAM]
+
+xref:reference_wombat_download_storagearray_nvsram.adoc[Download storage array NVSRAM]
+
+xref:reference_wombat_download_tray_configurationsettings.adoc[Download tray configuration settings]
+
+xref:reference_wombat_set_storagearray_odxenabled.adoc[Enable or disable ODX]
+
+xref:reference_wombat_smcli_enable_disable_autosupportondemand.adoc[Enable or disable the AutoSupport OnDemand feature at the EMW...]
+
+xref:reference_wombat_set_storagearray_autosupportondemand.adoc[Enable or disable the AutoSupport OnDemand feature (for individual E2800 or E5700 arrays)]
+
+xref:reference_wombat_smcli_enable_disable_autosupportremotediag.adoc[Enable or disable the AutoSupport OnDemand Remote Diagnostics feature at...]
+
+xref:reference_wombat_set_storagearray_autosupportremotediag.adoc[Enable or disable the AutoSupport Remote Diagnostics feature (for individual E2800 or E5700 arrays)]
+
+xref:reference_wombat_enable_storagearray_feature_file.adoc[Enable storage array feature]
+
+xref:reference_wombat_recover_sasport_miswire.adoc[Recover SAS port mis-wire]
+
+xref:reference_wombat_create_snmpcommunity.adoc[Register SNMP community]
+
+xref:reference_wombat_create_snmptrapdestination.adoc[Register SNMP trap destination]
+
+xref:reference_wombat_reset_storagearray_autosupport_schedule.adoc[Reset AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+
+xref:reference_wombat_save_storagearray_autosupport_log.adoc[Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)]
+
+xref:reference_wombat_revive_drive.adoc[Revive drive]
+
+xref:reference_wombat_revive_snapgroup.adoc[Revive snapshot group]
+
+xref:reference_wombat_revive_snapvolume.adoc[Revive snapshot volume]
+
+xref:reference_wombat_revive_volumegroup.adoc[Revive volume group]
+
+xref:reference_wombat_save_controller_nvsram_file.adoc[Save controller NVSRAM]
+
+xref:reference_wombat_set_asyncmirrorgroup.adoc[Set asynchronous mirror group]
+
+xref:reference_wombat_set_storagearray_autosupport_schedule.adoc[Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+
+xref:reference_wombat_set_controller_ntpservers.adoc[Set controller NTP settings]
+
+xref:reference_wombat_set_drivechannel.adoc[Set drive channel status]
+
+xref:reference_wombat_set_event_alert.adoc[Set event alert filtering]
+
+xref:reference_wombat_set_session_erroraction.adoc[Set session]
+
+xref:reference_wombat_set_storagearray_localusername.adoc[Set storage array local user password or SYMbol password]
+
+xref:reference_wombat_set_tray_serviceallowedindicator.adoc[Set tray service action allowed indicator]
+
+xref:reference_wombat_show_storagearray_autosupport.adoc[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
+
+xref:reference_wombat_show_blockedeventalertlist.adoc[Show blocked events]
+
+xref:reference_wombat_show_emailalert_summary.adoc[Show email alert configuration]
+
+xref:reference_wombat_show_allsnmpcommunities.adoc[Show SNMP communities]
+
+xref:reference_wombat_show_snmpsystemvariables.adoc[Show SNMP MIB II system group variables]
+
+xref:reference_wombat_show_syslog_summary.adoc[Show syslog configuration]
+
+xref:reference_wombat_set_storagearray_autosupport_deliverymethod.adoc[Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)]
+
+xref:reference_wombat_set_storagearray_autosupport_deliverymethod.adoc[Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)]
+
+xref:reference_wombat_start_storagearray_autosupport_deliverytest.adoc[Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)]
+
+xref:reference_wombat_start_emailalert_test.adoc[Test email alert configuration]
+
+xref:reference_wombat_start_snmptrapdestination.adoc[Test SNMP trap destination]
+
+xref:reference_wombat_start_syslog_test.adoc[Test syslog configuration]
+
+xref:reference_wombat_set_snmpcommunity.adoc[Update SNMP community]
+
+xref:reference_wombat_set_snmpsystemvariables.adoc[Update SNMP MIB II system group variables]
+
+xref:reference_wombat_set_snmptrapdestination_trapreceiverip.adoc[Update SNMP trap destination]

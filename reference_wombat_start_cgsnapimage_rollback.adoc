@@ -1,0 +1,89 @@
+---
+permalink: reference_wombat_start_cgsnapimage_rollback.html
+sidebar: sidebar
+keywords: 
+summary: 'The start cgSnapImage rollback command starts a rollback operation to the member base volumes in a snapshot consistency group.'
+---
+= Start consistency group snapshot rollback
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start cgSnapImage rollback` command starts a rollback operation to the member base volumes in a snapshot consistency group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+The content of the base volumes changes immediately to match the point-in-time content of the consistency group snapshot volume. The base volumes immediately becomes available for read/write requests after the rollback operation has successfully completed.
+
+The repository volume that is associated with the consistency group snapshot volume continues to track any new changes between the base volume and the consistency group snapshot volume that occur after the rollback operation is completed.
+
+To stop a rollback operation to the member base volumes use the `stop cgSnapImage rollback` command.
+
+== Syntax
+
+----
+start cgSnapImage ["snapCGID:imageID"] rollback
+memberVolumeSet ("memberVolumeName1" ... "memberVolumeNameN")
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`cgSnapImage`
+a|
+The name of the consistency group snapshot image for which you want to start a rollback operation. The name of a snapshot image is comprised of two parts:
+
+* The name of the snapshot group
+* An identifier for the snapshot image in the snapshot group.
+
+The identifier for the snapshot image can be one of these:
+
+* An integer value that is the sequence number of the snapshot in the snapshot group.
+* `NEWEST` -- Use this option when you want to show the latest snapshot image created in the snapshot group.
+* `OLDEST` -- Use this option when you want to show the earliest snapshot image created in the snapshot group.
+
+Enclose the snapshot image name in double quotation marks (" ") inside square brackets ([ ]).
+
+a|
+`memberVolumeSet`
+a|
+The name of one or more member base volumes in a consistency group that you want to rollback. Enclose each member base volume name in double quotation marks (" ") inside parentheses.
+
+You can enter more than one volume name. Enclose all of the volume names in one set of square brackets ([ ]). Enclose each volume name in double quotation marks (" "). Separate each volume name with a space.
+
+When the `memberVolumeSet` parameter is not used the rollback process applies to all member volumes of the consistency group.
+
+|===
+
+== Notes
+
+The name of a snapshot image has two parts separated by a colon (:):
+
+* The identifier of the snapshot group
+* The identifier of the snapshot image
+
+For example, if you want to start a roll back operation for the newest snapshot image in an entire consistency group that has the name CG1, you would use this command:
+
+----
+start cgSnapImage ["CG1:newest"] rollback;
+----
+
+To start a roll back operation for the snapshot image 12345 for base volume members memVol1, memVol2, and memVol3 in a consistency group that has the name CG2, you would use this command:
+
+----
+start cgSnapImage ["CG2:12345"] rollback memberVolumeset=("memVol1 memVol2 memVol3");
+----
+
+== Minimum firmware level
+
+7.83

@@ -1,0 +1,57 @@
+---
+permalink: reference_wombat_set_storagearray_isnslisteningport.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray isnsListeningPort command sets the iSNS server listening port.'
+---
+= Set storage array iSNS server listening port
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray isnsListeningPort` command sets the iSNS server listening port.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set storageArray isnsListeningPort=listeningPortIPAddress
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`isnsListeningPort`
+a|
+The IP address that you want to use for the iSNS server listening port. The range of values for the listening port is `49152` to `65535`. The default value is `53205`.
+
+The listening port resides on the server and performs these activities:
+
+* Monitors incoming client connection requests
+* Manages traffic to the server
+
+When a client requests a network session with a server, the listener receives the actual request. If the client information matches the listener information, then the listener grants a connection to the database server.
+
+|===
+
+== Notes
+
+A listening port resides on the database server and is responsible for these activities:
+
+* Listening (monitoring) for incoming client connection requests
+* Managing the traffic to the server
+
+When a client requests a network session with a server, a listener receives the actual request. If the client information matches the listener information, then the listener grants a connection to the database server.
+
+== Minimum firmware level
+
+7.10

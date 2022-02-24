@@ -1,0 +1,54 @@
+---
+permalink: reference_wombat_set_consistencygroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The set consistencyGroup command removes a member volume from an existing snapshot consistency group.'
+---
+= Remove member volume from consistency group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set consistencyGroup` command removes a member volume from an existing snapshot consistency group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Optionally, you can delete the repository volume members from the consistency group.
+
+== Syntax
+
+----
+set consistencyGroup ["consistencyGroupName"]
+removeCGMemberVolume="memberVolumeName"
+[deleteRepositoryMembers=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`consistencyGroupName`
+a|
+The name of the consistency group from which you want to remove a member. Enclose the consistency group name in double quotation marks (" ") inside square brackets ([ ]).
+a|
+`removeCGMemberVolume`
+a|
+The name of the member volume that you want to remove. Enclose the member group name in double quotation marks (" ").
+a|
+`deleteRepositoryMembers`
+a|
+Determines whether to remove all of the repository members from the consistency group.
+|===
+
+== Minimum firmware level
+
+7.83

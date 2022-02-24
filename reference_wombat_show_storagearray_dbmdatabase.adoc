@@ -1,0 +1,215 @@
+---
+permalink: reference_wombat_show_storagearray_dbmdatabase.html
+sidebar: sidebar
+keywords: 
+summary: 'The show storageArray dbmDatabase command retrieves and shows metadata for the on-board backup locations of a storage array. When there are multiple backup locations, metadata is shown for each location.'
+---
+= Show storage array DBM database
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show storageArray dbmDatabase` command retrieves and shows metadata for the on-board backup locations of a storage array. When there are multiple backup locations, metadata is shown for each location.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Syntax
+
+----
+show storageArray dbmDatabase
+----
+
+== Parameters
+
+None.
+
+== Notes
+
+This command returns the configuration database information in a format similar to this example.
+
+|===
+a|
+
+----
+Configuration Database MetadataLast Host Backup: <date stamp>
+----
+
+a|
+
+----
+CTL
+----
+
+a|
+
+----
+LOCATION
+----
+
+a|
+
+----
+REVISION
+----
+
+a|
+
+----
+ID
+----
+
+a|
+
+----
+GEN NUMBER
+----
+
+a|
+
+----
+STATUS
+----
+
+a|
+
+----
+ACCESS MODE
+----
+
+a|
+
+----
+A
+----
+
+a|
+
+----
+Cache
+----
+
+a|
+
+----
+X.Y
+----
+
+a|
+
+----
+999999
+----
+
+a|
+
+----
+999999
+----
+
+a|
+
+----
+R/W
+----
+
+a|
+
+----
+Optimal
+----
+
+a|
+
+----
+B
+----
+
+a|
+
+----
+Cache
+----
+
+a|
+
+----
+X.Y
+----
+
+a|
+
+----
+999999
+----
+
+a|
+
+----
+999999
+----
+
+a|
+
+----
+R/W
+----
+
+a|
+
+----
+Optimal
+----
+
+a|
+
+----
+N/A
+----
+
+a|
+
+----
+Disk
+----
+
+a|
+
+----
+X.Y
+----
+
+a|
+
+----
+999999
+----
+
+a|
+
+----
+999999
+----
+
+a|
+
+----
+R/W
+----
+
+a|
+
+----
+Optimal
+----
+
+|===
+
+== Minimum firmware level
+
+7.83

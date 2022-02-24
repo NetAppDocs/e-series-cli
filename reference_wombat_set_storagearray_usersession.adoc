@@ -1,0 +1,41 @@
+---
+permalink: reference_wombat_set_storagearray_usersession.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray userSession command allows you to set a timeout in System Manager, so that users’ inactive sessions are disconnected after a specified time.'
+---
+= Set storage array user session
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray userSession` command allows you to set a timeout in System Manager, so that users' inactive sessions are disconnected after a specified time.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+Use this command to perform one of these operations:
+
+* Set a timeout in seconds for user sessions. The minimum timeout value is 900 seconds (15 minutes).
+* Turn off session timeouts by setting the value to 0.
+
+== Parameters
+
+None.
+
+== Syntax
+
+----
+set storageArray userSession sessionTimeout=n
+----
+
+== Minimum firmware level
+
+8.41

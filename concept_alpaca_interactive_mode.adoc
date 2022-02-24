@@ -1,0 +1,15 @@
+---
+permalink: concept_alpaca_interactive_mode.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Interactive mode
+:icons: font
+:imagesdir: ./media/
+
+If you enter `SMcli` and a storage array name, but do not specify CLI parameters, script commands, or a script file, the command line interface runs in interactive mode. Interactive mode lets you run individual commands without prefixing the commands with `SMcli`.
+
+In interactive mode, you can enter a single command, view the results, and enter the next command without typing the complete `SMcli` string. Interactive mode is useful for determining configuration errors and quickly testing configuration changes.
+
+To end an interactive mode session, type the operating system-specific command. For Linux, this key combination is *Control-D*. For Windows, this key combination is *Control-Z + ENTER*.

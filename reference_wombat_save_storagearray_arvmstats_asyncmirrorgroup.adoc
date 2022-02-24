@@ -1,0 +1,107 @@
+---
+permalink: reference_wombat_save_storagearray_arvmstats_asyncmirrorgroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray arvmStats asyncMirrorGroup command saves the synchronization statistics to a file for one or more member volumes in an asynchronous mirror group.'
+---
+= Save asynchronous mirror group statistics
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray arvmStats asyncMirrorGroup` command saves the synchronization statistics to a file for one or more member volumes in an asynchronous mirror group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+The statistics collected are available only for asynchronous mirror group member volumes in a primary role on the local storage array.
+
+A set of data is collected during the synchronization process that can be used to evaluate how well the mirror configuration is functioning. The data is collected as a set of _samples_. A sample is created at the beginning of a synchronization process and updated regularly while the synchronization process proceeds.
+
+A sample collects data until the synchronization process completes or until a disruption to the synchronization process occurs, such as a volume ownership transfer or a ``read-write``error. When a synchronization process disruption is resolved (for example, the volume is transferred to the alternate controller), a new sample is created and updated as the synchronization process continues.
+
+== Syntax
+
+----
+save storageArray arvmStats asyncMirrorGroup [asyncMirrorGroupName]
+arvmStats file="*filename*
+"
+[volume="volumeName"]
+[sampleType=(all | mostRecent | longestSyncTime | errors)]
+[recordLimit=(1-90)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`asyncMirrorGroup`
+a|
+The name of the asynchronous mirror group for which you are saving synchronization statistics. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name has special characters or numbers, you must enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets.
+
+a|
+`file`
+a|
+The file path and the file name to which you want to save the synchronization statistics. Enclose the file name in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\logs\asynchdata.csv"`
+
+This command does not automatically append a file extension to the saved file. You can use any file name, but you must use the `.csv` extension.
+
+a|
+`volume`
+a|
+This parameter is optional. The name of the specific member volume in the asynchronous mirror group for which you are retrieving synchronization statistics. If no volume is specified, the statistics for every member volume in the asynchronous mirror group are saved.
+
+If statistics are collected for more than one volume in an asynchronous mirror group, all the data will be written to the same file.
+
+Enclose the volume name in double quotation marks (" ").
+
+a|
+`sampleType`
+a|
+This parameter is optional. The default value for `sampleType` is `all`.
+
+* `all` -- Data for all three sample types are collected and written to the same file.
+* `mostRecent` -- Statistics are recorded for the most recent 50 resynchronization samples.
+* `longestSyncTime` -- Statistics are collected for the most recent 20 longest resynchronization samples.
+* `errors` -- Statistics are recorded for the most recent 20 failed resynchronization samples. These samples include a failure code.
+
+a|
+`recordLimit`
+a|
+This parameter is optional. The default value for record limit is `no limit`. The `recordLimit` must be greater than 0 and less than or equal to 90.
+
+|===
+
+== Notes
+
+Statistics are captured for mirrored volumes in the Primary role. The statistics collected include the following data:
+
+* Synchronization start time
+* Synchronization type (manual or periodic)
+* Synchronization duration
+* Number of bytes sent
+* Maximum write time (for a single write)
+* Minimum write time (for a single write)
+* Minimum synchronization data rate
+* Maximum synchronization data rate
+* Total write time
+* Repository utilization (%)
+* Recovery point age
+
+During initial synchronization, statistics samples are captured approximately every 15 minutes.
+
+The synchronization statistics are included in the support bundle.
+
+== Minimum firmware level
+
+7.84

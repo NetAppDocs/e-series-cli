@@ -1,0 +1,91 @@
+---
+permalink: reference_wombat_save_storagearray_controllerhealthimage.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray controllerHealthImage command saves a controller health image to a specified file on a host, for storage arrays that support the controller health image feature.'
+---
+= Save storage array controller health image
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray controllerHealthImage` command saves a controller health image to a specified file on a host, for storage arrays that support the controller health image feature.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+With firmware version 8.20 the `coreDump` parameter is replaced by the `controllerHealthImage` parameter.
+====
+
+If the storage array does not support the controller health image feature, the command returns an error.
+
+== Syntax
+
+----
+save storageArray controllerHealthImage file="filename"
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name to which you save the controller health image. Enclose the file name in double quotation marks (" "). For example:
+
+----
+file="C:\Array Backups\DBMbackup_03302010.core"
+----
+
+|===
+
+== Notes
+
+A controller health image file might be one to two gigabytes in size, and take several minutes to save. In addition to saving the controller health image itself, this command generates an XML descriptor file based on the controller health image metadata. This descriptor file is saved in ZIP file format to the same path as the controller health image. The following example show the XML format for the descriptor file.
+
+----
+<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
+- <DPLcontrollerHealthImageInfo>
+<dplcontrollerHealthImageTag>sometag#</dplcontrollerHealthImageTag>
+<captureTime>12/22/10 3:58:53 PM IST</captureTime>
+- <StorageArrayData>
+<ArraySAID>600a0b80006e006a000000004c65efc1</ArraySAID>
+<ManagementApiVersion>devmgr.v1083api01.Manager</ManagementApiVersion>
+<fwVersion>07.83.01.00</fwVersion>
+<platformType>7091</platformType>
+</StorageArrayData>
+<fullcontrollerHealthImageCtlr>controllerserialNumber1
+     </fullcontrollerHealthImageCtlr>
+<fullcontrollerHealthImageSize>fullCaptureSize</fullcontrollerHealthImageSize>
+<altcontrollerHealthImageCtlr>controllerserialNumber2</altcontrollerHealthImage
+     Ctlr>
+<altcontrollerHealthImageSize>altCaptureSize</altcontrollerHealthImageSize>
+<triggerReason>Exception</triggerReason>-<DPLcontrollerHealthImageDetail>
+<dplcontrollerHealthImageReason>DPLcontrollerHealthImageReason
+     </dplcontrollerHealthImageReason>
+- <fwLocation >
+<filename>filename</filename>
+<lineNumber>line#</lineNumber>
+</fwLocation >
+<panicReason>panicString</panicReason>
+</DPLcontrollerHealthImageDetail>
+</DPLcontrollerHealthImageInfo>
+----
+
+When you retrieve a controller health image from the controller cache to a host, a flag is set on the controller to indicate that the controller health image does not need to be retrieved. This setting persists for 48 hours. If a new controller health image occurs during that period, the new controller health image is saved to the controller cache and overwrites any previous controller health image data in cache.
+
+== Minimum firmware level
+
+7.83
+
+8.20 replaces the `coreDump` parameter with the `controllerHealthImage` parameter.

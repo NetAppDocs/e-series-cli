@@ -1,0 +1,38 @@
+---
+permalink: reference_wombat_show_storagearray_iscsinegotiationdefaults.html
+sidebar: sidebar
+keywords: 
+summary: 'The show storageArray iscsiNegotiationDefaults command returns information about connection-level settings that are subject to initiator-target negotiation.'
+---
+= Show storage array negotiation defaults
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show storageArray iscsiNegotiationDefaults` command returns information about connection-level settings that are subject to initiator-target negotiation.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Syntax
+
+----
+show storageArray iscsiNegotiationDefaults
+----
+
+== Parameters
+
+None.
+
+== Notes
+
+Information returned includes controller tray default settings (that is, those settings that are the starting point for negotiation) and the current active settings.
+
+== Minimum firmware level
+
+7.10

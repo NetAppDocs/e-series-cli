@@ -1,0 +1,29 @@
+---
+permalink: reference_wombat_getting_started_with_external_key_management.html
+sidebar: sidebar
+keywords: 
+summary: 'A security key is a string of characters, which is shared between the secure-enabled drives and controllers in a storage array. When using external key management, you create and maintain security keys on a key management server'
+---
+= Getting started with external key management
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+A security key is a string of characters, which is shared between the secure-enabled drives and controllers in a storage array. When using external key management, you create and maintain security keys on a key management server
+
+See SANtricity System Manager online help for conceptual information on using external key management servers and security keys. The following graphic shows the basic workflow for implementing external security keys:
+
+image::../media/external_key_management_workflow.gif[]
+
+== Workflow steps
+
+Both certificate management and external key management are new security features with the SANtricity11.40 release. To get started, use the following basic steps:
+
+. Generate a Certificate signing request using the `save storageArray keyManagementClientCSR` command. See xref:reference_wombat_save_storagearray_keymanagementclientcsr.adoc[Generate Key Management certificate signing request].
+. From the KMIP server, request a client and a server certificate.
+. Install the client certificate using the `download storageArray keyManagementCertificate` command with the `certificateType` parameter set to `client`. See xref:reference_wombat_download_storagearray_keymanagementcertificate.adoc[Install storage array external key management certificate].
+. Install the server certificate using the `download storageArray keyManagementCertificate` command with the `certificateType` parameter set to `server`. See xref:reference_wombat_download_storagearray_keymanagementcertificate.adoc[Install storage array external key management certificate].
+. Set the IP address and port number of the key management server using the `set storageArray externalKeyManagement` command. See xref:reference_wombat_set_storagearray_externalkeymanagement.adoc[Set external key management settings].
+. Test communication with the external key management server using the `start storageArray externalKeyManagement test` command. See xref:reference_wombat_start_storagearray_externalkeymanagement_test.adoc[Test external key management communication].
+. Create a security key using the `create storageArray securityKey` command. See xref:reference_wombat_create_storagearray_securitykey.adoc[Create security key].
+. Validate the security key using the `validate storageArray securityKey` command. See xref:reference_wombat_validate_storagearray_securitykey.adoc[Validate internal or external security key].

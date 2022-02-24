@@ -1,0 +1,36 @@
+---
+permalink: reference_wombat_show_certificates.html
+sidebar: sidebar
+keywords: 
+summary: 'The Show certificates command allows you to view the certificates installed on the CLI package trust store.'
+---
+= Show certificates
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `Show certificates` command allows you to view the certificates installed on the CLI package trust store.
+
+== Supported Arrays
+
+This command applies to the EF600 storage arrays.
+
+== Syntax
+
+----
+show localCertificate all | alias alias
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`alias`
+a|
+Allows you to specify a certificate through the user-defined alias.
+|===
+
+== Minimum firmware level
+
+8.60

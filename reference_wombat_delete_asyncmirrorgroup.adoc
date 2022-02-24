@@ -1,0 +1,58 @@
+---
+permalink: reference_wombat_delete_asyncmirrorgroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The delete asyncMirrorGroup command deletes one or more asynchronous mirror groups from the local storage array and the remote storage array.'
+---
+= Delete asynchronous mirror group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete asyncMirrorGroup` command deletes one or more asynchronous mirror groups from the local storage array and the remote storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+The asynchronous mirror group must be empty before it can be successfully deleted. You must remove all asynchronous mirrored pairs from the asynchronous mirror group before using this command.
+
+== Syntax
+
+----
+delete (allAsyncMirrorGroups | asyncMirrorGroup["asyncMirrorGroupName"] |
+asyncMirrorGroups ["asyncMirrorGroupName_1" ... "asyncMirrorGroupName_n"])
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`allAsyncMirrorGroups`
+a|
+Use this parameter if you want to remove all asynchronous mirror groups from the local storage array and the remote storage array.
+a|
+`asyncMirrorGroup`
+a|
+The name of the asynchronous mirror group that you want to delete. Enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets ([ ]).
+a|
+`asyncMirrorGroups`
+a|
+The names of several asynchronous mirror groups that you want to delete. Enter the names of the asynchronous mirror groups using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+|===
+
+== Minimum firmware level
+
+7.84

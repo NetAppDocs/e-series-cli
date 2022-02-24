@@ -1,0 +1,58 @@
+---
+permalink: reference_wombat_start_diskpool_fullprovisioning.html
+sidebar: sidebar
+keywords: 
+summary: 'The start diskPool fullProvisioning command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the disk pool.'
+---
+= Start Disk Pool Full Provisioning
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start diskPool fullProvisioning` command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the disk pool.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the EF600 and EF300 arrays; as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an EF600 and EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+The Resource Provisioning feature improves SSD wear-life and increases write performance by leaving a larger portion of the drive blocks in an unallocated state than a standard volume. A resource-provisioned volume is a thick volume in an SSD volume group or pool, where drive capacity is allocated (assigned to the volume), but the drive blocks are deallocated (unmapped) during volume creation. Drive blocks are allocated as needed to complete host write IOs. Host unmap operations can return drive blocks back to the unallocated state . Resource Provisioning also eliminates time-bound background initialization, allowing for large volumes to be initialized quickly.
+
+Resource Provisioned volumes are supported only on SSD volume groups and pools, where all drives in the group or pool support the NVMe Deallocated or Unwritten Logical Block Error Enable (DULBE) error recovery capability. Performance improvement varies with each drive model and capacity.
+
+The full provisioning format ensures all blocks needed by the volumes in the storage pool are fully mapped on the drives. This command is only applicable to resource provisioned storage pools. If the option to `disableResourceProvisioning` is not set to `FALSE`, then the volumes will still be resource provisioned and new volumes created on the storage pool will be resource provisioned. If the option to disable resource provisioning is set to `TRUE`, then the volumes will no longer be resource provisioned and new volumes created on the storage pool will not be resource provisioned.
+
+== Syntax
+
+----
+start diskPool[diskPoolName] fullProvisioning [disableResourceProvisioning=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`diskPool`
+a|
+The disk pool you want to start the full provisioning operation. Enclose the disk pool name in square brackets ([ ])
+a|
+`disableResourceProvisioning`
+a|
+The setting to specify if resource provisioning should be disabled after the full provisioning operation completes. To skip disabling resource provisioning, set this to `FALSE`. The default value is `TRUE`.
+
+[NOTE]
+====
+To re-enable resource provisioning on a storage pool and all associated volumes, use the `Start Disk Pool Resource Provisioning` command.
+====
+
+|===
+
+== Minimum firmware level
+
+11.72

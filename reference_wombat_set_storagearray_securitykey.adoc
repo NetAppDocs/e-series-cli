@@ -1,0 +1,49 @@
+---
+permalink: reference_wombat_set_storagearray_securitykey.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray securityKey command sets the security key that is used throughout the storage array to implement the Drive Security feature.'
+---
+= Set internal storage array security key
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray securityKey` command sets the security key that is used throughout the storage array to implement the Drive Security feature.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+When any security-capable drive in the storage array is assigned to a secured volume group or disk pool, that drive will be security-enabled using the security key. Before you can set the security key, you must use the `create storageArray securityKey` command to create the security key.
+
+[NOTE]
+====
+This command applies only to internal key management.
+====
+
+== Syntax
+
+----
+set storageArray securityKey
+----
+
+== Parameters
+
+None.
+
+== Notes
+
+Security-capable drives have hardware to accelerate cryptographic processing and each has a unique drive key. A security-capable drive behaves like any other drive until it is added to a secured volume group, at which time the security-capable drive becomes security-enabled.
+
+Whenever a security-enabled drive is powered on, it requires the correct security key from the controller before it can read or write data. So, a security-enabled drive uses two keys: the drive key that encrypts and decrypts the data and the security key that authorizes the encryption and decryption processes. The `set storageArray securityKey` command commits the security key to all of the controllers and security-enabled drives in the storage array. The full disk encryption feature ensures that if a security-enabled drive is physically removed from a storage array, its data cannot be read by any other device unless the security key is known.
+
+== Minimum firmware level
+
+7.50

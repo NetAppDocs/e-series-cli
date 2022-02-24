@@ -1,0 +1,31 @@
+---
+permalink: concept_alpaca_structure_of_a_cli_command.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Structure of a CLI command
+:icons: font
+:imagesdir: ./media/
+
+The CLI commands are in the form of a command wrapper and elements embedded into the wrapper. A CLI command consists of these elements:
+
+* A command wrapper identified by the term `SMcli`
+* The storage array identifier
+* Terminals that define the operation to be performed
+* Script commands
+
+The CLI command wrapper is a shell that identifies storage array controllers, embeds operational terminals, embeds script commands, and passes these values to the script engine.
+
+All CLI commands have the following structure:
+
+----
+SMcli *storageArray terminal script-commands*;
+----
+
+* `SMcli` invokes the command line interface.
+* `storageArray` is the name or the IP address of the storage array.
+* `terminal` is a CLI value that defines the environment and the purpose for the command.
+* `script-commands` are one or more script commands or the name of a script file that contains script commands. (The script commands configure and manage the storage array.)
+
+If you enter an incomplete or inaccurate `SMcli` string that does not have the correct syntax, parameter names, options, or terminals, the script engine returns usage information.

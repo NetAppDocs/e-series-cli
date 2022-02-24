@@ -1,0 +1,40 @@
+---
+permalink: reference_alpaca_firmware_compatibility_levels.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Firmware compatibility levels
+:icons: font
+:imagesdir: ./media/
+
+The script commands and the command parameters do not run under all versions of the controller firmware. The script commands in the following sections list the minimum firmware levels under which the script commands can run. In the script commands, the firmware levels are listed under the heading "`Minimum Firmware Level.`" This list describes how to interpret the information about the firmware levels.
+
+* If a script command does not list a minimum controller firmware level, the script command and all of the parameters associated with that script command can run under any level of controller firmware.
+* A controller firmware number without any explanatory information indicates that the controller firmware level applies to the entire script command and all of the parameters for that script command.
+* A controller firmware number that is associated with a parameter indicates the minimum controller firmware level under which the parameter can run.
+
+[NOTE]
+====
+The minimum controller firmware level indicates support by the software that releases the command, as well as support by all storage management software that picks up usage. CLI support capabilities depend on the hardware used. When an unsupported command is entered, an error message appears.
+====
+
+== Examples of firmware compatibility levels
+
+The `create hostGroup` command has the following section.
+
+*Minimum firmware level*
+
+8.10
+
+This level indicates that the entire script command runs under a minimum of controller firmware version 8.10.
+
+The `create ssdCache` command has the following section.
+
+*Minimum firmware level*
+
+7.84
+
+8.20.11 - Added the `securityType` parameter.
+
+These notations indicate that the script command and all of the parameters except `securityType` run under a minimum of controller firmware version 7.84. The `securityType` parameter runs under a minimum of controller firmware version 8.20_M3.

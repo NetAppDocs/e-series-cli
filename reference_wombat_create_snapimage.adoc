@@ -1,0 +1,63 @@
+---
+permalink: reference_wombat_create_snapimage.html
+sidebar: sidebar
+keywords: 
+summary: 'The create snapImage command creates a new snapshot image in one or more existing snapshot groups.'
+---
+= Create snapshot image
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create snapImage` command creates a new snapshot image in one or more existing snapshot groups.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Before you can create a snapshot image, you must first have at least one snapshot group into which you can place the snapshot image. To create a snapshot group use the `create snapGroup` command.
+
+== Syntax
+
+----
+create snapImage (snapGroup="snapGroupName" |
+snapGroups=("snapGroupName1"... "snapGroupNamen"))
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`snapGroup`
+a|
+The name of the snapshot group that will contain the snapshot image. Enclose the name of the snapshot group in double quotation marks (" ").
+
+a|
+`snapGroups`
+a|
+The names of several snapshot groups that will contain the snapshot image. Enter the names of the snapshot groups using these rules:
+
+* Enclose all of the names in parentheses.
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+A snapshot image is a logical point-in-time image of the contents of an associated _base_ volume. The snapshot image is created instantly and records the state of the base volume at that moment. Every snapshot image is created in the context of exactly one _snapshot group_. A snapshot group is a sequence of snapshot images of the associated base volume. A snapshot group has one _repository volume_ used to save all of the data from the snapshot images. The snapshot images in a snapshot group have a specific order. The specific order of the snapshot images enables you to manage the snapshot images, such as restoring a specific snapshot image to the base volume or deleting the snapshot images that you no longer need.
+
+The result of creating a snapshot image of a consistency group is a snapshot image of every member volume of the consistency group.
+
+== Minimum firmware level
+
+7.83

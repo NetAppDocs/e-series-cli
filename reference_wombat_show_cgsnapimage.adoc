@@ -1,0 +1,93 @@
+---
+permalink: reference_wombat_show_cgsnapimage.html
+sidebar: sidebar
+keywords: 
+summary: 'The show CGSnapImage command shows one snapshot image or several snapshot images that are in one or more snapshot consistency groups.'
+---
+= Show consistency group snapshot image
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show CGSnapImage` command shows one snapshot image or several snapshot images that are in one or more snapshot consistency groups.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+show ((CGSnapImage [(CGSnapImageName | CGSnapImageSequenceNumber)]) |
+(CGSnapImages [(CGSnapImageNumber1 ... CGSnapImageNumbern |
+CGSnapImageSequenceNumber1 ... CGSnapImageSequenceNumbern)]) |
+allCGSnapImages
+[summary]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`CGSnapImage` or `CGSnapImages`
+a|
+The name of the snapshot image in a consistency group. The name of a snapshot image is comprised of two parts:
+
+* The name of the consistency group
+* An identifier for the snapshot image in the consistency group.
+
+The identifier for the snapshot image can be one of these:
+
+* An integer value that is the sequence number of the snapshot in the consistency group.
+* `NEWEST` -- Use this option when you want to show the latest snapshot image created in the consistency group.
+* `OLDEST` -- Use this option when you want to show the earliest snapshot image created in the consistency group.
+
+Enclose the snapshot image name in double quotation marks (" ") inside square brackets ([ ]).
+
+You can enter more than one snapshot image name or sequence number. Enclose all of the snapshot image names in one set of double quotation marks (" ") inside square brackets ([ ]). Separate each snapshot image name with a space.
+
+a|
+`allCGSnapImages`
+a|
+The setting to return all of the snapshot images from the consistency groups.
+a|
+`summary`
+a|
+The setting to return a concise list of information about all of the snapshot images in the storage array.
+|===
+
+== Notes
+
+The name of a snapshot image has two parts separated by a colon (:):
+
+* The identifier of the snapshot consistency group
+* The identifier of the snapshot image
+
+For example, if you want to show snapshot image 12345 in a snapshot consistency group that has the name snapCGroup1, you would use this command:
+
+----
+show CGsnapImage ["snapCGroup1:12345"];
+----
+
+To show the most recent snapshot image in a snapshot consistency group that has the name snapCGroup1, you would use this command:
+
+----
+show CGsnapImage ["snapCGroup1:newest"];
+----
+
+To show the snapshot images in several snapshot consistency groups that have the names snapCGroup1, snapCGroup2, and snapCGroup3, you would use this command:
+
+----
+show CGsnapImages ["snapCGroup1:12345 snapCGroup2:newest snapCGroup3:oldest"];
+----
+
+Note that in these examples the snapshot consistency group name is separated from the snapshot image identifier by a colon (:).
+
+== Minimum firmware level
+
+7.83

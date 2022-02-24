@@ -1,0 +1,58 @@
+---
+permalink: reference_wombat_revive_drive.html
+sidebar: sidebar
+keywords: 
+summary: 'The revive drive command forces the specified drive to the Optimal state.'
+---
+= Revive drive
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `revive drive` command forces the specified drive to the Optimal state.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Context
+
+[NOTE]
+====
+*Possible loss of data access* -- Correct use of this command depends on the data configuration on all of the drives in the volume group. Never try to revive a drive unless you are supervised by technical support.
+====
+
+== Syntax
+
+----
+revive drive [trayID,[drawerID,]slotID]
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`drive`
+a|
+For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+|===
+
+== Notes
+
+The `drive` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+
+== Minimum firmware level
+
+5.43
+
+7.60 adds the `drawerID` user input.

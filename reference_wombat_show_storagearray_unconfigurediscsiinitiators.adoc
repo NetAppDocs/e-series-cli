@@ -1,0 +1,38 @@
+---
+permalink: reference_wombat_show_storagearray_unconfigurediscsiinitiators.html
+sidebar: sidebar
+keywords: 
+summary: 'The show storageArray unconfiguredIscsiInitiators command returns a list of initiators that have been detected by the storage array but are not yet configured into the storage array topology.'
+---
+= Show storage array unconfigured iSCSI initiators
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show storageArray unconfiguredIscsiInitiators` command returns a list of initiators that have been detected by the storage array but are not yet configured into the storage array topology.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+This command is deprecated. The command that replaces it is xref:reference_wombat_show_storagearray_unconfiguredinitiators.adoc[show storageArray unconfiguredInitiators].
+
+== Syntax
+
+----
+show storageArray unconfiguredIscsiInitiators
+----
+
+== Parameters
+
+None.
+
+== Minimum firmware level
+
+7.10
+
+8.50 deprecated this command.

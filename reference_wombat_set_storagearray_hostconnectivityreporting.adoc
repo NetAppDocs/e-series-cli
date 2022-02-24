@@ -1,0 +1,53 @@
+---
+permalink: reference_wombat_set_storagearray_hostconnectivityreporting.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray hostConnectivityReporting command enables or disables host connectivity reporting on the controller.'
+---
+= Enable or disable host connectivity reporting
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray hostConnectivityReporting` command enables or disables host connectivity reporting on the controller.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, or EF600 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set storageArray hostConnectivityReporting (enable | disable)
+----
+
+== Context
+
+When you enable host connectivity reporting on the storage array, the storage array continuously monitors the connection between the storage array's controllers and the configured hosts and alerts you if the connection is disrupted due to a loose, damaged, or missing cable or other problems with the host. You are also notified if the host type is incorrectly specified on the storage array (which could result in failover problems).
+
+[NOTE]
+====
+To disable host connectivity reporting, you must first disable automatic load balancing.
+====
+
+[NOTE]
+====
+You can keep host connectivity reporting enabled if automatic load balancing is disabled.
+====
+
+[NOTE]
+====
+Host connectivity reporting and automatic load balancing function only on the Linux DHALUA, Windows/Windows Clustered, and VMware host types.
+====
+
+== Parameters
+
+None.
+
+== Minimum firmware level
+
+8.42 New command parameter.

@@ -1,0 +1,44 @@
+---
+permalink: reference_wombat_stop_consistencygroup_pendingsnapimagecreation.html
+sidebar: sidebar
+keywords: 
+summary: 'The stop consistencyGroup pendingSnapImageCreation command stops all of the pending snapshot images that are to be created on a snapshot consistency group.'
+---
+= Stop pending snapshot images on consistency group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `stop consistencyGroup pendingSnapImageCreation` command stops all of the pending snapshot images that are to be created on a snapshot consistency group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+If the snapshot consistency group does not have any pending snapshot images, the storage management software displays an error message and does not run the command.
+
+== Syntax
+
+----
+stop consistencyGroup [consistencyGroupName] pendingSnapImageCreation
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`consistencyGroupName`
+a|
+The name of the consistency group for which you want to stop any pending snapshot operation. Enclose the name of the consistency group in square brackets ([ ]). If the consistency group name has special characters or numbers, you must enclose the consistency group name in double quotation marks (" ") inside square brackets.
+|===
+
+== Minimum firmware level
+
+7.83

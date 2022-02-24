@@ -1,0 +1,61 @@
+---
+permalink: reference_wombat_smcli_enable_autosupportfeature.html
+sidebar: sidebar
+keywords: 
+summary: 'The SMcli enable autoSupportFeature command turns on the AutoSupport \(ASUP\) feature for all managed storage arrays and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, any ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis.'
+---
+= Enable or disable AutoSupport at the EMW management domain level (SMcli only)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `SMcli enable autoSupportFeature` command turns on the AutoSupport (ASUP) feature for all managed storage arrays and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, any ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis.
+
+== Supported Arrays
+
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+
+== Context
+
+[NOTE]
+====
+This command is an SMcli command, not a script command. You must run this command from a command line. You cannot run this command from the script editor in the storage management software.
+====
+
+[NOTE]
+====
+The Persistent Monitor must be enabled for the AutoSupport feature to work.
+====
+
+[NOTE]
+====
+No customer data is ever transmitted to the technical support site.
+====
+
+This command impacts all ASUP-capable storage arrays in the management domain. After enabling this feature for the management domain, you have control over the feature enablement for each storage array.
+
+After enabling this feature, you can next enable the AutoSupport OnDemand feature (if desired), and then enable the AutoSupport Remote Diagnostics feature (if desired). You must enable the three features in this order.
+
+image::../media/baseasup_w_first_enable.gif[]
+
+== Syntax
+
+----
+SMcli enable|disable autoSupportFeature
+----
+
+== Parameters
+
+None.
+
+== Minimum Firmware Level
+
+7.86
+
+== Verification
+
+Use the `SMcli -autoSupportConfig show` command to see whether you have enabled the feature. The initial line of the displayed output shows the enable status:
+
+----
+The AutoSupport feature is activated on this storage management station.
+----

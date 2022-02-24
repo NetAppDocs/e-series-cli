@@ -1,0 +1,60 @@
+---
+permalink: reference_wombat_set_target.html
+sidebar: sidebar
+keywords: 
+summary: 'The set target command changes the properties for an iSCSI/iSER target, including authentication method and alias name.'
+---
+= Set target properties
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set target` command changes the properties for an iSCSI/iSER target, including authentication method and alias name.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Context
+
+[NOTE]
+====
+This command replaces the deprecated xref:reference_wombat_set_isertarget.adoc[Set iSER target] and xref:reference_wombat_set_iscsitarget.adoc[Set iSCSI target properties] commands.
+====
+
+== Syntax
+
+----
+
+set target (["targetAliasName"] | <"targetQualifiedName">) (authenticationMethod=(none | chap chapSecret="newSecurityKey") | targetAlias="newAliasName")
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`target`
+a|
+Allows you to specify which target you want to set. You can either specify the target's alias name or qualified name (e.g., iqn). Enclose the target identifier in double quotations marks (" "). You also must enclose the identifier in square brackets ([ ]) if it is an alias or angle brackets (< >) if it is a qualified name.
+a|
+`authenticationMethod`
+a|
+Allows you to set the means of authenticating your session. Valid choices are: `none` or `chap`.
+a|
+`chapSecret`
+a|
+Allows you to enter the security key to authenticate a peer connection. This is applicable only when `authenticationMethod` is set to `chap`.
+a|
+`targetAlias`
+a|
+Allows you to specify the new alias name for the target. Enclose the name in double quotation marks (" ").
+|===
+
+== Minimum firmware level
+
+8.41

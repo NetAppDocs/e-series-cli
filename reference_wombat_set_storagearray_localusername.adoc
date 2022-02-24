@@ -1,0 +1,70 @@
+---
+permalink: reference_wombat_set_storagearray_localusername.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray localUsername command and the set storageArray symbol command allow you to set a local user name password or a SYMbol password for a particular role.'
+---
+= Set storage array local user password or SYMbol password
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray localUsername` command and the `set storageArray symbol` command allow you to set a local user name password or a SYMbol password for a particular role.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin, Support Admin, Security Admin, or Storage Monitor role.
+
+== Syntax
+
+----
+set storageArray (localUsername={ admin | storage | security | support | monitor}
+| symbol [userRole={admin | monitor}])
+password="string" adminPassword="string"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`localUsername`
+a|
+Allows you to specify the user to change the password. Valid choices are: `admin`, `storage`, `support`, `monitor`, and `security`.
+a|
+`symbol`
+a|
+Allows you to change the SYMbol password. Valid choices are: `admin` and `monitor`.
+[NOTE]
+====
+This is the replacement command for the deprecated `set storageArray password` command.
+====
+
+a|
+`password`
+a|
+Allows you to specify the password for the role.
+a|
+`adminPassword`
+a|
+Allows you to specify the admin password, which is required to set any new password.
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "set storageArray localUsername=storage password="newPassword" adminPassword="theAdminPassword";"
+SMcli -n Array1 -c "set storageArray localUsername=admin password="newAdminPassword" adminPassword="theAdminPassword";"
+SMcli -n Array1 -c "set storageArray symbol userRole=admin password="newSymbolPassword" adminPassword="theAdminPassword";"
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40 adds the command.

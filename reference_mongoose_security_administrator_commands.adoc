@@ -1,0 +1,128 @@
+---
+permalink: reference_mongoose_security_administrator_commands.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Security administrators commands
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+* *<<GUID-B0F6B657-17F7-4543-A9E1-F7E6E8F0F066,C-R>> | <<SECTION_6BDF24B3241043CCB953569A72D72162,S-V>>*
+
+xref:reference_wombat_create_storagearray_directoryserver.adoc[Create storage array directory server]
+
+xref:reference_wombat_create_storagearray_securitykey.adoc[Create storage array security key]
+
+xref:reference_wombat_create_storagearray_syslog.adoc[Create storage array syslog configuration]
+
+xref:reference_wombat_delete_auditlog.adoc[Delete Audit Log records]
+
+xref:reference_wombat_delete_storagearray_directoryservers.adoc[Delete storage array directory server]
+
+xref:reference_wombat_delete_storagearray_loginbanner.adoc[Delete storage array login banner]
+
+xref:reference_wombat_delete_storagearray_syslog.adoc[Delete storage array syslog configuration]
+
+xref:reference_wombat_disable_storagearray_externalkeymanagement_file.adoc[Disable external security key management]
+
+xref:reference_wombat_show_storagearray_syslog.adoc[Display storage array syslog configuration]
+
+xref:reference_wombat_enable_storagearray_externalkeymanagement_file.adoc[Enable external security key management]
+
+xref:reference_wombat_export_storagearray_securitykey.adoc[Export storage array security key]
+
+xref:reference_wombat_save_storagearray_keymanagementclientcsr.adoc[Generate Key Management Certificate Signing Request (CSR)]
+
+xref:reference_wombat_save_controller_arraymanagementcsr.adoc[Generate web server Certificate Signing Request (CSR)]
+
+xref:reference_wombat_import_storagearray_securitykey_file.adoc[Import storage array security key]
+
+xref:reference_wombat_download_controller_cacertificate.adoc[Install root/intermediate CA certificates]
+
+xref:reference_wombat_download_controller_arraymanagementservercertificate.adoc[Install server signed certificate]
+
+xref:reference_wombat_download_storagearray_keymanagementcertificate.adoc[Install storage array external key management certificate]
+
+xref:reference_wombat_download_controller_trustedcertificate.adoc[Install trusted CA certificates]
+
+xref:reference_wombat_load_storagearray_dbmdatabase.adoc[Load storage array DBM database]
+
+xref:reference_wombat_delete_storagearray_trustedcertificate.adoc[Remove installed trusted CA certificates]
+
+xref:reference_wombat_delete_storagearray_keymanagementcertificate.adoc[Remove installed external key management certificate]
+
+xref:reference_wombat_delete_controller_cacertificate.adoc[Remove installed root/intermediate CA certificates]
+
+xref:reference_wombat_remove_storagearray_directoryserver.adoc[Remove storage array directory server role mapping]
+
+xref:reference_wombat_reset_controller_arraymanagementsignedcertificate.adoc[Reset installed signed certificate]
+
+xref:reference_wombat_save_storagearray_keymanagementcertificate.adoc[Retrieve installed external key management certificate]
+
+xref:reference_wombat_save_controller_cacertificate.adoc[Retrieve installed CA certificates]
+
+xref:reference_wombat_save_controller_arraymanagementsignedcertificate.adoc[Retrieve installed server certificate]
+
+xref:reference_wombat_save_storagearray_trustedcertificate.adoc[Retrieve installed trusted CA certificates]
+
+xref:reference_wombat_save_auditlog.adoc[Save Audit Log records]
+
+xref:reference_wombat_save_storagearray_configuration.adoc[Save storage array configuration]
+
+xref:reference_wombat_save_storagearray_dbmdatabase.adoc[Save storage array DBM database]
+
+xref:reference_wombat_save_storagearray_dbmvalidatorinfo.adoc[Save storage array DBM validator information file]
+
+xref:reference_wombat_save_storagearray_hostportstatistics.adoc[Save storage array host port statistics]
+
+xref:reference_wombat_save_storagearray_loginbanner.adoc[Save storage array login banner]
+
+xref:reference_wombat_set_auditlog.adoc[Set Audit Log settings]
+
+xref:reference_wombat_set_storagearray_revocationchecksettings.adoc[Set certificate revocation check settings]
+
+xref:reference_wombat_set_storagearray_externalkeymanagement.adoc[Set external key management settings]
+
+xref:reference_wombat_set_storagearray_securitykey.adoc[Set internal storage array security key]
+
+xref:reference_wombat_set_session_erroraction.adoc[Set session]
+
+xref:reference_wombat_set_storagearray_directoryserver.adoc[Set storage array directory server]
+
+xref:reference_wombat_set_storagearray_directoryserver_roles.adoc[Set storage array directory server role mapping]
+
+xref:reference_wombat_set_storagearray_localusername.adoc[Set storage array local user password or SYMbol password]
+
+xref:reference_wombat_set_storagearray_loginbanner.adoc[Set storage array login banner]
+
+xref:reference_wombat_set_storagearray_managementinterface.adoc[Set storage array management interface]
+
+xref:reference_wombat_set_storagearray_usersession.adoc[Set storage array user session]
+
+xref:reference_wombat_show_auditlog_configuration.adoc[Show Audit Log configuration]
+
+xref:reference_wombat_show_auditlog_summary.adoc[Show Audit Log summary]
+
+xref:reference_wombat_show_storagearray_revocationchecksettings.adoc[Show certificate revocation check settings]
+
+xref:reference_wombat_show_controller_cacertificate.adoc[Show installed root/intermediate CA certificates summary]
+
+xref:reference_wombat_show_storagearray_trustedcertificate_summary.adoc[Show installed trusted CA certificates summary]
+
+xref:reference_wombat_show_controller_arraymanagementsignedcertificate_summary.adoc[Show signed certificate]
+
+xref:reference_wombat_show_storagearray_directoryservices_summary.adoc[Show storage array directory services summary]
+
+xref:reference_wombat_start_storagearray_ocspresponderurl_test.adoc[Start OCSP server URL test]
+
+xref:reference_wombat_start_storagearray_syslog_test.adoc[Start storage array syslog test]
+
+xref:reference_wombat_start_storagearray_externalkeymanagement_test.adoc[Test external key management communication]
+
+xref:reference_wombat_start_storagearray_directoryservices_test.adoc[Test storage array directory server]
+
+xref:reference_wombat_set_storagearray_syslog.adoc[Update storage array syslog configuration]
+
+xref:reference_wombat_validate_storagearray_securitykey.adoc[Validate storage array security key]

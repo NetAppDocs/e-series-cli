@@ -1,0 +1,65 @@
+---
+permalink: reference_wombat_remove_storagearray_directoryserver.html
+sidebar: sidebar
+keywords: 
+summary: 'The remove storageArray directoryServer command removes the defined role mappings for the specified directory server.'
+---
+= Remove storage array directory server role mapping
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `remove storageArray directoryServer` command removes the defined role mappings for the specified directory server.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+
+remove storageArray directoryServer [domainId]
+    (allGroupDNs | groupDNs=(groupDN1 ... groupDNN))
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`directoryServer`
+a|
+Allows you to specify the domain, using the domain ID, for which to remove the mapping.
+a|
+`allGroupDNs`
+a|
+Allows you to remove all group Distinguished Name mappings from the domain.
+a|
+`groupDNs`
+a|
+Allows you to specify the groups`' distinguished name (DN) to be removed.
+[NOTE]
+====
+If you enter more than one group, separate the values with a space.
+====
+
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "remove storageArray directoryServer ["domain1"]
+                    groupDNs=("CN=company-distlist,OU=Managed,
+                    OU=MyCompanyGroups,DC=hq,DC=mycompany,DC=com");"
+
+SMcli -n Array1 -c "remove storageArray directoryServer ["domain1"]
+                    allGroupDNs;"
+
+SMcli completed successfully.
+----

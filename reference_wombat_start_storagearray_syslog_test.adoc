@@ -1,0 +1,48 @@
+---
+permalink: reference_wombat_start_storagearray_syslog_test.html
+sidebar: sidebar
+keywords: 
+summary: 'The start storageArray syslog test command allows you to test communications between the storage array and a syslog server.'
+---
+= Start storage array syslog test
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start storageArray syslog test` command allows you to test communications between the storage array and a syslog server.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+start storageArray syslog test id="<id>"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+id
+a|
+Syslog configuration ID to test. The ID is available using the `show storageArray syslog` command.
+|===
+
+== Minimum firmware level
+
+8.42
+
+== Example
+
+----
+SMcli -n Array1 -c "start storageArray syslog test
+id=\"331998fe-3154-4489-b773-b0bb60c6b48e\";"
+SMcli completed successfully.
+----

@@ -1,0 +1,73 @@
+---
+permalink: reference_wombat_reset_storagearray_arvmstats_asyncmirrorgroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The reset storageArray arvmStats asyncMirrorGroup command resets the synchronization statistics for one or more member volumes in an asynchronous mirror group to a relative 0.'
+---
+= Reset asynchronous mirror group statistics
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `reset storageArray arvmStats asyncMirrorGroup` command resets the synchronization statistics for one or more member volumes in an asynchronous mirror group to a relative 0.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+reset storageArray arvmStats asyncMirrorGroup [asyncMirrorGroupName]
+volume="volumeName" sampleType=(all | mostRecent | longestSyncTime | errors)
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`asyncMirrorGroup`
+a|
+The name of the asynchronous mirror group for which you are resetting the synchronization statistics. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name has special characters or numbers, you must enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets.
+
+a|
+`volume`
+a|
+This parameter is optional. The name of the specific member volume in the asynchronous mirror group for which you are resetting the synchronization statistics. If no volume is specified, the statistics for every member volume in the asynchronous mirror group are reset.
+
+Enclose the volume name in double quotation marks (" ").
+
+a|
+`sampleType`
+a|
+This parameter is optional. The default value for `sampleType` is `all`.
+
+* `all`-- Data for all three sample types are reset.
+* `mostRecent` -- Statistics are reset for the most recent 50 resynchronization samples.
+* `longestSyncTime` -- Statistics are reset for the most recent 20 longest resynchronization samples.
+* `errors`-- Statistics are reset for the most recent 20 failed resynchronization samples.
+
+|===
+
+== Notes
+
+Statistics are reset for mirrored volumes in the Primary role. The statistics that are reset include the following data:
+
+* Synchronization start time
+* Synchronization type (manual or periodic)
+* Synchronization duration
+* Number of bytes sent
+* Maximum and minimum write time (for a single write)
+* Maximum and minimum synchronization data rate
+* Total write time
+* Repository utilization (%)
+* Recovery point age
+
+== Minimum firmware level
+
+7.84

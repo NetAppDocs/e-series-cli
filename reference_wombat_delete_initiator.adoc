@@ -1,0 +1,53 @@
+---
+permalink: reference_wombat_delete_initiator.html
+sidebar: sidebar
+keywords: 
+summary: 'The delete initiator command deletes the initiator object.'
+---
+= Delete initiator
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete initiator` command deletes the initiator object.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+This command replaces the deprecated xref:reference_wombat_delete_iscsiinitiator.adoc[Delete iSCSI initiator] command.
+====
+
+[NOTE]
+====
+This command is applicable only to iSCSI, iSER, NVMe over RoCE, NVMe over InfiniBand, and NVMe over Fibre Channel.
+====
+
+== Syntax
+
+----
+
+delete initiator (["initiatorName"] | <"initiatorQualifiedName">)
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`initiator`
+a|
+Allows you to specify the initiator identifier for which you want to delete. Enclose the name in double quotation marks ("` "`). You also must enclose the name in square brackets ([ ]) if the value is a user label or angle brackets (< >) if the value is a qualified name (for example, iqn or nqn).
+|===
+
+== Minimum firmware level
+
+8.41

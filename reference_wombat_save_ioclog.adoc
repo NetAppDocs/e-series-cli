@@ -1,0 +1,61 @@
+---
+permalink: reference_wombat_save_ioclog.html
+sidebar: sidebar
+keywords: 
+summary: 'The save IOCLog command saves the IOC dumps from the controllers in a storage array to a file on a host.'
+---
+= Save input output controller (IOC) dump
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save IOCLog` command saves the IOC dumps from the controllers in a storage array to a file on a host.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+save IOCLog [file="filename"]
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name to which you save the IOC dump. Enclose the file name in double quotation marks (" "). For example:
+
+----
+file="C:\Array Backups\IOCcoredump1.7z"
+----
+
+This command saves the data to a compressed file and adds the file extension `.7z` to the saved file. The default name of the file that contains the IOC-related data for controllers in the storage array uses the WWN of the storage array.
+
+|===
+
+== Notes
+
+This command retrieves from both controllers the IOC dump log data and the IOC dump metadata. Using a 7zip file format, the retrieved data is archived and compressed into a single file with a file name of your choice. The 7zip archive file contains the following:
+
+* filename+`"IOCLog`"+[A|B].gz -- the IOC logs retrieved from controller A or controller B if available
+* filename+`"IOCLogInfo`"+[A|B].txt -- the IOC logs metadata info retrieved from controller A or controller B . If the IOC log data cannot be retrieved from a controller, the metadata .txt file will contain the error condition and reason.
+
+The following are error conditions:
+
+* The controller platform and HIC do not support IOC dump.
+* The controllers have not collected IOC dump data.
+
+The compressed logs are not in a human-readable format. You must return the logs to technical support to be evaluated.
+
+== Minimum firmware level
+
+8.20

@@ -1,0 +1,58 @@
+---
+permalink: reference_wombat_create_snmptrapdestination.html
+sidebar: sidebar
+keywords: 
+summary: 'The create snmpTrapDestination command creates a new Simple Network Management Protocol \(SNMP\) trap destination. A trap destination is the SNMP manager to receive the trap messages.'
+---
+= Register SNMP trap destination
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create snmpTrapDestination` command creates a new Simple Network Management Protocol (SNMP) trap destination. A trap destination is the SNMP manager to receive the trap messages.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Syntax
+
+----
+create snmpTrapDestination trapReceiverIP=ipAddress
+    (communityName="communityName" | (userName="userName" [engineId=(local | engineId)]))
+    [sendAuthenticationFailureTraps=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`trapReceiverIP`
+a|
+The IP address of the SNMP manager to which you want to send trap messages.
+a|
+`communityName`
+a|
+The name of the SNMP community for which you want to send trap messages.
+a|
+`userName`
+a|
+The name of the SNMP user for which you want to send trap messages.
+a|
+`engineId`
+a|
+The engine ID of the SNMP user for which you want to send trap messages. The engine ID is required if there is more than one USM user with the same user name. The value may be "[.code]``local``" to specify the local SNMP agent is the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID.
+a|
+`sendAuthenticationFailureTraps`
+a|
+This parameter turns on or turns off sending authentication failure messages to an SNMP manager. To send authentication failure messages, set the parameter to `TRUE`. To prevent sending authentication failure messages, set the parameter to `FALSE`. The default is `TRUE`.
+|===
+
+== Minimum firmware level
+
+8.30

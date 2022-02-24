@@ -1,0 +1,275 @@
+---
+permalink: reference_alpaca_command_line_parameters.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Command line parameters
+:icons: font
+:imagesdir: ./media/
+
+== New command line parameters in the 11.40 release
+
+The SANtricity OS 11.40 release introduces, for the E2800 and E5700 controllers with embedded web services, the ability to interact on the Command Line using a secure HTTPS protocol. These controllers can optionally use the SYMbol protocol for Command Line interactions instead. The SYMbol protocol is the only supported protocol for the E2700 and E5600 controllers. To preserve existing scripts and minimize transition time, the CLI options and grammar are preserved as much as possible. However, there are some differences in the capabilities of the E2800 and E5700 controllers with regards to security, authentication, AutoSupport, and alert messaging that render some of the CLI grammar for those controllers obsolete. However, in some cases the grammar is only obsolete on the E2800 or E5700 when the new https protocol is used.
+
+For the new parameters that only apply to the `https` client type, it follows that they also apply only to the E2800 or E5700 controllers.
+
+For a list of new, deprecated, and obsolete commands with this release, see xref:concept_alpaca_changes_in_the_cli_and_script_commands_in_this_release.adoc[Changes in the CLI and Script commands in this release].
+
+|===
+| Parameter| Definition
+a|
+`-clientType`
+a|
+This argument forces the creation of an appropriate script engine. Use this optional parameter with one of the following values:
+
+* `auto` - Device discovery is automatically performed to detect the appropriate script engine type.
+* `https` - A REST-based script engine is created.
+* `symbol` - A SYMbol-based script engine is created.
+
+a|
+`-u`
+a|
+Follow this parameter with the `username` variable. The username is only required for the `https` client type. This argument is not applicable to the `symbol` client type and will be silently ignored.
+
+If the username argument is specified, device discovery is performed to determine the correct client type (`https` vs. `symbol`).
+
+a|
+`-P`
+a|
+This argument requires one of two arguments:
+
+* `password_file` - Contains the password to use for authentication.
+* `-` (one dash) - Read the password from `stdin`.
+
+Note that the addition of this argument is applicable to all controllers, regardless of whether the `https` client type or `symbol` client type is used.
+
+a|
+`-k`
+a|
+This optional argument allows an `https` client to operate in insecure mode. This means that the storage array's certificate will not be validated. By default, if omitted, the proper authentication will be performed. This argument is not applicable to the `symbol` client type and will be silently ignored.
+|===
+
+== Command line parameters that only apply to E2700 or E5600 controllers
+
+Because the E2700 and E5600 controllers do not have embedded alert management capabilities, these command line parameters are applicable. These parameters are not applicable to the E2800 or E5700 controllers.
+
+|===
+| Parameter| Definition
+a|
+`-a`
+a|
+Adds a Simple Network Management Protocol (SNMP) trap destination or an email address alert destination.
+
+* When you add an SNMP trap destination, the SNMP community is automatically defined as the community name for the trap, and the `host` is the IP address or Domain Name Server (DNS) host name of the system to which the trap should be sent.
+* When you add an email address for an alert destination, the `email-address` is the email address to which you want the alert message to be sent.
+
+[NOTE]
+====
+This command line option is obsolete for the E2800 and E5700 storage arrays. Use the RESTful API, SANtricity System Manager, or cURL commands.
+====
+
+a|
+`-m`
+a|
+Specifies the host name or the IP address of the email server from which email alert notifications are sent.
+[NOTE]
+====
+This command line option is obsolete for the E2800 and E5700 storage arrays. Use the RESTful API, SANtricity System Manager, or cURL commands.
+====
+
+a|
+`-s` (lowercase)
+a|
+Shows the alert settings in the configuration file when used with the `-d` parameter.
+[NOTE]
+====
+This command line option is obsolete for the E2800 and E5700 storage arrays. Use the RESTful API, SANtricity System Manager, or cURL commands.
+====
+
+a|
+`-x` (lowercase)
+a|
+Removes an SNMP trap destination or an email address alert destination. The `community` is the SNMP community name for the trap, and the `host` is the IP address or DNS host name of the system to which you want the trap sent.
+[NOTE]
+====
+This command line option is obsolete for the E2800 and E5700 storage arrays. Use the RESTful API, SANtricity System Manager, or cURL commands.
+====
+
+|===
+
+== Command line parameters that apply to all controllers running with a symbol client type
+
+|===
+| Parameter| Definition
+a|
+`-R` (uppercase)
+a|
+Defines the user role for the password. The roles can be either:
+
+* `admin` -- The user has privilege to change the storage array configuration.
+* `monitor` -- The user has privilege to view the storage array configuration, but cannot make changes.
+
+The `-R` parameter is valid only when used with the `–p` parameter, which specifies that you define a password for a storage array.
+
+The `-R` parameter is required only if the dual password feature is enabled on the storage array. The `-R` parameter is not necessary under these conditions:
+
+* The dual password feature is not enabled on the storage array.
+* Only one admin role is set and the monitor role is not set for the storage array.
+
+|===
+
+== Command line parameters applicable to all controllers and all client types
+
+|===
+| Parameter| Definition
+a|
+`host-name-or-IP-address`
+a|
+Specifies either the host name or the Internet Protocol (IP) address (`xxx.xxx.xxx.xxx`) of an in-band managed storage array or an out-of-band managed storage array.
+
+* If you are managing a storage array by using a host through in-band storage management, you must use the `-n` parameter or the `-w` parameter if more than one storage array is connected to the host.
+* If you are managing a storage array by using out-of-band storage management through the Ethernet connection on each controller, you must specify the `host-name-or-IP-address` of the controllers.
+* If you have previously configured a storage array in the Enterprise Management Window, you can specify the storage array by its user-supplied name by using the `-n` parameter.
+* If you have previously configured a storage array in the Enterprise Management Window, you can specify the storage array by its World Wide Identifier (WWID) by using the `-w` parameter.
+
+a|
+`-A`
+a|
+Adds a storage array to the configuration file. If you do not follow the `-A` parameter with a `host-name-or-IP-address`, auto-discovery scans the local subnet for storage arrays.
+a|
+`-c`
+a|
+Indicates that you are entering one or more script commands to run on the specified storage array. End each command with a semicolon (`;`). You cannot place more than one `-c` parameter on the same command line. You can include more than one script command after the `-c` parameter.
+a|
+`-d`
+a|
+Shows the contents of the script configuration file. The file content has this format: `storage-system-name host-name1 host-name2`
+a|
+`-e`
+a|
+Runs the commands without performing a syntax check first.
+a|
+`-F` (uppercase)
+a|
+Specifies the email address from which all alerts will be sent.
+a|
+`-f` (lowercase)
+a|
+Specifies a file name that contains script commands that you want to run on the specified storage array. The `-f` parameter is similar to the `-c` parameter in that both parameters are intended for running script commands. The `-c` parameter runs individual script commands. The `-f` parameter runs a file of script commands. By default, any errors that are encountered when running the script commands in a file are ignored, and the file continues to run. To override this behavior, use the `set session errorAction=stop` command in the script file.
+
+a|
+`-g`
+a|
+Specifies an ASCII file that contains email sender contact information that will be included in all email alert notifications. The CLI assumes that the ASCII file is text only, without delimiters or any expected format. Do not use the `-g` parameter if a `userdata.txt` file exists.
+a|
+`-h`
+a|
+Specifies the host name that is running the SNMP agent to which the storage array is connected. Use the `-h` parameter with these parameters:
+
+* `-a`
+* `-x`
+
+a|
+`-I` (uppercase)
+a|
+Specifies the type of information to be included in the email alert notifications. You can select these values:
+
+* `eventOnly` -- Only the event information is included in the email.
+* `profile` -- The event and array profile information is included in the email.
+
+You can specify the frequency for the email deliveries using the `-q` parameter.
+
+a|
+`-i` (lowercase)
+a|
+Shows the IP address of the known storage arrays. Use the `-i` parameter with the `-d` parameter. The file content has this format:``storage-system-name IP-address1 IPaddress2``
+
+a|
+`-n`
+a|
+Specifies the name of the storage array on which you want to run the script commands. This name is optional when you use a `host-name-or-IP-address`. If you are using the in-band method for managing the storage array, you must use the `-n` parameter if more than one storage array is connected to the host at the specified address. The storage array name is required when the `host-name-or-IP-address` is not used. The name of the storage array that is configured for use in the Enterprise Management Window (that is, the name is listed in the configuration file) must not be a duplicate name of any other configured storage array.
+a|
+`-o`
+a|
+Specifies a file name for all output text that is a result of running the script commands. Use the `-o` parameter with these parameters:
+
+* `-c`
+* `-f`
+
+If you do not specify an output file, the output text goes to standard output (stdout). All output from commands that are not script commands is sent to stdout, regardless of whether this parameter is set.
+
+a|
+`-p`
+a|
+Defines the password for the storage array on which you want to run commands. A password is not necessary under these conditions:
+
+* A password has not been set on the storage array.
+* The password is specified in a script file that you are running.
+* You specify the password by using the `-c` parameter and this command:
+
+----
+set session password=password
+----
+
+a|
+`-P`
+a|
+This argument requires one of two arguments:
+
+* `password_file` - contains the password to use for authentication.
+* `-`(dash) - read the password from `stdin`.
+
+Note that the addition of this argument is applicable to all controllers, regardless of whether the `https` client type or `symbol` client type is used.
+
+a|
+`-q`
+a|
+Specifies the frequency that you want to receive event notifications and the type of information returned in the event notifications. An email alert notification containing at least the basic event information is always generated for every critical event. These values are valid for the `-q` parameter:
+
+* `everyEvent` -- Information is returned with every email alert notification.
+* `2` -- Information is returned no more than once every two hours.
+* `4` -- Information is returned no more than once every four hours.
+* `8` -- Information is returned no more than once every eight hours.
+* `12` -- Information is returned no more than once every 12 hours.
+* `24` -- Information is returned no more than once every 24 hours.
+
+Using the `-I` parameter you can specify the type of information in the email alert notifications.
+
+* If you set the `-I` parameter to `eventOnly` , the only valid value for the `-q` parameter is `everyEvent`.
+* If you set the `-I` parameter to either the `profile` value or the `supportBundle` value, this information is included with the emails with the frequency specified by the `-q` parameter.
+
+a|
+`-quick`
+a|
+Reduces the amount of time that is required to run a single-line operation. An example of a single-line operation is the `recreate snapshot volume` command. This parameter reduces time by not running background processes for the duration of the command. Do not use this parameter for operations that involve more than one single-line operation. Extensive use of this command can overrun the controller with more commands than the controller can process, which causes operational failure. Also, status updates and configuration updates that are collected usually from background processes will not be available to the CLI. This parameter causes operations that depend on background information to fail.
+
+a|
+`-S` (uppercase)
+a|
+Suppresses informational messages describing the command progress that appear when you run script commands. (Suppressing informational messages is also called silent mode.) This parameter suppresses these messages:
+
+* `Performing syntax check`
+* `Syntax check complete`
+* `Executing script`
+* `Script execution complete`
+* `SMcli completed successfully`
+
+a|
+`-v`
+a|
+Shows the current global status of the known devices in a configuration file when used with the `-d` parameter.
+a|
+`-w`
+a|
+Specifies the WWID of the storage array. This parameter is an alternate to the `-n` parameter. Use the `-w` parameter with the `-d` parameter to show the WWIDs of the known storage arrays. The file content has this format: `storage-system-name world-wide-ID IP-address1 IP-address2`
+
+a|
+`-X` (uppercase)
+a|
+Deletes a storage array from a configuration.
+a|
+`-?`
+a|
+Shows usage information about the CLI commands.
+|===
