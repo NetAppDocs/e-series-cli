@@ -25,7 +25,7 @@ Then you can remove the drives that comprise the volume group and reinstall the 
 
 [CAUTION]
 ====
-Do not perform these steps without first performing the steps listed in xref:concept_mongoose_learn_about_volume_group_migration.adoc[Learn about volume group migration.]
+Do not perform these steps without first performing the steps listed in xref:../mongoose/concept_mongoose_learn_about_volume_group_migration.adoc[Learn about volume group migration.]
 ====
 
 [NOTE]
