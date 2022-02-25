@@ -1,0 +1,45 @@
+---
+permalink: wombat-set-snmpcommunity.html
+sidebar: sidebar
+keywords: 
+summary: 'The set snmpCommunity command creates a new name for an existing Simple Network Management Protocol \(SNMP\) community.'
+---
+= Update SNMP community
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set snmpCommunity` command creates a new name for an existing Simple Network Management Protocol (SNMP) community.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Syntax
+
+----
+set snmpCommunity communityName="snmpCommunityName"
+newCommunityName="newSnmpCommunityName"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`communityName`
+a|
+The name of the existing SNMP community that you want to rename. Enclose the SNMP community name in double quotation marks (" ").
+a|
+`newCommunityName`
+a|
+The new name that you want to give to the SNMP community. Enclose the SNMP community name in double quotation marks (" ").
+|===
+
+== Minimum firmware level
+
+8.30

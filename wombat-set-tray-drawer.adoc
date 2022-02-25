@@ -1,0 +1,91 @@
+---
+permalink: wombat-set-tray-drawer.html
+sidebar: sidebar
+keywords: 
+summary: 'The set tray drawer command turns on or turns off the Service Action Allowed indicator light on a drawer that holds drives.'
+---
+= Set drawer service action allowed indicator
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set tray drawer` command turns on or turns off the Service Action Allowed indicator light on a drawer that holds drives.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Drawers are used in high-capacity drive trays. The drawers slide out of the drive tray to provide access to the drives. Use this command only for drive trays that use drawers. If the storage array does not support the Service Action Allowed indicator light feature, this command returns an error. If the storage array supports the command but is unable to turn on or turn off the indicator light, this command returns an error.
+
+== Syntax
+
+----
+set tray [trayID] drawer [drawerID]
+serviceAllowedIndicator=(on | off | forceOnWarning)
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`tray`
+a|
+The tray where the drawer resides. Tray ID values are `0` to `99` . Enclose the tray ID value in square brackets ([ ]). If you do not enter a tray ID value, the tray ID of the controller tray is the default value.
+a|
+`drawer`
+a|
+The location of the drawer for which you want to turn on or turn off the Service Action Allowed Indicator light. Drawer ID values are `1` to `5`. Enclose the drawer ID value in square brackets ([ ]).
+a|
+`serviceAllowedIndicator`
+a|
+The setting to turn on or turn off the Service Action Allowed indicator light. To turn on the Service Action Allowed indicator light, set this parameter to `on`. To turn off the Service Action Allowed indicator light, set this parameter to `off`.
+
+For information about using `forceOnWarning`, see the Notes.
+
+|===
+
+== Notes
+
+Before you can enter this command, the drive tray must meet these conditions:
+
+* The drive tray cannot be over temperature.
+* The fans must have a status of Optimal.
+* All drive tray components must be in place.
+* The volumes in the drive drawer cannot be in a Degraded state. If you remove drives from the drive drawer and a volume is already in a Degraded state, the volume can fail.
+
+[NOTE]
+====
+Do not issue this command if you cannot meet any of these conditions.
+====
+
+All volumes with drives in the affected drive drawer are checked to make sure that the volumes have drawer loss protection before the command is sent. If the volumes have drawer loss protection, the Set Service Action Allowed command proceeds without stopping I/O activity to the volume.
+
+If any volumes in the affected drawer do not have drawer loss protection, you must stop I/O activity to those volumes. A warning appears, which indicates that this command should not be completed.
+
+To turn on or turn off the Service Action Allowed indicator light for the entire high-capacity drive tray, use the `set tray serviceAllowedIndicator` command.
+
+== Use of the forceOnWarning parameter
+
+If you are preparing a component for removal and want to override the warning that the volumes do not have drawer loss protection, enter this parameter:
+
+----
+serviceAllowedIndicator=forceOnWarning
+----
+
+The `forceOnWarning` parameter sends the request to prepare to remove a component to the controller firmware, and forces the `set drawer serviceAllowedIndicator` command to proceed.
+
+[NOTE]
+====
+This parameter marks all drives in the drawer inaccessible and could result in failed volumes and complex recovery, including the necessity to reboot the host. Use this parameter with caution.
+====
+
+== Minimum firmware level
+
+7.60

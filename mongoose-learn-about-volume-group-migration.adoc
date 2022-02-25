@@ -1,0 +1,85 @@
+---
+permalink: mongoose-learn-about-volume-group-migration.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Learn about volume group migration
+:icons: font
+:imagesdir: ./media/
+
+[CAUTION]
+====
+If the volume group consist of NVMe or FIPS capable drives, then the security key and pass phrase will need to be recorded/saved from the source array in order to unlock the drives before the start of the migration to the target array can begin. If the security key and pass phrase is not known and/or data integrity is not needed then a security erase can be performed. Mixing of different encryption security drives is not supported on E-Series Storage Systems. For more information on how to unlock drives using a security key, erase FIPS drives, and unlock or reset locked NVMe drives, see the online help for SANtricity System Manager.
+====
+
+Volume group migration lets you export a volume group so that you can import the volume group to a different storage array. You also can export a volume group so that you can store the data offline.
+
+[NOTE]
+====
+*Possible loss of data access* -- You must export a volume group before you move the volume group or import the volume group.
+====
+
+== Export volume group
+
+The export volume group operation prepares the drives in the volume group for removal. You can remove the drives for offline storage, or you can import the volume group to a different storage array. After you complete the export volume group operation, all of the drives are offline. Any associated volumes or free capacity nodes are no longer shown in the storage management software.
+
+== Non-exportable components
+
+You must remove any non-exportable components before you can complete the export volume group procedure. You must remove these components:
+
+* Persistent reservations
+* Mappings
+* Volume copy pairs
+* Remote mirrored pairs
+* Mirror repositories
+
+== Basic export steps for a volume group
+
+Exporting a volume group includes these steps on the _source_ storage array.
+
+. Save the storage array configuration.
+. Stop all I/O.
+. Back up the data on the volumes in the volume group.
+. Unmount or disconnect the file systems on the volumes in the volume group.
+. Locate the volume group, and label the drives with the source and destination storage array names, volume group name, and total number of drives in the volume group.
+. Place the volume group offline.
+. To maintain proper airflow within the tray, obtain blank drive canisters or new drives so that you can replace the drives after removing the drives associated with the volume group you export.
+
+Exporting a volume group includes these steps on the _target_ storage array.
+
+. Make sure that the target storage array has available drive slots.
+. Make sure that the target storage array supports the drives that you will import.
+. Make sure that the target storage array can support the new volumes.
+. Make sure that the latest version of firmware is installed on the controller.
+. Make sure the target storage array supports RAID Level 6 if you are exporting a RAID Level 6 volume group.
+. Make sure that the latest version of the storage management software is installed on the target storage array.
+. If you are exporting a volume group with Drive Security enabled, make sure Drive Security is enabled on the target storage array.
+
+== Import volume group
+
+The import volume group operation adds the imported volume group to the target storage array. After you complete the import volume group operation, all of the drives have Optimal status. Any associated volumes or free capacity nodes now appear in the storage management software that is installed on the target storage array.
+
+== Basic import steps for a volume group
+
+[NOTE]
+====
+You must insert all of the drives in the volume group into the tray before the volume group can be imported.
+====
+
+Importing a volume group includes these steps on the _target_ storage array:
+
+. Insert the exported drives into the available drive slots.
+. Review the Import Report for an overview of the volume group that you are importing.
+. Check for non-importable components.
+. Confirm that you want to proceed with the import procedure.
+
+== Non-importable components
+
+Some components cannot be imported during the import volume group procedure. These components are removed during the procedure:
+
+* Persistent reservations
+* Mappings
+* Volume copy pairs
+* Remote mirrored pairs
+* Mirror repositories

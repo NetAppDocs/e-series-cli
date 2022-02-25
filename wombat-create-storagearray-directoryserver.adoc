@@ -1,0 +1,100 @@
+---
+permalink: wombat-create-storagearray-directoryserver.html
+sidebar: sidebar
+keywords: 
+summary: 'The create storageArray directoryServer command allows you to add a new directory server to be used for authenticating and authorizing users.'
+---
+= Create storage array directory server
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create storageArray directoryServer` command allows you to add a new directory server to be used for authenticating and authorizing users.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+
+create storageArray directoryServer
+       [domainId="domainId"]
+       domainNames=("domainName1"..."domainNameN")
+       serverUrl="serverUrl"
+       [bindAccount="username" bindPassword="password"]
+       searchBaseDN="distinguishedName"
+       usernameAttribute="attributeName"
+       groupAttributes=("attrName1"..."attrNameN")
+        [skipConfigurationTest={true | false}]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`domainId`
+a|
+Allows you to specify a unique ID for this domain. If not specified, a unique GUID will be generated.
+a|
+`domainNames`
+a|
+Allows you to specify one or more valid domain names for the directory server. If you enter more than one name, separate the values with a space.
+a|
+`serverUrl`
+a|
+Allows you to specify the URL to access the LDAP server in the form of ldap[s]://hostAddress:port. If the LDAPS protocol is used, ensure that the root/intermediate certificate(s) to validate the directory server's signed certificate is imported using the certificate commands.
+a|
+`bindAccount`
+a|
+Allows you to specify the username or bind ID to be used as the binding account.
+a|
+`bindPassword`
+a|
+Allows you to specify the password to be used as the binding password.
+a|
+`searchBaseDN`
+a|
+Allows you to specify the search base Distinguished Name to search for LDAP user objects for determining group membership.
+a|
+`usernameAttribute`
+a|
+Allows you to specify the attribute to be used to search for user objects for determining group membership. If specified, the string must contain the variable `+{uid}+` that will be replaced with the username used during login. Example: `+sAMAccountName={uid}+`
+
+a|
+`groupAttributes`
+a|
+Allows you to set one or more group attributes to be used to look for group Distinguished Names. Distinguished names are used to determine group membership for role mapping.
+[NOTE]
+====
+If you enter more than one group, separate the values with a space.
+====
+
+[NOTE]
+====
+Using this parameter will clear out existing groups.
+====
+
+a|
+`skipConfigurationTest`
+a|
+Allows you to skip the configuration test before the configuration is saved. The default is `false`.
+|===
+
+== Examples
+
+----
+SMcli -n Array1 -c "create storageArray directoryServer
+domainNames=("company.com") serverUrl="ldap://hqldap.company.com:389"
+bindAccount="dummyBindDN" bindPassword="dummyPassword"
+searchBaseDN="OU=_Users,DC=hq, DC=company,DC=com"
+usernameAttributes="sAMAccountName={uid}" groupAttributes="memberOf";"
+
+SMcli completed successfully.
+----

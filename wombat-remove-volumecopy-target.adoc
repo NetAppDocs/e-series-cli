@@ -1,0 +1,55 @@
+---
+permalink: wombat-remove-volumecopy-target.html
+sidebar: sidebar
+keywords: 
+summary: 'The remove volumeCopy target command removes a volume copy pair.'
+---
+= Remove volume copy
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `remove volumeCopy target` command removes a volume copy pair.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+This command is valid for snapshot volume copy pairs.
+
+[NOTE]
+====
+With firmware version 7.83 the `copyType=(online | offline)` parameter is no longer used.
+====
+
+== Syntax
+
+----
+remove volumeCopy target [targetName] [source [sourceName]]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`target`
+a|
+The name of the target volume that you want to remove. Enclose the target volume name in square brackets ([ ]). If the target volume name has special characters or consists only of numbers, you must enclose the target volume name in double quotation marks (" ") inside square brackets.
+a|
+`source`
+a|
+The name of the source volume that you want to remove. Enclose the source volume name in square brackets ([ ]). If the source volume name has special characters or consists only of numbers, you must enclose the source volume name in double quotation marks (" ") inside square brackets.
+|===
+
+== Minimum firmware level
+
+5.40
+
+7.83 removes the `copyType=(online | offline)` parameter.

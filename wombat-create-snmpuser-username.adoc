@@ -1,0 +1,73 @@
+---
+permalink: wombat-create-snmpuser-username.html
+sidebar: sidebar
+keywords: 
+summary: 'The create snmpUser userName command creates a new Simple Network Management Protocol \(SNMP\) user and registers the new user as a known entity to the SNMP agent. Any attempt to register a new user with the same name and engine ID as that of an existing user is rejected.'
+---
+= Register SNMPv3 USM user
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create snmpUser userName` command creates a new Simple Network Management Protocol (SNMP) user and registers the new user as a known entity to the SNMP agent. Any attempt to register a new user with the same name and engine ID as that of an existing user is rejected.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Syntax
+
+----
+create snmpUser userName="snmpUserName"
+    [engineId=(local | engineId)]
+    [authProtocol=(none | sha | sha256 | sha512) authPassword="authPassword"]
+    [privProtocol=(none | aes128) privPassword="privPassword"]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`userName`
+a|
+The name of the SNMP USM user that you want to create. Enclose the SNMP USM user name in double quotation marks (" ")
+a|
+`engineId`
+a|
+The identifier of the authoritative SNMP engine ID for the user. The value may be "[.code]``local``" to specify the local SNMP agent to be the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID. The default value is "[.code]``local``".
+a|
+`authProtocol`
+a|
+The authentication protocol (HMAC) to be used for the user. The value may be one of the following:
+
+* `none` - No authentication of SNMP messages (default)
+* `sha` - SHA-1 authentication
+* `sha256` - SHA-256 authentication
+* `sha512` - SHA-512 authentication
+
+a|
+`authPassword`
+a|
+The password to be used for authentication for the user. Must be specified if the authentication protocol is "[.code]``sha``", "[.code]``sha256``" or "[.code]``sha512``"
+a|
+`privProtocol`
+a|
+The privacy protocol (encryption) to be used for the user. The value may be one of the following:
+
+* `none` - No encryption of SNMP messages (default)
+* `aes128` - AES-18 encryption
+
+a|
+`privPassword`
+a|
+The password to be used for privacy/encryption for the user. Must be specified if the privacy protocol is "[.code]``aes128``".
+|===
+
+== Minimum firmware level
+
+8.72

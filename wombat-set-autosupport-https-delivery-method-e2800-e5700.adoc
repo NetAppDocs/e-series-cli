@@ -1,0 +1,105 @@
+---
+permalink: wombat-set-autosupport-https-delivery-method-e2800-e5700.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray autoSupport deliveryMethod command sets up the delivery method for sending AutoSupport messages to HTTP\(S\).'
+---
+= Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray autoSupport deliveryMethod` command sets up the delivery method for sending AutoSupport messages to HTTP(S).
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Syntax
+
+----
+
+set storageArray autoSupport deliveryMethod={HTTP | HTTPS}
+   {direct | proxyConfigScript="proxyConfigScriptUrl" |
+proxyServer hostAddress=address portNumber=portNumber
+ [userName="username" password="password"]}
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`deliveryMethod`
+a|
+Allows the user to specify the delivery method for AutoSupport collection. Valid choices are:
+
+* email
+* HTTP
+* HTTPS
+
+[NOTE]
+====
+If the email method is configured, then the AutoSupport OnDemand and Remote Diagnostics will be disabled.
+====
+
+a|
+`direct`
+a|
+Allows the user to connect directly to the destination technical support systems using the HTTP or HTTPS protocol.
+a|
+`proxyConfigScript`
+a|
+Allows the user to specify the location of a Proxy Auto-Configuration (PAC) script file
+a|
+`proxyServer`
+a|
+Allows the user to specify the HTTP(S) proxy server details required for establishing connection with the destination technical support system.
+a|
+`hostAddress`
+a|
+Allows the user to specify the proxy server's host address. Required if proxyServer is used.
+a|
+`portNumber`
+a|
+Allows the user to specify the proxy server's port number. Required if proxyServer is used.
+a|
+`username`
+a|
+Allows the user to specify the proxy server's username if it is configured.
+a|
+`password`
+a|
+Allows the user to specify the proxy server's password if it is configured.
+|===
+
+== Minimum Firmware Level
+
+8.40
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "set storageArray autoSupport deliveryMethod=HTTP direct;"
+
+SMcli -n Array1 -c "set storageArray autoSupport deliveryMethod=HTTP
+proxyConfigScript=\"http://company.com/~username/proxy.pac\";"
+
+SMcli -n Array1 -c "set storageArray autoSupport deliveryMethod=HTTPS
+proxyServer hostAddress=10.117.12.112 portNumber=8080 userName=\"tracyt\" password=\"1234456\";"
+
+SMcli completed successfully.
+----
+
+== Verification
+
+Send a test message using the `start storageArray autoSupport deliveryTest` command to verify that your delivery methods are set up correctly.
+
+== Minimum firmware level
+
+8.40

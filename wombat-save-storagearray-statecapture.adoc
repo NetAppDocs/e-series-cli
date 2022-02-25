@@ -1,0 +1,43 @@
+---
+permalink: wombat-save-storagearray-statecapture.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray stateCapture command saves the state capture of a storage array to a file.'
+---
+= Save storage array state capture
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray stateCapture` command saves the state capture of a storage array to a file.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+save storageArray stateCapture file="filename"
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name to which you want to save the state capture. Enclose the file name in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\logs\state.txt"`
+
+You can use any file name, but you must use the `.txt` extension.
+
+The default name of the file that contains the state capture is `state-capture-data.txt`. This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
+
+|===

@@ -1,0 +1,50 @@
+---
+permalink: wombat-set-controller-service-action-allowed-indicator.html
+sidebar: sidebar
+keywords: 
+summary: 'The set controller command turns on or turns off the Service Action Allowed indicator light on a controller in a controller tray or a controller-drive tray.'
+---
+= Set controller service action allowed indicator
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set controller` command turns on or turns off the Service Action Allowed indicator light on a controller in a controller tray or a controller-drive tray.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700 and E5600 arrays.
+
+== Context
+
+If the storage array does not support the Service Action Allowed indicator light feature, this command returns an error. If the storage array supports the command but is unable to turn on or turn off the indicator light, this command returns an error. (To turn on or turn off the Service Action Allowed indicator light on the power-fan canister or the interconnect-battery canister, use the `set tray serviceAllowedIndicator` command.)
+
+[NOTE]
+====
+This command is valid only for E2700, E5600, or EF560 (and other previous generations of E-Series or EF-Series controllers). The E2800 controller tray has a single Attention indicator that will illuminate only when 1) there is a failure, and 2) the component that failed can be safely removed.
+====
+
+== Syntax
+
+----
+set controller [(a| b)]
+serviceAllowedIndicator=(on | off)
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+The controller that has the Service Action Allowed indicator light that you want to turn on or turn off. Valid controller identifiers are `a` or `b` , where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the controller firmware returns a syntax error.
+a|
+`serviceAllowedIndicator`
+a|
+The setting to turn on or turn off the Service Action Allowed indicator light. To turn on the Service Action Allowed indicator light, set this parameter to `on`. To turn off the Service Action Allowed indicator light, set this parameter to `off`.
+|===
+
+== Minimum firmware level
+
+6.14

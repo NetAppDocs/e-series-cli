@@ -1,0 +1,61 @@
+---
+permalink: wombat-delete-storagearray-directoryservers.html
+sidebar: sidebar
+keywords: 
+summary: 'The delete storageArray directoryServers command allows you to delete one or more directory servers.'
+---
+= Delete storage array directory server
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete storageArray directoryServers` command allows you to delete one or more directory servers.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+delete storageArray (allDirectoryServers |
+ directoryServers ["domainId1" ... "domainIdN"])
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`allDirectoryServers`
+a|
+Allows you to delete all directory servers.
+a|
+`directoryServers`
+a|
+Allows you to specify one or more directory servers to delete, each identified with the domain ID.
+[NOTE]
+====
+Enclose the IDs in square brackets ([ ]). If you supplied more than one, then separate them with a space.
+====
+
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "delete storageArray directoryServers ["domain1" "domain3"];"
+
+SMcli -n Array1 -c "delete storageArray allDirectoryServers;"
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40 adds the command.

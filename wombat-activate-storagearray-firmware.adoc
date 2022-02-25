@@ -1,0 +1,38 @@
+---
+permalink: wombat-activate-storagearray-firmware.html
+sidebar: sidebar
+keywords: 
+summary: 'The activate storageArray firmware command activates firmware that you have previously downloaded to the pending configuration area on the controllers in the storage array.'
+---
+= Activate storage array firmware
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `activate storageArray firmware` command activates firmware that you have previously downloaded to the pending configuration area on the controllers in the storage array.
+
+== Syntax
+
+----
+activate storageArray firmware
+[healthCheckMelOverride=(TRUE | FALSE)]
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`healthCheckMelOverride`
+a|
+The setting to override the results of the health check of the major event log (MEL). MEL validation still occurs; it is not bypassed. If the MEL check fails, you can bypass the failure by using this parameter when running the command.
+
+Before any activation, the controller checks the event log to determine if an event has occurred that might prevent the new controller firmware from successfully activating. If such an event has occurred, the controller will normally not activate new firmware.
+
+This parameter forces the controller to activate new firmware. The default value is `FALSE`. Set this value to `TRUE` if you want to force the controller to activate new controller firmware.
+
+|===
+
+== Minimum firmware level
+
+8.10 adds the `healthCheckMelOverride` parameter.

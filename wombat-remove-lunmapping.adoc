@@ -1,0 +1,97 @@
+---
+permalink: wombat-remove-lunmapping.html
+sidebar: sidebar
+keywords: 
+summary: 'The remove lunMapping command removes the logical unit number \(LUN\) or namespace ID \(NSID\) mapping from one or more volumes.'
+---
+= Remove volume LUN mapping
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `remove lunMapping` command removes the logical unit number (LUN) or namespace ID (NSID) mapping from one or more volumes.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+remove (volume ["volumeName"] | accessVolume) lunMapping
+(host="hostName" | hostGroup=("hostGroupName" | defaultGroup)
+----
+
+== Syntax for removing LUN or NSID mapping from more than one volume LUN or NSID mapping
+
+----
+remove (allVolumes | volumes [volumeName1 ... volumeNameN])
+lunMapping
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`volume`
+a|
+The name of a volume from which you are removing the LUN or NSID mapping. Enclose the volume name double quotation marks (" ") inside square brackets ([ ]).
+
+a|
+`accessVolume`
+a|
+This parameter removes the access volume.
+
+a|
+`allVolumes`
+a|
+This parameter removes the LUN mapping from all of the volumes.
+a|
+`volumes`
+a|
+The names of several volumes from which you are removing the LUN or NSID mapping. Enter the names of the volumes using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Separate each of the names with a space.
+
+If the volume names have special characters or consist only of numbers, enter the names using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+a|
+`host`
+a|
+The name of the host to which the volume is mapped. Enclose the host name in double quotation marks (" ").
+
+This parameter works only when you are removing LUN or NSID mapping from one volume.
+
+a|
+`hostGroup`
+a|
+The name of the host group that contains the host to which the volume is mapped. Enclose the host group name in double quotation marks (" "). The `defaultGroup` value is the host group that contains the host to which the volume is mapped.
+
+This parameter works only when you are removing LUN or NSID mapping from one volume.
+
+|===
+
+== Notes
+
+The access volume is the volume in a SAN environment that is used for communication between the storage management software and the storage array controller. The access volume uses a LUN or NSID address and consumes 20 MB of storage space that is not available for application data storage. An access volume is required only for in-band managed storage arrays.
+
+[NOTE]
+====
+*Removing an access volume can damage your configuration* -- The agent uses the access volumes to communicate with a storage array. If you remove an access volume mapping for a storage array from a host that has an agent running on it, the storage management software is no longer able to manage the storage array through the agent.
+====
+
+You must use the `host` parameter and the `hostGroup` parameter when you specify a non-access volume or an access volume. The Script Engine ignores the `host` parameter or the `hostGroup` parameter when you use the `allVolumes` parameter or the `volumes` parameter.
+
+== Minimum firmware level
+
+6.10

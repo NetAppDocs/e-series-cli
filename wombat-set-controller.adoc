@@ -1,0 +1,300 @@
+---
+permalink: wombat-set-controller.html
+sidebar: sidebar
+keywords: 
+summary: 'The set controller command defines the attributes for the controllers.'
+---
+= Set controller
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set controller` command defines the attributes for the controllers.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set controller [(a|b)]
+[availability=(online | offline | serviceMode)]
+[ethernetPort [(1| 2)] ethernetPortOptions]
+[globalNVSRAMByte [nvsramOffset]=(nvsramByteSetting | nvsramBitSetting)]
+[hostNVSRAMByte [hostType, nvsramOffset]=(nvsramByteSetting |nvsramBitSetting)]
+[IPv4GatewayIP=ipAddress]
+[IPv6RouterAddress=ipv6Address]
+[iscsiHostPort [portLabel] iscsiHostPortOptions]
+[rloginEnabled=(TRUE | FALSE)]
+[serviceAllowedIndicator=(on | off)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+The controller for which you want to define properties. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the identifier for the controller in square brackets ([ ]). If you do not specify a controller, the firmware for the controller returns a syntax error.
+a|
+`availability`
+a|
+The mode for the controller, which you can set to `online`, `offline`, or `serviceMode` (service).
+a|
+`ethernetPort`
+a|
+The attributes (options) for the management Ethernet ports. The entries to support this parameter are listed in the Syntax Element Statement Data table that follows. Many settings are possible, including setting the IP address, the gateway address, and the subnet mask address.
+a|
+`globalNVSRAMByte`
+a|
+A portion of the controller NVSRAM. Specify the region to be modified using the starting byte offset within the region and the byte value or bit value of the new data to be stored into the NVSRAM.
+a|
+`hostNVSRAMByte`
+a|
+The NVSRAM for the host-specific region. The setting specifies the host index for the specific host, the starting offset within the region, the number of bytes, and the byte value or bit value of the new data to be stored into the NVSRAM.
+a|
+`IPv4GatewayIP`
+a|
+The IP address of the node that provides the interface to the network. The address format for the IPv4 gateway is *(0--255).(0--255).(0--255).(0--255)*
+a|
+`IPv6RouterAddress`
+a|
+The IP address of IPv6 router that connects two or more logical subnets. The address format for the IPv6 router is `(0–FFFF):(0–FFFF):(0–FFFF):(0–FFFF): (0–FFFF):(0–FFFF):(0–FFFF):(0–FFFF)`.
+a|
+`iscsiHostPort`
+a|
+This parameter enables you to set options for the iSCSI ports on the controller. Enter the iSCSI port label or number and then select the options for that port.
+
+See the following for more information:
+
+<<ESERIES-SECTION_ID_ON_CONREFFED_SECTION,"Identifying an iSCSI host port label">>
+
+a|
+`rloginEnabled`
+a|
+The setting for whether the remote login feature is turned on or turned off. To turn on the remote login feature, set this parameter to `TRUE`. To turn off the remote login feature, set this parameter to `FALSE`.
+a|
+`serviceAllowedIndicator`
+a|
+The setting for whether the Service Action Allowed indicator light is turned on or turned off. To turn on the Service Action Allowed indicator light, set this parameter to `on`. To turn off the Service Action Allowed indicator light, set this parameter to `off`.
+|===
+
+== Identifying an iSCSI host port label
+
+You must specify a label for the host port. Follow these steps to specify the host port label:
+
+. If you do not know the port label for the iSCSI host port, run the `show controller` command.
+. In the Host interface section of the results, locate the host port you want to select.
++
+[NOTE]
+====
+The port label is the complete value returned for the `Port` field.
+====
+
+. Enclose the entire value of the port label in both quotes and square brackets: ["[.code]``portLabel``"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
++
+----
+iscsiHostPort[\"ch 2\"]
+----
++
+[NOTE]
+====
+If you are using a Windows command line and the label contains a pipe (|), the character should be escaped (using {caret}); otherwise, it will be interpreted as a command. For example, if the port label is `e0b|0b`, specify the iSCSI host port as follows:
+====
++
+----
+iscsiHostPort[\"e0b^|0b\"]
+----
+
+[NOTE]
+====
+For backward compatibility, the iscsiPortNumber, enclosed by braces [ ] rather than quotes and braces [" "] can still be used for E2700, E5600, or EF560 controllers (and other previous generations of E-Series or EF-Series controllers). For those controllers, valid values for iscsiPortNumber are as follows:
+
+* For controllers with integrated host ports, the numbering is 3, 4, 5, or 6.
+* For controllers with host ports on a host interface card only, the numbering is 1, 2, 3, or 4.
+
+An example of the prior syntax is as follows:
+
+----
+iscsiHostPort[3]
+----
+
+====
+
+== Options for the ethernetPort parameter
+
+----
+enableIPv4=(TRUE | FALSE) |
+----
+
+----
+enableIPv6=(TRUE | FALSE) |
+----
+
+----
+IPv6LocalAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
+----
+
+----
+IPv6RoutableAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
+----
+
+----
+IPv4Address=(0-255).(0-255).(0-255).(0-255) |
+----
+
+----
+IPv4ConfigurationMethod=[(static | dhcp)] |
+----
+
+----
+IPv4SubnetMask=(0-255).(0-255).(0-255).(0-255) |
+----
+
+----
+duplexMode=(TRUE | FALSE) |
+----
+
+----
+portSpeed=[(autoNegotiate | 10 | 100 | 1000)]
+----
+
+== Options for the iSCSIHostPort parameter
+
+----
+IPv4Address=(0-255).(0-255).(0-255).(0-255) |
+----
+
+----
+IPv6LocalAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
+----
+
+----
+IPv6RoutableAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
+----
+
+----
+IPv6RouterAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
+----
+
+----
+enableIPv4=(TRUE | FALSE) | enableIPv6=(TRUE | FALSE) |
+----
+
+----
+enableIPv4Vlan=(TRUE | FALSE) | enableIPv6Vlan=(TRUE | FALSE) |
+----
+
+----
+enableIPv4Priority=(TRUE | FALSE) | enableIPv6Priority=(TRUE | FALSE) |
+----
+
+----
+IPv4ConfigurationMethod=(static | dhcp) |
+----
+
+----
+IPv6ConfigurationMethod=(static | auto) |
+----
+
+----
+IPv4GatewayIP=(TRUE | FALSE) |
+----
+
+----
+IPv6HopLimit=[0-255] |
+----
+
+----
+IPv6NdDetectDuplicateAddress=[0-256] |
+----
+
+----
+IPv6NdReachableTime=[0-65535] |
+----
+
+----
+IPv6NdRetransmitTime=[0-65535] |
+----
+
+----
+IPv6NdTimeOut=[0-65535] |
+----
+
+----
+IPv4Priority=[0-7] | IPv6Priority=[0-7] |
+----
+
+----
+IPv4SubnetMask=(0-255).(0-255).(0-255).(0-255) |
+----
+
+----
+IPv4VlanId=[1-4094] | IPv6VlanId=[1-4094] |
+----
+
+----
+maxFramePayload=[*frameSize*] |
+----
+
+----
+tcpListeningPort=[3260, 49152-65536] |
+----
+
+----
+portSpeed=[( 10 | 25)]
+----
+
+== Notes
+
+[NOTE]
+====
+Before firmware version 7.75, the `set controller` command supported an `NVSRAMByte` parameter. The `NVSRAMByte` parameter is deprecated and must be replaced with either the `hostNVSRAMByte` parameter or the `globalNVSRAMByte` parameter.
+====
+
+When you use this command, you can specify one or more of the parameters. You do not need to use all of the parameters.
+
+Setting the `availability` parameter to `serviceMode` causes the alternate controller to take ownership of all of the volumes. The specified controller no longer has any volumes and refuses to take ownership of any more volumes. Service mode is persistent across reset cycles and power cycles until the `availability` parameter is set to `online`.
+
+Use the `show controller NVSRAM` command to show the NVSRAM information. Before making any changes to the NVSRAM, contact technical support to learn what regions of the NVSRAM you can modify.
+
+When the `duplexMode` option is set to `TRUE`, the selected Ethernet port is set to full duplex. The default value is half duplex (the `duplexMode` parameter is set to `FALSE`).
+
+To make sure that the IPv4 settings or the IPv6 settings are applied, you must set these `iscsiHostPort` options:
+
+* `enableIPV4=` `TRUE`
+* `enableIPV6=` `TRUE`
+
+The IPv6 address space is 128 bits. It is represented by eight 16-bit hexadecimal blocks separated by colons.
+
+The `maxFramePayload` option is shared between IPv4 and IPv6. The payload portion of a standard Ethernet frame is set to `1500`, and a jumbo Ethernet frame is set to `9000`. When using jumbo frames, all of the devices that are in the network path should be capable of handling the larger frame size.
+
+The `portSpeed` option is expressed as megabits per second (Mb/s).
+
+Values for the `portSpeed` option of the `iscsiHostPort` parameter are in megabits per second (Mb/s).
+
+The following values are the default values for the `iscsiHostOptions`:
+
+* The `IPv6HopLimit` option is `64`.
+* The `IPv6NdReachableTime` option is `30000` milliseconds.
+* The `IPv6NdRetransmitTime` option is `1000` milliseconds.
+* The `IPv6NdTimeOut` option is `30000` milliseconds.
+* The `tcpListeningPort` option is `3260`.
+
+== Minimum firmware level
+
+7.15 removes the `bootp` parameter, and adds the new Ethernet port options and the new iSCSI host port options.
+
+7.50 moves the `IPV4Gateway` parameter and the `IPV6RouterAddress` parameter from the iSCSI host port options to the command.
+
+7.60 adds the `portSpeed` option of the `iscsiHostPort` parameter.
+
+7.75 deprecates the `NVSRAMByte` parameter.
+
+8.10 revises the identification method for iSCSI host ports.

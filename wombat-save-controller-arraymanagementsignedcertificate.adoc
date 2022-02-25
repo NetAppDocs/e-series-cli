@@ -1,0 +1,59 @@
+---
+permalink: wombat-save-controller-arraymanagementsignedcertificate.html
+sidebar: sidebar
+keywords: 
+summary: 'The save controller arrayManagementSignedCertificate command retrieves the installed server certificate for the controller so you can view certificate details.'
+---
+= Retrieve installed server certificate
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save controller arrayManagementSignedCertificate` command retrieves the installed server certificate for the controller so you can view certificate details.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+
+save controller [(a|b)] arrayManagementSignedCertificate
+     file="filename"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+Allows you to specify the controller on which you want to download the signed certificate from. Valid controller identifiers are a or b, where a is the controller in slot A, and b is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
+a|
+`file`
+a|
+Allows you to specify the file for which to save the controller's signed certificate file.
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "save controller [a] arrayManagementSignedCertificate
+   file="C:\controllerAcertificate.cer";"
+
+SMcli -n Array1 -c "save controller [b] arrayManagementSignedCertificate
+   file="C:\controllerBcertificate.cer";"
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

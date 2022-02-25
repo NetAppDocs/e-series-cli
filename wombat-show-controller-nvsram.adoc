@@ -1,0 +1,61 @@
+---
+permalink: wombat-show-controller-nvsram.html
+sidebar: sidebar
+keywords: 
+summary: 'The show controller NVSRAM command returns information about NVSRAM byte values.'
+---
+= Show controller NVSRAM
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show controller NVSRAM` command returns information about NVSRAM byte values.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+This command returns a list of the NVSRAM byte values for the specified host type. If you do not enter the optional parameters, this command returns a list of all of the NVSRAM byte values.
+
+This command returns a list of the NVSRAM byte values for the specified host type. If you do not enter the optional parameters, this command returns a list of all of the NVSRAM byte values.
+
+This command returns a list of the NVSRAM byte values for the specified host type. If you do not enter the optional parameters, this command returns a list of all of the NVSRAM byte values.
+
+== Syntax
+
+----
+show (allControllers | controller [(a|b)])
+NVSRAM [hostType=hostTypeIndexLabel | host="hostName"]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`allControllers`
+a|
+The setting to return information about both controllers in the storage array.
+a|
+`controller`
+a|
+The setting to return information about a specific controller in the storage array. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
+a|
+`hostType`
+a|
+The index label or number of the host type. Use the `show storageArray hostTypeTable` command to generate a list of available host type identifiers.
+a|
+`host`
+a|
+The name of the host that is connected to the controllers. Enclose the host name in double quotation marks (" ").
+|===
+
+== Notes
+
+Use the `show controller NVSRAM` command to show parts of or all of the NVSRAM before using the `set controller` command to change the NVSRAM values. Before making any changes to the NVSRAM, contact technical support to learn what regions of the NVSRAM you can modify.

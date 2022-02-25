@@ -1,0 +1,55 @@
+---
+permalink: wombat-remove-asyncmirrorgroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The remove asyncMirrorGroup command removes an orphaned mirrored pair volume on the storage array.'
+---
+= Remove incomplete asynchronous mirrored pair from asynchronous mirror group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `remove asyncMirrorGroup` command removes an orphaned mirrored pair volume on the storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+An orphaned mirrored pair volume exists when a member volume in an asynchronous mirror group has been removed on one side of the asynchronous mirror group (either the primary side or secondary side) but not on the other side.
+
+Orphan mirrored pair volumes are detected when inter-controller communication is restored and the two sides of the mirror configuration reconcile mirror parameters.
+
+Use this command when the mirror relationship is successfully removed on the local or remote storage array, but cannot be removed on the corresponding storage array because of a communication problem.
+
+== Syntax
+
+----
+remove asyncMirrorGroup ["asyncMirrorGroupName"]
+incompleteMirror volume="volumeName"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`asyncMirrorGroup`
+a|
+The name of the asynchronous mirror group that contains the orphaned volume that you want to remove. Enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets ([ ]).
+
+a|
+`volume`
+a|
+The name of the orphaned volume that you want to remove from the asynchronous mirror group. Enclose the volume name in double quotation marks (" ").
+
+|===
+
+== Minimum firmware level
+
+7.84

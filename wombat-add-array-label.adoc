@@ -1,0 +1,51 @@
+---
+permalink: wombat-add-array-label.html
+sidebar: sidebar
+keywords: 
+summary: 'The Add array label command allows you to add a storage array to the configuration with a user-defined label. This allows later commands to address the storage array by the user-defined label rather than by IP address or host name.'
+---
+= Add array label
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `Add array label` command allows you to add a storage array to the configuration with a user-defined label. This allows later commands to address the storage array by the user-defined label rather than by IP address or host name.
+
+== Supported Arrays
+
+[NOTE]
+====
+The user-defined label provided does not need to match the storage array's name as displayed in System Manager. This is a local label that is only used for referencing the storage array from the CLI.
+====
+
+This command applies to the EF600 and EF300 storage arrays.
+
+== Syntax
+
+----
+
+        Address1 Address2 add storageArrayLabel label userDefinedString
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`Address`
+a|
+Allows you to specify the IP address (IPv4 or IPv6) or fully qualified host name for the storage array.
+[NOTE]
+====
+The `Address2` value is optional.
+====
+
+a|
+`userDefinedString`
+a|
+Allows you to specify a label for the storage array.
+|===
+
+== Minimum firmware level
+
+8.60

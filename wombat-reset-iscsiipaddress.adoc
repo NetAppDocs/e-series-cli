@@ -1,0 +1,61 @@
+---
+permalink: wombat-reset-iscsiipaddress.html
+sidebar: sidebar
+keywords: 
+summary: 'The reset iscsiIpAddress command resets the IP address of the remote storage array to re-establish connection with the local storage array.'
+---
+= Reset iSCSI IP address
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `reset iscsiIpAddress` command resets the IP address of the remote storage array to re-establish connection with the local storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, with some restrictions. If you are running the command on the E2700 or E5600 array, there are no restrictions.
+
+[NOTE]
+====
+If you are running the command on the E2800, or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+====
+
+== Roles
+
+To execute this command on an E2800, or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+You can use this command to notify the local storage array that the iSCSI IP address of the remote storage array has changed and needs to be updated.
+
+When establishing an asynchronous mirroring relationship with an iSCSI connection, both the local and the remote storage arrays store a record of the IP address of the remote storage array in the asynchronous mirroring configuration. If the IP address of an iSCSI port changes, the remote storage array that is attempting to use that port encounters a communication error.
+
+The storage array with the changed IP address sends a message to each remote storage array associated with the asynchronous mirror groups that are configured to mirror over an iSCSI connection. Storage arrays that receive this message automatically update their remote-target IP address.
+
+If the storage array with the changed IP address is unable to send its inter-controller message to a remote storage array, the system sends you an alert of the connectivity issue. Use the `reset` command to re-establish connection with the local storage array.
+
+== Syntax
+
+----
+reset (remoteStorageArrayName="storageArrayName" | remoteStorageArrayWwid=<wwID>)
+iscsiIpAddress
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`remoteStorageArrayName`
+a|
+The name for the remote storage array for which you are resetting the iSCSI IP address. Enclose the storage array name in double quotation marks (" ").
+
+a|
+`remoteStorageArrayWwid`
+a|
+The World Wide Identifier (WWID) of the storage array for which you are resetting the iSCSI IP address. You can use the WWID instead of the storage array name to identify the storage array. Enclose the WWID in angle brackets (< >).
+|===
+
+== Minimum firmware level
+
+7.84

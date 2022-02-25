@@ -1,0 +1,48 @@
+---
+permalink: mongoose-performance-tuning-commands.html
+sidebar: sidebar
+keywords: create ssdCache,delete ssdCache,resume ssdCache,save storageArray autoLoadBalanceStatistics file,set ssdCache,set ssdCache \(remove drives\),set ssdCache \(renaming\),set storageArray autoLoadBalancingEnable,set volume ssdCacheEnabled,show ssdCache,show ssdCache \(statistics\),start ssdCache locate,start ssdCache performanceModeling,stop ssdCache locate,stop ssdCache performanceModeling,suspend ssdCache
+summary: ''
+---
+= Performance tuning commands
+:icons: font
+:imagesdir: ./media/
+
+* *<<GUID-B4A7F384-EAC4-41AD-B25C-6BD0456F4118,Automatic load balancing commands>> | <<GUID-1B7D7168-7D42-441B-BC79-669315F3CF76,SSD cache commands>>*
+* *Automatic load balancing commands*
++
+xref:wombat-save-storagearray-autoloadbalancestatistics-file.adoc[Save auto-load balancing statistics]
++
+link:wombat-set-storagearray-autoloadbalancingenable.md#[Set storage array to enable or disable auto-load balancing]
+
+* *SSD cache commands*
++
+xref:wombat-add-drives-to-ssd-cache.adoc[Add drives to SSD cache]
++
+xref:wombat-change-ssd-cache-application-type.adoc[Change SSD cache application type]
++
+xref:wombat-create-ssdcache.adoc[Create SSD cache]
++
+xref:wombat-delete-ssdcache.adoc[Delete SSD cache]
++
+xref:wombat-remove-drives-from-ssd-cache.adoc[Remove drives from SSD cache]
++
+xref:wombat-rename-ssd-cache.adoc[Rename SSD cache]
++
+xref:wombat-resume-ssdcache.adoc[Resume SSD cache]
++
+xref:wombat-set-volume-ssdcacheenabled.adoc[Set SSD cache for a volume]
++
+xref:wombat-show-ssd-cache.adoc[Show SSD cache]
++
+xref:wombat-show-ssd-cache-statistics.adoc[Show SSD cache statistics]
++
+xref:wombat-start-ssdcache-locate.adoc[Start SSD cache locate]
++
+xref:wombat-start-ssdcache-performancemodeling.adoc[Start SSD cache performance modeling]
++
+xref:wombat-stop-ssdcache-locate.adoc[Stop SSD cache locate]
++
+xref:wombat-stop-ssdcache-performancemodeling.adoc[Stop SSD cache performance modeling]
++
+xref:wombat-suspend-ssdcache.adoc[Suspend SSD cache]

@@ -1,0 +1,75 @@
+---
+permalink: wombat-save-storagearray-dbmvalidatorinfo.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray dbmValidatorInfo command saves the database management \(DBM\) validation information for a storage array in an XML file.'
+---
+= Save storage array DBM validator information file
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray dbmValidatorInfo` command saves the database management (DBM) validation information for a storage array in an XML file.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+Technical support can use this XML file to generate a validator string (a security code). The validator string must be included in the `load storageArray dbmDatabase` command when restoring a storage array back to a pre-existing configuration.
+
+== Syntax
+
+----
+save storageArray dbmValidatorInfo file="filename" dbmDatabase="filename"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name of the DBM validator required for technical support. Enclose the file name in double quotation marks (" "). For example:
+
+`file="C:\Array Backups \DBMvalidator.xml"` This command does not automatically append a file extension to the saved file. You must specify the .xml file extension when you enter the file name.
+
+a|
+`dbmDatabase`
+a|
+The file path and the file name of the DBM database from which you want to generate the XML information file. Enclose the file name in double quotation marks (" "). For example:
+
+`dbmDatabase="C:\Array Backups \DBMbackup_03302010.dbm"` This command does not automatically append a file extension to the saved file. You must specify the .dbm file extension when you enter the file name.
+
+|===
+
+== Notes
+
+If you are generating the XML information file to obtain a validator string, you must run this command while you are connected to the controller where you intend to restore the database. The following example show the format of the XML file:
+
+----
+<?xml version="1.0" encoding="utf-8"?>
+<DbmImageMetadata>
+<Controllers>
+<A>1IT0nnnnnnnnnABCD</A>
+<B>1T0nnnnnnnnnABCD</B>
+</Controllers>
+<Header>
+<ImageVersion>1</ImageVersion>
+<TimeStamp>1269388283</TimeStamp>
+</Header>
+<Trailer>
+<CRC>nnnnnnnnnn</CRC><
+/Trailer>
+</DbmImageMetadata>
+----
+
+== Minimum firmware level
+
+7.75

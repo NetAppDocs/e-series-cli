@@ -1,0 +1,298 @@
+---
+permalink: wombat-create-raid-volume-manual-drive-select.html
+sidebar: sidebar
+keywords: 
+summary: 'The create volume command creates a new volume group and volume, and lets you specify the drives for the volume.'
+---
+= Create RAID volume (manual drive select)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create volume` command creates a new volume group and volume, and lets you specify the drives for the volume.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+create volume drives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn)
+[volumeGroupUserLabel="volumeGroupName"]
+raidLevel=(0 | 1 | 3 | 5 | 6)
+userLabel="volumeName"
+[capacity=volumeCapacity]
+[owner=(a|b)]
+[cacheReadPrefetch=(TRUE | FALSE)]
+[segmentSize=segmentSizeValue]
+[usageHint=(fileSystem | dataBase | multiMedia)]
+[trayLossProtect=(TRUE | FALSE)]
+[drawerLossProtect=(TRUE | FALSE)]
+[dssPreAllocate=(TRUE | FALSE)]
+[securityType=(none | capable | enabled )]
+[dataAssurance=(none | enabled)]
+[resourceProvisioningCapable=(TRUE | FALSE)]
+----
+
+----
+create volume drives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn)
+[volumeGroupUserLabel="volumeGroupName"]
+raidLevel=(0 | 1 | 5 | 6)
+userLabel="volumeName"
+[capacity=volumeCapacity]
+[owner=(a|b)]
+[cacheReadPrefetch=(TRUE | FALSE)]
+[segmentSize=segmentSizeValue]
+[usageHint=(fileSystem | dataBase | multiMedia)]
+[trayLossProtect=(TRUE | FALSE)]
+[drawerLossProtect=(TRUE | FALSE)]
+[dssPreAllocate=(TRUE | FALSE)]
+[securityType=(none | capable | enabled )]
+[dataAssurance=(none | enabled)]
+[resourceProvisioningCapable=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`drives`
+a|
+The drives that you want to assign to the volume that you want to create. For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+a|
+`volumeGroupUserLabel`
+a|
+The name that you want to give the new volume group. Enclose the volume group name in double quotation marks (" ").
+[NOTE]
+====
+If you do not specify a user label for the volume group, the controller firmware assigns it a number.
+====
+
+a|
+`raidLevel`
+a|
+The RAID level of the volume group that contains the volume. Valid values are `0`, `1`, `3`, `5`, or `6`.
+a|
+`userLabel`
+a|
+The name that you want to give the new volume. Enclose the new volume name in double quotation marks (" ").
+[NOTE]
+====
+This parameter is required.
+====
+
+a|
+`capacity`
+a|
+The size of the volume that you are adding to the storage array. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`.
+a|
+`owner`
+a|
+The controller that owns the volume. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. If you do not specify an owner, the controller firmware determines the owner.
+a|
+`cacheReadPrefetch`
+a|
+The setting to turn on or turn off cache read prefetch. To turn off cache read prefetch, set this parameter to `FALSE`. To turn on cache read prefetch, set this parameter to `TRUE`.
+a|
+`segmentSize`
+a|
+The amount of data (in KB) that the controller writes on a single drive in a volume before writing data on the next drive. Valid values are``4 (SSD only)```8`, `16`, `32`, `64`, `128`, `256`, or `512`.
+a|
+`usageHint`
+a|
+The settings for both the `cacheReadPrefetch` parameter and the `segmentSize` parameter to be default values. The default values are based on the typical I/O usage pattern of the application that is using the volume. Valid values are `fileSystem`, `dataBase`, or `multiMedia`.
+a|
+`trayLossProtect`
+a|
+The setting to enforce tray loss protection when you create the repository. To enforce tray loss protection, set this parameter to `TRUE`. The default value is `FALSE`.
+a|
+`drawerLossProtect`
+a|
+The setting to enforce drawer loss protection when you create the mirrored repository volume. To enforce drawer loss protection, set this parameter to `TRUE`. The default value is `FALSE`.
+a|
+`dssPreAllocate`
+a|
+The setting to make sure that reserve capacity is allocated for future segment size increases. This default value is `TRUE`.
+a|
+`securityType`
+a|
+The setting to specify the security level when creating the volume groups and all associated volumes. These settings are valid:
+
+* `none` -- The volume group and volumes are not secure.
+* `capable` -- The volume group and volumes are capable of having security set, but security has not been enabled.
+* `enabled` -- The volume group and volumes have security enabled.
+
+a|
+`resourceProvisioningCapable`
+a|
+The setting to specify if resource provisioning capabilities are enabled. To disable resource provisioning, set this parameter to `FALSE`. The default value is `TRUE`.
+
+|===
+
+== Notes
+
+The `drives` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+
+If you set the `raidLevel` parameter to RAID level 1:
+
+* There are an even number of drives in the group, by RAID 1 definition
+* The first half of the group, in listed order (and in stripe order), are primary drives
+* The second half of the group, in listed order (and in stripe order), are the corresponding mirror drives
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+The `owner` parameter defines which controller owns the volume. The preferred controller ownership of a volume is the controller that currently owns the volume group.
+
+If you do not specify a capacity using the `capacity` parameter, all of the drive capacity that is available in the volume group is used. If you do not specify capacity units, `bytes` is used as the default value.
+
+== Tray loss protection and drawer loss protection
+
+For tray loss protection to work, your configuration must adhere to the following guidelines:
+
+|===
+| Level| Criteria for Tray Loss Protection| Minimum number of trays required
+a|
+Disk Pool
+a|
+The disk pool contains no more than two drives in a single tray.
+a|
+6
+a|
+RAID 6
+a|
+The volume group contains no more than two drives in a single tray.
+a|
+3
+a|
+RAID 3 or RAID 5
+a|
+Each drive in the volume group is located in a separate tray.
+a|
+3
+a|
+RAID 1
+a|
+Each drive in a RAID 1 pair must be located in a separate tray.
+a|
+2
+a|
+RAID 0
+a|
+Cannot achieve Tray Loss Protection.
+a|
+Not applicable
+|===
+For drawer loss protection to work (in high density enclosure environments), your configuration must adhere to the following guidelines:
+
+|===
+| Level| Criteria for drawer loss protection| Minimum number of drawers required
+a|
+Disk Pool
+a|
+The pool includes drives from all five drawers and there are an equal number of drives in each drawer. A 60-drive tray can achieve Drawer Loss Protection when the disk pool contains 15, 20, 25, 30, 35, 40, 45, 50, 55, or 60 drives.
+a|
+5
+a|
+RAID 6
+a|
+The volume group contains no more than two drives in a single drawer.
+a|
+3
+a|
+RAID 3 or RAID 5
+a|
+Each drive in the volume group is located in a separate drawer.
+a|
+3
+a|
+RAID 1
+a|
+Each drive in a mirrored pair must be located in a separate drawer.
+a|
+2
+a|
+RAID 0
+a|
+Cannot achieve Drawer Loss Protection.
+a|
+Not applicable
+|===
+
+== Segment size
+
+The size of a segment determines how many data blocks that the controller writes on a single drive in a volume before writing data on the next drive. Each data block stores 512 bytes of data. A data block is the smallest unit of storage. The size of a segment determines how many data blocks that it contains. For example, an 8-KB segment holds 16 data blocks. A 64-KB segment holds 128 data blocks.
+
+When you enter a value for the segment size, the value is checked against the supported values that are provided by the controller at run time. If the value that you entered is not valid, the controller returns a list of valid values. Using a single drive for a single request leaves other drives available to simultaneously service other requests. If the volume is in an environment where a single user is transferring large units of data (such as multimedia), performance is maximized when a single data transfer request is serviced with a single data stripe. (A data stripe is the segment size that is multiplied by the number of drives in the volume group that are used for data transfers.) In this case, multiple drives are used for the same request, but each drive is accessed only once.
+
+For optimal performance in a multiuser database or file system storage environment, set your segment size to minimize the number of drives that are required to satisfy a data transfer request.
+
+== Usage Hint
+
+[NOTE]
+====
+You do not need to enter a value for the `cacheReadPrefetch` parameter or the `segmentSize` parameter. If you do not enter a value, the controller firmware uses the `usageHint` parameter with `fileSystem` as the default value. Entering a value for the `usageHint` parameter and a value for the `cacheReadPrefetch` parameter or a value for the `segmentSize` parameter does not cause an error. The value that you enter for the `cacheReadPrefetch` parameter or the `segmentSize` parameter takes priority over the value for the `usageHint` parameter. The segment size and cache read prefetch settings for various usage hints are shown in the following table:
+====
+
+|===
+| Usage hint| Segment size setting| Dynamic cache read prefetch setting
+a|
+File system
+a|
+128 KB
+a|
+Enabled
+a|
+Database
+a|
+128 KB
+a|
+Enabled
+a|
+Multimedia
+a|
+256 KB
+a|
+Enabled
+|===
+
+== Cache read prefetch
+
+Cache read prefetch lets the controller copy additional data blocks into cache while the controller reads and copies data blocks that are requested by the host from the drive into cache. This action increases the chance that a future request for data can be fulfilled from cache. Cache read prefetch is important for multimedia applications that use sequential data transfers. Valid values for the `cacheReadPrefetch` parameter are `TRUE` or `FALSE`. The default is `TRUE`.
+
+You do not need to enter a value for the `cacheReadPrefetch` parameter or the `segmentSize` parameter. If you do not enter a value, the controller firmware uses the `usageHint` parameter with `fileSystem` as the default value. Entering a value for the `usageHint` parameter and a value for the `cacheReadPrefetch` parameter or a value for the `segmentSize` parameter does not cause an error. The value that you enter for the `cacheReadPrefetch` parameter or the `segmentSize` parameter takes priority over the value for the `usageHint` parameter.
+
+== Security type
+
+Use the `securityType` parameter to specify the security settings for the storage array.
+
+Before you can set the `securityType` parameter to `enabled`, you must create a storage array security key. Use the `create storageArray securityKey` command to create a storage array security key. These commands are related to the security key:
+
+* `create storageArray securityKey`
+* `export storageArray securityKey`
+* `import storageArray securityKey`
+* `set storageArray securityKey`
+* `enable volumeGroup [volumeGroupName] security`
+* `enable diskPool [diskPoolName] security`
+
+== Minimum firmware level
+
+7.10 adds RAID Level 6 capability and the `dssPreAllocate` parameter.
+
+7.50 adds the `securityType` parameter.
+
+7.60 adds the _drawerID_ user input and the `drawerLossProtect` parameter.
+
+7.75 adds the `dataAssurance` parameter.
+
+8.63 adds the `resourceProvisioningCapable` parameter.

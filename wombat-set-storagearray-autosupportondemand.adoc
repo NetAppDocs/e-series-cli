@@ -1,0 +1,65 @@
+---
+permalink: wombat-set-storagearray-autosupportondemand.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray autoSupportOnDemand command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data.'
+---
+= Enable or disable the AutoSupport OnDemand feature (for individual E2800 or E5700 arrays)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray autoSupportOnDemand` command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Context
+
+Before enabling this feature, you must first enable the AutoSupport feature on the storage array. After enabling this feature, you can next enable the AutoSupport Remote Diagnostics feature (if desired).
+
+image::../media/baseasup_w_second_enable.gif[]
+
+== Syntax
+
+----
+set storageArray autoSupportOnDemand (enable | disable)
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`enable | disable`
+a|
+Allows the user to enable or disable AutoSupport OnDemand feature. If AutoSupport is disabled, the enable action will error and asks the user to enable it first. If the Remote Diagnostics feature is enabled, the disable action will also turn off Remote Diagnostics feature.
+|===
+
+== Examples
+
+----
+
+   SMcli -n Array1 -c "set storageArray autoSupportOnDemand enable;"
+
+   SMcli completed successfully.
+----
+
+== Verification
+
+Use the `show storageArray autoSupport` command to see if you have enabled the feature. The initial two lines of the displayed output show the enable status of the AutoSupport feature, followed by the AutoSupport OnDemand feature:
+
+----
+   The AutoSupport is enabled on this storage array.
+   The AutoSupport OnDemand feature is enabled on this storage array.
+   The AutoSupport Remote Diagnostics feature is enabled on this storage array.
+----
+
+== Minimum Firmware Level
+
+8.40

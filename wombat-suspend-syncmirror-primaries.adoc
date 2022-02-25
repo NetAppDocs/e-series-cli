@@ -1,0 +1,84 @@
+---
+permalink: wombat-suspend-syncmirror-primaries.html
+sidebar: sidebar
+keywords: 
+summary: 'The suspend syncMirror primaries command suspends a synchronous mirroring operation.'
+---
+= Suspend synchronous mirroring
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `suspend syncMirror primaries` command suspends a synchronous mirroring operation.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+In previous versions of this command the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `syncMirror`.
+====
+
+== Syntax
+
+----
+suspend syncMirror (primary [primaryVolumeName]
+primaries [primaryVolumeName1 ... primaryVolumeNameN])
+[writeConsistency=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`primary`
+a|
+The name of the primary volume for which you want to suspend operation. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
+
+a|
+`primaries`
+a|
+The names of several primary volumes for which you want to suspend operations. All of the volumes will have the same properties. Enter the names of the volumes using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Separate each of the names with a space.
+
+If the volume names have special characters or numbers, enter the names using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+a|
+`writeConsistency`
+a|
+This parameter defines whether the volumes identified in this command are in a write-consistency group or are separate. For the volumes in the same write-consistency group, set this parameter to `TRUE`. For the volumes that are separate, set this parameter to `FALSE`.
+|===
+
+== Notes
+
+If you set the `writeConsistency` parameter to `TRUE`, the volumes must be in a write-consistency group (or groups). This command suspends all write-consistency groups that contain the volumes. For example, if volumes A, B, and C are in a write-consistency group and they have remote counterparts A`', B`', and C`', the command:
+
+----
+suspend syncMirror volume ["A"] writeConsistency=TRUE
+----
+
+suspends A-A`', B-B`', and C-C`'. If you have a write-consistency group 1={A, B, C} and write-consistency group 2={D, E, F}, the command:
+
+----
+suspend syncMirror volumes ["A" "D"] writeConsistency=TRUE
+----
+
+suspends both write-consistency groups.
+
+== Minimum firmware level
+
+6.10

@@ -1,0 +1,47 @@
+---
+permalink: wombat-stop-drivechannel-faultdiagnostics.html
+sidebar: sidebar
+keywords: 
+summary: 'The stop driveChannel faultDiagnostics command stops the drive channel fault isolation diagnostics, which stops the start drive channel fault isolation diagnostics command before it completes.'
+---
+= Stop drive channel fault isolation diagnostics
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `stop driveChannel faultDiagnostics` command stops the drive channel fault isolation diagnostics, which stops the `start drive channel fault isolation diagnostics` command before it completes.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+With firmware version 8.10, the `stop driveChannel faultDiagnostics` command is deprecated.
+====
+
+== Syntax
+
+----
+stop driveChannel faultDiagnostics
+----
+
+== Parameters
+
+None.
+
+== Notes
+
+Use the `start driveChannel faultDiagnostics` command and the `save driveChannel faultDiagnostics` command with the `stop driveChannel faultDiagnostics` command. These commands are needed to start the diagnostic test and save diagnostic test results to a file.
+
+You also can stop the `start driveChannel faultDiagnostics` command at any time by pressing *Ctrl+C*.
+
+== Minimum firmware level
+
+7.15

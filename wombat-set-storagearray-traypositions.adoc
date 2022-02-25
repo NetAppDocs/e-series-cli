@@ -1,0 +1,56 @@
+---
+permalink: wombat-set-storagearray-traypositions.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray trayPositions command defines the position of the trays in a storage array. You must include all of the trays in the storage array when you enter this command.'
+---
+= Set storage array tray positions
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray trayPositions` command defines the position of the trays in a storage array. You must include all of the trays in the storage array when you enter this command.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set storageArray trayPositions=(controller | trayID ... trayIDn)
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`trayPositions`
+a|
+A list of all of the tray IDs. The sequence of the tray IDs in the list defines the positions for the controller tray and the drive trays in a storage array. Valid values are `0` to `99`. Enter the tray ID values separated with a space. Enclose the list of tray ID values in parentheses. For storage arrays where the controller tray has a predefined identifier that is not in the range of valid tray position values, use the `controller` value.
+|===
+
+== Notes
+
+This command defines the position of a tray in a storage array by the position of the tray ID in the `trayPositions` list. For example, if you have a controller tray with an ID set to 84 and drive trays with IDs set to 1, 12, and 50, the `trayPositions` sequence (`84 1 12 50`) places the controller tray in the first position, drive tray 1 in the second position, drive tray 12 in the third position, and drive tray 50 in the fourth position. The `trayPositions` sequence (`1 84 50 12`) places the controller tray in the second position, drive tray 1 in the first position, drive tray 50 in the third position, and drive tray 12 in the fourth position.
+
+[NOTE]
+====
+You must include all of the trays in the storage array in the list defined by the `trayPositions` parameter. If the number of trays in the list does not match the total number of trays in the storage array, an error message appears.
+====
+
+[NOTE]
+====
+The management software visually shows the first position on top, and the other positions in relative order beneath with the last position on the bottom.
+====
+
+== Minimum firmware level
+
+6.10
+
+For 6.14 and 6.16, `controller` is not a valid value.

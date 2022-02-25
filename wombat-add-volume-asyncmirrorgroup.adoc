@@ -1,0 +1,97 @@
+---
+permalink: wombat-add-volume-asyncmirrorgroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The add volume asyncMirrorGroup command adds a primary volume to an asynchronous mirror group.'
+---
+= Add volume to asynchronous mirror group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `add volume asyncMirrorGroup` command adds a primary volume to an asynchronous mirror group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, with some restrictions. If you are running the command on the E2700 or E5600 array, there are no restrictions.
+
+[NOTE]
+====
+If you are running the command on the E2800 or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+====
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+This command is valid only on the local storage array that contains the asynchronous mirror group to which you want to add the primary volume. An asynchronous mirror group has a repository volume that is used to save data for all of the point-in-time images that are part of the asynchronous mirror group. Each primary volume in the asynchronous mirror group has a corresponding mirror volume on a remote storage array.
+
+== Syntax
+
+----
+add volume="volumeName" asyncMirrorGroup="asyncMirrorGroupName"
+remotePassword="password"
+(repositoryVolume="repos_xxxx" |
+repositoryVolume=(volumeGroupName [capacity=capacityValue])
+repositoryVolume=(diskPoolName [capacity=capacityValue]))
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`volume`
+a|
+The name of the primary volume that you want to add to the asynchronous mirror group. Enclose the volume name in double quotation marks (" ").
+
+a|
+`asyncMirrorGroup`
+a|
+The name of the asynchronous mirror group that will contain the primary volume that you want to add. Enclose the asynchronous mirror group name in double quotation marks (" ").
+
+a|
+`remotePassword`
+a|
+This parameter is optional. Use this parameter when the remote storage array is password protected. Enclose the password in double quotation marks (" ").
+
+a|
+`repositoryVolume`
+a|
+The name of the repository volume that will contain the changed data from the primary volume.
+
+You have two options for defining the name of a repository volume:
+
+* Use an existing repository volume: name.
+* Create a new repository volume when you run this command.
+
+The name of an existing repository volume is comprised of two parts:
+
+* The term repos.
+* A four digit numerical identifier that the storage management software assigns to the repository volume name.
+
+Enclose the name of the existing repository volume in double quotation marks (" ").
+
+If you want to create a new repository volume when you run this command you must enter the name of either a a volume group or a disk pool in which you want the repository volume. Optionally, you also can define the capacity of the repository volume. If you want to define the capacity you can use these values:
+
+* An integer value that represents a percentage of the base volume capacity.
+* A decimal fraction value that represents a percentage of the base volume capacity.
+* A specific size for the repository volume. Size is defined in units of `bytes` , `KB` , `MB` , `GB` , or `TB` .
+
+If you do not define the capacity, the storage management software sets the capacity to 20 percent of the primary volume capacity.
+
+The storage management software creates the repository volume and links the repository volume to the primary volume.
+
+|===
+
+== Notes
+
+* The asynchronous mirroring feature must be enabled and activated on the local and remote storage arrays that will be used for mirror activities.
+* The local and remote storage arrays must be connected through a proper Fibre Channel fabric or iSCSI interface.
+* The remote storage array must have a volume that has a capacity that is greater than or equal to the capacity of the primary volume on the local storage array. The volume on the remote storage array will be used as the mirror volume.
+
+== Minimum firmware level
+
+7.84

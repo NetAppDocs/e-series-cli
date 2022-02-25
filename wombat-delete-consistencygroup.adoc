@@ -1,0 +1,52 @@
+---
+permalink: wombat-delete-consistencygroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The delete consistencyGroup command deletes a snapshot consistency group.'
+---
+= Delete consistency group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete consistencyGroup` command deletes a snapshot consistency group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+This command works in two ways:
+
+* You can delete both the consistency group and the repository volumes contained by the consistency group.
+* You can delete only the consistency group and leave the repository volumes that are contained by the consistency group intact.
+
+== Syntax
+
+----
+delete consistencyGroup ["consistencyGroupName"]
+[deleteRepositoryMembers=(TRUE | FALSE)]
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`consistencyGroup`
+a|
+The name of the snapshot consistency group that you want to delete. Enclose the snapshot consistency group name in double quotation marks (" ") inside square brackets ([ ]).
+a|
+`deleteRepositoryMembers`
+a|
+The setting to delete on or retain the repository volumes. To delete the repository volumes, set this parameter to `TRUE`. To retain the repository volumes, set this parameter to `FALSE`. The default setting is `FALSE`.
+|===
+
+== Minimum firmware level
+
+7.83

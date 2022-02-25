@@ -1,0 +1,44 @@
+---
+permalink: wombat-start-volumegroup-locate.html
+sidebar: sidebar
+keywords: 
+summary: 'The start volumeGroup locate command identifies the drives that are logically grouped together to form the specified volume group by blinking the indicator lights on the drives.'
+---
+= Start volume group locate
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start volumeGroup locate` command identifies the drives that are logically grouped together to form the specified volume group by blinking the indicator lights on the drives.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Use the `stop volumeGroup locate` command to turn off the indicator lights on the drives.
+
+== Syntax
+
+----
+start volumeGroup [volumeGroupName] locate
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`volumeGroup`
+a|
+The name of the volume group for which you want to locate the drives that belong to that volume group. Enclose the volume group name in square brackets ([ ]).
+|===
+
+== Minimum firmware level
+
+6.16

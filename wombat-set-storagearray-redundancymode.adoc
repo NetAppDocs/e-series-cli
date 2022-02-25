@@ -1,0 +1,40 @@
+---
+permalink: wombat-set-storagearray-redundancymode.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray redundancyMode command sets the redundancy mode of the storage array to either simplex or duplex.'
+---
+= Set storage array redundancy mode
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray redundancyMode` command sets the redundancy mode of the storage array to either simplex or duplex.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set storageArray redundancyMode=(simplex | duplex)
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`redundancyMode`
+a|
+Use `simplex` mode when you have a single controller. Use `duplex` mode when you have two controllers.
+|===
+
+== Minimum firmware level
+
+6.10

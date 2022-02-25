@@ -1,0 +1,94 @@
+---
+permalink: wombat-set-snapvolume-increase-decreaserepositorycapacity.html
+sidebar: sidebar
+keywords: 
+summary: 'The set snapVolume increase/decreaseRepositoryCapacity command increases or decreases the capacity of a snapshot volume repository volume.'
+---
+= Set snapshot volume repository volume capacity
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set snapVolume increase/decreaseRepositoryCapacity` command increases or decreases the capacity of a snapshot volume repository volume.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax for increasing capacity
+
+----
+set snapVolume[“snapVolumeName”] increaseRepositoryCapacity
+(repositoryVolumes="repos_xxxx" |
+repositoryVolumes=(volumeGroupName [capacity=capacityValue] |
+repositoryVolumes=(diskPoolName [capacity=capacityValue])
+----
+
+== Syntax for decreasing capacity
+
+----
+set snapVolume ["snapVolumeName"] decreaseRepositoryCapacity
+count=numberOfVolumes
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`snapVolume`
+a|
+The name of the snapshot volume for which you are setting properties. Enclose the snapshot volume identifier in double quotation marks (" ") inside of square brackets ([ ]).
+a|
+`repositoryVolume`
+a|
+The name of the repository volume for which you want to increase capacity. An available standard volume is added to the repository volume to increase the capacity of the repository volume.
+
+You have two options for defining the name of a repository volume:
+
+* Use an existing repository volume: name
+* Create a new repository volume when you run this command
+
+The name of an existing repository volume is comprised of two parts:
+
+* The term "repos"
+* A four digit numerical identifier that you assign to the repository volume name
+
+Enclose the name of the existing repository volume in double quotation marks (" ").
+
+If you want to create a new repository volume when you run this command you must enter the name of either a volume group or a disk pool in which you want the repository volume. Optionally, you can also define the capacity of the repository volume. If you want to define the capacity you can use these values:
+
+* An integer value that represents a percentage of the base volume capacity
+* A decimal fraction value that represents a percentage of the base volume capacity
+* A specific size for the repository volume. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`.
+
+If you do not use the capacity option, the storage management software sets the capacity to 20 percent of the base volume capacity.
+
+Enclose the name of the new repository volume in parentheses.
+
+a|
+`count`
+a|
+The number of volumes that you want to remove. Use integer values.
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+A snapshot repository volume is an expandable volume that is structured as a concatenated collection of up to 16 standard volume entities. Initially, an expandable repository volume has only a single element. The capacity of the expandable repository volume is exactly that of the single element. You can increase the capacity of an expandable repository volume by attaching additional standard volumes to it. The composite expandable repository volume capacity then becomes the sum of the capacities of all of the concatenated standard volumes.
+
+A snapshot group repository volume must satisfy a minimum capacity requirement that is the sum of the following:
+
+* 32 MB to support fixed overhead for the snapshot group and for copy-on-write processing.
+* Capacity for rollback processing, which is 1/5000th of the capacity of the base volume.
+
+The minimum capacity is enforcement by the controller firmware and the storage management software.
+
+== Minimum firmware level
+
+7.83

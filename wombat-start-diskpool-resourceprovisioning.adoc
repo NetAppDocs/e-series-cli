@@ -1,0 +1,44 @@
+---
+permalink: wombat-start-diskpool-resourceprovisioning.html
+sidebar: sidebar
+keywords: 
+summary: 'The start diskPool resourceProvisioning command enables resource provisioning on a given disk pool and starts a resource provisioning enablement asynchronous operation on each volume in the disk pool. Resource provisioning requires that all the drives in the disk pool support NVMe’s DULBE feature.'
+---
+= Start Disk Pool Resource Provisioning
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start diskPool resourceProvisioning` command enables resource provisioning on a given disk pool and starts a resource provisioning enablement asynchronous operation on each volume in the disk pool. Resource provisioning requires that all the drives in the disk pool support NVMe's DULBE feature.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the EF600 and EF300 arrays; as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an EF600 and EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+To disable resource provisioning on a disk pool, use the full provisioning command with the option to disable resource provisioning. A disk pool will be resource provisioned when created if all the drives are DULBE capable and the storage array's `resourceProvisionedVolumes` setting is `true`.
+
+== Syntax
+
+----
+start diskPool[diskPoolName] resourceProvisioning
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`diskPoolName`
+a|
+The disk pool you want to enable the resource provisioning feature. Enclose the disk pool name in square brackets ([ ]).
+|===
+
+== Minimum firmware level
+
+11.72

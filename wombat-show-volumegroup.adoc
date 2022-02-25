@@ -1,0 +1,98 @@
+---
+permalink: wombat-show-volumegroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The show volumeGroup command returns information about a volume group.'
+---
+= Show volume group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show volumeGroup` command returns information about a volume group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Context
+
+This command returns this information about a volume group:
+
+* The status (Online or Offline)
+* The capacity
+* The current owner (the controller in slot A or the controller in slot B )
+* The RAID level
+* The drive media type (HDD or SSD)
+* The drive interface type (Fibre Channel, iSCSI, Infiniband, SAS)
+* Tray loss protection (yes or no)
+* Secure capable - indicates whether the volume group is composed of all secure-capable drives. Secure-capable drives can be either FDE drives or FIPS drives.
+* Secure - Indicates whether the volume group has drive security turned on (this is called secure enabled).
+* The associated volumes and free capacity
+* The associated drives
+* Data Assurance capabilities and presence of Data Assurance enabled volumes
+* Resource provisioning capabilities
+
+== Syntax
+
+----
+show volumeGroup [volumeGroupName]
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`volumeGroup`
+a|
+The name of the volume group for which you want to show information. Enclose the volume group name in square brackets ([ ]).
+|===
+
+== Notes
+
+This command returns volume group information as shown in this example:
+
+----
+Name:              SecureGroup
+
+      Status:         Optimal
+      Capacity:       120.000 GB
+      Current owner: Controller in slot A
+
+      Quality of Service (QoS) Attributes
+
+         RAID level:                  5
+         Drive media type:            Hard Disk Drive
+         Drive interface type:        SAS
+         Shelf loss protection:       No
+         Secure Capable:              Yes
+         Secure:                      No
+         Data Assurance (DA) capable: Yes
+         DA enabled volume present:   No
+         Resource-provisioned:           Yes
+
+
+      Total Volumes:          1
+         Standard volumes:    1
+         Repository volumes:  0
+         Free Capacity:       110.000 GB
+
+      Associated drives - present (in piece order)
+      Total drives present: 5
+
+         Tray     Slot
+         99       1
+         99       2
+         99       3
+         99       4
+         99       5
+----
+
+== Minimum firmware level
+
+6.10

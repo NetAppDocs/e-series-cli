@@ -1,0 +1,128 @@
+---
+permalink: wombat-set-consistencygroup-addcgmembervolume.html
+sidebar: sidebar
+keywords: 
+summary: 'The set consistencyGroup addCGMemberVolume command adds a new base volume as a member to an existing consistency group.'
+---
+= Add member to consistency group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set consistencyGroup addCGMemberVolume` command adds a new base volume as a member to an existing consistency group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+You can specify an existing repository volume for the new consistency group member, or create a new repository volume. When you create a new repository volume, you identify an existing volume group or an existing disk pool where you want the repository volume.
+
+== Syntax for use with an existing repository volume
+
+[source,monospace]
+----
+
+set consistencyGroup ["consistencyGroupName"]
+addCGMemberVolume="baseVolumeName"
+repositoryVolume="volumeGroupName"
+----
+
+== Syntax for use when creating a new repository volume in a volume group
+
+----
+
+set consistencyGroup ["consistencyGroupName"]
+addCGMemberVolume="baseVolumeName"
+repositoryVolume=("volumeGroupName" capacity=capacityValue(KB|MB|GB|TB|bytes))
+----
+
+== Syntax for use when creating a new repository volume in a disk pool
+
+----
+
+set consistencyGroup ["consistencyGroupName"]
+addCGMemberVolume="baseVolumeName"
+repositoryVolume=("diskPoolName" capacity=capacityValue(KB|MB|GB|TB|bytes))
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`consistencyGroup`
+a|
+The name of the consistency group to which you want to add a new member volume. The new member volume is the base volume for snapshot operations. Enclose the consistency group name in double quotation marks (" ") inside square brackets ([ ]).
+a|
+`addCGMemberVolume`
+a|
+The name of a base volume that you want to add. Enclose the volume name in double quotation marks (" ").
+
+If the specified volume is an existing repository volume or an existing snapshot volume, the command fails.
+
+a|
+`repositoryVolume`
+a|
+This parameter performs two functions:
+
+* In an existing consistency group that has a repository volume, this parameter identifies the repository volume.
+* When creating a new repository volume this parameter identifies either a volume group or disk pool in which to create the new repository volume.
+
+Enclose the volume name in double quotation marks (" ").
+
+a|
+`capacity`
+a|
+The size of a new repository volume in either a volume group or a disk pool. Size is defined in units of bytes, KB, MB, GB, or TB.
+
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+A consistency group is a collection of base volumes that are the source volumes for snapshots. You collect the base volumes in a consistency group so that you can perform the same snapshot operations on each of the base volumes. In the context of this command, the term _member_ means a base volume for snapshot operations. You can manipulate snapshot images associated with members of a consistency group through batch-style operations, while maintaining consistency across the snapshot images.
+
+Each member volume must have a corresponding repository volume. You can define the relationship between the member volume and the repository volume using the `repositoryVolume` parameter. The `repositoryVolume` parameter can perform one of these actions:
+
+* Identify an existing repository volume that is connected to the consistency group.
+* Identify either a volume group or a disk pool in which you want to create a new repository volume.
+
+Adding a member to a consistency group with an existing repository has two purposes:
+
+* You can create an entirely new repository volume by running the command without the `repositoryVolume` parameter. When you run the command without the `repositoryVolume` parameter, the command creates a new repository volume in the volume group or disk pool in which all the other repository volumes are stored. An example of this command usage is:
++
+----
+
+set consistencyGroup ["First_Images"] addCGMemberVolume="Data_020212"
+----
+
+* You can reuse an existing repository volume if that repository volume is empty and is not related to another member volume. You might want to do this if you want to maintain a particular sequence or relationship for the repository volumes. To reuse an existing, empty repository volume you need to know the name of the repository volume. To determine the name of the repository volume use the `show allVolumes summary` command. All repository volume names have the form `repos_XXXX` where `XXXX` is a unique identifier generated by the storage management software. An example of this command usage is:
++
+----
+
+set consistencyGroup ["First_Images"] addCGMemberVolume="Data_020212"
+repositoryVolume="repos_0011"
+----
+
+You can place the repository volume in a volume group or a disk pool of your choosing. You are not required to have the repository volume in the same location as other repository volumes. To place the repository volume in a volume group or a disk pool of your choice, use the `repositoryVolume` parameter and identify the volume group or the disk pool and a size for the repository volume. An example of this command usage is:
+
+----
+
+set consistencyGroup ["First_Images"] addCGMemberVolume="Data_020212"
+repositoryVolume=("12" capacity=2 GB)
+----
+
+In this example, "[.code]``12``" is the name of an existing volume group or an existing disk pool. The capacity parameter defines the size that you want for the repository volume group.
+
+When you create a new repository volume in either a volume group or a disk pool, you must include parentheses around the volume group name and capacity, or the disk pool name and capacity.
+
+== Minimum firmware level
+
+7.83
