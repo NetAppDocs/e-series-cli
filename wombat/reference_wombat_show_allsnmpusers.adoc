@@ -1,0 +1,96 @@
+---
+permalink: wombat/reference_wombat_show_allsnmpusers.html
+sidebar: sidebar
+keywords: 
+summary: 'The show allsnmpUsers command returns information about the Simple Network Management \(SNMP\) USM users defined for the storage array.'
+---
+= Show SNMPv3 USM user
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show allsnmpUsers` command returns information about the Simple Network Management (SNMP) USM users defined for the storage array.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Syntax
+
+----
+show (allSnmpUsers |
+    snmpUser userName="snmpUsername" |
+    snmpUsers [snmpUserName1 ... snmpUserNameN])
+    [summary]
+----
+
+[NOTE]
+====
+This command returns SNMP user information similar to the following
+
+----
+SNMP USERS------------------------------
+
+SUMMARY
+
+   Total SNMP Users: 2
+   Total SNMP Trap Destinations: 1
+
+DETAILS
+
+   SNMP User: TestUser1
+   SNMP Engine ID: local
+   SNMP Permission: Read Only
+   SNMP Authentication Protocol: sha
+   SNMP Privacy Protocol: aes128
+
+      Associated Trap Destination:
+
+      Trap Receiver IP Address  Send Authentication Failure Traps
+      10.113.173.133            false
+
+   SNMP User: TestUser2
+   SNMP Engine ID: local
+   SNMP Permission: Read Only
+   SNMP Authentication Protocol: sha256
+   SNMP Privacy Protocol: none
+
+      Associated Trap Destination:
+----
+
+====
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`allSnmpUsers`
+a|
+This parameter returns information about all of the SNMP users in the storage array.
+a|
+`userName`
+a|
+The name of the SNMP user for which you want to retrieve information. Enclose the SNMP user name in double quotation marks (" ").
+a|
+`snmpUsers`
+a|
+The names of several SNMP users for which you want to retrieve information. Enter the names of the SNMP users using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+a|
+`summary`
+a|
+This parameter returns a list of the total number of SNMP users and the total number of SNMP trap destinations. When you use this parameter, all of the detail information is omitted.
+|===
+
+== Minimum firmware level
+
+8.72

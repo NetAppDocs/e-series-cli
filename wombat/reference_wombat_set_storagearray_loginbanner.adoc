@@ -1,0 +1,50 @@
+---
+permalink: wombat/reference_wombat_set_storagearray_loginbanner.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray loginBanner command allows you to upload a text file to be used as a login banner. The banner text can include an advisory notice and consent message, which is presented to users before they establish sessions in SANtricity System Manager or before they run commands.'
+---
+= Set storage array login banner
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray loginBanner` command allows you to upload a text file to be used as a login banner. The banner text can include an advisory notice and consent message, which is presented to users before they establish sessions in SANtricity System Manager or before they run commands.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+set storageArray loginBanner file="path_to_login_banner"
+----
+
+== Context
+
+After you load the text file, it is saved to the storage array. The banner text appears before the SANtricity System Manager login screen or before you run commands.
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name where the login banner text file is stored.
+
+[NOTE]
+====
+The login banner file cannot be empty and must be 5 KB or smaller.
+====
+
+|===
+
+== Minimum firmware level
+
+8.41

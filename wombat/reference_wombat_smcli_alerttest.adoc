@@ -1,0 +1,37 @@
+---
+permalink: wombat/reference_wombat_smcli_alerttest.html
+sidebar: sidebar
+keywords: 
+summary: 'The SMcli alertTest command sends out a test alert to the Windows Event Log and all configured syslog receivers.'
+---
+= Test alerts
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `SMcli alertTest` command sends out a test alert to the Windows Event Log and all configured syslog receivers.
+
+== Supported Arrays
+
+This command applies only to the E2700 and E5600 storage arrays.
+
+== Context
+
+[NOTE]
+====
+This command is an SMcli command, not a script command. You must run this command from a command line. You cannot run this command from the script editor in the storage management software
+====
+
+== Syntax
+
+----
+SMcli -alertTest
+----
+
+== Parameters
+
+None.
+
+== Minimum Firmware Level
+
+7.83

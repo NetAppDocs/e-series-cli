@@ -1,0 +1,34 @@
+---
+permalink: wombat/reference_wombat_stop_tray_locate.html
+sidebar: sidebar
+keywords: 
+summary: 'The stop tray locate command turns off the indicator light on the tray that was turned on by the start tray locate command.'
+---
+= Stop tray locate
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `stop tray locate` command turns off the indicator light on the tray that was turned on by the `start tray locate` command.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+stop tray locate
+----
+
+== Parameters
+
+None.
+
+== Minimum firmware level
+
+6.10

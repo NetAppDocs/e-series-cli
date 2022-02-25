@@ -1,0 +1,40 @@
+---
+permalink: wombat/reference_wombat_stop_storagearray_iscsisession.html
+sidebar: sidebar
+keywords: 
+summary: 'The stop storageArray iscsiSession command forces the termination of a storage array iSCSI session.'
+---
+= Stop storage array iSCSI session
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `stop storageArray iscsiSession` command forces the termination of a storage array iSCSI session.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+stop storageArray iscsiSession [sessionNumber]
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`iscsiSession`
+a|
+The identifier number of the iSCSI session. Enclose the identifier number of the iSCSI session in square brackets ([ ]).
+|===
+
+== Minimum firmware level
+
+7.10

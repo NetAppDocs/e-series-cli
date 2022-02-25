@@ -1,0 +1,49 @@
+---
+permalink: alpaca/reference_alpaca_naming_conventions.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Naming conventions
+:icons: font
+:imagesdir: ./media/
+
+* Names can have a maximum of 30 characters.
+* You can use any combination of alphanumeric characters, hyphens, and underscores for the names of the following components:
+ ** Storage arrays
+ ** Host groups
+ ** Hosts
+ ** Volume groups
+ ** Dynamic disk pools
+ ** Volumes
+ ** HBA host ports
+* You must use unique names. If you do not use unique names, the controller firmware returns an error.
+* If the name contains more than one word, hyphens, or underscores, enclose the name in double quotation marks ("` `"). In some usages, you must also surround the name with square brackets ([ ]). The description of each parameter indicates whether you need to enclose a parameter in double quotation marks, square brackets, or both.
+* The name character string cannot contain a new line.
+* On Windows operating systems, you must enclose the name between two backslashes (\\) in addition to other delimiters. For example, the following name is used in a command that runs under a Windows operating system:
++
+----
+[\“Engineering\”]
+----
+
+* For a UNIX operating system and, when used in a script file, the name appears as in the following example:
++
+----
+[“Engineering”]
+----
+
+* When you enter a World Wide Identifier (WWID) of an HBA host port, some usages require that you surround the WWID with double quotation marks. In other uses, you must surround the WWID with angle brackets (<>). The description of the WWID parameter indicates whether you need to enclose the WWID in double quotation marks or angle brackets.
+
+== Entering numerical names
+
+When the storage management software automatically configures a storage array, the storage management software assigns names that consist of numerical characters. Names that consist only of numerical characters are valid names. Numerical character names, however, must be treated differently than names that start with alphabetic characters.
+
+* Names that are only numbers, such as 1 or 2
+* Names that start with a number, such as 1Disk or 32Volume
+* `[\“1\”]`
+* `[\“1Disk\”]`
+
+[NOTE]
+====
+If you have any doubt as to the validity of a name, use both double quotation marks and square brackets. Using both makes sure that the name works and does not cause any processing issues.
+====

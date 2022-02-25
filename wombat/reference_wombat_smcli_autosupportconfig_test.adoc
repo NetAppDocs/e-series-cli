@@ -1,0 +1,79 @@
+---
+permalink: wombat/reference_wombat_smcli_autosupportconfig_test.html
+sidebar: sidebar
+keywords: 
+summary: 'Use the SMcli -autoSupportConfig test command to test the AutoSupport configuration by sending a test message. This command operates on the management domain. The storage management software chooses an Auto-Support capable array in the management domain for sample data to include with the test message.'
+---
+= Test the AutoSupport configuration
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Use the `SMcli -autoSupportConfig test` command to test the AutoSupport configuration by sending a test message. This command operates on the management domain. The storage management software chooses an Auto-Support capable array in the management domain for sample data to include with the test message.
+
+== Supported Arrays
+
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+
+== Context
+
+[NOTE]
+====
+This command is an SMcli command, not a script command. You must run this command from a command line. You cannot run this command from the script editor in the storage management software.
+====
+
+[NOTE]
+====
+The Persistent Monitor should be running on the management station to send scheduled or event-triggered AutoSupport messages. Start the service before using this command.
+====
+
+== Syntax
+
+----
+SMcli -autoSupportConfig test reply-toEmail<address>
+----
+
+== Parameters
+
+The following table lists the parameters for sending an AutoSupport test message.
+
+|===
+| Parameter| Description
+a|
+`test`
+a|
+Required parameter for the command. Requires no value.
+a|
+`reply-toEmail`
+a|
+Allows the user to specify the reply-to email address for the AutoSupport messages of SMTP delivery type.
+|===
+
+== Minimum Firmware Level
+
+8.25
+
+== Example of testing using HTTP/HTTPs delivery
+
+Following are examples of the usage of this command when using an HTTP or HTTPs delivery type, where you will not specify an email-address for delivery.
+
+----
+SMcli -autoSupportConfig test
+The sample AutoSupport message was successfully sent to the ASUP gateway.
+
+SMcli completed successfully.
+----
+
+== Example of testing using SMTP delivery
+
+Following are examples of the usage of this command. When using an SMTP delivery method, you can use the `reply-toEmail` parameter to specify the destination address.
+
+----
+SMcli -autoSupportConfig test reply-toEmail:user@netapp.com
+The sample AutoSupport message was successfully sent to the ASUP gateway.
+
+An email has been sent to 'user@netapp.com', please check the mailbox
+for delivery confirmation.
+
+SMcli completed successfully.
+----

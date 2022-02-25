@@ -1,0 +1,62 @@
+---
+permalink: wombat/reference_wombat_remove_syncmirror.html
+sidebar: sidebar
+keywords: 
+summary: 'The remove syncMirror command removes the mirror relationship between the primary volume and the secondary volume in a remote-mirrored pair.'
+---
+= Remove synchronous mirroring
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `remove syncMirror` command removes the mirror relationship between the primary volume and the secondary volume in a remote-mirrored pair.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+In previous versions of this command the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `syncMirror`.
+====
+
+== Syntax
+
+----
+remove syncMirror (localVolume [volumeName] |
+localVolumes [volumeName1 ... volumeNameN])
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`localVolume`
+a|
+The name of the primary volume (the volume on the local storage array) that you want to remove. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or consists only of numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
+a|
+`localVolumes`
+a|
+The names of several primary volumes (the volumes on the local storage array) that you want to remove. Enter the names of the primary volumes using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Separate each of the names with a space.
+
+If the primary volume names have special characters or consist only of numbers, enter the names using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+|===
+
+== Minimum firmware level
+
+6.10

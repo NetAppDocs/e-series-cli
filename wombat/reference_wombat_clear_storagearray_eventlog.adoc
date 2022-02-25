@@ -1,0 +1,37 @@
+---
+permalink: wombat/reference_wombat_clear_storagearray_eventlog.html
+sidebar: sidebar
+keywords: 
+summary: 'The clear storageArray eventLog command clears the event log in the storage array by deleting the data in the Event Log buffer.'
+---
+= Clear storage array event log
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `clear storageArray eventLog` command clears the event log in the storage array by deleting the data in the Event Log buffer.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+*Possible damage to the storage array configuration* -- As soon as you run this command, the existing event log in the storage array is deleted.
+====
+
+== Syntax
+
+----
+clear storageArray eventLog
+----
+
+== Parameters
+
+None.

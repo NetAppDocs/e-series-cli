@@ -1,0 +1,256 @@
+---
+permalink: wombat/reference_wombat_create_diskpool.html
+sidebar: sidebar
+keywords: 
+summary: 'The create diskPool command creates a new disk pool based on the specified parameters.'
+---
+= Create disk pool
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create diskPool` command creates a new disk pool based on the specified parameters.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+You can create the disk pool by entering either a list of drives or a type of drive that you want to use for the disk pool.
+
+[NOTE]
+====
+If you enter a list of drives, make sure that all of the drives have the same capacity. If the drives do not have the same capacity, each drive in the disk pool reports capacity equal to the smallest drive.
+====
+
+== Syntax
+
+----
+create diskPool
+(drives=(trayID1,[drawerID1,]slotID1 ... trayIDN,[drawerIDN,]slotIDN)|
+driveType=(fibre | SATA | SAS | NVMe4K))
+ userLabel="diskPoolName"
+[driveCount=driveCountValue]
+[trayLossProtect=(TRUE | FALSE)]
+[drawerLossProtect=(TRUE | FALSE)]
+[warningThreshold=(warningThresholdValue | default)]
+[criticalThreshold=(criticalThresholdValue | default)]
+[criticalPriority=(highest|high|medium|low|lowest)]
+[backgroundPriority=(highest|high|medium|low|lowest)]
+[degradedPriority=(highest|high|medium|low|lowest)]
+[securityType=(none | capable | enabled )]
+[secureDrives=(fips | fde )]
+[driveMediaType=(hdd | ssd | allMedia | unknown)]
+[dataAssurance=(none|enabled)]
+[resourceProvisioningCapable=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`drives`
+a|
+The drives you want to assign to the disk pool that you want to create. For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+a|
+`userLabel`
+a|
+The name that you want to give the new disk pool. Enclose the disk pool name in double quotation marks (" ").
+a|
+`driveCount`
+a|
+The `driveCount` parameter limits the disk pool candidates to the given number. When using this parameter, the minimum value that you can enter is 11.
+a|
+`warningThreshold`
+a|
+The percentage of storage capacity at which you receive a warning alert that the disk pool is nearing full. Use integer values. For example, a value of 60 means 60 percent. For best operation, the value for this parameter must be less than the value for the `criticalThreshold` parameter.
+
+Valid values are from 0 to 100.
+
+The default value is 50.
+
+Setting this parameter to 0 (zero) disables warning alerts.
+
+If you set this to `default`, the warning alert threshold value is determined by the controller firmware.
+
+a|
+`criticalThreshold`
+a|
+The percentage of storage capacity at which you receive a critical alert that the disk pool is nearing full. Use integer values. For example, a value of 70 means 70 percent. For best operation, the value for this parameter must be greater than the value for the `warningThreshold` parameter.
+
+Valid values are from 0 to 100.
+
+The default value is 85 percent.
+
+Setting this parameter to 0 (zero) disables both warning alerts and critical alerts.
+
+If you set this to `default`, the critical alert threshold value is determined by the controller firmware.
+
+a|
+`criticalPriority`
+a|
+The priority for reconstruction operations for critical events on the disk pool. For example, disk pool reconstruction after at least two drive failures.
+
+Valid values are `highest`, `high`, `medium`, `low`, and `lowest`. The default value is `highest`.
+
+a|
+`backgroundPriority`
+a|
+The priority for background operations on the disk pool.
+
+Valid values are `highest`, `high`, `medium`, `low`, and `lowest`. The default value is `low`.
+
+a|
+`degradedPriority`
+a|
+The priority for degraded activities on the disk pool. For example, disk pool reconstruction after one drive failures.
+
+Valid values are `highest`, `high`, `medium`, `low`, and `lowest`. The default value is `high`.
+
+a|
+`securityType`
+a|
+The setting to specify the security level when creating the disk pool. All volume candidates for the disk pool will have the specified security type.
+
+These settings are valid:
+
+* `none` -- The volume candidates are not secure.
+* `capable` -- The volume candidates are capable of having security set, but security has not been enabled.
+* `enabled` -- The volume candidates have security enabled.
+
+The default value is `none`.
+
+a|
+`secureDrives`
+a|
+The type of secure drives to use in the volume group. These settings are valid:
+
+* `fips` -- To use FIPS compliant drives only.
+* `fde` -- To use FDE compliant drives.
+
+[NOTE]
+====
+Use this parameter along with the `securityType` parameter. If you specify `none` for the `securityType` parameter, the value of the `secureDrives` parameter is ignored, because non-secure disk pools do not need to have secure drive types specified.
+====
+
+[NOTE]
+====
+This parameter is ignored unless you are also using the `driveCount` parameter. If you are specifying the drives to use for the disk pool instead of providing a count, specify the appropriate type of drives in the selection list based on the security type you desire.
+====
+
+a|
+`driveMediaType`
+a|
+The type of drive media that you want to use for the disk pool.
+
+You must use this parameter when you have more than one type of drive media in your storage array.
+
+These drive media are valid:
+
+* `hdd` -- Use this option when you have hard drives.
+* `ssd` -- Use this option when you have solid-state disks.
+* `unknown` -- Use this option if you are not sure what types of drive media are in the drive tray.
+* `allMedia` -- Use this option when you want to use all types of drive media that are in the drive tray.
+
+The default value is `hdd`.
+
+[NOTE]
+====
+The controller firmware does not mix `hdd` and `ssd` drive media in the same disk pool, regardless of using the setting you select.
+====
+
+a|
+`resourceProvisioningCapable`
+a|
+The setting to specify if resource provisioning capabilities are enabled. To disable resource provisioning, set this parameter to `FALSE`. The default value is `TRUE`.
+
+|===
+
+== Notes
+
+Each disk pool name must be unique. You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. User labels can have a maximum of 30 characters.
+
+If the parameters you specify cannot be satisfied by any of the available candidate drives, the command fails. Normally, all drives that match the quality of service attributes are returned as the top candidates. However, if you specifying a drive list, some of the available drives returned as candidates might not match the quality of service attributes.
+
+If you do not specify a value for an optional parameter, a default value is assigned.
+
+== Drives
+
+When you use the `driveType` parameter, all of the unassigned drives that are of that drive type are used to create the disk pool. If you want to limit the number of drives found by the `driveType` parameter in the disk pool, you can specify the number of drives using the `driveCount` parameter. You can use the `driveCount` parameter only when you use the `driveType` parameter.
+
+The `drives` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+
+If you enter specifications for a high-capacity drive tray, but a drive tray is not available, the storage management software returns an error message.
+
+== Disk pool alert thresholds
+
+Each disk pool has two progressively severe levels of alerts to inform users when the storage capacity of the disk pool is approaching full. The threshold for an alert is a percent of the used capacity to the total usable capacity in the disk pool. The alerts are as follows:
+
+* Warning -- This is the first level of alert. This level indicates that the used capacity in a disk pool is approaching full. When the threshold for the warning alert is reached, a Needs Attention condition is generated and an event is posted to the storage management software. The warning threshold is superseded by the critical threshold. The default warning threshold is 50 percent.
+* Critical -- This is the most severe level of alert. This level indicates that the used capacity in a disk pool is approaching full. When the threshold for the critical alert is reached, a Needs Attention condition is generated and an event is posted to the storage management software. The warning threshold is superseded by the critical threshold. The default threshold for the critical alert is 85 percent.
+
+To be effective, the value for a warning alert always must be less than the value for a critical alert. If the value for the warning alert is the same as the value for a critical alert, only the critical alert is sent.
+
+== Disk pool background operations
+
+Disk pools support these background operations:
+
+* Reconstruction
+* Instant Availability Format (IAF)
+* Format
+* Dynamic Capacity Expansion (DCE)
+* Dynamic Volume Expansion (DVE) (For disk pools, DVE is actually not a background operation, but DVE is supported as a synchronous operation.)
+
+Disk pools do not queue background commands. You can start several background commands sequentially, but starting more than one background operation at a time delays the completion of commands that you started previously. The supported background operations have the following relative priority levels:
+
+. Reconstruction
+. Format
+. IAF
+. DCE
+
+== Security type
+
+Use the `securityType` parameter to specify the security settings for the storage array.
+
+Before you can set the `securityType` parameter to `enabled`, you must create a storage array security key. Use the `create storageArray securityKey` command to create a storage array security key. These commands are related to the security key:
+
+* `create storageArray securityKey`
+* `export storageArray securityKey`
+* `import storageArray securityKey`
+* `set storageArray securityKey`
+* `enable volumeGroup [volumeGroupName] security`
+* `enable diskPool [diskPoolName] security`
+
+== Secure drives
+
+Secure-capable drives can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives. Use the `secureDrives` parameter to specify the type of secure drives to use. The values you can use are `fips` and `fde`.
+
+== Example command
+
+----
+create diskPool driveType=SAS userLabel="FIPS_Pool" driveCount=11 securityType=capable secureDrives=fips;
+----
+
+== Minimum firmware level
+
+7.83
+
+8.20 adds these parameters:
+
+* `trayLossProtect`
+* `drawerLossProtect`
+
+8.25 adds the `secureDrives` parameter.
+
+8.63 adds the `resourceProvisioningCapable` parameter.

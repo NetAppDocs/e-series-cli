@@ -1,0 +1,65 @@
+---
+permalink: wombat/reference_wombat_enable_or_disable_autosupport_individual_arrays.html
+sidebar: sidebar
+keywords: 
+summary: 'This command enables or disables AutoSupport \(ASUP\) feature for the storage array and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, the ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis.'
+---
+= Enable or disable AutoSupport (all individual arrays)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+This command enables or disables AutoSupport (ASUP) feature for the storage array and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, the ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+After enabling this feature, you can next enable the AutoSupport OnDemand feature (if desired), and then enable the AutoSupport Remote Diagnostics feature (if desired). You must enable the three features in this order.
+
+image::../media/baseasup_w_first_enable.gif[]
+
+== Syntax
+
+----
+set storageArray autoSupport (enable | disable)
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`enable | disable`
+a|
+Allows you to enable or disable AutoSupport. If the OnDemand and Remote Diagnostics features are enabled, the disable action will turn off OnDemand and Remote Diagnostics features as well.
+|===
+
+== Minimum Firmware Level
+
+7.86 - added command for all storage arrays up to model E2700 and E5600
+
+8.40 - added support for the E2800 and E5700
+
+== Examples
+
+----
+
+   SMcli -n Array1 -c "set storageArray autoSupport enable;"
+
+   SMcli completed successfully.
+----
+
+== Verification
+
+Use the `show storageArray autoSupport` command to see whether you have enabled the feature. The initial line of the displayed output shows the enable status:
+
+----
+The AutoSupport feature is enabled on this storage array.
+----

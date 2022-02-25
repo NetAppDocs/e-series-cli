@@ -1,0 +1,38 @@
+---
+permalink: wombat/reference_wombat_start_storagearray_locate.html
+sidebar: sidebar
+keywords: 
+summary: 'The start storageArray locate command locates a storage array by turning on the indicator lights for the storage array.'
+---
+= Start storage array locate
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start storageArray locate` command locates a storage array by turning on the indicator lights for the storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Use the `stop storageArray locate` command to turn off the indicator lights for the storage array.
+
+== Syntax
+
+----
+start storageArray locate
+----
+
+== Parameters
+
+None.
+
+== Minimum firmware level
+
+6.10

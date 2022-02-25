@@ -1,0 +1,53 @@
+---
+permalink: wombat/reference_wombat_show_allhostports.html
+sidebar: sidebar
+keywords: 
+summary: 'The show allHostPorts command returns information about configured host ports.'
+---
+= Show host ports
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show allHostPorts` command returns information about configured host ports.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+For all of the host ports that are connected to a storage array, this command returns this information:
+
+* The host port identifier
+* The host port name
+* The host type
+
+== Syntax
+
+----
+show allHostPorts
+----
+
+== Parameters
+
+None.
+
+== Notes
+
+This command returns HBA host port information similar to this example.
+
+----
+HOST PORT IDENTIFIER     HOST PORT NAME  HOST TYPE
+12:34:56:54:33:22:22:22  Jupiter1        Solaris
+12:34:56:78:98:98:88:88  Pluto1          Windows 2000/Server 2003 Clustered
+54:32:12:34:34:55:65:66  Undefined       Undefined
+----
+
+== Minimum firmware level
+
+5.40

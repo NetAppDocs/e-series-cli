@@ -1,0 +1,131 @@
+---
+permalink: wombat/reference_wombat_start_volume_initialize.html
+sidebar: sidebar
+keywords: 
+summary: 'The start volume initialize command initializes or re-initializes a thin volume.'
+---
+= Initialize thin volume
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start volume initialize` command initializes or re-initializes a thin volume.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+The action depends on the parameters used:
+
+* Used without any of the optional parameters, this command deletes the data on the thin volume. The repository volume capacity is not affected.
+* Used with any of the optional parameters, this command cause reinitialization and repository volume actions.
+
+[NOTE]
+====
+Initializing a thin volume starts a long-running operation that you cannot stop.
+====
+
+== Syntax
+
+----
+start volume [volumeName] initialize
+[existingRepositoryLabel=existingRepositoryName]
+[diskPool=diskPoolName capacity=capacityValue]
+[retainRepositoryMembers=(TRUE|FALSE)]
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`volume`
+a|
+The name of the volume on which you are starting the initialization. Enclose the volume name in square brackets ([ ]). If the volume name contains special characters or numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
+a|
+`existingRepositoryLabel`
+a|
+This parameter replaces the repository volume by the candidate volume specified.
+
+* The value specified is an existing repository volume user label. The volume specified must be an unused repository volume with the name in the proper form.
+* If the newly specified repository volume is on a different disk pool, the thin volume will change ownership to that pool.
+* The old repository volume will be deleted by default.
+
+If the existing repository volume name contains special characters or consists only of numbers, you must enclose the volume name in double quotation marks (" ").
+
+a|
+`diskPool`
+a|
+The name of the disk pool in which you want to create a new repository volume with the specified capacity. If the disk pool name contains special characters or consists only of numbers, you must enclose the disk pool name in double quotation marks (" ").
+
+You must use this parameter with the `capacity` parameter to create a new repository volume with the specified capacity.
+
+a|
+`capacity`
+a|
+The size that you want to set for the repository volume that you are creating. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`.
+
+The minimum physical capacity is 4 GB.
+
+The maximum physical capacity is 257 TB.
+
+You must use this parameter with the `diskPool` parameter to create a new repository volume with the specified capacity.
+
+a|
+`retainRepositoryMembers`
+a|
+If this parameter is set to `TRUE`, the old repository is retained. By default, the old repository is deleted. This parameter is ignored if the existing repository is reused.
+|===
+
+== Notes
+
+If you do not specify a volume with the `volume` parameter, this command resets the metadata in the repository and, in effect, causes the thin volume to appear empty to the host. If you specify a volume with the `volume` parameter, that volume is either replaced by a newly created volume or by an existing volume if you specify one with the `existingRepositoryLabel` parameter. If you specify an existing volume with the `existingRepositoryLabel` parameter that is in a different disk pool, the thin volume will change ownership to the new disk pool.
+
+The volume parameters of the thin volume, such as virtual capacity, quota and warning threshold, retain their previous values after you reinitialize the thin volume.
+
+[NOTE]
+====
+Immediate Availability Format (IAF) does not apply to volumes greater than 64 TB.
+====
+
+The following table lists the capacity limits for a thin volume.
+
+|===
+| Type of Capacity| Size
+a|
+Minimum virtual capacity
+a|
+32 MB
+a|
+Maximum virtual capacity
+a|
+256 TB
+a|
+Minimum physical capacity
+a|
+4 GB
+a|
+Maximum physical capacity
+a|
+257 TB
+|===
+Thin volumes support all of the operations that standard volumes do with the following exceptions:
+
+* You cannot change the segment size of a thin volume.
+* You cannot enable the pre-read redundancy check for a thin volume.
+* You cannot use a thin volume as the target volume in a volume copy.
+* You cannot use a thin volume in a Synchronous Mirroring operation.
+
+If you want to change a thin volume to a standard volume, use the volume copy operation to create a copy of the thin volume. The target of a volume copy is always a standard volume.
+
+== Minimum firmware level
+
+7.83
+
+8.30 increases the maximum capacity of a thin volume to 256 TB.

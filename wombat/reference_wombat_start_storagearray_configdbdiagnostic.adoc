@@ -1,0 +1,108 @@
+---
+permalink: wombat/reference_wombat_start_storagearray_configdbdiagnostic.html
+sidebar: sidebar
+keywords: 
+summary: 'The start storageArray configDbDiagnostic command runs a consistency check against a configuration database.'
+---
+= Start storage array configuration database diagnostic
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start storageArray configDbDiagnostic` command runs a consistency check against a configuration database.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+start storageArray configDbDiagnostic
+[sourceLocation=(disk | onboard) |
+diagnosticType=(fileSystem | mirror) |
+controller[(a|b)]]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`sourceLocation`
+a|
+This parameter specifies the location of the database.
+
+* `disk` indicates that data comes directly from the database on the drive
+* `onboard` indicates that data comes from the RPA memory location
+
+The default location is `disk`.
+a|
+`diagnosticType`
+a|
+The level of diagnostic testing that you want to run on the database. You can run one of these levels of testing:
+
+`fileSystem` -- This option checks the structural integrity of the database.
+
+`mirror` -- The tests run using this option vary according to the value of the `sourceLocation` parameter:
+
+* When the `sourceLocation` parameter is set to `disk`, the peer controller initiates a block check.
+* When the `sourceLocation` parameter is set to `onboard` , the peer controller initiates a record check.
+
+[NOTE]
+====
+You can run the `mirror` option only from a command line or from the Script editor. This option is not available through the storage management software GUI. The `mirror` option starts a long running operation that you cannot stop.
+====
+
+The default value is `fileSystem`.
+
+a|
+`controller`
+a|
+The controller that has the database on which you want to run the diagnostic tests. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
+|===
+
+== Notes
+
+This command runs a consistency check against a configuration database. All database records are checked. Error data is written to a file in the data folder on disk automatically. You do not need to specify an output file.
+
+[NOTE]
+====
+Running a consistency check with the `diagnosticType` parameter set to `mirror` and with the `sourceLocation` parameter set to `onboard` can cause the operation to run for a long time. This can have adverse effects on host I/O processing. This operation should be done only under direction from the support organization.
+====
+
+Upon completion of the diagnostic test, the controller firmware returns one of these results:
+
+* `Diagnosis completed without errors. No ZIP file created.`
+* `Diagnosis completed with errors. Refer to the ZIP file created at:`
++
+`+...\Install_dir\data\FirmwareUpgradeReports\timestamp_buildNo.zip+`
+
+If the diagnostic test detects an inconsistency in the configuration database, the controller firmware performs these actions:
+
+* Returns a description of the inconsistency
+* Saves a ZIP file containing raw binary data
+
+The controller firmware saves the ZIP file to this location:
+
+`+...\Install_dir\data\FirmwareUpgradeReports\timestamp_buildNo.zip+`
+
+You can use the binary data to help determine the cause of the problem, or you can send the file containing the binary data to technical support.
+
+To stop the database configuration diagnostic test, use the `stop storageArray configDbDiagnostic` command.
+
+In addition, you can start the database configuration diagnostic test through the storage management software GUI; however, you cannot stop the database configuration diagnostic test through the storage management software GUI. If you want to stop a running diagnostic test, you must use the `stop storageArray configDbDiagnostic` command.
+
+== Minimum firmware level
+
+7.75
+
+7.83 adds these parameters:
+
+* `sourceLocation`
+* `diagnosticType`
+* `controller`

@@ -1,0 +1,408 @@
+---
+permalink: wombat/reference_wombat_set_controller_iscsihostport.html
+sidebar: sidebar
+keywords: 
+summary: 'The set controller iscsiHostPort command changes the network properties for a host port, including IPv4 and IPv6 properties, port speed, and maximum frame payload.'
+---
+= Set iSCSI host port networking properties
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set controller iscsiHostPort` command changes the network properties for a host port, including IPv4 and IPv6 properties, port speed, and maximum frame payload.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+[NOTE]
+====
+This command is deprecated and is replaced by the xref:reference_wombat_set_controller_hostport.adoc[Set controller host port properties] command.
+====
+
+== Syntax
+
+----
+set controller [(a|b)]
+ iscsiHostPort [portLabel]
+----
+
+----
+([IPv4Address=(0-255).(0-255).(0-255).(0-255) ]|
+----
+
+----
+[IPv6LocalAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF)] |
+----
+
+----
+[IPv6RoutableAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) ]|
+----
+
+----
+[IPv6RouterAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) ]|
+----
+
+----
+[enableIPv4=(TRUE | FALSE) | enableIPv6=(TRUE | FALSE)] |
+----
+
+----
+[enableIPv4Vlan=(TRUE | FALSE) | enableIPv6Vlan=(TRUE | FALSE)] |
+----
+
+----
+[enableIPv4Priority=(TRUE | FALSE) | enableIPv6Priority=(TRUE | FALSE) ]|
+----
+
+----
+[IPv4ConfigurationMethod=(static | dhcp) ]|
+----
+
+----
+[IPv6ConfigurationMethod=(static | auto)] |
+----
+
+----
+[IPv4GatewayIP=(TRUE | FALSE)] |
+----
+
+----
+[IPv6HopLimit=[0-255] ]|
+----
+
+----
+[IPv6NdDetectDuplicateAddress=[0-256] ]|
+----
+
+----
+[IPv6NdReachableTime=[0-65535] ]|
+----
+
+----
+[IPv6NdRetransmitTime=[0-65535]] |
+----
+
+----
+[IPv6NdTimeOut=[0-65535] ]|
+----
+
+----
+[IPv4Priority=[0-7] | IPv6Priority=[0-7] ]|
+----
+
+----
+[IPv4SubnetMask=(0-255).(0-255).(0-255).(0-255)] |
+----
+
+----
+[IPv4VlanId=[1-4094] | IPv6VlanId=[1-4094]] |
+----
+
+----
+[maxFramePayload=[*frameSize*]] |
+----
+
+----
+[tcpListeningPort=[3260, 49152-65536] ]|
+----
+
+----
+[portSpeed=[(10 | 25)])
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`enableIPV4`
+a|
+Available options are:
+
+* TRUE
+* FALSE
+
+a|
+`enableIPV4Priority`
+a|
+Select this option to enable the parameter that determines the priority of accessing the network. Use the slider to select a priority between 1 and 7.
+
+In a shared local area network (LAN) environment, such as Ethernet, many stations might contend for access to the network. Access is on a first-come, first-served basis. Two stations might try to access the network at the same time, which causes both stations to back off and wait before trying again. This process is minimized for switched Ethernet, where only one station is connected to a switch port.
+
+Available options are:
+
+* TRUE
+* FALSE
+
+[NOTE]
+====
+This parameter is not supported in an NVMe over RoCE environment.
+====
+
+a|
+`enableIPV4Vlan`
+a|
+A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.Available options are:
+
+* TRUE
+* FALSE
+
+[NOTE]
+====
+This parameter is not supported in an NVMe over RoCE environment.
+====
+
+a|
+`enableIPV6`
+a|
+The IPv6 address space is 128 bits. It is represented by eight 16-bit hexadecimal blocks separated by colons.
+
+Available options are:
+
+* TRUE
+* FALSE
+
+a|
+`enableIPV6Priority`
+a|
+Select this option to enable the parameter that determines the priority of accessing the network. Use the slider to select a priority between 1 and 7.
+
+In a shared local area network (LAN) environment, such as Ethernet, many stations might contend for access to the network. Access is on a first-come, first-served basis. Two stations might try to access the network at the same time, which causes both stations to back off and wait before trying again. This process is minimized for switched Ethernet, where only one station is connected to a switch port.
+
+Available options are:
+
+* TRUE
+* FALSE
+
+[NOTE]
+====
+This parameter is not supported in an NVMe over RoCE environment.
+====
+
+a|
+`enableIPV6Vlan`
+a|
+A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.
+
+Available options are:
+
+* TRUE
+* FALSE
+
+[NOTE]
+====
+This parameter is not supported in an NVMe over RoCE environment.
+====
+
+a|
+`IPV4Address`
+a|
+Enter the address in this format: (0-255).(0-255).(0-255).(0-255)
+
+a|
+`IPV4ConfigurationMethod`
+a|
+Available options are:
+
+* static
+* dhcp
+
+a|
+`IPV4GatewayIP`
+a|
+Available options are:
+
+* TRUE
+* FALSE
+
+a|
+`IPV4Priority`
+a|
+Enter a value between 0 and 7.
+
+[NOTE]
+====
+This parameter is not supported in an NVMe over RoCE environment.
+====
+
+a|
+`IPV4SubnetMask`
+a|
+Enter the subnet mask in this format: (0-255).(0-255).(0-255).(0-255)
+
+a|
+`IPV4VlanId`
+a|
+Enter a value between 1 and 4094.
+
+[NOTE]
+====
+This parameter is not supported in an NVMe over RoCE environment.
+====
+
+a|
+`IPV6ConfigurationMethod`
+a|
+Available options are:
+
+* static
+* auto
+
+a|
+`IPV6HopLimit`
+a|
+This option configures the maximum number of hops an IPv6 packet can traverse.
+
+The default value is `64`.
+
+a|
+`IPV6LocalAddress`
+a|
+Enter the address is this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF)
+
+a|
+`IPV6NdDetectDuplicateAddress`
+a|
+Enter a value between 0 and 256.
+
+a|
+`IPV6NdReachableTime`
+a|
+This option configures the amount of time that a remote IPv6 mode is considered reachable. Specify a value, in milliseconds, between 0 - 65535.
+
+The default value is `30000` milliseconds.
+
+a|
+`IPV6NdRetransmitTime`
+a|
+This option configures the amount of time to continue to retransmit a packet to an IPv6 node. Specify a value, in milliseconds, between 0 - 65535.
+
+The default value is `1000` milliseconds.
+
+a|
+`IPV6NdTimeOut`
+a|
+This option configures the timeout value for an IPv6 node. Specify a value, in milliseconds, between 0 - 65535.
+
+The default value is `30000` milliseconds.
+
+a|
+`IPV6Priority`
+a|
+Enter a value between 0 and 7.
+
+[NOTE]
+====
+This parameter is not supported in an NVMe over RoCE environment.
+====
+
+a|
+`IPV6RoutableAddress`
+a|
+Enter the address is this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF)
+
+a|
+`IPV6RouterAddress`
+a|
+Enter the address is this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF)
+
+a|
+`IPV6VlanId`
+a|
+Enter a value between 1 and 4094.
+
+[NOTE]
+====
+This parameter is not supported in an NVMe over RoCE environment.
+====
+
+a|
+`maxFramePayload`
+a|
+The `maxFramePayload` option is shared between IPv4 and IPv6 and is the largest packet or frame that can be sent in a network. The payload portion of a standard Ethernet frame is set to `1500`, and a jumbo Ethernet frame is set to `9000`. When using jumbo frames, all of the devices that are in the network path should be capable of handling the larger frame size.
+
+The default value is 1500 bytes per frame. You must enter a value between 1500 and 9000.
+
+a|
+`portSpeed`
+a|
+Available options are:
+
+* 10
+* 25
+
+[NOTE]
+====
+This option is only valid for the 25Gb/s Ethernet host interface card. Changing the speed of one port changes the speed of all four ports on the card.
+====
+
+[NOTE]
+====
+Values for the `portSpeed` option of the `iscsiHostPort` parameter are in megabits per second (Mb/s).
+====
+
+a|
+`tcpListeningPort`
+a|
+The listening port is the TCP port number that the controller uses to listen for iSCSI logins from host iSCSI initiators. The default listening port is 3260. You must enter 3260 or a value between 49152 and 65535.
+
+|===
+
+== Identifying an iSCSI host port label
+
+You must specify a label for the host port. Follow these steps to specify the host port label:
+
+. If you do not know the port label for the iSCSI host port, run the `show controller` command.
+. In the Host interface section of the results, locate the host port you want to select.
++
+[NOTE]
+====
+The port label is the complete value returned for the `Port` field.
+====
+
+. Enclose the entire value of the port label in both quotes and square brackets: ["[.code]``portLabel``"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
++
+----
+iscsiHostPort[\"ch 2\"]
+----
++
+[NOTE]
+====
+If you are using a Windows command line and the label contains a pipe (|), the character should be escaped (using {caret}); otherwise, it will be interpreted as a command. For example, if the port label is `e0b|0b`, specify the iSCSI host port as follows:
+====
++
+----
+iscsiHostPort[\"e0b^|0b\"]
+----
+
+[NOTE]
+====
+For backward compatibility, the iscsiPortNumber, enclosed by braces [ ] rather than quotes and braces [" "] can still be used for E2700, E5600, or EF560 controllers (and other previous generations of E-Series or EF-Series controllers). For those controllers, valid values for iscsiPortNumber are as follows:
+
+* For controllers with integrated host ports, the numbering is 3, 4, 5, or 6.
+* For controllers with host ports on a host interface card only, the numbering is 1, 2, 3, or 4.
+
+An example of the prior syntax is as follows:
+
+----
+iscsiHostPort[3]
+----
+
+====
+
+== Minimum firmware level
+
+7.15 adds the new iSCSI host port options.
+
+7.60 adds the `portSpeed` option.
+
+8.10 revises the identification method for iSCSI host ports.
+
+8.40 revises the `portSpeed` option of the `iscsiHostPort` parameter to note that it is only valid for the 25Gb/s Ethernet host interface card, and that changing the speed of one port changes the speed of all four ports on the card.
+
+8.41 This command is deprecated.

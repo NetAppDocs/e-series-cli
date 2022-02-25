@@ -1,0 +1,49 @@
+---
+permalink: wombat/reference_wombat_suspend_asyncmirrorgroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The suspend asyncMirrorGroup command suspends the synchronization of data on all mirrored pairs at the asynchronous mirror group level.'
+---
+= Suspend asynchronous mirror group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `suspend asyncMirrorGroup` command suspends the synchronization of data on all mirrored pairs at the asynchronous mirror group level.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+This `suspend` command helps to reduce any performance impact to the host application that might occur while any changed data on the local storage array is copied to the remote storage array.
+
+== Syntax
+
+----
+suspend asyncMirrorGroup [asyncMirrorGroupName]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`asyncMirrorGroup`
+a|
+The name of the asynchronous mirror group for which you want to suspend synchronization of data. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name has special characters or numbers, you must enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets.
+
+|===
+
+== Notes
+
+When an asynchronous mirror group is in a suspended state, no attempt is made to copy data from the primary volumes to the secondary volumes of the mirrored pairs. Any writes to the primary side of the asynchronous mirror group are persistently logged in its associated mirror repository volumes. After the asynchronous mirror group is resumed, only the modified regions of the primary volumes are written to the secondary volumes.
+
+== Minimum firmware level
+
+7.84

@@ -1,0 +1,72 @@
+---
+permalink: wombat/reference_wombat_save_storagearray_autosupport_log.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray autoSupport log command allows you to view an AutoSupport log file. This file provides information about status, history of transmission activity, and any errors encountered during delivery of the AutoSupport messages. The log is available for all AutoSupport-capable and AutoSupport-enabled storage arrays.'
+---
+= Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray autoSupport log` command allows you to view an AutoSupport log file. This file provides information about status, history of transmission activity, and any errors encountered during delivery of the AutoSupport messages. The log is available for all AutoSupport-capable and AutoSupport-enabled storage arrays.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Context
+
+This command allows you to view two types of logs:
+
+* Current log -- View the log captured at this point in time.
+* Archive log -- View the log from an archived file.
+
+== Syntax
+
+----
+save storageArray autoSupport log [inputArchive=n]
+file="filename"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`inputArchive`
+a|
+Allows you to specify the archived AutoSupport log, where the archive file is `n`, an integer starting at 0.
+
+[NOTE]
+====
+Omitting this parameter means you select the current AutoSupport log (captured at this point in time).
+====
+
+a|
+`file`
+a|
+Allows you to specify the output ASUP transmission log filename.
+[NOTE]
+====
+This parameter is required.
+====
+
+|===
+
+== Minimum Firmware Level
+
+8.40
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "save storageArray autoSupport log inputArchive=0 file=\"ASUPTransmissionLog\";"
+
+SMcli completed successfully.
+----

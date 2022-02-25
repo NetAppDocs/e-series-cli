@@ -1,0 +1,51 @@
+---
+permalink: wombat/reference_wombat_show_volumegroup_importdependencies.html
+sidebar: sidebar
+keywords: 
+summary: 'The show volumeGroup importDependencies command shows a list of dependencies for the drives in a volume group that you want to move from one storage array to a second storage array.'
+---
+= Show volume group import dependencies
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show volumeGroup importDependencies` command shows a list of dependencies for the drives in a volume group that you want to move from one storage array to a second storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Syntax
+
+----
+show volumeGroup [volumeGroupName] importDependencies
+[cancelImport=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`volumeGroup`
+a|
+The name of the volume group for which you want to show import dependencies. Enclose the volume group name in square brackets ([ ]).
+a|
+`cancelImport`
+a|
+The setting to spin the drives back down after the volume group dependencies have been read. To spin down the drives, set this parameter to `TRUE`. To let the drives stay spinning, set this parameter to `FALSE`.
+|===
+
+== Notes
+
+This command returns the dependencies of a specific volume group, which must be in an Exported state or a Forced state. If a decision is made to retain the listed dependencies, then the `cancelImport` parameter can be enforced to spin the drives back down.
+
+You must run the `show volumeGroup importDependencies` command before you run the `start volumeGroup import` command.
+
+== Minimum firmware level
+
+7.10

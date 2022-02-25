@@ -1,0 +1,62 @@
+---
+permalink: wombat/reference_wombat_start_volumegroup_export.html
+sidebar: sidebar
+keywords: 
+summary: 'The start volumeGroup export command moves a volume group into an Exported state.'
+---
+= Start volume group export
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start volumeGroup export` command moves a volume group into an Exported state.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Then you can remove the drives that comprise the volume group and reinstall the drives in a different storage array.
+
+[CAUTION]
+====
+Do not perform these steps without first performing the steps listed in xref:concept_mongoose_learn_about_volume_group_migration.adoc[Learn about volume group migration.]
+====
+
+[NOTE]
+====
+Within the volume group, you cannot move volumes that are associated with the features from one storage array to another storage array.
+====
+
+== Syntax
+
+----
+start volumeGroup [volumeGroupName] export
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`volumeGroup`
+a|
+The name of the volume group that you want to export. Enclose the volume group name in square brackets ([ ]).
+|===
+
+== Notes
+
+When this command is successful, you can run the `start volumeGroup import` command to finish moving the volume group to a Complete state, which makes the volume group available to the new storage array.
+
+If this command is unsuccessful because hardware problems prevented the completion of the export, use the `set volumeGroup forceState` command. The `set volumeGroup forceState` command lets you use the `start volumeGroup import` command to import a volume group.
+
+After the volume group is in an Exported state or a Forced state, you can remove the drives that comprise the volume group from the storage array. You can reinstall the drives in a different storage array.
+
+== Minimum firmware level
+
+7.10

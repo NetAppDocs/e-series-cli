@@ -878,7 +878,7 @@ sidebar:
     url: "/reference_wombat_reset_storagearray_volumedistribution.html"
   - title: Show consistency group snapshot image
     url: "/reference_wombat_show_cgsnapimage.html"
-  - title: Enable or disable AutoSupport (all individual arrays)
+  - title: Enable or disable  AutoSupport (all individual arrays)
     url: "/reference_wombat_enable_or_disable_autosupport_individual_arrays.html"
   - title: Reset AutoSupport message collection schedule (for individual E2800 or
       E5700 arrays)

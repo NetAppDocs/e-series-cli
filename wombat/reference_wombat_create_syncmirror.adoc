@@ -1,0 +1,118 @@
+---
+permalink: wombat/reference_wombat_create_syncmirror.html
+sidebar: sidebar
+keywords: 
+summary: 'The create syncMirror command creates both the primary volume and the secondary volume for a synchronous remote mirrored pair. This command also sets the write mode \(synchronous write mode or asynchronous write mode\) and the synchronization priority.'
+---
+= Create synchronous mirroring
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create syncMirror` command creates both the primary volume and the secondary volume for a synchronous remote mirrored pair. This command also sets the write mode (synchronous write mode or asynchronous write mode) and the synchronization priority.
+
+== Supported Arrays
+
+This command applies to any individual storage array, with some restrictions. If you are running the command on the E2700 or E5600 array, there are no restrictions.
+
+[NOTE]
+====
+If you are running the command on the E2800 or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+====
+
+== Roles
+
+To execute this command on an E2800 or E5700storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+In previous versions of this command the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `syncMirror`.
+====
+
+== Syntax
+
+----
+create syncMirror primary="primaryVolumeName"
+secondary="secondaryVolumeName"
+(remoteStorageArrayName="storageArrayName" |
+remoteStorageArrayWwn="wwID")
+[remotePassword="password"]
+[syncPriority=(highest | high | medium | low | lowest)]
+[autoResync=(enabled | disabled)]
+[writeOrder=(preserved | notPreserved)]
+[writeMode=(synchronous | asynchronous)]
+[role=(primary | secondary)]
+[force=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`primary`
+a|
+The name of an existing volume on the local storage array that you want to use for the primary volume. Enclose the primary volume name in double quotation marks (" ").
+a|
+`secondary`
+a|
+The name of an existing volume on the remote storage array that you want to use for the secondary volume. Enclose the secondary volume name in double quotation marks (" ").
+a|
+`remoteStorageArrayName`
+a|
+The name of the remote storage array. Enclose the remote storage array name in double quotation marks (" ").
+a|
+`remoteStorageArrayWwn`
+a|
+The World Wide Identifier (WWID) of the remote storage array. Enclose the WWID in double quotation marks (" ").
+a|
+`remotePassword`
+a|
+The password for the remote storage array. Use this parameter when the remote storage array is password protected. Enclose the password in double quotation marks (" ").
+a|
+`syncPriority`
+a|
+The priority that full synchronization has relative to host I/O activity. Valid values are `highest`, `high`, `medium`, `low`, or `lowest`.
+a|
+`autoResync`
+a|
+The settings for automatic resynchronization between the primary volumes and the secondary volumes of a remote-mirror pair. This parameter has these values:
+
+* `enabled` -- Automatic resynchronization is turned on. You do not need to do anything further to resynchronize the primary volume and the secondary volume.
+* `disabled` -- Automatic resynchronization is turned off. To resynchronize the primary volume and the secondary volume, you must run the `resume syncMirror` command.
+
+a|
+`writeOrder`
+a|
+The write order for data transmission between the primary volume and the secondary volume. Valid values are `preserved` or `notPreserved`.
+a|
+`writeMode`
+a|
+How the primary volume writes to the secondary volume. Valid values are `synchronous` or `asynchronous`.
+a|
+`role`
+a|
+Use this parameter to promote the asynchronous mirror group to a primary role or demote the asynchronous mirror group to a secondary role. To define the asynchronous mirror group as the primary role, set this parameter to `primary`. To define the asynchronous mirror group as the secondary role, set this parameter to `secondary`.
+a|
+`force`
+a|
+The role reversal is forced if the communications link between the storage arrays is down and promotion or demotion on the local side results in a dual-primary condition or a dual-secondary condition. To force a role reversal, set this parameter to `TRUE`. The default value is `FALSE`.
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Names can have a maximum of 30 characters.
+
+When you choose the primary volume and the secondary volume, the secondary volume must be of equal or greater size than the primary volume. The RAID level of the secondary volume does not have to be the same as the primary volume.
+
+Passwords are stored on each storage array in a management domain. If a password was not previously set, you do not need a password. The password can be any combination of a alphanumeric characters with a maximum of 30 characters. (You can define a storage array password by using the `set storageArray` command.)
+
+Synchronization priority defines the amount of system resources that are used to synchronize the data between the primary volume and the secondary volume of a mirror relationship. If you select the highest priority level, the data synchronization uses the most system resources to perform the full synchronization, which decreases performance for host data transfers.
+
+The `writeOrder` parameter applies only to asynchronous write modes and makes the mirrored pair part of a consistency group. Setting the `writeOrder` parameter to `preserved` causes the remote mirrored pair to transmit data from the primary volume to the secondary volume in the same order as the host writes to the primary volume. In the event of a transmission link failure, the data is buffered until a full synchronization can occur. This action can require additional system overhead to maintain the buffered data, which slows operations. Setting the `writeOrder` parameter to `notPreserved` frees the system from having to maintain data in a buffer, but it requires forcing a full synchronization to make sure that the secondary volume has the same data as the primary volume.
+
+== Minimum firmware level
+
+6.10

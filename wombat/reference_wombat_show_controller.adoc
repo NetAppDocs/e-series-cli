@@ -1,0 +1,38 @@
+---
+permalink: wombat/reference_wombat_show_controller.html
+sidebar: sidebar
+keywords: 
+summary: 'The show controller command returns the status of controller diagnostics started by the start controller diagnostic command.'
+---
+= Show controller diagnostic status
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show controller` command returns the status of controller diagnostics started by the `start controller diagnostic` command.
+
+If the diagnostics have finished, the entire results of the diagnostic tests are shown. If the diagnostic tests have not finished, only the results of the tests that are finished are shown. The results of the test are shown on the terminal, or you can write the results to a file.
+
+== Syntax
+
+----
+show controller [(a| b)] diagnosticStatus [file=filename]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+The setting to return information about a specific controller in the storage array. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
+a|
+`file`
+a|
+The name of the file that contains the results of the diagnostic tests. This command does not automatically append a file extension to the file name. You must add an extension when you enter the file name.
+|===
+
+== Minimum firmware level
+
+7.70 adds the capability for controller diagnostic status.

@@ -1,0 +1,52 @@
+---
+permalink: wombat/reference_wombat_smcli_enable_disable_autosupportondemand.html
+sidebar: sidebar
+keywords: 
+summary: 'The SMcli enable\|disable autoSupportOnDemand command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data.'
+---
+= Enable or disable the AutoSupport OnDemand feature at the EMW management domain level (SMcli only)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `SMcli enable|disable autoSupportOnDemand` command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data.
+
+== Supported Arrays
+
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+
+== Context
+
+[NOTE]
+====
+This command is an SMcli command, not a script command. You must run this command from a command line. You cannot run this command from the script editor in the storage management software.
+====
+
+Before enabling this feature, you must first enable the AutoSupport feature on the management domain. After enabling this feature, you can next enable the AutoSupport Remote Diagnostics feature (if desired). The AutoSupport Remote Diagnostics features is enabled, by default, when the AutoSupport OnDemand feature is enabled.
+
+image::../media/baseasup_w_second_enable.gif[]
+
+== Syntax
+
+----
+SMcli enable|disable autoSupportOnDemand
+----
+
+== Parameters
+
+None.
+
+== Minimum Firmware Level
+
+8.25
+
+== Verification
+
+Use the `SMcli -autoSupportConfig show` command to see if you have enabled the feature. The initial two lines of the displayed output show the enable status of the AutoSupport feature, followed by the AutoSupport OnDemand feature:
+
+----
+The AutoSupport feature is activated on this storage management
+station.
+The AutoSupport OnDemand feature is activated on this storage
+management station.
+----

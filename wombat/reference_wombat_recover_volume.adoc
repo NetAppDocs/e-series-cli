@@ -1,0 +1,177 @@
+---
+permalink: wombat/reference_wombat_recover_volume.html
+sidebar: sidebar
+keywords: 
+summary: 'The recover volume command creates a RAID volume with the given properties without initializing any of the user data areas on the drives.'
+---
+= Recover RAID volume
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `recover volume` command creates a RAID volume with the given properties without initializing any of the user data areas on the drives.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Parameter values are derived from the Recovery Profile data file (`recovery-profile.csv`) for the storage array. You can create the recover volume in an existing volume group or create a new volume group by using this command.
+
+[NOTE]
+====
+You can run this command only from a command line. You cannot run this command from the GUI script editor. You cannot use the storage management GUI to recover a volume.
+====
+
+[NOTE]
+====
+You cannot use this command for Dynamic Disk Pool (DDP) volumes.
+====
+
+== Syntax
+
+----
+recover volume (drive=\(trayID,[drawerID,]slotID\)) |
+(drives=\(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\)) |
+volumeGroup=volumeGroupName))
+[newVolumeGroup=volumeGroupName]
+userLabel="volumeName" volumeWWN="volumeWWN"
+capacity=volumeCapacity
+offset=offsetValue
+raidLevel=(0 | 1 | 3 | 5 | 6)
+segmentSize=segmentSizeValue
+dssPreAllocate=(TRUE | FALSE)
+SSID=subsystemVolumeID
+[owner=(a|b)]
+[cacheReadPrefetch=(TRUE | FALSE)]
+[dataAssurance=(none | enabled)]
+[hostUnmapEnabled=(TRUE | FALSE)]
+[blockSize=blockSizeValue]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`drive` or `drives`
+a|
+The drives that you want to assign to the volume group that will contain the volume that you want to recover. For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+a|
+`volumeGroup`
+a|
+The name of an existing volume group in which you want to create the volume. (To determine the names of the volume groups in your storage array, run the `show storageArray profile` command.)
+a|
+`newVolumeGroup`
+a|
+The name that you want to give a new volume group. Enclose the new volume group name in double quotation marks (" ").
+a|
+`userLabel`
+a|
+The name of the volume that you want to recover. The user label has two parts:
+
+* The volume name. Enclose the volume name in double quotation marks (" ").
+* The world wide name of the volume, `volumeWWN`, in the form of a 16 byte identifier, for example, 60080E500017B4320000000049887D77. Enclose the identifier in double quotation marks (" ").
+
+You must enter both the volume name and the world wide name of the volume. You must enter the volume name first. For example:
+
+----
+userLabel="engdata"
+volumeWWN=60080E500017B4320000000049887D77
+----
+
+a|
+`capacity`
+a|
+The size of the volume that you are adding to the storage array. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`.
+a|
+`offset`
+a|
+The number of blocks from the start of the volume group to the start of the referenced volume.
+a|
+`raidLevel`
+a|
+The RAID level of the volume group that contains the drives. Valid values are `0`, `1`, `3`, `5`, or `6`.
+a|
+`segmentSize`
+a|
+The amount of data (in KB) that the controller writes on a single drive in a volume group before writing data on the next drive. Valid values are `8`, `16`, `32`, `64`, `128`, `256`, or `512`.
+a|
+`dssPreAllocate`
+a|
+The setting to turn on or turn off allocating volume storage capacity for future segment size changes. To turn on allocation, set this parameter to `TRUE`. To turn off allocation, set this parameter to `FALSE`.
+a|
+`SSID`
+a|
+The storage array subsystem identifier of a volume. Use the `show volume` command to determine the storage array subsystem identifier.
+a|
+`owner`
+a|
+The controller that owns the volume. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. If you do not specify an owner, the controller firmware determines the owner.
+a|
+`cacheReadPrefetch`
+a|
+The setting to turn on or turn off cache read prefetch. To turn off cache read prefetch, set this parameter to `FALSE`. To turn on cache read prefetch, set this parameter to `TRUE`.
+a|
+`hostUnmapEnabled`
+a|
+When this parameter is set to `True`, a host is allowed to issue unmap commands to the volume. Unmap commands are only allowed on resource-provisioned volumes.
+a|
+`blockSize`
+a|
+This setting is the volume block size in bytes.
+|===
+
+== Notes
+
+The storage management software collects recovery profiles of the monitored storage arrays and saves the profiles on a storage management station.
+
+The `drive` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+
+If you attempt to recover a volume using the `drive` parameter or the `drives` parameter and the drives are in an unassigned state, the controller automatically creates a new volume group. Use the `newVolumeGroup` parameter to specify a name for the new volume group.
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+The `owner` parameter defines which controller owns the volume. The preferred controller ownership of a volume is the controller that currently owns the volume group.
+
+== Preallocating storage capacity
+
+The `dssPreAllocate` parameter enables you to assign capacity in a volume for storing information that is used to rebuild a volume. When you set the `dssPreallocate` parameter to `TRUE`, the storage space allocation logic in the controller firmware pre-allocates the space in a volume for future segment size changes. The pre-allocated space is the maximum allowable segment size. The `dssPreAllocate` parameter is necessary for properly recovering volume configurations that are not retrievable from the controller database. To turn off the preallocation capability, set `dssPreAllocate` to `FALSE`.
+
+== Segment size
+
+The size of a segment determines how many data blocks that the controller writes on a single drive in a volume before writing data on the next drive. Each data block stores 512 bytes of data. A data block is the smallest unit of storage. The size of a segment determines how many data blocks that it contains. For example, an 8-KB segment holds 16 data blocks. A 64-KB segment holds 128 data blocks.
+
+When you enter a value for the segment size, the value is checked against the supported values that are provided by the controller at run time. If the value that you entered is not valid, the controller returns a list of valid values. Using a single drive for a single request leaves other drives available to simultaneously service other requests.
+
+If the volume is in an environment where a single user is transferring large units of data (such as multimedia), performance is maximized when a single data transfer request is serviced with a single data stripe. (A data stripe is the segment size that is multiplied by the number of drives in the volume group that are used for data transfers.) In this case, multiple drives are used for the same request, but each drive is accessed only once.
+
+For optimal performance in a multiuser database or file system storage environment, set your segment size to minimize the number of drives that are required to satisfy a data transfer request.
+
+== Cache read prefetch
+
+Cache read prefetch lets the controller copy additional data blocks into cache while the controller reads and copies data blocks that are requested by the host from disk into cache. This action increases the chance that a future request for data can be fulfilled from cache. Cache read prefetch is important for multimedia applications that use sequential data transfers. The configuration settings for the storage array that you use determine the number of additional data blocks that the controller reads into cache. Valid values for the `cacheReadPrefetch` parameter are `TRUE` or `FALSE`.
+
+== Minimum firmware level
+
+5.43
+
+7.10 adds RAID 6 Level capability and the `newVolumeGroup` parameter.
+
+7.60 adds the `drawerID` user input.
+
+7.75 adds the `dataAssurance` parameter.
+
+8.78 adds the `hostUnmapEnabled` parameter.
+
+11.70.1 adds the `blockSize` parameter.

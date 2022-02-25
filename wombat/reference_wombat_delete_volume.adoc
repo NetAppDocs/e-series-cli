@@ -1,0 +1,83 @@
+---
+permalink: wombat/reference_wombat_delete_volume.html
+sidebar: sidebar
+keywords: 
+summary: 'The delete volume command deletes either normal or thin volumes from a disk pool.'
+---
+= Delete volume from disk pool
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete volume` command deletes either normal or thin volumes from a disk pool.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+You also can use this command to delete any schedules related to the volume. When you delete the schedule the volume is not deleted.
+
+[NOTE]
+====
+*Possible damage to the storage array configuration* -- All of the data in the volume is lost as soon as you run this command.
+====
+
+== Syntax
+
+----
+delete (allVolumes |
+volume [volumeName] |
+volumes ["volumeName1" ... "volumeNameN"]
+[force=(TRUE | FALSE)]
+[schedule]
+[retainRepositoryMembers=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`allVolumes`
+a|
+This parameter deletes all of the volumes on a disk pool.
+a|
+`volume`
+a|
+The name of a specific volume that you want to delete. Enclose the volume name in square brackets ([ ]). If the volume name contains special characters or consists only of numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
+
+a|
+`volumes`
+a|
+The names of several volumes that you want to delete. Enter the names of the volumes using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Separate each of the names with a space.
+
+a|
+`force`
+a|
+Use this parameter to force the immediate deletion of a volume even if the controllers are performing other operations. To immediately force the deletion of a volume, set this parameter to `TRUE`. To wait until the controllers have finished performing other operations, do not use this parameter or set this parameter to `FALSE`.
+a|
+`schedule`
+a|
+This parameter deletes any schedule for related to a specific disk pool volume. Only the schedule is deleted, the disk pool volume remains.
+a|
+`retainRepositoryMembers`
+a|
+When you delete a thin volume, the associated repository volume is deleted by default. However, when the `retainRepositoryMembers` is set to `TRUE`, the repository volume is retained. For normal volumes, this parameter has no effect.
+|===
+
+== Notes
+
+When you use the `allVolumes` parameter, this command deletes volumes until all of the volumes are removed or until an error is encountered. If an error is encountered, this command does not try to delete the remaining volumes. Deleting volumes from different volume groups is possible. All of the volume groups that become empty are deleted if you set the `removeVolumeGroup` parameter to `TRUE`.
+
+== Minimum firmware level
+
+7.83

@@ -1,0 +1,67 @@
+---
+permalink: wombat/reference_wombat_set_drive_nativestate.html
+sidebar: sidebar
+keywords: 
+summary: 'The set drive nativeState command adds the missing \(foreign\) drives back into their original volume group and to make them part of the volume group in the new storage array.'
+---
+= Set foreign drive to native
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set drive nativeState` command adds the missing (foreign) drives back into their original volume group and to make them part of the volume group in the new storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+A drive is considered to be native when it is a part of a volume group in a storage array. A drive is considered to be foreign when it does not belong to a volume group in a storage array or when it fails to be imported with the drives of a volume group that are transferred to a new storage array. The latter failure creates an incomplete volume group on the new storage array.
+
+Use this operation for emergency recovery only: when one or more drives need to be changed from a foreign drive status and returned to a native status within their original volume group.
+
+[NOTE]
+====
+*Possible data corruption or data loss* -- Using this command for reasons other than what is stated previously might result in data loss without notification.
+====
+
+== Syntax
+
+----
+set (drive=\(trayID,[drawerID,]slotID\) \| drives=\(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\) |
+allDrives) nativeState
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`drive` or `drives`
+a|
+For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+a|
+`allDrives`
+a|
+The setting to select all of the drives.
+|===
+
+== Notes
+
+The `drive` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+
+== Minimum firmware level
+
+7.10
+
+7.60 adds the `drawerID` user input.

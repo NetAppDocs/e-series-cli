@@ -1,0 +1,42 @@
+---
+permalink: wombat/reference_wombat_disable_storagearray.html
+sidebar: sidebar
+keywords: 
+summary: 'The disable storageArray command disables a storage array feature.'
+---
+= Disable storage array feature
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `disable storageArray` command disables a storage array feature.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Run the `show storageArray` command to show a list of the feature identifiers for all enabled features in the storage array.
+
+== Syntax
+
+----
+disable storageArray (featurePack | feature=featureAttributeList)
+----
+
+The `featureAttributeList` can be one or more of these attribute values. If you enter more than one attribute value, separate the values with a space.
+
+* `driveSecurity`
+
+== Parameters
+
+None.
+
+== Minimum firmware level
+
+8.20 adds the `driveSecurity` attribute and removes all other attributes.

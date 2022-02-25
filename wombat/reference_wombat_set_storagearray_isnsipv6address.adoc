@@ -1,0 +1,44 @@
+---
+permalink: wombat/reference_wombat_set_storagearray_isnsipv6address.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray isnsIPv6Address command sets the IPv6 address for the iSNS server.'
+---
+= Set storage array iSNS server IPv6 address
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray isnsIPv6Address` command sets the IPv6 address for the iSNS server.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set storageArray isnsIPv6Address=ipAddress
+----
+
+== Parameter
+
+|===
+| Parameters| Description
+a|
+`isnsIPv6Address`
+a|
+The IPv6 address that you want to use for the iSNS server.
+|===
+
+== Notes
+
+The iSNS protocol facilitates the automated discovery, management, and configuration of iSCSI devices and Fibre Channel devices on a TCP/IP network. iSNS provides intelligent storage discovery and management services comparable to those found in Fibre Channel networks, which permits a commodity IP network to function in a similar capacity as a storage area network. iSNS also facilitates a seamless integration of IP networks and Fibre Channel networks, due to its ability to emulate Fibre Channel fabric services, and manage both iSCSI devices and Fibre Channel devices. iSNS provides value in any storage network that has iSCSI devices, Fibre Channel devices, or any combination.
+
+== Minimum firmware level
+
+7.10

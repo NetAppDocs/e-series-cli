@@ -1,0 +1,66 @@
+---
+permalink: wombat/reference_wombat_create_host.html
+sidebar: sidebar
+keywords: 
+summary: 'The create host command creates a new host.'
+---
+= Create host
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create host` command creates a new host.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+For E2700 and E5600 storage arrays, if you do not specify a host group in which to create the new host, the new host is created in the Default Group.
+
+== Syntax
+
+----
+create host userLabel="hostName"
+[hostGroup=("hostGroupName" | defaultGroup)]
+[hostType=(hostTypeIndexLabel | hostTypeIndexNumber)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`userLabel`
+a|
+The name that you want to give the host that you are creating. Enclose the host name in double quotation marks (" ").
+a|
+`hostGroup`
+a|
+The name of the host group in which you want to create a new host. Enclose the host group name in double quotation marks (" "). (If a host group does not exist, you can create a new host group by using the `create hostGroup` command.) The `defaultGroup` option is the host group that contains the host to which the volume is mapped.
+a|
+`hostType`
+a|
+The index label or the index number that identifies the host type. Use the `show storageArray hostTypeTable` command to generate a list of available host type identifiers. If the host type has special characters, enclose the host type in double quotation marks (" ").
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Names can have a maximum of 30 characters.
+
+A host is a computer that is attached to the storage array and accesses the volumes on the storage array through the host ports. You can define specific mappings to an individual host. You also can assign the host to a host group that shares access to one or more volumes.
+
+A host group is an optional topological element that you can define if you want to designate a collection of hosts that share access to the same volumes. The host group is a logical entity. Define a host group only if you have two or more hosts that share access to the same volumes.
+
+If you do not specify a host group in which to place the host that you are creating, the newly defined host belongs to the default host group.
+
+== Minimum firmware level
+
+5.20
+
+7.10 adds the `hostType` parameter.

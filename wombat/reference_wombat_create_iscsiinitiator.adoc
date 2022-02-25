@@ -1,0 +1,68 @@
+---
+permalink: wombat/reference_wombat_create_iscsiinitiator.html
+sidebar: sidebar
+keywords: 
+summary: 'The create iscsiInitiator command creates a new iSCSI initiator object.'
+---
+= Create iSCSI initiator
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create iscsiInitiator` command creates a new iSCSI initiator object.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+[NOTE]
+====
+This command is deprecated and is replaced by the xref:reference_wombat_create_initiator.adoc[Create initiator] command.
+====
+
+== Syntax
+
+----
+create iscsiInitiator iscsiName="iscsiID"
+userLabel="name"
+host="hostName"
+[chapSecret="securityKey"]
+----
+
+== Parameters
+
+|===
+| Parameters| Description
+a|
+`iscsiName`
+a|
+The default identifier of the iSCSI initiator. Enclose the identifier in double quotation marks (" ").
+a|
+`userLabel`
+a|
+The name that you want to use for the iSCSI initiator. Enclose the name in double quotation marks (" ").
+a|
+`host`
+a|
+The name of the host in which the iSCSI initiator is installed. Enclose the name in double quotation marks (" ").
+a|
+`chapSecret`
+a|
+The security key that you want to use to authenticate a peer connection. Enclose the security key in double quotation marks (" ").
+|===
+
+== Notes
+
+Challenge Handshake Authentication Protocol (CHAP) is a protocol that authenticates the peer of a connection. CHAP is based upon the peers sharing a _secret_. A secret is a security key that is similar to a password.
+
+Use the `chapSecret` parameter to set up the security keys for initiators that require a mutual authentication.
+
+== Minimum firmware level
+
+7.10
+
+8.41 This command is deprecated.

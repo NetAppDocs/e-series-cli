@@ -1,0 +1,402 @@
+---
+permalink: wombat/reference_wombat_save_storagearray_supportdata.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray supportData command saves the support-related information of the storage array to a file.'
+---
+= Save storage array support data
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray supportData` command saves the support-related information of the storage array to a file.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Context
+
+The following table lists the type of support data that you can collect.
+
+|===
+| Type of data| File name and description
+a|
+Automatic Load Balancing statistics
+a|
+`alb-statistics-A.txt`
+
+`alb-statistics-B.txt`
+
+This file, one per controller, specify various statistics related to the Automatic Load Balancing feature that allow further analysis via offline analysis tool.
+
+a|
+Core dump metadata
+a|
+`all-coredump.xml`
+
+This file contains core dump metadata for the array.
+
+[NOTE]
+====
+Starting with the 8.25 release, core-dump-info.xml has been renamed to all-coredump.xml.
+====
+
+a|
+AutoSupport status
+a|
+`autosupport.xml`
+
+This file specifies the current status of ASUP for the given array.
+
+a|
+The AutoSupport history file
+a|
+`autosupport-history.xml`
+
+This file specifies all ASUP messages, both standard and AutoSupport OnDemand messages, for the given array. Each entry in the table corresponds to an ASUP message currently sitting in one of the repositories for a given array.
+
+a|
+AutoSupport logs
+a|
+`asup-transmission-logs.txt`
+
+This file contains all the transmitted AutoSupport messages.
+
+a|
+Web Server Client Info (E2800 or E5700 only)
+a|
+`client-info.txt`
+
+This file specifies various Web Services client information.
+
+a|
+Drive cabling topology
+a|
+`connection.txt` This file contains information about the connections between the drive tray environmental services module (ESM) and the controller pair.
+
+a|
+Cumulative statistics bundles
+a|
+`cumulative-drive-vol-stats.xml`
+
+This file contains cumulative statistics for the controllers.
+
+a|
+Misbehaving drive log
+a|
+`controller-drive-error-event-log.txt`
+
+This file contains the storage array controller drive-side error and event log messages.
+
+a|
+Controller health image metadata
+a|
+`all-coredump.xml`
+
+This file contains DPL controller health image information.
+
+[NOTE]
+====
+Starting with the 8.25 release, core-dump-info.xml has been renamed to all-coredump.xml.
+====
+
+a|
+DOM 0 journal files for controller A (E2800 or E5700 only)
+a|
+`dom0-complete-journal-A.7z`
+
+This file, one per controller, contains detailed Linux system logs. This includes logs for Linux packages and standard Linux utilities and services.
+
+a|
+DOM 0 journal files for controller B (E2800 or E5700 only)
+a|
+`dom0-complete-journal-B.7z`
+
+This file, one per controller, contains detailed Linux system logs. This includes logs for Linux packages and standard Linux utilities and services.
+
+a|
+Miscellaneous DOM 0 log files for controller A (E2800 or E5700 only)
+a|
+`dom0-misc-logs-A.7z`
+
+This file, one per controller, contains system logs that cannot be contained with the Journal. This includes the serial log for the RAID Application and debug logs for the Hypervisor.
+
+a|
+Miscellaneous DOM 0 log files for controller B (E2800 or E5700 only)
+a|
+`dom0-misc-logs-B.7z`
+
+This file, one per controller, contains system logs that cannot be contained with the Journal. This includes the serial log for the RAID Application and debug logs for the Hypervisor.
+
+a|
+Drive command aging timeout values
+a|
+`drive-command-aging-timeout.txt` This file contains the default values and current values for the command aging timeout field for every drive.
+
+a|
+Drive health logs
+a|
+`drive-health-data.bin` This file contains various drive information related to the drive's health.
+
+[NOTE]
+====
+This file is a binary file and will require an offline parser to convert to human readable format.
+====
+
+a|
+Drive performance analyzer data
+a|
+`drive-performance-log.txt`
+
+This file contains drive performance data that helps you identify any drives that are performing below expectations.
+
+a|
+Enterprise Management Window configuration
+a|
+`emwdata_v04.bin`
+
+This file contains the EMW configuration data store file.
+
+[NOTE]
+====
+In support bundles for the E2800 and E5700, this file isn't present.
+====
+
+a|
+Tray event logs
+a|
+`expansion-tray-log.txt`
+
+ESM event logs.
+
+a|
+Failed repository analysis
+a|
+`failed-repository-analysis.txt`
+
+This file contains the failed repository analysis information.
+
+a|
+Features of the storage array
+a|
+`feature-bundle.txt` This file contains a list of the number of volumes, drives, and drive trays allowed in the storage array and a list of the features available and their limits.
+
+a|
+Firmware inventory
+a|
+`firmware-inventory.txt` This file contains a list of all of the firmware versions for all of the components in the storage array.
+
+a|
+InfiniBand interface statistics (InfiniBand only)
+a|
+`ib-statistics.csv`
+
+This file contains the InfiniBand interface statistics.
+
+a|
+I/O path statistics
+a|
+`io-path-statistics.7z` This file contains raw performance data for each controller that can be used to analyze application performance issues.
+
+a|
+IOC dump info for the host interface chip
+a|
+`ioc-dump-info.txt` This file contains IOC dump information for the host interface chip.
+
+a|
+IOC dump logs for the host interface chip
+a|
+`ioc-dump.gz` This file contains the log dump from the host interface chip on the controller. The file is compressed in gz format. The zip file is saved as a file inside of the Customer Support Bundle.
+
+a|
+iSCSI connections (iSCSI only)
+a|
+`iscsi-session-connections.txt` This file contains a list of all of the current iSCSI sessions.
+
+a|
+iSCSI statistics (iSCSI only)
+a|
+`iscsi-statistics.csv` This file contains statistics for the Ethernet media access control (MAC), Ethernet Transmission Control Protocol (TCP)/Internet Protocol (IP), and iSCSI target.
+
+a|
+iSER interface statistics (iSER over InfiniBand only)
+a|
+`iser-statistics.csv` This file contains the statistics for the host interface card that runs iSER over InfiniBand.
+
+a|
+Major event log
+a|
+`major-event-log.txt` This file contains a detailed list of events that occur on the storage array. The list is stored in reserved areas on the disks in the storage array. The list records configuration events and component failures in the storage array.
+
+a|
+Manifest file
+a|
+`manifest.xml`
+
+This file contains a table that describes the files included in the archive file and the collected status of each of those files.
+
+a|
+Storage management software runtime information
+a|
+`msw-runtime-info.txt`
+
+This file contains the storage management software application runtime information. Contains the JRE version currently used by the storage management software.
+
+a|
+NVMe-oF statistics
+a|
+`nvmeof-statistics.csv`
+
+This file contains a list of statistics, including NVMe controller statistics, NVMe queue statistics, and interface statistics for the transport protocol (for example, InfiniBand).
+
+a|
+NVSRAM data
+a|
+`nvsram-data.txt` This controller file specifies the default settings for the controllers.
+
+a|
+Object bundle
+a|
+`object-bundle`.bin``object-bundle``.json
+
+This bundle contains a detailed description of the status of your storage array and its components, which was valid at the time that the file was generated.
+
+a|
+Summary performance statistics
+a|
+`perf-stat-daily-summary-a.csv` `perf-stat-daily-summary-b.csv`
+
+This file contains various controller performance statistics, one file per controller.
+
+a|
+Persistent reservations and registrations
+a|
+`persistent-reservations.txt` This file contains a detailed list of volumes on the storage array with persistent reservations and registrations.
+
+a|
+Storage management software user preferences
+a|
+`pref-01.bin`
+
+This file contains the user preference persistent data store.
+
+[NOTE]
+====
+In support bundles for the E2800 or E5700, this file is not present.
+====
+
+a|
+Recovery Guru procedures
+a|
+`recovery-guru-procedures.html` This file contains a detailed list of all of the recovery guru topics that are issued in response to problems detected on the storage array. For the E2800 and E5700 arrays, this file contains only the recovery guru details, not the HTML files.
+
+a|
+Recovery profile
+a|
+`recovery-profile.csv` This file contains a detailed description of the latest recovery profile record and historical data.
+
+a|
+SAS PHY error logs
+a|
+`sas-phy-error-logs.csv`
+
+This file contains the error information for SAS PHY.
+
+a|
+State capture data
+a|
+`state-capture-data.txt` This file contains a detailed description of the current state of your storage array.
+
+a|
+Storage array configuration
+a|
+`storage-array-configuration.cfg` This file contains a detailed description of the logical configuration on your storage array.
+
+a|
+Storage array profile
+a|
+`storage-array-profile.txt` This file contains a description of all of the components and properties of a storage array.
+
+a|
+Trace buffer contents
+a|
+`trace-buffers.7z` This file contains the contents of the controllers`' trace buffers that are used to record debug information.
+
+a|
+Tray capture data
+a|
+`tray-component-state-capture.7z` If your tray contains drawers, the diagnostic data is archived in this zipped file. The Zip file contains a separate text file for each tray that contains drawers. The Zip file is saved as a file inside of the Customer Support Bundle.
+
+a|
+Unreadable sectors
+a|
+`unreadable-sectors.txt` This file contains a detailed list of all of the unreadable sectors that have been logged to the storage array.
+
+a|
+Web Services Trace Log (E2800 or E5700 only)
+a|
+`web-server-trace-log-A.7z`
+
+`web-server-trace-log-B.7z`
+
+This file, one per controller, contains Web Services trace buffers that are used to record debug information.
+
+a|
+Workload capture analytics log file
+a|
+`wlc-analytics-a.lz4` `wlc-analytics-b.lz4`
+
+This file, one per controller, contains computed key workload characteristics such as LBA histogram, read/write ratio and I/O throughput across all active volumes.
+
+a|
+X-header data file
+a|
+`x-header-data.txt` This AutoSupport message header consists of plain text key-value pairs; which include information about the array and message type.
+
+|===
+
+== Syntax
+
+----
+save storageArray supportData file="filename" [force=(TRUE | FALSE)]
+----
+
+----
+save storageArray supportData file="filename"
+[force=(TRUE | FALSE) |
+csbSubsetid=(basic | weekly | event | daily | complete) |
+csbTimeStamp=hh:mm]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name to which you want to save the support-related data for the storage array. Enclose the file path and the file name in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\logs\supdat.7z"`
+
+a|
+`force`
+a|
+This parameter forces the collection of support data if there are any failures in securing a lock on controller operations. To force the collection of support data, set this parameter to `TRUE`. The default value is `FALSE`.
+
+|===
+
+== Notes
+
+Starting with firmware level 7.86, the file name extension must be `.7z` on systems running Windows. If you are running a firmware version earlier than 7.86 on a Windows system, the files extension must be `.zip`. On systems that are not running Windows, you can use any file extension that works for your system.
+
+== Minimum firmware level
+
+7.80 adds the `force` parameter.
+
+8.30 adds information for the E2800 storage array.

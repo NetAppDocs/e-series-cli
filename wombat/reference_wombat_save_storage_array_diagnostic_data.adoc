@@ -1,0 +1,67 @@
+---
+permalink: wombat/reference_wombat_save_storage_array_diagnostic_data.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray diagnosticData command saves the storage array diagnostic data from either the controllers or the environmental services modules \(ESMs\) to a file.'
+---
+= Save storage array diagnostic data
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray diagnosticData` command saves the storage array diagnostic data from either the controllers or the environmental services modules (ESMs) to a file.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+You can review the file contents at a later time. You can also send the file to technical support for further review.
+
+After you have saved the diagnostic data, you can reset the NVSRAM registers that contain the diagnostic data so that the old data can be overwritten. Use the `reset storageArray diagnosticData` command to reset the diagnostic data registers.
+
+[NOTE]
+====
+Run this command only with the assistance of technical support.
+====
+
+== Syntax
+
+----
+save storageArray diagnosticData [(controller | tray)]
+file="filename"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`diagnosticData`
+a|
+This parameter allows you to download the diagnostic data from either the controllers or the ESMs.
+a|
+`file`
+a|
+The file path and the file name to which you want to save the storage array diagnostic data. Enclose the file name in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\logs\sadiag.zip"`
+
+This command automatically saves the data to a compressed file; however, this command does not automatically append a file extension to the saved file. You must specify the `.zip` extension when entering the file name.
+
+|===
+
+== Notes
+
+In versions of this command before 7.77, the user option was `esm` instead of `tray`. Starting in 7.77, `tray` replaces `esm`. The use of `esm` is still supported, but for best compatibility with future releases, replace `esm` with `tray`.
+
+== Minimum firmware level
+
+6.16
+
+7.77 `tray` replaces `esm`.

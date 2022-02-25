@@ -1,0 +1,37 @@
+---
+permalink: wombat/reference_wombat_remove_array_label.html
+sidebar: sidebar
+keywords: 
+summary: 'The Remove array label command allows you to remove a user-defined label for a storage array.'
+---
+= Remove array label
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `Remove array label` command allows you to remove a user-defined label for a storage array.
+
+== Supported Arrays
+
+This command applies to the EF600 and EF300 storage arrays.
+
+== Syntax
+
+----
+delete storageArrayLabel label userDefinedString
+delete storageArrayLabel all
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`userDefinedString`
+a|
+Allows you to specify a user-defined label for the storage array.
+|===
+
+== Minimum firmware level
+
+8.60

@@ -1,0 +1,60 @@
+---
+permalink: wombat/reference_wombat_start_storagearray_controllerhealthimage_controller.html
+sidebar: sidebar
+keywords: 
+summary: 'The start storageArray controllerHealthImage controller command produces a storage array controller health image on storage arrays that support the controller health image feature.'
+---
+= Start storage array controller health image
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start storageArray controllerHealthImage controller` command produces a storage array controller health image on storage arrays that support the controller health image feature.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+With firmware version 8.20 the `coreDump` parameter is replaced with the `controllerHealthImage` parameter.
+====
+
+[NOTE]
+====
+Use this command only under the direction of technical support.
+====
+
+If the storage array does not support the controller health image feature, the command returns an error.
+
+== Syntax
+
+----
+start storageArray controllerHealthImage controller [(a|b)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+This parameter specifies the controller from which to produce the controller health image. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the storage management software returns a syntax error.
+|===
+
+== Notes
+
+This command forces the selected controller to dump its core data to cache. Use the `save storageArray controllerHealthImage` command to save a copy of the cache data to a host file.
+
+== Minimum firmware level
+
+7.83
+
+8.20 replaces the `coreDump` parameter with the `controllerHealthImage` parameter.
