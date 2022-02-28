@@ -9,112 +9,112 @@ summary: ''
 :imagesdir: ./media/
 
 
-link:../commands-a-z/show-storagearray-usersession.adoc[Display storage array user session]
+link:../commands-a-z/show-storagearray-usersession.html[Display storage array user session]
 
-link:../commands-a-z/save-storagearray-loginbanner.adoc[Save storage array login banner]
+link:../commands-a-z/save-storagearray-loginbanner.html[Save storage array login banner]
 
-link:../commands-a-z/set-session-erroraction.adoc[Set session]
+link:../commands-a-z/set-session-erroraction.html[Set session]
 
-link:../commands-a-z/set-storagearray-localusername.adoc[Set storage array local user password or SYMbol password]
+link:../commands-a-z/set-storagearray-localusername.html[Set storage array local user password or SYMbol password]
 
-link:../commands-a-z/show-asyncmirrorgroup-synchronizationprogress.adoc[Show asynchronous mirror group synchronization progress]
+link:../commands-a-z/show-asyncmirrorgroup-synchronizationprogress.html[Show asynchronous mirror group synchronization progress]
 
-link:../commands-a-z/show-asyncmirrorgroup-summary.adoc[Show asynchronous mirror groups]
+link:../commands-a-z/show-asyncmirrorgroup-summary.html[Show asynchronous mirror groups]
 
-link:../commands-a-z/show-storagearray-autosupport.adoc[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
+link:../commands-a-z/show-storagearray-autosupport.html[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
 
-link:../commands-a-z/show-consistencygroup.adoc[Show consistency group]
+link:../commands-a-z/show-consistencygroup.html[Show consistency group]
 
-link:../commands-a-z/show-cgsnapimage.adoc[Show consistency group snapshot image]
+link:../commands-a-z/show-cgsnapimage.html[Show consistency group snapshot image]
 
-link:../commands-a-z/show-controller.adoc[Show controller]
+link:../commands-a-z/show-controller.html[Show controller]
 
-link:../commands-a-z/show-controller-nvsram.adoc[Show controller NVSRAM]
+link:../commands-a-z/show-controller-nvsram.html[Show controller NVSRAM]
 
-link:../commands-a-z/show-iscsisessions.adoc[Show current iSCSI sessions]
+link:../commands-a-z/show-iscsisessions.html[Show current iSCSI sessions]
 
-link:../commands-a-z/show-diskpool.adoc[Show disk pool]
+link:../commands-a-z/show-diskpool.html[Show disk pool]
 
-link:../commands-a-z/show-alldrives.adoc[Show drive]
+link:../commands-a-z/show-alldrives.html[Show drive]
 
-link:../commands-a-z/show-drivechannel-stats.adoc[Show drive channel statistics]
+link:../commands-a-z/show-drivechannel-stats.html[Show drive channel statistics]
 
-link:../commands-a-z/show-alldrives-downloadprogress.adoc[Show drive download progress]
+link:../commands-a-z/show-alldrives-downloadprogress.html[Show drive download progress]
 
-link:../commands-a-z/show-alldrives-performancestats.adoc[Show drive performance statistics]
+link:../commands-a-z/show-alldrives-performancestats.html[Show drive performance statistics]
 
-link:../commands-a-z/show-emailalert-summary.adoc[Show email alert configuration]
+link:../commands-a-z/show-emailalert-summary.html[Show email alert configuration]
 
-link:../commands-a-z/show-allhostports.adoc[Show host ports]
+link:../commands-a-z/show-allhostports.html[Show host ports]
 
-link:../commands-a-z/show-replaceabledrives.adoc[Show replaceable drives]
+link:../commands-a-z/show-replaceabledrives.html[Show replaceable drives]
 
-link:../commands-a-z/show-snapgroup.adoc[Show snapshot group]
+link:../commands-a-z/show-snapgroup.html[Show snapshot group]
 
-link:../commands-a-z/show-snapimage.adoc[Show snapshot image]
+link:../commands-a-z/show-snapimage.html[Show snapshot image]
 
-link:../commands-a-z/show-snapvolume.adoc[Show snapshot volumes]
+link:../commands-a-z/show-snapvolume.html[Show snapshot volumes]
 
-link:../commands-a-z/show-allsnmpcommunities.adoc[Show SNMP communities]
+link:../commands-a-z/show-allsnmpcommunities.html[Show SNMP communities]
 
-link:../commands-a-z/show-snmpsystemvariables.adoc[Show SNMP MIB II system group variables]
+link:../commands-a-z/show-snmpsystemvariables.html[Show SNMP MIB II system group variables]
 
-link:../commands-a-z/show-ssd-cache.adoc[Show SSD cache]
+link:../commands-a-z/show-ssd-cache.html[Show SSD cache]
 
-link:../commands-a-z/show-ssd-cache-statistics.adoc[Show SSD cache statistics]
+link:../commands-a-z/show-ssd-cache-statistics.html[Show SSD cache statistics]
 
-link:../commands-a-z/show-storagearray.adoc[Show storage array]
+link:../commands-a-z/show-storagearray.html[Show storage array]
 
-link:../commands-a-z/show-storagearray-autoconfiguration.adoc[Show storage array auto configuration]
+link:../commands-a-z/show-storagearray-autoconfiguration.html[Show storage array auto configuration]
 
-link:../commands-a-z/show-storagearray-controllerhealthimage.adoc[Show storage array controller health image]
+link:../commands-a-z/show-storagearray-controllerhealthimage.html[Show storage array controller health image]
 
-link:../commands-a-z/show-storagearray-dbmdatabase.adoc[Show storage array DBM database]
+link:../commands-a-z/show-storagearray-dbmdatabase.html[Show storage array DBM database]
 
-link:../commands-a-z/show-storagearray-hostconnectivityreporting.adoc[Show storage array host connectivity reporting]
+link:../commands-a-z/show-storagearray-hostconnectivityreporting.html[Show storage array host connectivity reporting]
 
-link:../commands-a-z/show-storagearray-hosttopology.adoc[Show storage array host topology]
+link:../commands-a-z/show-storagearray-hosttopology.html[Show storage array host topology]
 
-link:../commands-a-z/show-storagearray-lunmappings.adoc[Show storage array LUN mappings]
+link:../commands-a-z/show-storagearray-lunmappings.html[Show storage array LUN mappings]
 
-link:../commands-a-z/show-storagearray-iscsinegotiationdefaults.adoc[Show storage array negotiation defaults]
+link:../commands-a-z/show-storagearray-iscsinegotiationdefaults.html[Show storage array negotiation defaults]
 
-link:../commands-a-z/show-storagearray-odxsetting.adoc[Show storage array ODX setting]
+link:../commands-a-z/show-storagearray-odxsetting.html[Show storage array ODX setting]
 
-link:../commands-a-z/show-storagearray-powerinfo.adoc[Show storage array power information]
+link:../commands-a-z/show-storagearray-powerinfo.html[Show storage array power information]
 
-link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.adoc[Show storage array unconfigured iSCSI initiators]
+link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.html[Show storage array unconfigured iSCSI initiators]
 
-link:../commands-a-z/show-storagearray-unreadablesectors.adoc[Show storage array unreadable sectors]
+link:../commands-a-z/show-storagearray-unreadablesectors.html[Show storage array unreadable sectors]
 
-link:../commands-a-z/show-textstring.adoc[Show string]
+link:../commands-a-z/show-textstring.html[Show string]
 
-link:../commands-a-z/show-syncmirror-candidates.adoc[Show synchronous mirroring volume candidates]
+link:../commands-a-z/show-syncmirror-candidates.html[Show synchronous mirroring volume candidates]
 
-link:../commands-a-z/show-syncmirror-synchronizationprogress.adoc[Show synchronous mirroring volume synchronization progress]
+link:../commands-a-z/show-syncmirror-synchronizationprogress.html[Show synchronous mirroring volume synchronization progress]
 
-link:../commands-a-z/show-syslog-summary.adoc[Show syslog configuration]
+link:../commands-a-z/show-syslog-summary.html[Show syslog configuration]
 
-link:../commands-a-z/show-volume.adoc[Show thin volume]
+link:../commands-a-z/show-volume.html[Show thin volume]
 
-link:../commands-a-z/show-storagearray-unconfiguredinitiators.adoc[Show unconfigured initiators]
+link:../commands-a-z/show-storagearray-unconfiguredinitiators.html[Show unconfigured initiators]
 
-link:../commands-a-z/show-volume-summary.adoc[Show volume]
+link:../commands-a-z/show-volume-summary.html[Show volume]
 
-link:../commands-a-z/show-volume-actionprogress.adoc[Show volume action progress]
+link:../commands-a-z/show-volume-actionprogress.html[Show volume action progress]
 
-link:../commands-a-z/show-volumecopy.adoc[Show volume copy]
+link:../commands-a-z/show-volumecopy.html[Show volume copy]
 
-link:../commands-a-z/show-volumecopy-sourcecandidates.adoc[Show volume copy source candidates]
+link:../commands-a-z/show-volumecopy-sourcecandidates.html[Show volume copy source candidates]
 
-link:../commands-a-z/show-volumecopy-source-targetcandidates.adoc[Show volume copy target candidates]
+link:../commands-a-z/show-volumecopy-source-targetcandidates.html[Show volume copy target candidates]
 
-link:../commands-a-z/show-volumegroup.adoc[Show volume group]
+link:../commands-a-z/show-volumegroup.html[Show volume group]
 
-link:../commands-a-z/show-volumegroup-exportdependencies.adoc[Show volume group export dependencies]
+link:../commands-a-z/show-volumegroup-exportdependencies.html[Show volume group export dependencies]
 
-link:../commands-a-z/show-volumegroup-importdependencies.adoc[Show volume group import dependencies]
+link:../commands-a-z/show-volumegroup-importdependencies.html[Show volume group import dependencies]
 
-link:../commands-a-z/show-volume-performancestats.adoc[Show volume performance statistics]
+link:../commands-a-z/show-volume-performancestats.html[Show volume performance statistics]
 
-link:../commands-a-z/show-volume-reservations.adoc[Show volume reservations]
+link:../commands-a-z/show-volume-reservations.html[Show volume reservations]

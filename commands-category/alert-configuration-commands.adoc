@@ -10,66 +10,66 @@ summary: ''
 
 
 == Embedded SNMP configuration
-link:../commands-a-z/create-snmpcommunity.adoc[Register SNMP community]
+link:../commands-a-z/create-snmpcommunity.html[Register SNMP community]
 
-link:../commands-a-z/create-snmptrapdestination.adoc[Register SNMP trap destination]
+link:../commands-a-z/create-snmptrapdestination.html[Register SNMP trap destination]
 
-link:../commands-a-z/show-allsnmpcommunities.adoc[Show SNMP communities]
+link:../commands-a-z/show-allsnmpcommunities.html[Show SNMP communities]
 
-link:../commands-a-z/show-snmpsystemvariables.adoc[Show SNMP MIB II system group variables]
+link:../commands-a-z/show-snmpsystemvariables.html[Show SNMP MIB II system group variables]
 
-link:../commands-a-z/start-snmptrapdestination.adoc[Test SNMP trap destination]
+link:../commands-a-z/start-snmptrapdestination.html[Test SNMP trap destination]
 
-link:../commands-a-z/delete-snmpcommunity.adoc[Unregister SNMP community]
+link:../commands-a-z/delete-snmpcommunity.html[Unregister SNMP community]
 
-link:../commands-a-z/delete-snmptrapdestination.adoc[Unregister SNMP trap destination]
+link:../commands-a-z/delete-snmptrapdestination.html[Unregister SNMP trap destination]
 
-link:../commands-a-z/set-snmpcommunity.adoc[Update SNMP community]
+link:../commands-a-z/set-snmpcommunity.html[Update SNMP community]
 
-link:../commands-a-z/set-snmpsystemvariables.adoc[Update SNMP MIB II system group variables]
+link:../commands-a-z/set-snmpsystemvariables.html[Update SNMP MIB II system group variables]
 
-link:../commands-a-z/set-snmptrapdestination-trapreceiverip.adoc[Update SNMP trap destination]
+link:../commands-a-z/set-snmptrapdestination-trapreceiverip.html[Update SNMP trap destination]
 
 == Email alert configuration - E2700 or E5600 arrays
 
-link:../commands-a-z/set-emailalert.adoc[Configure email alert settings]
+link:../commands-a-z/set-emailalert.html[Configure email alert settings]
 
-link:../commands-a-z/set-event-alert.adoc[Set event alert filtering]
+link:../commands-a-z/set-event-alert.html[Set event alert filtering]
 
-link:../commands-a-z/show-blockedeventalertlist.adoc[Show blocked events]
+link:../commands-a-z/show-blockedeventalertlist.html[Show blocked events]
 
-link:../commands-a-z/smcli-alerttest.adoc[Test alerts]
+link:../commands-a-z/smcli-alerttest.html[Test alerts]
 
 == SSD cache commands
 
-link:../commands-a-z/clear-emailalert-configuration.adoc[Clear email alert configuration]
+link:../commands-a-z/clear-emailalert-configuration.html[Clear email alert configuration]
 
-link:../commands-a-z/set-emailalert.adoc[Configure email alert settings]
+link:../commands-a-z/set-emailalert.html[Configure email alert settings]
 
-link:../commands-a-z/delete-emailalert.adoc[Delete email alert recipient]
+link:../commands-a-z/delete-emailalert.html[Delete email alert recipient]
 
-link:../commands-a-z/show-emailalert-summary.adoc[Show email alert configuration]
+link:../commands-a-z/show-emailalert-summary.html[Show email alert configuration]
 
-link:../commands-a-z/start-emailalert-test.adoc[Test email alert configuration]
+link:../commands-a-z/start-emailalert-test.html[Test email alert configuration]
 
 == Syslog configuration
 
-link:../commands-a-z/clear-syslog-configuration.adoc[Clear syslog configuration]
+link:../commands-a-z/clear-syslog-configuration.html[Clear syslog configuration]
 
-link:../commands-a-z/set-syslog.adoc[Configure syslog settings]
+link:../commands-a-z/set-syslog.html[Configure syslog settings]
 
-link:../commands-a-z/create-storagearray-syslog.adoc[Create storage array syslog configuration]
+link:../commands-a-z/create-storagearray-syslog.html[Create storage array syslog configuration]
 
-link:../commands-a-z/delete-storagearray-syslog.adoc[Delete storage array syslog configuration]
+link:../commands-a-z/delete-storagearray-syslog.html[Delete storage array syslog configuration]
 
-link:../commands-a-z/delete-syslog.adoc[Delete syslog server]
+link:../commands-a-z/delete-syslog.html[Delete syslog server]
 
-link:../commands-a-z/show-storagearray-syslog.adoc[Display storage array syslog configuration]
+link:../commands-a-z/show-storagearray-syslog.html[Display storage array syslog configuration]
 
-link:../commands-a-z/show-syslog-summary.adoc[Show syslog configuration]
+link:../commands-a-z/show-syslog-summary.html[Show syslog configuration]
 
-link:../commands-a-z/start-storagearray-syslog-test.adoc[Start storage array syslog test]
+link:../commands-a-z/start-storagearray-syslog-test.html[Start storage array syslog test]
 
-link:../commands-a-z/start-syslog-test.adoc[Test syslog configuration]
+link:../commands-a-z/start-syslog-test.html[Test syslog configuration]
 
-link:../commands-a-z/set-storagearray-syslog.adoc[Update storage array syslog configuration]
+link:../commands-a-z/set-storagearray-syslog.html[Update storage array syslog configuration]

@@ -11,186 +11,186 @@ summary: ''
 
 == Disk pool commands
 
-link:../commands-a-z/create-diskpool.adoc[Create disk pool]
+link:../commands-a-z/create-diskpool.html[Create disk pool]
 
-link:../commands-a-z/delete-diskpool.adoc[Delete disk pool]
+link:../commands-a-z/delete-diskpool.html[Delete disk pool]
 
-link:../commands-a-z/enable-diskpool-security.adoc[Enable disk pool security]
+link:../commands-a-z/enable-diskpool-security.html[Enable disk pool security]
 
-link:../commands-a-z/reduce-disk-pool-capacity.adoc[Reduce disk pool capacity]
+link:../commands-a-z/reduce-disk-pool-capacity.html[Reduce disk pool capacity]
 
-link:../commands-a-z/set-disk-pool.adoc[Set disk pool]
+link:../commands-a-z/set-disk-pool.html[Set disk pool]
 
-link:../commands-a-z/set-disk-pool-modify-disk-pool.adoc[Set disk pool (modify disk pool)]
+link:../commands-a-z/set-disk-pool-modify-disk-pool.html[Set disk pool (modify disk pool)]
 
-link:../commands-a-z/show-diskpool.adoc[Show disk pool]
+link:../commands-a-z/show-diskpool.html[Show disk pool]
 
-link:../commands-a-z/start-diskpool-fullprovisioning.adoc[Start Disk Pool Full Provisioning]
+link:../commands-a-z/start-diskpool-fullprovisioning.html[Start Disk Pool Full Provisioning]
 
-link:../commands-a-z/start-diskpool-locate.adoc[Start disk pool locate]
+link:../commands-a-z/start-diskpool-locate.html[Start disk pool locate]
 
-link:../commands-a-z/stop-diskpool-locate.adoc[Stop disk pool locate]
+link:../commands-a-z/stop-diskpool-locate.html[Stop disk pool locate]
 
 == Host topology commands
 
-link:../commands-a-z/create-host.adoc[Create host]
+link:../commands-a-z/create-host.html[Create host]
 
-link:../commands-a-z/create-hostgroup.adoc[Create host group]
+link:../commands-a-z/create-hostgroup.html[Create host group]
 
-link:../commands-a-z/create-hostport.adoc[Create host port]
+link:../commands-a-z/create-hostport.html[Create host port]
 
-link:../commands-a-z/delete-host.adoc[Delete host]
+link:../commands-a-z/delete-host.html[Delete host]
 
-link:../commands-a-z/delete-hostgroup.adoc[Delete host group]
+link:../commands-a-z/delete-hostgroup.html[Delete host group]
 
-link:../commands-a-z/delete-hostport.adoc[Delete host port]
+link:../commands-a-z/delete-hostport.html[Delete host port]
 
-link:../commands-a-z/set-host.adoc[Set host]
+link:../commands-a-z/set-host.html[Set host]
 
-link:../commands-a-z/set-hostchannel.adoc[Set host channel]
+link:../commands-a-z/set-hostchannel.html[Set host channel]
 
-link:../commands-a-z/set-hostgroup.adoc[Set host group]
+link:../commands-a-z/set-hostgroup.html[Set host group]
 
-link:../commands-a-z/set-hostport.adoc[Set host port]
+link:../commands-a-z/set-hostport.html[Set host port]
 
-link:../commands-a-z/show-allhostports.adoc[Show host ports]
+link:../commands-a-z/show-allhostports.html[Show host ports]
 
-link:../commands-a-z/show-storagearray-hosttopology.adoc[Show storage array host topology]
+link:../commands-a-z/show-storagearray-hosttopology.html[Show storage array host topology]
 
 == Internet storage name service (iSNS) commands
 
-link:../commands-a-z/set-storagearray.adoc[Set storage array]
+link:../commands-a-z/set-storagearray.html[Set storage array]
 
-link:../commands-a-z/set-storagearray-isnsregistration.adoc[Set storage array iSNS registration]
+link:../commands-a-z/set-storagearray-isnsregistration.html[Set storage array iSNS registration]
 
-link:../commands-a-z/set-storagearray-isnsipv4configurationmethod.adoc[Set storage array iSNS server IPv4 address]
+link:../commands-a-z/set-storagearray-isnsipv4configurationmethod.html[Set storage array iSNS server IPv4 address]
 
-link:../commands-a-z/set-storagearray-isnsipv6address.adoc[Set storage array iSNS server IPv6 address]
+link:../commands-a-z/set-storagearray-isnsipv6address.html[Set storage array iSNS server IPv6 address]
 
-link:../commands-a-z/set-storagearray-isnslisteningport.adoc[Set storage array iSNS server listening port]
+link:../commands-a-z/set-storagearray-isnslisteningport.html[Set storage array iSNS server listening port]
 
-link:../commands-a-z/set-storagearray-isnsserverrefresh.adoc[Set storage array iSNS server refresh]
+link:../commands-a-z/set-storagearray-isnsserverrefresh.html[Set storage array iSNS server refresh]
 
-link:../commands-a-z/start-storagearray-isnsserverrefresh.adoc[Start storage array iSNS server refresh]
+link:../commands-a-z/start-storagearray-isnsserverrefresh.html[Start storage array iSNS server refresh]
 
 == ISCSI extension for RDMA (iSER) commands
 
-link:../commands-a-z/reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline]
+link:../commands-a-z/reset-storagearray-iserstatsbaseline.html[Reset storage array iSER baseline]
 
-link:../commands-a-z/save-storagearray-iserstatistics.adoc[Save storage array iSER statistics]
+link:../commands-a-z/save-storagearray-iserstatistics.html[Save storage array iSER statistics]
 
-link:../commands-a-z/set-isertarget.adoc[Set iSER target]
+link:../commands-a-z/set-isertarget.html[Set iSER target]
 
 == ISCSI commands
 
-link:../commands-a-z/create-iscsiinitiator.adoc[Create iSCSI initiator]
+link:../commands-a-z/create-iscsiinitiator.html[Create iSCSI initiator]
 
-link:../commands-a-z/delete-iscsiinitiator.adoc[Delete iSCSI initiator]
+link:../commands-a-z/delete-iscsiinitiator.html[Delete iSCSI initiator]
 
-link:../commands-a-z/diagnose-controller-iscsihostport.adoc[Diagnose controller iSCSI host cable]
+link:../commands-a-z/diagnose-controller-iscsihostport.html[Diagnose controller iSCSI host cable]
 
-link:../commands-a-z/reset-storagearray-iscsistatsbaseline.adoc[Reset storage array iSCSI baseline]
+link:../commands-a-z/reset-storagearray-iscsistatsbaseline.html[Reset storage array iSCSI baseline]
 
-link:../commands-a-z/diagnose-controller-iscsihostport.adoc[Save storage array iSCSI statistics]
+link:../commands-a-z/diagnose-controller-iscsihostport.html[Save storage array iSCSI statistics]
 
-link:../commands-a-z/set-iscsiinitiator.adoc[Set iSCSI initiator]
+link:../commands-a-z/set-iscsiinitiator.html[Set iSCSI initiator]
 
-link:../commands-a-z/set-iscsitarget.adoc[Set iSCSI target properties]
+link:../commands-a-z/set-iscsitarget.html[Set iSCSI target properties]
 
-link:../commands-a-z/show-iscsisessions.adoc[Show current iSCSI sessions]
+link:../commands-a-z/show-iscsisessions.html[Show current iSCSI sessions]
 
-link:../commands-a-z/show-storagearray-iscsinegotiationdefaults.adoc[Show storage array negotiation defaults]
+link:../commands-a-z/show-storagearray-iscsinegotiationdefaults.html[Show storage array negotiation defaults]
 
-link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.adoc[Show storage array unconfigured iSCSI initiators]
+link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.html[Show storage array unconfigured iSCSI initiators]
 
-link:../commands-a-z/start-controller-iscsihostport-dhcprefresh.adoc[Start iSCSI DHCP refresh]
+link:../commands-a-z/start-controller-iscsihostport-dhcprefresh.html[Start iSCSI DHCP refresh]
 
-link:../commands-a-z/stop-storagearray-iscsisession.adoc[Stop storage array iSCSI session]
+link:../commands-a-z/stop-storagearray-iscsisession.html[Stop storage array iSCSI session]
 
 == Volume commands
 
-link:../commands-a-z/check-volume-parity.adoc[Check volume parity]
+link:../commands-a-z/check-volume-parity.html[Check volume parity]
 
-link:../commands-a-z/create-mapping-volume.adoc[Create Volume Mapping]
+link:../commands-a-z/create-mapping-volume.html[Create Volume Mapping]
 
-link:../commands-a-z/clear-volume-reservations.adoc[Clear volume reservations]
+link:../commands-a-z/clear-volume-reservations.html[Clear volume reservations]
 
-link:../commands-a-z/clear-volume-unreadablesectors.adoc[Clear volume unreadable sectors]
+link:../commands-a-z/clear-volume-unreadablesectors.html[Clear volume unreadable sectors]
 
-link:../commands-a-z/create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
+link:../commands-a-z/create-raid-volume-automatic-drive-select.html[Create RAID volume (automatic drive select)]
 
-link:../commands-a-z/create-raid-volume-free-extent-based-select.adoc[Create RAID volume (free extent based select)]
+link:../commands-a-z/create-raid-volume-free-extent-based-select.html[Create RAID volume (free extent based select)]
 
-link:../commands-a-z/create-raid-volume-manual-drive-select.adoc[Create RAID volume (manual drive select)]
+link:../commands-a-z/create-raid-volume-manual-drive-select.html[Create RAID volume (manual drive select)]
 
-link:../commands-a-z/create-volume-diskpool.adoc[Create volume in disk pool]
+link:../commands-a-z/create-volume-diskpool.html[Create volume in disk pool]
 
-link:../commands-a-z/delete-volume.adoc[Delete volume]
+link:../commands-a-z/delete-volume.html[Delete volume]
 
-link:../commands-a-z/delete-volume-from-disk-pool.adoc[Delete volume from disk pool]
+link:../commands-a-z/delete-volume-from-disk-pool.html[Delete volume from disk pool]
 
-link:../commands-a-z/start-increasevolumecapacity-volume.adoc[Increase capacity of volume in disk pool or volume group...]
+link:../commands-a-z/start-increasevolumecapacity-volume.html[Increase capacity of volume in disk pool or volume group...]
 
-link:../commands-a-z/start-volume-initialize.adoc[Initialize thin volume]
+link:../commands-a-z/start-volume-initialize.html[Initialize thin volume]
 
-link:../commands-a-z/recover-volume.adoc[Recover RAID volume]
+link:../commands-a-z/recover-volume.html[Recover RAID volume]
 
-link:../commands-a-z/remove-lunmapping.adoc[Remove volume LUN mapping]
+link:../commands-a-z/remove-lunmapping.html[Remove volume LUN mapping]
 
-link:../commands-a-z/repair-volume-parity.adoc[Repair volume parity]
+link:../commands-a-z/repair-volume-parity.html[Repair volume parity]
 
-link:../commands-a-z/repair-data-parity.adoc[Repair Data Parity]
+link:../commands-a-z/repair-data-parity.html[Repair Data Parity]
 
-link:../commands-a-z/set-thin-volume-attributes.adoc[Set thin volume attributes]
+link:../commands-a-z/set-thin-volume-attributes.html[Set thin volume attributes]
 
-link:../commands-a-z/set-volumes.adoc[Set volume attributes for a volume in a disk pool...]
+link:../commands-a-z/set-volumes.html[Set volume attributes for a volume in a disk pool...]
 
-link:../commands-a-z/set-volume-group-attributes-for-volume-in-a-volume-group.adoc[Set volume attributes for a volume in a volume group...]
+link:../commands-a-z/set-volume-group-attributes-for-volume-in-a-volume-group.html[Set volume attributes for a volume in a volume group...]
 
-link:../commands-a-z/set-volume-logicalunitnumber.adoc[Set volume mapping]
+link:../commands-a-z/set-volume-logicalunitnumber.html[Set volume mapping]
 
-link:../commands-a-z/show-volume.adoc[Show thin volume]
+link:../commands-a-z/show-volume.html[Show thin volume]
 
-link:../commands-a-z/show-volume-summary.adoc[Show volume]
+link:../commands-a-z/show-volume-summary.html[Show volume]
 
-link:../commands-a-z/show-volume-actionprogress.adoc[Show volume action progress]
+link:../commands-a-z/show-volume-actionprogress.html[Show volume action progress]
 
-link:../commands-a-z/show-volume-performancestats.adoc[Show volume performance statistics]
+link:../commands-a-z/show-volume-performancestats.html[Show volume performance statistics]
 
-link:../commands-a-z/show-volume-reservations.adoc[Show volume reservations]
+link:../commands-a-z/show-volume-reservations.html[Show volume reservations]
 
-link:../commands-a-z/start-volume-initialization.adoc[Start volume initialization]
+link:../commands-a-z/start-volume-initialization.html[Start volume initialization]
 
 == Volume group commands
 
-link:../commands-a-z/create-volumegroup.adoc[Create volume group]
+link:../commands-a-z/create-volumegroup.html[Create volume group]
 
-link:../commands-a-z/delete-volumegroup.adoc[Delete volume group]
+link:../commands-a-z/delete-volumegroup.html[Delete volume group]
 
-link:../commands-a-z/enable-volumegroup-security.adoc[Enable volume group security]
+link:../commands-a-z/enable-volumegroup-security.html[Enable volume group security]
 
-link:../commands-a-z/revive-volumegroup.adoc[Revive volume group]
+link:../commands-a-z/revive-volumegroup.html[Revive volume group]
 
-link:../commands-a-z/set-volumegroup.adoc[Set volume group]
+link:../commands-a-z/set-volumegroup.html[Set volume group]
 
-link:../commands-a-z/set-volumegroup-forcedstate.adoc[Set volume group forced state]
+link:../commands-a-z/set-volumegroup-forcedstate.html[Set volume group forced state]
 
-link:../commands-a-z/show-volumegroup.adoc[Show volume group]
+link:../commands-a-z/show-volumegroup.html[Show volume group]
 
-link:../commands-a-z/show-volumegroup-exportdependencies.adoc[Show volume group export dependencies]
+link:../commands-a-z/show-volumegroup-exportdependencies.html[Show volume group export dependencies]
 
-link:../commands-a-z/show-volumegroup-importdependencies.adoc[Show volume group import dependencies]
+link:../commands-a-z/show-volumegroup-importdependencies.html[Show volume group import dependencies]
 
-link:../commands-a-z/start-volumegroup-defragment.adoc[Start volume group defragment]
+link:../commands-a-z/start-volumegroup-defragment.html[Start volume group defragment]
 
-link:../commands-a-z/start-volumegroup-export.adoc[Start volume group export]
+link:../commands-a-z/start-volumegroup-export.html[Start volume group export]
 
-link:../commands-a-z/start-volumegroup-fullprovisioning.adoc[Start Volume Group Full Provisioning]
+link:../commands-a-z/start-volumegroup-fullprovisioning.html[Start Volume Group Full Provisioning]
 
-link:mongoose-learn-about-volume-group-migration.adoc[Learn about volume group migration (CLI only)]
+link:mongoose-learn-about-volume-group-migration.html[Learn about volume group migration (CLI only)]
 
-link:../commands-a-z/start-volumegroup-import.adoc[Start volume group import]
+link:../commands-a-z/start-volumegroup-import.html[Start volume group import]
 
-link:../commands-a-z/start-volumegroup-locate.adoc[Start volume group locate]
+link:../commands-a-z/start-volumegroup-locate.html[Start volume group locate]
 
-link:../commands-a-z/stop-volumegroup-locate.adoc[Stop volume group locate]
+link:../commands-a-z/stop-volumegroup-locate.html[Stop volume group locate]
