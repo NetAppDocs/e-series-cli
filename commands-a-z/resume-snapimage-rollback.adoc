@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/resume-snapimage-rollback.html
+permalink: commands-a-z/resume-snapimage-rollback.html
 sidebar: sidebar
 keywords: 
 summary: 'The resume snapImage rollback command resumes a rollback operation that has entered a paused state.'

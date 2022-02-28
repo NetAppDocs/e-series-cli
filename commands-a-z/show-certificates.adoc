@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-certificates.html
+permalink: commands-a-z/show-certificates.html
 sidebar: sidebar
 keywords: 
 summary: 'The Show certificates command allows you to view the certificates installed on the CLI package trust store.'

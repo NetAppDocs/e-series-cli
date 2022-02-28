@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/reduce-disk-pool-capacity.html
+permalink: commands-a-z/reduce-disk-pool-capacity.html
 sidebar: sidebar
 keywords: 
 summary: 'The set diskPool command reduces the capacity of the disk pool by logically removing the drives from the pool.'

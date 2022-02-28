@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/add-drives-to-ssd-cache.html
+permalink: commands-a-z/add-drives-to-ssd-cache.html
 sidebar: sidebar
 keywords: 
 summary: 'The set ssdCache command increases the capacity of an existing SSD cache by adding more solid state disks \(SSDs\).'

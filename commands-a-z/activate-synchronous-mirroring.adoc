@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/activate-synchronous-mirroring.html
+permalink: commands-a-z/activate-synchronous-mirroring.html
 sidebar: sidebar
 keywords: 
 summary: 'The activate storageArray feature command activates the Synchronous Mirroring feature and creates the mirror repository volume.'

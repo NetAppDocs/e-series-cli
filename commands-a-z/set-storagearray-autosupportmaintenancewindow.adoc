@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-autosupportmaintenancewindow.html
+permalink: commands-a-z/set-storagearray-autosupportmaintenancewindow.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray autoSupportMaintenanceWindow command turns on or turns off the AutoSupport maintenance window feature.'

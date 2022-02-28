@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/save-storagearray-loginbanner.html
+permalink: commands-a-z/save-storagearray-loginbanner.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray loginBanner command allows you to save a login banner to your local machine. The banner text can include an advisory notice and consent message, which is presented to users before they establish sessions.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-initiator.html
+permalink: commands-a-z/set-initiator.html
 sidebar: sidebar
 keywords: 
 summary: 'The set initiator command updates the initiator object.'

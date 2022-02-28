@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-iscsisessions.html
+permalink: commands-a-z/show-iscsisessions.html
 sidebar: sidebar
 keywords: 
 summary: 'The show iscsiSessions command returns information about an iSCSI session for either an iSCSI initiator or an iSCSI target.'

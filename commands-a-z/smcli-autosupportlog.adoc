@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/smcli-autosupportlog.html
+permalink: commands-a-z/smcli-autosupportlog.html
 sidebar: sidebar
 keywords: 
 summary: 'The SMcli -autoSupportLog command allows you to view an AutoSupport log file. This file provides information about status, history of transmission activity, and any errors encountered during delivery of the AutoSupport messages. The log is available for all AutoSupport-capable and AutoSupport-enabled storage arrays.'

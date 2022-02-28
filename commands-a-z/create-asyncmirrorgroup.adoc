@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/create-asyncmirrorgroup.html
+permalink: commands-a-z/create-asyncmirrorgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The create asyncMirrorGroup command creates a new, empty asynchronous mirror group on both the local storage array and the remote storage array.'

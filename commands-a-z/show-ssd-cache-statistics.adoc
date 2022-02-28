@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-ssd-cache-statistics.html
+permalink: commands-a-z/show-ssd-cache-statistics.html
 sidebar: sidebar
 keywords: 
 summary: 'The show ssdCache command displays data about the SSD cache usage.'

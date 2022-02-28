@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/add-certificate-from-array.html
+permalink: commands-a-z/add-certificate-from-array.html
 sidebar: sidebar
 keywords: 
 summary: 'The Add certificate from array command allows you to take a certificate from the array and add it to the CLI package’s trust store. The certificate added will only be used by the CLI package.'

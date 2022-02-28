@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-controller.html
+permalink: commands-a-z/show-controller.html
 sidebar: sidebar
 keywords: 
 summary: 'The show controller command returns information about a controller.'

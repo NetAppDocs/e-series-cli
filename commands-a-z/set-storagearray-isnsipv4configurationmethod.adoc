@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-isnsipv4configurationmethod.html
+permalink: commands-a-z/set-storagearray-isnsipv4configurationmethod.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray isnsIPv4ConfigurationMethod command sets the configuration method and address for an IPv4 Internet Storage Name Service \(iSNS\).'

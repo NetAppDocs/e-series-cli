@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/delete-host.html
+permalink: commands-a-z/delete-host.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete host command deletes one or more hosts.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-alldrives-downloadprogress.html
+permalink: commands-a-z/show-alldrives-downloadprogress.html
 sidebar: sidebar
 keywords: 
 summary: 'The show allDrives downloadProgress command returns the status of firmware downloads for the drives that are targeted by the download drive firmware command or the download storageArray driveFirmware command.'

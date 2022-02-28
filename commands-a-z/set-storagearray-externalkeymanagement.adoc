@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-externalkeymanagement.html
+permalink: commands-a-z/set-storagearray-externalkeymanagement.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray externalKeyManagement command configures the external key management server address and port number.'

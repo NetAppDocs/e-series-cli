@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/start-storagearray-autosupport-manualdispatch.html
+permalink: commands-a-z/start-storagearray-autosupport-manualdispatch.html
 sidebar: sidebar
 keywords: 
 summary: 'The start storageArray autoSupport manualDispatch command initiates a complete support bundle and ASUP dispatch for the bundle.'

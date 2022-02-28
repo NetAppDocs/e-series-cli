@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/download-drive-firmware.html
+permalink: commands-a-z/download-drive-firmware.html
 sidebar: sidebar
 keywords: 
 summary: 'The download drive firmware command downloads a firmware image to a drive.'

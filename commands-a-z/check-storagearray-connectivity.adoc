@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/check-storagearray-connectivity.html
+permalink: commands-a-z/check-storagearray-connectivity.html
 sidebar: sidebar
 keywords: 
 summary: 'The check storageArray connectivity command verifies that the local storage array and the remote storage array have a communication path and displays the connection details between the local and remote storage array.'

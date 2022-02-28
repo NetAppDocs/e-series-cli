@@ -1,5 +1,5 @@
 ---
-permalink: /commands-category/alert-configuration-commands.html
+permalink: commands-category/alert-configuration-commands.html
 sidebar: sidebar
 keywords: clear emailAlert configuration,clear syslog configuration,create snmpCommunity,create snmpTrapDestination,create storageArray syslog,delete emailAlert,delete snmpCommunity,delete snmpTrapDestination,delete storageArray syslog,delete syslog,set emailAlert,set event alert,set snmpCommunity,set snmpSystemVariables,set snmpTrapDestination trapReceiverIP,set storageArray syslog,set syslog,show allSnmpCommunities,show blockedEventAlertList,show emailAlert summary,show snmpSystemVariables,show storage array syslog configuration,show syslog summary,SMcli alertTest,start emailAlert test,start snmpTrapDestination,start storageArray syslog test,start syslog test
 summary: ''

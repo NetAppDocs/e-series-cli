@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-alldrives-performancestats.html
+permalink: commands-a-z/show-alldrives-performancestats.html
 sidebar: sidebar
 keywords: 
 summary: 'The show allDrives performanceStats command returns information about drive performance.'

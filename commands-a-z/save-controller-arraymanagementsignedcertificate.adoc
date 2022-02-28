@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/save-controller-arraymanagementsignedcertificate.html
+permalink: commands-a-z/save-controller-arraymanagementsignedcertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The save controller arrayManagementSignedCertificate command retrieves the installed server certificate for the controller so you can view certificate details.'

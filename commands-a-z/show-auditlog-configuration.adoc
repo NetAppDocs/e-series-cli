@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-auditlog-configuration.html
+permalink: commands-a-z/show-auditlog-configuration.html
 sidebar: sidebar
 keywords: 
 summary: 'The show auditLog configuration command shows the audit log configuration settings for the storage array.'

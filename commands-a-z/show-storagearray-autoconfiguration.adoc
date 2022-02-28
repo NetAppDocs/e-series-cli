@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-storagearray-autoconfiguration.html
+permalink: commands-a-z/show-storagearray-autoconfiguration.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray autoConfiguration command shows the default auto-configuration that the storage array creates if you run the autoConfigure storageArray command.'

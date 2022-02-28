@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.html
+permalink: commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The reset storageArray arvmStats asyncMirrorGroup command resets the synchronization statistics for one or more member volumes in an asynchronous mirror group to a relative 0.'

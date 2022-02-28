@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/resume-ssdcache.html
+permalink: commands-a-z/resume-ssdcache.html
 sidebar: sidebar
 keywords: 
 summary: 'The resume ssdCache command restarts the caching for all of the volumes using the SSD cache that was temporarily stopped with the suspend ssdCache command.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-loginbanner.html
+permalink: commands-a-z/set-storagearray-loginbanner.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray loginBanner command allows you to upload a text file to be used as a login banner. The banner text can include an advisory notice and consent message, which is presented to users before they establish sessions in SANtricity System Manager or before they run commands.'

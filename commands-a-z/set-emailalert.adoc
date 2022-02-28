@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-emailalert.html
+permalink: commands-a-z/set-emailalert.html
 sidebar: sidebar
 keywords: 
 summary: 'The set emailAlert command configures the email to send an email to a specified technical support or organization. The email alert contains a summary of the event, detailed information about the affected storage, and customer contact information.'

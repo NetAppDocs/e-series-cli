@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-drive-serviceallowedindicator.html
+permalink: commands-a-z/set-drive-serviceallowedindicator.html
 sidebar: sidebar
 keywords: 
 summary: 'The set drive serviceAllowedIndicator command turns on or turns off the Service Action Allowed indicator light on a drive or drives in drive trays that support the Service Action Allowed indicator light feature.'

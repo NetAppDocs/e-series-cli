@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/create-raid-volume-free-extent-based-select.html
+permalink: commands-a-z/create-raid-volume-free-extent-based-select.html
 sidebar: sidebar
 keywords: 
 summary: 'The create volume command creates a volume in the free space of a volume group.'

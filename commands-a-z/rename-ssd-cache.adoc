@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/rename-ssd-cache.html
+permalink: commands-a-z/rename-ssd-cache.html
 sidebar: sidebar
 keywords: 
 summary: 'The set ssdCache command changes the name of the SSD cache.'

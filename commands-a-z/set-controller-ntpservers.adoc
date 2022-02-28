@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-controller-ntpservers.html
+permalink: commands-a-z/set-controller-ntpservers.html
 sidebar: sidebar
 keywords: 
 summary: 'The set controller NTPServers command sets the NTP settings for the controller so the controller can automatically synchronize the clocks with an external host using SNTP \(Simple Network Time Protocol\).'

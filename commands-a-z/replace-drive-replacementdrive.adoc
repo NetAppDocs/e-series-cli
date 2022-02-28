@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/replace-drive-replacementdrive.html
+permalink: commands-a-z/replace-drive-replacementdrive.html
 sidebar: sidebar
 keywords: 
 summary: 'The replace drive replacementDrive command replaces a drive in a volume group.'

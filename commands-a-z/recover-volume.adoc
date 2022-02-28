@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/recover-volume.html
+permalink: commands-a-z/recover-volume.html
 sidebar: sidebar
 keywords: 
 summary: 'The recover volume command creates a RAID volume with the given properties without initializing any of the user data areas on the drives.'

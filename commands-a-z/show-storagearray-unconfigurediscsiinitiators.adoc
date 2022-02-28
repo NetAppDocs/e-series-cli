@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-storagearray-unconfigurediscsiinitiators.html
+permalink: commands-a-z/show-storagearray-unconfigurediscsiinitiators.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray unconfiguredIscsiInitiators command returns a list of initiators that have been detected by the storage array but are not yet configured into the storage array topology.'

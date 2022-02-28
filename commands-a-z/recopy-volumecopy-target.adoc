@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/recopy-volumecopy-target.html
+permalink: commands-a-z/recopy-volumecopy-target.html
 sidebar: sidebar
 keywords: 
 summary: 'The recopy volumeCopy target command reinitiates a volume copy operation using an existing volume copy pair.'

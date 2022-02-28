@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-autosupportondemand.html
+permalink: commands-a-z/set-storagearray-autosupportondemand.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray autoSupportOnDemand command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data.'

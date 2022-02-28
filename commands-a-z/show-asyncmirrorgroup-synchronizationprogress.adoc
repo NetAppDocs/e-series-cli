@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-asyncmirrorgroup-synchronizationprogress.html
+permalink: commands-a-z/show-asyncmirrorgroup-synchronizationprogress.html
 sidebar: sidebar
 keywords: 
 summary: 'The show asyncMirrorGroup synchronizationProgress command displays the progress of periodic synchronization of the asynchronous mirror group between the local and remote storage array.'

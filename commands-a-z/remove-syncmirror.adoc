@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/remove-syncmirror.html
+permalink: commands-a-z/remove-syncmirror.html
 sidebar: sidebar
 keywords: 
 summary: 'The remove syncMirror command removes the mirror relationship between the primary volume and the secondary volume in a remote-mirrored pair.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/stop-asyncmirrorgroup-rolechange.html
+permalink: commands-a-z/stop-asyncmirrorgroup-rolechange.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop asyncMirrorGroup rolechange command cancels a pending role reversal operation between asynchronous mirror groups.'

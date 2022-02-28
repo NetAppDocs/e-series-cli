@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/start-increasevolumecapacity-volume.html
+permalink: commands-a-z/start-increasevolumecapacity-volume.html
 sidebar: sidebar
 keywords: 
 summary: 'The start increaseVolumeCapacity volume command increases the capacity of either a standard volume or a repository volume in a disk pool or volume group.'

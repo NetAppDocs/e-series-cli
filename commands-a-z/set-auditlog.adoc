@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-auditlog.html
+permalink: commands-a-z/set-auditlog.html
 sidebar: sidebar
 keywords: 
 summary: 'The set auditLog command configures the audit log settings.'

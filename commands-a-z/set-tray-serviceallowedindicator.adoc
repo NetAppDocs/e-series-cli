@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-tray-serviceallowedindicator.html
+permalink: commands-a-z/set-tray-serviceallowedindicator.html
 sidebar: sidebar
 keywords: 
 summary: 'The set tray serviceAllowedIndicator command turns on or turns off the Service Action Allowed indicator light on a power-fan canister, an interconnect-battery canister, or an environmental services module \(ESM\) canister.'

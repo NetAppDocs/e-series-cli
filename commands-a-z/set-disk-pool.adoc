@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-disk-pool.html
+permalink: commands-a-z/set-disk-pool.html
 sidebar: sidebar
 keywords: 
 summary: 'The set diskPool command sets the attributes associated with a disk pool based on the specified parameters.'

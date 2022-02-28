@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-drive-hotspare.html
+permalink: commands-a-z/set-drive-hotspare.html
 sidebar: sidebar
 keywords: 
 summary: 'The set drive hotSpare command assigns or de-assigns one or more drives as a hot spare.'

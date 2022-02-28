@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/delete-certificates.html
+permalink: commands-a-z/delete-certificates.html
 sidebar: sidebar
 keywords: 
 summary: 'The Delete certificates command allows you to delete a certificate from the CLI package trust store.'

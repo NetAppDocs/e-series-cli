@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-consistency-group-attributes.html
+permalink: commands-a-z/set-consistency-group-attributes.html
 sidebar: sidebar
 keywords: 
 summary: 'The set consistencyGroup command defines the properties for a snapshot consistency group.'

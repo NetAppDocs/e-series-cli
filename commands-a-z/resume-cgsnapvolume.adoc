@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/resume-cgsnapvolume.html
+permalink: commands-a-z/resume-cgsnapvolume.html
 sidebar: sidebar
 keywords: 
 summary: 'The resume cgSnapVolume command restarts a copy-on-write operation for creating a consistency group snapshot volume that you stopped using the stop cgSnapVolume command.'

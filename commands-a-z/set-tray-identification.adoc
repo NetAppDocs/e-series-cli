@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-tray-identification.html
+permalink: commands-a-z/set-tray-identification.html
 sidebar: sidebar
 keywords: 
 summary: 'The set tray command sets the tray ID of a controller tray, a controller-drive tray, or a drive tray in a storage array.'

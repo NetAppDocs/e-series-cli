@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/start-drive-initialize.html
+permalink: commands-a-z/start-drive-initialize.html
 sidebar: sidebar
 keywords: 
 summary: 'The start drive initialize command starts a drive initialization.'

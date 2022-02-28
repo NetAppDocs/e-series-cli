@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-traypositions.html
+permalink: commands-a-z/set-storagearray-traypositions.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray trayPositions command defines the position of the trays in a storage array. You must include all of the trays in the storage array when you enter this command.'

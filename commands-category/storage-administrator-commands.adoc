@@ -1,5 +1,5 @@
 ---
-permalink: /commands-category/storage-administrator-commands.html
+permalink: commands-category/storage-administrator-commands.html
 sidebar: sidebar
 keywords: 
 summary: ''

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/save-ioclog.html
+permalink: commands-a-z/save-ioclog.html
 sidebar: sidebar
 keywords: 
 summary: 'The save IOCLog command saves the IOC dumps from the controllers in a storage array to a file on a host.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-revocationchecksettings.html
+permalink: commands-a-z/set-storagearray-revocationchecksettings.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray revocationCheckSettings command allows you to enable or disable revocation checking, and configure an Online Certificate Status Protocol \(OCSP\) server.'

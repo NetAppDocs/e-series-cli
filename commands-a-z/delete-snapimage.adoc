@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/delete-snapimage.html
+permalink: commands-a-z/delete-snapimage.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete snapImage command deletes one or more snapshot images from a snapshot group.'

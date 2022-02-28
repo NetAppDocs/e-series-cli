@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-isertarget.html
+permalink: commands-a-z/set-isertarget.html
 sidebar: sidebar
 keywords: 
 summary: 'The set iserTarget command defines properties for an iSER target.'

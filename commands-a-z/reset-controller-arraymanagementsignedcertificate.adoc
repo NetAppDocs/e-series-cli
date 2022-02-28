@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/reset-controller-arraymanagementsignedcertificate.html
+permalink: commands-a-z/reset-controller-arraymanagementsignedcertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The reset controller arrayManagementSignedCertificate command resets the installed signed certificate and root/intermediate certificates on the controller. All root and intermediate certificates as well as any signed certificates will be replaced by a single self-signed certificate.'

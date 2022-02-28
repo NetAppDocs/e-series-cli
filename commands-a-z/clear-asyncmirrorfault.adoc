@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/clear-asyncmirrorfault.html
+permalink: commands-a-z/clear-asyncmirrorfault.html
 sidebar: sidebar
 keywords: 
 summary: 'The clear asyncMirrorFault command clears an asynchronous mirroring "sticky" fault from one or more asynchronous mirror groups and from one or more asynchronous mirror group member volumes.'

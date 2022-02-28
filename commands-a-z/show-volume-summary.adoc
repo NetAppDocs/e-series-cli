@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-volume-summary.html
+permalink: commands-a-z/show-volume-summary.html
 sidebar: sidebar
 keywords: 
 summary: 'The show volume summary command returns information about a volume.'

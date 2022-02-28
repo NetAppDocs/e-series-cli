@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-autoloadbalancingenable.html
+permalink: commands-a-z/set-storagearray-autoloadbalancingenable.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray autoLoadBalancingEnable command enables or disables the Automatic Load Balancing feature.'

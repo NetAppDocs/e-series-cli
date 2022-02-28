@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/download-controller-arraymanagementservercertificate.html
+permalink: commands-a-z/download-controller-arraymanagementservercertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The download controller arrayManagementServerCertificate command installs the server certificate on the controller.'

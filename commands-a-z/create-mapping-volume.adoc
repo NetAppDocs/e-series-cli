@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/create-mapping-volume.html
+permalink: commands-a-z/create-mapping-volume.html
 sidebar: sidebar
 keywords: 
 summary: 'The create mapping volume command creates a logical mapping from a volume to a host or a host group.'

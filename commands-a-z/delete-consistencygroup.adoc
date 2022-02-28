@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/delete-consistencygroup.html
+permalink: commands-a-z/delete-consistencygroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete consistencyGroup command deletes a snapshot consistency group.'

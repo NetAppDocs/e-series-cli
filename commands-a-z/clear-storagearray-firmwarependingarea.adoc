@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/clear-storagearray-firmwarependingarea.html
+permalink: commands-a-z/clear-storagearray-firmwarependingarea.html
 sidebar: sidebar
 keywords: 
 summary: 'The clear storageArray firmwarePendingArea command deletes a firmware image or NVSRAM values that you have previously downloaded from the pending area buffer.'

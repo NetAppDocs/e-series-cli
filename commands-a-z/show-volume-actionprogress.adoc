@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-volume-actionprogress.html
+permalink: commands-a-z/show-volume-actionprogress.html
 sidebar: sidebar
 keywords: 
 summary: 'The show volume actionProgress command returns information about the volume action and amount of the long-running operation that is completed for a long-running operation on a volume.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/delete-snmpcommunity.html
+permalink: commands-a-z/delete-snmpcommunity.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete snmpCommunity command deletes an existing Simple Network Management Protocol \(SNMP\) community that you previously created and registered using the create snmpCommunity command. Deleting an SNMP community effectively unregisters the community. Any trap destinations associated with that community are also removed.'

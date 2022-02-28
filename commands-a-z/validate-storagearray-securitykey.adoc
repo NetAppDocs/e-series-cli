@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/validate-storagearray-securitykey.html
+permalink: commands-a-z/validate-storagearray-securitykey.html
 sidebar: sidebar
 keywords: 
 summary: 'The validate storageArray securityKey command validates the security key for a storage array that has security-capable drives to make sure that the back-up security key file is not corrupt.'

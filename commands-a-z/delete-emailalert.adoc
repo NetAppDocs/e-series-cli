@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/delete-emailalert.html
+permalink: commands-a-z/delete-emailalert.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete emailAlert command deletes recipient email address\(es\) from the Email alert configuration.'

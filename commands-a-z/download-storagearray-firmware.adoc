@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/download-storagearray-firmware.html
+permalink: commands-a-z/download-storagearray-firmware.html
 sidebar: sidebar
 keywords: 
 summary: 'The download storageArray firmware command downloads firmware and, optionally, NVSRAM values for the storage array controller.'

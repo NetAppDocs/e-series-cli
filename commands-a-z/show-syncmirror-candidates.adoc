@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-syncmirror-candidates.html
+permalink: commands-a-z/show-syncmirror-candidates.html
 sidebar: sidebar
 keywords: 
 summary: 'The show syncMirror candidates command returns information about the candidate volumes on a remote storage array that you can use as secondary volumes in a Synchronous Mirroring configuration.'

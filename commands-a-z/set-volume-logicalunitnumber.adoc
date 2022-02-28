@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-volume-logicalunitnumber.html
+permalink: commands-a-z/set-volume-logicalunitnumber.html
 sidebar: sidebar
 keywords: 
 summary: 'The set volume logicalUnitNumber command defines the logical unit number \(LUN\) or namespace ID \(NSID\) mapping between a volume and a host or host group.'

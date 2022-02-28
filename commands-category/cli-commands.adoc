@@ -1,5 +1,5 @@
 ---
-permalink: /commands-category/cli-commands.html
+permalink: commands-category/cli-commands.html
 sidebar: sidebar
 keywords: 
 summary: ''

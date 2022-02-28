@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-hostchannel.html
+permalink: commands-a-z/set-hostchannel.html
 sidebar: sidebar
 keywords: 
 summary: 'The set hostChannel command defines the loop ID for the host channel.'

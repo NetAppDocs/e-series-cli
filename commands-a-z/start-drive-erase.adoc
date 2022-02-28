@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/start-drive-erase.html
+permalink: commands-a-z/start-drive-erase.html
 sidebar: sidebar
 keywords: 
 summary: 'The start drive erase command erases all of the data from one or more drives.'

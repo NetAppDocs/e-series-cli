@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/create-consistencygroup.html
+permalink: commands-a-z/create-consistencygroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The create consistencyGroup command creates a new, empty consistency group that can contain snapshot groups. You must add the snapshot groups using the set consistencyGroup addCGMember command.'

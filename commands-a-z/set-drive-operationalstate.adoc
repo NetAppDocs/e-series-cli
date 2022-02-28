@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-drive-operationalstate.html
+permalink: commands-a-z/set-drive-operationalstate.html
 sidebar: sidebar
 keywords: 
 summary: 'The set drive operationalState command sets a drive to the Failed state.'

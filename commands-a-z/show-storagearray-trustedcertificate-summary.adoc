@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-storagearray-trustedcertificate-summary.html
+permalink: commands-a-z/show-storagearray-trustedcertificate-summary.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray trustedCertificate summary command displays the trusted installed CA certificates summary from the array. This command is useful to use before performing the delete storageArray trustedCertificate command so that you know the alias names of the certificates to delete.'

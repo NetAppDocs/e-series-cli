@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/clear-syslog-configuration.html
+permalink: commands-a-z/clear-syslog-configuration.html
 sidebar: sidebar
 keywords: 
 summary: 'The clear syslog configuration command clears the syslog alert information.'

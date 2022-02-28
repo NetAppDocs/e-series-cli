@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/save-storagearray-keymanagementcertificate.html
+permalink: commands-a-z/save-storagearray-keymanagementcertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray keyManagementCertificate command retrieves the installed certificate.'

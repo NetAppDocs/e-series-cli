@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/save-storagearray-dbmdatabase.html
+permalink: commands-a-z/save-storagearray-dbmdatabase.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray dbmDatabase command backs up RAID configuration data or all data to a file on the host. You can specify multiple data locations and controllers.'

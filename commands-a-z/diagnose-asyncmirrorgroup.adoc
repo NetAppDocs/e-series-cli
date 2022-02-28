@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/diagnose-asyncmirrorgroup.html
+permalink: commands-a-z/diagnose-asyncmirrorgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The diagnose asyncMirrorGroup command tests possible communication problems between the local storage array and the remote storage array associated with an asynchronous mirror group.'

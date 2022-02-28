@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-consistencygroup.html
+permalink: commands-a-z/show-consistencygroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The show consistencyGroup command returns information about one or more consistency groups.'

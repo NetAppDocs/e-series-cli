@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-drivechannel.html
+permalink: commands-a-z/set-drivechannel.html
 sidebar: sidebar
 keywords: 
 summary: 'The set driveChannel command defines how the drive channel performs.'

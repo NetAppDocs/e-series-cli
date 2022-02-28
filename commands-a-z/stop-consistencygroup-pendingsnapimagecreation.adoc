@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/stop-consistencygroup-pendingsnapimagecreation.html
+permalink: commands-a-z/stop-consistencygroup-pendingsnapimagecreation.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop consistencyGroup pendingSnapImageCreation command stops all of the pending snapshot images that are to be created on a snapshot consistency group.'

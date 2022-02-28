@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/clear-volume-reservations.html
+permalink: commands-a-z/clear-volume-reservations.html
 sidebar: sidebar
 keywords: 
 summary: 'The clear volume reservations command clears persistent volume reservations.'

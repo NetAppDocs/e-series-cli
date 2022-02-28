@@ -1,5 +1,5 @@
 ---
-permalink: /get-started/changes-in-the-cli-and-script-commands-in-this-release.html
+permalink: get-started/changes-in-the-cli-and-script-commands-in-this-release.html
 sidebar: sidebar
 keywords: 
 summary: 'This topic lists changes in the latest SANtricity System Manager releases of the CLI command and Script commands.'

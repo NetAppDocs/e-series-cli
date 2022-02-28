@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/save-storagearray-warningevents.html
+permalink: commands-a-z/save-storagearray-warningevents.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray warningEvents command saves events from the Major Event Log to a file.'

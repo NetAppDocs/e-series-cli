@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/diagnose-syncmirror.html
+permalink: commands-a-z/diagnose-syncmirror.html
 sidebar: sidebar
 keywords: 
 summary: 'The diagnose syncMirror command tests the connection between the specified primary volumes and the mirror volumes on a storage array with the synchronous mirroring feature enabled.'

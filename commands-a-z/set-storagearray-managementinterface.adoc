@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-managementinterface.html
+permalink: commands-a-z/set-storagearray-managementinterface.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray managementInterface command changes the management interface of the controller. Change the management interface type to enforce confidentiality between the storage array and its management software or to access external tools.'

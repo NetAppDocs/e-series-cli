@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/save-storagearray-statecapture.html
+permalink: commands-a-z/save-storagearray-statecapture.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray stateCapture command saves the state capture of a storage array to a file.'

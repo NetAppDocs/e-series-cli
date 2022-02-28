@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/delete-hostport.html
+permalink: commands-a-z/delete-hostport.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete hostPort command deletes a host port identification.'

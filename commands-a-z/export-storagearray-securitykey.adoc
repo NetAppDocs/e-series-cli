@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/export-storagearray-securitykey.html
+permalink: commands-a-z/export-storagearray-securitykey.html
 sidebar: sidebar
 keywords: 
 summary: 'The export storageArray securityKey command saves a drive security key to a file.'

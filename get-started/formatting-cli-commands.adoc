@@ -1,5 +1,5 @@
 ---
-permalink: /get-started/formatting-cli-commands.html
+permalink: get-started/formatting-cli-commands.html
 sidebar: sidebar
 keywords: 
 summary: ''

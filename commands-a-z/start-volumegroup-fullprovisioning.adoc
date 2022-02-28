@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/start-volumegroup-fullprovisioning.html
+permalink: commands-a-z/start-volumegroup-fullprovisioning.html
 sidebar: sidebar
 keywords: 
 summary: 'The start volumeGroup fullProvisioning command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the volume group.'

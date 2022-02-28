@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/start-storagearray-ocspresponderurl-test.html
+permalink: commands-a-z/start-storagearray-ocspresponderurl-test.html
 sidebar: sidebar
 keywords: 
 summary: 'The start storageArray ocspResponderUrl test command checks for an open connection to the specified URL of the Online Certificate Status Protocol \(OCSP\) server.'

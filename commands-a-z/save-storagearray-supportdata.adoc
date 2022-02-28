@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/save-storagearray-supportdata.html
+permalink: commands-a-z/save-storagearray-supportdata.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray supportData command saves the support-related information of the storage array to a file.'

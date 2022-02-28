@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-volumecopy-target.html
+permalink: commands-a-z/set-volumecopy-target.html
 sidebar: sidebar
 keywords: 
 summary: 'The set volumeCopy target command defines the properties for a volume copy pair.'

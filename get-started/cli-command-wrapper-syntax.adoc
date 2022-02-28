@@ -1,5 +1,5 @@
 ---
-permalink: /get-started/cli-command-wrapper-syntax.html
+permalink: get-started/cli-command-wrapper-syntax.html
 sidebar: sidebar
 keywords: 
 summary: ''

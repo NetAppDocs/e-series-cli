@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/create-cgsnapimage-consistencygroup.html
+permalink: commands-a-z/create-cgsnapimage-consistencygroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The create cgSnapImage consistencyGroup command creates a new snapshot image for each base volume that is a member of a snapshot consistency group.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-controller-arraymanagementsignedcertificate-summary.html
+permalink: commands-a-z/show-controller-arraymanagementsignedcertificate-summary.html
 sidebar: sidebar
 keywords: 
 summary: 'The show controller arrayManagementSignedCertificate summary command displays the current signed certificate summary from the specified controller.'

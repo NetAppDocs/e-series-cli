@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/start-volume-initialization.html
+permalink: commands-a-z/start-volume-initialization.html
 sidebar: sidebar
 keywords: 
 summary: 'The start volume initialize command starts the formatting of a volume in a storage array.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/start-snmptrapdestination.html
+permalink: commands-a-z/start-snmptrapdestination.html
 sidebar: sidebar
 keywords: 
 summary: 'The start snmpTrapDestination command tests the connection and identification of the trap receiver for a specific Simple Network Management Protocol \(SNMP\) community or user. This command tests the trap destination by sending a trap message to the trap receiver.'

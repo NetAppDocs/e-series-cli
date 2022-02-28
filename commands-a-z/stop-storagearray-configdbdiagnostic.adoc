@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/stop-storagearray-configdbdiagnostic.html
+permalink: commands-a-z/stop-storagearray-configdbdiagnostic.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop storageArray configDbDiagnostic command stops the diagnostic test to validate the configuration database in the controller firmware that was started by the start storageArray configDbDiagnostic command.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-snmpcommunity.html
+permalink: commands-a-z/set-snmpcommunity.html
 sidebar: sidebar
 keywords: 
 summary: 'The set snmpCommunity command creates a new name for an existing Simple Network Management Protocol \(SNMP\) community.'

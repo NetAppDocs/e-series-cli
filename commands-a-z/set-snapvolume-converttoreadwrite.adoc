@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-snapvolume-converttoreadwrite.html
+permalink: commands-a-z/set-snapvolume-converttoreadwrite.html
 sidebar: sidebar
 keywords: 
 summary: 'The set snapVolume convertToReadWrite command changes a snapshot volume that is a read-only volume to a snapshot volume that is read/write volume.'

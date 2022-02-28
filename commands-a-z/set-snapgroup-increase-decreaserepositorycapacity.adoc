@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-snapgroup-increase-decreaserepositorycapacity.html
+permalink: commands-a-z/set-snapgroup-increase-decreaserepositorycapacity.html
 sidebar: sidebar
 keywords: 
 summary: 'The set snapGroup increase/decreaseRepositoryCapacity command increases or decreases the capacity of a snapshot group repository volume.'

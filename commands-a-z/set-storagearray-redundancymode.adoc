@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-redundancymode.html
+permalink: commands-a-z/set-storagearray-redundancymode.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray redundancyMode command sets the redundancy mode of the storage array to either simplex or duplex.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/create-host.html
+permalink: commands-a-z/create-host.html
 sidebar: sidebar
 keywords: 
 summary: 'The create host command creates a new host.'

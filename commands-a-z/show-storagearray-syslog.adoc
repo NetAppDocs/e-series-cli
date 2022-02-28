@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-storagearray-syslog.html
+permalink: commands-a-z/show-storagearray-syslog.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray syslog command allows you to view the configuration of a syslog server used for storing audit logs. Configuration information includes a server ID, along with its address, protocol, and port number.'

@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/set-storagearray-time.html
+permalink: commands-a-z/set-storagearray-time.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray time command sets the clocks on both controllers in a storage array by synchronizing the controller clocks with the clock of the host from which you run this command.'

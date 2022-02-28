@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/create-snapshot-volume.html
+permalink: commands-a-z/create-snapshot-volume.html
 sidebar: sidebar
 keywords: 
 summary: 'The create snapVolume command creates a snapshot volume with read-write capabilities for snapshot images of a base volume.'

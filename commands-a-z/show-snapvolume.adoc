@@ -1,5 +1,5 @@
 ---
-permalink: /commands-a-z/show-snapvolume.html
+permalink: commands-a-z/show-snapvolume.html
 sidebar: sidebar
 keywords: 
 summary: 'The show snapVolume command returns information about one or more snapshot volumes.'
