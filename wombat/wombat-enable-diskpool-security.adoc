@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-enable-diskpool-security.html
+permalink: commands-a-z/enable-diskpool-security.html
 sidebar: sidebar
 keywords: 
 summary: 'The enable diskPool security command converts a non-secure disk pool to a secure disk pool.'

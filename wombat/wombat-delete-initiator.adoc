@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-delete-initiator.html
+permalink: commands-a-z/delete-initiator.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete initiator command deletes the initiator object.'

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-storagearray-dbmvalidatorinfo.html
+permalink: commands-a-z/save-storagearray-dbmvalidatorinfo.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray dbmValidatorInfo command saves the database management \(DBM\) validation information for a storage array in an XML file.'

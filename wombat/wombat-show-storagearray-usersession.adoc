@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-show-storagearray-usersession.html
+permalink: commands-a-z/show-storagearray-usersession.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray userSession command allows you to view the session timeout period for System Manager.'

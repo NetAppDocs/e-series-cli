@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-drive-securityid.html
+permalink: commands-a-z/set-drive-securityid.html
 sidebar: sidebar
 keywords: 
 summary: 'The set drive securityID command is used to reset a FIPS drive back to the original manufacturer settings.'

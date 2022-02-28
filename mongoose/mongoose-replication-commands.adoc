@@ -1,5 +1,5 @@
 ---
-permalink: mongoose/mongoose-replication-commands.html
+permalink: commands-category/replication-commands.html
 sidebar: sidebar
 keywords: create volumeCopy,recopy volumeCopy target,check repositoryConsistency,create cgSnapImage consistencyGroup,create cgSnapVolume,create consistencyGroup,create mapping cgSnapVolume,create snapGroup,create snapImage,create snapVolume \(read-only\),create snapVolume \(read-write\),delete cgSnapImage consistencyGroup,delete consistencyGroup,delete sgSnapVolume,delete snapGroup,delete snapImage,delete snapVolume,remove volumeCopy target,resume cgSnapVolume,resume snapImage rollback,resume snapVolume,revive snapGroup,revive snapVolume,set cgSnapVolume,set consistencyGroup,set consistencyGroup addCGMemberVolume,set snapGroup,set snapGroup enableSchedule,set snapGroup increase/decreaseRepositoryCapacity,set snapGroup mediaScanEnabled,set snapVolume,set snapVolume convertToReadWrite,set snapVolume increase/decreaseRepositoryCapacity,set snapVolume mediaScanEnabled,set volume ssdCacheEnabled,set volumeCopy target,show CGSnapImage,show consistencyGroup,show snapGroup,show snapImage,show snapVolume,show volumeCopy,show volumeCopy source targetCandidates,show volumeCopy sourceCandidates,start cgSnapImage,start snapImage rollback,stop cgSnapImage rollback,stop cgSnapVolume,stop consistencyGroup pendingSnapImageCreation,stop pendingSnapImageCreation consistencyGroup pendingSnapImageCreation,stop snapImage rollback,stop snapVolume,stop volumeCopy target source
 summary: ''
@@ -11,122 +11,122 @@ summary: ''
 * *<<GUID-09A87BEB-84D9-4055-B80D-0A0DF6695401,Consistency group commands>> | <<GUID-259D417D-EA80-41CA-BBEC-1252673D425E,Repository volume analysis commands>> | <<GUID-804036C7-DA9E-4F0F-9010-4E1BC49E6210,Snapshot group commands>> | <<GUID-7A64D89E-9C3C-471D-A62C-AFFBBAB00377,Snapshot image commands>> | <<GUID-A89DFE75-CC1E-4961-AA1A-90C7C44E3257,Snapshot volume commands>> | <<GUID-1B7D7168-7D42-441B-BC79-669315F3CF76,Volume copy commands>>*
 * *Consistency group commands*
 +
-xref:../wombat/wombat-set-consistencygroup-addcgmembervolume.adoc[Add member to consistency group]
+xref:../commands-a-z/set-consistencygroup-addcgmembervolume.adoc[Add member to consistency group]
 +
-xref:../wombat/wombat-create-consistencygroup.adoc[Create consistency group]
+xref:../commands-a-z/create-consistencygroup.adoc[Create consistency group]
 +
-xref:../wombat/wombat-create-cgsnapimage-consistencygroup.adoc[Create consistency group snapshot image]
+xref:../commands-a-z/create-cgsnapimage-consistencygroup.adoc[Create consistency group snapshot image]
 +
-xref:../wombat/wombat-create-cgsnapvolume.adoc[Create consistency group snapshot volume]
+xref:../commands-a-z/create-cgsnapvolume.adoc[Create consistency group snapshot volume]
 +
-xref:../wombat/wombat-create-mapping-cgsnapvolume.adoc[Create consistency group snapshot volume mapping]
+xref:../commands-a-z/create-mapping-cgsnapvolume.adoc[Create consistency group snapshot volume mapping]
 +
-xref:../wombat/wombat-delete-consistencygroup.adoc[Delete consistency group]
+xref:../commands-a-z/delete-consistencygroup.adoc[Delete consistency group]
 +
-xref:../wombat/wombat-delete-cgsnapimage-consistencygroup.adoc[Delete consistency group snapshot image]
+xref:../commands-a-z/delete-cgsnapimage-consistencygroup.adoc[Delete consistency group snapshot image]
 +
-xref:../wombat/wombat-delete-sgsnapvolume.adoc[Delete consistency group snapshot volume]
+xref:../commands-a-z/delete-sgsnapvolume.adoc[Delete consistency group snapshot volume]
 +
-xref:../wombat/wombat-remove-member-volume-from-consistency-group.adoc[Remove member volume from consistency group]
+xref:../commands-a-z/remove-member-volume-from-consistency-group.adoc[Remove member volume from consistency group]
 +
-xref:../wombat/wombat-resume-cgsnapvolume.adoc[Resume consistency group snapshot volume]
+xref:../commands-a-z/resume-cgsnapvolume.adoc[Resume consistency group snapshot volume]
 +
-xref:../wombat/wombat-set-consistency-group-attributes.adoc[Set consistency group attributes]
+xref:../commands-a-z/set-consistency-group-attributes.adoc[Set consistency group attributes]
 +
-xref:../wombat/wombat-set-cgsnapvolume.adoc[Set consistency group snapshot volume]
+xref:../commands-a-z/set-cgsnapvolume.adoc[Set consistency group snapshot volume]
 +
-xref:../wombat/wombat-show-consistencygroup.adoc[Show consistency group]
+xref:../commands-a-z/show-consistencygroup.adoc[Show consistency group]
 +
-xref:../wombat/wombat-show-cgsnapimage.adoc[Show consistency group snapshot image]
+xref:../commands-a-z/show-cgsnapimage.adoc[Show consistency group snapshot image]
 +
-xref:../wombat/wombat-start-cgsnapimage-rollback.adoc[Start consistency group snapshot rollback]
+xref:../commands-a-z/start-cgsnapimage-rollback.adoc[Start consistency group snapshot rollback]
 +
-xref:../wombat/wombat-stop-cgsnapimage-rollback.adoc[Stop consistency group snapshot rollback]
+xref:../commands-a-z/stop-cgsnapimage-rollback.adoc[Stop consistency group snapshot rollback]
 +
-xref:../wombat/wombat-stop-cgsnapvolume.adoc[Stop consistency group snapshot volume]
+xref:../commands-a-z/stop-cgsnapvolume.adoc[Stop consistency group snapshot volume]
 +
-xref:../wombat/wombat-stop-consistencygroup-pendingsnapimagecreation.adoc[Stop pending snapshot images on consistency group]
+xref:../commands-a-z/stop-consistencygroup-pendingsnapimagecreation.adoc[Stop pending snapshot images on consistency group]
 
 * *Repository volume analysis commands*
 +
-link:../wombat/wombat-check-repositoryconsistency.md#[Check repository consistency]
+link:../commands-a-z/check-repositoryconsistency.md#[Check repository consistency]
 
 * *Snapshot group commands*
 +
-xref:../wombat/wombat-create-snapgroup.adoc[Create snapshot group]
+xref:../commands-a-z/create-snapgroup.adoc[Create snapshot group]
 +
-xref:../wombat/wombat-delete-snapvolume.adoc[Delete snapshot volume]
+xref:../commands-a-z/delete-snapvolume.adoc[Delete snapshot volume]
 +
-xref:../wombat/wombat-revive-snapgroup.adoc[Revive snapshot group]
+xref:../commands-a-z/revive-snapgroup.adoc[Revive snapshot group]
 +
-xref:../wombat/wombat-set-snapgroup.adoc[Set snapshot group attributes]
+xref:../commands-a-z/set-snapgroup.adoc[Set snapshot group attributes]
 +
-xref:../wombat/wombat-set-snapgroup-mediascanenabled.adoc[Set snapshot group media scan]
+xref:../commands-a-z/set-snapgroup-mediascanenabled.adoc[Set snapshot group media scan]
 +
-xref:../wombat/wombat-set-snapgroup-increase-decreaserepositorycapacity.adoc[Set snapshot group repository volume capacity]
+xref:../commands-a-z/set-snapgroup-increase-decreaserepositorycapacity.adoc[Set snapshot group repository volume capacity]
 +
-xref:../wombat/wombat-set-snapgroup-enableschedule.adoc[Set snapshot group schedule]
+xref:../commands-a-z/set-snapgroup-enableschedule.adoc[Set snapshot group schedule]
 +
-xref:../wombat/wombat-set-volume-ssdcacheenabled.adoc[Set SSD cache for a volume]
+xref:../commands-a-z/set-volume-ssdcacheenabled.adoc[Set SSD cache for a volume]
 +
-xref:../wombat/wombat-show-snapgroup.adoc[Show snapshot group]
+xref:../commands-a-z/show-snapgroup.adoc[Show snapshot group]
 +
-xref:../wombat/wombat-stop-pendingsnapimagecreation.adoc[Stop snapshot group pending snapshot images]
+xref:../commands-a-z/stop-pendingsnapimagecreation.adoc[Stop snapshot group pending snapshot images]
 
 * *Snapshot image commands*
 +
-xref:../wombat/wombat-create-snapimage.adoc[Create snapshot image]
+xref:../commands-a-z/create-snapimage.adoc[Create snapshot image]
 +
-xref:../wombat/wombat-delete-snapimage.adoc[Delete snapshot image]
+xref:../commands-a-z/delete-snapimage.adoc[Delete snapshot image]
 +
-xref:../wombat/wombat-resume-snapimage-rollback.adoc[Resume snapshot image rollback]
+xref:../commands-a-z/resume-snapimage-rollback.adoc[Resume snapshot image rollback]
 +
-xref:../wombat/wombat-show-snapimage.adoc[Show snapshot image]
+xref:../commands-a-z/show-snapimage.adoc[Show snapshot image]
 +
-xref:../wombat/wombat-start-snapimage-rollback.adoc[Start snapshot image rollback]
+xref:../commands-a-z/start-snapimage-rollback.adoc[Start snapshot image rollback]
 +
-xref:../wombat/wombat-stop-snapimage-rollback.adoc[Stop snapshot image rollback]
+xref:../commands-a-z/stop-snapimage-rollback.adoc[Stop snapshot image rollback]
 
 * *Snapshot volume commands*
 +
-xref:../wombat/wombat-create-read-only-snapshot-volume.adoc[Create read-only snapshot volume]
+xref:../commands-a-z/create-read-only-snapshot-volume.adoc[Create read-only snapshot volume]
 +
-xref:../wombat/wombat-create-snapshot-volume.adoc[Create snapshot volume]
+xref:../commands-a-z/create-snapshot-volume.adoc[Create snapshot volume]
 +
-xref:../wombat/wombat-delete-snapgroup.adoc[Delete snapshot group]
+xref:../commands-a-z/delete-snapgroup.adoc[Delete snapshot group]
 +
-xref:../wombat/wombat-set-snapvolume.adoc[Rename snapshot volume]
+xref:../commands-a-z/set-snapvolume.adoc[Rename snapshot volume]
 +
-xref:../wombat/wombat-resume-snapvolume.adoc[Resume snapshot volume]
+xref:../commands-a-z/resume-snapvolume.adoc[Resume snapshot volume]
 +
-xref:../wombat/wombat-revive-snapvolume.adoc[Revive snapshot volume]
+xref:../commands-a-z/revive-snapvolume.adoc[Revive snapshot volume]
 +
-xref:../wombat/wombat-set-snapvolume-converttoreadwrite.adoc[Set read-only snapshot volume to read/write volume]
+xref:../commands-a-z/set-snapvolume-converttoreadwrite.adoc[Set read-only snapshot volume to read/write volume]
 +
-xref:../wombat/wombat-set-snapvolume-mediascanenabled.adoc[Set snapshot volume media scan]
+xref:../commands-a-z/set-snapvolume-mediascanenabled.adoc[Set snapshot volume media scan]
 +
-xref:../wombat/wombat-set-snapvolume-increase-decreaserepositorycapacity.adoc[Set snapshot volume repository volume capacity]
+xref:../commands-a-z/set-snapvolume-increase-decreaserepositorycapacity.adoc[Set snapshot volume repository volume capacity]
 +
-link:../wombat/wombat-set-volume-ssdcacheenabled.md#[Set SSD cache for a volume]
+link:../commands-a-z/set-volume-ssdcacheenabled.md#[Set SSD cache for a volume]
 +
-xref:../wombat/wombat-show-snapvolume.adoc[Show snapshot volumes]
+xref:../commands-a-z/show-snapvolume.adoc[Show snapshot volumes]
 +
-xref:../wombat/wombat-stop-snapvolume.adoc[Stop snapshot volume]
+xref:../commands-a-z/stop-snapvolume.adoc[Stop snapshot volume]
 
 * *Volume copy commands*
 +
-xref:../wombat/wombat-create-volumecopy.adoc[Create volume copy]
+xref:../commands-a-z/create-volumecopy.adoc[Create volume copy]
 +
-xref:../wombat/wombat-recopy-volumecopy-target.adoc[Recopy volume copy]
+xref:../commands-a-z/recopy-volumecopy-target.adoc[Recopy volume copy]
 +
-xref:../wombat/wombat-remove-volumecopy-target.adoc[Remove volume copy]
+xref:../commands-a-z/remove-volumecopy-target.adoc[Remove volume copy]
 +
-xref:../wombat/wombat-set-volumecopy-target.adoc[Set volume copy]
+xref:../commands-a-z/set-volumecopy-target.adoc[Set volume copy]
 +
-xref:../wombat/wombat-show-volumecopy.adoc[Show volume copy]
+xref:../commands-a-z/show-volumecopy.adoc[Show volume copy]
 +
-xref:../wombat/wombat-show-volumecopy-sourcecandidates.adoc[Show volume copy source candidates]
+xref:../commands-a-z/show-volumecopy-sourcecandidates.adoc[Show volume copy source candidates]
 +
-xref:../wombat/wombat-show-volumecopy-source-targetcandidates.adoc[Show volume copy target candidates]
+xref:../commands-a-z/show-volumecopy-source-targetcandidates.adoc[Show volume copy target candidates]
 +
-xref:../wombat/wombat-stop-volumecopy-target-source.adoc[Stop volume copy]
+xref:../commands-a-z/stop-volumecopy-target-source.adoc[Stop volume copy]

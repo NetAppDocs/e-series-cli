@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-tray-locate.html
+permalink: commands-a-z/start-tray-locate.html
 sidebar: sidebar
 keywords: 
 summary: 'The start tray locate command locates a tray by turning on the indicator light.'

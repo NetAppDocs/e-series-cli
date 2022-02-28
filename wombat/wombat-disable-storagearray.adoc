@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-disable-storagearray.html
+permalink: commands-a-z/disable-storagearray.html
 sidebar: sidebar
 keywords: 
 summary: 'The disable storageArray command disables a storage array feature.'

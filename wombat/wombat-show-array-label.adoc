@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-show-array-label.html
+permalink: commands-a-z/show-array-label.html
 sidebar: sidebar
 keywords: 
 summary: 'The Show array label command returns information about whether a storage array label has been defined or all existing storage array labels.'

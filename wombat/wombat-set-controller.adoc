@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-controller.html
+permalink: commands-a-z/set-controller.html
 sidebar: sidebar
 keywords: 
 summary: 'The set controller command defines the attributes for the controllers.'

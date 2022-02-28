@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-delete-diskpool.html
+permalink: commands-a-z/delete-diskpool.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete diskPool command deletes a disk pool.'

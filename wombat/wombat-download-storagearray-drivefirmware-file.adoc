@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-download-storagearray-drivefirmware-file.html
+permalink: commands-a-z/download-storagearray-drivefirmware-file.html
 sidebar: sidebar
 keywords: 
 summary: 'The download storageArray driveFirmware file command downloads firmware images to all of the drives in the storage array.'

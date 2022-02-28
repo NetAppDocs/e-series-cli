@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-snapgroup-enableschedule.html
+permalink: commands-a-z/set-snapgroup-enableschedule.html
 sidebar: sidebar
 keywords: 
 summary: 'The set snapGroup enableSchedule command defines the schedule for taking snapshot images for a snapshot group.'

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-download-storagearray-keymanagementcertificate.html
+permalink: commands-a-z/download-storagearray-keymanagementcertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The download storageArray keyManagementCertificate command installs the external key management certificates on the storage array.'

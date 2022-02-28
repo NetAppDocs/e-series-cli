@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-recover-disabled-driveports.html
+permalink: commands-a-z/recover-disabled-driveports.html
 sidebar: sidebar
 keywords: 
 summary: 'The recover disabled drivePorts command recovers disabled drive ports.'

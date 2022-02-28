@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-download-tray-firmware-file.html
+permalink: commands-a-z/download-tray-firmware-file.html
 sidebar: sidebar
 keywords: 
 summary: 'The download tray firmware file command downloads environmental services module \(ESM\) firmware.'

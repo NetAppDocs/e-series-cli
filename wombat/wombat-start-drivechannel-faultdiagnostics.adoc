@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-drivechannel-faultdiagnostics.html
+permalink: commands-a-z/start-drivechannel-faultdiagnostics.html
 sidebar: sidebar
 keywords: 
 summary: 'The start driveChannel faultDiagnostics command runs the drive channel fault isolation diagnostics and stores the results.'

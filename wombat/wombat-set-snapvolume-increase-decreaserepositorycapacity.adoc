@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-snapvolume-increase-decreaserepositorycapacity.html
+permalink: commands-a-z/set-snapvolume-increase-decreaserepositorycapacity.html
 sidebar: sidebar
 keywords: 
 summary: 'The set snapVolume increase/decreaseRepositoryCapacity command increases or decreases the capacity of a snapshot volume repository volume.'

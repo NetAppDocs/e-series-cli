@@ -1,5 +1,5 @@
 ---
-permalink: alpaca/alpaca-changes-in-the-cli-and-script-commands-in-this-release.html
+permalink: get-started/changes-in-the-cli-and-script-commands-in-this-release.html
 sidebar: sidebar
 keywords: 
 summary: 'This topic lists changes in the latest SANtricity System Manager releases of the CLI command and Script commands.'
@@ -28,19 +28,19 @@ The following tables list changes to the CLI and Script Commands for release 11.
 |===
 | Command| Description of Change
 a|
-xref:../wombat/wombat-start-diskpool-resourceprovisioning.adoc[Start Disk Pool Resource Provisioning]
+xref:../commands-a-z/start-diskpool-resourceprovisioning.adoc[Start Disk Pool Resource Provisioning]
 a|
 Added command
 a|
-xref:../wombat/wombat-start-volumegroup-resourceprovisioning.adoc[Start Volume Group Resource Provisioning]
+xref:../commands-a-z/start-volumegroup-resourceprovisioning.adoc[Start Volume Group Resource Provisioning]
 a|
 Added command
 a|
-xref:../wombat/wombat-start-diskpool-fullprovisioning.adoc[Start Disk Pool Full Provisioning]
+xref:../commands-a-z/start-diskpool-fullprovisioning.adoc[Start Disk Pool Full Provisioning]
 a|
 Updated `disableResourceProvisioning` parameter description.
 a|
-xref:../wombat/wombat-start-diskpool-resourceprovisioning.adoc[Start Disk Pool Resource Provisioning]
+xref:../commands-a-z/start-diskpool-resourceprovisioning.adoc[Start Disk Pool Resource Provisioning]
 a|
 Updated `disableResourceProvisioning` parameter description.
 |===
@@ -52,31 +52,31 @@ The following tables list changes to the CLI and Script Commands for release 11.
 |===
 | Command| Description of Change
 a|
-xref:../wombat/wombat-create-snmpuser-username.adoc[Register SNMPv3 USM user]
+xref:../commands-a-z/create-snmpuser-username.adoc[Register SNMPv3 USM user]
 a|
 Added command
 a|
-xref:../wombat/wombat-set-snmpuser-username.adoc[Update SNMPv3 USM user]
+xref:../commands-a-z/set-snmpuser-username.adoc[Update SNMPv3 USM user]
 a|
 Added command
 a|
-xref:../wombat/wombat-show-allsnmpusers.adoc[Show SNMPv3 USM user]
+xref:../commands-a-z/show-allsnmpusers.adoc[Show SNMPv3 USM user]
 a|
 Added command
 a|
-xref:../wombat/wombat-delete-snmpuser-username.adoc[Unregister SNMPv3 USM user]
+xref:../commands-a-z/delete-snmpuser-username.adoc[Unregister SNMPv3 USM user]
 a|
 Added command
 a|
-xref:../wombat/wombat-create-snmptrapdestination.adoc[Register SNMP trap destination]
+xref:../commands-a-z/create-snmptrapdestination.adoc[Register SNMP trap destination]
 a|
 Added `userName` and `engineid` parameters.
 a|
-xref:../wombat/wombat-set-snmptrapdestination-trapreceiverip.adoc[Update SNMP trap destination]
+xref:../commands-a-z/set-snmptrapdestination-trapreceiverip.adoc[Update SNMP trap destination]
 a|
 Added `userName` and `engineid` parameters.
 a|
-xref:../wombat/wombat-start-snmptrapdestination.adoc[Test SNMP trap destination]
+xref:../commands-a-z/start-snmptrapdestination.adoc[Test SNMP trap destination]
 a|
 Added `userName` and `engineid` parameters.
 |===
@@ -88,35 +88,35 @@ The following tables list changes to the CLI and Script Commands for release 11.
 |===
 | Command| Description of Change
 a|
-xref:../wombat/wombat-start-drive-erase.adoc[Start drive erase]
+xref:../commands-a-z/start-drive-erase.adoc[Start drive erase]
 a|
 Added command
 a|
-xref:../wombat/wombat-import-storagearray-securitykey-file.adoc[Import storage array security key]
+xref:../commands-a-z/import-storagearray-securitykey-file.adoc[Import storage array security key]
 a|
 Added `forceOverwrite` parameter.
 a|
-xref:../wombat/wombat-set-controller-hostport.adoc[Set controller host port properties]
+xref:../commands-a-z/set-controller-hostport.adoc[Set controller host port properties]
 a|
 Added `fecMode` parameter.
 a|
-xref:../wombat/wombat-show-syslog-summary.adoc[Show syslog configuration]
+xref:../commands-a-z/show-syslog-summary.adoc[Show syslog configuration]
 a|
 Added `syslogFormat` parameter.
 a|
-xref:../wombat/wombat-set-syslog.adoc[Configure syslog settings]
+xref:../commands-a-z/set-syslog.adoc[Configure syslog settings]
 a|
 Added `syslogFormat` parameter.
 a|
-xref:../wombat/wombat-set-emailalert.adoc[Configure email alert settings]
+xref:../commands-a-z/set-emailalert.adoc[Configure email alert settings]
 a|
 Added `serverEncryption`, `serverPort`, `serverUsername`, and `serverPassword` parameters.
 a|
-xref:../wombat/wombat-show-emailalert-summary.adoc[Show email alert configuration]
+xref:../commands-a-z/show-emailalert-summary.adoc[Show email alert configuration]
 a|
 Added `SMTP` encryption, port, and credential parameter data.
 a|
-xref:../wombat/wombat-recover-volume.adoc[Recover RAID volume]
+xref:../commands-a-z/recover-volume.adoc[Recover RAID volume]
 a|
 Added `blockSize` parameter.
 |===
@@ -128,23 +128,23 @@ The following tables list changes to the CLI and Script Commands for release 11.
 |===
 | Command| Description of Change
 a|
-xref:../wombat/wombat-download-storagearray-firmware.adoc[Download storage array firmware/NVSRAM]
+xref:../commands-a-z/download-storagearray-firmware.adoc[Download storage array firmware/NVSRAM]
 a|
 Added `healthCheckNeedsAttnOverride` parameter.
 a|
-xref:../wombat/wombat-create-volume-diskpool.adoc[Create volume in disk pool]
+xref:../commands-a-z/create-volume-diskpool.adoc[Create volume in disk pool]
 a|
 Added `raidLevel` parameter.
 a|
-xref:../wombat/wombat-enable-storagearray-externalkeymanagement-file.adoc[Enable external security key management]
+xref:../commands-a-z/enable-storagearray-externalkeymanagement-file.adoc[Enable external security key management]
 a|
 Added `saveFile` parameter.
 a|
-xref:../wombat/wombat-disable-storagearray-externalkeymanagement-file.adoc[Disable external security key management]
+xref:../commands-a-z/disable-storagearray-externalkeymanagement-file.adoc[Disable external security key management]
 a|
 Added `saveFile` parameter.
 a|
-xref:../wombat/wombat-recover-volume.adoc[Recover RAID volume]
+xref:../commands-a-z/recover-volume.adoc[Recover RAID volume]
 a|
 Added `hostUnmapEnabled` parameter.
 |===
@@ -156,55 +156,55 @@ The following tables list changes to the CLI and Script Commands for release 11.
 |===
 | Command| Description of Change
 a|
-xref:../wombat/wombat-start-storagearray-autosupport-manualdispatch.adoc[Start Storage Array AutoSupport Manual Dispatch]
+xref:../commands-a-z/start-storagearray-autosupport-manualdispatch.adoc[Start Storage Array AutoSupport Manual Dispatch]
 a|
 Added command
 a|
-xref:../wombat/wombat-start-volumegroup-fullprovisioning.adoc[Start Volume Group Full Provisioning]
+xref:../commands-a-z/start-volumegroup-fullprovisioning.adoc[Start Volume Group Full Provisioning]
 a|
 Added command
 a|
-xref:../wombat/wombat-start-diskpool-fullprovisioning.adoc[Start Disk Pool Full Provisioning]
+xref:../commands-a-z/start-diskpool-fullprovisioning.adoc[Start Disk Pool Full Provisioning]
 a|
 Added command
 a|
-xref:../wombat/wombat-repair-data-parity.adoc[Repair Data Parity]
+xref:../commands-a-z/repair-data-parity.adoc[Repair Data Parity]
 a|
 Added command
 a|
-xref:../wombat/wombat-set-storagearray-resourceprovisionedvolumes.adoc[Set Storage Array Resource Provisioned Volumes]
+xref:../commands-a-z/set-storagearray-resourceprovisionedvolumes.adoc[Set Storage Array Resource Provisioned Volumes]
 a|
 Added command
 a|
-xref:../wombat/wombat-create-mapping-volume.adoc[Create Volume Mapping]
+xref:../commands-a-z/create-mapping-volume.adoc[Create Volume Mapping]
 a|
 Added `mapWaitPeriod` parameter.
 a|
-xref:../wombat/wombat-show-storagearray.adoc[Show storage array]
+xref:../commands-a-z/show-storagearray.adoc[Show storage array]
 a|
 Added `Resource-Provisioned Volumes` entry under the `profile` parameter results.
 a|
-xref:../wombat/wombat-create-diskpool.adoc[Create disk pool]
+xref:../commands-a-z/create-diskpool.adoc[Create disk pool]
 a|
 Added `resourceProvisioningCapable` parameter.
 a|
-xref:../wombat/wombat-create-volumegroup.adoc[Create volume group]
+xref:../commands-a-z/create-volumegroup.adoc[Create volume group]
 a|
 Added `resourceProvisioningCapable` parameter.
 a|
-xref:../wombat/wombat-show-volumegroup.adoc[Show volume group]
+xref:../commands-a-z/show-volumegroup.adoc[Show volume group]
 a|
 Added `resource-provisioned` information in the command results.
 a|
-xref:../wombat/wombat-create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
+xref:../commands-a-z/create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
 a|
 Added `resourceProvisioningCapable` parameter.
 a|
-xref:../wombat/wombat-create-raid-volume-manual-drive-select.adoc[Create RAID volume (manual drive select)]
+xref:../commands-a-z/create-raid-volume-manual-drive-select.adoc[Create RAID volume (manual drive select)]
 a|
 Added `resourceProvisioningCapable` parameter.
 a|
-xref:../wombat/wombat-show-diskpool.adoc[Show disk pool]
+xref:../commands-a-z/show-diskpool.adoc[Show disk pool]
 a|
 Added `resource-provisioned` information in the command results.
 |===
@@ -216,7 +216,7 @@ The following tables list changes to the CLI and Script Commands for release 11.
 |===
 | Command| Description of Change
 a|
-xref:../wombat/wombat-set-controller-hostport.adoc[Set controller host port properties]
+xref:../commands-a-z/set-controller-hostport.adoc[Set controller host port properties]
 a|
 Added `Physical` and ``Virtual``values for `host Port` parameter.
 |===
@@ -228,91 +228,91 @@ Added `Physical` and ``Virtual``values for `host Port` parameter.
 |===
 | Command| Description of Change
 a|
-xref:../wombat/wombat-save-storagearray-supportdata.adoc[Save storage array support data]
+xref:../commands-a-z/save-storagearray-supportdata.adoc[Save storage array support data]
 a|
 Added `object-bundle.json` data type.
 a|
-xref:../wombat/wombat-show-alldrives.adoc[Show drive]
+xref:../commands-a-z/show-alldrives.adoc[Show drive]
 a|
 Added NVMe4K compatibility.
 
 a|
-xref:../wombat/wombat-activate-synchronous-mirroring.adoc[Activate synchronous mirroring]
+xref:../commands-a-z/activate-synchronous-mirroring.adoc[Activate synchronous mirroring]
 a|
 Added NVMe4K compatibility.
 
 a|
-xref:../wombat/wombat-recreate-storagearray-mirrorrepository.adoc[Re-create synchronous mirroring repository volume]
+xref:../commands-a-z/recreate-storagearray-mirrorrepository.adoc[Re-create synchronous mirroring repository volume]
 a|
 Added NVMe4K compatibility.
 
 a|
-xref:../wombat/wombat-create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
+xref:../commands-a-z/create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
 a|
 Added NVMe4K compatibility.
 
 a|
-xref:../wombat/wombat-show-storagearray-autoconfiguration.adoc[Show storage array auto configuration]
+xref:../commands-a-z/show-storagearray-autoconfiguration.adoc[Show storage array auto configuration]
 a|
 Added NVMe4K compatibility.
 
 a|
-xref:../wombat/wombat-autoconfigure-storagearray.adoc[Autoconfigure storage array]
+xref:../commands-a-z/autoconfigure-storagearray.adoc[Autoconfigure storage array]
 a|
 Added NVMe4K compatibility.
 
 a|
-xref:../wombat/wombat-create-diskpool.adoc[Create disk pool]
+xref:../commands-a-z/create-diskpool.adoc[Create disk pool]
 a|
 Added NVMe4K compatibility.
 
 a|
-xref:../wombat/wombat-create-volumegroup.adoc[Create volume group]
+xref:../commands-a-z/create-volumegroup.adoc[Create volume group]
 a|
 Added NVMe4K compatibility.
 
 a|
-xref:../wombat/wombat-save-storagearray-autoloadbalancestatistics-file.adoc[Save auto-load balancing statistics]
+xref:../commands-a-z/save-storagearray-autoloadbalancestatistics-file.adoc[Save auto-load balancing statistics]
 a|
 Added "Drive Lost Primary Path" note
 
 a|
-xref:../wombat/wombat-set-storagearray-autoloadbalancingenable.adoc[Set storage array to enable or disable automatic load balancing]
+xref:../commands-a-z/set-storagearray-autoloadbalancingenable.adoc[Set storage array to enable or disable automatic load balancing]
 a|
 Added "Drive Lost Primary Path" note
 
 a|
-xref:../wombat/wombat-add-certificate-from-array.adoc[Add certificate from array]
+xref:../commands-a-z/add-certificate-from-array.adoc[Add certificate from array]
 a|
 Added command
 
 a|
-xref:../wombat/wombat-add-certificate-from-file.adoc[Add certificate from file]
+xref:../commands-a-z/add-certificate-from-file.adoc[Add certificate from file]
 a|
 Added command
 
 a|
-xref:../wombat/wombat-delete-certificates.adoc[Delete certificates]
+xref:../commands-a-z/delete-certificates.adoc[Delete certificates]
 a|
 Added command
 
 a|
-xref:../wombat/wombat-show-certificates.adoc[Show certificates]
+xref:../commands-a-z/show-certificates.adoc[Show certificates]
 a|
 Added command
 
 a|
-xref:../wombat/wombat-add-array-label.adoc[Add array label]
+xref:../commands-a-z/add-array-label.adoc[Add array label]
 a|
 Added command
 
 a|
-xref:../wombat/wombat-remove-array-label.adoc[Remove array label]
+xref:../commands-a-z/remove-array-label.adoc[Remove array label]
 a|
 Added command
 
 a|
-xref:../wombat/wombat-show-array-label.adoc[Show array label]
+xref:../commands-a-z/show-array-label.adoc[Show array label]
 a|
 Added command
 

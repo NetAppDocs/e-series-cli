@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-create-initiator.html
+permalink: commands-a-z/create-initiator.html
 sidebar: sidebar
 keywords: 
 summary: 'The create initiator command creates the initiator object.'

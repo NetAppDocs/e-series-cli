@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-controller.html
+permalink: commands-a-z/start-controller.html
 sidebar: sidebar
 keywords: 
 summary: 'The start controller command starts an operation that saves debug trace information to a compressed file.'

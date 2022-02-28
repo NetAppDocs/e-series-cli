@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-remove-volume-asyncmirrorgroup.html
+permalink: commands-a-z/remove-volume-asyncmirrorgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The remove volume asyncMirrorGroup command removes a member volume from an existing asynchronous mirror group.'

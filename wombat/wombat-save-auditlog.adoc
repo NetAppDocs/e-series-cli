@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-auditlog.html
+permalink: commands-a-z/save-auditlog.html
 sidebar: sidebar
 keywords: 
 summary: 'The save auditLog command retrieves the audit log records.'

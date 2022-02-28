@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-cgsnapimage-rollback.html
+permalink: commands-a-z/start-cgsnapimage-rollback.html
 sidebar: sidebar
 keywords: 
 summary: 'The start cgSnapImage rollback command starts a rollback operation to the member base volumes in a snapshot consistency group.'

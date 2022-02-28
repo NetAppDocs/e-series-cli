@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-delete-volume.html
+permalink: commands-a-z/delete-volume.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete volume command deletes one or more standard volumes.'

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-delete-syslog.html
+permalink: commands-a-z/delete-syslog.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete syslog command deletes one or more servers from the syslog configuration so that it no longer receives alerts.'

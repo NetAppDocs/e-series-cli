@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-storagearray-hostconnectivityreporting.html
+permalink: commands-a-z/set-storagearray-hostconnectivityreporting.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray hostConnectivityReporting command enables or disables host connectivity reporting on the controller.'

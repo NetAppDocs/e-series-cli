@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-activate-storagearray-firmware.html
+permalink: commands-a-z/activate-storagearray-firmware.html
 sidebar: sidebar
 keywords: 
 summary: 'The activate storageArray firmware command activates firmware that you have previously downloaded to the pending configuration area on the controllers in the storage array.'

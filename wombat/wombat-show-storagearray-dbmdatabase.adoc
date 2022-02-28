@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-show-storagearray-dbmdatabase.html
+permalink: commands-a-z/show-storagearray-dbmdatabase.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray dbmDatabase command retrieves and shows metadata for the on-board backup locations of a storage array. When there are multiple backup locations, metadata is shown for each location.'

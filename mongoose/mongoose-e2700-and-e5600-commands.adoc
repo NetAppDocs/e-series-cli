@@ -1,5 +1,5 @@
 ---
-permalink: mongoose/mongoose-e2700-and-e5600-commands.html
+permalink: commands-category/e2700-and-e5600-commands.html
 sidebar: sidebar
 keywords: 
 summary: ''
@@ -11,636 +11,636 @@ summary: ''
 [.lead]
 * *<<SECTION_6AB913E495C7498688E220B067E1E541,A-D>> | <<SECTION_B59AEC2B311748DB873838DDBC49ADCE,E-R>> | <<SECTION_312450AD4D3141ED9B024C34CAC9B800,S-V>>*
 
-xref:../wombat/wombat-activate-asynchronous-mirroring.adoc[Activate asynchronous mirroring]
+xref:../commands-a-z/activate-asynchronous-mirroring.adoc[Activate asynchronous mirroring]
 
-xref:../wombat/wombat-activate-synchronous-mirroring.adoc[Activate Synchronous Mirroring]
+xref:../commands-a-z/activate-synchronous-mirroring.adoc[Activate Synchronous Mirroring]
 
-xref:../wombat/wombat-add-drives-to-ssd-cache.adoc[Add drives to SSD cache]
+xref:../commands-a-z/add-drives-to-ssd-cache.adoc[Add drives to SSD cache]
 
-xref:../wombat/wombat-set-consistencygroup-addcgmembervolume.adoc[Add member to consistency group]
+xref:../commands-a-z/set-consistencygroup-addcgmembervolume.adoc[Add member to consistency group]
 
-xref:../wombat/wombat-add-volume-asyncmirrorgroup.adoc[Add volume to asynchronous mirror group]
+xref:../commands-a-z/add-volume-asyncmirrorgroup.adoc[Add volume to asynchronous mirror group]
 
-xref:../wombat/wombat-autoconfigure-storagearray.adoc[Autoconfigure storage array]
+xref:../commands-a-z/autoconfigure-storagearray.adoc[Autoconfigure storage array]
 
-xref:../wombat/wombat-autoconfigure-storagearray-hotspares.adoc[Autoconfigure storage array hot spares]
+xref:../commands-a-z/autoconfigure-storagearray-hotspares.adoc[Autoconfigure storage array hot spares]
 
-xref:../wombat/wombat-stop-asyncmirrorgroup-rolechange.adoc[Cancel asynchronous mirror group role reversal]
+xref:../commands-a-z/stop-asyncmirrorgroup-rolechange.adoc[Cancel asynchronous mirror group role reversal]
 
-xref:../wombat/wombat-smcli-autosupportlog.adoc[Capture or view an AutoSupport log]
+xref:../commands-a-z/smcli-autosupportlog.adoc[Capture or view an AutoSupport log]
 
-xref:../wombat/wombat-change-ssd-cache-application-type.adoc[Change SSD cache application type]
+xref:../commands-a-z/change-ssd-cache-application-type.adoc[Change SSD cache application type]
 
-xref:../wombat/wombat-check-asyncmirrorgroup-repositoryconsistency.adoc[Check asynchronous mirror group consistency]
+xref:../commands-a-z/check-asyncmirrorgroup-repositoryconsistency.adoc[Check asynchronous mirror group consistency]
 
-xref:../wombat/wombat-check-repositoryconsistency.adoc[Check repository consistency]
+xref:../commands-a-z/check-repositoryconsistency.adoc[Check repository consistency]
 
-xref:../wombat/wombat-check-storagearray-connectivity.adoc[Check storage array connectivity]
+xref:../commands-a-z/check-storagearray-connectivity.adoc[Check storage array connectivity]
 
-xref:../wombat/wombat-check-syncmirror.adoc[Check synchronous mirroring status]
+xref:../commands-a-z/check-syncmirror.adoc[Check synchronous mirroring status]
 
-xref:../wombat/wombat-check-volume-parity.adoc[Check volume parity]
+xref:../commands-a-z/check-volume-parity.adoc[Check volume parity]
 
-xref:../wombat/wombat-clear-asyncmirrorfault.adoc[Clear asynchronous mirroring fault]
+xref:../commands-a-z/clear-asyncmirrorfault.adoc[Clear asynchronous mirroring fault]
 
-xref:../wombat/wombat-clear-alldrivechannels-stats.adoc[Clear drive channel statistics]
+xref:../commands-a-z/clear-alldrivechannels-stats.adoc[Clear drive channel statistics]
 
-xref:../wombat/wombat-clear-storagearray-configuration.adoc[Clear storage array configuration]
+xref:../commands-a-z/clear-storagearray-configuration.adoc[Clear storage array configuration]
 
-xref:../wombat/wombat-clear-storagearray-eventlog.adoc[Clear storage array event log]
+xref:../commands-a-z/clear-storagearray-eventlog.adoc[Clear storage array event log]
 
-xref:../wombat/wombat-clear-storagearray-firmwarependingarea.adoc[Clear storage array firmware pending area]
+xref:../commands-a-z/clear-storagearray-firmwarependingarea.adoc[Clear storage array firmware pending area]
 
-xref:../wombat/wombat-clear-storagearray-recoverymode.adoc[Clear storage array recovery mode]
+xref:../commands-a-z/clear-storagearray-recoverymode.adoc[Clear storage array recovery mode]
 
-xref:../wombat/wombat-clear-volume-reservations.adoc[Clear volume reservations]
+xref:../commands-a-z/clear-volume-reservations.adoc[Clear volume reservations]
 
-xref:../wombat/wombat-clear-volume-unreadablesectors.adoc[Clear volume unreadable sectors]
+xref:../commands-a-z/clear-volume-unreadablesectors.adoc[Clear volume unreadable sectors]
 
-xref:../wombat/wombat-create-asyncmirrorgroup.adoc[Create asynchronous mirror group]
+xref:../commands-a-z/create-asyncmirrorgroup.adoc[Create asynchronous mirror group]
 
-xref:../wombat/wombat-create-consistencygroup.adoc[Create consistency group]
+xref:../commands-a-z/create-consistencygroup.adoc[Create consistency group]
 
-xref:../wombat/wombat-create-cgsnapimage-consistencygroup.adoc[Create consistency group snapshot image]
+xref:../commands-a-z/create-cgsnapimage-consistencygroup.adoc[Create consistency group snapshot image]
 
-xref:../wombat/wombat-create-cgsnapvolume.adoc[Create consistency group snapshot volume]
+xref:../commands-a-z/create-cgsnapvolume.adoc[Create consistency group snapshot volume]
 
-xref:../wombat/wombat-create-mapping-cgsnapvolume.adoc[Create consistency group snapshot volume mapping]
+xref:../commands-a-z/create-mapping-cgsnapvolume.adoc[Create consistency group snapshot volume mapping]
 
-xref:../wombat/wombat-create-diskpool.adoc[Create disk pool]
+xref:../commands-a-z/create-diskpool.adoc[Create disk pool]
 
-xref:../wombat/wombat-create-host.adoc[Create host]
+xref:../commands-a-z/create-host.adoc[Create host]
 
-xref:../wombat/wombat-create-hostgroup.adoc[Create host group]
+xref:../commands-a-z/create-hostgroup.adoc[Create host group]
 
-xref:../wombat/wombat-create-hostport.adoc[Create host port]
+xref:../commands-a-z/create-hostport.adoc[Create host port]
 
-xref:../wombat/wombat-create-iscsiinitiator.adoc[Create iSCSI initiator]
+xref:../commands-a-z/create-iscsiinitiator.adoc[Create iSCSI initiator]
 
-xref:../wombat/wombat-create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
+xref:../commands-a-z/create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
 
-xref:../wombat/wombat-create-raid-volume-free-extent-based-select.adoc[Create RAID volume (free extent based select)]
+xref:../commands-a-z/create-raid-volume-free-extent-based-select.adoc[Create RAID volume (free extent based select)]
 
-xref:../wombat/wombat-create-raid-volume-manual-drive-select.adoc[Create RAID volume (manual drive select)]
+xref:../commands-a-z/create-raid-volume-manual-drive-select.adoc[Create RAID volume (manual drive select)]
 
-xref:../wombat/wombat-create-read-only-snapshot-volume.adoc[Create read-only snapshot volume]
+xref:../commands-a-z/create-read-only-snapshot-volume.adoc[Create read-only snapshot volume]
 
-xref:../wombat/wombat-create-snapgroup.adoc[Create snapshot group]
+xref:../commands-a-z/create-snapgroup.adoc[Create snapshot group]
 
-xref:../wombat/wombat-create-snapimage.adoc[Create snapshot image]
+xref:../commands-a-z/create-snapimage.adoc[Create snapshot image]
 
-xref:../wombat/wombat-create-snapshot-volume.adoc[Create snapshot volume]
+xref:../commands-a-z/create-snapshot-volume.adoc[Create snapshot volume]
 
-xref:../wombat/wombat-create-ssdcache.adoc[Create SSD cache]
+xref:../commands-a-z/create-ssdcache.adoc[Create SSD cache]
 
-xref:../wombat/wombat-create-storagearray-securitykey.adoc[Create storage array security key]
+xref:../commands-a-z/create-storagearray-securitykey.adoc[Create storage array security key]
 
-xref:../wombat/wombat-create-syncmirror.adoc[Create synchronous mirroring]
+xref:../commands-a-z/create-syncmirror.adoc[Create synchronous mirroring]
 
-xref:../wombat/wombat-create-volumecopy.adoc[Create volume copy]
+xref:../commands-a-z/create-volumecopy.adoc[Create volume copy]
 
-xref:../wombat/wombat-create-volumegroup.adoc[Create volume group]
+xref:../commands-a-z/create-volumegroup.adoc[Create volume group]
 
-xref:../wombat/wombat-create-volume-diskpool.adoc[Create volume in disk pool]
+xref:../commands-a-z/create-volume-diskpool.adoc[Create volume in disk pool]
 
-xref:../wombat/wombat-deactivate-storagearray.adoc[Deactivate asynchronous mirroring]
+xref:../commands-a-z/deactivate-storagearray.adoc[Deactivate asynchronous mirroring]
 
-xref:../wombat/wombat-deactivate-storagearray-feature.adoc[Deactivate synchronous mirroring]
+xref:../commands-a-z/deactivate-storagearray-feature.adoc[Deactivate synchronous mirroring]
 
-xref:../wombat/wombat-delete-asyncmirrorgroup.adoc[Delete asynchronous mirror group]
+xref:../commands-a-z/delete-asyncmirrorgroup.adoc[Delete asynchronous mirror group]
 
-xref:../wombat/wombat-delete-consistencygroup.adoc[Delete consistency group]
+xref:../commands-a-z/delete-consistencygroup.adoc[Delete consistency group]
 
-xref:../wombat/wombat-delete-cgsnapimage-consistencygroup.adoc[Delete consistency group snapshot image]
+xref:../commands-a-z/delete-cgsnapimage-consistencygroup.adoc[Delete consistency group snapshot image]
 
-xref:../wombat/wombat-delete-sgsnapvolume.adoc[Delete consistency group snapshot volume]
+xref:../commands-a-z/delete-sgsnapvolume.adoc[Delete consistency group snapshot volume]
 
-xref:../wombat/wombat-delete-diskpool.adoc[Delete disk pool]
+xref:../commands-a-z/delete-diskpool.adoc[Delete disk pool]
 
-xref:../wombat/wombat-delete-host.adoc[Delete host]
+xref:../commands-a-z/delete-host.adoc[Delete host]
 
-xref:../wombat/wombat-delete-hostgroup.adoc[Delete host group]
+xref:../commands-a-z/delete-hostgroup.adoc[Delete host group]
 
-xref:../wombat/wombat-delete-hostport.adoc[Delete host port]
+xref:../commands-a-z/delete-hostport.adoc[Delete host port]
 
-xref:../wombat/wombat-delete-iscsiinitiator.adoc[Delete iSCSI initiator]
+xref:../commands-a-z/delete-iscsiinitiator.adoc[Delete iSCSI initiator]
 
-xref:../wombat/wombat-delete-snapgroup.adoc[Delete snapshot group]
+xref:../commands-a-z/delete-snapgroup.adoc[Delete snapshot group]
 
-xref:../wombat/wombat-delete-snapimage.adoc[Delete snapshot image]
+xref:../commands-a-z/delete-snapimage.adoc[Delete snapshot image]
 
-xref:../wombat/wombat-delete-snapvolume.adoc[Delete snapshot volume]
+xref:../commands-a-z/delete-snapvolume.adoc[Delete snapshot volume]
 
-xref:../wombat/wombat-delete-ssdcache.adoc[Delete SSD cache]
+xref:../commands-a-z/delete-ssdcache.adoc[Delete SSD cache]
 
-xref:../wombat/wombat-delete-volume.adoc[Delete volume]
+xref:../commands-a-z/delete-volume.adoc[Delete volume]
 
-xref:../wombat/wombat-delete-volume-from-disk-pool.adoc[Delete volume from disk pool]
+xref:../commands-a-z/delete-volume-from-disk-pool.adoc[Delete volume from disk pool]
 
-xref:../wombat/wombat-delete-volumegroup.adoc[Delete volume group]
+xref:../commands-a-z/delete-volumegroup.adoc[Delete volume group]
 
-xref:../wombat/wombat-diagnose-controller.adoc[Diagnose controller]
+xref:../commands-a-z/diagnose-controller.adoc[Diagnose controller]
 
-xref:../wombat/wombat-diagnose-controller.adoc[Diagnose controller]
+xref:../commands-a-z/diagnose-controller.adoc[Diagnose controller]
 
-xref:../wombat/wombat-diagnose-controller-iscsihostport.adoc[Diagnose controller iSCSI host cable]
+xref:../commands-a-z/diagnose-controller-iscsihostport.adoc[Diagnose controller iSCSI host cable]
 
-xref:../wombat/wombat-diagnose-syncmirror.adoc[Diagnose synchronous mirroring]
+xref:../commands-a-z/diagnose-syncmirror.adoc[Diagnose synchronous mirroring]
 
-xref:../wombat/wombat-disable-storagearray-externalkeymanagement-file.adoc[Disable external security key management]
+xref:../commands-a-z/disable-storagearray-externalkeymanagement-file.adoc[Disable external security key management]
 
-xref:../wombat/wombat-disable-storagearray.adoc[Disable storage array feature]
+xref:../commands-a-z/disable-storagearray.adoc[Disable storage array feature]
 
-xref:../wombat/wombat-smcli-autosupportschedule-show.adoc[Display AutoSupport message collection schedule]
+xref:../commands-a-z/smcli-autosupportschedule-show.adoc[Display AutoSupport message collection schedule]
 
-xref:../wombat/wombat-smcli-autosupportconfig-show.adoc[Display AutoSupport bundle collection settings]
+xref:../commands-a-z/smcli-autosupportconfig-show.adoc[Display AutoSupport bundle collection settings]
 
-xref:../wombat/wombat-download-drive-firmware.adoc[Download drive firmware]
+xref:../commands-a-z/download-drive-firmware.adoc[Download drive firmware]
 
-xref:../wombat/wombat-download-tray-firmware-file.adoc[Download environmental card firmware]
+xref:../commands-a-z/download-tray-firmware-file.adoc[Download environmental card firmware]
 
-xref:../wombat/wombat-download-storagearray-drivefirmware-file.adoc[Download storage array drive firmware]
+xref:../commands-a-z/download-storagearray-drivefirmware-file.adoc[Download storage array drive firmware]
 
-xref:../wombat/wombat-download-storagearray-firmware.adoc[Download storage array firmware/NVSRAM]
+xref:../commands-a-z/download-storagearray-firmware.adoc[Download storage array firmware/NVSRAM]
 
-xref:../wombat/wombat-download-storagearray-nvsram.adoc[Download storage array NVSRAM]
+xref:../commands-a-z/download-storagearray-nvsram.adoc[Download storage array NVSRAM]
 
-xref:../wombat/wombat-download-tray-configurationsettings.adoc[Download tray configuration settings]
+xref:../commands-a-z/download-tray-configurationsettings.adoc[Download tray configuration settings]
 
-xref:../wombat/wombat-enable-controller-datatransfer.adoc[Enable controller data transfer]
+xref:../commands-a-z/enable-controller-datatransfer.adoc[Enable controller data transfer]
 
-xref:../wombat/wombat-enable-diskpool-security.adoc[Enable disk pool security]
+xref:../commands-a-z/enable-diskpool-security.adoc[Enable disk pool security]
 
-xref:../wombat/wombat-enable-storagearray-externalkeymanagement-file.adoc[Enable external security key management]
+xref:../commands-a-z/enable-storagearray-externalkeymanagement-file.adoc[Enable external security key management]
 
-xref:../wombat/wombat-set-storagearray-odxenabled.adoc[Enable or disable ODX]
+xref:../commands-a-z/set-storagearray-odxenabled.adoc[Enable or disable ODX]
 
-xref:../wombat/wombat-smcli-enable-autosupportfeature.adoc[Enable or disable AutoSupport at the EMW management domain level...]
+xref:../commands-a-z/smcli-enable-autosupportfeature.adoc[Enable or disable AutoSupport at the EMW management domain level...]
 
-xref:../wombat/wombat-smcli-enable-disable-autosupportondemand.adoc[Enable or disable the AutoSupport OnDemand feature at the EMW...]
+xref:../commands-a-z/smcli-enable-disable-autosupportondemand.adoc[Enable or disable the AutoSupport OnDemand feature at the EMW...]
 
-xref:../wombat/wombat-smcli-enable-disable-autosupportremotediag.adoc[Enable or disable the AutoSupport OnDemand Remote Diagnostics feature at...]
+xref:../commands-a-z/smcli-enable-disable-autosupportremotediag.adoc[Enable or disable the AutoSupport OnDemand Remote Diagnostics feature at...]
 
-xref:../wombat/wombat-set-storagearray-vaaienabled.adoc[Enable or disable VAAI]
+xref:../commands-a-z/set-storagearray-vaaienabled.adoc[Enable or disable VAAI]
 
-xref:../wombat/wombat-enable-storagearray-feature-file.adoc[Enable storage array feature]
+xref:../commands-a-z/enable-storagearray-feature-file.adoc[Enable storage array feature]
 
-xref:../wombat/wombat-enable-volumegroup-security.adoc[Enable volume group security]
+xref:../commands-a-z/enable-volumegroup-security.adoc[Enable volume group security]
 
-xref:../wombat/wombat-establish-asyncmirror-volume.adoc[Establish asynchronous mirrored pair]
+xref:../commands-a-z/establish-asyncmirror-volume.adoc[Establish asynchronous mirrored pair]
 
-xref:../wombat/wombat-export-storagearray-securitykey.adoc[Export storage array security key]
+xref:../commands-a-z/export-storagearray-securitykey.adoc[Export storage array security key]
 
-xref:../wombat/wombat-import-storagearray-securitykey-file.adoc[Import storage array security key]
+xref:../commands-a-z/import-storagearray-securitykey-file.adoc[Import storage array security key]
 
-xref:../wombat/wombat-start-increasevolumecapacity-volume.adoc[Increase capacity of volume in disk pool or volume group...]
+xref:../commands-a-z/start-increasevolumecapacity-volume.adoc[Increase capacity of volume in disk pool or volume group...]
 
-xref:../wombat/wombat-start-volume-initialize.adoc[Initialize thin volume]
+xref:../commands-a-z/start-volume-initialize.adoc[Initialize thin volume]
 
-xref:../wombat/wombat-load-storagearray-dbmdatabase.adoc[Load storage array DBM database]
+xref:../commands-a-z/load-storagearray-dbmdatabase.adoc[Load storage array DBM database]
 
-xref:../wombat/wombat-recopy-volumecopy-target.adoc[Recopy volume copy]
+xref:../commands-a-z/recopy-volumecopy-target.adoc[Recopy volume copy]
 
-xref:../wombat/wombat-recover-disabled-driveports.adoc[Recover disabled drive ports]
+xref:../commands-a-z/recover-disabled-driveports.adoc[Recover disabled drive ports]
 
-xref:../wombat/wombat-recover-volume.adoc[Recover RAID volume]
+xref:../commands-a-z/recover-volume.adoc[Recover RAID volume]
 
-xref:../wombat/wombat-recover-sasport-miswire.adoc[Recover SAS port mis-wire]
+xref:../commands-a-z/recover-sasport-miswire.adoc[Recover SAS port mis-wire]
 
-xref:../wombat/wombat-recreate-storagearray-mirrorrepository.adoc[Re-create synchronous mirroring repository volume]
+xref:../commands-a-z/recreate-storagearray-mirrorrepository.adoc[Re-create synchronous mirroring repository volume]
 
-xref:../wombat/wombat-reduce-disk-pool-capacity.adoc[Reduce disk pool capacity]
+xref:../commands-a-z/reduce-disk-pool-capacity.adoc[Reduce disk pool capacity]
 
-xref:../wombat/wombat-remove-drives-from-ssd-cache.adoc[Remove drives from SSD cache]
+xref:../commands-a-z/remove-drives-from-ssd-cache.adoc[Remove drives from SSD cache]
 
-xref:../wombat/wombat-remove-asyncmirrorgroup.adoc[Remove incomplete asynchronous mirrored pair from asynchronous mirror group]
+xref:../commands-a-z/remove-asyncmirrorgroup.adoc[Remove incomplete asynchronous mirrored pair from asynchronous mirror group]
 
-xref:../wombat/wombat-remove-member-volume-from-consistency-group.adoc[Remove member volume from consistency group]
+xref:../commands-a-z/remove-member-volume-from-consistency-group.adoc[Remove member volume from consistency group]
 
-xref:../wombat/wombat-remove-syncmirror.adoc[Remove synchronous mirroring]
+xref:../commands-a-z/remove-syncmirror.adoc[Remove synchronous mirroring]
 
-xref:../wombat/wombat-remove-volumecopy-target.adoc[Remove volume copy]
+xref:../commands-a-z/remove-volumecopy-target.adoc[Remove volume copy]
 
-xref:../wombat/wombat-remove-volume-asyncmirrorgroup.adoc[Remove volume from asynchronous mirror group]
+xref:../commands-a-z/remove-volume-asyncmirrorgroup.adoc[Remove volume from asynchronous mirror group]
 
-xref:../wombat/wombat-remove-lunmapping.adoc[Remove volume LUN mapping]
+xref:../commands-a-z/remove-lunmapping.adoc[Remove volume LUN mapping]
 
-xref:../wombat/wombat-set-snapvolume.adoc[Rename snapshot volume]
+xref:../commands-a-z/set-snapvolume.adoc[Rename snapshot volume]
 
-xref:../wombat/wombat-rename-ssd-cache.adoc[Rename SSD cache]
+xref:../commands-a-z/rename-ssd-cache.adoc[Rename SSD cache]
 
-xref:../wombat/wombat-repair-volume-parity.adoc[Repair volume parity]
+xref:../commands-a-z/repair-volume-parity.adoc[Repair volume parity]
 
-xref:../wombat/wombat-replace-drive-replacementdrive.adoc[Replace drive]
+xref:../commands-a-z/replace-drive-replacementdrive.adoc[Replace drive]
 
-xref:../wombat/wombat-reset-storagearray-arvmstats-asyncmirrorgroup.adoc[Reset asynchronous mirror group statistics]
+xref:../commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.adoc[Reset asynchronous mirror group statistics]
 
-xref:../wombat/wombat-smcli-autosupportschedule-reset.adoc[Reset AutoSupport message collection schedule]
+xref:../commands-a-z/smcli-autosupportschedule-reset.adoc[Reset AutoSupport message collection schedule]
 
-xref:../wombat/wombat-reset-controller.adoc[Reset controller]
+xref:../commands-a-z/reset-controller.adoc[Reset controller]
 
-xref:../wombat/wombat-reset-drive.adoc[Reset drive]
+xref:../commands-a-z/reset-drive.adoc[Reset drive]
 
-xref:../wombat/wombat-reset-iscsiipaddress.adoc[Reset iSCSI IP address]
+xref:../commands-a-z/reset-iscsiipaddress.adoc[Reset iSCSI IP address]
 
-xref:../wombat/wombat-reset-storagearray-diagnosticdata.adoc[Reset storage array diagnostic data]
+xref:../commands-a-z/reset-storagearray-diagnosticdata.adoc[Reset storage array diagnostic data]
 
-xref:../wombat/wombat-reset-storagearray-ibstatsbaseline.adoc[Reset storage array InfiniBand statistics baseline]
+xref:../commands-a-z/reset-storagearray-ibstatsbaseline.adoc[Reset storage array InfiniBand statistics baseline]
 
-xref:../wombat/wombat-reset-storagearray-iscsistatsbaseline.adoc[Reset storage array iSCSI baseline]
+xref:../commands-a-z/reset-storagearray-iscsistatsbaseline.adoc[Reset storage array iSCSI baseline]
 
-xref:../wombat/wombat-reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline]
+xref:../commands-a-z/reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline]
 
-xref:../wombat/wombat-reset-storagearray-rlsbaseline.adoc[Reset storage array RLS baseline]
+xref:../commands-a-z/reset-storagearray-rlsbaseline.adoc[Reset storage array RLS baseline]
 
-xref:../wombat/wombat-reset-storagearray-sasphybaseline.adoc[Reset storage array SAS PHY baseline]
+xref:../commands-a-z/reset-storagearray-sasphybaseline.adoc[Reset storage array SAS PHY baseline]
 
-xref:../wombat/wombat-reset-storagearray-socbaseline.adoc[Reset storage array SOC baseline]
+xref:../commands-a-z/reset-storagearray-socbaseline.adoc[Reset storage array SOC baseline]
 
-xref:../wombat/wombat-reset-storagearray-volumedistribution.adoc[Reset storage array volume distribution]
+xref:../commands-a-z/reset-storagearray-volumedistribution.adoc[Reset storage array volume distribution]
 
-xref:../wombat/wombat-resume-asyncmirrorgroup.adoc[Resume asynchronous mirror group]
+xref:../commands-a-z/resume-asyncmirrorgroup.adoc[Resume asynchronous mirror group]
 
-xref:../wombat/wombat-resume-cgsnapvolume.adoc[Resume consistency group snapshot volume]
+xref:../commands-a-z/resume-cgsnapvolume.adoc[Resume consistency group snapshot volume]
 
-xref:../wombat/wombat-resume-snapimage-rollback.adoc[Resume snapshot image rollback]
+xref:../commands-a-z/resume-snapimage-rollback.adoc[Resume snapshot image rollback]
 
-xref:../wombat/wombat-resume-snapvolume.adoc[Resume snapshot volume]
+xref:../commands-a-z/resume-snapvolume.adoc[Resume snapshot volume]
 
-xref:../wombat/wombat-resume-ssdcache.adoc[Resume SSD cache]
+xref:../commands-a-z/resume-ssdcache.adoc[Resume SSD cache]
 
-xref:../wombat/wombat-resume-syncmirror.adoc[Resume synchronous mirroring]
+xref:../commands-a-z/resume-syncmirror.adoc[Resume synchronous mirroring]
 
-xref:../wombat/wombat-revive-drive.adoc[Revive drive]
+xref:../commands-a-z/revive-drive.adoc[Revive drive]
 
-xref:../wombat/wombat-revive-snapgroup.adoc[Revive snapshot group]
+xref:../commands-a-z/revive-snapgroup.adoc[Revive snapshot group]
 
-xref:../wombat/wombat-revive-snapvolume.adoc[Revive snapshot volume]
+xref:../commands-a-z/revive-snapvolume.adoc[Revive snapshot volume]
 
-xref:../wombat/wombat-revive-volumegroup.adoc[Revive volume group]
+xref:../commands-a-z/revive-volumegroup.adoc[Revive volume group]
 
-xref:../wombat/wombat-save-storagearray-arvmstats-asyncmirrorgroup.adoc[Save asynchronous mirror group statistics]
+xref:../commands-a-z/save-storagearray-arvmstats-asyncmirrorgroup.adoc[Save asynchronous mirror group statistics]
 
-xref:../wombat/wombat-save-controller-nvsram-file.adoc[Save controller NVSRAM]
+xref:../commands-a-z/save-controller-nvsram-file.adoc[Save controller NVSRAM]
 
-xref:../wombat/wombat-save-drivechannel-faultdiagnostics-file.adoc[Save drive channel fault isolation diagnostic status]
+xref:../commands-a-z/save-drivechannel-faultdiagnostics-file.adoc[Save drive channel fault isolation diagnostic status]
 
-xref:../wombat/wombat-save-alldrives-logfile.adoc[Save drive log]
+xref:../commands-a-z/save-alldrives-logfile.adoc[Save drive log]
 
-xref:../wombat/wombat-save-ioclog.adoc[Save input output controller (IOC) dump]
+xref:../commands-a-z/save-ioclog.adoc[Save input output controller (IOC) dump]
 
-xref:../wombat/wombat-save-storagearray-autoloadbalancestatistics-file.adoc[Save auto-load balancing statistics]
+xref:../commands-a-z/save-storagearray-autoloadbalancestatistics-file.adoc[Save auto-load balancing statistics]
 
-xref:../wombat/wombat-save-storagearray-configuration.adoc[Save storage array configuration]
+xref:../commands-a-z/save-storagearray-configuration.adoc[Save storage array configuration]
 
-xref:../wombat/wombat-save-storagearray-controllerhealthimage.adoc[Save storage array controller health image]
+xref:../commands-a-z/save-storagearray-controllerhealthimage.adoc[Save storage array controller health image]
 
-xref:../wombat/wombat-save-storagearray-dbmdatabase.adoc[Save storage array DBM database]
+xref:../commands-a-z/save-storagearray-dbmdatabase.adoc[Save storage array DBM database]
 
-xref:../wombat/wombat-save-storagearray-dbmvalidatorinfo.adoc[Save storage array DBM validator information file]
+xref:../commands-a-z/save-storagearray-dbmvalidatorinfo.adoc[Save storage array DBM validator information file]
 
-xref:../wombat/wombat-save-storage-array-diagnostic-data.adoc[Save storage array diagnostic data]
+xref:../commands-a-z/save-storage-array-diagnostic-data.adoc[Save storage array diagnostic data]
 
-xref:../wombat/wombat-save-storagearray-warningevents.adoc[Save storage array events]
+xref:../commands-a-z/save-storagearray-warningevents.adoc[Save storage array events]
 
-xref:../wombat/wombat-save-storagearray-firmwareinventory.adoc[Save storage array firmware inventory]
+xref:../commands-a-z/save-storagearray-firmwareinventory.adoc[Save storage array firmware inventory]
 
-xref:../wombat/wombat-save-storagearray-ibstats.adoc[Save storage array InfiniBand statistics]
+xref:../commands-a-z/save-storagearray-ibstats.adoc[Save storage array InfiniBand statistics]
 
-xref:../wombat/wombat-save-storagearray-iscsistatistics.adoc[Save storage array iSCSI statistics]
+xref:../commands-a-z/save-storagearray-iscsistatistics.adoc[Save storage array iSCSI statistics]
 
-xref:../wombat/wombat-save-storagearray-iserstatistics.adoc[Save storage array iSER statistics]
+xref:../commands-a-z/save-storagearray-iserstatistics.adoc[Save storage array iSER statistics]
 
-xref:../wombat/wombat-save-storagearray-performancestats.adoc[Save storage array performance statistics]
+xref:../commands-a-z/save-storagearray-performancestats.adoc[Save storage array performance statistics]
 
-xref:../wombat/wombat-save-storagearray-rlscounts.adoc[Save storage array RLS counts]
+xref:../commands-a-z/save-storagearray-rlscounts.adoc[Save storage array RLS counts]
 
-xref:../wombat/wombat-save-storagearray-sasphycounts.adoc[Save storage array SAS PHY counts]
+xref:../commands-a-z/save-storagearray-sasphycounts.adoc[Save storage array SAS PHY counts]
 
-xref:../wombat/wombat-save-storagearray-soccounts.adoc[Save storage array SOC counts]
+xref:../commands-a-z/save-storagearray-soccounts.adoc[Save storage array SOC counts]
 
-xref:../wombat/wombat-save-storagearray-statecapture.adoc[Save storage array state capture]
+xref:../commands-a-z/save-storagearray-statecapture.adoc[Save storage array state capture]
 
-xref:../wombat/wombat-save-storagearray-supportdata.adoc[Save storage array support data]
+xref:../commands-a-z/save-storagearray-supportdata.adoc[Save storage array support data]
 
-xref:../wombat/wombat-save-alltrays-logfile.adoc[Save tray log]
+xref:../commands-a-z/save-alltrays-logfile.adoc[Save tray log]
 
-xref:../wombat/wombat-smcli-supportbundle-schedule.adoc[Schedule automatic support bundle collection configuration]
+xref:../commands-a-z/smcli-supportbundle-schedule.adoc[Schedule automatic support bundle collection configuration]
 
-xref:../wombat/wombat-set-asyncmirrorgroup.adoc[Set asynchronous mirror group]
+xref:../commands-a-z/set-asyncmirrorgroup.adoc[Set asynchronous mirror group]
 
-xref:../wombat/wombat-set-consistency-group-attributes.adoc[Set consistency group attributes]
+xref:../commands-a-z/set-consistency-group-attributes.adoc[Set consistency group attributes]
 
-xref:../wombat/wombat-set-cgsnapvolume.adoc[Set consistency group snapshot volume]
+xref:../commands-a-z/set-cgsnapvolume.adoc[Set consistency group snapshot volume]
 
-xref:../wombat/wombat-set-controller.adoc[Set controller]
+xref:../commands-a-z/set-controller.adoc[Set controller]
 
-xref:../wombat/wombat-set-controller-dnsservers.adoc[Set controller DNS settings]
+xref:../commands-a-z/set-controller-dnsservers.adoc[Set controller DNS settings]
 
-xref:../wombat/wombat-set-controller-ntpservers.adoc[Set controller NTP settings]
+xref:../commands-a-z/set-controller-ntpservers.adoc[Set controller NTP settings]
 
-xref:../wombat/wombat-set-controller-service-action-allowed-indicator.adoc[Set controller service action allowed indicator]
+xref:../commands-a-z/set-controller-service-action-allowed-indicator.adoc[Set controller service action allowed indicator]
 
-xref:../wombat/wombat-set-disk-pool.adoc[Set disk pool]
+xref:../commands-a-z/set-disk-pool.adoc[Set disk pool]
 
-xref:../wombat/wombat-set-disk-pool-modify-disk-pool.adoc[Set disk pool (modify disk pool)]
+xref:../commands-a-z/set-disk-pool-modify-disk-pool.adoc[Set disk pool (modify disk pool)]
 
-xref:../wombat/wombat-set-tray-drawer.adoc[Set drawer service action allowed indicator]
+xref:../commands-a-z/set-tray-drawer.adoc[Set drawer service action allowed indicator]
 
-xref:../wombat/wombat-set-drivechannel.adoc[Set drive channel status]
+xref:../commands-a-z/set-drivechannel.adoc[Set drive channel status]
 
-xref:../wombat/wombat-set-drive-hotspare.adoc[Set drive hot spare]
+xref:../commands-a-z/set-drive-hotspare.adoc[Set drive hot spare]
 
-xref:../wombat/wombat-set-drive-serviceallowedindicator.adoc[Set drive service action allowed indicator]
+xref:../commands-a-z/set-drive-serviceallowedindicator.adoc[Set drive service action allowed indicator]
 
-xref:../wombat/wombat-set-drive-operationalstate.adoc[Set drive state]
+xref:../commands-a-z/set-drive-operationalstate.adoc[Set drive state]
 
-xref:../wombat/wombat-set-event-alert.adoc[Set event alert filtering]
+xref:../commands-a-z/set-event-alert.adoc[Set event alert filtering]
 
-xref:../wombat/wombat-set-drive-securityid.adoc[Set FIPS drive security identifier]
+xref:../commands-a-z/set-drive-securityid.adoc[Set FIPS drive security identifier]
 
-xref:../wombat/wombat-set-drive-nativestate.adoc[Set foreign drive to native]
+xref:../commands-a-z/set-drive-nativestate.adoc[Set foreign drive to native]
 
-xref:../wombat/wombat-set-host.adoc[Set host]
+xref:../commands-a-z/set-host.adoc[Set host]
 
-xref:../wombat/wombat-set-hostchannel.adoc[Set host channel]
+xref:../commands-a-z/set-hostchannel.adoc[Set host channel]
 
-xref:../wombat/wombat-set-hostgroup.adoc[Set host group]
+xref:../commands-a-z/set-hostgroup.adoc[Set host group]
 
-xref:../wombat/wombat-set-hostport.adoc[Set host port]
+xref:../commands-a-z/set-hostport.adoc[Set host port]
 
-xref:../wombat/wombat-set-storagearray-securitykey.adoc[Set internal storage array security key]
+xref:../commands-a-z/set-storagearray-securitykey.adoc[Set internal storage array security key]
 
-xref:../wombat/wombat-set-iscsiinitiator.adoc[Set iSCSI initiator]
+xref:../commands-a-z/set-iscsiinitiator.adoc[Set iSCSI initiator]
 
-xref:../wombat/wombat-set-iscsitarget.adoc[Set iSCSI target properties]
+xref:../commands-a-z/set-iscsitarget.adoc[Set iSCSI target properties]
 
-xref:../wombat/wombat-set-isertarget.adoc[Set iSER target]
+xref:../commands-a-z/set-isertarget.adoc[Set iSER target]
 
-xref:../wombat/wombat-set-snapvolume-converttoreadwrite.adoc[Set read-only snapshot volume to read/write volume]
+xref:../commands-a-z/set-snapvolume-converttoreadwrite.adoc[Set read-only snapshot volume to read/write volume]
 
-xref:../wombat/wombat-set-session-erroraction.adoc[Set session]
+xref:../commands-a-z/set-session-erroraction.adoc[Set session]
 
-xref:../wombat/wombat-set-snapgroup.adoc[Set snapshot group attributes]
+xref:../commands-a-z/set-snapgroup.adoc[Set snapshot group attributes]
 
-xref:../wombat/wombat-set-snapgroup-mediascanenabled.adoc[Set snapshot group media scan]
+xref:../commands-a-z/set-snapgroup-mediascanenabled.adoc[Set snapshot group media scan]
 
-xref:../wombat/wombat-set-snapgroup-increase-decreaserepositorycapacity.adoc[Set snapshot group repository volume capacity]
+xref:../commands-a-z/set-snapgroup-increase-decreaserepositorycapacity.adoc[Set snapshot group repository volume capacity]
 
-xref:../wombat/wombat-set-snapgroup-enableschedule.adoc[Set snapshot group schedule]
+xref:../commands-a-z/set-snapgroup-enableschedule.adoc[Set snapshot group schedule]
 
-xref:../wombat/wombat-set-snapvolume-mediascanenabled.adoc[Set snapshot volume media scan]
+xref:../commands-a-z/set-snapvolume-mediascanenabled.adoc[Set snapshot volume media scan]
 
-xref:../wombat/wombat-set-snapvolume-increase-decreaserepositorycapacity.adoc[Set snapshot volume repository volume capacity]
+xref:../commands-a-z/set-snapvolume-increase-decreaserepositorycapacity.adoc[Set snapshot volume repository volume capacity]
 
-xref:../wombat/wombat-set-volume-ssdcacheenabled.adoc[Set SSD cache for a volume]
+xref:../commands-a-z/set-volume-ssdcacheenabled.adoc[Set SSD cache for a volume]
 
-xref:../wombat/wombat-set-storagearray.adoc[Set storage array]
+xref:../commands-a-z/set-storagearray.adoc[Set storage array]
 
-xref:../wombat/wombat-set-storagearray-controllerhealthimageallowoverwrite.adoc[Set storage array controller health image allow overwrite]
+xref:../commands-a-z/set-storagearray-controllerhealthimageallowoverwrite.adoc[Set storage array controller health image allow overwrite]
 
-xref:../wombat/wombat-set-storagearray-autoloadbalancingenable.adoc[Set storage array to enable or disable Automatic Load Balancing...]
+xref:../commands-a-z/set-storagearray-autoloadbalancingenable.adoc[Set storage array to enable or disable Automatic Load Balancing...]
 
-xref:../wombat/wombat-set-storagearray-icmppingresponse.adoc[Set storage array ICMP response]
+xref:../commands-a-z/set-storagearray-icmppingresponse.adoc[Set storage array ICMP response]
 
-xref:../wombat/wombat-set-storagearray-isnsregistration.adoc[Set storage array iSNS registration]
+xref:../commands-a-z/set-storagearray-isnsregistration.adoc[Set storage array iSNS registration]
 
-xref:../wombat/wombat-set-storagearray-isnsipv4configurationmethod.adoc[Set storage array iSNS server IPv4 address]
+xref:../commands-a-z/set-storagearray-isnsipv4configurationmethod.adoc[Set storage array iSNS server IPv4 address]
 
-xref:../wombat/wombat-set-storagearray-isnsipv6address.adoc[Set storage array iSNS server IPv6 address]
+xref:../commands-a-z/set-storagearray-isnsipv6address.adoc[Set storage array iSNS server IPv6 address]
 
-xref:../wombat/wombat-set-storagearray-isnslisteningport.adoc[Set storage array iSNS server listening port]
+xref:../commands-a-z/set-storagearray-isnslisteningport.adoc[Set storage array iSNS server listening port]
 
-xref:../wombat/wombat-set-storagearray-isnsserverrefresh.adoc[Set storage array iSNS server refresh]
+xref:../commands-a-z/set-storagearray-isnsserverrefresh.adoc[Set storage array iSNS server refresh]
 
-xref:../wombat/wombat-set-storagearray-learncycledate-controller.adoc[Set storage array controller battery learn cycle]
+xref:../commands-a-z/set-storagearray-learncycledate-controller.adoc[Set storage array controller battery learn cycle]
 
-xref:../wombat/wombat-set-storagearray-redundancymode.adoc[Set storage array redundancy mode]
+xref:../commands-a-z/set-storagearray-redundancymode.adoc[Set storage array redundancy mode]
 
-xref:../wombat/wombat-set-storagearray-time.adoc[Set storage array time]
+xref:../commands-a-z/set-storagearray-time.adoc[Set storage array time]
 
-xref:../wombat/wombat-set-storagearray-traypositions.adoc[Set storage array tray positions]
+xref:../commands-a-z/set-storagearray-traypositions.adoc[Set storage array tray positions]
 
-xref:../wombat/wombat-set-storagearray-unnameddiscoverysession.adoc[Set storage array unnamed discovery session]
+xref:../commands-a-z/set-storagearray-unnameddiscoverysession.adoc[Set storage array unnamed discovery session]
 
-xref:../wombat/wombat-set-syncmirror.adoc[Set synchronous mirroring]
+xref:../commands-a-z/set-syncmirror.adoc[Set synchronous mirroring]
 
-xref:../wombat/wombat-set-thin-volume-attributes.adoc[Set thin volume attributes]
+xref:../commands-a-z/set-thin-volume-attributes.adoc[Set thin volume attributes]
 
-xref:../wombat/wombat-set-tray-identification.adoc[Set tray identification]
+xref:../commands-a-z/set-tray-identification.adoc[Set tray identification]
 
-xref:../wombat/wombat-set-tray-serviceallowedindicator.adoc[Set tray service action allowed indicator]
+xref:../commands-a-z/set-tray-serviceallowedindicator.adoc[Set tray service action allowed indicator]
 
-xref:../wombat/wombat-set-volumes.adoc[Set volume attributes for a volume in a disk pool...]
+xref:../commands-a-z/set-volumes.adoc[Set volume attributes for a volume in a disk pool...]
 
-xref:../wombat/wombat-set-volume-group-attributes-for-volume-in-a-volume-group.adoc[Set volume attributes for a volume in a volume group...]
+xref:../commands-a-z/set-volume-group-attributes-for-volume-in-a-volume-group.adoc[Set volume attributes for a volume in a volume group...]
 
-xref:../wombat/wombat-set-volumecopy-target.adoc[Set volume copy]
+xref:../commands-a-z/set-volumecopy-target.adoc[Set volume copy]
 
-xref:../wombat/wombat-set-volumegroup.adoc[Set volume group]
+xref:../commands-a-z/set-volumegroup.adoc[Set volume group]
 
-xref:../wombat/wombat-set-volumegroup-forcedstate.adoc[Set volume group forced state]
+xref:../commands-a-z/set-volumegroup-forcedstate.adoc[Set volume group forced state]
 
-xref:../wombat/wombat-set-volume-logicalunitnumber.adoc[Set volume mapping]
+xref:../commands-a-z/set-volume-logicalunitnumber.adoc[Set volume mapping]
 
-xref:../wombat/wombat-show-asyncmirrorgroup-summary.adoc[Show asynchronous mirror groups]
+xref:../commands-a-z/show-asyncmirrorgroup-summary.adoc[Show asynchronous mirror groups]
 
-xref:../wombat/wombat-show-asyncmirrorgroup-synchronizationprogress.adoc[Show asynchronous mirror group synchronization progress]
+xref:../commands-a-z/show-asyncmirrorgroup-synchronizationprogress.adoc[Show asynchronous mirror group synchronization progress]
 
-xref:../wombat/wombat-show-storagearray-autosupport.adoc[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
+xref:../commands-a-z/show-storagearray-autosupport.adoc[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
 
-xref:../wombat/wombat-show-blockedeventalertlist.adoc[Show blocked events]
+xref:../commands-a-z/show-blockedeventalertlist.adoc[Show blocked events]
 
-xref:../wombat/wombat-show-consistencygroup.adoc[Show consistency group]
+xref:../commands-a-z/show-consistencygroup.adoc[Show consistency group]
 
-xref:../wombat/wombat-show-cgsnapimage.adoc[Show consistency group snapshot image]
+xref:../commands-a-z/show-cgsnapimage.adoc[Show consistency group snapshot image]
 
-xref:../wombat/wombat-show-controller.adoc[Show controller]
+xref:../commands-a-z/show-controller.adoc[Show controller]
 
-xref:../wombat/wombat-show-controller-nvsram.adoc[Show controller NVSRAM]
+xref:../commands-a-z/show-controller-nvsram.adoc[Show controller NVSRAM]
 
-xref:../wombat/wombat-show-iscsisessions.adoc[Show current iSCSI sessions]
+xref:../commands-a-z/show-iscsisessions.adoc[Show current iSCSI sessions]
 
-xref:../wombat/wombat-show-diskpool.adoc[Show disk pool]
+xref:../commands-a-z/show-diskpool.adoc[Show disk pool]
 
-xref:../wombat/wombat-show-alldrives.adoc[Show drive]
+xref:../commands-a-z/show-alldrives.adoc[Show drive]
 
-xref:../wombat/wombat-show-drivechannel-stats.adoc[Show drive channel statistics]
+xref:../commands-a-z/show-drivechannel-stats.adoc[Show drive channel statistics]
 
-xref:../wombat/wombat-show-alldrives-downloadprogress.adoc[Show drive download progress]
+xref:../commands-a-z/show-alldrives-downloadprogress.adoc[Show drive download progress]
 
-xref:../wombat/wombat-show-alldrives-performancestats.adoc[Show drive performance statistics]
+xref:../commands-a-z/show-alldrives-performancestats.adoc[Show drive performance statistics]
 
-xref:../wombat/wombat-show-allhostports.adoc[Show host ports]
+xref:../commands-a-z/show-allhostports.adoc[Show host ports]
 
-xref:../wombat/wombat-show-replaceabledrives.adoc[Show replaceable drives]
+xref:../commands-a-z/show-replaceabledrives.adoc[Show replaceable drives]
 
-xref:../wombat/wombat-show-snapgroup.adoc[Show snapshot group]
+xref:../commands-a-z/show-snapgroup.adoc[Show snapshot group]
 
-xref:../wombat/wombat-show-snapimage.adoc[Show snapshot image]
+xref:../commands-a-z/show-snapimage.adoc[Show snapshot image]
 
-xref:../wombat/wombat-show-snapvolume.adoc[Show snapshot volumes]
+xref:../commands-a-z/show-snapvolume.adoc[Show snapshot volumes]
 
-xref:../wombat/wombat-show-ssd-cache.adoc[Show SSD cache]
+xref:../commands-a-z/show-ssd-cache.adoc[Show SSD cache]
 
-xref:../wombat/wombat-show-ssd-cache-statistics.adoc[Show SSD cache statistics]
+xref:../commands-a-z/show-ssd-cache-statistics.adoc[Show SSD cache statistics]
 
-xref:../wombat/wombat-show-storagearray.adoc[Show storage array]
+xref:../commands-a-z/show-storagearray.adoc[Show storage array]
 
-xref:../wombat/wombat-show-storagearray-autoconfiguration.adoc[Show storage array auto configuration]
+xref:../commands-a-z/show-storagearray-autoconfiguration.adoc[Show storage array auto configuration]
 
-xref:../wombat/wombat-show-storagearray-controllerhealthimage.adoc[Show storage array controller health image]
+xref:../commands-a-z/show-storagearray-controllerhealthimage.adoc[Show storage array controller health image]
 
-xref:../wombat/wombat-show-storagearray-dbmdatabase.adoc[Show storage array DBM database]
+xref:../commands-a-z/show-storagearray-dbmdatabase.adoc[Show storage array DBM database]
 
-xref:../wombat/wombat-show-storagearray-hosttopology.adoc[Show storage array host topology]
+xref:../commands-a-z/show-storagearray-hosttopology.adoc[Show storage array host topology]
 
-xref:../wombat/wombat-show-storagearray-lunmappings.adoc[Show storage array LUN mappings]
+xref:../commands-a-z/show-storagearray-lunmappings.adoc[Show storage array LUN mappings]
 
-xref:../wombat/wombat-show-storagearray-iscsinegotiationdefaults.adoc[Show storage array negotiation defaults]
+xref:../commands-a-z/show-storagearray-iscsinegotiationdefaults.adoc[Show storage array negotiation defaults]
 
-xref:../wombat/wombat-show-storagearray-odxsetting.adoc[Show storage array ODX setting]
+xref:../commands-a-z/show-storagearray-odxsetting.adoc[Show storage array ODX setting]
 
-xref:../wombat/wombat-show-storagearray-powerinfo.adoc[Show storage array power information]
+xref:../commands-a-z/show-storagearray-powerinfo.adoc[Show storage array power information]
 
-xref:../wombat/wombat-show-storagearray-unconfigurediscsiinitiators.adoc[Show storage array unconfigured iSCSI initiators]
+xref:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.adoc[Show storage array unconfigured iSCSI initiators]
 
-xref:../wombat/wombat-show-storagearray-unreadablesectors.adoc[Show storage array unreadable sectors]
+xref:../commands-a-z/show-storagearray-unreadablesectors.adoc[Show storage array unreadable sectors]
 
-xref:../wombat/wombat-show-textstring.adoc[Show string]
+xref:../commands-a-z/show-textstring.adoc[Show string]
 
-xref:../wombat/wombat-show-syncmirror-candidates.adoc[Show synchronous mirroring volume candidates]
+xref:../commands-a-z/show-syncmirror-candidates.adoc[Show synchronous mirroring volume candidates]
 
-xref:../wombat/wombat-show-syncmirror-synchronizationprogress.adoc[Show synchronous mirroring volume synchronization progress]
+xref:../commands-a-z/show-syncmirror-synchronizationprogress.adoc[Show synchronous mirroring volume synchronization progress]
 
-xref:../wombat/wombat-show-volume.adoc[Show thin volume]
+xref:../commands-a-z/show-volume.adoc[Show thin volume]
 
-xref:../wombat/wombat-show-volume-summary.adoc[Show volume]
+xref:../commands-a-z/show-volume-summary.adoc[Show volume]
 
-xref:../wombat/wombat-show-volume-actionprogress.adoc[Show volume action progress]
+xref:../commands-a-z/show-volume-actionprogress.adoc[Show volume action progress]
 
-xref:../wombat/wombat-show-volumecopy.adoc[Show volume copy]
+xref:../commands-a-z/show-volumecopy.adoc[Show volume copy]
 
-xref:../wombat/wombat-show-volumecopy-sourcecandidates.adoc[Show volume copy source candidates]
+xref:../commands-a-z/show-volumecopy-sourcecandidates.adoc[Show volume copy source candidates]
 
-xref:../wombat/wombat-show-volumecopy-source-targetcandidates.adoc[Show volume copy target candidates]
+xref:../commands-a-z/show-volumecopy-source-targetcandidates.adoc[Show volume copy target candidates]
 
-xref:../wombat/wombat-show-volumegroup.adoc[Show volume group]
+xref:../commands-a-z/show-volumegroup.adoc[Show volume group]
 
-xref:../wombat/wombat-show-volumegroup-exportdependencies.adoc[Show volume group export dependencies]
+xref:../commands-a-z/show-volumegroup-exportdependencies.adoc[Show volume group export dependencies]
 
-xref:../wombat/wombat-show-volumegroup-importdependencies.adoc[Show volume group import dependencies]
+xref:../commands-a-z/show-volumegroup-importdependencies.adoc[Show volume group import dependencies]
 
-xref:../wombat/wombat-show-volume-performancestats.adoc[Show volume performance statistics]
+xref:../commands-a-z/show-volume-performancestats.adoc[Show volume performance statistics]
 
-xref:../wombat/wombat-show-volume-reservations.adoc[Show volume reservations]
+xref:../commands-a-z/show-volume-reservations.adoc[Show volume reservations]
 
-xref:../wombat/wombat-smcli-autosupportconfig.adoc[Specify the AutoSupport delivery method]
+xref:../commands-a-z/smcli-autosupportconfig.adoc[Specify the AutoSupport delivery method]
 
-xref:../wombat/wombat-start-asyncmirrorgroup-synchronize.adoc[Start asynchronous mirroring synchronization]
+xref:../commands-a-z/start-asyncmirrorgroup-synchronize.adoc[Start asynchronous mirroring synchronization]
 
-xref:../wombat/wombat-smcli-autosupportconfig.adoc[Specify the AutoSupport delivery method]
+xref:../commands-a-z/smcli-autosupportconfig.adoc[Specify the AutoSupport delivery method]
 
-xref:../wombat/wombat-start-cgsnapimage-rollback.adoc[Start consistency group snapshot rollback]
+xref:../commands-a-z/start-cgsnapimage-rollback.adoc[Start consistency group snapshot rollback]
 
-xref:../wombat/wombat-start-controller.adoc[Start controller trace]
+xref:../commands-a-z/start-controller.adoc[Start controller trace]
 
-xref:../wombat/wombat-start-diskpool-locate.adoc[Start disk pool locate]
+xref:../commands-a-z/start-diskpool-locate.adoc[Start disk pool locate]
 
-xref:../wombat/wombat-start-drivechannel-faultdiagnostics.adoc[Start drive channel fault isolation diagnostics]
+xref:../commands-a-z/start-drivechannel-faultdiagnostics.adoc[Start drive channel fault isolation diagnostics]
 
-xref:../wombat/wombat-start-drivechannel-locate.adoc[Start drive channel locate]
+xref:../commands-a-z/start-drivechannel-locate.adoc[Start drive channel locate]
 
-xref:../wombat/wombat-start-drive-initialize.adoc[Start drive initialize]
+xref:../commands-a-z/start-drive-initialize.adoc[Start drive initialize]
 
-xref:../wombat/wombat-start-drive-locate.adoc[Start drive locate]
+xref:../commands-a-z/start-drive-locate.adoc[Start drive locate]
 
-xref:../wombat/wombat-start-drive-reconstruct.adoc[Start drive reconstruction]
+xref:../commands-a-z/start-drive-reconstruct.adoc[Start drive reconstruction]
 
-xref:../wombat/wombat-start-ioclog.adoc[Start input output controller (IOC) dump]
+xref:../commands-a-z/start-ioclog.adoc[Start input output controller (IOC) dump]
 
-xref:../wombat/wombat-start-controller-iscsihostport-dhcprefresh.adoc[Start iSCSI DHCP refresh]
+xref:../commands-a-z/start-controller-iscsihostport-dhcprefresh.adoc[Start iSCSI DHCP refresh]
 
-xref:../wombat/wombat-start-secureerase-drive.adoc[Start FDE secure drive erase]
+xref:../commands-a-z/start-secureerase-drive.adoc[Start FDE secure drive erase]
 
-xref:../wombat/wombat-start-snapimage-rollback.adoc[Start snapshot image rollback]
+xref:../commands-a-z/start-snapimage-rollback.adoc[Start snapshot image rollback]
 
-xref:../wombat/wombat-start-ssdcache-locate.adoc[Start SSD cache locate]
+xref:../commands-a-z/start-ssdcache-locate.adoc[Start SSD cache locate]
 
-xref:../wombat/wombat-start-ssdcache-performancemodeling.adoc[Start SSD cache performance modeling]
+xref:../commands-a-z/start-ssdcache-performancemodeling.adoc[Start SSD cache performance modeling]
 
-xref:../wombat/wombat-start-storagearray-configdbdiagnostic.adoc[Start storage array configuration database diagnostic]
+xref:../commands-a-z/start-storagearray-configdbdiagnostic.adoc[Start storage array configuration database diagnostic]
 
-xref:../wombat/wombat-start-storagearray-controllerhealthimage-controller.adoc[Start storage array controller health image]
+xref:../commands-a-z/start-storagearray-controllerhealthimage-controller.adoc[Start storage array controller health image]
 
-xref:../wombat/wombat-start-storagearray-isnsserverrefresh.adoc[Start storage array iSNS server refresh]
+xref:../commands-a-z/start-storagearray-isnsserverrefresh.adoc[Start storage array iSNS server refresh]
 
-xref:../wombat/wombat-start-storagearray-locate.adoc[Start storage array locate]
+xref:../commands-a-z/start-storagearray-locate.adoc[Start storage array locate]
 
-xref:../wombat/wombat-start-syncmirror-primary-synchronize.adoc[Start synchronous mirroring synchronization]
+xref:../commands-a-z/start-syncmirror-primary-synchronize.adoc[Start synchronous mirroring synchronization]
 
-xref:../wombat/wombat-start-tray-locate.adoc[Start tray locate]
+xref:../commands-a-z/start-tray-locate.adoc[Start tray locate]
 
-xref:../wombat/wombat-start-volumegroup-defragment.adoc[Start volume group defragment]
+xref:../commands-a-z/start-volumegroup-defragment.adoc[Start volume group defragment]
 
-xref:../wombat/wombat-start-volumegroup-export.adoc[Start volume group export]
+xref:../commands-a-z/start-volumegroup-export.adoc[Start volume group export]
 
-xref:../wombat/wombat-start-volumegroup-import.adoc[Start volume group import]
+xref:../commands-a-z/start-volumegroup-import.adoc[Start volume group import]
 
-xref:../wombat/wombat-start-volumegroup-locate.adoc[Start volume group locate]
+xref:../commands-a-z/start-volumegroup-locate.adoc[Start volume group locate]
 
-xref:../wombat/wombat-start-volume-initialization.adoc[Start volume initialization]
+xref:../commands-a-z/start-volume-initialization.adoc[Start volume initialization]
 
-xref:../wombat/wombat-stop-cgsnapimage-rollback.adoc[Stop consistency group snapshot rollback]
+xref:../commands-a-z/stop-cgsnapimage-rollback.adoc[Stop consistency group snapshot rollback]
 
-xref:../wombat/wombat-stop-cgsnapvolume.adoc[Stop consistency group snapshot volume]
+xref:../commands-a-z/stop-cgsnapvolume.adoc[Stop consistency group snapshot volume]
 
-xref:../wombat/wombat-stop-diskpool-locate.adoc[Stop disk pool locate]
+xref:../commands-a-z/stop-diskpool-locate.adoc[Stop disk pool locate]
 
-xref:../wombat/wombat-stop-drivechannel-faultdiagnostics.adoc[Stop drive channel fault isolation diagnostics]
+xref:../commands-a-z/stop-drivechannel-faultdiagnostics.adoc[Stop drive channel fault isolation diagnostics]
 
-xref:../wombat/wombat-stop-drivechannel-locate.adoc[Stop drive channel locate]
+xref:../commands-a-z/stop-drivechannel-locate.adoc[Stop drive channel locate]
 
-xref:../wombat/wombat-stop-drive-locate.adoc[Stop drive locate]
+xref:../commands-a-z/stop-drive-locate.adoc[Stop drive locate]
 
-xref:../wombat/wombat-stop-drive-replace.adoc[Stop drive replace]
+xref:../commands-a-z/stop-drive-replace.adoc[Stop drive replace]
 
-xref:../wombat/wombat-stop-consistencygroup-pendingsnapimagecreation.adoc[Stop pending snapshot images on consistency group]
+xref:../commands-a-z/stop-consistencygroup-pendingsnapimagecreation.adoc[Stop pending snapshot images on consistency group]
 
-xref:../wombat/wombat-stop-pendingsnapimagecreation.adoc[Stop snapshot group pending snapshot images]
+xref:../commands-a-z/stop-pendingsnapimagecreation.adoc[Stop snapshot group pending snapshot images]
 
-xref:../wombat/wombat-stop-snapimage-rollback.adoc[Stop snapshot image rollback]
+xref:../commands-a-z/stop-snapimage-rollback.adoc[Stop snapshot image rollback]
 
-xref:../wombat/wombat-stop-snapvolume.adoc[Stop snapshot volume]
+xref:../commands-a-z/stop-snapvolume.adoc[Stop snapshot volume]
 
-xref:../wombat/wombat-stop-ssdcache-locate.adoc[Stop SSD cache locate]
+xref:../commands-a-z/stop-ssdcache-locate.adoc[Stop SSD cache locate]
 
-xref:../wombat/wombat-stop-ssdcache-performancemodeling.adoc[Stop SSD cache performance modeling]
+xref:../commands-a-z/stop-ssdcache-performancemodeling.adoc[Stop SSD cache performance modeling]
 
-xref:../wombat/wombat-stop-storagearray-configdbdiagnostic.adoc[Stop storage array configuration database diagnostic]
+xref:../commands-a-z/stop-storagearray-configdbdiagnostic.adoc[Stop storage array configuration database diagnostic]
 
-xref:../wombat/wombat-stop-storagearray-drivefirmwaredownload.adoc[Stop storage array drive firmware download]
+xref:../commands-a-z/stop-storagearray-drivefirmwaredownload.adoc[Stop storage array drive firmware download]
 
-xref:../wombat/wombat-stop-storagearray-iscsisession.adoc[Stop storage array iSCSI session]
+xref:../commands-a-z/stop-storagearray-iscsisession.adoc[Stop storage array iSCSI session]
 
-xref:../wombat/wombat-stop-storagearray-locate.adoc[Stop storage array locate]
+xref:../commands-a-z/stop-storagearray-locate.adoc[Stop storage array locate]
 
-xref:../wombat/wombat-stop-tray-locate.adoc[Stop tray locate]
+xref:../commands-a-z/stop-tray-locate.adoc[Stop tray locate]
 
-xref:../wombat/wombat-stop-volumecopy-target-source.adoc[Stop volume copy]
+xref:../commands-a-z/stop-volumecopy-target-source.adoc[Stop volume copy]
 
-xref:../wombat/wombat-stop-volumegroup-locate.adoc[Stop volume group locate]
+xref:../commands-a-z/stop-volumegroup-locate.adoc[Stop volume group locate]
 
-xref:../wombat/wombat-suspend-asyncmirrorgroup.adoc[Suspend asynchronous mirror group]
+xref:../commands-a-z/suspend-asyncmirrorgroup.adoc[Suspend asynchronous mirror group]
 
-xref:../wombat/wombat-suspend-ssdcache.adoc[Suspend SSD cache]
+xref:../commands-a-z/suspend-ssdcache.adoc[Suspend SSD cache]
 
-xref:../wombat/wombat-suspend-syncmirror-primaries.adoc[Suspend synchronous mirroring]
+xref:../commands-a-z/suspend-syncmirror-primaries.adoc[Suspend synchronous mirroring]
 
-xref:../wombat/wombat-smcli-alerttest.adoc[Test alerts]
+xref:../commands-a-z/smcli-alerttest.adoc[Test alerts]
 
-xref:../wombat/wombat-diagnose-asyncmirrorgroup.adoc[Test asynchronous mirror group connectivity]
+xref:../commands-a-z/diagnose-asyncmirrorgroup.adoc[Test asynchronous mirror group connectivity]
 
-xref:../wombat/wombat-smcli-autosupportconfig-test.adoc[Test the AutoSupport configuration]
+xref:../commands-a-z/smcli-autosupportconfig-test.adoc[Test the AutoSupport configuration]
 
-xref:../wombat/wombat-validate-storagearray-securitykey.adoc[Validate storage array security key]
+xref:../commands-a-z/validate-storagearray-securitykey.adoc[Validate storage array security key]

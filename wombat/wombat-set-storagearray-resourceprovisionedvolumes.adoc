@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-storagearray-resourceprovisionedvolumes.html
+permalink: commands-a-z/set-storagearray-resourceprovisionedvolumes.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray resourceProvisionedVolumes command disables the DULBE feature.'

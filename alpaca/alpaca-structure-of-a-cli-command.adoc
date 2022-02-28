@@ -1,5 +1,5 @@
 ---
-permalink: alpaca/alpaca-structure-of-a-cli-command.html
+permalink: get-started/structure-of-a-cli-command.html
 sidebar: sidebar
 keywords: 
 summary: ''

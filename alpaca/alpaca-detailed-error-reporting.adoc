@@ -1,5 +1,5 @@
 ---
-permalink: alpaca/alpaca-detailed-error-reporting.html
+permalink: get-started/detailed-error-reporting.html
 sidebar: sidebar
 keywords: 
 summary: ''

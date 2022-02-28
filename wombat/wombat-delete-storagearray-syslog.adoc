@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-delete-storagearray-syslog.html
+permalink: commands-a-z/delete-storagearray-syslog.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete storageArray syslog command allows you to delete the specified syslog configuration used for storing audit logs.'

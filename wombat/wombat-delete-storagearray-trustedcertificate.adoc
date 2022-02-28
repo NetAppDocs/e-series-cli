@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-delete-storagearray-trustedcertificate.html
+permalink: commands-a-z/delete-storagearray-trustedcertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete storageArray trustedCertificate command removes the specified user installed CA certificates from the array’s web servers.'

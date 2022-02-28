@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-stop-drivechannel-faultdiagnostics.html
+permalink: commands-a-z/stop-drivechannel-faultdiagnostics.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop driveChannel faultDiagnostics command stops the drive channel fault isolation diagnostics, which stops the start drive channel fault isolation diagnostics command before it completes.'

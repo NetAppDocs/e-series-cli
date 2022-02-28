@@ -1,5 +1,5 @@
 ---
-permalink: alpaca/alpaca-new-https-mode.html
+permalink: get-started/new-https-mode.html
 sidebar: sidebar
 keywords: 
 summary: 'The new SMcli can operate in an https mode that offers additional security features.'

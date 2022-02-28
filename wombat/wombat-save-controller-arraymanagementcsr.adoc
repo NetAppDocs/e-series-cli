@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-controller-arraymanagementcsr.html
+permalink: commands-a-z/save-controller-arraymanagementcsr.html
 sidebar: sidebar
 keywords: 
 summary: 'The save controller arrayManagementCSR command generates a Certificate Signing Request \(CSR\) for the controller.'

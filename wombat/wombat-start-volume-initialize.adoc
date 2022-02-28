@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-volume-initialize.html
+permalink: commands-a-z/start-volume-initialize.html
 sidebar: sidebar
 keywords: 
 summary: 'The start volume initialize command initializes or re-initializes a thin volume.'

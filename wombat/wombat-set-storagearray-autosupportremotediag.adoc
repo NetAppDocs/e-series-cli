@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-storagearray-autosupportremotediag.html
+permalink: commands-a-z/set-storagearray-autosupportremotediag.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray autoSupportRemoteDiag command turns on or turns off the AutoSupport OnDemand Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely.'

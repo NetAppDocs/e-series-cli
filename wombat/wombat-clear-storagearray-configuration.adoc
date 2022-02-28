@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-clear-storagearray-configuration.html
+permalink: commands-a-z/clear-storagearray-configuration.html
 sidebar: sidebar
 keywords: 
 summary: 'The clear storageArray configuration command clears an entire storage array configuration or part of a storage array configuration, or clears volume group and volume configuration only.'

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-create-storagearray-directoryserver.html
+permalink: commands-a-z/create-storagearray-directoryserver.html
 sidebar: sidebar
 keywords: 
 summary: 'The create storageArray directoryServer command allows you to add a new directory server to be used for authenticating and authorizing users.'

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-getting-started-with-internal-key-management.html
+permalink: commands-a-z/getting-started-with-internal-key-management.html
 sidebar: sidebar
 keywords: 
 summary: 'A security key is a string of characters, which is shared between the secure-enabled drives and controllers in a storage array. When using internal key management, you create and maintain security keys on the controller’s persistent memory.'

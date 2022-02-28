@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-volumes.html
+permalink: commands-a-z/set-volumes.html
 sidebar: sidebar
 keywords: 
 summary: 'The set volumes command defines the properties for a volume in a disk pool.'

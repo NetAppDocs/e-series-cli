@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-volume-ssdcacheenabled.html
+permalink: commands-a-z/set-volume-ssdcacheenabled.html
 sidebar: sidebar
 keywords: 
 summary: 'The set volume ssdCacheEnabled command turns on or off caching using the SSD cache feature for a specific volume.'

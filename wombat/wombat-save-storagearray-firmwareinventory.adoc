@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-storagearray-firmwareinventory.html
+permalink: commands-a-z/save-storagearray-firmwareinventory.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray firmwareInventory command saves a report to a file of all of the firmware currently running on the storage array.'

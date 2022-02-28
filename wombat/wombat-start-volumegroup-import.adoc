@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-volumegroup-import.html
+permalink: commands-a-z/start-volumegroup-import.html
 sidebar: sidebar
 keywords: 
 summary: 'The start volumeGroup import command moves a volume group into a Complete state to make a newly introduced volume group available to its new storage array.'

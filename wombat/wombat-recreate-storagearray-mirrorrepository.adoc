@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-recreate-storagearray-mirrorrepository.html
+permalink: commands-a-z/recreate-storagearray-mirrorrepository.html
 sidebar: sidebar
 keywords: 
 summary: 'The recreate storageArray mirrorRepository command creates a new Synchronous Mirroring repository volume \(also called a mirror repository volume\) by using the parameters defined for a previous mirror repository volume.'

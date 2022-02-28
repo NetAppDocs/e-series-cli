@@ -1,5 +1,5 @@
 ---
-permalink: alpaca/alpaca-formatting-rules-for-script-commands.html
+permalink: get-started/formatting-rules-for-script-commands.html
 sidebar: sidebar
 keywords: 
 summary: ''

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-storagearray-learncycledate-controller.html
+permalink: commands-a-z/set-storagearray-learncycledate-controller.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray learnCycleDate controller command sets controller battery learn cycles.'

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-stop-storagearray-iscsisession.html
+permalink: commands-a-z/stop-storagearray-iscsisession.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop storageArray iscsiSession command forces the termination of a storage array iSCSI session.'

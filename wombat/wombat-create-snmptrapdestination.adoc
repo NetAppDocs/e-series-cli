@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-create-snmptrapdestination.html
+permalink: commands-a-z/create-snmptrapdestination.html
 sidebar: sidebar
 keywords: 
 summary: 'The create snmpTrapDestination command creates a new Simple Network Management Protocol \(SNMP\) trap destination. A trap destination is the SNMP manager to receive the trap messages.'

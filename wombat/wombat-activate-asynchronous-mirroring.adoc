@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-activate-asynchronous-mirroring.html
+permalink: commands-a-z/activate-asynchronous-mirroring.html
 sidebar: sidebar
 keywords: 
 summary: 'The activate storageArray feature command activates the Asynchronous Mirroring feature.'

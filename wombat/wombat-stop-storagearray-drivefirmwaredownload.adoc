@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-stop-storagearray-drivefirmwaredownload.html
+permalink: commands-a-z/stop-storagearray-drivefirmwaredownload.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop storageArray driveFirmwareDownload command stops a firmware download to the drives in a storage array that was started with the download storageArray driveFirmware command.'

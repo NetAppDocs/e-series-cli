@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-storagearray-arvmstats-asyncmirrorgroup.html
+permalink: commands-a-z/save-storagearray-arvmstats-asyncmirrorgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray arvmStats asyncMirrorGroup command saves the synchronization statistics to a file for one or more member volumes in an asynchronous mirror group.'

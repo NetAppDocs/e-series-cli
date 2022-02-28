@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-external-key-management-commands-related-to-certificates.html
+permalink: commands-a-z/external-key-management-commands-related-to-certificates.html
 sidebar: sidebar
 keywords: 
 summary: ''

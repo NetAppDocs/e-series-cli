@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-show-alldrives.html
+permalink: commands-a-z/show-alldrives.html
 sidebar: sidebar
 keywords: 
 summary: 'The show allDrives command returns information about the drives in the storage array.'

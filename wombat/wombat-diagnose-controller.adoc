@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-diagnose-controller.html
+permalink: commands-a-z/diagnose-controller.html
 sidebar: sidebar
 keywords: 
 summary: 'The diagnose controller command runs diagnostic tests on the controller.'

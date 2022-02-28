@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-enable-controller-datatransfer.html
+permalink: commands-a-z/enable-controller-datatransfer.html
 sidebar: sidebar
 keywords: 
 summary: 'The enable controller dataTransfer command revives a controller that has become quiesced while running diagnostics.'

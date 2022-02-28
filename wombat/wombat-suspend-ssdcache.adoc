@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-suspend-ssdcache.html
+permalink: commands-a-z/suspend-ssdcache.html
 sidebar: sidebar
 keywords: 
 summary: 'The suspend ssdCache command temporarily stops caching for all of the volumes that are using the SSD cache.'

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-show-allsnmpcommunities.html
+permalink: commands-a-z/show-allsnmpcommunities.html
 sidebar: sidebar
 keywords: 
 summary: 'The show allSnmpCommunities command returns information about the Simple Network Management Protocol \(SNMP\) communities defined for the storage array. SNMP communities are collections of devices, such as routers, switches, printers, storage devices, grouped together to manage and monitor the devices.'

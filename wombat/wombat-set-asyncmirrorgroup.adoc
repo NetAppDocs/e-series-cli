@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-asyncmirrorgroup.html
+permalink: commands-a-z/set-asyncmirrorgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The set asyncMirrorGroup command changes the synchronization settings and warning thresholds that the controller owner of the primary side of the asynchronous mirror group uses when it performs an initial synchronization or resynchronization.'

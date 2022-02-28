@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-volume-group-attributes-for-volume-in-a-volume-group.html
+permalink: commands-a-z/set-volume-group-attributes-for-volume-in-a-volume-group.html
 sidebar: sidebar
 keywords: 
 summary: 'The set volume command defines the properties for volumes in a volume group.'

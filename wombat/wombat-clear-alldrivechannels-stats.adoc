@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-clear-alldrivechannels-stats.html
+permalink: commands-a-z/clear-alldrivechannels-stats.html
 sidebar: sidebar
 keywords: 
 summary: 'The clear allDriveChannels stats command resets the statistics for all of the drive channels.'

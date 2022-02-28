@@ -1,5 +1,5 @@
 ---
-permalink: alpaca/alpaca-exit-status.html
+permalink: get-started/exit-status.html
 sidebar: sidebar
 keywords: 
 summary: ''

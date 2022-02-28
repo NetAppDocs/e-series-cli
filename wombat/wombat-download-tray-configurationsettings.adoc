@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-download-tray-configurationsettings.html
+permalink: commands-a-z/download-tray-configurationsettings.html
 sidebar: sidebar
 keywords: 
 summary: 'The download tray configurationSettings command downloads the factory default settings to all of the drive trays in a storage array or to a specific drive tray in a storage array.'

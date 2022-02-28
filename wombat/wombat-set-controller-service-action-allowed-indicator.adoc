@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-controller-service-action-allowed-indicator.html
+permalink: commands-a-z/set-controller-service-action-allowed-indicator.html
 sidebar: sidebar
 keywords: 
 summary: 'The set controller command turns on or turns off the Service Action Allowed indicator light on a controller in a controller tray or a controller-drive tray.'

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-create-ssdcache.html
+permalink: commands-a-z/create-ssdcache.html
 sidebar: sidebar
 keywords: 
 summary: 'The create ssdCache command creates a read cache for a storage array using Solid State Disks \(SSDs\).'

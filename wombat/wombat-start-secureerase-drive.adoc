@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-secureerase-drive.html
+permalink: commands-a-z/start-secureerase-drive.html
 sidebar: sidebar
 keywords: 
 summary: 'The start secureErase drive command erases all of the data from one or more full disk encryption \(FDE\) drives so that they can be reused as FDE drives.'

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-event-alert.html
+permalink: commands-a-z/set-event-alert.html
 sidebar: sidebar
 keywords: 
 summary: 'The set event alert commands manage alert event notification by either disabling or enabling notification related to a specific alertable event. To prevent notification about a specific alertable event, you block it. To enable notification about a specific alertable event, you unblock it.'

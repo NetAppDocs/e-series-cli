@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-clear-storagearray-eventlog.html
+permalink: commands-a-z/clear-storagearray-eventlog.html
 sidebar: sidebar
 keywords: 
 summary: 'The clear storageArray eventLog command clears the event log in the storage array by deleting the data in the Event Log buffer.'

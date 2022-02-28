@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-storagearray-configdbdiagnostic.html
+permalink: commands-a-z/start-storagearray-configdbdiagnostic.html
 sidebar: sidebar
 keywords: 
 summary: 'The start storageArray configDbDiagnostic command runs a consistency check against a configuration database.'

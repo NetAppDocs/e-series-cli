@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-getting-started-with-aurthentication.html
+permalink: commands-a-z/getting-started-with-aurthentication.html
 sidebar: sidebar
 keywords: 
 summary: 'Authentication requires that users access the system with assigned login credentials. Each user login is associated with a user profile that includes specific roles and access permissions.'

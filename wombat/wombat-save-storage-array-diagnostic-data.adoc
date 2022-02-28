@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-storage-array-diagnostic-data.html
+permalink: commands-a-z/save-storage-array-diagnostic-data.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray diagnosticData command saves the storage array diagnostic data from either the controllers or the environmental services modules \(ESMs\) to a file.'

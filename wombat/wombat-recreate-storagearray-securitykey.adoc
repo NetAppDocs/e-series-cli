@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-recreate-storagearray-securitykey.html
+permalink: commands-a-z/recreate-storagearray-securitykey.html
 sidebar: sidebar
 keywords: 
 summary: 'The recreate storageArray securityKey command regenerates a storage array security key for use with the external security key management feature.'

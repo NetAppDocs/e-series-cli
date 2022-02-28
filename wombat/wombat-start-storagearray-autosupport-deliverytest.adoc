@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-storagearray-autosupport-deliverytest.html
+permalink: commands-a-z/start-storagearray-autosupport-deliverytest.html
 sidebar: sidebar
 keywords: 
 summary: 'The start storageArray autoSupport deliveryTest command sends a sample AutoSupport bundle collection message so you can test the connection to the destination technical support system using the specified delivery parameters.'

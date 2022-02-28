@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-autoconfigure-storagearray.html
+permalink: commands-a-z/autoconfigure-storagearray.html
 sidebar: sidebar
 keywords: 
 summary: 'The autoConfigure storageArray command automatically configures a storage array.'

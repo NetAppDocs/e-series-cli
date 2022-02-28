@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-show-diskpool.html
+permalink: commands-a-z/show-diskpool.html
 sidebar: sidebar
 keywords: 
 summary: 'The show diskPool command returns information about a disk pool.'

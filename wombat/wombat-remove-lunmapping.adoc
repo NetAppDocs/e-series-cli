@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-remove-lunmapping.html
+permalink: commands-a-z/remove-lunmapping.html
 sidebar: sidebar
 keywords: 
 summary: 'The remove lunMapping command removes the logical unit number \(LUN\) or namespace ID \(NSID\) mapping from one or more volumes.'

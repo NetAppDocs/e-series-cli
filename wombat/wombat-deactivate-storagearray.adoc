@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-deactivate-storagearray.html
+permalink: commands-a-z/deactivate-storagearray.html
 sidebar: sidebar
 keywords: 
 summary: 'The deactivate storageArray feature deactivates the Asynchronous Mirroring feature.'

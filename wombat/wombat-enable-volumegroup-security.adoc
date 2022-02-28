@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-enable-volumegroup-security.html
+permalink: commands-a-z/enable-volumegroup-security.html
 sidebar: sidebar
 keywords: 
 summary: 'The enable volumeGroup security command converts a non-secure volume group to a secure volume group.'

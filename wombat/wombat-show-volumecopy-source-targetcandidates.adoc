@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-show-volumecopy-source-targetcandidates.html
+permalink: commands-a-z/show-volumecopy-source-targetcandidates.html
 sidebar: sidebar
 keywords: 
 summary: 'The show volumeCopy source targetCandidates command returns information about the candidate volumes that you can use as the target for a volume copy operation. This command is valid for snapshot volume copy pairs.'

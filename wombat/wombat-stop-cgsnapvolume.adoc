@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-stop-cgsnapvolume.html
+permalink: commands-a-z/stop-cgsnapvolume.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop cgSnapVolume command stops the copy-on-write operation for creating a consistency group snapshot volume.'

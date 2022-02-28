@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-stop-pendingsnapimagecreation.html
+permalink: commands-a-z/stop-pendingsnapimagecreation.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop pendingSnapImageCreation command cancels all of the pending snapshot images that are to be created on a snapshot or snapshot consistency group.'

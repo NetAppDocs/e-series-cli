@@ -1,5 +1,5 @@
 ---
-permalink: mongoose/mongoose-volume-configuration-commands.html
+permalink: commands-category/volume-configuration-commands.html
 sidebar: sidebar
 keywords: keyword,check volume parity,clear volume reservations,clear volume unreadableSectors,create diskPool,create host,create hostGroup,create hostPort,create iscsiInitiator,create volume \(automatic drive select\),create volume \(free extent based select\),create volume \(manual drive select\),create volume diskPool,create volumeGroup,delete diskPool,delete host,delete hostGroup,delete hostPort,delete iscsiInitiator,delete volume,delete volume \(disk pool\),delete volumeGroup,diagnose controller iscsiHostPort,download tray configurationSettings,download tray firmware file,enable diskPool,enable volumeGroup security,recover sasPort miswire,recover volume,remove lunMapping,repair volume parity,reset storageArray iscsiStatsBaseline,revive volumeGroup,save allTrays logFile,save storageArray iscsiStatistics,set diskPool,set host,set hostChannel,set hostGroup,set hostPort,set iscsiInitiator,set iscsiTarget,set iserTarget,set storageArray,set storageArray isnsIPv4ConfigurationMethod,set storageArray isnsIPv6Address,set storageArray isnsListeningPort,set storageArray isnsRegistration,set storageArray isnsServerRefresh,set tray,set tray \(identification\),set tray drawer,set tray serviceAllowedIndicator,set volume,set volume logicalUnitNumber,set volumeGroup,set volumes \(in disk pool\),set volumes \(in volume group\),show allHostPorts,show diskPool,show iscsiSessions,show storageArray hostTopology,show storageArray iscsiNegotiationDefaults,show storageArray unconfiguredIscsiInitiators,show textstring,show volume,show volume actionProgress,Show volume group export dependencies,show volume performanceStats,show volume reservations,show volume summary,show volumeGroup,show volumeGroup importDependencies,start controller iscsiHostPort dhcpRefresh,start diskPool locate,start increaseVolumeCapacity volume,start storageArray configDbDiagnostic,start storageArray isnsServerRefresh,start storageArray locate,start tray locate,start volume initialize,start volumeGroup defragment,start volumeGroup export,start volumeGroup import,start volumeGroup locate,stop diskPool locate,stop storageArray configDbDiagnostic,stop storageArray driveFirmwareDownload,stop storageArray iscsiSession,stop storageArray iscsiSession,stop storageArray locate,stop tray locate,stop volumeGroup locate,validate storageArray securityKey,start disk pool full provisioning,create volume mapping,repair data parity,start volume group full provisioning
 summary: ''
@@ -11,186 +11,186 @@ summary: ''
 * *<<GUID-C92ABB33-9BDD-4430-85DE-98C3A0B9F4E6,Disk pool commands>> | <<GUID-05EC4AE5-68A7-41FE-915B-3D8531B6017C,Host topology commands>> | <<GUID-3EB1D90E-8D22-4477-A02A-9D2B13324230,Internet storage name service (iSNS) commands>> | <<GUID-1B7D7168-7D42-441B-BC79-669315F3CF76,ISCSI extension for RDMA (iSER) commands>> | <<GUID-E49300AD-80E8-49E0-8BE9-5DB821DF859F,ISCSI commands>> | <<GUID-290F45A5-58F5-437E-864C-01300EE5BC6B,Volume commands>> | <<GUID-DAE0DE7B-186A-477A-8671-DD165876B2AC,Volume group commands>>*
 * *Disk pool commands*
 +
-xref:../wombat/wombat-create-diskpool.adoc[Create disk pool]
+xref:../commands-a-z/create-diskpool.adoc[Create disk pool]
 +
-xref:../wombat/wombat-delete-diskpool.adoc[Delete disk pool]
+xref:../commands-a-z/delete-diskpool.adoc[Delete disk pool]
 +
-xref:../wombat/wombat-enable-diskpool-security.adoc[Enable disk pool security]
+xref:../commands-a-z/enable-diskpool-security.adoc[Enable disk pool security]
 +
-xref:../wombat/wombat-reduce-disk-pool-capacity.adoc[Reduce disk pool capacity]
+xref:../commands-a-z/reduce-disk-pool-capacity.adoc[Reduce disk pool capacity]
 +
-xref:../wombat/wombat-set-disk-pool.adoc[Set disk pool]
+xref:../commands-a-z/set-disk-pool.adoc[Set disk pool]
 +
-xref:../wombat/wombat-set-disk-pool-modify-disk-pool.adoc[Set disk pool (modify disk pool)]
+xref:../commands-a-z/set-disk-pool-modify-disk-pool.adoc[Set disk pool (modify disk pool)]
 +
-xref:../wombat/wombat-show-diskpool.adoc[Show disk pool]
+xref:../commands-a-z/show-diskpool.adoc[Show disk pool]
 +
-xref:../wombat/wombat-start-diskpool-fullprovisioning.adoc[Start Disk Pool Full Provisioning]
+xref:../commands-a-z/start-diskpool-fullprovisioning.adoc[Start Disk Pool Full Provisioning]
 +
-xref:../wombat/wombat-start-diskpool-locate.adoc[Start disk pool locate]
+xref:../commands-a-z/start-diskpool-locate.adoc[Start disk pool locate]
 +
-xref:../wombat/wombat-stop-diskpool-locate.adoc[Stop disk pool locate]
+xref:../commands-a-z/stop-diskpool-locate.adoc[Stop disk pool locate]
 
 * *Host topology commands*
 +
-xref:../wombat/wombat-create-host.adoc[Create host]
+xref:../commands-a-z/create-host.adoc[Create host]
 +
-xref:../wombat/wombat-create-hostgroup.adoc[Create host group]
+xref:../commands-a-z/create-hostgroup.adoc[Create host group]
 +
-link:../wombat/wombat-create-hostport.md#[Create host port]
+link:../commands-a-z/create-hostport.md#[Create host port]
 +
-xref:../wombat/wombat-delete-host.adoc[Delete host]
+xref:../commands-a-z/delete-host.adoc[Delete host]
 +
-xref:../wombat/wombat-delete-hostgroup.adoc[Delete host group]
+xref:../commands-a-z/delete-hostgroup.adoc[Delete host group]
 +
-xref:../wombat/wombat-delete-hostport.adoc[Delete host port]
+xref:../commands-a-z/delete-hostport.adoc[Delete host port]
 +
-xref:../wombat/wombat-set-host.adoc[Set host]
+xref:../commands-a-z/set-host.adoc[Set host]
 +
-link:../wombat/wombat-set-hostchannel.md#[Set host channel]
+link:../commands-a-z/set-hostchannel.md#[Set host channel]
 +
-xref:../wombat/wombat-set-hostgroup.adoc[Set host group]
+xref:../commands-a-z/set-hostgroup.adoc[Set host group]
 +
-xref:../wombat/wombat-set-hostport.adoc[Set host port]
+xref:../commands-a-z/set-hostport.adoc[Set host port]
 +
-xref:../wombat/wombat-show-allhostports.adoc[Show host ports]
+xref:../commands-a-z/show-allhostports.adoc[Show host ports]
 +
-link:../wombat/wombat-show-storagearray-hosttopology.md#[Show storage array host topology]
+link:../commands-a-z/show-storagearray-hosttopology.md#[Show storage array host topology]
 
 * *Internet storage name service (iSNS) commands*
 +
-link:../wombat/wombat-set-storagearray.md#[Set storage array]
+link:../commands-a-z/set-storagearray.md#[Set storage array]
 +
-xref:../wombat/wombat-set-storagearray-isnsregistration.adoc[Set storage array iSNS registration]
+xref:../commands-a-z/set-storagearray-isnsregistration.adoc[Set storage array iSNS registration]
 +
-link:../wombat/wombat-set-storagearray-isnsipv4configurationmethod.md#[Set storage array iSNS server IPv4 address]
+link:../commands-a-z/set-storagearray-isnsipv4configurationmethod.md#[Set storage array iSNS server IPv4 address]
 +
-link:../wombat/wombat-set-storagearray-isnsipv6address.md#[Set storage array iSNS server IPv6 address]
+link:../commands-a-z/set-storagearray-isnsipv6address.md#[Set storage array iSNS server IPv6 address]
 +
-link:../wombat/wombat-set-storagearray-isnslisteningport.md#[Set storage array iSNS server listening port]
+link:../commands-a-z/set-storagearray-isnslisteningport.md#[Set storage array iSNS server listening port]
 +
-link:../wombat/wombat-set-storagearray-isnsserverrefresh.md#[Set storage array iSNS server refresh]
+link:../commands-a-z/set-storagearray-isnsserverrefresh.md#[Set storage array iSNS server refresh]
 +
-link:../wombat/wombat-start-storagearray-isnsserverrefresh.md#[Start storage array iSNS server refresh]
+link:../commands-a-z/start-storagearray-isnsserverrefresh.md#[Start storage array iSNS server refresh]
 
 * *ISCSI extension for RDMA (iSER) commands*
 +
-xref:../wombat/wombat-reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline]
+xref:../commands-a-z/reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline]
 +
-xref:../wombat/wombat-save-storagearray-iserstatistics.adoc[Save storage array iSER statistics]
+xref:../commands-a-z/save-storagearray-iserstatistics.adoc[Save storage array iSER statistics]
 +
-xref:../wombat/wombat-set-isertarget.adoc[Set iSER target]
+xref:../commands-a-z/set-isertarget.adoc[Set iSER target]
 
 * *ISCSI commands*
 +
-xref:../wombat/wombat-create-iscsiinitiator.adoc[Create iSCSI initiator]
+xref:../commands-a-z/create-iscsiinitiator.adoc[Create iSCSI initiator]
 +
-xref:../wombat/wombat-delete-iscsiinitiator.adoc[Delete iSCSI initiator]
+xref:../commands-a-z/delete-iscsiinitiator.adoc[Delete iSCSI initiator]
 +
-link:../wombat/wombat-diagnose-controller-iscsihostport.md#[Diagnose controller iSCSI host cable]
+link:../commands-a-z/diagnose-controller-iscsihostport.md#[Diagnose controller iSCSI host cable]
 +
-link:../wombat/wombat-reset-storagearray-iscsistatsbaseline.md#[Reset storage array iSCSI baseline]
+link:../commands-a-z/reset-storagearray-iscsistatsbaseline.md#[Reset storage array iSCSI baseline]
 +
-link:../wombat/wombat-diagnose-controller-iscsihostport.md#[Save storage array iSCSI statistics]
+link:../commands-a-z/diagnose-controller-iscsihostport.md#[Save storage array iSCSI statistics]
 +
-link:../wombat/wombat-set-iscsiinitiator.md#[Set iSCSI initiator]
+link:../commands-a-z/set-iscsiinitiator.md#[Set iSCSI initiator]
 +
-xref:../wombat/wombat-set-iscsitarget.adoc[Set iSCSI target properties]
+xref:../commands-a-z/set-iscsitarget.adoc[Set iSCSI target properties]
 +
-xref:../wombat/wombat-show-iscsisessions.adoc[Show current iSCSI sessions]
+xref:../commands-a-z/show-iscsisessions.adoc[Show current iSCSI sessions]
 +
-link:../wombat/wombat-show-storagearray-iscsinegotiationdefaults.md#[Show storage array negotiation defaults]
+link:../commands-a-z/show-storagearray-iscsinegotiationdefaults.md#[Show storage array negotiation defaults]
 +
-link:../wombat/wombat-show-storagearray-unconfigurediscsiinitiators.md#[Show storage array unconfigured iSCSI initiators]
+link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.md#[Show storage array unconfigured iSCSI initiators]
 +
-link:../wombat/wombat-start-controller-iscsihostport-dhcprefresh.md#[Start iSCSI DHCP refresh]
+link:../commands-a-z/start-controller-iscsihostport-dhcprefresh.md#[Start iSCSI DHCP refresh]
 +
-link:../wombat/wombat-stop-storagearray-iscsisession.md#[Stop storage array iSCSI session]
+link:../commands-a-z/stop-storagearray-iscsisession.md#[Stop storage array iSCSI session]
 
 * *Volume commands*
 +
-xref:../wombat/wombat-check-volume-parity.adoc[Check volume parity]
+xref:../commands-a-z/check-volume-parity.adoc[Check volume parity]
 +
-xref:../wombat/wombat-create-mapping-volume.adoc[Create Volume Mapping]
+xref:../commands-a-z/create-mapping-volume.adoc[Create Volume Mapping]
 +
-xref:../wombat/wombat-clear-volume-reservations.adoc[Clear volume reservations]
+xref:../commands-a-z/clear-volume-reservations.adoc[Clear volume reservations]
 +
-xref:../wombat/wombat-clear-volume-unreadablesectors.adoc[Clear volume unreadable sectors]
+xref:../commands-a-z/clear-volume-unreadablesectors.adoc[Clear volume unreadable sectors]
 +
-xref:../wombat/wombat-create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
+xref:../commands-a-z/create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
 +
-xref:../wombat/wombat-create-raid-volume-free-extent-based-select.adoc[Create RAID volume (free extent based select)]
+xref:../commands-a-z/create-raid-volume-free-extent-based-select.adoc[Create RAID volume (free extent based select)]
 +
-xref:../wombat/wombat-create-raid-volume-manual-drive-select.adoc[Create RAID volume (manual drive select)]
+xref:../commands-a-z/create-raid-volume-manual-drive-select.adoc[Create RAID volume (manual drive select)]
 +
-xref:../wombat/wombat-create-volume-diskpool.adoc[Create volume in disk pool]
+xref:../commands-a-z/create-volume-diskpool.adoc[Create volume in disk pool]
 +
-xref:../wombat/wombat-delete-volume.adoc[Delete volume]
+xref:../commands-a-z/delete-volume.adoc[Delete volume]
 +
-xref:../wombat/wombat-delete-volume-from-disk-pool.adoc[Delete volume from disk pool]
+xref:../commands-a-z/delete-volume-from-disk-pool.adoc[Delete volume from disk pool]
 +
-xref:../wombat/wombat-start-increasevolumecapacity-volume.adoc[Increase capacity of volume in disk pool or volume group...]
+xref:../commands-a-z/start-increasevolumecapacity-volume.adoc[Increase capacity of volume in disk pool or volume group...]
 +
-xref:../wombat/wombat-start-volume-initialize.adoc[Initialize thin volume]
+xref:../commands-a-z/start-volume-initialize.adoc[Initialize thin volume]
 +
-xref:../wombat/wombat-recover-volume.adoc[Recover RAID volume]
+xref:../commands-a-z/recover-volume.adoc[Recover RAID volume]
 +
-xref:../wombat/wombat-remove-lunmapping.adoc[Remove volume LUN mapping]
+xref:../commands-a-z/remove-lunmapping.adoc[Remove volume LUN mapping]
 +
-xref:../wombat/wombat-repair-volume-parity.adoc[Repair volume parity]
+xref:../commands-a-z/repair-volume-parity.adoc[Repair volume parity]
 +
-xref:../wombat/wombat-repair-data-parity.adoc[Repair Data Parity]
+xref:../commands-a-z/repair-data-parity.adoc[Repair Data Parity]
 +
-xref:../wombat/wombat-set-thin-volume-attributes.adoc[Set thin volume attributes]
+xref:../commands-a-z/set-thin-volume-attributes.adoc[Set thin volume attributes]
 +
-xref:../wombat/wombat-set-volumes.adoc[Set volume attributes for a volume in a disk pool...]
+xref:../commands-a-z/set-volumes.adoc[Set volume attributes for a volume in a disk pool...]
 +
-xref:../wombat/wombat-set-volume-group-attributes-for-volume-in-a-volume-group.adoc[Set volume attributes for a volume in a volume group...]
+xref:../commands-a-z/set-volume-group-attributes-for-volume-in-a-volume-group.adoc[Set volume attributes for a volume in a volume group...]
 +
-xref:../wombat/wombat-set-volume-logicalunitnumber.adoc[Set volume mapping]
+xref:../commands-a-z/set-volume-logicalunitnumber.adoc[Set volume mapping]
 +
-xref:../wombat/wombat-show-volume.adoc[Show thin volume]
+xref:../commands-a-z/show-volume.adoc[Show thin volume]
 +
-xref:../wombat/wombat-show-volume-summary.adoc[Show volume]
+xref:../commands-a-z/show-volume-summary.adoc[Show volume]
 +
-xref:../wombat/wombat-show-volume-actionprogress.adoc[Show volume action progress]
+xref:../commands-a-z/show-volume-actionprogress.adoc[Show volume action progress]
 +
-xref:../wombat/wombat-show-volume-performancestats.adoc[Show volume performance statistics]
+xref:../commands-a-z/show-volume-performancestats.adoc[Show volume performance statistics]
 +
-xref:../wombat/wombat-show-volume-reservations.adoc[Show volume reservations]
+xref:../commands-a-z/show-volume-reservations.adoc[Show volume reservations]
 +
-xref:../wombat/wombat-start-volume-initialization.adoc[Start volume initialization]
+xref:../commands-a-z/start-volume-initialization.adoc[Start volume initialization]
 
 * *Volume group commands*
 +
-xref:../wombat/wombat-create-volumegroup.adoc[Create volume group]
+xref:../commands-a-z/create-volumegroup.adoc[Create volume group]
 +
-xref:../wombat/wombat-delete-volumegroup.adoc[Delete volume group]
+xref:../commands-a-z/delete-volumegroup.adoc[Delete volume group]
 +
-xref:../wombat/wombat-enable-volumegroup-security.adoc[Enable volume group security]
+xref:../commands-a-z/enable-volumegroup-security.adoc[Enable volume group security]
 +
-xref:../wombat/wombat-revive-volumegroup.adoc[Revive volume group]
+xref:../commands-a-z/revive-volumegroup.adoc[Revive volume group]
 +
-xref:../wombat/wombat-set-volumegroup.adoc[Set volume group]
+xref:../commands-a-z/set-volumegroup.adoc[Set volume group]
 +
-xref:../wombat/wombat-set-volumegroup-forcedstate.adoc[Set volume group forced state]
+xref:../commands-a-z/set-volumegroup-forcedstate.adoc[Set volume group forced state]
 +
-xref:../wombat/wombat-show-volumegroup.adoc[Show volume group]
+xref:../commands-a-z/show-volumegroup.adoc[Show volume group]
 +
-xref:../wombat/wombat-show-volumegroup-exportdependencies.adoc[Show volume group export dependencies]
+xref:../commands-a-z/show-volumegroup-exportdependencies.adoc[Show volume group export dependencies]
 +
-xref:../wombat/wombat-show-volumegroup-importdependencies.adoc[Show volume group import dependencies]
+xref:../commands-a-z/show-volumegroup-importdependencies.adoc[Show volume group import dependencies]
 +
-xref:../wombat/wombat-start-volumegroup-defragment.adoc[Start volume group defragment]
+xref:../commands-a-z/start-volumegroup-defragment.adoc[Start volume group defragment]
 +
-xref:../wombat/wombat-start-volumegroup-export.adoc[Start volume group export]
+xref:../commands-a-z/start-volumegroup-export.adoc[Start volume group export]
 +
-xref:../wombat/wombat-start-volumegroup-fullprovisioning.adoc[Start Volume Group Full Provisioning]
+xref:../commands-a-z/start-volumegroup-fullprovisioning.adoc[Start Volume Group Full Provisioning]
 +
 link:mongoose-learn-about-volume-group-migration.md#[Learn about volume group migration (CLI only)]
 +
-xref:../wombat/wombat-start-volumegroup-import.adoc[Start volume group import]
+xref:../commands-a-z/start-volumegroup-import.adoc[Start volume group import]
 +
-xref:../wombat/wombat-start-volumegroup-locate.adoc[Start volume group locate]
+xref:../commands-a-z/start-volumegroup-locate.adoc[Start volume group locate]
 +
-xref:../wombat/wombat-stop-volumegroup-locate.adoc[Stop volume group locate]
+xref:../commands-a-z/stop-volumegroup-locate.adoc[Stop volume group locate]

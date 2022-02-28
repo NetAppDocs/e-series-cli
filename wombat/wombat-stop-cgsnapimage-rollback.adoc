@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-stop-cgsnapimage-rollback.html
+permalink: commands-a-z/stop-cgsnapimage-rollback.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop cgSnapImage rollback command stops a rollback operation to member base volumes in a snapshot consistency group.'

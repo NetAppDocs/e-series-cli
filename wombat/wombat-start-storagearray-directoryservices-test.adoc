@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-storagearray-directoryservices-test.html
+permalink: commands-a-z/start-storagearray-directoryservices-test.html
 sidebar: sidebar
 keywords: 
 summary: 'The start storageArray directoryServices test command checks communication with all configured directory servers and validates the server domain configurations.'

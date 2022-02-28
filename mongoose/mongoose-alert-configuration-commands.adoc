@@ -1,5 +1,5 @@
 ---
-permalink: mongoose/mongoose-alert-configuration-commands.html
+permalink: commands-category/alert-configuration-commands.html
 sidebar: sidebar
 keywords: clear emailAlert configuration,clear syslog configuration,create snmpCommunity,create snmpTrapDestination,create storageArray syslog,delete emailAlert,delete snmpCommunity,delete snmpTrapDestination,delete storageArray syslog,delete syslog,set emailAlert,set event alert,set snmpCommunity,set snmpSystemVariables,set snmpTrapDestination trapReceiverIP,set storageArray syslog,set syslog,show allSnmpCommunities,show blockedEventAlertList,show emailAlert summary,show snmpSystemVariables,show storage array syslog configuration,show syslog summary,SMcli alertTest,start emailAlert test,start snmpTrapDestination,start storageArray syslog test,start syslog test
 summary: ''
@@ -11,66 +11,66 @@ summary: ''
 * *<<GUID-51B195C4-DD90-49EF-AB07-1C16B1B15090,Embedded SNMP configuration>> | <<GUID-98268323-EBA9-4E41-B257-B95014275BC1,Email alert configuration - E2700 or E5600 arrays>> | <<GUID-001C56F3-E87B-4307-93F8-EB218DB52396,SSD cache commands>> | <<GUID-1B7D7168-7D42-441B-BC79-669315F3CF76,Syslog configuration>>*
 * *Embedded SNMP configuration*
 +
-xref:../wombat/wombat-create-snmpcommunity.adoc[Register SNMP community]
+xref:../commands-a-z/create-snmpcommunity.adoc[Register SNMP community]
 +
-xref:../wombat/wombat-create-snmptrapdestination.adoc[Register SNMP trap destination]
+xref:../commands-a-z/create-snmptrapdestination.adoc[Register SNMP trap destination]
 +
-xref:../wombat/wombat-show-allsnmpcommunities.adoc[Show SNMP communities]
+xref:../commands-a-z/show-allsnmpcommunities.adoc[Show SNMP communities]
 +
-xref:../wombat/wombat-show-snmpsystemvariables.adoc[Show SNMP MIB II system group variables]
+xref:../commands-a-z/show-snmpsystemvariables.adoc[Show SNMP MIB II system group variables]
 +
-xref:../wombat/wombat-start-snmptrapdestination.adoc[Test SNMP trap destination]
+xref:../commands-a-z/start-snmptrapdestination.adoc[Test SNMP trap destination]
 +
-xref:../wombat/wombat-delete-snmpcommunity.adoc[Unregister SNMP community]
+xref:../commands-a-z/delete-snmpcommunity.adoc[Unregister SNMP community]
 +
-xref:../wombat/wombat-delete-snmptrapdestination.adoc[Unregister SNMP trap destination]
+xref:../commands-a-z/delete-snmptrapdestination.adoc[Unregister SNMP trap destination]
 +
-xref:../wombat/wombat-set-snmpcommunity.adoc[Update SNMP community]
+xref:../commands-a-z/set-snmpcommunity.adoc[Update SNMP community]
 +
-xref:../wombat/wombat-set-snmpsystemvariables.adoc[Update SNMP MIB II system group variables]
+xref:../commands-a-z/set-snmpsystemvariables.adoc[Update SNMP MIB II system group variables]
 +
-xref:../wombat/wombat-set-snmptrapdestination-trapreceiverip.adoc[Update SNMP trap destination]
+xref:../commands-a-z/set-snmptrapdestination-trapreceiverip.adoc[Update SNMP trap destination]
 
 * *Email alert configuration - E2700 or E5600 arrays*
 +
-xref:../wombat/wombat-set-emailalert.adoc[Configure email alert settings]
+xref:../commands-a-z/set-emailalert.adoc[Configure email alert settings]
 +
-xref:../wombat/wombat-set-event-alert.adoc[Set event alert filtering]
+xref:../commands-a-z/set-event-alert.adoc[Set event alert filtering]
 +
-xref:../wombat/wombat-show-blockedeventalertlist.adoc[Show blocked events]
+xref:../commands-a-z/show-blockedeventalertlist.adoc[Show blocked events]
 +
-xref:../wombat/wombat-smcli-alerttest.adoc[Test alerts]
+xref:../commands-a-z/smcli-alerttest.adoc[Test alerts]
 
 * *SSD cache commands*
 +
-xref:../wombat/wombat-clear-emailalert-configuration.adoc[Clear email alert configuration]
+xref:../commands-a-z/clear-emailalert-configuration.adoc[Clear email alert configuration]
 +
-xref:../wombat/wombat-set-emailalert.adoc[Configure email alert settings]
+xref:../commands-a-z/set-emailalert.adoc[Configure email alert settings]
 +
-xref:../wombat/wombat-delete-emailalert.adoc[Delete email alert recipient]
+xref:../commands-a-z/delete-emailalert.adoc[Delete email alert recipient]
 +
-xref:../wombat/wombat-show-emailalert-summary.adoc[Show email alert configuration]
+xref:../commands-a-z/show-emailalert-summary.adoc[Show email alert configuration]
 +
-xref:../wombat/wombat-start-emailalert-test.adoc[Test email alert configuration]
+xref:../commands-a-z/start-emailalert-test.adoc[Test email alert configuration]
 
 * *Syslog configuration*
 +
-xref:../wombat/wombat-clear-syslog-configuration.adoc[Clear syslog configuration]
+xref:../commands-a-z/clear-syslog-configuration.adoc[Clear syslog configuration]
 +
-xref:../wombat/wombat-set-syslog.adoc[Configure syslog settings]
+xref:../commands-a-z/set-syslog.adoc[Configure syslog settings]
 +
-xref:../wombat/wombat-create-storagearray-syslog.adoc[Create storage array syslog configuration]
+xref:../commands-a-z/create-storagearray-syslog.adoc[Create storage array syslog configuration]
 +
-xref:../wombat/wombat-delete-storagearray-syslog.adoc[Delete storage array syslog configuration]
+xref:../commands-a-z/delete-storagearray-syslog.adoc[Delete storage array syslog configuration]
 +
-xref:../wombat/wombat-delete-syslog.adoc[Delete syslog server]
+xref:../commands-a-z/delete-syslog.adoc[Delete syslog server]
 +
-xref:../wombat/wombat-show-storagearray-syslog.adoc[Display storage array syslog configuration]
+xref:../commands-a-z/show-storagearray-syslog.adoc[Display storage array syslog configuration]
 +
-xref:../wombat/wombat-show-syslog-summary.adoc[Show syslog configuration]
+xref:../commands-a-z/show-syslog-summary.adoc[Show syslog configuration]
 +
-xref:../wombat/wombat-start-storagearray-syslog-test.adoc[Start storage array syslog test]
+xref:../commands-a-z/start-storagearray-syslog-test.adoc[Start storage array syslog test]
 +
-xref:../wombat/wombat-start-syslog-test.adoc[Test syslog configuration]
+xref:../commands-a-z/start-syslog-test.adoc[Test syslog configuration]
 +
-xref:../wombat/wombat-set-storagearray-syslog.adoc[Update storage array syslog configuration]
+xref:../commands-a-z/set-storagearray-syslog.adoc[Update storage array syslog configuration]

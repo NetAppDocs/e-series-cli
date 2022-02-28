@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-storagearray-vaaienabled.html
+permalink: commands-a-z/set-storagearray-vaaienabled.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray vaaiEnabled command turns on or turns off VMware vStorage API Array Architecture \(VAAI\) for a storage array.'

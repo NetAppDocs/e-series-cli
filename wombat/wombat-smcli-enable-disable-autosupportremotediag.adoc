@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-smcli-enable-disable-autosupportremotediag.html
+permalink: commands-a-z/smcli-enable-disable-autosupportremotediag.html
 sidebar: sidebar
 keywords: 
 summary: 'The SMcli enable\|disable autoSupportRemoteDiag command turns on or turns off the AutoSupport Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely.'

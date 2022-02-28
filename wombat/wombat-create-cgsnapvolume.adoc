@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-create-cgsnapvolume.html
+permalink: commands-a-z/create-cgsnapvolume.html
 sidebar: sidebar
 keywords: 
 summary: 'The create cgSnapVolume command creates a snapshot volume of specific images in the base volumes in a consistency group.'

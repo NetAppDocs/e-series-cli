@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-storagearray-hostportstatistics.html
+permalink: commands-a-z/save-storagearray-hostportstatistics.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray hostPortStatistics command saves the storage array host port statistics.'

@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-alltrays-logfile.html
+permalink: commands-a-z/save-alltrays-logfile.html
 sidebar: sidebar
 keywords: 
 summary: 'The save allTrays logFile command saves the log sense data to a file.'

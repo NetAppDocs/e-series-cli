@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-remove-volumecopy-target.html
+permalink: commands-a-z/remove-volumecopy-target.html
 sidebar: sidebar
 keywords: 
 summary: 'The remove volumeCopy target command removes a volume copy pair.'

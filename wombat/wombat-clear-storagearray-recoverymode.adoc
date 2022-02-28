@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-clear-storagearray-recoverymode.html
+permalink: commands-a-z/clear-storagearray-recoverymode.html
 sidebar: sidebar
 keywords: 
 summary: 'The clear storageArray recoveryMode command forces a storage array to exit recovery mode.'

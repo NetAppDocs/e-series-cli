@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-start-volumegroup-export.html
+permalink: commands-a-z/start-volumegroup-export.html
 sidebar: sidebar
 keywords: 
 summary: 'The start volumeGroup export command moves a volume group into an Exported state.'
@@ -25,7 +25,7 @@ Then you can remove the drives that comprise the volume group and reinstall the 
 
 [CAUTION]
 ====
-Do not perform these steps without first performing the steps listed in xref:../mongoose/mongoose-learn-about-volume-group-migration.adoc[Learn about volume group migration.]
+Do not perform these steps without first performing the steps listed in xref:../commands-category/learn-about-volume-group-migration.adoc[Learn about volume group migration.]
 ====
 
 [NOTE]

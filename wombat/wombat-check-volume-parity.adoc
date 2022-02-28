@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-check-volume-parity.html
+permalink: commands-a-z/check-volume-parity.html
 sidebar: sidebar
 keywords: 
 summary: 'The check volume parity command checks a volume for parity and media errors, and then writes the results of the check to a file.'

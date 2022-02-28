@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-show-storagearray-iscsinegotiationdefaults.html
+permalink: commands-a-z/show-storagearray-iscsinegotiationdefaults.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray iscsiNegotiationDefaults command returns information about connection-level settings that are subject to initiator-target negotiation.'

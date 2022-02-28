@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-load-storagearray-dbmdatabase.html
+permalink: commands-a-z/load-storagearray-dbmdatabase.html
 sidebar: sidebar
 keywords: 
 summary: 'The load storageArray dbmDatabase command restores a Database Management \(DBM\) database image by retrieving the image from a file or from cache.'

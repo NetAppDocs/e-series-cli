@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-smcli-autosupportconfig.html
+permalink: commands-a-z/smcli-autosupportconfig.html
 sidebar: sidebar
 keywords: 
 summary: 'The SMcli -autoSupportConfig command sets up the delivery method for sending AutoSupport messages.'

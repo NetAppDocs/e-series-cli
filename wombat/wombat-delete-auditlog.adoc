@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-delete-auditlog.html
+permalink: commands-a-z/delete-auditlog.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete auditLog command deletes some or all of the records in the audit log.'

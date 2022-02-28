@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-clear-emailalert-configuration.html
+permalink: commands-a-z/clear-emailalert-configuration.html
 sidebar: sidebar
 keywords: 
 summary: 'The clear emailAlert configuration command clears the email alert configuration to default values.'

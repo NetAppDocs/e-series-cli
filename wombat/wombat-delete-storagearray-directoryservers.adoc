@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-delete-storagearray-directoryservers.html
+permalink: commands-a-z/delete-storagearray-directoryservers.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete storageArray directoryServers command allows you to delete one or more directory servers.'

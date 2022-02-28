@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-storagearray-sasphycounts.html
+permalink: commands-a-z/save-storagearray-sasphycounts.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray SASPHYCounts command saves the SAS physical layer \(SAS PHY\) counters to a file.'

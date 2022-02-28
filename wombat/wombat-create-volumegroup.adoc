@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-create-volumegroup.html
+permalink: commands-a-z/create-volumegroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The create volumeGroup command creates either a free-capacity volume group or a volume group with one volume when you enter a set of unassigned drives.'

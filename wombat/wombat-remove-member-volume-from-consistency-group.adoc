@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-remove-member-volume-from-consistency-group.html
+permalink: commands-a-z/remove-member-volume-from-consistency-group.html
 sidebar: sidebar
 keywords: 
 summary: 'The set consistencyGroup command removes a member volume from an existing snapshot consistency group.'

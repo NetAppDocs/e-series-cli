@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-revive-snapgroup.html
+permalink: commands-a-z/revive-snapgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The revive snapGroup command forces the specified snapshot group to the Optimal state.'

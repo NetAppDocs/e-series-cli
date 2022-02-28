@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-diagnose-controller-iscsihostport.html
+permalink: commands-a-z/diagnose-controller-iscsihostport.html
 sidebar: sidebar
 keywords: 
 summary: 'The diagnose controller iscsiHostPort command runs diagnostic tests on the copper cables between iSCSI host interface cards and a controller.'

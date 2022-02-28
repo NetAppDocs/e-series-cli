@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-storagearray-iscsistatistics.html
+permalink: commands-a-z/save-storagearray-iscsistatistics.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray iscsiStatistics command saves the iSCSI performance statistics of the storage array to a file.'

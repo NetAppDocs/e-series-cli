@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-controller-iscsihostport.html
+permalink: commands-a-z/set-controller-iscsihostport.html
 sidebar: sidebar
 keywords: 
 summary: 'The set controller iscsiHostPort command changes the network properties for a host port, including IPv4 and IPv6 properties, port speed, and maximum frame payload.'

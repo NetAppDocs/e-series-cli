@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-controller-dnsservers.html
+permalink: commands-a-z/set-controller-dnsservers.html
 sidebar: sidebar
 keywords: 
 summary: 'The set controller DNSServers command updates the Domain Name System \(DNS\) settings for a controller. DNS is used to resolve fully qualified domain names for the controllers and a Network Time Protocol \(NTP\) server.'

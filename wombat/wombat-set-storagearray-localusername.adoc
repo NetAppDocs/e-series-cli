@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-storagearray-localusername.html
+permalink: commands-a-z/set-storagearray-localusername.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray localUsername command and the set storageArray symbol command allow you to set a local user name password or a SYMbol password for a particular role.'

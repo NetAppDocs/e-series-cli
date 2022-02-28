@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-remove-asyncmirrorgroup.html
+permalink: commands-a-z/remove-asyncmirrorgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The remove asyncMirrorGroup command removes an orphaned mirrored pair volume on the storage array.'

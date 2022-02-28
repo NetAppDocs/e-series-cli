@@ -1,5 +1,5 @@
 ---
-permalink: alpaca/alpaca-naming-conventions.html
+permalink: get-started/naming-conventions.html
 sidebar: sidebar
 keywords: 
 summary: ''

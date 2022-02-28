@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-save-drivechannel-faultdiagnostics-file.html
+permalink: commands-a-z/save-drivechannel-faultdiagnostics-file.html
 sidebar: sidebar
 keywords: 
 summary: 'The save driveChannel faultDiagnostics file command saves the drive channel fault isolation diagnostic data that is returned from the start driveChannel faultDiagnostics command.'

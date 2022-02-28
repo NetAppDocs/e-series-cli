@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-syslog.html
+permalink: commands-a-z/set-syslog.html
 sidebar: sidebar
 keywords: 
 summary: 'The set syslog command configures the syslog alert information. You can configure the event monitor to send alerts to the syslog server whenever an alertable event occurs.'

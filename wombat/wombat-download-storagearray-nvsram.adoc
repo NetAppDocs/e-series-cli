@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-download-storagearray-nvsram.html
+permalink: commands-a-z/download-storagearray-nvsram.html
 sidebar: sidebar
 keywords: 
 summary: 'The download storageArray NVSRAM command downloads the NVSRAM values for the storage array controller.'

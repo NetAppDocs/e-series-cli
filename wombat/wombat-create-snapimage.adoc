@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-create-snapimage.html
+permalink: commands-a-z/create-snapimage.html
 sidebar: sidebar
 keywords: 
 summary: 'The create snapImage command creates a new snapshot image in one or more existing snapshot groups.'

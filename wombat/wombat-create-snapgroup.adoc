@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-create-snapgroup.html
+permalink: commands-a-z/create-snapgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The create snapGroup command creates a new snapshot group and the associated repository volume.'

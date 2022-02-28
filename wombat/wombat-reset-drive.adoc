@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-reset-drive.html
+permalink: commands-a-z/reset-drive.html
 sidebar: sidebar
 keywords: 
 summary: 'The reset drive command power cycles a drive in a volume group or a disk pool to aid in the recovery of a drive that is exhibiting inconsistent or non-optimal behavior.'

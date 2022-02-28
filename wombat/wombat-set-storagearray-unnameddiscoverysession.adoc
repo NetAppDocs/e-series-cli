@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-set-storagearray-unnameddiscoverysession.html
+permalink: commands-a-z/set-storagearray-unnameddiscoverysession.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray unnamedDiscoverySession command enables the storage array to participate in unnamed discovery sessions.'

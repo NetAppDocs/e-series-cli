@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-enable-storagearray-externalkeymanagement-file.html
+permalink: commands-a-z/enable-storagearray-externalkeymanagement-file.html
 sidebar: sidebar
 keywords: 
 summary: 'The enable storageArray externalKeyManagement file command enables external security key management for a storage array that has Full Disk Encryption drives, and creates the initial drive security key.'

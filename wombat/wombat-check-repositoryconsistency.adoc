@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-check-repositoryconsistency.html
+permalink: commands-a-z/check-repositoryconsistency.html
 sidebar: sidebar
 keywords: 
 summary: 'The check repositoryConsistency command produces a report based on analysis of the data in a specified object’s underlying repository volume.'

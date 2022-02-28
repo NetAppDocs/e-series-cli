@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-create-snmpcommunity.html
+permalink: commands-a-z/create-snmpcommunity.html
 sidebar: sidebar
 keywords: 
 summary: 'The create snmpCommunity command creates a new Simple Network Management Protocol \(SNMP\) community, community name string and registers the new community as a known entity to the SNMP agent. Any attempt to register a new community with the same name as that of an existing community is rejected and the firmware returns an error message.'

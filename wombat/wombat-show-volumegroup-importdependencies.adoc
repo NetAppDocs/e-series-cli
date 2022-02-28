@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-show-volumegroup-importdependencies.html
+permalink: commands-a-z/show-volumegroup-importdependencies.html
 sidebar: sidebar
 keywords: 
 summary: 'The show volumeGroup importDependencies command shows a list of dependencies for the drives in a volume group that you want to move from one storage array to a second storage array.'

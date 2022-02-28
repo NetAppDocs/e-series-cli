@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-create-volume-diskpool.html
+permalink: commands-a-z/create-volume-diskpool.html
 sidebar: sidebar
 keywords: 
 summary: 'The create volume diskPool command creates a new standard RAID volume or a thin volume in an existing disk pool.'

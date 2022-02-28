@@ -1,5 +1,5 @@
 ---
-permalink: wombat/wombat-show-cgsnapimage.html
+permalink: commands-a-z/show-cgsnapimage.html
 sidebar: sidebar
 keywords: 
 summary: 'The show CGSnapImage command shows one snapshot image or several snapshot images that are in one or more snapshot consistency groups.'
