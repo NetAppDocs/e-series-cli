@@ -1,154 +1,154 @@
 ---
 permalink: commands-category/security-commands.html
 sidebar: sidebar
-keywords: delete auditLog,save auditLog,clear storageArray configuration,clear storageArray recoveryMode,create storageArray directoryServer,create storageArray securityKey,delete controller caCertificate,delete storageArray directoryServers,delete storageArray loginBanner,delete storageArray trustedCertificate,disable storageArray externalKeyManagement file,download controller arrayManagementServerCertificate,download controller caCertificate,download controller caCertificate,download controller trustedCertificate,enable storageArray externalKeyManagement file,export storageArray securityKey passPhrase,import storageArray securityKey file,load storageArray,Look at Subtopics \(GrandChild\),remove storageArray directoryServer,reset controller arrayManagementSignedCertificate,save controller arrayManagementCSR,save controller arrayManagementSignedCertificate,save controller caCertificate,save storageArray dbmDatabase,save storageArray dbmValidatorInfo,save storageArray loginBanner,save storageArray trustedCertificate,set auditLog,set drive securityID,set storageArray directoryServer,set storageArray directoryServer roles,set storageArray externalKeyManagement,set storageArray loginBanner,set storageArray managementInterface,set storageArray passwordlength,set storageArray revocationCheckSettings,set storageArray securityKey,set storageArray symbol,set storageArray userSession,show auditLog summary,show controller arrayManagementSignedCertificate,show controller caCertificate,show emailAlert summary,show storageArray dbmDatabase,show storageArray revocationCheckSettings,show storageArray trustedCertificate summary,show storageArray userSession,start secureErase drive,start storageArray configDbDiagnostic,start storageArray directoryServices test,start storageArray externalKeyManagement test,start storageArray ocspUrl test,stop storageArray configDbDiagnostic,validate storageArray securityKey
+keywords:
 summary: ''
 ---
 = Security commands
 :icons: font
 :imagesdir: ./media/
 
-* *<<GUID-1B7D7168-7D42-441B-BC79-669315F3CF76,Audit log management commands>> | <<GUID-27DCA394-3C91-40A1-A594-FAE7FEC5B8A7,Authentication commands>> | <<GUID-27C06021-5149-4BA0-A720-7533B639BFA7,Certificate management commands for E2800 and E5700 controllers>> | <<GUID-A208CBF6-DD71-4A5A-B8ED-5E64F6AE0394,Certificate management commands for EF600>> | <<GUID-EBA877C0-0994-4B06-85E6-DE3DE83500A7,Database commands>> | <<GUID-7E900C55-6B57-4D27-9244-39E6A23FCEDC,Embedded External Key management commands>> | <<GUID-BAE3295A-70C8-4B8A-99B8-EBF26137A158,External Key Management commands related to certificates>>*
-* *Audit log management commands*
-+
-xref:../commands-a-z/delete-auditlog.adoc[Delete audit log records]
-+
-link:../commands-a-z/save-auditlog.md#[Save audit log records]
-+
-xref:../commands-a-z/set-auditlog.adoc[Set audit log settings]
-+
-xref:../commands-a-z/show-auditlog-configuration.adoc[Show audit log configuration]
-+
-xref:../commands-a-z/show-auditlog-summary.adoc[Show audit log summary]
 
-* *Authentication commands*
-+
-link:../commands-a-z/getting-started-with-aurthentication.md#[Getting started with authentication]
-+
-xref:../commands-a-z/create-storagearray-directoryserver.adoc[Create storage array directory server]
-+
-xref:../commands-a-z/delete-storagearray-directoryservers.adoc[Delete storage array directory server]
-+
-xref:../commands-a-z/delete-storagearray-loginbanner.adoc[Delete storage array login banner]
-+
-xref:../commands-a-z/show-storagearray-usersession.adoc[Display storage array user session]
-+
-xref:../commands-a-z/remove-storagearray-directoryserver.adoc[Remove storage array directory server role mapping]
-+
-xref:../commands-a-z/save-storagearray-loginbanner.adoc[Save storage array login banner]
-+
-xref:../commands-a-z/set-storagearray-directoryserver.adoc[Set storage array directory server]
-+
-xref:../commands-a-z/set-storagearray-directoryserver-roles.adoc[Set storage array directory server role mapping]
-+
-xref:../commands-a-z/set-storagearray-localusername.adoc[Set storage array local user password or SYMbol password]
-+
-xref:../commands-a-z/set-storagearray-loginbanner.adoc[Set storage array login banner]
-+
-xref:../commands-a-z/set-storagearray-managementinterface.adoc[Set storage array management interface]
-+
-xref:../commands-a-z/set-storagearray-passwordlength.adoc[Set storage array password length]
-+
-xref:../commands-a-z/set-storagearray-usersession.adoc[Set storage array user session]
-+
-xref:../commands-a-z/show-storagearray-directoryservices-summary.adoc[Show storage array directory services summary]
-+
-xref:../commands-a-z/start-storagearray-directoryservices-test.adoc[Test storage array directory server]
+== Audit log management commands
 
-* *Certificate management commands for E2800 and E5700 controllers*
-+
-xref:../commands-a-z/save-controller-arraymanagementcsr.adoc[Generate web server Certificate Signing Request (CSR)]
-+
-xref:../commands-a-z/download-controller-arraymanagementservercertificate.adoc[Install server signed certificate]
-+
-xref:../commands-a-z/download-controller-cacertificate.adoc[Install root/intermediate CA certificates]
-+
-xref:../commands-a-z/download-controller-trustedcertificate.adoc[Install trusted CA certificates]
-+
-xref:../commands-a-z/delete-storagearray-trustedcertificate.adoc[Remove installed trusted CA certificates]
-+
-link:../commands-a-z/delete-controller-cacertificate.md#[Remove installed signed certificate]
-+
-xref:../commands-a-z/reset-controller-arraymanagementsignedcertificate.adoc[Reset installed signed certificate]
-+
-xref:../commands-a-z/save-controller-cacertificate.adoc[Retrieve installed CA certificates]
-+
-xref:../commands-a-z/save-controller-arraymanagementsignedcertificate.adoc[Retrieve installed server certificate]
-+
-xref:../commands-a-z/save-storagearray-trustedcertificate.adoc[Retrieve installed trusted CA certificates]
-+
-xref:../commands-a-z/set-storagearray-revocationchecksettings.adoc[Set certificate revocation check settings]
-+
-xref:../commands-a-z/show-storagearray-revocationchecksettings.adoc[Show certificate revocation check settings]
-+
-xref:../commands-a-z/show-controller-cacertificate.adoc[Show installed root/intermediate CA certificates summary]
-+
-xref:../commands-a-z/show-storagearray-trustedcertificate-summary.adoc[Show installed trusted CA certificates summary]
-+
-xref:../commands-a-z/show-controller-arraymanagementsignedcertificate-summary.adoc[Show signed certificate]
-+
-link:../commands-a-z/start-storagearray-ocspresponderurl-test.md#[Start certificate revocation OCSP server test]
+link:../commands-a-z/delete-auditlog.adoc[Delete audit log records]
 
-* *Certificate management commands for EF600*
-+
-link:../commands-a-z/add-array-label.md#[Add array label]
-+
-link:../commands-a-z/remove-array-label.md#[Remove array label]
-+
-link:../commands-a-z/show-array-label.md#[Show array label]
+link:../commands-a-z/save-auditlog.adoc[Save audit log records]
 
-* *Database commands*
-+
-link:../commands-a-z/clear-storagearray-configuration.md#[Clear storage array configuration]
-+
-link:../commands-a-z/clear-storagearray-recoverymode.md#[Clear storage array recovery mode]
-+
-link:../commands-a-z/load-storagearray-dbmdatabase.md#[Load storage array DBM database]
-+
-link:../commands-a-z/save-storagearray-dbmdatabase.md#[Save storage array DBM database]
-+
-link:../commands-a-z/save-storagearray-dbmvalidatorinfo.md#[Save storage array DBM validator information file]
-+
-link:../commands-a-z/show-storagearray-dbmdatabase.md#[Show storage array DBM database]
-+
-link:../commands-a-z/start-storagearray-configdbdiagnostic.md#[Start storage array configuration database diagnostic]
-+
-link:../commands-a-z/stop-storagearray-configdbdiagnostic.md#[Stop storage array configuration diagnostic]
+link:../commands-a-z/set-auditlog.adoc[Set audit log settings]
 
-* *Embedded External Key Management commands*
-+
-xref:../commands-a-z/set-storagearray-externalkeymanagement.adoc[Getting started with external key management]
-+
-link:../commands-a-z/getting-started-with-internal-key-management.md#[Getting started with internal key management]
-+
-link:../commands-a-z/create-storagearray-securitykey.md#[Create storage array security key]
-+
-link:../commands-a-z/disable-storagearray-externalkeymanagement-file.md#[Disable external security key management]
-+
-link:../commands-a-z/enable-storagearray-externalkeymanagement-file.md#[Enable external security key management]
-+
-link:../commands-a-z/export-storagearray-securitykey.md#[Export storage array security key]
-+
-link:../commands-a-z/import-storagearray-securitykey-file.md#[Import storage array security key]
-+
-xref:../commands-a-z/set-storagearray-externalkeymanagement.adoc[Set FIPS drive security identifier]
-+
-xref:../commands-a-z/set-storagearray-externalkeymanagement.adoc[Set external key management settings]
-+
-xref:../commands-a-z/set-storagearray-externalkeymanagement.adoc[Set storage array security key]
-+
-xref:../commands-a-z/start-secureerase-drive.adoc[Start FDE secure drive erase]
-+
-xref:../commands-a-z/start-storagearray-externalkeymanagement-test.adoc[Test external key management communication]
-+
-link:../commands-a-z/validate-storagearray-securitykey.md#[Validate storage array security key]
+link:../commands-a-z/show-auditlog-configuration.adoc[Show audit log configuration]
 
-* *External Key Management commands related to certificates*
-+
-link:../commands-a-z/save-storagearray-keymanagementclientcsr.md#[Retrieve installed key management CSR request]
-+
-xref:../commands-a-z/download-storagearray-keymanagementcertificate.adoc[Install storage array external key management certificate]
-+
-xref:../commands-a-z/delete-storagearray-keymanagementcertificate.adoc[Remove installed external key management certificate]
-+
-xref:../commands-a-z/save-storagearray-keymanagementcertificate.adoc[Retrieve installed external key management certificate]
+link:../commands-a-z/show-auditlog-summary.adoc[Show audit log summary]
+
+== Authentication commands
+
+link:../commands-a-z/getting-started-with-aurthentication.adoc[Getting started with authentication]
+
+link:../commands-a-z/create-storagearray-directoryserver.adoc[Create storage array directory server]
+
+link:../commands-a-z/delete-storagearray-directoryservers.adoc[Delete storage array directory server]
+
+link:../commands-a-z/delete-storagearray-loginbanner.adoc[Delete storage array login banner]
+
+link:../commands-a-z/show-storagearray-usersession.adoc[Display storage array user session]
+
+link:../commands-a-z/remove-storagearray-directoryserver.adoc[Remove storage array directory server role mapping]
+
+link:../commands-a-z/save-storagearray-loginbanner.adoc[Save storage array login banner]
+
+link:../commands-a-z/set-storagearray-directoryserver.adoc[Set storage array directory server]
+
+link:../commands-a-z/set-storagearray-directoryserver-roles.adoc[Set storage array directory server role mapping]
+
+link:../commands-a-z/set-storagearray-localusername.adoc[Set storage array local user password or SYMbol password]
+
+link:../commands-a-z/set-storagearray-loginbanner.adoc[Set storage array login banner]
+
+link:../commands-a-z/set-storagearray-managementinterface.adoc[Set storage array management interface]
+
+link:../commands-a-z/set-storagearray-passwordlength.adoc[Set storage array password length]
+
+link:../commands-a-z/set-storagearray-usersession.adoc[Set storage array user session]
+
+link:../commands-a-z/show-storagearray-directoryservices-summary.adoc[Show storage array directory services summary]
+
+link:../commands-a-z/start-storagearray-directoryservices-test.adoc[Test storage array directory server]
+
+== Certificate management commands for E2800 and E5700 controllers
+
+link:../commands-a-z/save-controller-arraymanagementcsr.adoc[Generate web server Certificate Signing Request (CSR)]
+
+link:../commands-a-z/download-controller-arraymanagementservercertificate.adoc[Install server signed certificate]
+
+link:../commands-a-z/download-controller-cacertificate.adoc[Install root/intermediate CA certificates]
+
+link:../commands-a-z/download-controller-trustedcertificate.adoc[Install trusted CA certificates]
+
+link:../commands-a-z/delete-storagearray-trustedcertificate.adoc[Remove installed trusted CA certificates]
+
+link:../commands-a-z/delete-controller-cacertificate.adoc[Remove installed signed certificate]
+
+link:../commands-a-z/reset-controller-arraymanagementsignedcertificate.adoc[Reset installed signed certificate]
+
+link:../commands-a-z/save-controller-cacertificate.adoc[Retrieve installed CA certificates]
+
+link:../commands-a-z/save-controller-arraymanagementsignedcertificate.adoc[Retrieve installed server certificate]
+
+link:../commands-a-z/save-storagearray-trustedcertificate.adoc[Retrieve installed trusted CA certificates]
+
+link:../commands-a-z/set-storagearray-revocationchecksettings.adoc[Set certificate revocation check settings]
+
+link:../commands-a-z/show-storagearray-revocationchecksettings.adoc[Show certificate revocation check settings]
+
+link:../commands-a-z/show-controller-cacertificate.adoc[Show installed root/intermediate CA certificates summary]
+
+link:../commands-a-z/show-storagearray-trustedcertificate-summary.adoc[Show installed trusted CA certificates summary]
+
+link:../commands-a-z/show-controller-arraymanagementsignedcertificate-summary.adoc[Show signed certificate]
+
+link:../commands-a-z/start-storagearray-ocspresponderurl-test.adoc[Start certificate revocation OCSP server test]
+
+== Certificate management commands for EF600
+
+link:../commands-a-z/add-array-label.adoc[Add array label]
+
+link:../commands-a-z/remove-array-label.adoc[Remove array label]
+
+link:../commands-a-z/show-array-label.adoc[Show array label]
+
+== Database commands
+
+link:../commands-a-z/clear-storagearray-configuration.adoc[Clear storage array configuration]
+
+link:../commands-a-z/clear-storagearray-recoverymode.adoc[Clear storage array recovery mode]
+
+link:../commands-a-z/load-storagearray-dbmdatabase.adoc[Load storage array DBM database]
+
+link:../commands-a-z/save-storagearray-dbmdatabase.adoc[Save storage array DBM database]
+
+link:../commands-a-z/save-storagearray-dbmvalidatorinfo.adoc[Save storage array DBM validator information file]
+
+link:../commands-a-z/show-storagearray-dbmdatabase.adoc[Show storage array DBM database]
+
+link:../commands-a-z/start-storagearray-configdbdiagnostic.adoc[Start storage array configuration database diagnostic]
+
+link:../commands-a-z/stop-storagearray-configdbdiagnostic.adoc[Stop storage array configuration diagnostic]
+
+== Embedded External Key Management commands
+
+link:../commands-a-z/set-storagearray-externalkeymanagement.adoc[Getting started with external key management]
+
+link:../commands-a-z/getting-started-with-internal-key-management.adoc[Getting started with internal key management]
+
+link:../commands-a-z/create-storagearray-securitykey.adoc[Create storage array security key]
+
+link:../commands-a-z/disable-storagearray-externalkeymanagement-file.adoc[Disable external security key management]
+
+link:../commands-a-z/enable-storagearray-externalkeymanagement-file.adoc[Enable external security key management]
+
+link:../commands-a-z/export-storagearray-securitykey.adoc[Export storage array security key]
+
+link:../commands-a-z/import-storagearray-securitykey-file.adoc[Import storage array security key]
+
+link:../commands-a-z/set-storagearray-externalkeymanagement.adoc[Set FIPS drive security identifier]
+
+link:../commands-a-z/set-storagearray-externalkeymanagement.adoc[Set external key management settings]
+
+link:../commands-a-z/set-storagearray-externalkeymanagement.adoc[Set storage array security key]
+
+link:../commands-a-z/start-secureerase-drive.adoc[Start FDE secure drive erase]
+
+link:../commands-a-z/start-storagearray-externalkeymanagement-test.adoc[Test external key management communication]
+
+link:../commands-a-z/validate-storagearray-securitykey.adoc[Validate storage array security key]
+
+== External Key Management commands related to certificates
+
+link:../commands-a-z/save-storagearray-keymanagementclientcsr.adoc[Retrieve installed key management CSR request]
+
+link:../commands-a-z/download-storagearray-keymanagementcertificate.adoc[Install storage array external key management certificate]
+
+link:../commands-a-z/delete-storagearray-keymanagementcertificate.adoc[Remove installed external key management certificate]
+
+link:../commands-a-z/save-storagearray-keymanagementcertificate.adoc[Retrieve installed external key management certificate]

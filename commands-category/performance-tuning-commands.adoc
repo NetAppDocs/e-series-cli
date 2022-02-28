@@ -1,48 +1,48 @@
 ---
 permalink: commands-category/performance-tuning-commands.html
 sidebar: sidebar
-keywords: create ssdCache,delete ssdCache,resume ssdCache,save storageArray autoLoadBalanceStatistics file,set ssdCache,set ssdCache \(remove drives\),set ssdCache \(renaming\),set storageArray autoLoadBalancingEnable,set volume ssdCacheEnabled,show ssdCache,show ssdCache \(statistics\),start ssdCache locate,start ssdCache performanceModeling,stop ssdCache locate,stop ssdCache performanceModeling,suspend ssdCache
+keywords: 
 summary: ''
 ---
 = Performance tuning commands
 :icons: font
 :imagesdir: ./media/
 
-* *<<GUID-B4A7F384-EAC4-41AD-B25C-6BD0456F4118,Automatic load balancing commands>> | <<GUID-1B7D7168-7D42-441B-BC79-669315F3CF76,SSD cache commands>>*
-* *Automatic load balancing commands*
-+
-xref:../commands-a-z/save-storagearray-autoloadbalancestatistics-file.adoc[Save auto-load balancing statistics]
-+
-link:../commands-a-z/set-storagearray-autoloadbalancingenable.md#[Set storage array to enable or disable auto-load balancing]
 
-* *SSD cache commands*
-+
-xref:../commands-a-z/add-drives-to-ssd-cache.adoc[Add drives to SSD cache]
-+
-xref:../commands-a-z/change-ssd-cache-application-type.adoc[Change SSD cache application type]
-+
-xref:../commands-a-z/create-ssdcache.adoc[Create SSD cache]
-+
-xref:../commands-a-z/delete-ssdcache.adoc[Delete SSD cache]
-+
-xref:../commands-a-z/remove-drives-from-ssd-cache.adoc[Remove drives from SSD cache]
-+
-xref:../commands-a-z/rename-ssd-cache.adoc[Rename SSD cache]
-+
-xref:../commands-a-z/resume-ssdcache.adoc[Resume SSD cache]
-+
-xref:../commands-a-z/set-volume-ssdcacheenabled.adoc[Set SSD cache for a volume]
-+
-xref:../commands-a-z/show-ssd-cache.adoc[Show SSD cache]
-+
-xref:../commands-a-z/show-ssd-cache-statistics.adoc[Show SSD cache statistics]
-+
-xref:../commands-a-z/start-ssdcache-locate.adoc[Start SSD cache locate]
-+
-xref:../commands-a-z/start-ssdcache-performancemodeling.adoc[Start SSD cache performance modeling]
-+
-xref:../commands-a-z/stop-ssdcache-locate.adoc[Stop SSD cache locate]
-+
-xref:../commands-a-z/stop-ssdcache-performancemodeling.adoc[Stop SSD cache performance modeling]
-+
-xref:../commands-a-z/suspend-ssdcache.adoc[Suspend SSD cache]
+== Automatic load balancing commands
+
+link:../commands-a-z/save-storagearray-autoloadbalancestatistics-file.adoc[Save auto-load balancing statistics]
+
+link:../commands-a-z/set-storagearray-autoloadbalancingenable.adoc[Set storage array to enable or disable auto-load balancing]
+
+== SSD cache commands
+
+link:../commands-a-z/add-drives-to-ssd-cache.adoc[Add drives to SSD cache]
+
+link:../commands-a-z/change-ssd-cache-application-type.adoc[Change SSD cache application type]
+
+link:../commands-a-z/create-ssdcache.adoc[Create SSD cache]
+
+link:../commands-a-z/delete-ssdcache.adoc[Delete SSD cache]
+
+link:../commands-a-z/remove-drives-from-ssd-cache.adoc[Remove drives from SSD cache]
+
+link:../commands-a-z/rename-ssd-cache.adoc[Rename SSD cache]
+
+link:../commands-a-z/resume-ssdcache.adoc[Resume SSD cache]
+
+link:../commands-a-z/set-volume-ssdcacheenabled.adoc[Set SSD cache for a volume]
+
+link:../commands-a-z/show-ssd-cache.adoc[Show SSD cache]
+
+link:../commands-a-z/show-ssd-cache-statistics.adoc[Show SSD cache statistics]
+
+link:../commands-a-z/start-ssdcache-locate.adoc[Start SSD cache locate]
+
+link:../commands-a-z/start-ssdcache-performancemodeling.adoc[Start SSD cache performance modeling]
+
+link:../commands-a-z/stop-ssdcache-locate.adoc[Stop SSD cache locate]
+
+link:../commands-a-z/stop-ssdcache-performancemodeling.adoc[Stop SSD cache performance modeling]
+
+link:../commands-a-z/suspend-ssdcache.adoc[Suspend SSD cache]

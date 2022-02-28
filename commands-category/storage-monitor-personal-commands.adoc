@@ -1,122 +1,120 @@
 ---
 permalink: commands-category/storage-monitor-personal-commands.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Storage monitor personnel commands
 :icons: font
 :imagesdir: ./media/
 
-[.lead]
-* *<<GUID-A2BE532D-A821-4B95-8238-492C36D9AAB3,d-show r>> | <<GUID-BB32F0FF-CA74-4EA5-977A-B442FC2EB098,show s-show v>>*
 
-xref:../commands-a-z/show-storagearray-usersession.adoc[Display storage array user session]
+link:../commands-a-z/show-storagearray-usersession.adoc[Display storage array user session]
 
-xref:../commands-a-z/save-storagearray-loginbanner.adoc[Save storage array login banner]
+link:../commands-a-z/save-storagearray-loginbanner.adoc[Save storage array login banner]
 
-xref:../commands-a-z/set-session-erroraction.adoc[Set session]
+link:../commands-a-z/set-session-erroraction.adoc[Set session]
 
-xref:../commands-a-z/set-storagearray-localusername.adoc[Set storage array local user password or SYMbol password]
+link:../commands-a-z/set-storagearray-localusername.adoc[Set storage array local user password or SYMbol password]
 
-xref:../commands-a-z/show-asyncmirrorgroup-synchronizationprogress.adoc[Show asynchronous mirror group synchronization progress]
+link:../commands-a-z/show-asyncmirrorgroup-synchronizationprogress.adoc[Show asynchronous mirror group synchronization progress]
 
-xref:../commands-a-z/show-asyncmirrorgroup-summary.adoc[Show asynchronous mirror groups]
+link:../commands-a-z/show-asyncmirrorgroup-summary.adoc[Show asynchronous mirror groups]
 
-xref:../commands-a-z/show-storagearray-autosupport.adoc[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
+link:../commands-a-z/show-storagearray-autosupport.adoc[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
 
-xref:../commands-a-z/show-consistencygroup.adoc[Show consistency group]
+link:../commands-a-z/show-consistencygroup.adoc[Show consistency group]
 
-xref:../commands-a-z/show-cgsnapimage.adoc[Show consistency group snapshot image]
+link:../commands-a-z/show-cgsnapimage.adoc[Show consistency group snapshot image]
 
-xref:../commands-a-z/show-controller.adoc[Show controller]
+link:../commands-a-z/show-controller.adoc[Show controller]
 
-xref:../commands-a-z/show-controller-nvsram.adoc[Show controller NVSRAM]
+link:../commands-a-z/show-controller-nvsram.adoc[Show controller NVSRAM]
 
-xref:../commands-a-z/show-iscsisessions.adoc[Show current iSCSI sessions]
+link:../commands-a-z/show-iscsisessions.adoc[Show current iSCSI sessions]
 
-xref:../commands-a-z/show-diskpool.adoc[Show disk pool]
+link:../commands-a-z/show-diskpool.adoc[Show disk pool]
 
-xref:../commands-a-z/show-alldrives.adoc[Show drive]
+link:../commands-a-z/show-alldrives.adoc[Show drive]
 
-xref:../commands-a-z/show-drivechannel-stats.adoc[Show drive channel statistics]
+link:../commands-a-z/show-drivechannel-stats.adoc[Show drive channel statistics]
 
-xref:../commands-a-z/show-alldrives-downloadprogress.adoc[Show drive download progress]
+link:../commands-a-z/show-alldrives-downloadprogress.adoc[Show drive download progress]
 
-xref:../commands-a-z/show-alldrives-performancestats.adoc[Show drive performance statistics]
+link:../commands-a-z/show-alldrives-performancestats.adoc[Show drive performance statistics]
 
-xref:../commands-a-z/show-emailalert-summary.adoc[Show email alert configuration]
+link:../commands-a-z/show-emailalert-summary.adoc[Show email alert configuration]
 
-xref:../commands-a-z/show-allhostports.adoc[Show host ports]
+link:../commands-a-z/show-allhostports.adoc[Show host ports]
 
-xref:../commands-a-z/show-replaceabledrives.adoc[Show replaceable drives]
+link:../commands-a-z/show-replaceabledrives.adoc[Show replaceable drives]
 
-xref:../commands-a-z/show-snapgroup.adoc[Show snapshot group]
+link:../commands-a-z/show-snapgroup.adoc[Show snapshot group]
 
-xref:../commands-a-z/show-snapimage.adoc[Show snapshot image]
+link:../commands-a-z/show-snapimage.adoc[Show snapshot image]
 
-xref:../commands-a-z/show-snapvolume.adoc[Show snapshot volumes]
+link:../commands-a-z/show-snapvolume.adoc[Show snapshot volumes]
 
-xref:../commands-a-z/show-allsnmpcommunities.adoc[Show SNMP communities]
+link:../commands-a-z/show-allsnmpcommunities.adoc[Show SNMP communities]
 
-xref:../commands-a-z/show-snmpsystemvariables.adoc[Show SNMP MIB II system group variables]
+link:../commands-a-z/show-snmpsystemvariables.adoc[Show SNMP MIB II system group variables]
 
-xref:../commands-a-z/show-ssd-cache.adoc[Show SSD cache]
+link:../commands-a-z/show-ssd-cache.adoc[Show SSD cache]
 
-xref:../commands-a-z/show-ssd-cache-statistics.adoc[Show SSD cache statistics]
+link:../commands-a-z/show-ssd-cache-statistics.adoc[Show SSD cache statistics]
 
-xref:../commands-a-z/show-storagearray.adoc[Show storage array]
+link:../commands-a-z/show-storagearray.adoc[Show storage array]
 
-xref:../commands-a-z/show-storagearray-autoconfiguration.adoc[Show storage array auto configuration]
+link:../commands-a-z/show-storagearray-autoconfiguration.adoc[Show storage array auto configuration]
 
-xref:../commands-a-z/show-storagearray-controllerhealthimage.adoc[Show storage array controller health image]
+link:../commands-a-z/show-storagearray-controllerhealthimage.adoc[Show storage array controller health image]
 
-xref:../commands-a-z/show-storagearray-dbmdatabase.adoc[Show storage array DBM database]
+link:../commands-a-z/show-storagearray-dbmdatabase.adoc[Show storage array DBM database]
 
-xref:../commands-a-z/show-storagearray-hostconnectivityreporting.adoc[Show storage array host connectivity reporting]
+link:../commands-a-z/show-storagearray-hostconnectivityreporting.adoc[Show storage array host connectivity reporting]
 
-xref:../commands-a-z/show-storagearray-hosttopology.adoc[Show storage array host topology]
+link:../commands-a-z/show-storagearray-hosttopology.adoc[Show storage array host topology]
 
-xref:../commands-a-z/show-storagearray-lunmappings.adoc[Show storage array LUN mappings]
+link:../commands-a-z/show-storagearray-lunmappings.adoc[Show storage array LUN mappings]
 
-xref:../commands-a-z/show-storagearray-iscsinegotiationdefaults.adoc[Show storage array negotiation defaults]
+link:../commands-a-z/show-storagearray-iscsinegotiationdefaults.adoc[Show storage array negotiation defaults]
 
-xref:../commands-a-z/show-storagearray-odxsetting.adoc[Show storage array ODX setting]
+link:../commands-a-z/show-storagearray-odxsetting.adoc[Show storage array ODX setting]
 
-xref:../commands-a-z/show-storagearray-powerinfo.adoc[Show storage array power information]
+link:../commands-a-z/show-storagearray-powerinfo.adoc[Show storage array power information]
 
-xref:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.adoc[Show storage array unconfigured iSCSI initiators]
+link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.adoc[Show storage array unconfigured iSCSI initiators]
 
-xref:../commands-a-z/show-storagearray-unreadablesectors.adoc[Show storage array unreadable sectors]
+link:../commands-a-z/show-storagearray-unreadablesectors.adoc[Show storage array unreadable sectors]
 
-xref:../commands-a-z/show-textstring.adoc[Show string]
+link:../commands-a-z/show-textstring.adoc[Show string]
 
-xref:../commands-a-z/show-syncmirror-candidates.adoc[Show synchronous mirroring volume candidates]
+link:../commands-a-z/show-syncmirror-candidates.adoc[Show synchronous mirroring volume candidates]
 
-xref:../commands-a-z/show-syncmirror-synchronizationprogress.adoc[Show synchronous mirroring volume synchronization progress]
+link:../commands-a-z/show-syncmirror-synchronizationprogress.adoc[Show synchronous mirroring volume synchronization progress]
 
-xref:../commands-a-z/show-syslog-summary.adoc[Show syslog configuration]
+link:../commands-a-z/show-syslog-summary.adoc[Show syslog configuration]
 
-xref:../commands-a-z/show-volume.adoc[Show thin volume]
+link:../commands-a-z/show-volume.adoc[Show thin volume]
 
-xref:../commands-a-z/show-storagearray-unconfiguredinitiators.adoc[Show unconfigured initiators]
+link:../commands-a-z/show-storagearray-unconfiguredinitiators.adoc[Show unconfigured initiators]
 
-xref:../commands-a-z/show-volume-summary.adoc[Show volume]
+link:../commands-a-z/show-volume-summary.adoc[Show volume]
 
-xref:../commands-a-z/show-volume-actionprogress.adoc[Show volume action progress]
+link:../commands-a-z/show-volume-actionprogress.adoc[Show volume action progress]
 
-xref:../commands-a-z/show-volumecopy.adoc[Show volume copy]
+link:../commands-a-z/show-volumecopy.adoc[Show volume copy]
 
-xref:../commands-a-z/show-volumecopy-sourcecandidates.adoc[Show volume copy source candidates]
+link:../commands-a-z/show-volumecopy-sourcecandidates.adoc[Show volume copy source candidates]
 
-xref:../commands-a-z/show-volumecopy-source-targetcandidates.adoc[Show volume copy target candidates]
+link:../commands-a-z/show-volumecopy-source-targetcandidates.adoc[Show volume copy target candidates]
 
-xref:../commands-a-z/show-volumegroup.adoc[Show volume group]
+link:../commands-a-z/show-volumegroup.adoc[Show volume group]
 
-xref:../commands-a-z/show-volumegroup-exportdependencies.adoc[Show volume group export dependencies]
+link:../commands-a-z/show-volumegroup-exportdependencies.adoc[Show volume group export dependencies]
 
-xref:../commands-a-z/show-volumegroup-importdependencies.adoc[Show volume group import dependencies]
+link:../commands-a-z/show-volumegroup-importdependencies.adoc[Show volume group import dependencies]
 
-xref:../commands-a-z/show-volume-performancestats.adoc[Show volume performance statistics]
+link:../commands-a-z/show-volume-performancestats.adoc[Show volume performance statistics]
 
-xref:../commands-a-z/show-volume-reservations.adoc[Show volume reservations]
+link:../commands-a-z/show-volume-reservations.adoc[Show volume reservations]

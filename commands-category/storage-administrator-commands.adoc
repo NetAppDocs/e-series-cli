@@ -1,720 +1,718 @@
 ---
 permalink: commands-category/storage-administrator-commands.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Storage administrators commands
 :icons: font
 :imagesdir: ./media/
 
-[.lead]
-* *<<GUID-3AEE442D-5ED4-4D6E-8070-1BC0F0190ED2,A-D>> | <<SECTION_0AC7272460E74CBF89DB78327F7C38DC,E-R>> | <<SECTION_4F1731DFB1B64D06BB8D01E6308BEF07,S-U>>*
 
-xref:../commands-a-z/activate-asynchronous-mirroring.adoc[Activate asynchronous mirroring]
+link:../commands-a-z/activate-asynchronous-mirroring.adoc[Activate asynchronous mirroring]
 
-xref:../commands-a-z/activate-synchronous-mirroring.adoc[Activate Synchronous Mirroring]
+link:../commands-a-z/activate-synchronous-mirroring.adoc[Activate Synchronous Mirroring]
 
-xref:../commands-a-z/add-drives-to-ssd-cache.adoc[Add drives to SSD cache]
+link:../commands-a-z/add-drives-to-ssd-cache.adoc[Add drives to SSD cache]
 
-xref:../commands-a-z/set-consistencygroup-addcgmembervolume.adoc[Add member to consistency group]
+link:../commands-a-z/set-consistencygroup-addcgmembervolume.adoc[Add member to consistency group]
 
-xref:../commands-a-z/add-volume-asyncmirrorgroup.adoc[Add volume to asynchronous mirror group]
+link:../commands-a-z/add-volume-asyncmirrorgroup.adoc[Add volume to asynchronous mirror group]
 
-xref:../commands-a-z/autoconfigure-storagearray.adoc[Autoconfigure storage array]
+link:../commands-a-z/autoconfigure-storagearray.adoc[Autoconfigure storage array]
 
-xref:../commands-a-z/autoconfigure-storagearray-hotspares.adoc[Autoconfigure storage array hot spares]
+link:../commands-a-z/autoconfigure-storagearray-hotspares.adoc[Autoconfigure storage array hot spares]
 
-xref:../commands-a-z/stop-asyncmirrorgroup-rolechange.adoc[Cancel asynchronous mirror group role reversal]
+link:../commands-a-z/stop-asyncmirrorgroup-rolechange.adoc[Cancel asynchronous mirror group role reversal]
 
-xref:../commands-a-z/smcli-autosupportlog.adoc[Capture or view an AutoSupport log]
+link:../commands-a-z/smcli-autosupportlog.adoc[Capture or view an AutoSupport log]
 
-xref:../commands-a-z/change-ssd-cache-application-type.adoc[Change SSD cache application type]
+link:../commands-a-z/change-ssd-cache-application-type.adoc[Change SSD cache application type]
 
-xref:../commands-a-z/check-asyncmirrorgroup-repositoryconsistency.adoc[Check asynchronous mirror group consistency]
+link:../commands-a-z/check-asyncmirrorgroup-repositoryconsistency.adoc[Check asynchronous mirror group consistency]
 
-xref:../commands-a-z/check-repositoryconsistency.adoc[Check repository consistency]
+link:../commands-a-z/check-repositoryconsistency.adoc[Check repository consistency]
 
-xref:../commands-a-z/check-storagearray-connectivity.adoc[Check storage array connectivity]
+link:../commands-a-z/check-storagearray-connectivity.adoc[Check storage array connectivity]
 
-xref:../commands-a-z/check-syncmirror.adoc[Check synchronous mirroring status]
+link:../commands-a-z/check-syncmirror.adoc[Check synchronous mirroring status]
 
-xref:../commands-a-z/check-volume-parity.adoc[Check volume parity]
+link:../commands-a-z/check-volume-parity.adoc[Check volume parity]
 
-xref:../commands-a-z/clear-asyncmirrorfault.adoc[Clear asynchronous mirroring fault]
+link:../commands-a-z/clear-asyncmirrorfault.adoc[Clear asynchronous mirroring fault]
 
-xref:../commands-a-z/clear-alldrivechannels-stats.adoc[Clear drive channel statistics]
+link:../commands-a-z/clear-alldrivechannels-stats.adoc[Clear drive channel statistics]
 
-xref:../commands-a-z/clear-emailalert-configuration.adoc[Clear email alert configuration]
+link:../commands-a-z/clear-emailalert-configuration.adoc[Clear email alert configuration]
 
-xref:../commands-a-z/clear-storagearray-configuration.adoc[Clear storage array configuration]
+link:../commands-a-z/clear-storagearray-configuration.adoc[Clear storage array configuration]
 
-xref:../commands-a-z/clear-storagearray-eventlog.adoc[Clear storage array event log]
+link:../commands-a-z/clear-storagearray-eventlog.adoc[Clear storage array event log]
 
-xref:../commands-a-z/clear-storagearray-firmwarependingarea.adoc[Clear storage array firmware pending area]
+link:../commands-a-z/clear-storagearray-firmwarependingarea.adoc[Clear storage array firmware pending area]
 
-xref:../commands-a-z/clear-storagearray-recoverymode.adoc[Clear storage array recovery mode]
+link:../commands-a-z/clear-storagearray-recoverymode.adoc[Clear storage array recovery mode]
 
-xref:../commands-a-z/clear-syslog-configuration.adoc[Clear syslog configuration]
+link:../commands-a-z/clear-syslog-configuration.adoc[Clear syslog configuration]
 
-xref:../commands-a-z/clear-volume-reservations.adoc[Clear volume reservations]
+link:../commands-a-z/clear-volume-reservations.adoc[Clear volume reservations]
 
-xref:../commands-a-z/clear-volume-unreadablesectors.adoc[Clear volume unreadable sectors]
+link:../commands-a-z/clear-volume-unreadablesectors.adoc[Clear volume unreadable sectors]
 
-xref:../commands-a-z/set-emailalert.adoc[Configure email alert settings]
+link:../commands-a-z/set-emailalert.adoc[Configure email alert settings]
 
-xref:../commands-a-z/set-syslog.adoc[Configure syslog settings]
+link:../commands-a-z/set-syslog.adoc[Configure syslog settings]
 
-xref:../commands-a-z/create-asyncmirrorgroup.adoc[Create asynchronous mirror group]
+link:../commands-a-z/create-asyncmirrorgroup.adoc[Create asynchronous mirror group]
 
-xref:../commands-a-z/create-consistencygroup.adoc[Create consistency group]
+link:../commands-a-z/create-consistencygroup.adoc[Create consistency group]
 
-xref:../commands-a-z/create-cgsnapimage-consistencygroup.adoc[Create consistency group snapshot image]
+link:../commands-a-z/create-cgsnapimage-consistencygroup.adoc[Create consistency group snapshot image]
 
-xref:../commands-a-z/create-cgsnapvolume.adoc[Create consistency group snapshot volume]
+link:../commands-a-z/create-cgsnapvolume.adoc[Create consistency group snapshot volume]
 
-xref:../commands-a-z/create-mapping-cgsnapvolume.adoc[Create consistency group snapshot volume mapping]
+link:../commands-a-z/create-mapping-cgsnapvolume.adoc[Create consistency group snapshot volume mapping]
 
-xref:../commands-a-z/create-diskpool.adoc[Create disk pool]
+link:../commands-a-z/create-diskpool.adoc[Create disk pool]
 
-xref:../commands-a-z/create-host.adoc[Create host]
+link:../commands-a-z/create-host.adoc[Create host]
 
-xref:../commands-a-z/create-hostgroup.adoc[Create host group]
+link:../commands-a-z/create-hostgroup.adoc[Create host group]
 
-xref:../commands-a-z/create-hostport.adoc[Create host port]
+link:../commands-a-z/create-hostport.adoc[Create host port]
 
-xref:../commands-a-z/create-initiator.adoc[Create initiator]
+link:../commands-a-z/create-initiator.adoc[Create initiator]
 
-xref:../commands-a-z/create-iscsiinitiator.adoc[Create iSCSI initiator]
+link:../commands-a-z/create-iscsiinitiator.adoc[Create iSCSI initiator]
 
-xref:../commands-a-z/create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
+link:../commands-a-z/create-raid-volume-automatic-drive-select.adoc[Create RAID volume (automatic drive select)]
 
-xref:../commands-a-z/create-raid-volume-free-extent-based-select.adoc[Create RAID volume (free extent based select)]
+link:../commands-a-z/create-raid-volume-free-extent-based-select.adoc[Create RAID volume (free extent based select)]
 
-xref:../commands-a-z/create-raid-volume-manual-drive-select.adoc[Create RAID volume (manual drive select)]
+link:../commands-a-z/create-raid-volume-manual-drive-select.adoc[Create RAID volume (manual drive select)]
 
-xref:../commands-a-z/create-read-only-snapshot-volume.adoc[Create read-only snapshot volume]
+link:../commands-a-z/create-read-only-snapshot-volume.adoc[Create read-only snapshot volume]
 
-xref:../commands-a-z/create-snapgroup.adoc[Create snapshot group]
+link:../commands-a-z/create-snapgroup.adoc[Create snapshot group]
 
-xref:../commands-a-z/create-snapimage.adoc[Create snapshot image]
+link:../commands-a-z/create-snapimage.adoc[Create snapshot image]
 
-xref:../commands-a-z/create-snapshot-volume.adoc[Create snapshot volume]
+link:../commands-a-z/create-snapshot-volume.adoc[Create snapshot volume]
 
-xref:../commands-a-z/create-ssdcache.adoc[Create SSD cache]
+link:../commands-a-z/create-ssdcache.adoc[Create SSD cache]
 
-xref:../commands-a-z/create-syncmirror.adoc[Create synchronous mirroring]
+link:../commands-a-z/create-syncmirror.adoc[Create synchronous mirroring]
 
-xref:../commands-a-z/create-volumecopy.adoc[Create volume copy]
+link:../commands-a-z/create-volumecopy.adoc[Create volume copy]
 
-xref:../commands-a-z/create-volumegroup.adoc[Create volume group]
+link:../commands-a-z/create-volumegroup.adoc[Create volume group]
 
-xref:../commands-a-z/create-volume-diskpool.adoc[Create volume in disk pool]
+link:../commands-a-z/create-volume-diskpool.adoc[Create volume in disk pool]
 
-xref:../commands-a-z/deactivate-storagearray.adoc[Deactivate asynchronous mirroring]
+link:../commands-a-z/deactivate-storagearray.adoc[Deactivate asynchronous mirroring]
 
-xref:../commands-a-z/deactivate-storagearray-feature.adoc[Deactivate synchronous mirroring]
+link:../commands-a-z/deactivate-storagearray-feature.adoc[Deactivate synchronous mirroring]
 
-xref:../commands-a-z/delete-asyncmirrorgroup.adoc[Delete asynchronous mirror group]
+link:../commands-a-z/delete-asyncmirrorgroup.adoc[Delete asynchronous mirror group]
 
-xref:../commands-a-z/delete-consistencygroup.adoc[Delete consistency group]
+link:../commands-a-z/delete-consistencygroup.adoc[Delete consistency group]
 
-xref:../commands-a-z/delete-cgsnapimage-consistencygroup.adoc[Delete consistency group snapshot image]
+link:../commands-a-z/delete-cgsnapimage-consistencygroup.adoc[Delete consistency group snapshot image]
 
-xref:../commands-a-z/delete-sgsnapvolume.adoc[Delete consistency group snapshot volume]
+link:../commands-a-z/delete-sgsnapvolume.adoc[Delete consistency group snapshot volume]
 
-xref:../commands-a-z/delete-diskpool.adoc[Delete disk pool]
+link:../commands-a-z/delete-diskpool.adoc[Delete disk pool]
 
-xref:../commands-a-z/delete-emailalert.adoc[Delete email alert recipient]
+link:../commands-a-z/delete-emailalert.adoc[Delete email alert recipient]
 
-xref:../commands-a-z/delete-host.adoc[Delete host]
+link:../commands-a-z/delete-host.adoc[Delete host]
 
-xref:../commands-a-z/delete-hostgroup.adoc[Delete host group]
+link:../commands-a-z/delete-hostgroup.adoc[Delete host group]
 
-xref:../commands-a-z/delete-hostport.adoc[Delete host port]
+link:../commands-a-z/delete-hostport.adoc[Delete host port]
 
-xref:../commands-a-z/delete-initiator.adoc[Delete initiator]
+link:../commands-a-z/delete-initiator.adoc[Delete initiator]
 
-xref:../commands-a-z/delete-iscsiinitiator.adoc[Delete iSCSI initiator]
+link:../commands-a-z/delete-iscsiinitiator.adoc[Delete iSCSI initiator]
 
-xref:../commands-a-z/delete-snapgroup.adoc[Delete snapshot group]
+link:../commands-a-z/delete-snapgroup.adoc[Delete snapshot group]
 
-xref:../commands-a-z/delete-snapimage.adoc[Delete snapshot image]
+link:../commands-a-z/delete-snapimage.adoc[Delete snapshot image]
 
-xref:../commands-a-z/delete-snapvolume.adoc[Delete snapshot volume]
+link:../commands-a-z/delete-snapvolume.adoc[Delete snapshot volume]
 
-xref:../commands-a-z/delete-ssdcache.adoc[Delete SSD cache]
+link:../commands-a-z/delete-ssdcache.adoc[Delete SSD cache]
 
-xref:../commands-a-z/delete-syslog.adoc[Delete syslog server]
+link:../commands-a-z/delete-syslog.adoc[Delete syslog server]
 
-xref:../commands-a-z/delete-volume.adoc[Delete volume]
+link:../commands-a-z/delete-volume.adoc[Delete volume]
 
-xref:../commands-a-z/delete-volume-from-disk-pool.adoc[Delete volume from disk pool]
+link:../commands-a-z/delete-volume-from-disk-pool.adoc[Delete volume from disk pool]
 
-xref:../commands-a-z/delete-volumegroup.adoc[Delete volume group]
+link:../commands-a-z/delete-volumegroup.adoc[Delete volume group]
 
-xref:../commands-a-z/diagnose-controller.adoc[Diagnose controller]
+link:../commands-a-z/diagnose-controller.adoc[Diagnose controller]
 
-xref:../commands-a-z/diagnose-controller.adoc[Diagnose controller]
+link:../commands-a-z/diagnose-controller.adoc[Diagnose controller]
 
-xref:../commands-a-z/diagnose-controller-iscsihostport.adoc[Diagnose controller iSCSI host cable]
+link:../commands-a-z/diagnose-controller-iscsihostport.adoc[Diagnose controller iSCSI host cable]
 
-xref:../commands-a-z/diagnose-syncmirror.adoc[Diagnose synchronous mirroring]
+link:../commands-a-z/diagnose-syncmirror.adoc[Diagnose synchronous mirroring]
 
-xref:../commands-a-z/disable-storagearray.adoc[Disable storage array feature]
+link:../commands-a-z/disable-storagearray.adoc[Disable storage array feature]
 
-xref:../commands-a-z/smcli-autosupportschedule-show.adoc[Display AutoSupport message collection schedule]
+link:../commands-a-z/smcli-autosupportschedule-show.adoc[Display AutoSupport message collection schedule]
 
-xref:../commands-a-z/smcli-autosupportconfig-show.adoc[Display AutoSupport bundle collection settings]
+link:../commands-a-z/smcli-autosupportconfig-show.adoc[Display AutoSupport bundle collection settings]
 
-xref:../commands-a-z/show-storagearray-usersession.adoc[Display storage array user session]
+link:../commands-a-z/show-storagearray-usersession.adoc[Display storage array user session]
 
-xref:../commands-a-z/download-drive-firmware.adoc[Download drive firmware]
+link:../commands-a-z/download-drive-firmware.adoc[Download drive firmware]
 
-xref:../commands-a-z/download-tray-firmware-file.adoc[Download environmental card firmware]
+link:../commands-a-z/download-tray-firmware-file.adoc[Download environmental card firmware]
 
-xref:../commands-a-z/download-storagearray-drivefirmware-file.adoc[Download storage array drive firmware]
+link:../commands-a-z/download-storagearray-drivefirmware-file.adoc[Download storage array drive firmware]
 
-xref:../commands-a-z/download-storagearray-firmware.adoc[Download storage array firmware/NVSRAM]
+link:../commands-a-z/download-storagearray-firmware.adoc[Download storage array firmware/NVSRAM]
 
-xref:../commands-a-z/download-storagearray-nvsram.adoc[Download storage array NVSRAM]
+link:../commands-a-z/download-storagearray-nvsram.adoc[Download storage array NVSRAM]
 
-xref:../commands-a-z/download-tray-configurationsettings.adoc[Download tray configuration settings]
+link:../commands-a-z/download-tray-configurationsettings.adoc[Download tray configuration settings]
 
-xref:../commands-a-z/enable-controller-datatransfer.adoc[Enable controller data transfer]
+link:../commands-a-z/enable-controller-datatransfer.adoc[Enable controller data transfer]
 
-xref:../commands-a-z/enable-diskpool-security.adoc[Enable disk pool security]
+link:../commands-a-z/enable-diskpool-security.adoc[Enable disk pool security]
 
-xref:../commands-a-z/set-storagearray-odxenabled.adoc[Enable or disable ODX]
+link:../commands-a-z/set-storagearray-odxenabled.adoc[Enable or disable ODX]
 
-xref:../commands-a-z/smcli-enable-autosupportfeature.adoc[Enable or disable AutoSupport at the EMW management domain level...]
+link:../commands-a-z/smcli-enable-autosupportfeature.adoc[Enable or disable AutoSupport at the EMW management domain level...]
 
-xref:../commands-a-z/enable-or-disable-autosupport-individual-arrays.adoc[Enable or disable AutoSupport (all individual arrays)]
+link:../commands-a-z/enable-or-disable-autosupport-individual-arrays.adoc[Enable or disable AutoSupport (all individual arrays)]
 
-xref:../commands-a-z/set-storagearray-autosupportmaintenancewindow.adoc[Enable or disable AutoSupport maintenance window (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportmaintenancewindow.adoc[Enable or disable AutoSupport maintenance window (for individual E2800 or E5700 arrays)]
 
-xref:../commands-a-z/smcli-enable-disable-autosupportondemand.adoc[Enable or disable the AutoSupport OnDemand feature at the EMW...]
+link:../commands-a-z/smcli-enable-disable-autosupportondemand.adoc[Enable or disable the AutoSupport OnDemand feature at the EMW...]
 
-xref:../commands-a-z/set-storagearray-autosupportondemand.adoc[Enable or disable the AutoSupport OnDemand feature (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportondemand.adoc[Enable or disable the AutoSupport OnDemand feature (for individual E2800 or E5700 arrays)]
 
-xref:../commands-a-z/smcli-enable-disable-autosupportremotediag.adoc[Enable or disable the AutoSupport OnDemand Remote Diagnostics feature at...]
+link:../commands-a-z/smcli-enable-disable-autosupportremotediag.adoc[Enable or disable the AutoSupport OnDemand Remote Diagnostics feature at...]
 
-xref:../commands-a-z/set-storagearray-autosupportremotediag.adoc[Enable or disable the AutoSupport Remote Diagnostics feature (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportremotediag.adoc[Enable or disable the AutoSupport Remote Diagnostics feature (for individual E2800 or E5700 arrays)]
 
-xref:../commands-a-z/set-storagearray-hostconnectivityreporting.adoc[Enable or disable host connectivity reporting]
+link:../commands-a-z/set-storagearray-hostconnectivityreporting.adoc[Enable or disable host connectivity reporting]
 
-xref:../commands-a-z/set-storagearray-vaaienabled.adoc[Enable or disable VAAI]
+link:../commands-a-z/set-storagearray-vaaienabled.adoc[Enable or disable VAAI]
 
-xref:../commands-a-z/enable-storagearray-feature-file.adoc[Enable storage array feature]
+link:../commands-a-z/enable-storagearray-feature-file.adoc[Enable storage array feature]
 
-xref:../commands-a-z/enable-volumegroup-security.adoc[Enable volume group security]
+link:../commands-a-z/enable-volumegroup-security.adoc[Enable volume group security]
 
-xref:../commands-a-z/establish-asyncmirror-volume.adoc[Establish asynchronous mirrored pair]
+link:../commands-a-z/establish-asyncmirror-volume.adoc[Establish asynchronous mirrored pair]
 
-xref:../commands-a-z/start-increasevolumecapacity-volume.adoc[Increase capacity of volume in disk pool or volume group...]
+link:../commands-a-z/start-increasevolumecapacity-volume.adoc[Increase capacity of volume in disk pool or volume group...]
 
-xref:../commands-a-z/start-volume-initialize.adoc[Initialize thin volume]
+link:../commands-a-z/start-volume-initialize.adoc[Initialize thin volume]
 
-xref:../commands-a-z/recopy-volumecopy-target.adoc[Recopy volume copy]
+link:../commands-a-z/recopy-volumecopy-target.adoc[Recopy volume copy]
 
-xref:../commands-a-z/recover-disabled-driveports.adoc[Recover disabled drive ports]
+link:../commands-a-z/recover-disabled-driveports.adoc[Recover disabled drive ports]
 
-xref:../commands-a-z/recover-volume.adoc[Recover RAID volume]
+link:../commands-a-z/recover-volume.adoc[Recover RAID volume]
 
-xref:../commands-a-z/recover-sasport-miswire.adoc[Recover SAS port mis-wire]
+link:../commands-a-z/recover-sasport-miswire.adoc[Recover SAS port mis-wire]
 
-xref:../commands-a-z/recreate-storagearray-mirrorrepository.adoc[Re-create synchronous mirroring repository volume]
+link:../commands-a-z/recreate-storagearray-mirrorrepository.adoc[Re-create synchronous mirroring repository volume]
 
-xref:../commands-a-z/reduce-disk-pool-capacity.adoc[Reduce disk pool capacity]
+link:../commands-a-z/reduce-disk-pool-capacity.adoc[Reduce disk pool capacity]
 
-xref:../commands-a-z/create-snmpcommunity.adoc[Register SNMP community]
+link:../commands-a-z/create-snmpcommunity.adoc[Register SNMP community]
 
-xref:../commands-a-z/create-snmptrapdestination.adoc[Register SNMP trap destination]
+link:../commands-a-z/create-snmptrapdestination.adoc[Register SNMP trap destination]
 
-xref:../commands-a-z/remove-drives-from-ssd-cache.adoc[Remove drives from SSD cache]
+link:../commands-a-z/remove-drives-from-ssd-cache.adoc[Remove drives from SSD cache]
 
-xref:../commands-a-z/remove-asyncmirrorgroup.adoc[Remove incomplete asynchronous mirrored pair from asynchronous mirror group]
+link:../commands-a-z/remove-asyncmirrorgroup.adoc[Remove incomplete asynchronous mirrored pair from asynchronous mirror group]
 
-xref:../commands-a-z/remove-member-volume-from-consistency-group.adoc[Remove member volume from consistency group]
+link:../commands-a-z/remove-member-volume-from-consistency-group.adoc[Remove member volume from consistency group]
 
-xref:../commands-a-z/remove-syncmirror.adoc[Remove synchronous mirroring]
+link:../commands-a-z/remove-syncmirror.adoc[Remove synchronous mirroring]
 
-xref:../commands-a-z/remove-volumecopy-target.adoc[Remove volume copy]
+link:../commands-a-z/remove-volumecopy-target.adoc[Remove volume copy]
 
-xref:../commands-a-z/remove-volume-asyncmirrorgroup.adoc[Remove volume from asynchronous mirror group]
+link:../commands-a-z/remove-volume-asyncmirrorgroup.adoc[Remove volume from asynchronous mirror group]
 
-xref:../commands-a-z/remove-lunmapping.adoc[Remove volume LUN mapping]
+link:../commands-a-z/remove-lunmapping.adoc[Remove volume LUN mapping]
 
-xref:../commands-a-z/set-snapvolume.adoc[Rename snapshot volume]
+link:../commands-a-z/set-snapvolume.adoc[Rename snapshot volume]
 
-xref:../commands-a-z/rename-ssd-cache.adoc[Rename SSD cache]
+link:../commands-a-z/rename-ssd-cache.adoc[Rename SSD cache]
 
-xref:../commands-a-z/repair-volume-parity.adoc[Repair volume parity]
+link:../commands-a-z/repair-volume-parity.adoc[Repair volume parity]
 
-xref:../commands-a-z/replace-drive-replacementdrive.adoc[Replace drive]
+link:../commands-a-z/replace-drive-replacementdrive.adoc[Replace drive]
 
-xref:../commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.adoc[Reset asynchronous mirror group statistics]
+link:../commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.adoc[Reset asynchronous mirror group statistics]
 
-xref:../commands-a-z/smcli-autosupportschedule-reset.adoc[Reset AutoSupport message collection schedule]
+link:../commands-a-z/smcli-autosupportschedule-reset.adoc[Reset AutoSupport message collection schedule]
 
-xref:../commands-a-z/reset-storagearray-autosupport-schedule.adoc[Reset AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/reset-storagearray-autosupport-schedule.adoc[Reset AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
 
-xref:../commands-a-z/reset-controller.adoc[Reset controller]
+link:../commands-a-z/reset-controller.adoc[Reset controller]
 
-xref:../commands-a-z/reset-drive.adoc[Reset drive]
+link:../commands-a-z/reset-drive.adoc[Reset drive]
 
-xref:../commands-a-z/reset-iscsiipaddress.adoc[Reset iSCSI IP address]
+link:../commands-a-z/reset-iscsiipaddress.adoc[Reset iSCSI IP address]
 
-xref:../commands-a-z/reset-storagearray-diagnosticdata.adoc[Reset storage array diagnostic data]
+link:../commands-a-z/reset-storagearray-diagnosticdata.adoc[Reset storage array diagnostic data]
 
-xref:../commands-a-z/reset-storagearray-hostportstatisticsbaseline.adoc[Reset storage array host port statistics baseline]
+link:../commands-a-z/reset-storagearray-hostportstatisticsbaseline.adoc[Reset storage array host port statistics baseline]
 
-xref:../commands-a-z/reset-storagearray-ibstatsbaseline.adoc[Reset storage array InfiniBand statistics baseline]
+link:../commands-a-z/reset-storagearray-ibstatsbaseline.adoc[Reset storage array InfiniBand statistics baseline]
 
-xref:../commands-a-z/reset-storagearray-iscsistatsbaseline.adoc[Reset storage array iSCSI baseline]
+link:../commands-a-z/reset-storagearray-iscsistatsbaseline.adoc[Reset storage array iSCSI baseline]
 
-xref:../commands-a-z/reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline]
+link:../commands-a-z/reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline]
 
-xref:../commands-a-z/reset-storagearray-rlsbaseline.adoc[Reset storage array RLS baseline]
+link:../commands-a-z/reset-storagearray-rlsbaseline.adoc[Reset storage array RLS baseline]
 
-xref:../commands-a-z/reset-storagearray-sasphybaseline.adoc[Reset storage array SAS PHY baseline]
+link:../commands-a-z/reset-storagearray-sasphybaseline.adoc[Reset storage array SAS PHY baseline]
 
-xref:../commands-a-z/reset-storagearray-socbaseline.adoc[Reset storage array SOC baseline]
+link:../commands-a-z/reset-storagearray-socbaseline.adoc[Reset storage array SOC baseline]
 
-xref:../commands-a-z/reset-storagearray-volumedistribution.adoc[Reset storage array volume distribution]
+link:../commands-a-z/reset-storagearray-volumedistribution.adoc[Reset storage array volume distribution]
 
-xref:../commands-a-z/resume-asyncmirrorgroup.adoc[Resume asynchronous mirror group]
+link:../commands-a-z/resume-asyncmirrorgroup.adoc[Resume asynchronous mirror group]
 
-xref:../commands-a-z/resume-cgsnapvolume.adoc[Resume consistency group snapshot volume]
+link:../commands-a-z/resume-cgsnapvolume.adoc[Resume consistency group snapshot volume]
 
-xref:../commands-a-z/resume-snapimage-rollback.adoc[Resume snapshot image rollback]
+link:../commands-a-z/resume-snapimage-rollback.adoc[Resume snapshot image rollback]
 
-xref:../commands-a-z/resume-snapvolume.adoc[Resume snapshot volume]
+link:../commands-a-z/resume-snapvolume.adoc[Resume snapshot volume]
 
-xref:../commands-a-z/resume-ssdcache.adoc[Resume SSD cache]
+link:../commands-a-z/resume-ssdcache.adoc[Resume SSD cache]
 
-xref:../commands-a-z/resume-syncmirror.adoc[Resume synchronous mirroring]
+link:../commands-a-z/resume-syncmirror.adoc[Resume synchronous mirroring]
 
-xref:../commands-a-z/save-storagearray-autosupport-log.adoc[Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/save-storagearray-autosupport-log.adoc[Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)]
 
-xref:../commands-a-z/revive-drive.adoc[Revive drive]
+link:../commands-a-z/revive-drive.adoc[Revive drive]
 
-xref:../commands-a-z/revive-snapgroup.adoc[Revive snapshot group]
+link:../commands-a-z/revive-snapgroup.adoc[Revive snapshot group]
 
-xref:../commands-a-z/revive-snapvolume.adoc[Revive snapshot volume]
+link:../commands-a-z/revive-snapvolume.adoc[Revive snapshot volume]
 
-xref:../commands-a-z/revive-volumegroup.adoc[Revive volume group]
+link:../commands-a-z/revive-volumegroup.adoc[Revive volume group]
 
-xref:../commands-a-z/save-storagearray-arvmstats-asyncmirrorgroup.adoc[Save asynchronous mirror group statistics]
+link:../commands-a-z/save-storagearray-arvmstats-asyncmirrorgroup.adoc[Save asynchronous mirror group statistics]
 
-xref:../commands-a-z/save-controller-nvsram-file.adoc[Save controller NVSRAM]
+link:../commands-a-z/save-controller-nvsram-file.adoc[Save controller NVSRAM]
 
-xref:../commands-a-z/save-drivechannel-faultdiagnostics-file.adoc[Save drive channel fault isolation diagnostic status]
+link:../commands-a-z/save-drivechannel-faultdiagnostics-file.adoc[Save drive channel fault isolation diagnostic status]
 
-xref:../commands-a-z/save-alldrives-logfile.adoc[Save drive log]
+link:../commands-a-z/save-alldrives-logfile.adoc[Save drive log]
 
-xref:../commands-a-z/save-ioclog.adoc[Save input output controller (IOC) dump]
+link:../commands-a-z/save-ioclog.adoc[Save input output controller (IOC) dump]
 
-xref:../commands-a-z/save-storagearray-autoloadbalancestatistics-file.adoc[Save auto-load balancing statistics]
+link:../commands-a-z/save-storagearray-autoloadbalancestatistics-file.adoc[Save auto-load balancing statistics]
 
-xref:../commands-a-z/save-storagearray-configuration.adoc[Save storage array configuration]
+link:../commands-a-z/save-storagearray-configuration.adoc[Save storage array configuration]
 
-xref:../commands-a-z/save-storagearray-controllerhealthimage.adoc[Save storage array controller health image]
+link:../commands-a-z/save-storagearray-controllerhealthimage.adoc[Save storage array controller health image]
 
-xref:../commands-a-z/save-storage-array-diagnostic-data.adoc[Save storage array diagnostic data]
+link:../commands-a-z/save-storage-array-diagnostic-data.adoc[Save storage array diagnostic data]
 
-xref:../commands-a-z/save-storagearray-warningevents.adoc[Save storage array events]
+link:../commands-a-z/save-storagearray-warningevents.adoc[Save storage array events]
 
-xref:../commands-a-z/save-storagearray-firmwareinventory.adoc[Save storage array firmware inventory]
+link:../commands-a-z/save-storagearray-firmwareinventory.adoc[Save storage array firmware inventory]
 
-xref:../commands-a-z/save-storagearray-hostportstatistics.adoc[Save storage array host port statistics]
+link:../commands-a-z/save-storagearray-hostportstatistics.adoc[Save storage array host port statistics]
 
-xref:../commands-a-z/save-storagearray-ibstats.adoc[Save storage array InfiniBand statistics]
+link:../commands-a-z/save-storagearray-ibstats.adoc[Save storage array InfiniBand statistics]
 
-xref:../commands-a-z/save-storagearray-iscsistatistics.adoc[Save storage array iSCSI statistics]
+link:../commands-a-z/save-storagearray-iscsistatistics.adoc[Save storage array iSCSI statistics]
 
-xref:../commands-a-z/save-storagearray-iserstatistics.adoc[Save storage array iSER statistics]
+link:../commands-a-z/save-storagearray-iserstatistics.adoc[Save storage array iSER statistics]
 
-xref:../commands-a-z/save-storagearray-loginbanner.adoc[Save storage array login banner]
+link:../commands-a-z/save-storagearray-loginbanner.adoc[Save storage array login banner]
 
-xref:../commands-a-z/save-storagearray-performancestats.adoc[Save storage array performance statistics]
+link:../commands-a-z/save-storagearray-performancestats.adoc[Save storage array performance statistics]
 
-xref:../commands-a-z/save-storagearray-rlscounts.adoc[Save storage array RLS counts]
+link:../commands-a-z/save-storagearray-rlscounts.adoc[Save storage array RLS counts]
 
-xref:../commands-a-z/save-storagearray-sasphycounts.adoc[Save storage array SAS PHY counts]
+link:../commands-a-z/save-storagearray-sasphycounts.adoc[Save storage array SAS PHY counts]
 
-xref:../commands-a-z/save-storagearray-soccounts.adoc[Save storage array SOC counts]
+link:../commands-a-z/save-storagearray-soccounts.adoc[Save storage array SOC counts]
 
-xref:../commands-a-z/save-storagearray-statecapture.adoc[Save storage array state capture]
+link:../commands-a-z/save-storagearray-statecapture.adoc[Save storage array state capture]
 
-xref:../commands-a-z/save-storagearray-supportdata.adoc[Save storage array support data]
+link:../commands-a-z/save-storagearray-supportdata.adoc[Save storage array support data]
 
-xref:../commands-a-z/save-alltrays-logfile.adoc[Save tray log]
+link:../commands-a-z/save-alltrays-logfile.adoc[Save tray log]
 
-xref:../commands-a-z/smcli-supportbundle-schedule.adoc[Schedule automatic support bundle collection configuration]
+link:../commands-a-z/smcli-supportbundle-schedule.adoc[Schedule automatic support bundle collection configuration]
 
-xref:../commands-a-z/set-asyncmirrorgroup.adoc[Set asynchronous mirror group]
+link:../commands-a-z/set-asyncmirrorgroup.adoc[Set asynchronous mirror group]
 
-xref:../commands-a-z/set-storagearray-autosupport-schedule.adoc[Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupport-schedule.adoc[Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
 
-xref:../commands-a-z/set-consistency-group-attributes.adoc[Set consistency group attributes]
+link:../commands-a-z/set-consistency-group-attributes.adoc[Set consistency group attributes]
 
-xref:../commands-a-z/set-cgsnapvolume.adoc[Set consistency group snapshot volume]
+link:../commands-a-z/set-cgsnapvolume.adoc[Set consistency group snapshot volume]
 
-xref:../commands-a-z/set-controller.adoc[Set controller]
+link:../commands-a-z/set-controller.adoc[Set controller]
 
-xref:../commands-a-z/set-controller-dnsservers.adoc[Set controller DNS settings]
+link:../commands-a-z/set-controller-dnsservers.adoc[Set controller DNS settings]
 
-xref:../commands-a-z/set-controller-hostport.adoc[Set controller host port properties]
+link:../commands-a-z/set-controller-hostport.adoc[Set controller host port properties]
 
-xref:../commands-a-z/set-controller-ntpservers.adoc[Set controller NTP settings]
+link:../commands-a-z/set-controller-ntpservers.adoc[Set controller NTP settings]
 
-xref:../commands-a-z/set-controller-service-action-allowed-indicator.adoc[Set controller service action allowed indicator]
+link:../commands-a-z/set-controller-service-action-allowed-indicator.adoc[Set controller service action allowed indicator]
 
-xref:../commands-a-z/set-disk-pool.adoc[Set disk pool]
+link:../commands-a-z/set-disk-pool.adoc[Set disk pool]
 
-xref:../commands-a-z/set-disk-pool-modify-disk-pool.adoc[Set disk pool (modify disk pool)]
+link:../commands-a-z/set-disk-pool-modify-disk-pool.adoc[Set disk pool (modify disk pool)]
 
-xref:../commands-a-z/set-tray-drawer.adoc[Set drawer service action allowed indicator]
+link:../commands-a-z/set-tray-drawer.adoc[Set drawer service action allowed indicator]
 
-xref:../commands-a-z/set-drivechannel.adoc[Set drive channel status]
+link:../commands-a-z/set-drivechannel.adoc[Set drive channel status]
 
-xref:../commands-a-z/set-drive-hotspare.adoc[Set drive hot spare]
+link:../commands-a-z/set-drive-hotspare.adoc[Set drive hot spare]
 
-xref:../commands-a-z/set-drive-serviceallowedindicator.adoc[Set drive service action allowed indicator]
+link:../commands-a-z/set-drive-serviceallowedindicator.adoc[Set drive service action allowed indicator]
 
-xref:../commands-a-z/set-drive-operationalstate.adoc[Set drive state]
+link:../commands-a-z/set-drive-operationalstate.adoc[Set drive state]
 
-xref:../commands-a-z/set-event-alert.adoc[Set event alert filtering]
+link:../commands-a-z/set-event-alert.adoc[Set event alert filtering]
 
-xref:../commands-a-z/set-drive-securityid.adoc[Set FIPS drive security identifier]
+link:../commands-a-z/set-drive-securityid.adoc[Set FIPS drive security identifier]
 
-xref:../commands-a-z/set-drive-nativestate.adoc[Set foreign drive to native]
+link:../commands-a-z/set-drive-nativestate.adoc[Set foreign drive to native]
 
-xref:../commands-a-z/set-host.adoc[Set host]
+link:../commands-a-z/set-host.adoc[Set host]
 
-xref:../commands-a-z/set-hostchannel.adoc[Set host channel]
+link:../commands-a-z/set-hostchannel.adoc[Set host channel]
 
-xref:../commands-a-z/set-hostgroup.adoc[Set host group]
+link:../commands-a-z/set-hostgroup.adoc[Set host group]
 
-xref:../commands-a-z/set-hostport.adoc[Set host port]
+link:../commands-a-z/set-hostport.adoc[Set host port]
 
-xref:../commands-a-z/set-initiator.adoc[Set initiator]
+link:../commands-a-z/set-initiator.adoc[Set initiator]
 
-xref:../commands-a-z/set-iscsiinitiator.adoc[Set iSCSI initiator]
+link:../commands-a-z/set-iscsiinitiator.adoc[Set iSCSI initiator]
 
-xref:../commands-a-z/set-iscsitarget.adoc[Set iSCSI target properties]
+link:../commands-a-z/set-iscsitarget.adoc[Set iSCSI target properties]
 
-xref:../commands-a-z/set-isertarget.adoc[Set iSER target]
+link:../commands-a-z/set-isertarget.adoc[Set iSER target]
 
-xref:../commands-a-z/set-snapvolume-converttoreadwrite.adoc[Set read-only snapshot volume to read/write volume]
+link:../commands-a-z/set-snapvolume-converttoreadwrite.adoc[Set read-only snapshot volume to read/write volume]
 
-xref:../commands-a-z/set-session-erroraction.adoc[Set session]
+link:../commands-a-z/set-session-erroraction.adoc[Set session]
 
-xref:../commands-a-z/set-snapgroup.adoc[Set snapshot group attributes]
+link:../commands-a-z/set-snapgroup.adoc[Set snapshot group attributes]
 
-xref:../commands-a-z/set-snapgroup-mediascanenabled.adoc[Set snapshot group media scan]
+link:../commands-a-z/set-snapgroup-mediascanenabled.adoc[Set snapshot group media scan]
 
-xref:../commands-a-z/set-snapgroup-increase-decreaserepositorycapacity.adoc[Set snapshot group repository volume capacity]
+link:../commands-a-z/set-snapgroup-increase-decreaserepositorycapacity.adoc[Set snapshot group repository volume capacity]
 
-xref:../commands-a-z/set-snapgroup-enableschedule.adoc[Set snapshot group schedule]
+link:../commands-a-z/set-snapgroup-enableschedule.adoc[Set snapshot group schedule]
 
-xref:../commands-a-z/set-snapvolume-mediascanenabled.adoc[Set snapshot volume media scan]
+link:../commands-a-z/set-snapvolume-mediascanenabled.adoc[Set snapshot volume media scan]
 
-xref:../commands-a-z/set-snapvolume-increase-decreaserepositorycapacity.adoc[Set snapshot volume repository volume capacity]
+link:../commands-a-z/set-snapvolume-increase-decreaserepositorycapacity.adoc[Set snapshot volume repository volume capacity]
 
-xref:../commands-a-z/set-volume-ssdcacheenabled.adoc[Set SSD cache for a volume]
+link:../commands-a-z/set-volume-ssdcacheenabled.adoc[Set SSD cache for a volume]
 
-xref:../commands-a-z/set-storagearray.adoc[Set storage array]
+link:../commands-a-z/set-storagearray.adoc[Set storage array]
 
-xref:../commands-a-z/set-storagearray-controllerhealthimageallowoverwrite.adoc[Set storage array controller health image allow overwrite]
+link:../commands-a-z/set-storagearray-controllerhealthimageallowoverwrite.adoc[Set storage array controller health image allow overwrite]
 
-xref:../commands-a-z/set-storagearray-autoloadbalancingenable.adoc[Set storage array to enable or disable Automatic Load Balancing...]
+link:../commands-a-z/set-storagearray-autoloadbalancingenable.adoc[Set storage array to enable or disable Automatic Load Balancing...]
 
-xref:../commands-a-z/set-storagearray-cachemirrordataassurancecheckenable.adoc[Set storage array to enable or disable cache mirror data]
+link:../commands-a-z/set-storagearray-cachemirrordataassurancecheckenable.adoc[Set storage array to enable or disable cache mirror data]
 
-xref:../commands-a-z/set-storagearray-icmppingresponse.adoc[Set storage array ICMP response]
+link:../commands-a-z/set-storagearray-icmppingresponse.adoc[Set storage array ICMP response]
 
-xref:../commands-a-z/set-storagearray-isnsregistration.adoc[Set storage array iSNS registration]
+link:../commands-a-z/set-storagearray-isnsregistration.adoc[Set storage array iSNS registration]
 
-xref:../commands-a-z/set-storagearray-isnsipv4configurationmethod.adoc[Set storage array iSNS server IPv4 address]
+link:../commands-a-z/set-storagearray-isnsipv4configurationmethod.adoc[Set storage array iSNS server IPv4 address]
 
-xref:../commands-a-z/set-storagearray-isnsipv6address.adoc[Set storage array iSNS server IPv6 address]
+link:../commands-a-z/set-storagearray-isnsipv6address.adoc[Set storage array iSNS server IPv6 address]
 
-xref:../commands-a-z/set-storagearray-isnslisteningport.adoc[Set storage array iSNS server listening port]
+link:../commands-a-z/set-storagearray-isnslisteningport.adoc[Set storage array iSNS server listening port]
 
-xref:../commands-a-z/set-storagearray-isnsserverrefresh.adoc[Set storage array iSNS server refresh]
+link:../commands-a-z/set-storagearray-isnsserverrefresh.adoc[Set storage array iSNS server refresh]
 
-xref:../commands-a-z/set-storagearray-learncycledate-controller.adoc[Set storage array controller battery learn cycle]
+link:../commands-a-z/set-storagearray-learncycledate-controller.adoc[Set storage array controller battery learn cycle]
 
-xref:../commands-a-z/set-storagearray-localusername.adoc[Set storage array local user password or SYMbol password]
+link:../commands-a-z/set-storagearray-localusername.adoc[Set storage array local user password or SYMbol password]
 
-xref:../commands-a-z/set-storagearray-passwordlength.adoc[Set storage array password length]
+link:../commands-a-z/set-storagearray-passwordlength.adoc[Set storage array password length]
 
-xref:../commands-a-z/set-storagearray-pqvalidateonreconstruct.adoc[Set storage array PQ validation on reconstruct]
+link:../commands-a-z/set-storagearray-pqvalidateonreconstruct.adoc[Set storage array PQ validation on reconstruct]
 
-xref:../commands-a-z/set-storagearray-redundancymode.adoc[Set storage array redundancy mode]
+link:../commands-a-z/set-storagearray-redundancymode.adoc[Set storage array redundancy mode]
 
-xref:../commands-a-z/set-storagearray-time.adoc[Set storage array time]
+link:../commands-a-z/set-storagearray-time.adoc[Set storage array time]
 
-xref:../commands-a-z/set-storagearray-traypositions.adoc[Set storage array tray positions]
+link:../commands-a-z/set-storagearray-traypositions.adoc[Set storage array tray positions]
 
-xref:../commands-a-z/set-storagearray-unnameddiscoverysession.adoc[Set storage array unnamed discovery session]
+link:../commands-a-z/set-storagearray-unnameddiscoverysession.adoc[Set storage array unnamed discovery session]
 
-xref:../commands-a-z/set-syncmirror.adoc[Set synchronous mirroring]
+link:../commands-a-z/set-syncmirror.adoc[Set synchronous mirroring]
 
-xref:../commands-a-z/set-target.adoc[Set target properties]
+link:../commands-a-z/set-target.adoc[Set target properties]
 
-xref:../commands-a-z/set-thin-volume-attributes.adoc[Set thin volume attributes]
+link:../commands-a-z/set-thin-volume-attributes.adoc[Set thin volume attributes]
 
-xref:../commands-a-z/set-tray-identification.adoc[Set tray identification]
+link:../commands-a-z/set-tray-identification.adoc[Set tray identification]
 
-xref:../commands-a-z/set-tray-serviceallowedindicator.adoc[Set tray service action allowed indicator]
+link:../commands-a-z/set-tray-serviceallowedindicator.adoc[Set tray service action allowed indicator]
 
-xref:../commands-a-z/set-volumes.adoc[Set volume attributes for a volume in a disk pool...]
+link:../commands-a-z/set-volumes.adoc[Set volume attributes for a volume in a disk pool...]
 
-xref:../commands-a-z/set-volume-group-attributes-for-volume-in-a-volume-group.adoc[Set volume attributes for a volume in a volume group...]
+link:../commands-a-z/set-volume-group-attributes-for-volume-in-a-volume-group.adoc[Set volume attributes for a volume in a volume group...]
 
-xref:../commands-a-z/set-volumecopy-target.adoc[Set volume copy]
+link:../commands-a-z/set-volumecopy-target.adoc[Set volume copy]
 
-xref:../commands-a-z/set-volumegroup.adoc[Set volume group]
+link:../commands-a-z/set-volumegroup.adoc[Set volume group]
 
-xref:../commands-a-z/set-volumegroup-forcedstate.adoc[Set volume group forced state]
+link:../commands-a-z/set-volumegroup-forcedstate.adoc[Set volume group forced state]
 
-xref:../commands-a-z/set-volume-logicalunitnumber.adoc[Set volume mapping]
+link:../commands-a-z/set-volume-logicalunitnumber.adoc[Set volume mapping]
 
-xref:../commands-a-z/show-asyncmirrorgroup-summary.adoc[Show asynchronous mirror groups]
+link:../commands-a-z/show-asyncmirrorgroup-summary.adoc[Show asynchronous mirror groups]
 
-xref:../commands-a-z/show-asyncmirrorgroup-synchronizationprogress.adoc[Show asynchronous mirror group synchronization progress]
+link:../commands-a-z/show-asyncmirrorgroup-synchronizationprogress.adoc[Show asynchronous mirror group synchronization progress]
 
-xref:../commands-a-z/show-storagearray-autosupport.adoc[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
+link:../commands-a-z/show-storagearray-autosupport.adoc[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
 
-xref:../commands-a-z/show-blockedeventalertlist.adoc[Show blocked events]
+link:../commands-a-z/show-blockedeventalertlist.adoc[Show blocked events]
 
-xref:../commands-a-z/show-consistencygroup.adoc[Show consistency group]
+link:../commands-a-z/show-consistencygroup.adoc[Show consistency group]
 
-xref:../commands-a-z/show-cgsnapimage.adoc[Show consistency group snapshot image]
+link:../commands-a-z/show-cgsnapimage.adoc[Show consistency group snapshot image]
 
-xref:../commands-a-z/show-controller.adoc[Show controller]
+link:../commands-a-z/show-controller.adoc[Show controller]
 
-xref:../commands-a-z/show-controller-nvsram.adoc[Show controller NVSRAM]
+link:../commands-a-z/show-controller-nvsram.adoc[Show controller NVSRAM]
 
-xref:../commands-a-z/show-iscsisessions.adoc[Show current iSCSI sessions]
+link:../commands-a-z/show-iscsisessions.adoc[Show current iSCSI sessions]
 
-xref:../commands-a-z/show-diskpool.adoc[Show disk pool]
+link:../commands-a-z/show-diskpool.adoc[Show disk pool]
 
-xref:../commands-a-z/show-alldrives.adoc[Show drive]
+link:../commands-a-z/show-alldrives.adoc[Show drive]
 
-xref:../commands-a-z/show-drivechannel-stats.adoc[Show drive channel statistics]
+link:../commands-a-z/show-drivechannel-stats.adoc[Show drive channel statistics]
 
-xref:../commands-a-z/show-alldrives-downloadprogress.adoc[Show drive download progress]
+link:../commands-a-z/show-alldrives-downloadprogress.adoc[Show drive download progress]
 
-xref:../commands-a-z/show-alldrives-performancestats.adoc[Show drive performance statistics]
+link:../commands-a-z/show-alldrives-performancestats.adoc[Show drive performance statistics]
 
-xref:../commands-a-z/show-emailalert-summary.adoc[Show email alert configuration]
+link:../commands-a-z/show-emailalert-summary.adoc[Show email alert configuration]
 
-xref:../commands-a-z/show-allhostports.adoc[Show host ports]
+link:../commands-a-z/show-allhostports.adoc[Show host ports]
 
-xref:../commands-a-z/show-replaceabledrives.adoc[Show replaceable drives]
+link:../commands-a-z/show-replaceabledrives.adoc[Show replaceable drives]
 
-xref:../commands-a-z/show-snapgroup.adoc[Show snapshot group]
+link:../commands-a-z/show-snapgroup.adoc[Show snapshot group]
 
-xref:../commands-a-z/show-snapimage.adoc[Show snapshot image]
+link:../commands-a-z/show-snapimage.adoc[Show snapshot image]
 
-xref:../commands-a-z/show-snapvolume.adoc[Show snapshot volumes]
+link:../commands-a-z/show-snapvolume.adoc[Show snapshot volumes]
 
-xref:../commands-a-z/show-allsnmpcommunities.adoc[Show SNMP communities]
+link:../commands-a-z/show-allsnmpcommunities.adoc[Show SNMP communities]
 
-xref:../commands-a-z/show-snmpsystemvariables.adoc[Show SNMP MIB II system group variables]
+link:../commands-a-z/show-snmpsystemvariables.adoc[Show SNMP MIB II system group variables]
 
-xref:../commands-a-z/show-ssd-cache.adoc[Show SSD cache]
+link:../commands-a-z/show-ssd-cache.adoc[Show SSD cache]
 
-xref:../commands-a-z/show-ssd-cache-statistics.adoc[Show SSD cache statistics]
+link:../commands-a-z/show-ssd-cache-statistics.adoc[Show SSD cache statistics]
 
-xref:../commands-a-z/show-storagearray.adoc[Show storage array]
+link:../commands-a-z/show-storagearray.adoc[Show storage array]
 
-xref:../commands-a-z/show-storagearray-autoconfiguration.adoc[Show storage array auto configuration]
+link:../commands-a-z/show-storagearray-autoconfiguration.adoc[Show storage array auto configuration]
 
-xref:../commands-a-z/show-storagearray-cachemirrordataassurancecheckenable.adoc[Show storage array cache mirror data assurance check enable]
+link:../commands-a-z/show-storagearray-cachemirrordataassurancecheckenable.adoc[Show storage array cache mirror data assurance check enable]
 
-xref:../commands-a-z/show-storagearray-controllerhealthimage.adoc[Show storage array controller health image]
+link:../commands-a-z/show-storagearray-controllerhealthimage.adoc[Show storage array controller health image]
 
-xref:../commands-a-z/show-storagearray-dbmdatabase.adoc[Show storage array DBM database]
+link:../commands-a-z/show-storagearray-dbmdatabase.adoc[Show storage array DBM database]
 
-xref:../commands-a-z/show-storagearray-hostconnectivityreporting.adoc[Show storage array host connectivity reporting]
+link:../commands-a-z/show-storagearray-hostconnectivityreporting.adoc[Show storage array host connectivity reporting]
 
-xref:../commands-a-z/show-storagearray-hosttopology.adoc[Show storage array host topology]
+link:../commands-a-z/show-storagearray-hosttopology.adoc[Show storage array host topology]
 
-xref:../commands-a-z/show-storagearray-lunmappings.adoc[Show storage array LUN mappings]
+link:../commands-a-z/show-storagearray-lunmappings.adoc[Show storage array LUN mappings]
 
-xref:../commands-a-z/show-storagearray-iscsinegotiationdefaults.adoc[Show storage array negotiation defaults]
+link:../commands-a-z/show-storagearray-iscsinegotiationdefaults.adoc[Show storage array negotiation defaults]
 
-xref:../commands-a-z/show-storagearray-odxsetting.adoc[Show storage array ODX setting]
+link:../commands-a-z/show-storagearray-odxsetting.adoc[Show storage array ODX setting]
 
-xref:../commands-a-z/show-storagearray-powerinfo.adoc[Show storage array power information]
+link:../commands-a-z/show-storagearray-powerinfo.adoc[Show storage array power information]
 
-xref:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.adoc[Show storage array unconfigured iSCSI initiators]
+link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.adoc[Show storage array unconfigured iSCSI initiators]
 
-xref:../commands-a-z/show-storagearray-unreadablesectors.adoc[Show storage array unreadable sectors]
+link:../commands-a-z/show-storagearray-unreadablesectors.adoc[Show storage array unreadable sectors]
 
-xref:../commands-a-z/show-textstring.adoc[Show string]
+link:../commands-a-z/show-textstring.adoc[Show string]
 
-xref:../commands-a-z/show-syncmirror-candidates.adoc[Show synchronous mirroring volume candidates]
+link:../commands-a-z/show-syncmirror-candidates.adoc[Show synchronous mirroring volume candidates]
 
-xref:../commands-a-z/show-syncmirror-synchronizationprogress.adoc[Show synchronous mirroring volume synchronization progress]
+link:../commands-a-z/show-syncmirror-synchronizationprogress.adoc[Show synchronous mirroring volume synchronization progress]
 
-xref:../commands-a-z/show-syslog-summary.adoc[Show syslog configuration]
+link:../commands-a-z/show-syslog-summary.adoc[Show syslog configuration]
 
-xref:../commands-a-z/show-volume.adoc[Show thin volume]
+link:../commands-a-z/show-volume.adoc[Show thin volume]
 
-xref:../commands-a-z/show-storagearray-unconfiguredinitiators.adoc[Show unconfigured initiators]
+link:../commands-a-z/show-storagearray-unconfiguredinitiators.adoc[Show unconfigured initiators]
 
-xref:../commands-a-z/show-volume-summary.adoc[Show volume]
+link:../commands-a-z/show-volume-summary.adoc[Show volume]
 
-xref:../commands-a-z/show-volume-actionprogress.adoc[Show volume action progress]
+link:../commands-a-z/show-volume-actionprogress.adoc[Show volume action progress]
 
-xref:../commands-a-z/show-volumecopy.adoc[Show volume copy]
+link:../commands-a-z/show-volumecopy.adoc[Show volume copy]
 
-xref:../commands-a-z/show-volumecopy-sourcecandidates.adoc[Show volume copy source candidates]
+link:../commands-a-z/show-volumecopy-sourcecandidates.adoc[Show volume copy source candidates]
 
-xref:../commands-a-z/show-volumecopy-source-targetcandidates.adoc[Show volume copy target candidates]
+link:../commands-a-z/show-volumecopy-source-targetcandidates.adoc[Show volume copy target candidates]
 
-xref:../commands-a-z/show-volumegroup.adoc[Show volume group]
+link:../commands-a-z/show-volumegroup.adoc[Show volume group]
 
-xref:../commands-a-z/show-volumegroup-exportdependencies.adoc[Show volume group export dependencies]
+link:../commands-a-z/show-volumegroup-exportdependencies.adoc[Show volume group export dependencies]
 
-xref:../commands-a-z/show-volumegroup-importdependencies.adoc[Show volume group import dependencies]
+link:../commands-a-z/show-volumegroup-importdependencies.adoc[Show volume group import dependencies]
 
-xref:../commands-a-z/show-volume-performancestats.adoc[Show volume performance statistics]
+link:../commands-a-z/show-volume-performancestats.adoc[Show volume performance statistics]
 
-xref:../commands-a-z/show-volume-reservations.adoc[Show volume reservations]
+link:../commands-a-z/show-volume-reservations.adoc[Show volume reservations]
 
-xref:../commands-a-z/smcli-autosupportconfig.adoc[Specify the AutoSupport delivery method]
+link:../commands-a-z/smcli-autosupportconfig.adoc[Specify the AutoSupport delivery method]
 
-xref:../commands-a-z/start-asyncmirrorgroup-synchronize.adoc[Start asynchronous mirroring synchronization]
+link:../commands-a-z/start-asyncmirrorgroup-synchronize.adoc[Start asynchronous mirroring synchronization]
 
-xref:../commands-a-z/smcli-autosupportconfig.adoc[Specify the AutoSupport delivery method]
+link:../commands-a-z/smcli-autosupportconfig.adoc[Specify the AutoSupport delivery method]
 
-xref:../commands-a-z/set-email-smtp-delivery-method-e2800-e5700.adoc[Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-email-smtp-delivery-method-e2800-e5700.adoc[Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)]
 
-xref:../commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.adoc[Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.adoc[Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)]
 
-xref:../commands-a-z/start-cgsnapimage-rollback.adoc[Start consistency group snapshot rollback]
+link:../commands-a-z/start-cgsnapimage-rollback.adoc[Start consistency group snapshot rollback]
 
-xref:../commands-a-z/start-controller.adoc[Start controller trace]
+link:../commands-a-z/start-controller.adoc[Start controller trace]
 
-xref:../commands-a-z/start-diskpool-locate.adoc[Start disk pool locate]
+link:../commands-a-z/start-diskpool-locate.adoc[Start disk pool locate]
 
-xref:../commands-a-z/start-drivechannel-faultdiagnostics.adoc[Start drive channel fault isolation diagnostics]
+link:../commands-a-z/start-drivechannel-faultdiagnostics.adoc[Start drive channel fault isolation diagnostics]
 
-xref:../commands-a-z/start-drivechannel-locate.adoc[Start drive channel locate]
+link:../commands-a-z/start-drivechannel-locate.adoc[Start drive channel locate]
 
-xref:../commands-a-z/start-drive-initialize.adoc[Start drive initialize]
+link:../commands-a-z/start-drive-initialize.adoc[Start drive initialize]
 
-xref:../commands-a-z/start-drive-locate.adoc[Start drive locate]
+link:../commands-a-z/start-drive-locate.adoc[Start drive locate]
 
-xref:../commands-a-z/start-drive-reconstruct.adoc[Start drive reconstruction]
+link:../commands-a-z/start-drive-reconstruct.adoc[Start drive reconstruction]
 
-xref:../commands-a-z/start-ioclog.adoc[Start input output controller (IOC) dump]
+link:../commands-a-z/start-ioclog.adoc[Start input output controller (IOC) dump]
 
-xref:../commands-a-z/start-controller-iscsihostport-dhcprefresh.adoc[Start iSCSI DHCP refresh]
+link:../commands-a-z/start-controller-iscsihostport-dhcprefresh.adoc[Start iSCSI DHCP refresh]
 
-xref:../commands-a-z/start-secureerase-drive.adoc[Start FDE secure drive erase]
+link:../commands-a-z/start-secureerase-drive.adoc[Start FDE secure drive erase]
 
-xref:../commands-a-z/start-snapimage-rollback.adoc[Start snapshot image rollback]
+link:../commands-a-z/start-snapimage-rollback.adoc[Start snapshot image rollback]
 
-xref:../commands-a-z/start-ssdcache-locate.adoc[Start SSD cache locate]
+link:../commands-a-z/start-ssdcache-locate.adoc[Start SSD cache locate]
 
-xref:../commands-a-z/start-ssdcache-performancemodeling.adoc[Start SSD cache performance modeling]
+link:../commands-a-z/start-ssdcache-performancemodeling.adoc[Start SSD cache performance modeling]
 
-xref:../commands-a-z/start-storagearray-configdbdiagnostic.adoc[Start storage array configuration database diagnostic]
+link:../commands-a-z/start-storagearray-configdbdiagnostic.adoc[Start storage array configuration database diagnostic]
 
-xref:../commands-a-z/start-storagearray-controllerhealthimage-controller.adoc[Start storage array controller health image]
+link:../commands-a-z/start-storagearray-controllerhealthimage-controller.adoc[Start storage array controller health image]
 
-xref:../commands-a-z/start-storagearray-isnsserverrefresh.adoc[Start storage array iSNS server refresh]
+link:../commands-a-z/start-storagearray-isnsserverrefresh.adoc[Start storage array iSNS server refresh]
 
-xref:../commands-a-z/start-storagearray-locate.adoc[Start storage array locate]
+link:../commands-a-z/start-storagearray-locate.adoc[Start storage array locate]
 
-xref:../commands-a-z/start-syncmirror-primary-synchronize.adoc[Start synchronous mirroring synchronization]
+link:../commands-a-z/start-syncmirror-primary-synchronize.adoc[Start synchronous mirroring synchronization]
 
-xref:../commands-a-z/start-tray-locate.adoc[Start tray locate]
+link:../commands-a-z/start-tray-locate.adoc[Start tray locate]
 
-xref:../commands-a-z/start-volumegroup-defragment.adoc[Start volume group defragment]
+link:../commands-a-z/start-volumegroup-defragment.adoc[Start volume group defragment]
 
-xref:../commands-a-z/start-volumegroup-export.adoc[Start volume group export]
+link:../commands-a-z/start-volumegroup-export.adoc[Start volume group export]
 
-xref:../commands-a-z/start-volumegroup-import.adoc[Start volume group import]
+link:../commands-a-z/start-volumegroup-import.adoc[Start volume group import]
 
-xref:../commands-a-z/start-volumegroup-locate.adoc[Start volume group locate]
+link:../commands-a-z/start-volumegroup-locate.adoc[Start volume group locate]
 
-xref:../commands-a-z/start-volume-initialization.adoc[Start volume initialization]
+link:../commands-a-z/start-volume-initialization.adoc[Start volume initialization]
 
-xref:../commands-a-z/stop-cgsnapimage-rollback.adoc[Stop consistency group snapshot rollback]
+link:../commands-a-z/stop-cgsnapimage-rollback.adoc[Stop consistency group snapshot rollback]
 
-xref:../commands-a-z/stop-cgsnapvolume.adoc[Stop consistency group snapshot volume]
+link:../commands-a-z/stop-cgsnapvolume.adoc[Stop consistency group snapshot volume]
 
-xref:../commands-a-z/stop-diskpool-locate.adoc[Stop disk pool locate]
+link:../commands-a-z/stop-diskpool-locate.adoc[Stop disk pool locate]
 
-xref:../commands-a-z/stop-drivechannel-faultdiagnostics.adoc[Stop drive channel fault isolation diagnostics]
+link:../commands-a-z/stop-drivechannel-faultdiagnostics.adoc[Stop drive channel fault isolation diagnostics]
 
-xref:../commands-a-z/stop-drivechannel-locate.adoc[Stop drive channel locate]
+link:../commands-a-z/stop-drivechannel-locate.adoc[Stop drive channel locate]
 
-xref:../commands-a-z/stop-drive-locate.adoc[Stop drive locate]
+link:../commands-a-z/stop-drive-locate.adoc[Stop drive locate]
 
-xref:../commands-a-z/stop-drive-replace.adoc[Stop drive replace]
+link:../commands-a-z/stop-drive-replace.adoc[Stop drive replace]
 
-xref:../commands-a-z/stop-consistencygroup-pendingsnapimagecreation.adoc[Stop pending snapshot images on consistency group]
+link:../commands-a-z/stop-consistencygroup-pendingsnapimagecreation.adoc[Stop pending snapshot images on consistency group]
 
-xref:../commands-a-z/stop-pendingsnapimagecreation.adoc[Stop snapshot group pending snapshot images]
+link:../commands-a-z/stop-pendingsnapimagecreation.adoc[Stop snapshot group pending snapshot images]
 
-xref:../commands-a-z/stop-snapimage-rollback.adoc[Stop snapshot image rollback]
+link:../commands-a-z/stop-snapimage-rollback.adoc[Stop snapshot image rollback]
 
-xref:../commands-a-z/stop-snapvolume.adoc[Stop snapshot volume]
+link:../commands-a-z/stop-snapvolume.adoc[Stop snapshot volume]
 
-xref:../commands-a-z/stop-ssdcache-locate.adoc[Stop SSD cache locate]
+link:../commands-a-z/stop-ssdcache-locate.adoc[Stop SSD cache locate]
 
-xref:../commands-a-z/stop-ssdcache-performancemodeling.adoc[Stop SSD cache performance modeling]
+link:../commands-a-z/stop-ssdcache-performancemodeling.adoc[Stop SSD cache performance modeling]
 
-xref:../commands-a-z/stop-storagearray-configdbdiagnostic.adoc[Stop storage array configuration database diagnostic]
+link:../commands-a-z/stop-storagearray-configdbdiagnostic.adoc[Stop storage array configuration database diagnostic]
 
-xref:../commands-a-z/stop-storagearray-drivefirmwaredownload.adoc[Stop storage array drive firmware download]
+link:../commands-a-z/stop-storagearray-drivefirmwaredownload.adoc[Stop storage array drive firmware download]
 
-xref:../commands-a-z/stop-storagearray-iscsisession.adoc[Stop storage array iSCSI session]
+link:../commands-a-z/stop-storagearray-iscsisession.adoc[Stop storage array iSCSI session]
 
-xref:../commands-a-z/stop-storagearray-locate.adoc[Stop storage array locate]
+link:../commands-a-z/stop-storagearray-locate.adoc[Stop storage array locate]
 
-xref:../commands-a-z/stop-tray-locate.adoc[Stop tray locate]
+link:../commands-a-z/stop-tray-locate.adoc[Stop tray locate]
 
-xref:../commands-a-z/stop-volumecopy-target-source.adoc[Stop volume copy]
+link:../commands-a-z/stop-volumecopy-target-source.adoc[Stop volume copy]
 
-xref:../commands-a-z/stop-volumegroup-locate.adoc[Stop volume group locate]
+link:../commands-a-z/stop-volumegroup-locate.adoc[Stop volume group locate]
 
-xref:../commands-a-z/suspend-asyncmirrorgroup.adoc[Suspend asynchronous mirror group]
+link:../commands-a-z/suspend-asyncmirrorgroup.adoc[Suspend asynchronous mirror group]
 
-xref:../commands-a-z/suspend-ssdcache.adoc[Suspend SSD cache]
+link:../commands-a-z/suspend-ssdcache.adoc[Suspend SSD cache]
 
-xref:../commands-a-z/suspend-syncmirror-primaries.adoc[Suspend synchronous mirroring]
+link:../commands-a-z/suspend-syncmirror-primaries.adoc[Suspend synchronous mirroring]
 
-xref:../commands-a-z/smcli-alerttest.adoc[Test alerts]
+link:../commands-a-z/smcli-alerttest.adoc[Test alerts]
 
-xref:../commands-a-z/diagnose-asyncmirrorgroup.adoc[Test asynchronous mirror group connectivity]
+link:../commands-a-z/diagnose-asyncmirrorgroup.adoc[Test asynchronous mirror group connectivity]
 
-xref:../commands-a-z/smcli-autosupportconfig-test.adoc[Test the AutoSupport configuration]
+link:../commands-a-z/smcli-autosupportconfig-test.adoc[Test the AutoSupport configuration]
 
-xref:../commands-a-z/start-storagearray-autosupport-deliverytest.adoc[Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/start-storagearray-autosupport-deliverytest.adoc[Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)]
 
-xref:../commands-a-z/start-emailalert-test.adoc[Test email alert configuration]
+link:../commands-a-z/start-emailalert-test.adoc[Test email alert configuration]
 
-xref:../commands-a-z/start-snmptrapdestination.adoc[Test SNMP trap destination]
+link:../commands-a-z/start-snmptrapdestination.adoc[Test SNMP trap destination]
 
-xref:../commands-a-z/start-syslog-test.adoc[Test syslog configuration]
+link:../commands-a-z/start-syslog-test.adoc[Test syslog configuration]
 
-xref:../commands-a-z/delete-snmpcommunity.adoc[Unregister SNMP community]
+link:../commands-a-z/delete-snmpcommunity.adoc[Unregister SNMP community]
 
-xref:../commands-a-z/delete-snmptrapdestination.adoc[Unregister SNMP trap destination]
+link:../commands-a-z/delete-snmptrapdestination.adoc[Unregister SNMP trap destination]
 
-xref:../commands-a-z/set-snmpcommunity.adoc[Update SNMP community]
+link:../commands-a-z/set-snmpcommunity.adoc[Update SNMP community]
 
-xref:../commands-a-z/set-snmpsystemvariables.adoc[Update SNMP MIB II system group variables]
+link:../commands-a-z/set-snmpsystemvariables.adoc[Update SNMP MIB II system group variables]
 
-xref:../commands-a-z/set-snmptrapdestination-trapreceiverip.adoc[Update SNMP trap destination]
+link:../commands-a-z/set-snmptrapdestination-trapreceiverip.adoc[Update SNMP trap destination]

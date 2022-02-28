@@ -1,128 +1,126 @@
 ---
 permalink: commands-category/security-administrator-commands.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
 = Security administrators commands
 :icons: font
 :imagesdir: ./media/
 
-[.lead]
-* *<<GUID-B0F6B657-17F7-4543-A9E1-F7E6E8F0F066,C-R>> | <<SECTION_6BDF24B3241043CCB953569A72D72162,S-V>>*
 
-xref:../commands-a-z/create-storagearray-directoryserver.adoc[Create storage array directory server]
+link:../commands-a-z/create-storagearray-directoryserver.adoc[Create storage array directory server]
 
-xref:../commands-a-z/create-storagearray-securitykey.adoc[Create storage array security key]
+link:../commands-a-z/create-storagearray-securitykey.adoc[Create storage array security key]
 
-xref:../commands-a-z/create-storagearray-syslog.adoc[Create storage array syslog configuration]
+link:../commands-a-z/create-storagearray-syslog.adoc[Create storage array syslog configuration]
 
-xref:../commands-a-z/delete-auditlog.adoc[Delete Audit Log records]
+link:../commands-a-z/delete-auditlog.adoc[Delete Audit Log records]
 
-xref:../commands-a-z/delete-storagearray-directoryservers.adoc[Delete storage array directory server]
+link:../commands-a-z/delete-storagearray-directoryservers.adoc[Delete storage array directory server]
 
-xref:../commands-a-z/delete-storagearray-loginbanner.adoc[Delete storage array login banner]
+link:../commands-a-z/delete-storagearray-loginbanner.adoc[Delete storage array login banner]
 
-xref:../commands-a-z/delete-storagearray-syslog.adoc[Delete storage array syslog configuration]
+link:../commands-a-z/delete-storagearray-syslog.adoc[Delete storage array syslog configuration]
 
-xref:../commands-a-z/disable-storagearray-externalkeymanagement-file.adoc[Disable external security key management]
+link:../commands-a-z/disable-storagearray-externalkeymanagement-file.adoc[Disable external security key management]
 
-xref:../commands-a-z/show-storagearray-syslog.adoc[Display storage array syslog configuration]
+link:../commands-a-z/show-storagearray-syslog.adoc[Display storage array syslog configuration]
 
-xref:../commands-a-z/enable-storagearray-externalkeymanagement-file.adoc[Enable external security key management]
+link:../commands-a-z/enable-storagearray-externalkeymanagement-file.adoc[Enable external security key management]
 
-xref:../commands-a-z/export-storagearray-securitykey.adoc[Export storage array security key]
+link:../commands-a-z/export-storagearray-securitykey.adoc[Export storage array security key]
 
-xref:../commands-a-z/save-storagearray-keymanagementclientcsr.adoc[Generate Key Management Certificate Signing Request (CSR)]
+link:../commands-a-z/save-storagearray-keymanagementclientcsr.adoc[Generate Key Management Certificate Signing Request (CSR)]
 
-xref:../commands-a-z/save-controller-arraymanagementcsr.adoc[Generate web server Certificate Signing Request (CSR)]
+link:../commands-a-z/save-controller-arraymanagementcsr.adoc[Generate web server Certificate Signing Request (CSR)]
 
-xref:../commands-a-z/import-storagearray-securitykey-file.adoc[Import storage array security key]
+link:../commands-a-z/import-storagearray-securitykey-file.adoc[Import storage array security key]
 
-xref:../commands-a-z/download-controller-cacertificate.adoc[Install root/intermediate CA certificates]
+link:../commands-a-z/download-controller-cacertificate.adoc[Install root/intermediate CA certificates]
 
-xref:../commands-a-z/download-controller-arraymanagementservercertificate.adoc[Install server signed certificate]
+link:../commands-a-z/download-controller-arraymanagementservercertificate.adoc[Install server signed certificate]
 
-xref:../commands-a-z/download-storagearray-keymanagementcertificate.adoc[Install storage array external key management certificate]
+link:../commands-a-z/download-storagearray-keymanagementcertificate.adoc[Install storage array external key management certificate]
 
-xref:../commands-a-z/download-controller-trustedcertificate.adoc[Install trusted CA certificates]
+link:../commands-a-z/download-controller-trustedcertificate.adoc[Install trusted CA certificates]
 
-xref:../commands-a-z/load-storagearray-dbmdatabase.adoc[Load storage array DBM database]
+link:../commands-a-z/load-storagearray-dbmdatabase.adoc[Load storage array DBM database]
 
-xref:../commands-a-z/delete-storagearray-trustedcertificate.adoc[Remove installed trusted CA certificates]
+link:../commands-a-z/delete-storagearray-trustedcertificate.adoc[Remove installed trusted CA certificates]
 
-xref:../commands-a-z/delete-storagearray-keymanagementcertificate.adoc[Remove installed external key management certificate]
+link:../commands-a-z/delete-storagearray-keymanagementcertificate.adoc[Remove installed external key management certificate]
 
-xref:../commands-a-z/delete-controller-cacertificate.adoc[Remove installed root/intermediate CA certificates]
+link:../commands-a-z/delete-controller-cacertificate.adoc[Remove installed root/intermediate CA certificates]
 
-xref:../commands-a-z/remove-storagearray-directoryserver.adoc[Remove storage array directory server role mapping]
+link:../commands-a-z/remove-storagearray-directoryserver.adoc[Remove storage array directory server role mapping]
 
-xref:../commands-a-z/reset-controller-arraymanagementsignedcertificate.adoc[Reset installed signed certificate]
+link:../commands-a-z/reset-controller-arraymanagementsignedcertificate.adoc[Reset installed signed certificate]
 
-xref:../commands-a-z/save-storagearray-keymanagementcertificate.adoc[Retrieve installed external key management certificate]
+link:../commands-a-z/save-storagearray-keymanagementcertificate.adoc[Retrieve installed external key management certificate]
 
-xref:../commands-a-z/save-controller-cacertificate.adoc[Retrieve installed CA certificates]
+link:../commands-a-z/save-controller-cacertificate.adoc[Retrieve installed CA certificates]
 
-xref:../commands-a-z/save-controller-arraymanagementsignedcertificate.adoc[Retrieve installed server certificate]
+link:../commands-a-z/save-controller-arraymanagementsignedcertificate.adoc[Retrieve installed server certificate]
 
-xref:../commands-a-z/save-storagearray-trustedcertificate.adoc[Retrieve installed trusted CA certificates]
+link:../commands-a-z/save-storagearray-trustedcertificate.adoc[Retrieve installed trusted CA certificates]
 
-xref:../commands-a-z/save-auditlog.adoc[Save Audit Log records]
+link:../commands-a-z/save-auditlog.adoc[Save Audit Log records]
 
-xref:../commands-a-z/save-storagearray-configuration.adoc[Save storage array configuration]
+link:../commands-a-z/save-storagearray-configuration.adoc[Save storage array configuration]
 
-xref:../commands-a-z/save-storagearray-dbmdatabase.adoc[Save storage array DBM database]
+link:../commands-a-z/save-storagearray-dbmdatabase.adoc[Save storage array DBM database]
 
-xref:../commands-a-z/save-storagearray-dbmvalidatorinfo.adoc[Save storage array DBM validator information file]
+link:../commands-a-z/save-storagearray-dbmvalidatorinfo.adoc[Save storage array DBM validator information file]
 
-xref:../commands-a-z/save-storagearray-hostportstatistics.adoc[Save storage array host port statistics]
+link:../commands-a-z/save-storagearray-hostportstatistics.adoc[Save storage array host port statistics]
 
-xref:../commands-a-z/save-storagearray-loginbanner.adoc[Save storage array login banner]
+link:../commands-a-z/save-storagearray-loginbanner.adoc[Save storage array login banner]
 
-xref:../commands-a-z/set-auditlog.adoc[Set Audit Log settings]
+link:../commands-a-z/set-auditlog.adoc[Set Audit Log settings]
 
-xref:../commands-a-z/set-storagearray-revocationchecksettings.adoc[Set certificate revocation check settings]
+link:../commands-a-z/set-storagearray-revocationchecksettings.adoc[Set certificate revocation check settings]
 
-xref:../commands-a-z/set-storagearray-externalkeymanagement.adoc[Set external key management settings]
+link:../commands-a-z/set-storagearray-externalkeymanagement.adoc[Set external key management settings]
 
-xref:../commands-a-z/set-storagearray-securitykey.adoc[Set internal storage array security key]
+link:../commands-a-z/set-storagearray-securitykey.adoc[Set internal storage array security key]
 
-xref:../commands-a-z/set-session-erroraction.adoc[Set session]
+link:../commands-a-z/set-session-erroraction.adoc[Set session]
 
-xref:../commands-a-z/set-storagearray-directoryserver.adoc[Set storage array directory server]
+link:../commands-a-z/set-storagearray-directoryserver.adoc[Set storage array directory server]
 
-xref:../commands-a-z/set-storagearray-directoryserver-roles.adoc[Set storage array directory server role mapping]
+link:../commands-a-z/set-storagearray-directoryserver-roles.adoc[Set storage array directory server role mapping]
 
-xref:../commands-a-z/set-storagearray-localusername.adoc[Set storage array local user password or SYMbol password]
+link:../commands-a-z/set-storagearray-localusername.adoc[Set storage array local user password or SYMbol password]
 
-xref:../commands-a-z/set-storagearray-loginbanner.adoc[Set storage array login banner]
+link:../commands-a-z/set-storagearray-loginbanner.adoc[Set storage array login banner]
 
-xref:../commands-a-z/set-storagearray-managementinterface.adoc[Set storage array management interface]
+link:../commands-a-z/set-storagearray-managementinterface.adoc[Set storage array management interface]
 
-xref:../commands-a-z/set-storagearray-usersession.adoc[Set storage array user session]
+link:../commands-a-z/set-storagearray-usersession.adoc[Set storage array user session]
 
-xref:../commands-a-z/show-auditlog-configuration.adoc[Show Audit Log configuration]
+link:../commands-a-z/show-auditlog-configuration.adoc[Show Audit Log configuration]
 
-xref:../commands-a-z/show-auditlog-summary.adoc[Show Audit Log summary]
+link:../commands-a-z/show-auditlog-summary.adoc[Show Audit Log summary]
 
-xref:../commands-a-z/show-storagearray-revocationchecksettings.adoc[Show certificate revocation check settings]
+link:../commands-a-z/show-storagearray-revocationchecksettings.adoc[Show certificate revocation check settings]
 
-xref:../commands-a-z/show-controller-cacertificate.adoc[Show installed root/intermediate CA certificates summary]
+link:../commands-a-z/show-controller-cacertificate.adoc[Show installed root/intermediate CA certificates summary]
 
-xref:../commands-a-z/show-storagearray-trustedcertificate-summary.adoc[Show installed trusted CA certificates summary]
+link:../commands-a-z/show-storagearray-trustedcertificate-summary.adoc[Show installed trusted CA certificates summary]
 
-xref:../commands-a-z/show-controller-arraymanagementsignedcertificate-summary.adoc[Show signed certificate]
+link:../commands-a-z/show-controller-arraymanagementsignedcertificate-summary.adoc[Show signed certificate]
 
-xref:../commands-a-z/show-storagearray-directoryservices-summary.adoc[Show storage array directory services summary]
+link:../commands-a-z/show-storagearray-directoryservices-summary.adoc[Show storage array directory services summary]
 
-xref:../commands-a-z/start-storagearray-ocspresponderurl-test.adoc[Start OCSP server URL test]
+link:../commands-a-z/start-storagearray-ocspresponderurl-test.adoc[Start OCSP server URL test]
 
-xref:../commands-a-z/start-storagearray-syslog-test.adoc[Start storage array syslog test]
+link:../commands-a-z/start-storagearray-syslog-test.adoc[Start storage array syslog test]
 
-xref:../commands-a-z/start-storagearray-externalkeymanagement-test.adoc[Test external key management communication]
+link:../commands-a-z/start-storagearray-externalkeymanagement-test.adoc[Test external key management communication]
 
-xref:../commands-a-z/start-storagearray-directoryservices-test.adoc[Test storage array directory server]
+link:../commands-a-z/start-storagearray-directoryservices-test.adoc[Test storage array directory server]
 
-xref:../commands-a-z/set-storagearray-syslog.adoc[Update storage array syslog configuration]
+link:../commands-a-z/set-storagearray-syslog.adoc[Update storage array syslog configuration]
 
-xref:../commands-a-z/validate-storagearray-securitykey.adoc[Validate storage array security key]
+link:../commands-a-z/validate-storagearray-securitykey.adoc[Validate storage array security key]
