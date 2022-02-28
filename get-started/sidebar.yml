@@ -2,44 +2,44 @@ section: get-started
 title: Get started
 entries:
   - title: Changes in the CLI and script commands in this release
-    url: /changes-in-the-cli-and-script-commands-in-this-release.html
+    url: /get-started/changes-in-the-cli-and-script-commands-in-this-release.html
   - title: Formatting the commands
-    url: /formatting-the-commands.html
+    url: /get-started/formatting-the-commands.html
     entries:
     - title: Structure of a CLI command
-      url: /structure-of-a-cli-command.html
+      url: /get-started/structure-of-a-cli-command.html
       entries:
       - title: Interactive mode
-        url: /interactive-mode.html
+        url: /get-started/interactive-mode.html
       - title: CLI command wrapper syntax
-        url: /cli-command-wrapper-syntax.html
+        url: /get-started/cli-command-wrapper-syntax.html
       - title: Command line parameters
-        url: /command-line-parameters.html
+        url: /get-started/command-line-parameters.html
     - title: Structure of a script command
-      url: /structure-of-a-script-command.html
+      url: /get-started/structure-of-a-script-command.html
       entries:
       - title: Synopsis of the script commands
-        url: /synopsis-of-the-script-commands.html
+        url: /get-started/synopsis-of-the-script-commands.html
       - title: Recurring syntax elements
-        url: /recurring-syntax-elements.html
+        url: /get-started/recurring-syntax-elements.html
     - title: Naming conventions
-      url: /naming-conventions.html
+      url: /get-started/naming-conventions.html
     - title: Formatting CLI commands
-      url: /formatting-cli-commands.html
+      url: /get-started/formatting-cli-commands.html
     - title: Formatting rules for script commands
-      url: /formatting-rules-for-script-commands.html
+      url: /get-started/formatting-rules-for-script-commands.html
     - title: Formatting CLI commands in Windows PowerShell
-      url: /formatting-cli-commands-in-windows-powershell.html
+      url: /get-started/formatting-cli-commands-in-windows-powershell.html
     - title: Detailed error reporting
-      url: /detailed-error-reporting.html
+      url: /get-started/detailed-error-reporting.html
     - title: Exit status
-      url: /exit-status.html
+      url: /get-started/exit-status.html
     - title: Adding comments to a script file
-      url: /adding-comments-to-a-script-file.html
+      url: /get-started/adding-comments-to-a-script-file.html
       entries:
       - title: Usage guidelines
-        url: /usage-guidelines.html
+        url: /get-started/usage-guidelines.html
     - title: Firmware compatibility levels
-      url: /firmware-compatibility-levels.html
+      url: /get-started/firmware-compatibility-levels.html
   - title: New SMcli https mode
-    url: /new-https-mode.html
+    url: /get-started/new-https-mode.html
