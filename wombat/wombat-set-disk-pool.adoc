@@ -1,0 +1,158 @@
+---
+permalink: wombat/wombat-set-disk-pool.html
+sidebar: sidebar
+keywords: 
+summary: 'The set diskPool command sets the attributes associated with a disk pool based on the specified parameters.'
+---
+= Set disk pool
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set diskPool` command sets the attributes associated with a disk pool based on the specified parameters.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set (diskPool [diskPoolName] |
+diskPools [diskPoolName1 ... diskPoolNameN] | allDiskPools)
+[reservedDriveCount=reservedDriveCountValue]
+[warningThreshold=(warningThresholdValue | default)]
+[criticalThreshold=(criticalThresholdValue | default)]
+[criticalPriority=(highest | high | medium |low |lowest)]
+[degradedPriority=(highest |high |medium |low |lowest)]
+[backgroundPriority=(highest | high | medium |low |lowest)]
+[userLabel=diskPoolName]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`diskPool`
+a|
+The name of the disk pool for which you are setting attributes. Enclose the disk pool name in square brackets ([ ]). If the disk pool name has special characters or consists only of numbers, you must enclose the disk pool name in double quotation marks (" ") inside square brackets.
+
+a|
+`diskPools`
+a|
+The names of several disk pools for which you want to set attributes. Enter the names of the disk pools using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Separate each of the names with a space.
+
+If the disk pool names have special characters or numbers, enter the names using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+a|
+`allDiskPools`
+a|
+This parameter sets attributes for all of the disk pools in the storage array.
+a|
+`reservedDriveCount`
+a|
+This parameter reserves space on every drive in the disk pool, to be used exclusively for reconstruction of failed drives. Each unit in this count represents the capacity to reconstruct one failed drive to the remainder of the disk pool.
+
+a|
+`warningThreshold`
+a|
+The percentage of disk pool capacity at which you receive a warning alert that the disk pool is nearing full. Use integer values. For example, a value of 70 means 70 percent. For best operation, the value for this parameter must be less than the value for the `criticalThreshold` parameter.
+
+Valid values are from 0 to 100.
+
+The default value is 50.
+
+Setting this parameter to `0` disables warning alerts.
+
+If you set this to `default`, the warning alert threshold value is determined by the controller firmware.
+
+a|
+`criticalThreshold`
+a|
+The percentage of disk pool capacity at which you receive a critical alert that the disk pool is nearing full. Use integer values. For example, a value of 70 means 70 percent. For best operation, the value for this parameter must be greater than the value for the `warningThreshold` parameter.
+
+Valid values are from 0 to 100.
+
+The default value is 85 percent.
+
+Setting this parameter to `0` disables both warning alerts and critical alerts.
+
+If you set this to `default`, the critical alert threshold value is determined by the controller firmware.
+
+a|
+`criticalPriority`
+a|
+The priority for reconstruction operations for critical events on the disk pool. For example, disk pool reconstruction after at least two drive failures.
+
+Valid values are `highest`, `high`, `medium`, `low`, and `lowest`. The default value is `highest`.
+
+a|
+`degradedPriority`
+a|
+The priority for reconstruction operations for degraded events on the disk pool. For example, disk pool reconstruction after at one drive failure.
+
+Valid values are `highest`, `high`, `medium`, `low`, and `lowest`. The default value is `high`.
+
+a|
+`backgroundPriority`
+a|
+The priority for background operations on the disk pool.
+
+Valid values are `highest`, `high`, `medium`, `low`, and `lowest`. The default value is `low`.
+
+a|
+`userLabel`
+a|
+The new name that you want to give the disk pool. Enclose the disk pool name in double quotation marks (" ").
+|===
+
+== Notes
+
+Each disk pool name must be unique. You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. User labels can have a maximum of 30 characters.
+
+You can specify an arbitrary set of disk pools. If you select multiple disk pools, setting a value for the `userLabel` causes an error.
+
+If you do not specify a value for an optional parameter, a default value is assigned.
+
+== Disk pool alert thresholds
+
+Each disk pool has two progressively severe levels of alerts to inform users when the storage capacity of the disk pool is approaching full. The threshold for an alert is a percent of the used capacity to the total usable capacity in the disk pool. The alerts are:
+
+* Warning -- This is the first level of alert that the used capacity in a disk pool is approaching full. When the threshold for the warning alert is reached a Needs Attention condition is generated and an event is posted to the storage management software. The warning threshold is superseded by the critical threshold. The default warning threshold is 50 percent.
+* Critical -- This is the most severe level of alert that the used capacity in a disk pool is approaching full. When the threshold for the critical alert is reached a Needs Attention condition is generated and an event is posted to the storage management software. The warning threshold is superseded by the critical threshold. The default threshold for the critical alert is 85 percent.
+
+To be effective, the value for a warning alert must always be less than the value for a critical alert. If the value for the warning alert is the same as the value for a critical alert, only the critical alert is sent.
+
+== Disk pool background operations
+
+Disk pools support these background operations:
+
+* Reconstruction
+* Instant Availability Format (IAF)
+* Format
+* Dynamic Capacity Expansion (DCE)
+* Dynamic Capacity Reduction (DCR)
+* Dynamic Volume Expansion (DVE) (For disk pools, DVE is actually not a background operation, but DVE is supported as a synchronous operation.)
+
+Disk pools do not queue background commands. You can start several background commands sequentially, but starting more than one background operation at a time delays the completion of commands that you started previously. The relative priority levels for the supported background operations are:
+
+. Reconstruction
+. Format
+. IAF
+. DCE/DCR
+
+== Minimum firmware level
+
+7.83

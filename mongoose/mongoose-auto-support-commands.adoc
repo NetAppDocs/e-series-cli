@@ -1,0 +1,60 @@
+---
+permalink: mongoose/mongoose-auto-support-commands.html
+sidebar: sidebar
+keywords: reset storageArray autoSupport schedule,save storageArray autoSupport log,save storageArray supportData,set storageArray autoSupport,set storageArray autoSupport deliveryMethod,set storageArray autoSupport schedule,set storageArray autoSupportMaintenanceWindow,set storageArray autoSupportOnDemand,set storageArray autoSupportRemoteDiag,show storageArray autoSupport,SMcli -autoSupportConfig,SMcli -autoSupportConfig show,SMcli -autoSupportConfig test,SMcli -autoSupportLog,SMcli autoSupportSchedule reset,SMcli -autoSupportSchedule show,SMcli enable autoSupportFeature,SMcli enable\|disable autoSupportOnDemand,SMcli -supportBundle schedule,start storageArray autoSupport deliveryTest
+summary: ''
+---
+= Auto support commands
+:icons: font
+:imagesdir: ./media/
+
+* *<<GUID-84ADA178-30E4-4720-AACD-73AEE73A02FC,AutoSupport bundle collection commands for the E2700 and E5600>> | <<GUID-1B7D7168-7D42-441B-BC79-669315F3CF76,AutoSupport commands for all storage arrays>> | <<GUID-20400221-F463-4E42-B5E2-0DEF417DF435,AutoSupport Commands for the E2800, E5700>>*
+* *AutoSupport bundle collection commands for the E2700 and E5600*
++
+xref:../wombat/wombat-smcli-autosupportlog.adoc[Capture or view an AutoSupport log]
++
+xref:../wombat/wombat-smcli-autosupportconfig-show.adoc[Display AutoSupport bundle collection settings]
++
+xref:../wombat/wombat-smcli-autosupportschedule-show.adoc[Display AutoSupport message collection schedule]
++
+xref:../wombat/wombat-smcli-enable-autosupportfeature.adoc[Enable or disable AutoSupport at the EMW management domain level...]
++
+xref:../wombat/wombat-smcli-enable-disable-autosupportondemand.adoc[Enable or disable the AutoSupport OnDemand feature at the EMW management domain level (SMcli only)]
++
+xref:../wombat/wombat-smcli-enable-disable-autosupportremotediag.adoc[Enable or disable the AutoSupport OnDemand remote diagnostics feature at...]
++
+xref:../wombat/wombat-smcli-autosupportschedule-reset.adoc[Reset AutoSupport message collection schedule]
++
+xref:../wombat/wombat-smcli-supportbundle-schedule.adoc[Schedule automatic support bundle collection configuration]
++
+xref:../wombat/wombat-smcli-autosupportconfig.adoc[Specify the AutoSupport delivery method]
++
+xref:../wombat/wombat-smcli-autosupportconfig-test.adoc[Test the AutoSupport configuration]
+
+* *AutoSupport commands for all storage arrays*
++
+link:../wombat/wombat-enable-or-disable-autosupport-individual-arrays.md#[Enable or disable AutoSupport (individual arrays, for E2800, E5700 arrays only)]
++
+link:../wombat/wombat-save-storagearray-supportdata.md#[Save storage array support data]
+
+* *AutoSupport Commands for the E2800, E5700*
++
+xref:../wombat/wombat-set-storagearray-autosupportmaintenancewindow.adoc[Enable or disable AutoSupport maintenance window (for individual E2800 or E5700 arrays)]
++
+xref:../wombat/wombat-set-storagearray-autosupportondemand.adoc[Enable or disable the AutoSupport OnDemand feature (for individual E2800 or E5700 arrays)]
++
+xref:../wombat/wombat-set-storagearray-autosupportremotediag.adoc[Enable or disable the AutoSupport Remote Diagnostics feature (for individual E2800 or E5700 arrays)]
++
+xref:../wombat/wombat-save-storagearray-autosupport-log.adoc[Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)]
++
+xref:../wombat/wombat-reset-storagearray-autosupport-schedule.adoc[Reset AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
++
+xref:../wombat/wombat-show-storagearray-autosupport.adoc[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
++
+xref:../wombat/wombat-set-storagearray-autosupport-schedule.adoc[Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
++
+xref:../wombat/wombat-set-autosupport-https-delivery-method-e2800-e5700.adoc[Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)]
++
+xref:../wombat/wombat-set-email-smtp-delivery-method-e2800-e5700.adoc[Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)]
++
+xref:../wombat/wombat-start-storagearray-autosupport-deliverytest.adoc[Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)]

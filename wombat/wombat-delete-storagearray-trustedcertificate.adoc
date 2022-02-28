@@ -1,0 +1,58 @@
+---
+permalink: wombat/wombat-delete-storagearray-trustedcertificate.html
+sidebar: sidebar
+keywords: 
+summary: 'The delete storageArray trustedCertificate command removes the specified user installed CA certificates from the array’s web servers.'
+---
+= Remove installed trusted CA certificates
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete storageArray trustedCertificate` command removes the specified user installed CA certificates from the array's web servers.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+
+delete storageArray trustedCertificate [(allUserInstalled |
+aliases=("alias1" ... "aliasN"))]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`allUserInstalled`
+a|
+Allows you to specify the removal of all user installed certificates.
+a|
+`aliases`
+a|
+Allows you to specify one or more CA certificates to be deleted using the alias names or specify all. The aliases can be from any controllers. Enclose all the aliases in parentheses. If you enter more than one alias, separate them with a space.
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "delete storageArray trustedCertificate allUserInstalled;"
+
+SMcli -n Array1 -c "delete storageArray trustedCertificate
+   aliases=("19527b38-8d26-44e5-8c7f-5bf2ca9db7cf" "04bf744c-413a-49f1-9666-88d74189591d");"
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

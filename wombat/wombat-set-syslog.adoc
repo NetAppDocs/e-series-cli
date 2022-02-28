@@ -1,0 +1,84 @@
+---
+permalink: wombat/wombat-set-syslog.html
+sidebar: sidebar
+keywords: 
+summary: 'The set syslog command configures the syslog alert information. You can configure the event monitor to send alerts to the syslog server whenever an alertable event occurs.'
+---
+= Configure syslog settings
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set syslog` command configures the syslog alert information. You can configure the event monitor to send alerts to the syslog server whenever an alertable event occurs.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+* The syslog server address must be available. This address can be a fully qualified domain name, an IPv4 address, or an IPv6 address.
+* The UDP port number of the syslog server must be available. This port is typically 514.
+
+== Syntax
+
+----
+
+set syslog [defaultFacility=facilityNumber]
+| [defaultTag=defaultTag]
+| [syslogFormat=rfc3164|rfc5424]
+| (serverAddresses=(serverAddress:portNumber ... serverAddress:portNumber)
+| addServerAddresses=(serverAddress:portNumber ... serverAddress:portNumber))
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`defaultFacility`
+a|
+Optional. Allows you to specify the default facility number. The default facility must be a numerical value between 0 and 23.
+a|
+`defaultTag`
+a|
+Optional. Allows you to specify the default tag. Enclose string in quotes.
+a|
+`syslogFormat`
+a|
+The messaging format used for the syslog messages. The value may be one of the following:
+
+* `rfc3164` - RFC 3164 compliant format
+* `rfc5424` - RFC 5424 compliant format
+
+a|
+`serverAddresses`
+a|
+Allows you to set one or more syslog server addresses with associated port numbers. Using this set option will clear out existing server addresses. A syslog server address can be a fully qualified domain name, IPv4 address, or IPv6 address. The UDP Port must be a numerical value between 0 and 65535. Typically, the UDP Port for syslog is 514. Enclose all the addresses in parentheses. If you enter more than one address, then separate them with a space.
+a|
+`addServerAddresses`
+a|
+Allows you to add one or more syslog server addresses with associated port numbers. Using this set option will not clear out existing server addresses. A syslog server address can be a fully qualified domain name, IPv4 address, or IPv6 address. The UDP Port must be a numerical value between 0 and 65535. Typically, the UDP Port for syslog is 514. Enclose all the addresses in parentheses. If you enter more than one address, then separate them with a space.
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "set syslog serverAddresses=("ICTM1402S02H2.company.com:22");"
+
+SMcli -n Array1 -c "set syslog addServerAddresses=("serverName1.company.com:514"
+"serverName2.company.com:514");"
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40
+
+11.70.1 added the `syslogFormat` parameter to specify the Syslog message format.

@@ -1,0 +1,77 @@
+---
+permalink: wombat/wombat-show-storagearray-trustedcertificate-summary.html
+sidebar: sidebar
+keywords: 
+summary: 'The show storageArray trustedCertificate summary command displays the trusted installed CA certificates summary from the array. This command is useful to use before performing the delete storageArray trustedCertificate command so that you know the alias names of the certificates to delete.'
+---
+= Show installed trusted CA certificates summary
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show storageArray trustedCertificate summary` command displays the trusted installed CA certificates summary from the array. This command is useful to use before performing the `delete storageArray trustedCertificate` command so that you know the alias names of the certificates to delete.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+
+show storageArray trustedCertificate [all | allUserInstalled|
+ aliases=("alias1" ... "aliasN")] summary
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`all`
+a|
+Allows you to specify the retrieval of all certificates, including pre-installed and user installed certificates.
+a|
+`allUserInstalled`
+a|
+Allows you to specify the retrieval of all user installed certificates. This is the default option.
+a|
+`aliases`
+a|
+Allows the user to specify which pre-installed or user installed trusted certificate to retrieve by alias. Enclose all the aliases in parentheses. If you enter more than one alias, separate them with a space.
+|===
+
+== Examples
+
+Sample output may be different than illustrated below.
+
+----
+
+SMcli -n Array1 -c "show storageArray trustedCertificate allUserInstalled summary;"
+============================
+Trusted Certificates
+============================
+Alias:        19527b38-8d26-44e5-8c7f-5bf2ca9db7cf
+Type:         Pre-installed | User installed
+Subject DN:   CN=Corp Issuing CA 1
+Issuer DN:    CN=Corp Root CA
+Start:        date
+Expire:       date
+---------------------
+Alias:        myAliasName
+Type:         Pre-installed | User installed
+Subject DN:   CN=Corp Issuing CA 1
+Issuer DN:    CN=Corp Root CA
+Start:        date
+Expire:       date
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

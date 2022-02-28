@@ -1,0 +1,626 @@
+---
+permalink: wombat/wombat-create-consistencygroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The create consistencyGroup command creates a new, empty consistency group that can contain snapshot groups. You must add the snapshot groups using the set consistencyGroup addCGMember command.'
+---
+= Create consistency group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create consistencyGroup` command creates a new, empty consistency group that can contain snapshot groups. You must add the snapshot groups using the `set consistencyGroup addCGMember` command.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+create consistencyGroup userLabel="consistencyGroupName"
+[repositoryFullPolicy=(failBaseWrites | purgeSnapImages)]
+[repositoryFullLimit=percentValue]
+[autoDeleteLimit=numberOfSnapImages]
+[enableSchedule=(TRUE | FALSE)]
+[schedule (immediate | snapSchedule)]
+[rollbackPriority=(lowest | low | medium | high | highest)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`userLabel`
+a|
+The name of the new consistency group that you want to create. Enclose the new consistency group name in double quotation marks (" ").
+a|
+`repositoryFullPolicy`
+a|
+How you want snapshot processing to continue if the snapshot repository volumes are full. You can choose to fail writes to the base volume (`failBaseWrites`) or delete (purge) the snapshot images (`purgeSnapImages`). The default action is `purgeSnapImages`.
+a|
+`repositoryFullLimit`
+a|
+The percentage of repository capacity at which you receive a warning that the snapshot repository volume is nearing full. Use integer values. For example, a value of 70 means 70 percent. The default value is 75.
+
+a|
+`autoDeleteLimit`
+a|
+Each snapshot group can be configured to perform automatic deletion of its snapshot images to keep the total number of snapshot images in the snapshot group at or below a designated level. When this option is enabled, then any time a new snapshot image is created in the snapshot group, the system automatically deletes the oldest snapshot image in the group to comply with the limit value. This action frees repository capacity so it can be used to satisfy ongoing copy-on-write requirements for the remaining snapshot images.
+
+a|
+`enableSchedule`
+a|
+Whether the ability to schedule a snapshot operation is turned on or turned off. To turn on snapshot scheduling, set this parameter to `TRUE`. To turn off snapshot scheduling, set this parameter to `FALSE`.
+
+a|
+`rollBackPriority`
+a|
+Determines whether system resources should be allocated to the rollback operation at the expense of system performance. A value of `high` indicates that the rollback operation is prioritized over all other host I/O. A value of `low` indicates that the rollback operation should be performed with minimal impact to host I/O.
+
+|===
+
+== Notes
+
+A consistency group is a logical entity that enables you to manage in batch form all of the snapshot images that you add to the collection. The consistency group is a collection of snapshot groups that have mutual consistency requirements or dependencies for their snapshot images. Any snapshot images that you create and use for this collection must be managed in accordance with the consistency dependencies.
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+The snapshot images in a consistency group can be deduced based on the existence of a snapshot image within a consistency group. All snapshot images that reside within a consistency group share a common time stamp and sequence number.
+
+An operation on a snapshot image consistency group is treated as a single request, and causes all pending I/O operations to the associated base volume of each member to be drained and suspended before creating the snapshot images. If creation of the snapshot images cannot be completed successfully for all of the consistency group members, the operation fails and has no affect (that is, new snapshot images are not created).
+
+Based on this behavior all members for a consistency group usually have the same number of snapshot images. However, when a new member is added to a consistency group, that new member lacks the snapshot images that were previously created on the established members of the consistency group. The lack of snapshot images is not considered an error condition. Ensuing requests for deletion or rollback of snapshot images that only exist on a subset of the consistency group members will only affect the members for which the specified snapshot images actually exists.
+
+== Auto delete
+
+You can configure each snapshot group to automatically delete its snapshot images to keep the total number of snapshot images in the snapshot group at or below a maximum number of images. When the number of snapshot images in the snapshot group is at the maximum limit, the `autoDeleteLimit` parameter automatically deletes snapshot images whenever a new snapshot image is created in the snapshot group. The `autoDeleteLimit` parameter deletes the oldest snapshot images in the snapshot group until the maximum number of images defined with the parameter is met. This has the effect of freeing repository capacity so it can be used to satisfy ongoing copy-on-write requirements for the remaining snapshot images.
+
+== Scheduling snapshot images in a consistency group
+
+The `enableSchedule` parameter and the `schedule` parameter provide a way for you to schedule snapshots. Using these parameters, you can schedule snapshots daily, weekly, or monthly (by day or by date). The `enableSchedule` parameter turns on or turns off the ability to schedule snapshots. When you enable scheduling, you use the `schedule` parameter to define when you want the snapshots to occur.
+
+This table explains how to use the options for the `schedule` parameter:
+
+|===
+| Parameter| Description
+a|
+`schedule`
+a|
+Required for specifying schedule parameters.
+a|
+`immediate`
+a|
+Start the operation immediately. This item is mutually exclusive with any other scheduling parameters.
+a|
+`enableSchedule`
+a|
+When set to `true`, scheduling is turned on. When set to `false`, scheduling is turned off.
+
+[NOTE]
+====
+The default is `false`.
+====
+
+a|
+`startDate`
+a|
+A specific date on which to start the operation. The format for entering the date is MM:DD:YY. The default is the current date. An example of this option is `startDate=06:27:11`.
+a|
+`scheduleDay`
+a|
+A day of the week on which to start the operation. Can either be all or one or more of the following values:
+
+* `monday`
+* `tuesday`
+* `wednesday`
+* `thursday`
+* `friday`
+* `saturday`
+* `sunday`
+
+[NOTE]
+====
+Enclose the value in parentheses. For example, `scheduleDay=(wednesday)`.
+====
+
+More than one day can be specified by enclosing the days in a single set of parentheses and separating each day with a space. For example, `scheduleDay=(monday wednesday friday)`.
+
+[NOTE]
+====
+This parameter is not compatible with a monthly schedule.
+====
+
+a|
+`startTime`
+a|
+The time of a day on which to start the operation. The format for entering the time is HH:MM, where HH is the hour and MM is the minute past the hour. Uses a 24-hour clock. For example, 2:00 in the afternoon is 14:00. An example of this option is `startTime=14:27`.
+a|
+`scheduleInterval`
+a|
+An amount of time, in minutes, to have as a minimum between operations.Schedule interval should not be more than 1440 (24 hours) and it should be a multiple of 30.
+
+An example of this option is``scheduleInterval=180``.
+a|
+`endDate`
+a|
+A specific date on which to stop the operation. The format for entering the date is MM:DD:YY. If no end date is desired, you can specify `noEndDate`. An example of this option is `endDate=11:26:11`.
+a|
+`timesPerDay`
+a|
+The number of times to perform the operation in a day. An example of this option is `timesPerDay=4`.
+a|
+`timezone`
+a|
+Specifies the time zone to be used for the schedule. Can be specified in two ways:
+
+* *GMT±HH:MM*
++
+The time zone offset from GMT. Example: `timezone=GMT-06:00`.
+
+* *Text String*
++
+Standard time zone text string, must be enclosed in quotes. Example:``timezone="America/Chicago"``
+
+a|
+`scheduleDate`
+a|
+A day of the month on which to perform the operation. The values for the days are numerical and in the range of 1-31.
+[NOTE]
+====
+This parameter is not compatible with a weekly schedule.
+====
+
+An example of the `scheduleDate` option is `scheduleDate=("15")`.
+a|
+`month`
+a|
+A specific month on which to perform the operation. The values for the months are:
+
+* `jan` - January
+* `feb` - February
+* `mar` - March
+* `apr` - April
+* `may` - May
+* `jun` - June
+* `jul` - July
+* `aug` - August
+* `sep` - September
+* `oct` - October
+* `nov` - November
+* `dec` - December
+
+[NOTE]
+====
+Enclose the value in parentheses. For example, `month=(jan)`.
+====
+
+More than one month can be specified by enclosing the months in a single set of parentheses and separating each month with a space. For example, `month=(jan jul dec)`.
+
+Use this parameter with the `scheduleDate` parameter to perform the operation on a specific day of the month.
+
+[NOTE]
+====
+This parameter is not compatible with a weekly schedule.
+====
+
+|===
+This table explains how to use the `timeZone` parameter:
+
+|===
+| Timezone Name| GMT offset
+a|
+`Etc/GMT+12`
+a|
+`GMT-12:00`
+a|
+`Etc/GMT+11`
+a|
+`GMT-11:00`
+a|
+`Pacific/Honolulu`
+a|
+`GMT-10:00`
+a|
+`America/Anchorage`
+a|
+`GMT-09:00`
+a|
+`America/Santa_Isabel`
+a|
+`GMT-08:00`
+a|
+`America/Los_Angeles`
+a|
+`GMT-08:00`
+a|
+`America/Phoenix`
+a|
+`GMT-07:00`
+a|
+`America/Chihuahua`
+a|
+`GMT-07:00`
+a|
+`America/Denver`
+a|
+`GMT-07:00`
+a|
+`America/Guatemala`
+a|
+`GMT-06:00`
+a|
+`America/Chicago`
+a|
+`GMT-06:00`
+a|
+`America/Mexico_City`
+a|
+`GMT-06:00`
+a|
+`America/Regina`
+a|
+`GMT-06:00`
+a|
+`America/Bogota`
+a|
+`GMT-05:00`
+a|
+`America/New_York`
+a|
+`GMT-05:00`
+a|
+`Etc/GMT+5`
+a|
+`GMT-05:00`
+a|
+`America/Caracas`
+a|
+`GMT-04:30`
+a|
+`America/Asuncion`
+a|
+`GMT-04:00`
+a|
+`America/Halifax`
+a|
+`GMT-04:00`
+a|
+`America/Cuiaba`
+a|
+`GMT-04:00`
+a|
+`America/La_Paz`
+a|
+`GMT-04:00`
+a|
+`America/Santiago`
+a|
+`GMT-04:00`
+a|
+`America/St_Johns`
+a|
+`GMT-03:30`
+a|
+`America/Sao_Paulo`
+a|
+`GMT-03:00`
+a|
+`America/Buenos_Aires`
+a|
+`GMT-03:00`
+a|
+`America/Cayenne`
+a|
+`GMT-03:00`
+a|
+`America/Godthab`
+a|
+`GMT-03:00`
+a|
+`America/Montevideo`
+a|
+`GMT-03:00`
+a|
+`Etc/GMT+2`
+a|
+`GMT-02:00`
+a|
+`Atlantic/Azores`
+a|
+`GMT-01:00`
+a|
+`Atlantic/Cape_Verde`
+a|
+`GMT-01:00`
+a|
+`Africa/Casablanca`
+a|
+`GMT`
+a|
+`Etc/GMT`
+a|
+`GMT`
+a|
+`Europe/London`
+a|
+`GMT`
+a|
+`Atlantic/Reykjavik`
+a|
+`GMT`
+a|
+`Europe/Berlin`
+a|
+`GMT+01:00`
+a|
+`Europe/Budapest`
+a|
+`GMT+01:00`
+a|
+`Europe/Paris`
+a|
+`GMT+01:00`
+a|
+`Europe/Warsaw`
+a|
+`GMT+01:00`
+a|
+`Africa/Lagos`
+a|
+`GMT+01:00`
+a|
+`Africa/Windhoek`
+a|
+`GMT+01:00`
+a|
+`Asia/Anman`
+a|
+`GMT+02:00`
+a|
+`Asia/Beirut`
+a|
+`GMT+02:00`
+a|
+`Africa/Cairo`
+a|
+`GMT+02:00`
+a|
+`Asia/Damascus`
+a|
+`GMT+02:00`
+a|
+`Africa/Johannesburg`
+a|
+`GMT+02:00`
+a|
+`Europe/Kiev`
+a|
+`GMT+02:00`
+a|
+`Asia/Jerusalem`
+a|
+`GMT+02:00`
+a|
+`Europe/Istanbul`
+a|
+`GMT+03:00`
+a|
+`Europe/Minsk`
+a|
+`GMT+02:00`
+a|
+`Asia/Baghdad`
+a|
+`GMT+03:00`
+a|
+`Asia/Riyadh`
+a|
+`GMT+03:00`
+a|
+`Africa/Nairobi`
+a|
+`GMT+03:00`
+a|
+`Asia/Tehran`
+a|
+`GMT+03:30`
+a|
+`Europe/Moscow`
+a|
+`GMT+04:00`
+a|
+`Asia/Dubai`
+a|
+`GMT+04:00`
+a|
+`Asia/Baku`
+a|
+`GMT+04:00`
+a|
+`Indian/Mauritius`
+a|
+`GMT+04:00`
+a|
+`Asia/Tbilisi`
+a|
+`GMT+04:00`
+a|
+`Asia/Yerevan`
+a|
+`GMT+04:00`
+a|
+`Asia/Kabul`
+a|
+`GMT+04:30`
+a|
+`Asia/Karachi`
+a|
+`GMT+05:00`
+a|
+`Asia//Tashkent`
+a|
+`GMT+05:00`
+a|
+`Asia/Calcutta`
+a|
+`GMT+05:30`
+a|
+`Asia/Colombo`
+a|
+`GMT+05:30`
+a|
+`Asia/Katmandu`
+a|
+`GMT+05:45`
+a|
+`Asia/Yekaterinburg`
+a|
+`GMT+06:00`
+a|
+`Asia/Almaty`
+a|
+`GMT+06:00`
+a|
+`Asia/Dhaka`
+a|
+`GMT+06:00`
+a|
+`Asia/Rangoon`
+a|
+`GMT+06:30`
+a|
+`Asia/Novosibirsk`
+a|
+`GMT+07:00`
+a|
+`Asia/Bangkok`
+a|
+`GMT+07:00`
+a|
+`Asia/Krasnoyarsk`
+a|
+`GMT+08:00`
+a|
+`Asia/Shanghai`
+a|
+`GMT+08:00`
+a|
+`Asia/Singapore`
+a|
+`GMT+08:00`
+a|
+`Australia/Perth`
+a|
+`GMT+08:00`
+a|
+`Asia/Taipei`
+a|
+`GMT+08:00`
+a|
+`Asia/Ulaanbaatar`
+a|
+`GMT+08:00`
+a|
+`Asia/Irkutsk`
+a|
+`GMT+09:00`
+a|
+`Asia/Tokyo`
+a|
+`GMT+09:00`
+a|
+`Asia/Seoul`
+a|
+`GMT+09:00`
+a|
+`Australia/Adelaide`
+a|
+`GMT+09:30`
+a|
+`Australia/Darwin`
+a|
+`GMT+09:30`
+a|
+`Asia/Yakutsk`
+a|
+`GMT+10:00`
+a|
+`Australia/Brisbane`
+a|
+`GMT+10:00`
+a|
+`Australia/Sydney`
+a|
+`GMT+10:00`
+a|
+`Pacific/Port Moresby`
+a|
+`GMT+10:00`
+a|
+`Australia/Hobart`
+a|
+`GMT+10:00`
+a|
+`Asia/Vladivostok`
+a|
+`GMT+11:00`
+a|
+`Pacific/Guadalcanal`
+a|
+`GMT+11:00`
+a|
+`Pacific/Auckland`
+a|
+`GMT+12:00`
+a|
+`Etc/GMT-12`
+a|
+`GMT+12:00`
+a|
+`Pacific/Fiji`
+a|
+`GMT+12:00`
+a|
+`Asia/Kamchatka`
+a|
+`GMT+12:00`
+a|
+`Pacific/Tongatapu`
+a|
+`GMT+13:00`
+|===
+The code string for defining a schedule is similar to these examples:
+
+----
+enableSchedule=true schedule startTime=14:27
+----
+
+----
+enableSchedule=true schedule scheduleInterval=180
+----
+
+----
+enableSchedule=true schedule timeZone=GMT-06:00
+----
+
+----
+enableSchedule=true schedule timeZone="America/Chicago"
+----
+
+If you also use the `scheduleInterval` option, the firmware chooses between the `timesPerDay` option and the `scheduleInterval` option by selecting the lowest value of the two options. The firmware calculates an integer value for the `scheduleInterval` option by dividing 1440 by a the `scheduleInterval` option value that you set. For example, 1440/180 = 8. The firmware then compares the `timesPerDay` integer value with the calculated `scheduleInterval` integer value and uses the smaller value.
+
+To remove a schedule, use the `delete volume` command with the `schedule` parameter. The `delete volume` command with the `schedule` parameter deletes only the schedule, not the snapshot volume.
+
+When performing a rollback in a consistency group, the default operation is to rollback all members of the consistency group. If a rollback cannot be started successfully for all of the members in the consistency group, the rollback fails and has no effect. The snapshot image is not rolled back.
+
+== Minimum firmware level
+
+7.83
+
+7.86 adds the `scheduleDate` option and the `month` option.

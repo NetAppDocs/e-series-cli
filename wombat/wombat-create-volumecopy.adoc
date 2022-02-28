@@ -1,0 +1,108 @@
+---
+permalink: wombat/wombat-create-volumecopy.html
+sidebar: sidebar
+keywords: 
+summary: 'The create volumeCopy command creates a volume copy and starts the volume copy operation. This command is valid for snapshot image volume copy pairs.'
+---
+= Create volume copy
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create volumeCopy` command creates a volume copy and starts the volume copy operation. This command is valid for snapshot image volume copy pairs.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+Starting a volume copy operation overwrites all existing data on the target volume, makes the target volume read-only to hosts, and fails all snapshot image volumes associated with the target volume, if any exist. If you have used the target volume as a copy before, be sure you no longer need the data or have it backed up.
+====
+
+This command creates volume copies in two ways:
+
+* Volume copy without snapshot image, also called _offline_ volume copy
+* Volume copy with snapshot image, also called _online_ volume copy
+
+If you use volume copy without snapshot image, you cannot write to the source volume until the copy operation is complete. If you want to be able to write to the source volume before the copy operation is complete, use volume copy with snapshot image. You can select volume copy with snapshot image through the optional parameters in the command syntax.
+
+After completion of the volume copy with snapshot image operation, the snapshot image is deleted and the snapshot volume is disabled.
+
+[NOTE]
+====
+You can have a maximum of eight volume copies in progress at one time. If you try to create more than eight volume copies at one time, the controllers return a status of Pending until one of the volume copies that is in progress finishes and returns a status of Complete.
+====
+
+== Syntax
+
+----
+create volumeCopy source="sourceName"
+target="targetName"
+[copyPriority=(highest | high | medium | low | lowest)]
+[targetReadOnlyEnabled=(TRUE | FALSE)]
+[copyType=(offline | online)]
+[repositoryPercentOfBase=(20 | 40 | 60 | 120 | default)]
+[repositoryGroupPreference=(sameAsSource | otherThanSource | default)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`source`
+a|
+The name of an existing volume that you want to use as the source volume. Enclose the source volume name in double quotation marks (" ").
+a|
+`target`
+a|
+The name of an existing volume that you want to use as the target volume. Enclose the target volume name in double quotation marks (" ").
+a|
+`copyPriority`
+a|
+The priority that volume copy has relative to host I/O activity. Valid values are `highest`, `high`, `medium`, `low`, or `lowest`.
+a|
+`targetReadOnlyEnabled`
+a|
+The setting so that you can write to the target volume or only read from the target volume. To write to the target volume, set this parameter to `FALSE`. To prevent writing to the target volume, set this parameter to `TRUE`.
+a|
+`copyType`
+a|
+Use this parameter to create a volume copy with a snapshot image. Creating a volume copy with a snapshot image enables you to continue to write to the source volume while creating the volume copy. To create a volume copy with a snapshot image, set this parameter to `online`. To create a volume copy without a snapshot image, set this parameter to `offline`.
+
+If you do not use this parameter, the volume copy is created without a snapshot image.
+
+a|
+`repositoryPercentOfBase`
+a|
+This parameter determines the size of the repository volume for the snapshot image when you are creating a volume copy with a snapshot image. The size of the repository volume is expressed as a percentage of the source volume, which is also called the base volume. Valid values for this parameter are `20`, `40`, `60`, `120`, and `default`. The default value is 20. If you do not use this parameter, the firmware uses a value of 20 percent.
+
+You must use the `copyType` parameter with the `repositoryPercentOfBase` parameter.
+
+a|
+`repositoryGroupPreference`
+a|
+This parameter determines to which volume group the snapshot image repository volume is written. You have these choices:
+
+* `sameAsSource` -- The snapshot image volume is written to the same volume group as the source volume if space is available.
+* `otherThanSource` -- Deprecated parameter. Do not use
+* `default` -- The snapshot image repository volume is written to any volume group that has space.
+
+For best performance, use the `sameAsSource` option.
+
+You must use the `copyType` parameter with the `repositoryGroupPreference` parameter.
+
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, happens, and underscores for the names. Names can have a maximum of 30 characters.
+
+Copy priority defines the amount of system resources that are used to copy the data between the source volume and the target volume of a volume copy pair. If you select the highest priority level, the volume copy uses the most system resources to perform volume copy, which decreases performance for host data transfers.

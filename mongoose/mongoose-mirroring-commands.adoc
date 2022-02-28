@@ -1,0 +1,82 @@
+---
+permalink: mongoose/mongoose-mirroring-commands.html
+sidebar: sidebar
+keywords: activate storageArray feature,add volume asyncMirrorGroup,check asyncMirrorGroup repositoryConsistency,check storageArray connectivity,check syncMirror,clear asyncMirrorFault,create asyncMirrorGroup,create syncMirror,deactivate storageArray feature,delete asyncMirrorGroup,diagnose asyncMirrorGroup,diagnose syncMirror,remove asyncMirrorGroup,remove syncMirror,remove volume asyncMirrorGroup,reset iscsiIpAddress,reset storageArray arvmStats asyncMirrorGroup,resume asyncMirrorGroup,resume syncMirror,save storageArray arvmStats asyncMirrorGroup,set asyncMirrorGroup,set syncMirror,show asyncMirrorGroup summary,show asyncMirrorGroup synchronizationProgress,show syncMirror candidates,show syncMirror synchronizationProgress,start asyncMirrorGroup synchronize,start syncMirror primary synchronize,stop asyncMirrorGroup rolechange,suspend asyncMirrorGroup,suspend syncMirror primaries
+summary: ''
+---
+= Mirroring commands
+:icons: font
+:imagesdir: ./media/
+
+* *<<GUID-ADABB5DB-B042-4A32-AE27-F7AD970A2D43,Asynchronous mirroring commands>> | <<GUID-1B7D7168-7D42-441B-BC79-669315F3CF76,Synchronous mirroring commands>>*
+* *Asynchronous mirroring commands*
++
+xref:../wombat/wombat-activate-asynchronous-mirroring.adoc[Activate asynchronous mirroring]
++
+xref:../wombat/wombat-add-volume-asyncmirrorgroup.adoc[Add volume to asynchronous mirror group]
++
+xref:../wombat/wombat-stop-asyncmirrorgroup-rolechange.adoc[Cancel asynchronous mirror group role reversal]
++
+xref:../wombat/wombat-check-asyncmirrorgroup-repositoryconsistency.adoc[Check asynchronous mirror group consistency]
++
+xref:../wombat/wombat-clear-asyncmirrorfault.adoc[Clear asynchronous mirroring fault]
++
+xref:../wombat/wombat-create-asyncmirrorgroup.adoc[Create asynchronous mirror group]
++
+xref:../wombat/wombat-deactivate-storagearray.adoc[Deactivate asynchronous mirroring]
++
+xref:../wombat/wombat-delete-asyncmirrorgroup.adoc[Delete asynchronous mirror group]
++
+xref:../wombat/wombat-establish-asyncmirror-volume.adoc[Establish asynchronous mirrored pair]
++
+xref:../wombat/wombat-remove-asyncmirrorgroup.adoc[Remove incomplete asynchronous mirrored pair from asynchronous mirror group]
++
+xref:../wombat/wombat-remove-volume-asyncmirrorgroup.adoc[Remove volume from asynchronous mirror group]
++
+xref:../wombat/wombat-reset-storagearray-arvmstats-asyncmirrorgroup.adoc[Reset asynchronous mirror group statistics]
++
+xref:../wombat/wombat-reset-iscsiipaddress.adoc[Reset iSCSI IP address]
++
+xref:../wombat/wombat-resume-asyncmirrorgroup.adoc[Resume asynchronous mirror group]
++
+xref:../wombat/wombat-save-storagearray-arvmstats-asyncmirrorgroup.adoc[Save asynchronous mirror group statistics]
++
+xref:../wombat/wombat-set-asyncmirrorgroup.adoc[Set asynchronous mirror group]
++
+xref:../wombat/wombat-show-asyncmirrorgroup-summary.adoc[Show asynchronous mirror groups]
++
+xref:../wombat/wombat-show-asyncmirrorgroup-synchronizationprogress.adoc[Show asynchronous mirror group synchronization progress]
++
+xref:../wombat/wombat-start-asyncmirrorgroup-synchronize.adoc[Start asynchronous mirroring synchronization]
++
+xref:../wombat/wombat-suspend-asyncmirrorgroup.adoc[Suspend asynchronous mirror group]
++
+xref:../wombat/wombat-diagnose-asyncmirrorgroup.adoc[Test asynchronous mirror group connectivity]
+
+* *Synchronous mirroring commands*
++
+xref:../wombat/wombat-activate-synchronous-mirroring.adoc[Activate Synchronous Mirroring]
++
+xref:../wombat/wombat-check-syncmirror.adoc[Check synchronous mirroring status]
++
+xref:../wombat/wombat-create-syncmirror.adoc[Create synchronous mirroring]
++
+xref:../wombat/wombat-deactivate-storagearray-feature.adoc[Deactivate synchronous mirroring]
++
+xref:../wombat/wombat-diagnose-syncmirror.adoc[Diagnose synchronous mirroring]
++
+xref:../wombat/wombat-recreate-storagearray-mirrorrepository.adoc[Re-create synchronous mirroring repository volume]
++
+xref:../wombat/wombat-remove-syncmirror.adoc[Remove synchronous mirroring]
++
+xref:../wombat/wombat-resume-syncmirror.adoc[Resume synchronous mirroring]
++
+xref:../wombat/wombat-set-syncmirror.adoc[Set synchronous mirroring]
++
+xref:../wombat/wombat-show-syncmirror-candidates.adoc[Show synchronous mirroring volume candidates]
++
+xref:../wombat/wombat-show-syncmirror-synchronizationprogress.adoc[Show synchronous mirroring volume synchronization progress]
++
+xref:../wombat/wombat-start-syncmirror-primary-synchronize.adoc[Start synchronous mirroring synchronization]
++
+xref:../wombat/wombat-suspend-syncmirror-primaries.adoc[Suspend synchronous mirroring]

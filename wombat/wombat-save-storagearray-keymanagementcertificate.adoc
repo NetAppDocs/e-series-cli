@@ -1,0 +1,53 @@
+---
+permalink: wombat/wombat-save-storagearray-keymanagementcertificate.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray keyManagementCertificate command retrieves the installed certificate.'
+---
+= Retrieve installed external key management certificate
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray keyManagementCertificate` command retrieves the installed certificate.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+[NOTE]
+====
+This command applies only to external key management.
+====
+
+== Syntax
+
+----
+
+save storageArray keyManagementCertificate certificateType=" certificateType
+file="filename"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`certificateType`
+a|
+Allows you to specify the certificate type to install. Valid choices are: `client` or `server`.
+a|
+`file`
+a|
+Allows you to specify the filename for the signed certificate or server CA certificate.
+|===
+
+== Minimum firmware level
+
+8.40

@@ -1,0 +1,54 @@
+---
+permalink: wombat/wombat-set-snapgroup-mediascanenabled.html
+sidebar: sidebar
+keywords: 
+summary: 'The set snapGroup mediaScanEnabled command runs a media scan on a snapshot group.'
+---
+= Set snapshot group media scan
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set snapGroup mediaScanEnabled` command runs a media scan on a snapshot group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set snapGroup ["snapGroupName"]
+mediaScanEnabled=(TRUE | FALSE)
+redundancyCheckEnabled=(TRUE | FALSE)
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`snapGroup`
+a|
+The name of the snapshot group on which you want to run a media scan. Enclose the snapshot group name in double quotation marks (" ") inside of square brackets ([ ]).
+a|
+`mediaScanEnabled`
+a|
+The setting to turn on or turn off media scan for the volume. To turn on media scan, set this parameter to `TRUE`. To turn off media scan, set this parameter to `FALSE`. (If media scan is disabled at the storage array level, this parameter has no effect.)
+a|
+`redundancyCheckEnabled`
+a|
+The setting to turn on or turn off redundancy checking during a media scan. To turn on redundancy checking, set this parameter to `TRUE`. To turn off redundancy checking, set this parameter to `FALSE`.
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+== Minimum firmware level
+
+7.83

@@ -1,0 +1,99 @@
+---
+permalink: wombat/wombat-delete-snapimage.html
+sidebar: sidebar
+keywords: 
+summary: 'The delete snapImage command deletes one or more snapshot images from a snapshot group.'
+---
+= Delete snapshot image
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete snapImage` command deletes one or more snapshot images from a snapshot group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+delete snapImage (snapGroup="snapGroupName" |
+snapGroups=("snapGroupName1"
+... "snapGroupNamen"))
+[deleteCount=numberOfSnapImages]
+[retainCount=numberOfSnapImages]
+[ignoreSnapVolume=(TRUE | FALSE)]
+[snapImageID=OLDEST]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`snapGroup`
+a|
+The name of the snapshot group that has the snapshot image that you want to delete. Enclose the name of the snapshot group in double quotation marks (" ").
+
+a|
+`snapGroups`
+a|
+The names of several snapshot groups that has the snapshot image that you want to delete. Enter the names of the snapshot groups using these rules:
+
+* Enclose all of the names in parentheses.
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+a|
+`deleteCount`
+a|
+The number of snapshot images that you want to delete from the snapshot group. Use integer values.
+
+This parameter deletes the oldest snapshot image first and continues to delete the oldest snapshot images until reaching the number that you enter.
+
+If the number that you enter is greater than the actual number of all of the snapshot images in the snapshot group, all of the snapshot images will be deleted. The snapshot group is left empty.
+
+a|
+`retainCount`
+a|
+The number of snapshot images that you want to keep in the snapshot group. Use integer values.
+
+This parameter keeps the most recent snapshot images in the snapshot group and deletes older snapshot images.
+
+If the number of existing snapshot images in the snapshot group is less than the number that you enter, none of the snapshot images are deleted.
+
+a|
+`ignoreSnapVolume`
+a|
+Use this parameter to make sure that you do not delete a snapshot image that has a snapshot volume associated with the snapshot image. You can use one of these values:
+
+* `TRUE` - Use this value to delete the snapshot image even though the snapshot image has an associated snapshot volume.
+* `FALSE` - Use this value to keep the snapshot image when the snapshot image has an associated snapshot volume.
+
+The default value is `TRUE`.
+
+a|
+`snapImageID`
+a|
+The `snapImageID` parameter accepts only the `OLDEST` option. This parameter deletes the earliest snapshot image created.
+
+|===
+
+== Notes
+
+You can delete the oldest snapshot image from a snapshot group repository volume. The definition of a snapshot image that you delete is removed from the system. The space occupied by the snapshot image that you delete from the snapshot group repository volume is released and made available for reuse within the snapshot group.
+
+If you do not use any other parameters with the `snapGroup` parameter or `snapGroups` parameter, by default the oldest snapshot image is deleted.
+
+Any snapshot volumes that exist for a snapshot image transition to the Stopped state when the snapshot image is deleted.
+
+This command will not run when the controller is in Lock-down mode.
+
+== Minimum firmware level
+
+7.83

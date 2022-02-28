@@ -1,0 +1,480 @@
+---
+permalink: wombat/wombat-set-controller-hostport.html
+sidebar: sidebar
+keywords: 
+summary: 'The set controller hostPort command changes the network properties for the following types of host ports: iSCSI, iSER, NVMe over InfiniBand, and NVMe over RoCE. Property changes include IPv4 and IPv6 properties, port speed, and maximum frame payload.'
+---
+= Set controller host port properties
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set controller hostPort` command changes the network properties for the following types of host ports: iSCSI, iSER, NVMe over InfiniBand, and NVMe over RoCE. Property changes include IPv4 and IPv6 properties, port speed, and maximum frame payload.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Context
+
+[NOTE]
+====
+This command replaces the deprecated xref:wombat-set-controller-iscsihostport.adoc[Set iSCSI host port networking properties] command.
+====
+
+== Syntax
+
+----
+
+set controller [(a|b)] hostPort ["portLabel"[, "physical"|"virtual"]]
+    (IPV4Address=(0-255).(0-255).(0-255).(0-255) |
+    IPv6LocalAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
+    IPv6RoutableAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
+    IPv6RouterAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
+    enableIPv4=(TRUE | FALSE) |
+    enableIPv6=(TRUE | FALSE) |
+    enableIPv4Vlan=(TRUE | FALSE) |
+    enableIPv6Vlan=(TRUE | FALSE) |
+    enableIPv4Priority=(TRUE | FALSE) |
+    enableIPv6Priority=(TRUE | FALSE) |
+    fecMode=(auto:none:reedSolomon:fireCode) |
+    IPv4ConfigurationMethod=(static | dhcp) |
+    IPv6ConfigurationMethod=(static | auto) |
+    IPv4GatewayIP=(0-255).(0-255).(0-255).(0-255) |
+    IPv6HopLimit=[0-255] |
+    IPv6NdDetectDuplicateAddress=[0-255] |
+    IPv6NdReachableTime=[0-65535] |
+    IPv6NdRetransmitTime=[0-65535] |
+    IPv6NdTimeOut=[0-65535] |
+    IPv4Priority=[0-7] |
+    IPv6Priority=[0-7] |
+    IPv4SubnetMask=(0-255).(0-255).(0-255).(0-255) |
+    IPv4VlanId=[1-4094] |
+    IPv6VlanId=[1-4094] |
+    maxFramePayload=[1500-9000] |
+    tcpListeningPort=(3260 | [49152-65535]) |
+    portSpeed=(autoNegotiate | 10 | 25 | 40 | 50 | 100))
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+Allows you to specify the controller for which you want to define properties.
+a|
+`hostPort`
+a|
+Allows you to specify the host port label for which you want to define properties. For 200 GB Host Ports only, you can specify `physical` or `virtual` as parameters.
+[NOTE]
+====
+If you do not specify a value for your 200 GB host port connection, the `physical` parameter is set by default.
+====
+
+a|
+`IPV4Address`
+a|
+Allows you to enter the address in this format: (0-255).(0-255).(0-255).(0-255).
+a|
+`IPV6LocalAddress`
+a|
+Allows you to enter the address in this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF).
+a|
+`IPv6RoutableAddress`
+a|
+Allows you to enter the address in this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF).
+a|
+`IPV6RouterAddress`
+a|
+Allows you to enter the address in this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF).
+a|
+`enableIPV4`
+a|
+Allows you to enable IPv4.
+a|
+`enableIPV6`
+a|
+Allows you to enable IPv6. The IPv6 address space is 128 bits. It is represented by eight 16-bit hexadecimal blocks separated by colons.
+a|
+`enableIPv4Vlan`
+a|
+Allows you to enable IPv4 VLAN. A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.
+a|
+`enableIPv6Vlan`
+a|
+Allows you to enable IPv6 VLAN. A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.
+a|
+`enableIPv4Priority`
+a|
+Allows you to enable the parameter that determines the priority of accessing the network. In a shared local area network (LAN) environment, such as Ethernet, many stations might contend for access to the network. Access is on a first-come, first-served basis. Two stations might try to access the network at the same time, which causes both stations to back off and wait before trying again. This process is minimized for switched Ethernet, where only one station is connected to a switch port.
+a|
+`enableIPv6Priority`
+a|
+Allows you to enable the parameter that determines the priority of accessing the network. In a shared local area network (LAN) environment, such as Ethernet, many stations might contend for access to the network. Access is on a first-come, first-served basis. Two stations might try to access the network at the same time, which causes both stations to back off and wait before trying again. This process is minimized for switched Ethernet, where only one station is connected to a switch port.
+a|
+`fecMode`
+a|
+Allows you to set the FEC mode for the host port to one of the following options:
+
+* `auto`
+* `none`
+* `reedSolomon`
+* `fireCode`
+
+a|
+`IPv4ConfigurationMethod`
+a|
+Allows you to set IPv4 static or DHCP addressing.
+a|
+`IPv6ConfigurationMethod`
+a|
+Allows you to set IPv6 static or DHCP addressing.
+a|
+`IPv4GatewayIP`
+a|
+Allows you to enter the gateway address in this format: (0-255).(0-255).(0-255).(0-255).
+a|
+`IPv6HopLimit`
+a|
+Allows you to configure the maximum number of hops an IPv6 packet can traverse. The default value is 64.
+a|
+`IPv6NdDetectDuplicateAddress`
+a|
+Allows you to set the number of neighbor-solicitation messages to send in trying to determine IP address uniqueness.
+a|
+`IPv6NdReachableTime`
+a|
+Allows you to set the amount of time, in milliseconds, that a remote IPv6 node is considered reachable. The default value is 30000 milliseconds.
+a|
+`IPv6NdRetransmitTime`
+a|
+Allows you to set the amount of time, in milliseconds, to continue to retransmit a packet to an IPv6 node. The default value is 1000 milliseconds.
+a|
+`IPv6NdTimeOut`
+a|
+Allows you to set the timeout value, in milliseconds, for an IPv6 node. The default value is 30000 milliseconds.
+a|
+`IPv4Priority`
+a|
+Allows you to set the priority assignment for IPv4 packets.
+a|
+`IPv6Priority`
+a|
+Allows you to set the priority assignment for IPv6 packets.
+a|
+`IPv4SubnetMask`
+a|
+Allows you to enter the subnet mask address in this format: (0-255).(0-255).(0-255).(0-255).
+a|
+`IPv4VlanId`
+a|
+Allows you to set the IPv4 VLAN id.
+a|
+`IPv6VlanId`
+a|
+Allows you to set the IPv6 VLAN id.
+a|
+`maxFramePayload`
+a|
+Allows you to set the maximum size of a packet or frame that is sent in a network. The payload portion of a standard Ethernet frame is set to 1500, and a jumbo Ethernet frame is set to 9000. When using jumbo frames, all the devices that are in the network path should be able to handle the larger frame size. The default value is 1500 bytes per frame.
+[NOTE]
+====
+To ensure best performance in an NVMe over RoCE environment, configure a frame size of 4200.
+====
+
+a|
+`tcpListeningPort`
+a|
+Allows you to set the TCP port number that is used to listen for iSCSI logins from initiators. The default port is 3260.
+a|
+`portSpeed`
+a|
+Allows you to set the speed, in megabits per second (Mb/s), for which the port should be communicating.
+[NOTE]
+====
+This parameter is only supported with a 25 Gbps iSCSI host interface card and a 100 Gbps Ethernet host interface card. For a 25 Gbps iSCSI host interface card, changing the speed of one port changes the speed of all four ports on the card. The allowable options in this case are 10 or 25. For a 100 Gbps Ethernet host interface card, new in release 8.50, changing the speed of one port doesn't affect the other ports on the card. The allowable options in the latter case are autoNegotiate, 10, 25, 40, 50, or 100GbE.
+====
+
+|===
+
+== Parameter support by host port type
+
+Parameter support varies by host port type (iSCSI, iSER, NVMe over InfiniBand, or NVMe over RoCE), as described in the following table:
+
+|===
+| Parameter| iSCSI| iSER| NVMe over InfiniBand| NVMe over RoCE
+a|
+`IPV4Address`
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+Yes
+a|
+`IPV6LocalAddress`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+`IPv6RoutableAddress`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+`IPV6RouterAddress`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+`enableIPV4`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+`enableIPV6`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+`enableIPv4Vlan`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+No
+a|
+`enableIPv6Vlan`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+No
+a|
+`enableIPv4Priority`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+No
+a|
+`enableIPv6Priority`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+No
+a|
+`IPv4ConfigurationMethod`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+`IPv6ConfigurationMethod`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+`IPv4GatewayIP`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+`IPv6HopLimit`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+ 
+a|
+`IPv6NdDetectDuplicateAddress`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+ 
+a|
+`IPv6NdReachableTime`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+ 
+a|
+`IPv6NdRetransmitTime`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+ 
+a|
+`IPv6NdTimeOut`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+ 
+a|
+`IPv4Priority`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+No
+a|
+`IPv6Priority`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+No
+a|
+`IPv4SubnetMask`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+`IPv4VlanId`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+No
+a|
+`IPv6VlanId`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+No
+a|
+`maxFramePayload`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+a|
+`tcpListeningPort`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+ 
+a|
+`portSpeed`
+a|
+Yes
+a|
+ 
+a|
+ 
+a|
+Yes
+|===
+
+== Minimum firmware level
+
+8.41
+
+8.50 - added information about the NVMe over RoCE environment.
+
+11.70.1 added the `fecMode` parameter.

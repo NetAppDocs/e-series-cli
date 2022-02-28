@@ -51,886 +51,886 @@ sidebar:
       url: "/alpaca-firmware-compatibility-levels.html"
   - title: New SMcli https mode
     url: "/alpaca-new-https-mode.html"
-  - title: Start disk pool locate
-    url: "/wombat-start-diskpool-locate.html"
-  - title: Create host
-    url: "/wombat-create-host.html"
-  - title: Set drawer service action allowed indicator
-    url: "/wombat-set-tray-drawer.html"
-  - title: Reset storage array diagnostic data
-    url: "/wombat-reset-storagearray-diagnosticdata.html"
-  - title: Set controller host port properties
-    url: "/wombat-set-controller-hostport.html"
-  - title: Stop consistency group snapshot rollback
-    url: "/wombat-stop-cgsnapimage-rollback.html"
-  - title: Set storage array controller battery learn cycle
-    url: "/wombat-set-storagearray-learncycledate-controller.html"
-  - title: Stop snapshot group pending snapshot images
-    url: "/wombat-stop-pendingsnapimagecreation.html"
-  - title: Save storage array firmware inventory
-    url: "/wombat-save-storagearray-firmwareinventory.html"
-  - title: Save audit log records
-    url: "/wombat-save-auditlog.html"
-  - title: Show storage array auto configuration
-    url: "/wombat-show-storagearray-autoconfiguration.html"
-  - title: Save storage array DBM validator information file
-    url: "/wombat-save-storagearray-dbmvalidatorinfo.html"
-  - title: Stop storage array iSCSI session
-    url: "/wombat-stop-storagearray-iscsisession.html"
-  - title: Delete consistency group
-    url: "/wombat-delete-consistencygroup.html"
-  - title: Delete SSD cache
-    url: "/wombat-delete-ssdcache.html"
-  - title: Clear storage array firmware pending area
-    url: "/wombat-clear-storagearray-firmwarependingarea.html"
-  - title: Stop storage array locate
-    url: "/wombat-stop-storagearray-locate.html"
-  - title: Resume snapshot volume
-    url: "/wombat-resume-snapvolume.html"
-  - title: Display storage array user session
-    url: "/wombat-show-storagearray-usersession.html"
-  - title: Stop consistency group snapshot volume
-    url: "/wombat-stop-cgsnapvolume.html"
-  - title: Reset AutoSupport message collection schedule
-    url: "/wombat-smcli-autosupportschedule-reset.html"
-  - title: Show replaceable drives
-    url: "/wombat-show-replaceabledrives.html"
-  - title: Revive snapshot volume
-    url: "/wombat-revive-snapvolume.html"
-  - title: Show storage array power information
-    url: "/wombat-show-storagearray-powerinfo.html"
-  - title: Import storage array security key
-    url: "/wombat-import-storagearray-securitykey-file.html"
-  - title: Start FDE secure drive erase
-    url: "/wombat-start-secureerase-drive.html"
-  - title: Show volume copy source candidates
-    url: "/wombat-show-volumecopy-sourcecandidates.html"
-  - title: Stop disk pool locate
-    url: "/wombat-stop-diskpool-locate.html"
-  - title: Save storage array iSER statistics
-    url: "/wombat-save-storagearray-iserstatistics.html"
-  - title: Delete snapshot image
-    url: "/wombat-delete-snapimage.html"
-  - title: Disable storage array feature
-    url: "/wombat-disable-storagearray.html"
-  - title: Set consistency group snapshot volume
-    url: "/wombat-set-cgsnapvolume.html"
-  - title: Reset storage array iSER baseline
-    url: "/wombat-reset-storagearray-iserstatsbaseline.html"
-  - title: Delete disk pool
-    url: "/wombat-delete-diskpool.html"
-  - title: Set certificate revocation check settings
-    url: "/wombat-set-storagearray-revocationchecksettings.html"
-  - title: Recover SAS port mis-wire
-    url: "/wombat-recover-sasport-miswire.html"
-  - title: Start Volume Group Full Provisioning
-    url: "/wombat-start-volumegroup-fullprovisioning.html"
-  - title: Test email alert configuration
-    url: "/wombat-start-emailalert-test.html"
-  - title: Show storage array directory services summary
-    url: "/wombat-show-storagearray-directoryservices-summary.html"
-  - title: Delete host group
-    url: "/wombat-delete-hostgroup.html"
-  - title: Show SNMP MIB II system group variables
-    url: "/wombat-show-snmpsystemvariables.html"
-  - title: Save storage array SAS PHY counts
-    url: "/wombat-save-storagearray-sasphycounts.html"
-  - title: Start consistency group snapshot rollback
-    url: "/wombat-start-cgsnapimage-rollback.html"
-  - title: Start storage array configuration database diagnostic
-    url: "/wombat-start-storagearray-configdbdiagnostic.html"
-  - title: Delete consistency group snapshot image
-    url: "/wombat-delete-cgsnapimage-consistencygroup.html"
-  - title: Set external key management settings
-    url: "/wombat-set-storagearray-externalkeymanagement.html"
-  - title: Remove volume copy
-    url: "/wombat-remove-volumecopy-target.html"
-  - title: Reset iSCSI IP address
-    url: "/wombat-reset-iscsiipaddress.html"
-  - title: Show volume performance statistics
-    url: "/wombat-show-volume-performancestats.html"
-  - title: Update SNMP MIB II system group variables
-    url: "/wombat-set-snmpsystemvariables.html"
-  - title: Getting started with internal key management
-    url: "/wombat-getting-started-with-internal-key-management.html"
-  - title: Show disk pool
-    url: "/wombat-show-diskpool.html"
-  - title: Create consistency group snapshot image
-    url: "/wombat-create-cgsnapimage-consistencygroup.html"
-  - title: Clear storage array event log
-    url: "/wombat-clear-storagearray-eventlog.html"
-  - title: Set storage array user session
-    url: "/wombat-set-storagearray-usersession.html"
-  - title: Start storage array syslog test
-    url: "/wombat-start-storagearray-syslog-test.html"
-  - title: Show audit log summary
-    url: "/wombat-show-auditlog-summary.html"
-  - title: Set host group
-    url: "/wombat-set-hostgroup.html"
-  - title: Delete consistency group snapshot volume
-    url: "/wombat-delete-sgsnapvolume.html"
-  - title: Show volume group import dependencies
-    url: "/wombat-show-volumegroup-importdependencies.html"
-  - title: Create host group
-    url: "/wombat-create-hostgroup.html"
-  - title: Show storage array host connectivity reporting
-    url: "/wombat-show-storagearray-hostconnectivityreporting.html"
-  - title: Download drive firmware
-    url: "/wombat-download-drive-firmware.html"
-  - title: Save storage array DBM database
-    url: "/wombat-save-storagearray-dbmdatabase.html"
-  - title: Add drives to SSD cache
-    url: "/wombat-add-drives-to-ssd-cache.html"
-  - title: Set session
-    url: "/wombat-set-session-erroraction.html"
-  - title: External key management commands related to certificates
-    url: "/wombat-external-key-management-commands-related-to-certificates.html"
-  - title: Clear syslog configuration
-    url: "/wombat-clear-syslog-configuration.html"
-  - title: Set FIPS drive security identifier
-    url: "/wombat-set-drive-securityid.html"
-  - title: Enable external security key management
-    url: "/wombat-enable-storagearray-externalkeymanagement-file.html"
-  - title: Set drive channel status
-    url: "/wombat-set-drivechannel.html"
-  - title: Stop drive channel locate
-    url: "/wombat-stop-drivechannel-locate.html"
-  - title: Set storage array iSNS server IPv4 address
-    url: "/wombat-set-storagearray-isnsipv4configurationmethod.html"
-  - title: Set storage array management interface
-    url: "/wombat-set-storagearray-managementinterface.html"
-  - title: Set thin volume attributes
-    url: "/wombat-set-thin-volume-attributes.html"
-  - title: Start SSD cache performance modeling
-    url: "/wombat-start-ssdcache-performancemodeling.html"
-  - title: Remove array label
-    url: "/wombat-remove-array-label.html"
-  - title: Set storage array login banner
-    url: "/wombat-set-storagearray-loginbanner.html"
-  - title: Show asynchronous mirror group synchronization progress
-    url: "/wombat-show-asyncmirrorgroup-synchronizationprogress.html"
-  - title: Set volume attributes for a volume in a volume group
-    url: "/wombat-set-volume-group-attributes-for-volume-in-a-volume-group.html"
-  - title: Clear asynchronous mirroring fault
-    url: "/wombat-clear-asyncmirrorfault.html"
-  - title: Set storage array controller health image allow overwrite
-    url: "/wombat-set-storagearray-controllerhealthimageallowoverwrite.html"
-  - title: Stop drive replace
-    url: "/wombat-stop-drive-replace.html"
-  - title: Show blocked events
-    url: "/wombat-show-blockedeventalertlist.html"
-  - title: Create volume copy
-    url: "/wombat-create-volumecopy.html"
-  - title: Set tray attribute
-    url: "/wombat-set-tray-attribute.html"
-  - title: Delete storage array directory server
-    url: "/wombat-delete-storagearray-directoryservers.html"
-  - title: Show controller
-    url: "/wombat-show-controller.html"
-  - title: Save storage array iSCSI statistics
-    url: "/wombat-save-storagearray-iscsistatistics.html"
-  - title: Stop volume copy
-    url: "/wombat-stop-volumecopy-target-source.html"
-  - title: Clear volume reservations
-    url: "/wombat-clear-volume-reservations.html"
-  - title: Create synchronous mirroring
-    url: "/wombat-create-syncmirror.html"
-  - title: Deactivate synchronous mirroring
-    url: "/wombat-deactivate-storagearray-feature.html"
-  - title: Set controller NTP settings
-    url: "/wombat-set-controller-ntpservers.html"
-  - title: Show audit log configuration
-    url: "/wombat-show-auditlog-configuration.html"
-  - title: Test syslog configuration
-    url: "/wombat-start-syslog-test.html"
-  - title: Show storage array host topology
-    url: "/wombat-show-storagearray-hosttopology.html"
-  - title: Validate storage array security key
-    url: "/wombat-validate-storagearray-securitykey.html"
-  - title: Start SSD cache locate
-    url: "/wombat-start-ssdcache-locate.html"
-  - title: Set drive state
-    url: "/wombat-set-drive-operationalstate.html"
-  - title: Start Disk Pool Full Provisioning
-    url: "/wombat-start-diskpool-fullprovisioning.html"
-  - title: Stop drive locate
-    url: "/wombat-stop-drive-locate.html"
-  - title: Set read-only snapshot volume to read/write volume
-    url: "/wombat-set-snapvolume-converttoreadwrite.html"
-  - title: Show storage array DBM database
-    url: "/wombat-show-storagearray-dbmdatabase.html"
-  - title: Add certificate from file
-    url: "/wombat-add-certificate-from-file.html"
-  - title: Save storage array login banner
-    url: "/wombat-save-storagearray-loginbanner.html"
-  - title: Set volume attributes for a volume in a disk pool
-    url: "/wombat-set-volumes.html"
-  - title: Install storage array external key management certificate
-    url: "/wombat-download-storagearray-keymanagementcertificate.html"
-  - title: Show storage array controller health image
-    url: "/wombat-show-storagearray-controllerhealthimage.html"
-  - title: Activate synchronous mirroring
-    url: "/wombat-activate-synchronous-mirroring.html"
-  - title: Suspend asynchronous mirror group
-    url: "/wombat-suspend-asyncmirrorgroup.html"
-  - title: Show volume action progress
-    url: "/wombat-show-volume-actionprogress.html"
-  - title: Revive snapshot group
-    url: "/wombat-revive-snapgroup.html"
-  - title: Unregister SNMP trap destination
-    url: "/wombat-delete-snmptrapdestination.html"
-  - title: Set storage array unnamed discovery session
-    url: "/wombat-set-storagearray-unnameddiscoverysession.html"
-  - title: Delete host port
-    url: "/wombat-delete-hostport.html"
-  - title: Delete audit log records
-    url: "/wombat-delete-auditlog.html"
-  - title: Reduce disk pool capacity
-    url: "/wombat-reduce-disk-pool-capacity.html"
-  - title: Check asynchronous mirror group consistency
-    url: "/wombat-check-asyncmirrorgroup-repositoryconsistency.html"
-  - title: Reset drive
-    url: "/wombat-reset-drive.html"
-  - title: Start drive reconstruction
-    url: "/wombat-start-drive-reconstruct.html"
-  - title: Unregister SNMPv3 USM user
-    url: "/wombat-delete-snmpuser-username.html"
-  - title: Show signed certificate
-    url: "/wombat-show-controller-arraymanagementsignedcertificate-summary.html"
-  - title: Set drive hot spare
-    url: "/wombat-set-drive-hotspare.html"
-  - title: Set storage array iSNS server refresh
-    url: "/wombat-set-storagearray-isnsserverrefresh.html"
-  - title: Increase capacity of volume in disk pool or volume group
-    url: "/wombat-start-increasevolumecapacity-volume.html"
-  - title: Start storage array iSNS server refresh
-    url: "/wombat-start-storagearray-isnsserverrefresh.html"
-  - title: Delete snapshot group
-    url: "/wombat-delete-snapgroup.html"
-  - title: Show synchronous mirroring volume candidates
-    url: "/wombat-show-syncmirror-candidates.html"
-  - title: Save storage array host port statistics
-    url: "/wombat-save-storagearray-hostportstatistics.html"
-  - title: Enable or disable AutoSupport at the EMW management domain level (SMcli
-      only)
-    url: "/wombat-smcli-enable-autosupportfeature.html"
-  - title: Show volume group
-    url: "/wombat-show-volumegroup.html"
-  - title: Reset storage array InfiniBand statistics baseline
-    url: "/wombat-reset-storagearray-ibstatsbaseline.html"
-  - title: Start volume group locate
-    url: "/wombat-start-volumegroup-locate.html"
-  - title: Export storage array security key
-    url: "/wombat-export-storagearray-securitykey.html"
-  - title: Start asynchronous mirroring synchronization
-    url: "/wombat-start-asyncmirrorgroup-synchronize.html"
-  - title: Create SSD cache
-    url: "/wombat-create-ssdcache.html"
-  - title: Set asynchronous mirror group
-    url: "/wombat-set-asyncmirrorgroup.html"
-  - title: Test alerts
-    url: "/wombat-smcli-alerttest.html"
-  - title: Initialize thin volume
-    url: "/wombat-start-volume-initialize.html"
-  - title: Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700
-      arrays)
-    url: "/wombat-set-autosupport-https-delivery-method-e2800-e5700.html"
-  - title: Diagnose controller
-    url: "/wombat-diagnose-controller.html"
-  - title: Resume synchronous mirroring
-    url: "/wombat-resume-syncmirror.html"
-  - title: Show asynchronous mirror groups
-    url: "/wombat-show-asyncmirrorgroup-summary.html"
-  - title: Start volume group defragment
-    url: "/wombat-start-volumegroup-defragment.html"
-  - title: Set storage array iSNS registration
-    url: "/wombat-set-storagearray-isnsregistration.html"
-  - title: Create initiator
-    url: "/wombat-create-initiator.html"
-  - title: Revive volume group
-    url: "/wombat-revive-volumegroup.html"
-  - title: Set internal storage array security key
-    url: "/wombat-set-storagearray-securitykey.html"
-  - title: Save storage array RLS counts
-    url: "/wombat-save-storagearray-rlscounts.html"
-  - title: Enable volume group security
-    url: "/wombat-enable-volumegroup-security.html"
-  - title: Display storage array syslog configuration
-    url: "/wombat-show-storagearray-syslog.html"
-  - title: Diagnose synchronous mirroring
-    url: "/wombat-diagnose-syncmirror.html"
-  - title: Set iSCSI target properties
-    url: "/wombat-set-iscsitarget.html"
-  - title: Stop SSD cache locate
-    url: "/wombat-stop-ssdcache-locate.html"
-  - title: Show volume
-    url: "/wombat-show-volume-summary.html"
-  - title: Repair Data Parity
-    url: "/wombat-repair-data-parity.html"
-  - title: Recover disabled drive ports
-    url: "/wombat-recover-disabled-driveports.html"
-  - title: Repair volume parity
-    url: "/wombat-repair-volume-parity.html"
-  - title: Set tray service action allowed indicator
-    url: "/wombat-set-tray-serviceallowedindicator.html"
-  - title: Delete syslog server
-    url: "/wombat-delete-syslog.html"
-  - title: Set controller
-    url: "/wombat-set-controller.html"
-  - title: Start storage array controller health image
-    url: "/wombat-start-storagearray-controllerhealthimage-controller.html"
-  - title: Retrieve installed CA certificates
-    url: "/wombat-save-controller-cacertificate.html"
-  - title: Save storage array SOC counts
-    url: "/wombat-save-storagearray-soccounts.html"
-  - title: Show SNMPv3 USM user
-    url: "/wombat-show-allsnmpusers.html"
-  - title: Delete host
-    url: "/wombat-delete-host.html"
-  - title: Show volume reservations
-    url: "/wombat-show-volume-reservations.html"
-  - title: Create Volume Mapping
-    url: "/wombat-create-mapping-volume.html"
-  - title: Suspend SSD cache
-    url: "/wombat-suspend-ssdcache.html"
-  - title: Create disk pool
-    url: "/wombat-create-diskpool.html"
-  - title: Show email alert configuration
-    url: "/wombat-show-emailalert-summary.html"
-  - title: Set snapshot volume media scan
-    url: "/wombat-set-snapvolume-mediascanenabled.html"
-  - title: Display AutoSupport message collection schedule
-    url: "/wombat-smcli-autosupportschedule-show.html"
-  - title: Save storage array configuration
-    url: "/wombat-save-storagearray-configuration.html"
-  - title: Enable or disable the AutoSupport OnDemand feature at the EMW management
-      domain level (SMcli only)
-    url: "/wombat-smcli-enable-disable-autosupportondemand.html"
-  - title: Re-create external security key
-    url: "/wombat-recreate-storagearray-securitykey.html"
-  - title: Delete storage array syslog configuration
-    url: "/wombat-delete-storagearray-syslog.html"
-  - title: Start volume group import
-    url: "/wombat-start-volumegroup-import.html"
-  - title: Set storage array directory server role mapping
-    url: "/wombat-set-storagearray-directoryserver-roles.html"
-  - title: Test SNMP trap destination
-    url: "/wombat-start-snmptrapdestination.html"
-  - title: Create consistency group snapshot volume
-    url: "/wombat-create-cgsnapvolume.html"
-  - title: Remove volume from asynchronous mirror group
-    url: "/wombat-remove-volume-asyncmirrorgroup.html"
-  - title: Show SSD cache
-    url: "/wombat-show-ssd-cache.html"
-  - title: Create snapshot volume
-    url: "/wombat-create-snapshot-volume.html"
-  - title: Create consistency group
-    url: "/wombat-create-consistencygroup.html"
-  - title: Set snapshot group repository volume capacity
-    url: "/wombat-set-snapgroup-increase-decreaserepositorycapacity.html"
-  - title: Update SNMPv3 USM user
-    url: "/wombat-set-snmpuser-username.html"
-  - title: Set target properties
-    url: "/wombat-set-target.html"
-  - title: Establish asynchronous mirrored pair
-    url: "/wombat-establish-asyncmirror-volume.html"
-  - title: Set drive service action allowed indicator
-    url: "/wombat-set-drive-serviceallowedindicator.html"
-  - title: Test external key management communication
-    url: "/wombat-start-storagearray-externalkeymanagement-test.html"
-  - title: Set disk pool
-    url: "/wombat-set-disk-pool.html"
-  - title: Save storage array events
-    url: "/wombat-save-storagearray-warningevents.html"
-  - title: Show volume group export dependencies
-    url: "/wombat-show-volumegroup-exportdependencies.html"
-  - title: Save storage array performance statistics
-    url: "/wombat-save-storagearray-performancestats.html"
-  - title: Create volume group
-    url: "/wombat-create-volumegroup.html"
-  - title: Set SSD cache for a volume
-    url: "/wombat-set-volume-ssdcacheenabled.html"
-  - title: Remove synchronous mirroring
-    url: "/wombat-remove-syncmirror.html"
-  - title: Enable controller data transfer
-    url: "/wombat-enable-controller-datatransfer.html"
-  - title: Create consistency group snapshot volume mapping
-    url: "/wombat-create-mapping-cgsnapvolume.html"
-  - title: Update SNMP trap destination
-    url: "/wombat-set-snmptrapdestination-trapreceiverip.html"
-  - title: Enable disk pool security
-    url: "/wombat-enable-diskpool-security.html"
-  - title: Save tray log
-    url: "/wombat-save-alltrays-logfile.html"
-  - title: Show storage array unconfigured iSCSI initiators
-    url: "/wombat-show-storagearray-unconfigurediscsiinitiators.html"
-  - title: Stop storage array configuration database diagnostic
-    url: "/wombat-stop-storagearray-configdbdiagnostic.html"
-  - title: Start tray locate
-    url: "/wombat-start-tray-locate.html"
-  - title: Check storage array connectivity
-    url: "/wombat-check-storagearray-connectivity.html"
-  - title: Set AutoSupport message collection schedule (for individual E2800 or E5700
-      arrays)
-    url: "/wombat-set-storagearray-autosupport-schedule.html"
-  - title: Replace drive
-    url: "/wombat-replace-drive-replacementdrive.html"
-  - title: Stop snapshot volume
-    url: "/wombat-stop-snapvolume.html"
-  - title: Retrieve installed trusted CA certificates
-    url: "/wombat-save-storagearray-trustedcertificate.html"
-  - title: Delete asynchronous mirror group
-    url: "/wombat-delete-asyncmirrorgroup.html"
-  - title: Set initiator
-    url: "/wombat-set-initiator.html"
-  - title: Start volume group export
-    url: "/wombat-start-volumegroup-export.html"
-  - title: Test asynchronous mirror group connectivity
-    url: "/wombat-diagnose-asyncmirrorgroup.html"
-  - title: Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)
-    url: "/wombat-save-storagearray-autosupport-log.html"
-  - title: Reset storage array SOC baseline
-    url: "/wombat-reset-storagearray-socbaseline.html"
-  - title: Test the AutoSupport configuration
-    url: "/wombat-smcli-autosupportconfig-test.html"
-  - title: Enable storage array feature
-    url: "/wombat-enable-storagearray-feature-file.html"
-  - title: Enable or disable the AutoSupport Remote Diagnostics feature (for individual
-      E2800 or E5700 arrays)
-    url: "/wombat-set-storagearray-autosupportremotediag.html"
-  - title: Start drive channel locate
-    url: "/wombat-start-drivechannel-locate.html"
-  - title: Set controller DNS settings
-    url: "/wombat-set-controller-dnsservers.html"
-  - title: Reset storage array SAS PHY baseline
-    url: "/wombat-reset-storagearray-sasphybaseline.html"
-  - title: Show volume copy target candidates
-    url: "/wombat-show-volumecopy-source-targetcandidates.html"
-  - title: Show snapshot image
-    url: "/wombat-show-snapimage.html"
-  - title: Create snapshot image
-    url: "/wombat-create-snapimage.html"
-  - title: Check repository consistency
-    url: "/wombat-check-repositoryconsistency.html"
-  - title: Capture or view an AutoSupport log
-    url: "/wombat-smcli-autosupportlog.html"
-  - title: Remove drives from SSD cache
-    url: "/wombat-remove-drives-from-ssd-cache.html"
-  - title: Set consistency group attributes
-    url: "/wombat-set-consistency-group-attributes.html"
-  - title: Delete volume
-    url: "/wombat-delete-volume.html"
-  - title: Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)
-    url: "/wombat-start-storagearray-autosupport-deliverytest.html"
-  - title: Show SSD cache statistics
-    url: "/wombat-show-ssd-cache-statistics.html"
-  - title: Start storage array locate
-    url: "/wombat-start-storagearray-locate.html"
-  - title: Download storage array firmware/NVSRAM
-    url: "/wombat-download-storagearray-firmware.html"
-  - title: Create asynchronous mirror group
-    url: "/wombat-create-asyncmirrorgroup.html"
-  - title: Deactivate asynchronous mirroring
-    url: "/wombat-deactivate-storagearray.html"
-  - title: Clear drive channel statistics
-    url: "/wombat-clear-alldrivechannels-stats.html"
-  - title: Reset controller
-    url: "/wombat-reset-controller.html"
-  - title: Start drive initialize
-    url: "/wombat-start-drive-initialize.html"
-  - title: Start OCSP server URL test
-    url: "/wombat-start-storagearray-ocspresponderurl-test.html"
-  - title: Show drive
-    url: "/wombat-show-alldrives.html"
-  - title: Show current iSCSI sessions
-    url: "/wombat-show-iscsisessions.html"
-  - title: Check synchronous mirroring status
-    url: "/wombat-check-syncmirror.html"
-  - title: Show thin volume
-    url: "/wombat-show-volume.html"
-  - title: Start Storage Array AutoSupport Manual Dispatch
-    url: "/wombat-start-storagearray-autosupport-manualdispatch.html"
-  - title: Set event alert filtering
-    url: "/wombat-set-event-alert.html"
-  - title: Schedule automatic support bundle collection configuration
-    url: "/wombat-smcli-supportbundle-schedule.html"
-  - title: Download storage array drive firmware
-    url: "/wombat-download-storagearray-drivefirmware-file.html"
-  - title: Show storage array negotiation defaults
-    url: "/wombat-show-storagearray-iscsinegotiationdefaults.html"
-  - title: Show certificate revocation check settings
-    url: "/wombat-show-storagearray-revocationchecksettings.html"
-  - title: Rename SSD cache
-    url: "/wombat-rename-ssd-cache.html"
-  - title: Show controller diagnostic status
-    url: "/wombat-show-controller-diagnostic-status.html"
-  - title: Create read-only snapshot volume
-    url: "/wombat-create-read-only-snapshot-volume.html"
-  - title: Show drive performance statistics
-    url: "/wombat-show-alldrives-performancestats.html"
-  - title: Update SNMP community
-    url: "/wombat-set-snmpcommunity.html"
-  - title: Set storage array to enable or disable cache mirror data assurance check
-    url: "/wombat-set-storagearray-cachemirrordataassurancecheckenable.html"
-  - title: Create snapshot group
-    url: "/wombat-create-snapgroup.html"
-  - title: Enable or disable the AutoSupport OnDemand feature (for individual E2800
-      or E5700 arrays)
-    url: "/wombat-set-storagearray-autosupportondemand.html"
-  - title: Delete email alert recipient
-    url: "/wombat-delete-emailalert.html"
-  - title: Specify the AutoSupport delivery method
-    url: "/wombat-smcli-autosupportconfig.html"
-  - title: Show installed trusted CA certificates summary
-    url: "/wombat-show-storagearray-trustedcertificate-summary.html"
-  - title: Revive drive
-    url: "/wombat-revive-drive.html"
-  - title: Create storage array syslog configuration
-    url: "/wombat-create-storagearray-syslog.html"
-  - title: Add member to consistency group
-    url: "/wombat-set-consistencygroup-addcgmembervolume.html"
-  - title: Set disk pool (modify disk pool)
-    url: "/wombat-set-disk-pool-modify-disk-pool.html"
-  - title: Set storage array to enable or disable automatic load balancing
-    url: "/wombat-set-storagearray-autoloadbalancingenable.html"
-  - title: Stop pending snapshot images on consistency group
-    url: "/wombat-stop-consistencygroup-pendingsnapimagecreation.html"
-  - title: Retrieve installed external key management certificate
-    url: "/wombat-save-storagearray-keymanagementcertificate.html"
-  - title: Set tray identification
-    url: "/wombat-set-tray-identification.html"
-  - title: Generate web server Certificate Signing Request (CSR)
-    url: "/wombat-save-controller-arraymanagementcsr.html"
-  - title: Install root/intermediate CA certificates
-    url: "/wombat-download-controller-cacertificate.html"
-  - title: Register SNMPv3 USM user
-    url: "/wombat-create-snmpuser-username.html"
-  - title: Check volume parity
-    url: "/wombat-check-volume-parity.html"
-  - title: Set volume mapping
-    url: "/wombat-set-volume-logicalunitnumber.html"
-  - title: Specify the Email (SMTP) delivery method (for individual E2800 or E5700
-      arrays)
-    url: "/wombat-set-email-smtp-delivery-method-e2800-e5700.html"
-  - title: Remove incomplete asynchronous mirrored pair from asynchronous mirror group
-    url: "/wombat-remove-asyncmirrorgroup.html"
-  - title: Show AutoSupport configuration (for E2800 or E5700 storage arrays)
-    url: "/wombat-show-storagearray-autosupport.html"
-  - title: Configure email alert settings
-    url: "/wombat-set-emailalert.html"
-  - title: Activate storage array firmware
-    url: "/wombat-activate-storagearray-firmware.html"
-  - title: Resume snapshot image rollback
-    url: "/wombat-resume-snapimage-rollback.html"
-  - title: Display AutoSupport bundle collection settings
-    url: "/wombat-smcli-autosupportconfig-show.html"
-  - title: Recopy volume copy
-    url: "/wombat-recopy-volumecopy-target.html"
-  - title: Show storage array ODX setting
-    url: "/wombat-show-storagearray-odxsetting.html"
-  - title: Show certificates
-    url: "/wombat-show-certificates.html"
-  - title: Set iSCSI host port networking properties
-    url: "/wombat-set-controller-iscsihostport.html"
-  - title: Show drive channel statistics
-    url: "/wombat-show-drivechannel-stats.html"
-  - title: Remove member volume from consistency group
-    url: "/wombat-remove-member-volume-from-consistency-group.html"
-  - title: Resume consistency group snapshot volume
-    url: "/wombat-resume-cgsnapvolume.html"
-  - title: Retrieve installed server certificate
-    url: "/wombat-save-controller-arraymanagementsignedcertificate.html"
-  - title: Set Storage Array Resource Provisioned Volumes
-    url: "/wombat-set-storagearray-resourceprovisionedvolumes.html"
-  - title: Show SNMP communities
-    url: "/wombat-show-allsnmpcommunities.html"
-  - title: Delete snapshot volume
-    url: "/wombat-delete-snapvolume.html"
-  - title: Reset storage array host port statistics baseline
-    url: "/wombat-reset-storagearray-hostportstatisticsbaseline.html"
-  - title: Create host port
-    url: "/wombat-create-hostport.html"
-  - title: Stop storage array drive firmware download
-    url: "/wombat-stop-storagearray-drivefirmwaredownload.html"
-  - title: Set volume copy
-    url: "/wombat-set-volumecopy-target.html"
-  - title: Register SNMP trap destination
-    url: "/wombat-create-snmptrapdestination.html"
-  - title: Delete iSCSI initiator
-    url: "/wombat-delete-iscsiinitiator.html"
-  - title: Set storage array directory server
-    url: "/wombat-set-storagearray-directoryserver.html"
-  - title: Start drive erase
-    url: "/wombat-start-drive-erase.html"
-  - title: Remove volume LUN mapping
-    url: "/wombat-remove-lunmapping.html"
-  - title: Show storage array unreadable sectors
-    url: "/wombat-show-storagearray-unreadablesectors.html"
-  - title: Delete volume group
-    url: "/wombat-delete-volumegroup.html"
-  - title: Start controller trace
-    url: "/wombat-start-controller.html"
-  - title: Remove installed trusted CA certificates
-    url: "/wombat-delete-storagearray-trustedcertificate.html"
-  - title: Start iSCSI DHCP refresh
-    url: "/wombat-start-controller-iscsihostport-dhcprefresh.html"
-  - title: Suspend synchronous mirroring
-    url: "/wombat-suspend-syncmirror-primaries.html"
-  - title: Reset storage array RLS baseline
-    url: "/wombat-reset-storagearray-rlsbaseline.html"
-  - title: Add volume to asynchronous mirror group
-    url: "/wombat-add-volume-asyncmirrorgroup.html"
-  - title: Enable or disable the AutoSupport remote diagnostics feature at the EMW
-      management domain level (SMcli only)
-    url: "/wombat-smcli-enable-disable-autosupportremotediag.html"
-  - title: Configure syslog settings
-    url: "/wombat-set-syslog.html"
-  - title: Delete initiator
-    url: "/wombat-delete-initiator.html"
-  - title: Download environmental card firmware
-    url: "/wombat-download-tray-firmware-file.html"
-  - title: Getting started with authentication
-    url: "/wombat-getting-started-with-aurthentication.html"
-  - title: Set volume group forced state
-    url: "/wombat-set-volumegroup-forcedstate.html"
-  - title: Cancel asynchronous mirror group role reversal
-    url: "/wombat-stop-asyncmirrorgroup-rolechange.html"
-  - title: Download tray configuration settings
-    url: "/wombat-download-tray-configurationsettings.html"
-  - title: Resume SSD cache
-    url: "/wombat-resume-ssdcache.html"
-  - title: Show host ports
-    url: "/wombat-show-allhostports.html"
-  - title: Set foreign drive to native
-    url: "/wombat-set-drive-nativestate.html"
-  - title: Start Disk Pool Resource Provisioning
-    url: "/wombat-start-diskpool-resourceprovisioning.html"
-  - title: Set snapshot group media scan
-    url: "/wombat-set-snapgroup-mediascanenabled.html"
-  - title: Set host
-    url: "/wombat-set-host.html"
-  - title: Register SNMP community
-    url: "/wombat-create-snmpcommunity.html"
-  - title: Resume asynchronous mirror group
-    url: "/wombat-resume-asyncmirrorgroup.html"
-  - title: Save storage array support data
-    url: "/wombat-save-storagearray-supportdata.html"
-  - title: Save storage array support data
-    url: "/wombat-save-storagearray-supportdata.html"
-  - title: Set storage array iSNS server listening port
-    url: "/wombat-set-storagearray-isnslisteningport.html"
-  - title: Start snapshot image rollback
-    url: "/wombat-start-snapimage-rollback.html"
-  - title: Reset installed signed certificate
-    url: "/wombat-reset-controller-arraymanagementsignedcertificate.html"
-  - title: Set audit log settings
-    url: "/wombat-set-auditlog.html"
-  - title: Set storage array redundancy mode
-    url: "/wombat-set-storagearray-redundancymode.html"
-  - title: Clear storage array recovery mode
-    url: "/wombat-clear-storagearray-recoverymode.html"
-  - title: Create storage array directory server
-    url: "/wombat-create-storagearray-directoryserver.html"
-  - title: Test storage array directory server
-    url: "/wombat-start-storagearray-directoryservices-test.html"
-  - title: Recover RAID volume
-    url: "/wombat-recover-volume.html"
-  - title: Save storage array diagnostic data
-    url: "/wombat-save-storage-array-diagnostic-data.html"
-  - title: Save controller NVSRAM
-    url: "/wombat-save-controller-nvsram-file.html"
-  - title: Start synchronous mirroring synchronization
-    url: "/wombat-start-syncmirror-primary-synchronize.html"
-  - title: Show drive download progress
-    url: "/wombat-show-alldrives-downloadprogress.html"
-  - title: Show synchronous mirroring volume synchronization progress
-    url: "/wombat-show-syncmirror-synchronizationprogress.html"
-  - title: Show controller NVSRAM
-    url: "/wombat-show-controller-nvsram.html"
-  - title: Set host port
-    url: "/wombat-set-hostport.html"
-  - title: Re-create synchronous mirroring repository volume
-    url: "/wombat-recreate-storagearray-mirrorrepository.html"
-  - title: Set storage array ICMP response
-    url: "/wombat-set-storagearray-icmppingresponse.html"
-  - title: Show snapshot volumes
-    url: "/wombat-show-snapvolume.html"
-  - title: Delete volume from disk pool
-    url: "/wombat-delete-volume-from-disk-pool.html"
-  - title: Show installed root/intermediate CA certificates summary
-    url: "/wombat-show-controller-cacertificate.html"
-  - title: Reset asynchronous mirror group statistics
-    url: "/wombat-reset-storagearray-arvmstats-asyncmirrorgroup.html"
-  - title: Enable or disable AutoSupport maintenance window (for individual E2800
-      or E5700 arrays)
-    url: "/wombat-set-storagearray-autosupportmaintenancewindow.html"
-  - title: Stop drive channel fault isolation diagnostics
-    url: "/wombat-stop-drivechannel-faultdiagnostics.html"
-  - title: Show syslog configuration
-    url: "/wombat-show-syslog-summary.html"
-  - title: Autoconfigure storage array
-    url: "/wombat-autoconfigure-storagearray.html"
-  - title: Set synchronous mirroring
-    url: "/wombat-set-syncmirror.html"
-  - title: Show string
-    url: "/wombat-show-textstring.html"
-  - title: Reset storage array iSCSI baseline
-    url: "/wombat-reset-storagearray-iscsistatsbaseline.html"
-  - title: Clear volume unreadable sectors
-    url: "/wombat-clear-volume-unreadablesectors.html"
-  - title: Show storage array cache mirror data assurance check enable
-    url: "/wombat-show-storagearray-cachemirrordataassurancecheckenable.html"
-  - title: Start volume initialization
-    url: "/wombat-start-volume-initialization.html"
-  - title: Start drive locate
-    url: "/wombat-start-drive-locate.html"
-  - title: Create RAID volume (automatic drive select)
-    url: "/wombat-create-raid-volume-automatic-drive-select.html"
-  - title: Delete storage array login banner
-    url: "/wombat-delete-storagearray-loginbanner.html"
-  - title: Create storage array security key
-    url: "/wombat-create-storagearray-securitykey.html"
   - title: Activate asynchronous mirroring
     url: "/wombat-activate-asynchronous-mirroring.html"
-  - title: Getting started with external key management
-    url: "/wombat-getting-started-with-external-key-management.html"
-  - title: Save drive channel fault isolation diagnostic status
-    url: "/wombat-save-drivechannel-faultdiagnostics-file.html"
-  - title: Load storage array DBM database
-    url: "/wombat-load-storagearray-dbmdatabase.html"
-  - title: Show snapshot group
-    url: "/wombat-show-snapgroup.html"
-  - title: Start Volume Group Resource Provisioning
-    url: "/wombat-start-volumegroup-resourceprovisioning.html"
+  - title: Activate storage array firmware
+    url: "/wombat-activate-storagearray-firmware.html"
+  - title: Activate synchronous mirroring
+    url: "/wombat-activate-synchronous-mirroring.html"
   - title: Add array label
     url: "/wombat-add-array-label.html"
-  - title: Start input output controller (IOC) dump
-    url: "/wombat-start-ioclog.html"
-  - title: Unregister SNMP community
-    url: "/wombat-delete-snmpcommunity.html"
-  - title: Generate Key Management Certificate Signing Request (CSR)
-    url: "/wombat-save-storagearray-keymanagementclientcsr.html"
-  - title: Set storage array tray positions
-    url: "/wombat-set-storagearray-traypositions.html"
-  - title: Set storage array PQ validation on reconstruct
-    url: "/wombat-set-storagearray-pqvalidateonreconstruct.html"
-  - title: Set storage array iSNS server IPv6 address
-    url: "/wombat-set-storagearray-isnsipv6address.html"
-  - title: Change SSD cache application type
-    url: "/wombat-change-ssd-cache-application-type.html"
-  - title: Download storage array NVSRAM
-    url: "/wombat-download-storagearray-nvsram.html"
-  - title: Set storage array
-    url: "/wombat-set-storagearray.html"
-  - title: Stop tray locate
-    url: "/wombat-stop-tray-locate.html"
-  - title: Show storage array
-    url: "/wombat-show-storagearray.html"
   - title: Add certificate from array
     url: "/wombat-add-certificate-from-array.html"
-  - title: Set host channel
-    url: "/wombat-set-hostchannel.html"
-  - title: Remove installed root/intermediate CA certificates
-    url: "/wombat-delete-controller-cacertificate.html"
-  - title: Install server signed certificate
-    url: "/wombat-download-controller-arraymanagementservercertificate.html"
-  - title: Remove storage array directory server role mapping
-    url: "/wombat-remove-storagearray-directoryserver.html"
-  - title: Set storage array time
-    url: "/wombat-set-storagearray-time.html"
-  - title: Set snapshot group schedule
-    url: "/wombat-set-snapgroup-enableschedule.html"
-  - title: Create iSCSI initiator
-    url: "/wombat-create-iscsiinitiator.html"
-  - title: Save storage array controller health image
-    url: "/wombat-save-storagearray-controllerhealthimage.html"
-  - title: Create RAID volume (free extent based select)
-    url: "/wombat-create-raid-volume-free-extent-based-select.html"
+  - title: Add certificate from file
+    url: "/wombat-add-certificate-from-file.html"
+  - title: Add drives to SSD cache
+    url: "/wombat-add-drives-to-ssd-cache.html"
+  - title: Add volume to asynchronous mirror group
+    url: "/wombat-add-volume-asyncmirrorgroup.html"
+  - title: Autoconfigure storage array hot spares
+    url: "/wombat-autoconfigure-storagearray-hotspares.html"
+  - title: Autoconfigure storage array
+    url: "/wombat-autoconfigure-storagearray.html"
+  - title: Change SSD cache application type
+    url: "/wombat-change-ssd-cache-application-type.html"
+  - title: Check asynchronous mirror group consistency
+    url: "/wombat-check-asyncmirrorgroup-repositoryconsistency.html"
+  - title: Check repository consistency
+    url: "/wombat-check-repositoryconsistency.html"
+  - title: Check storage array connectivity
+    url: "/wombat-check-storagearray-connectivity.html"
+  - title: Check synchronous mirroring status
+    url: "/wombat-check-syncmirror.html"
+  - title: Check volume parity
+    url: "/wombat-check-volume-parity.html"
+  - title: Clear drive channel statistics
+    url: "/wombat-clear-alldrivechannels-stats.html"
+  - title: Clear asynchronous mirroring fault
+    url: "/wombat-clear-asyncmirrorfault.html"
   - title: Clear email alert configuration
     url: "/wombat-clear-emailalert-configuration.html"
-  - title: Set volume group
-    url: "/wombat-set-volumegroup.html"
-  - title: Stop snapshot image rollback
-    url: "/wombat-stop-snapimage-rollback.html"
-  - title: Stop volume group locate
-    url: "/wombat-stop-volumegroup-locate.html"
-  - title: Set storage array password length
-    url: "/wombat-set-storagearray-passwordlength.html"
-  - title: Show storage array LUN mappings
-    url: "/wombat-show-storagearray-lunmappings.html"
+  - title: Clear storage array configuration
+    url: "/wombat-clear-storagearray-configuration.html"
+  - title: Clear storage array event log
+    url: "/wombat-clear-storagearray-eventlog.html"
+  - title: Clear storage array firmware pending area
+    url: "/wombat-clear-storagearray-firmwarependingarea.html"
+  - title: Clear storage array recovery mode
+    url: "/wombat-clear-storagearray-recoverymode.html"
+  - title: Clear syslog configuration
+    url: "/wombat-clear-syslog-configuration.html"
+  - title: Clear volume reservations
+    url: "/wombat-clear-volume-reservations.html"
+  - title: Clear volume unreadable sectors
+    url: "/wombat-clear-volume-unreadablesectors.html"
+  - title: Create asynchronous mirror group
+    url: "/wombat-create-asyncmirrorgroup.html"
+  - title: Create consistency group snapshot image
+    url: "/wombat-create-cgsnapimage-consistencygroup.html"
+  - title: Create consistency group snapshot volume
+    url: "/wombat-create-cgsnapvolume.html"
+  - title: Create consistency group
+    url: "/wombat-create-consistencygroup.html"
+  - title: Create disk pool
+    url: "/wombat-create-diskpool.html"
+  - title: Create host
+    url: "/wombat-create-host.html"
+  - title: Create host group
+    url: "/wombat-create-hostgroup.html"
+  - title: Create host port
+    url: "/wombat-create-hostport.html"
+  - title: Create initiator
+    url: "/wombat-create-initiator.html"
+  - title: Create iSCSI initiator
+    url: "/wombat-create-iscsiinitiator.html"
+  - title: Create consistency group snapshot volume mapping
+    url: "/wombat-create-mapping-cgsnapvolume.html"
+  - title: Create Volume Mapping
+    url: "/wombat-create-mapping-volume.html"
+  - title: Create RAID volume (automatic drive select)
+    url: "/wombat-create-raid-volume-automatic-drive-select.html"
+  - title: Create RAID volume (free extent based select)
+    url: "/wombat-create-raid-volume-free-extent-based-select.html"
+  - title: Create RAID volume (manual drive select)
+    url: "/wombat-create-raid-volume-manual-drive-select.html"
+  - title: Create read-only snapshot volume
+    url: "/wombat-create-read-only-snapshot-volume.html"
+  - title: Create snapshot group
+    url: "/wombat-create-snapgroup.html"
+  - title: Create snapshot image
+    url: "/wombat-create-snapimage.html"
+  - title: Create snapshot volume
+    url: "/wombat-create-snapshot-volume.html"
+  - title: Register SNMP community
+    url: "/wombat-create-snmpcommunity.html"
+  - title: Register SNMP trap destination
+    url: "/wombat-create-snmptrapdestination.html"
+  - title: Register SNMPv3 USM user
+    url: "/wombat-create-snmpuser-username.html"
+  - title: Create SSD cache
+    url: "/wombat-create-ssdcache.html"
+  - title: Create storage array directory server
+    url: "/wombat-create-storagearray-directoryserver.html"
+  - title: Create storage array security key
+    url: "/wombat-create-storagearray-securitykey.html"
+  - title: Create storage array syslog configuration
+    url: "/wombat-create-storagearray-syslog.html"
+  - title: Create synchronous mirroring
+    url: "/wombat-create-syncmirror.html"
+  - title: Create volume in disk pool
+    url: "/wombat-create-volume-diskpool.html"
+  - title: Create volume copy
+    url: "/wombat-create-volumecopy.html"
+  - title: Create volume group
+    url: "/wombat-create-volumegroup.html"
+  - title: Deactivate synchronous mirroring
+    url: "/wombat-deactivate-storagearray-feature.html"
+  - title: Deactivate asynchronous mirroring
+    url: "/wombat-deactivate-storagearray.html"
+  - title: Delete asynchronous mirror group
+    url: "/wombat-delete-asyncmirrorgroup.html"
+  - title: Delete audit log records
+    url: "/wombat-delete-auditlog.html"
+  - title: Delete certificates
+    url: "/wombat-delete-certificates.html"
+  - title: Delete consistency group snapshot image
+    url: "/wombat-delete-cgsnapimage-consistencygroup.html"
+  - title: Delete consistency group
+    url: "/wombat-delete-consistencygroup.html"
+  - title: Remove installed root/intermediate CA certificates
+    url: "/wombat-delete-controller-cacertificate.html"
+  - title: Delete disk pool
+    url: "/wombat-delete-diskpool.html"
+  - title: Delete email alert recipient
+    url: "/wombat-delete-emailalert.html"
+  - title: Delete host
+    url: "/wombat-delete-host.html"
+  - title: Delete host group
+    url: "/wombat-delete-hostgroup.html"
+  - title: Delete host port
+    url: "/wombat-delete-hostport.html"
+  - title: Delete initiator
+    url: "/wombat-delete-initiator.html"
+  - title: Delete iSCSI initiator
+    url: "/wombat-delete-iscsiinitiator.html"
+  - title: Delete consistency group snapshot volume
+    url: "/wombat-delete-sgsnapvolume.html"
+  - title: Delete snapshot group
+    url: "/wombat-delete-snapgroup.html"
+  - title: Delete snapshot image
+    url: "/wombat-delete-snapimage.html"
+  - title: Delete snapshot volume
+    url: "/wombat-delete-snapvolume.html"
+  - title: Unregister SNMP community
+    url: "/wombat-delete-snmpcommunity.html"
+  - title: Unregister SNMP trap destination
+    url: "/wombat-delete-snmptrapdestination.html"
+  - title: Unregister SNMPv3 USM user
+    url: "/wombat-delete-snmpuser-username.html"
+  - title: Delete SSD cache
+    url: "/wombat-delete-ssdcache.html"
+  - title: Delete storage array directory server
+    url: "/wombat-delete-storagearray-directoryservers.html"
+  - title: Remove installed external key management certificate
+    url: "/wombat-delete-storagearray-keymanagementcertificate.html"
+  - title: Delete storage array login banner
+    url: "/wombat-delete-storagearray-loginbanner.html"
+  - title: Delete storage array syslog configuration
+    url: "/wombat-delete-storagearray-syslog.html"
+  - title: Remove installed trusted CA certificates
+    url: "/wombat-delete-storagearray-trustedcertificate.html"
+  - title: Delete syslog server
+    url: "/wombat-delete-syslog.html"
+  - title: Delete volume from disk pool
+    url: "/wombat-delete-volume-from-disk-pool.html"
+  - title: Delete volume
+    url: "/wombat-delete-volume.html"
+  - title: Delete volume group
+    url: "/wombat-delete-volumegroup.html"
+  - title: Test asynchronous mirror group connectivity
+    url: "/wombat-diagnose-asyncmirrorgroup.html"
+  - title: Diagnose controller iSCSI host cable
+    url: "/wombat-diagnose-controller-iscsihostport.html"
+  - title: Diagnose controller
+    url: "/wombat-diagnose-controller.html"
+  - title: Diagnose synchronous mirroring
+    url: "/wombat-diagnose-syncmirror.html"
+  - title: Disable external security key management
+    url: "/wombat-disable-storagearray-externalkeymanagement-file.html"
+  - title: Disable storage array feature
+    url: "/wombat-disable-storagearray.html"
+  - title: Install server signed certificate
+    url: "/wombat-download-controller-arraymanagementservercertificate.html"
+  - title: Install root/intermediate CA certificates
+    url: "/wombat-download-controller-cacertificate.html"
   - title: Install trusted CA certificates
     url: "/wombat-download-controller-trustedcertificate.html"
-  - title: Enable or disable VAAI
-    url: "/wombat-set-storagearray-vaaienabled.html"
-  - title: Set iSCSI initiator
-    url: "/wombat-set-iscsiinitiator.html"
-  - title: Save input output controller (IOC) dump
-    url: "/wombat-save-ioclog.html"
-  - title: Show volume copy
-    url: "/wombat-show-volumecopy.html"
-  - title: Save storage array InfiniBand statistics
-    url: "/wombat-save-storagearray-ibstats.html"
-  - title: Update storage array syslog configuration
-    url: "/wombat-set-storagearray-syslog.html"
-  - title: Show consistency group
-    url: "/wombat-show-consistencygroup.html"
-  - title: Reset storage array volume distribution
-    url: "/wombat-reset-storagearray-volumedistribution.html"
-  - title: Show consistency group snapshot image
-    url: "/wombat-show-cgsnapimage.html"
-  - title: Enable or disable AutoSupport (all individual arrays)
+  - title: Download drive firmware
+    url: "/wombat-download-drive-firmware.html"
+  - title: Download storage array drive firmware
+    url: "/wombat-download-storagearray-drivefirmware-file.html"
+  - title: Download storage array firmware/NVSRAM
+    url: "/wombat-download-storagearray-firmware.html"
+  - title: Install storage array external key management certificate
+    url: "/wombat-download-storagearray-keymanagementcertificate.html"
+  - title: Download storage array NVSRAM
+    url: "/wombat-download-storagearray-nvsram.html"
+  - title: Download tray configuration settings
+    url: "/wombat-download-tray-configurationsettings.html"
+  - title: Download environmental card firmware
+    url: "/wombat-download-tray-firmware-file.html"
+  - title: Enable controller data transfer
+    url: "/wombat-enable-controller-datatransfer.html"
+  - title: Enable disk pool security
+    url: "/wombat-enable-diskpool-security.html"
+  - title: Enable or disable  AutoSupport (all individual arrays)
     url: "/wombat-enable-or-disable-autosupport-individual-arrays.html"
+  - title: Enable external security key management
+    url: "/wombat-enable-storagearray-externalkeymanagement-file.html"
+  - title: Enable storage array feature
+    url: "/wombat-enable-storagearray-feature-file.html"
+  - title: Enable volume group security
+    url: "/wombat-enable-volumegroup-security.html"
+  - title: Establish asynchronous mirrored pair
+    url: "/wombat-establish-asyncmirror-volume.html"
+  - title: Export storage array security key
+    url: "/wombat-export-storagearray-securitykey.html"
+  - title: External key management commands related to certificates
+    url: "/wombat-external-key-management-commands-related-to-certificates.html"
+  - title: Getting started with authentication
+    url: "/wombat-getting-started-with-aurthentication.html"
+  - title: Getting started with external key management
+    url: "/wombat-getting-started-with-external-key-management.html"
+  - title: Getting started with internal key management
+    url: "/wombat-getting-started-with-internal-key-management.html"
+  - title: Import storage array security key
+    url: "/wombat-import-storagearray-securitykey-file.html"
+  - title: Load storage array DBM database
+    url: "/wombat-load-storagearray-dbmdatabase.html"
+  - title: Recopy volume copy
+    url: "/wombat-recopy-volumecopy-target.html"
+  - title: Recover disabled drive ports
+    url: "/wombat-recover-disabled-driveports.html"
+  - title: Recover SAS port mis-wire
+    url: "/wombat-recover-sasport-miswire.html"
+  - title: Recover RAID volume
+    url: "/wombat-recover-volume.html"
+  - title: Re-create synchronous mirroring repository volume
+    url: "/wombat-recreate-storagearray-mirrorrepository.html"
+  - title: Re-create external security key
+    url: "/wombat-recreate-storagearray-securitykey.html"
+  - title: Reduce disk pool capacity
+    url: "/wombat-reduce-disk-pool-capacity.html"
+  - title: Remove array label
+    url: "/wombat-remove-array-label.html"
+  - title: Remove incomplete asynchronous mirrored pair from asynchronous mirror group
+    url: "/wombat-remove-asyncmirrorgroup.html"
+  - title: Remove drives from SSD cache
+    url: "/wombat-remove-drives-from-ssd-cache.html"
+  - title: Remove volume LUN mapping
+    url: "/wombat-remove-lunmapping.html"
+  - title: Remove member volume from consistency group
+    url: "/wombat-remove-member-volume-from-consistency-group.html"
+  - title: Remove storage array directory server role mapping
+    url: "/wombat-remove-storagearray-directoryserver.html"
+  - title: Remove synchronous mirroring
+    url: "/wombat-remove-syncmirror.html"
+  - title: Remove volume from asynchronous mirror group
+    url: "/wombat-remove-volume-asyncmirrorgroup.html"
+  - title: Remove volume copy
+    url: "/wombat-remove-volumecopy-target.html"
+  - title: Rename SSD cache
+    url: "/wombat-rename-ssd-cache.html"
+  - title: Repair Data Parity
+    url: "/wombat-repair-data-parity.html"
+  - title: Repair volume parity
+    url: "/wombat-repair-volume-parity.html"
+  - title: Replace drive
+    url: "/wombat-replace-drive-replacementdrive.html"
+  - title: Reset installed signed certificate
+    url: "/wombat-reset-controller-arraymanagementsignedcertificate.html"
+  - title: Reset controller
+    url: "/wombat-reset-controller.html"
+  - title: Reset drive
+    url: "/wombat-reset-drive.html"
+  - title: Reset iSCSI IP address
+    url: "/wombat-reset-iscsiipaddress.html"
+  - title: Reset asynchronous mirror group statistics
+    url: "/wombat-reset-storagearray-arvmstats-asyncmirrorgroup.html"
   - title: Reset AutoSupport message collection schedule (for individual E2800 or
       E5700 arrays)
     url: "/wombat-reset-storagearray-autosupport-schedule.html"
-  - title: Start drive channel fault isolation diagnostics
-    url: "/wombat-start-drivechannel-faultdiagnostics.html"
-  - title: Rename snapshot volume
-    url: "/wombat-set-snapvolume.html"
-  - title: Set iSER target
-    url: "/wombat-set-isertarget.html"
-  - title: Set snapshot group attributes
-    url: "/wombat-set-snapgroup.html"
-  - title: Show unconfigured initiators
-    url: "/wombat-show-storagearray-unconfiguredinitiators.html"
-  - title: Remove installed external key management certificate
-    url: "/wombat-delete-storagearray-keymanagementcertificate.html"
-  - title: Enable or disable ODX
-    url: "/wombat-set-storagearray-odxenabled.html"
-  - title: Set controller service action allowed indicator
-    url: "/wombat-set-controller-service-action-allowed-indicator.html"
-  - title: Show array label
-    url: "/wombat-show-array-label.html"
-  - title: Save auto-load balancing statistics
-    url: "/wombat-save-storagearray-autoloadbalancestatistics-file.html"
-  - title: Diagnose controller iSCSI host cable
-    url: "/wombat-diagnose-controller-iscsihostport.html"
-  - title: Create RAID volume (manual drive select)
-    url: "/wombat-create-raid-volume-manual-drive-select.html"
-  - title: Stop SSD cache performance modeling
-    url: "/wombat-stop-ssdcache-performancemodeling.html"
-  - title: Set storage array local user password or SYMbol password
-    url: "/wombat-set-storagearray-localusername.html"
-  - title: Delete certificates
-    url: "/wombat-delete-certificates.html"
+  - title: Reset storage array diagnostic data
+    url: "/wombat-reset-storagearray-diagnosticdata.html"
+  - title: Reset storage array host port statistics baseline
+    url: "/wombat-reset-storagearray-hostportstatisticsbaseline.html"
+  - title: Reset storage array InfiniBand statistics baseline
+    url: "/wombat-reset-storagearray-ibstatsbaseline.html"
+  - title: Reset storage array iSCSI baseline
+    url: "/wombat-reset-storagearray-iscsistatsbaseline.html"
+  - title: Reset storage array iSER baseline
+    url: "/wombat-reset-storagearray-iserstatsbaseline.html"
+  - title: Reset storage array RLS baseline
+    url: "/wombat-reset-storagearray-rlsbaseline.html"
+  - title: Reset storage array SAS PHY baseline
+    url: "/wombat-reset-storagearray-sasphybaseline.html"
+  - title: Reset storage array SOC baseline
+    url: "/wombat-reset-storagearray-socbaseline.html"
+  - title: Reset storage array volume distribution
+    url: "/wombat-reset-storagearray-volumedistribution.html"
+  - title: Resume asynchronous mirror group
+    url: "/wombat-resume-asyncmirrorgroup.html"
+  - title: Resume consistency group snapshot volume
+    url: "/wombat-resume-cgsnapvolume.html"
+  - title: Resume snapshot image rollback
+    url: "/wombat-resume-snapimage-rollback.html"
+  - title: Resume snapshot volume
+    url: "/wombat-resume-snapvolume.html"
+  - title: Resume SSD cache
+    url: "/wombat-resume-ssdcache.html"
+  - title: Resume synchronous mirroring
+    url: "/wombat-resume-syncmirror.html"
+  - title: Revive drive
+    url: "/wombat-revive-drive.html"
+  - title: Revive snapshot group
+    url: "/wombat-revive-snapgroup.html"
+  - title: Revive snapshot volume
+    url: "/wombat-revive-snapvolume.html"
+  - title: Revive volume group
+    url: "/wombat-revive-volumegroup.html"
   - title: Save drive log
     url: "/wombat-save-alldrives-logfile.html"
-  - title: Disable external security key management
-    url: "/wombat-disable-storagearray-externalkeymanagement-file.html"
+  - title: Save tray log
+    url: "/wombat-save-alltrays-logfile.html"
+  - title: Save audit log records
+    url: "/wombat-save-auditlog.html"
+  - title: Generate web server Certificate Signing Request (CSR)
+    url: "/wombat-save-controller-arraymanagementcsr.html"
+  - title: Retrieve installed server certificate
+    url: "/wombat-save-controller-arraymanagementsignedcertificate.html"
+  - title: Retrieve installed CA certificates
+    url: "/wombat-save-controller-cacertificate.html"
+  - title: Save controller NVSRAM
+    url: "/wombat-save-controller-nvsram-file.html"
+  - title: Save drive channel fault isolation diagnostic status
+    url: "/wombat-save-drivechannel-faultdiagnostics-file.html"
+  - title: Save input output controller (IOC) dump
+    url: "/wombat-save-ioclog.html"
+  - title: Save storage array diagnostic data
+    url: "/wombat-save-storage-array-diagnostic-data.html"
   - title: Save asynchronous mirror group statistics
     url: "/wombat-save-storagearray-arvmstats-asyncmirrorgroup.html"
+  - title: Save auto-load balancing statistics
+    url: "/wombat-save-storagearray-autoloadbalancestatistics-file.html"
+  - title: Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)
+    url: "/wombat-save-storagearray-autosupport-log.html"
+  - title: Save storage array configuration
+    url: "/wombat-save-storagearray-configuration.html"
+  - title: Save storage array controller health image
+    url: "/wombat-save-storagearray-controllerhealthimage.html"
+  - title: Save storage array DBM database
+    url: "/wombat-save-storagearray-dbmdatabase.html"
+  - title: Save storage array DBM validator information file
+    url: "/wombat-save-storagearray-dbmvalidatorinfo.html"
+  - title: Save storage array firmware inventory
+    url: "/wombat-save-storagearray-firmwareinventory.html"
+  - title: Save storage array host port statistics
+    url: "/wombat-save-storagearray-hostportstatistics.html"
+  - title: Save storage array InfiniBand statistics
+    url: "/wombat-save-storagearray-ibstats.html"
+  - title: Save storage array iSCSI statistics
+    url: "/wombat-save-storagearray-iscsistatistics.html"
+  - title: Save storage array iSER statistics
+    url: "/wombat-save-storagearray-iserstatistics.html"
+  - title: Retrieve installed external key management certificate
+    url: "/wombat-save-storagearray-keymanagementcertificate.html"
+  - title: Generate Key Management Certificate Signing Request (CSR)
+    url: "/wombat-save-storagearray-keymanagementclientcsr.html"
+  - title: Save storage array login banner
+    url: "/wombat-save-storagearray-loginbanner.html"
+  - title: Save storage array performance statistics
+    url: "/wombat-save-storagearray-performancestats.html"
+  - title: Save storage array RLS counts
+    url: "/wombat-save-storagearray-rlscounts.html"
+  - title: Save storage array SAS PHY counts
+    url: "/wombat-save-storagearray-sasphycounts.html"
+  - title: Save storage array SOC counts
+    url: "/wombat-save-storagearray-soccounts.html"
   - title: Save storage array state capture
     url: "/wombat-save-storagearray-statecapture.html"
+  - title: Save storage array support data
+    url: "/wombat-save-storagearray-supportdata.html"
+  - title: Save storage array support data
+    url: "/wombat-save-storagearray-supportdata.html"
+  - title: Retrieve installed trusted CA certificates
+    url: "/wombat-save-storagearray-trustedcertificate.html"
+  - title: Save storage array events
+    url: "/wombat-save-storagearray-warningevents.html"
+  - title: Set asynchronous mirror group
+    url: "/wombat-set-asyncmirrorgroup.html"
+  - title: Set audit log settings
+    url: "/wombat-set-auditlog.html"
+  - title: Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700
+      arrays)
+    url: "/wombat-set-autosupport-https-delivery-method-e2800-e5700.html"
+  - title: Set consistency group snapshot volume
+    url: "/wombat-set-cgsnapvolume.html"
+  - title: Set consistency group attributes
+    url: "/wombat-set-consistency-group-attributes.html"
+  - title: Add member to consistency group
+    url: "/wombat-set-consistencygroup-addcgmembervolume.html"
+  - title: Set controller DNS settings
+    url: "/wombat-set-controller-dnsservers.html"
+  - title: Set controller host port properties
+    url: "/wombat-set-controller-hostport.html"
+  - title: Set iSCSI host port networking properties
+    url: "/wombat-set-controller-iscsihostport.html"
+  - title: Set controller NTP settings
+    url: "/wombat-set-controller-ntpservers.html"
+  - title: Set controller service action allowed indicator
+    url: "/wombat-set-controller-service-action-allowed-indicator.html"
+  - title: Set controller
+    url: "/wombat-set-controller.html"
+  - title: Set disk pool (modify disk pool)
+    url: "/wombat-set-disk-pool-modify-disk-pool.html"
+  - title: Set disk pool
+    url: "/wombat-set-disk-pool.html"
+  - title: Set drive hot spare
+    url: "/wombat-set-drive-hotspare.html"
+  - title: Set foreign drive to native
+    url: "/wombat-set-drive-nativestate.html"
+  - title: Set drive state
+    url: "/wombat-set-drive-operationalstate.html"
+  - title: Set FIPS drive security identifier
+    url: "/wombat-set-drive-securityid.html"
+  - title: Set drive service action allowed indicator
+    url: "/wombat-set-drive-serviceallowedindicator.html"
+  - title: Set drive channel status
+    url: "/wombat-set-drivechannel.html"
+  - title: Specify the Email (SMTP) delivery method (for individual E2800 or E5700
+      arrays)
+    url: "/wombat-set-email-smtp-delivery-method-e2800-e5700.html"
+  - title: Configure email alert settings
+    url: "/wombat-set-emailalert.html"
+  - title: Set event alert filtering
+    url: "/wombat-set-event-alert.html"
+  - title: Set host
+    url: "/wombat-set-host.html"
+  - title: Set host channel
+    url: "/wombat-set-hostchannel.html"
+  - title: Set host group
+    url: "/wombat-set-hostgroup.html"
+  - title: Set host port
+    url: "/wombat-set-hostport.html"
+  - title: Set initiator
+    url: "/wombat-set-initiator.html"
+  - title: Set iSCSI initiator
+    url: "/wombat-set-iscsiinitiator.html"
+  - title: Set iSCSI target properties
+    url: "/wombat-set-iscsitarget.html"
+  - title: Set iSER target
+    url: "/wombat-set-isertarget.html"
+  - title: Set session
+    url: "/wombat-set-session-erroraction.html"
+  - title: Set snapshot group schedule
+    url: "/wombat-set-snapgroup-enableschedule.html"
+  - title: Set snapshot group repository volume capacity
+    url: "/wombat-set-snapgroup-increase-decreaserepositorycapacity.html"
+  - title: Set snapshot group media scan
+    url: "/wombat-set-snapgroup-mediascanenabled.html"
+  - title: Set snapshot group attributes
+    url: "/wombat-set-snapgroup.html"
+  - title: Set read-only snapshot volume to read/write volume
+    url: "/wombat-set-snapvolume-converttoreadwrite.html"
   - title: Set snapshot volume repository volume capacity
     url: "/wombat-set-snapvolume-increase-decreaserepositorycapacity.html"
-  - title: Clear storage array configuration
-    url: "/wombat-clear-storagearray-configuration.html"
-  - title: Autoconfigure storage array hot spares
-    url: "/wombat-autoconfigure-storagearray-hotspares.html"
-  - title: Create volume in disk pool
-    url: "/wombat-create-volume-diskpool.html"
+  - title: Set snapshot volume media scan
+    url: "/wombat-set-snapvolume-mediascanenabled.html"
+  - title: Rename snapshot volume
+    url: "/wombat-set-snapvolume.html"
+  - title: Update SNMP community
+    url: "/wombat-set-snmpcommunity.html"
+  - title: Update SNMP MIB II system group variables
+    url: "/wombat-set-snmpsystemvariables.html"
+  - title: Update SNMP trap destination
+    url: "/wombat-set-snmptrapdestination-trapreceiverip.html"
+  - title: Update SNMPv3 USM user
+    url: "/wombat-set-snmpuser-username.html"
+  - title: Set storage array to enable or disable automatic load balancing
+    url: "/wombat-set-storagearray-autoloadbalancingenable.html"
+  - title: Set AutoSupport message collection schedule (for individual E2800 or E5700
+      arrays)
+    url: "/wombat-set-storagearray-autosupport-schedule.html"
+  - title: Enable or disable AutoSupport maintenance window (for individual E2800
+      or E5700 arrays)
+    url: "/wombat-set-storagearray-autosupportmaintenancewindow.html"
+  - title: Enable or disable the AutoSupport OnDemand feature (for individual E2800
+      or E5700 arrays)
+    url: "/wombat-set-storagearray-autosupportondemand.html"
+  - title: Enable or disable the AutoSupport Remote Diagnostics feature (for individual
+      E2800 or E5700 arrays)
+    url: "/wombat-set-storagearray-autosupportremotediag.html"
+  - title: Set storage array to enable or disable cache mirror data assurance check
+    url: "/wombat-set-storagearray-cachemirrordataassurancecheckenable.html"
+  - title: Set storage array controller health image allow overwrite
+    url: "/wombat-set-storagearray-controllerhealthimageallowoverwrite.html"
+  - title: Set storage array directory server role mapping
+    url: "/wombat-set-storagearray-directoryserver-roles.html"
+  - title: Set storage array directory server
+    url: "/wombat-set-storagearray-directoryserver.html"
+  - title: Set external key management settings
+    url: "/wombat-set-storagearray-externalkeymanagement.html"
   - title: Enable or disable host connectivity reporting
     url: "/wombat-set-storagearray-hostconnectivityreporting.html"
+  - title: Set storage array ICMP response
+    url: "/wombat-set-storagearray-icmppingresponse.html"
+  - title: Set storage array iSNS server IPv4 address
+    url: "/wombat-set-storagearray-isnsipv4configurationmethod.html"
+  - title: Set storage array iSNS server IPv6 address
+    url: "/wombat-set-storagearray-isnsipv6address.html"
+  - title: Set storage array iSNS server listening port
+    url: "/wombat-set-storagearray-isnslisteningport.html"
+  - title: Set storage array iSNS registration
+    url: "/wombat-set-storagearray-isnsregistration.html"
+  - title: Set storage array iSNS server refresh
+    url: "/wombat-set-storagearray-isnsserverrefresh.html"
+  - title: Set storage array controller battery learn cycle
+    url: "/wombat-set-storagearray-learncycledate-controller.html"
+  - title: Set storage array local user password or SYMbol password
+    url: "/wombat-set-storagearray-localusername.html"
+  - title: Set storage array login banner
+    url: "/wombat-set-storagearray-loginbanner.html"
+  - title: Set storage array management interface
+    url: "/wombat-set-storagearray-managementinterface.html"
+  - title: Enable or disable ODX
+    url: "/wombat-set-storagearray-odxenabled.html"
+  - title: Set storage array password length
+    url: "/wombat-set-storagearray-passwordlength.html"
+  - title: Set storage array PQ validation on reconstruct
+    url: "/wombat-set-storagearray-pqvalidateonreconstruct.html"
+  - title: Set storage array redundancy mode
+    url: "/wombat-set-storagearray-redundancymode.html"
+  - title: Set Storage Array Resource Provisioned Volumes
+    url: "/wombat-set-storagearray-resourceprovisionedvolumes.html"
+  - title: Set certificate revocation check settings
+    url: "/wombat-set-storagearray-revocationchecksettings.html"
+  - title: Set internal storage array security key
+    url: "/wombat-set-storagearray-securitykey.html"
+  - title: Update storage array syslog configuration
+    url: "/wombat-set-storagearray-syslog.html"
+  - title: Set storage array time
+    url: "/wombat-set-storagearray-time.html"
+  - title: Set storage array tray positions
+    url: "/wombat-set-storagearray-traypositions.html"
+  - title: Set storage array unnamed discovery session
+    url: "/wombat-set-storagearray-unnameddiscoverysession.html"
+  - title: Set storage array user session
+    url: "/wombat-set-storagearray-usersession.html"
+  - title: Enable or disable VAAI
+    url: "/wombat-set-storagearray-vaaienabled.html"
+  - title: Set storage array
+    url: "/wombat-set-storagearray.html"
+  - title: Set synchronous mirroring
+    url: "/wombat-set-syncmirror.html"
+  - title: Configure syslog settings
+    url: "/wombat-set-syslog.html"
+  - title: Set target properties
+    url: "/wombat-set-target.html"
+  - title: Set thin volume attributes
+    url: "/wombat-set-thin-volume-attributes.html"
+  - title: Set tray attribute
+    url: "/wombat-set-tray-attribute.html"
+  - title: Set drawer service action allowed indicator
+    url: "/wombat-set-tray-drawer.html"
+  - title: Set tray identification
+    url: "/wombat-set-tray-identification.html"
+  - title: Set tray service action allowed indicator
+    url: "/wombat-set-tray-serviceallowedindicator.html"
+  - title: Set volume attributes for a volume in a volume group
+    url: "/wombat-set-volume-group-attributes-for-volume-in-a-volume-group.html"
+  - title: Set volume mapping
+    url: "/wombat-set-volume-logicalunitnumber.html"
+  - title: Set SSD cache for a volume
+    url: "/wombat-set-volume-ssdcacheenabled.html"
+  - title: Set volume copy
+    url: "/wombat-set-volumecopy-target.html"
+  - title: Set volume group forced state
+    url: "/wombat-set-volumegroup-forcedstate.html"
+  - title: Set volume group
+    url: "/wombat-set-volumegroup.html"
+  - title: Set volume attributes for a volume in a disk pool
+    url: "/wombat-set-volumes.html"
+  - title: Show drive download progress
+    url: "/wombat-show-alldrives-downloadprogress.html"
+  - title: Show drive performance statistics
+    url: "/wombat-show-alldrives-performancestats.html"
+  - title: Show drive
+    url: "/wombat-show-alldrives.html"
+  - title: Show host ports
+    url: "/wombat-show-allhostports.html"
+  - title: Show SNMP communities
+    url: "/wombat-show-allsnmpcommunities.html"
+  - title: Show SNMPv3 USM user
+    url: "/wombat-show-allsnmpusers.html"
+  - title: Show array label
+    url: "/wombat-show-array-label.html"
+  - title: Show asynchronous mirror groups
+    url: "/wombat-show-asyncmirrorgroup-summary.html"
+  - title: Show asynchronous mirror group synchronization progress
+    url: "/wombat-show-asyncmirrorgroup-synchronizationprogress.html"
+  - title: Show audit log configuration
+    url: "/wombat-show-auditlog-configuration.html"
+  - title: Show audit log summary
+    url: "/wombat-show-auditlog-summary.html"
+  - title: Show blocked events
+    url: "/wombat-show-blockedeventalertlist.html"
+  - title: Show certificates
+    url: "/wombat-show-certificates.html"
+  - title: Show consistency group snapshot image
+    url: "/wombat-show-cgsnapimage.html"
+  - title: Show consistency group
+    url: "/wombat-show-consistencygroup.html"
+  - title: Show signed certificate
+    url: "/wombat-show-controller-arraymanagementsignedcertificate-summary.html"
+  - title: Show installed root/intermediate CA certificates summary
+    url: "/wombat-show-controller-cacertificate.html"
+  - title: Show controller diagnostic status
+    url: "/wombat-show-controller-diagnostic-status.html"
+  - title: Show controller NVSRAM
+    url: "/wombat-show-controller-nvsram.html"
+  - title: Show controller
+    url: "/wombat-show-controller.html"
+  - title: Show disk pool
+    url: "/wombat-show-diskpool.html"
+  - title: Show drive channel statistics
+    url: "/wombat-show-drivechannel-stats.html"
+  - title: Show email alert configuration
+    url: "/wombat-show-emailalert-summary.html"
+  - title: Show current iSCSI sessions
+    url: "/wombat-show-iscsisessions.html"
+  - title: Show replaceable drives
+    url: "/wombat-show-replaceabledrives.html"
+  - title: Show snapshot group
+    url: "/wombat-show-snapgroup.html"
+  - title: Show snapshot image
+    url: "/wombat-show-snapimage.html"
+  - title: Show snapshot volumes
+    url: "/wombat-show-snapvolume.html"
+  - title: Show SNMP MIB II system group variables
+    url: "/wombat-show-snmpsystemvariables.html"
+  - title: Show SSD cache statistics
+    url: "/wombat-show-ssd-cache-statistics.html"
+  - title: Show SSD cache
+    url: "/wombat-show-ssd-cache.html"
+  - title: Show storage array auto configuration
+    url: "/wombat-show-storagearray-autoconfiguration.html"
+  - title: Show AutoSupport configuration (for E2800 or E5700 storage arrays)
+    url: "/wombat-show-storagearray-autosupport.html"
+  - title: Show storage array cache mirror data assurance check enable
+    url: "/wombat-show-storagearray-cachemirrordataassurancecheckenable.html"
+  - title: Show storage array controller health image
+    url: "/wombat-show-storagearray-controllerhealthimage.html"
+  - title: Show storage array DBM database
+    url: "/wombat-show-storagearray-dbmdatabase.html"
+  - title: Show storage array directory services summary
+    url: "/wombat-show-storagearray-directoryservices-summary.html"
+  - title: Show storage array host connectivity reporting
+    url: "/wombat-show-storagearray-hostconnectivityreporting.html"
+  - title: Show storage array host topology
+    url: "/wombat-show-storagearray-hosttopology.html"
+  - title: Show storage array negotiation defaults
+    url: "/wombat-show-storagearray-iscsinegotiationdefaults.html"
+  - title: Show storage array LUN mappings
+    url: "/wombat-show-storagearray-lunmappings.html"
+  - title: Show storage array ODX setting
+    url: "/wombat-show-storagearray-odxsetting.html"
+  - title: Show storage array power information
+    url: "/wombat-show-storagearray-powerinfo.html"
+  - title: Show certificate revocation check settings
+    url: "/wombat-show-storagearray-revocationchecksettings.html"
+  - title: Display storage array syslog configuration
+    url: "/wombat-show-storagearray-syslog.html"
+  - title: Show installed trusted CA certificates summary
+    url: "/wombat-show-storagearray-trustedcertificate-summary.html"
+  - title: Show unconfigured initiators
+    url: "/wombat-show-storagearray-unconfiguredinitiators.html"
+  - title: Show storage array unconfigured iSCSI initiators
+    url: "/wombat-show-storagearray-unconfigurediscsiinitiators.html"
+  - title: Show storage array unreadable sectors
+    url: "/wombat-show-storagearray-unreadablesectors.html"
+  - title: Display storage array user session
+    url: "/wombat-show-storagearray-usersession.html"
+  - title: Show storage array
+    url: "/wombat-show-storagearray.html"
+  - title: Show synchronous mirroring volume candidates
+    url: "/wombat-show-syncmirror-candidates.html"
+  - title: Show synchronous mirroring volume synchronization progress
+    url: "/wombat-show-syncmirror-synchronizationprogress.html"
+  - title: Show syslog configuration
+    url: "/wombat-show-syslog-summary.html"
+  - title: Show string
+    url: "/wombat-show-textstring.html"
+  - title: Show volume action progress
+    url: "/wombat-show-volume-actionprogress.html"
+  - title: Show volume performance statistics
+    url: "/wombat-show-volume-performancestats.html"
+  - title: Show volume reservations
+    url: "/wombat-show-volume-reservations.html"
+  - title: Show volume
+    url: "/wombat-show-volume-summary.html"
+  - title: Show thin volume
+    url: "/wombat-show-volume.html"
+  - title: Show volume copy target candidates
+    url: "/wombat-show-volumecopy-source-targetcandidates.html"
+  - title: Show volume copy source candidates
+    url: "/wombat-show-volumecopy-sourcecandidates.html"
+  - title: Show volume copy
+    url: "/wombat-show-volumecopy.html"
+  - title: Show volume group export dependencies
+    url: "/wombat-show-volumegroup-exportdependencies.html"
+  - title: Show volume group import dependencies
+    url: "/wombat-show-volumegroup-importdependencies.html"
+  - title: Show volume group
+    url: "/wombat-show-volumegroup.html"
+  - title: Test alerts
+    url: "/wombat-smcli-alerttest.html"
+  - title: Display AutoSupport bundle collection settings
+    url: "/wombat-smcli-autosupportconfig-show.html"
+  - title: Test the AutoSupport configuration
+    url: "/wombat-smcli-autosupportconfig-test.html"
+  - title: Specify the AutoSupport delivery method
+    url: "/wombat-smcli-autosupportconfig.html"
+  - title: Capture or view an AutoSupport log
+    url: "/wombat-smcli-autosupportlog.html"
+  - title: Reset AutoSupport message collection schedule
+    url: "/wombat-smcli-autosupportschedule-reset.html"
+  - title: Display AutoSupport message collection schedule
+    url: "/wombat-smcli-autosupportschedule-show.html"
+  - title: Enable or disable AutoSupport at the EMW management domain level (SMcli
+      only)
+    url: "/wombat-smcli-enable-autosupportfeature.html"
+  - title: Enable or disable the AutoSupport OnDemand feature at the EMW management
+      domain level (SMcli only)
+    url: "/wombat-smcli-enable-disable-autosupportondemand.html"
+  - title: Enable or disable the AutoSupport remote diagnostics feature at the EMW
+      management domain level (SMcli only)
+    url: "/wombat-smcli-enable-disable-autosupportremotediag.html"
+  - title: Schedule automatic support bundle collection configuration
+    url: "/wombat-smcli-supportbundle-schedule.html"
+  - title: Start asynchronous mirroring synchronization
+    url: "/wombat-start-asyncmirrorgroup-synchronize.html"
+  - title: Start consistency group snapshot rollback
+    url: "/wombat-start-cgsnapimage-rollback.html"
+  - title: Start iSCSI DHCP refresh
+    url: "/wombat-start-controller-iscsihostport-dhcprefresh.html"
+  - title: Start controller trace
+    url: "/wombat-start-controller.html"
+  - title: Start Disk Pool Full Provisioning
+    url: "/wombat-start-diskpool-fullprovisioning.html"
+  - title: Start disk pool locate
+    url: "/wombat-start-diskpool-locate.html"
+  - title: Start Disk Pool Resource Provisioning
+    url: "/wombat-start-diskpool-resourceprovisioning.html"
+  - title: Start drive erase
+    url: "/wombat-start-drive-erase.html"
+  - title: Start drive initialize
+    url: "/wombat-start-drive-initialize.html"
+  - title: Start drive locate
+    url: "/wombat-start-drive-locate.html"
+  - title: Start drive reconstruction
+    url: "/wombat-start-drive-reconstruct.html"
+  - title: Start drive channel fault isolation diagnostics
+    url: "/wombat-start-drivechannel-faultdiagnostics.html"
+  - title: Start drive channel locate
+    url: "/wombat-start-drivechannel-locate.html"
+  - title: Test email alert configuration
+    url: "/wombat-start-emailalert-test.html"
+  - title: Increase capacity of volume in disk pool or volume group
+    url: "/wombat-start-increasevolumecapacity-volume.html"
+  - title: Start input output controller (IOC) dump
+    url: "/wombat-start-ioclog.html"
+  - title: Start FDE secure drive erase
+    url: "/wombat-start-secureerase-drive.html"
+  - title: Start snapshot image rollback
+    url: "/wombat-start-snapimage-rollback.html"
+  - title: Test SNMP trap destination
+    url: "/wombat-start-snmptrapdestination.html"
+  - title: Start SSD cache locate
+    url: "/wombat-start-ssdcache-locate.html"
+  - title: Start SSD cache performance modeling
+    url: "/wombat-start-ssdcache-performancemodeling.html"
+  - title: Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)
+    url: "/wombat-start-storagearray-autosupport-deliverytest.html"
+  - title: Start Storage Array AutoSupport Manual Dispatch
+    url: "/wombat-start-storagearray-autosupport-manualdispatch.html"
+  - title: Start storage array configuration database diagnostic
+    url: "/wombat-start-storagearray-configdbdiagnostic.html"
+  - title: Start storage array controller health image
+    url: "/wombat-start-storagearray-controllerhealthimage-controller.html"
+  - title: Test storage array directory server
+    url: "/wombat-start-storagearray-directoryservices-test.html"
+  - title: Test external key management communication
+    url: "/wombat-start-storagearray-externalkeymanagement-test.html"
+  - title: Start storage array iSNS server refresh
+    url: "/wombat-start-storagearray-isnsserverrefresh.html"
+  - title: Start storage array locate
+    url: "/wombat-start-storagearray-locate.html"
+  - title: Start OCSP server URL test
+    url: "/wombat-start-storagearray-ocspresponderurl-test.html"
+  - title: Start storage array syslog test
+    url: "/wombat-start-storagearray-syslog-test.html"
+  - title: Start synchronous mirroring synchronization
+    url: "/wombat-start-syncmirror-primary-synchronize.html"
+  - title: Test syslog configuration
+    url: "/wombat-start-syslog-test.html"
+  - title: Start tray locate
+    url: "/wombat-start-tray-locate.html"
+  - title: Start volume initialization
+    url: "/wombat-start-volume-initialization.html"
+  - title: Initialize thin volume
+    url: "/wombat-start-volume-initialize.html"
+  - title: Start volume group defragment
+    url: "/wombat-start-volumegroup-defragment.html"
+  - title: Start volume group export
+    url: "/wombat-start-volumegroup-export.html"
+  - title: Start Volume Group Full Provisioning
+    url: "/wombat-start-volumegroup-fullprovisioning.html"
+  - title: Start volume group import
+    url: "/wombat-start-volumegroup-import.html"
+  - title: Start volume group locate
+    url: "/wombat-start-volumegroup-locate.html"
+  - title: Start Volume Group Resource Provisioning
+    url: "/wombat-start-volumegroup-resourceprovisioning.html"
+  - title: Cancel asynchronous mirror group role reversal
+    url: "/wombat-stop-asyncmirrorgroup-rolechange.html"
+  - title: Stop consistency group snapshot rollback
+    url: "/wombat-stop-cgsnapimage-rollback.html"
+  - title: Stop consistency group snapshot volume
+    url: "/wombat-stop-cgsnapvolume.html"
+  - title: Stop pending snapshot images on consistency group
+    url: "/wombat-stop-consistencygroup-pendingsnapimagecreation.html"
+  - title: Stop disk pool locate
+    url: "/wombat-stop-diskpool-locate.html"
+  - title: Stop drive locate
+    url: "/wombat-stop-drive-locate.html"
+  - title: Stop drive replace
+    url: "/wombat-stop-drive-replace.html"
+  - title: Stop drive channel fault isolation diagnostics
+    url: "/wombat-stop-drivechannel-faultdiagnostics.html"
+  - title: Stop drive channel locate
+    url: "/wombat-stop-drivechannel-locate.html"
+  - title: Stop snapshot group pending snapshot images
+    url: "/wombat-stop-pendingsnapimagecreation.html"
+  - title: Stop snapshot image rollback
+    url: "/wombat-stop-snapimage-rollback.html"
+  - title: Stop snapshot volume
+    url: "/wombat-stop-snapvolume.html"
+  - title: Stop SSD cache locate
+    url: "/wombat-stop-ssdcache-locate.html"
+  - title: Stop SSD cache performance modeling
+    url: "/wombat-stop-ssdcache-performancemodeling.html"
+  - title: Stop storage array configuration database diagnostic
+    url: "/wombat-stop-storagearray-configdbdiagnostic.html"
+  - title: Stop storage array drive firmware download
+    url: "/wombat-stop-storagearray-drivefirmwaredownload.html"
+  - title: Stop storage array iSCSI session
+    url: "/wombat-stop-storagearray-iscsisession.html"
+  - title: Stop storage array locate
+    url: "/wombat-stop-storagearray-locate.html"
+  - title: Stop tray locate
+    url: "/wombat-stop-tray-locate.html"
+  - title: Stop volume copy
+    url: "/wombat-stop-volumecopy-target-source.html"
+  - title: Stop volume group locate
+    url: "/wombat-stop-volumegroup-locate.html"
+  - title: Suspend asynchronous mirror group
+    url: "/wombat-suspend-asyncmirrorgroup.html"
+  - title: Suspend SSD cache
+    url: "/wombat-suspend-ssdcache.html"
+  - title: Suspend synchronous mirroring
+    url: "/wombat-suspend-syncmirror-primaries.html"
+  - title: Validate storage array security key
+    url: "/wombat-validate-storagearray-securitykey.html"
   - title: CLI commands (Alphabetical List)
     url: "/mongoose-cli-commands.html"
   - title: E2800, E5700, EF600, and EF300 commands

@@ -1,0 +1,53 @@
+---
+permalink: wombat/wombat-show-storagearray-odxsetting.html
+sidebar: sidebar
+keywords: 
+summary: 'The show storageArray odxsetting command returns the current settings for Offloaded Data Transfer \(ODX\) and VMware vStorage API Array Architecture \(VAAI\) on the storage array.'
+---
+= Show storage array ODX setting
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show storageArray odxsetting` command returns the current settings for Offloaded Data Transfer (ODX) and VMware vStorage API Array Architecture (VAAI) on the storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Context
+
+The settings for this command can be one of the following:
+
+* True -- ODX and VAAI are turned on.
+* False -- ODX and VAAI are turned off.
+* Inconsistent -- The controllers do not have the same settings.
+* Unknown -- The setting for ODX or VAAI cannot be determined.
+
+== Syntax
+
+----
+show storageArray odxsetting
+----
+
+== Parameters
+
+None.
+
+== Notes
+
+This command returns the ODX and VAAI information similar to this example.
+
+----
+Windows ODX Setting Status
+odxEnabled  True | False | Inconsistent | Unknown
+vaaiEnabled True | False | Inconsistent | Unknown
+----
+
+== Minimum firmware level
+
+8.20

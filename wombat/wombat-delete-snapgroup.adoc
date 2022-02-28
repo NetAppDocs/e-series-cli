@@ -1,0 +1,59 @@
+---
+permalink: wombat/wombat-delete-snapgroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The delete snapGroup command an entire snapshot group and optionally the associated repository volumes.'
+---
+= Delete snapshot group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete snapGroup` command an entire snapshot group and optionally the associated repository volumes.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+*Possible damage to the storage array configuration* -- All of the data in the snapshot group is lost as soon as you run this command.
+====
+
+== Syntax
+
+----
+delete snapGroup ["snapGroupName"]
+[deleteRepositoryMembers=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`snapGroup`
+a|
+The name of the snapshot group that you want to delete. Enclose the snapshot group name in double quotation marks (" ") inside square brackets ([ ]).
+
+a|
+`deleteRepositoryMembers`
+a|
+The parameter to delete or save the repository volumes. To delete the repository volumes, set this parameter to `TRUE`. To save the repository volumes, set this parameter to `FALSE`. The default value is `FALSE`.
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. User labels can have a maximum of 30 characters.
+
+You can delete a snapshot group if it is empty or if it contains snapshot images. All of the snapshot images in the snapshot group are deleted along with the snapshot group. If any existing snapshot image within the snapshot group has an associated snapshot volume, each snapshot volume is stopped and detached from the snapshot image. When you delete a snapshot group the associated repository volume is also deleted. By default, all member volumes in the repository volume are retained as unused, unmapped standard volumes. To remove the member volumes set the `deleteRepositoryMembers` parameter to `TRUE`, or do not use this parameter. To keep the member volumes, set the `deleteRepositoryMembers` parameter to `FALSE`.
+
+== Minimum firmware level
+
+7.83

@@ -1,0 +1,92 @@
+---
+permalink: wombat/wombat-set-session-erroraction.html
+sidebar: sidebar
+keywords: 
+summary: 'The set session errorAction command defines how you want the current script engine session to run.'
+---
+= Set session
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set session errorAction` command defines how you want the current script engine session to run.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin, Support Admin, Security Admin, or Storage Monitor role.
+
+== Context
+
+For the purpose of this command a session is the duration for the running of the commands. This command does not permanently set the parameters for the storage array.
+
+== Syntax
+
+----
+set session errorAction=(stop | continue)
+password="storageArrayPassword"
+performanceMonitorInterval=intervalValue
+performanceMonitorIterations=iterationValue
+----
+
+----
+set session errorAction=(stop | continue)
+password="storageArrayPassword"
+userRole=(admin | monitor)
+performanceMonitorInterval=intervalValue
+performanceMonitorIterations=iterationValue
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`errorAction`
+a|
+How the session responds if an error is encountered during processing. You can choose to stop the session if an error is encountered, or you can continue the session after encountering an error. The default value is `stop`. (This parameter defines the action for execution errors, not syntax errors. Some error conditions might override the `continue` value.)
+a|
+`password`
+a|
+The password for the storage array. Enclose the password in double quotation marks (" ").
+[NOTE]
+====
+When the client type is set to `https`, this parameter is obsolete. The password must be specified prior to the CLI command script execution, and cannot be changed in the middle of a script.
+====
+
+a|
+`performanceMonitorInterval`
+a|
+The frequency of gathering performance data. Enter an integer value for the polling interval, in seconds, for which you want to capture data. The range of values is `3` to `3600` seconds. The default value is `5` seconds.
+[NOTE]
+====
+When the client type is set to `https`, this parameter is obsolete. Instead, to change the default interval value, use this parameter with the individual impacted commands. The commands are `save storageArray performanceStats` and `show drive performanceStats`.
+====
+
+a|
+`performanceMonitorIterations`
+a|
+The number of samples to capture. Enter an integer value. The range of values for samples captured is `1` to `3600`. The default value is `5`.
+[NOTE]
+====
+When the client type is set to `https`, this parameter is obsolete. Instead, to change the default iteration value, use this parameter with the individual impacted commands. The commands are `save storageArray performanceStats` and `show drive performanceStats`.
+====
+
+|===
+
+== Notes
+
+When you use this command, you can specify one or more of the optional parameters.
+
+Passwords are stored on each storage array in a management domain. If a password was not previously set, you do not need a password. The password can be any combination of alphanumeric characters with a maximum of 30 characters. (You can define a storage array password by using the `set storageArray` command.)
+
+The polling interval and the number of iterations that you specify remain in effect until you end the session. After you end the session, the polling interval and the number of iterations return to the default values.
+
+== Minimum firmware level
+
+5.20
+
+8.40 - when the client type is set to `https`, obsoleted the `password`, `userRole`, `performanceMonitorInterval`, and `performanceMonitorIterations` parameters.

@@ -1,0 +1,71 @@
+---
+permalink: wombat/wombat-reduce-disk-pool-capacity.html
+sidebar: sidebar
+keywords: 
+summary: 'The set diskPool command reduces the capacity of the disk pool by logically removing the drives from the pool.'
+---
+= Reduce disk pool capacity
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set diskPool` command reduces the capacity of the disk pool by logically removing the drives from the pool.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+This command uses the Dynamic Capacity Reduction (DCR) feature, which enables you to remove selected drives from a disk pool and re-use the removed drives as needed.
+
+The maximum number of drives that you can remove from a disk pool in a single DCR operation is 60. You cannot reduce the disk pool to below the minimum disk pool size.
+
+== Syntax
+
+----
+set diskPool [diskPoolName]
+removeDrives=(trayID1,[drawerID1,]slotID1
+... trayIDn,[drawerIDn,]slotIDn)
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`diskPool`
+a|
+The name of the disk pool for which you want to reduce capacity. Enclose the disk pool name in square brackets ([ ]).
+a|
+`removeDrives`
+a|
+For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+|===
+
+== Notes
+
+Each disk pool name must be unique. You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. User labels can have a maximum of 30 characters.
+
+You might want to remove selected drives from a disk pool if you need to create a separate group or remove unneeded capacity from the storage array. The removed drives become unassigned drives and the data that existed on them is redistributed across the remaining drives in the disk pool. The capacity of the disk pool is decreased by the capacity of the drives that you remove. Removing drives from a disk pool is always carried out as a background task and the volumes remain fully accessible during this operation. The progress of the removal operation is reported as part of the long running operations status.
+
+This command fails if there is not enough free capacity on the drives that remain in the disk pool to store all of the data that was on the drives you remove from the disk pool. Reserve capacity in the disk pool might be used to store data that was on the drives you remove from the disk pool. However, if the reserve capacity falls below the critical threshold, a critical event is written to the major event log.
+
+Decreasing the disk pool size might result in a smaller necessary reserve capacity. In some cases, in order to decrease the likelihood that this command will fail, reduce your reserve capacity before running this command in order to increase the amount of space available for disk pool data.
+
+The controller firmware determines how many drives that you can remove and you can then select the specific drives to be removed. The controller firmware bases the count on the amount of free space needed to redistribute the data across the remaining drives without consuming any capacity reserved for reconstructions. If the free capacity of the disk pool is already less than the Reserved Reconstruction Drive Amount, the controller does not allow a DCR operation to begin.
+
+A DCR operation might result in the configured capacity exceeding one or both of the Pool Utilization Thresholds. If so, normal threshold alerts are issued.
+
+== Minimum firmware level
+
+8.10

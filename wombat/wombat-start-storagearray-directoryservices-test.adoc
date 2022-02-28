@@ -1,0 +1,46 @@
+---
+permalink: wombat/wombat-start-storagearray-directoryservices-test.html
+sidebar: sidebar
+keywords: 
+summary: 'The start storageArray directoryServices test command checks communication with all configured directory servers and validates the server domain configurations.'
+---
+= Test storage array directory server
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start storageArray directoryServices test` command checks communication with all configured directory servers and validates the server domain configurations.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+This command returns an error if at least one directory server has not already been added to the domain.
+
+== Syntax
+
+----
+
+start storageArray directoryServices test
+----
+
+== Parameters
+
+None.
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "start storageArray directoryServices test;"
+
+<test results for each domain configured are returned>
+
+SMcli completed successfully.
+----

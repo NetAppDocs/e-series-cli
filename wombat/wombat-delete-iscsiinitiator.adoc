@@ -1,0 +1,52 @@
+---
+permalink: wombat/wombat-delete-iscsiinitiator.html
+sidebar: sidebar
+keywords: 
+summary: 'The delete iscsiInitiator command deletes a specific iSCSI initiator object.'
+---
+= Delete iSCSI initiator
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete iscsiInitiator` command deletes a specific iSCSI initiator object.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+[NOTE]
+====
+This command is deprecated and is replaced by the xref:wombat-delete-initiator.adoc[Delete initiator] command.
+====
+
+== Syntax
+
+----
+delete iscsiInitiator (<"iscsiID"> | ["name"])
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`iscsiInitiator`
+a|
+The identifier of the iSCSI initiator that you want to delete. The identifier of the iSCSI initiator can be either an iSCSI ID or a unique name.
+
+Enclose an iSCSI ID in double quotation marks (" ") inside angle brackets (< >).
+
+Enclose the name in double quotation marks (" ") inside square brackets ([ ]).
+
+|===
+
+== Minimum firmware level
+
+7.10
+
+8.41 This command is deprecated.

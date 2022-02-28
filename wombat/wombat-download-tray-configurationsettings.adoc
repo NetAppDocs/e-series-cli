@@ -1,0 +1,58 @@
+---
+permalink: wombat/wombat-download-tray-configurationsettings.html
+sidebar: sidebar
+keywords: 
+summary: 'The download tray configurationSettings command downloads the factory default settings to all of the drive trays in a storage array or to a specific drive tray in a storage array.'
+---
+= Download tray configuration settings
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `download tray configurationSettings` command downloads the factory default settings to all of the drive trays in a storage array or to a specific drive tray in a storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Syntax
+
+----
+download (allTrays | tray [trayID]) configurationSettings
+file="filename"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`allTrays`
+a|
+This parameter downloads new firmware to all of the trays in the storage array.
+a|
+`tray`
+a|
+The drive tray that contains the ESM card to which you want to load new firmware. Tray ID values are `0` to `99`. Enclose the tray ID value in square brackets ([ ]).
+a|
+`file`
+a|
+The file path and the file name of the file that contains the firmware image. Enclose the file path and the file name of the firmware image in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\dnld\trayset.dlp"`
+
+Valid file names have a `.dlp`  extension.
+
+|===
+
+== Notes
+
+The `tray` parameter downloads the factory default configuration settings to a specific drive tray. If you need to download the factory default configuration settings to more than one drive tray, but not all drive trays, you must enter this command for each drive tray.
+
+== Minimum firmware level
+
+7.75

@@ -1,0 +1,165 @@
+---
+permalink: wombat/wombat-show-controller.html
+sidebar: sidebar
+keywords: 
+summary: 'The show controller command returns information about a controller.'
+---
+= Show controller
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show controller` command returns information about a controller.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+For each controller in a storage array, this command returns the following information:
+
+* The status (Online or Offline)
+* The current firmware and NVSRAM configuration
+* The pending firmware configuration and NVSRAM configuration (if any)
+* The board ID
+* The product ID
+* The product revision
+* The serial number
+* The date of manufacture
+* The cache size or the processor size
+* The date and the time to which the controller is set
+* The associated volumes (including the preferred owner)
+* The Ethernet port
+* The physical disk interface
+* The host interface, which applies only to Fibre Channel host interfaces
+
+== Syntax
+
+----
+show (allControllers | controller [(a|b)])
+ [summary]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`allControllers`
+a|
+The setting to return information about both controllers in the storage array.
+a|
+`controller`
+a|
+The setting to return information about a specific controller in the storage array. Valid controller identifiers are `a` or `b` , where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
+a|
+`summary`
+a|
+The setting to return a concise list of information about both controllers in the storage array.
+|===
+
+== Notes
+
+The following list is an example of the information that is returned by the `show controller` command. This example only shows how the information is presented and should not be considered to represent best practice for a storage array configuration.
+
+----
+Controller in slot A
+
+   Status: Online
+   Current configuration
+      Firmware version: 96.10.21.00
+         Appware version: 96.10.21.00
+         Bootware version: 96.10.21.00
+      NVSRAM version: N4884-610800-001
+   Pending configuration
+      Firmware version: Not applicable
+         Appware version: Not applicable
+         Bootware version: Not applicable
+      NVSRAM version: Not applicable
+      Transferred on: Not applicable
+   Board ID: 4884
+   Product ID: INF-01-00
+   Product revision: 9610
+   Serial number: 1T14148766
+   Date of manufacture: October 14, 2006
+   Cache/processor size (MB): 1024/128
+   Date/Time: Wed Feb 18 13:55:53 MST 2008
+   Associated Volumes (* = Preferred Owner):
+      1*, 2*, CTL 0 Mirror Repository*, Mirror Repository 1*,
+      JCG_Remote_MirrorMenuTests*
+   Ethernet port: 1
+      MAC address: 00:a0:b8:0c:c3:f5
+      Host name: ausctlr9
+      Network configuration: Static
+      IP address: 172.22.4.249
+      Subnet mask: 255.255.255.0
+      Gateway: 172.22.4.1
+      Remote login: Enabled
+   Drive interface: Fibre
+      Channel: 1
+      Current ID: 125/0x1
+      Maximum data rate: 2 Gbps
+      Current data rate: 1 Gbps
+      Data rate control: Switch
+      Link status: Up
+   Drive interface: Fibre
+      Channel: 2
+      Current ID: 125/0x1
+      Maximum data rate: 2 Gbps
+      Current data rate: 1 Gbps
+      Data rate control: Switch
+      Link status: Up
+   Drive interface: Fibre
+      Channel: 3
+      Current ID: 125/0x1
+      Maximum data rate: 2 Gbps
+      Current data rate: 1 Gbps
+      Data rate control: Switch
+      Link status: Up
+   Drive interface: Fibre
+      Channel: 4
+      Current ID: 125/0x1
+      Maximum data rate: 2 Gbps
+      Current data rate: 1 Gbps
+      Data rate control: Switch
+      Link status: Up
+   Host interface: Fibre
+      Port: 1
+      Current ID: Not applicable/0xFFFFFFFF
+      Preferred ID: 126/0x0
+      NL-Port ID: 0x011100
+      Maximum data rate: 2 Gbps
+      Current data rate: 1 Gbps
+      Data rate control: Switch
+      Link status: Up
+      Topology: Fabric Attach
+      World-wide port name: 20:2c:00:a0:b8:0c:c3:f6
+      World-wide node name: 20:2c:00:a0:b8:0c:c3:f5
+      Part type: HPFC-5200    revision 10
+   Host interface: Fibre
+      Port: 2
+      Current ID: Not applicable/0xFFFFFFFF
+      Preferred ID: 126/0x0
+      NL-Port ID: 0x011100
+      Maximum data rate: 2 Gbps
+      Current data rate: 1 Gbps
+      Data rate control: Switch
+      Link status: Up
+      Topology: Fabric Attach
+      World-wide port name: 20:2c:00:a0:b8:0c:c3:f7
+      World-wide node name: 20:2c:00:a0:b8:0c:c3:f5
+      Part type: HPFC-5200    revision 10
+----
+
+When you use the `summary` parameter, the command returns the list of information without the drive channel information and the host channel information.
+
+The `show storageArray` command also returns detailed information about the controller.
+
+== Minimum firmware level
+
+5.43 adds the `summary` parameter.

@@ -1,0 +1,67 @@
+---
+permalink: wombat/wombat-recover-sasport-miswire.html
+sidebar: sidebar
+keywords: 
+summary: 'The recover sasPort miswire command tells a controller that corrective action has been taken to recover from a mis-wire condition.'
+---
+= Recover SAS port mis-wire
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `recover sasPort miswire` command tells a controller that corrective action has been taken to recover from a mis-wire condition.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Context
+
+The controller can then re-enable any SAS ports that were disabled because a mis-wire was detected. Run this command after you have corrected any SAS mis-wire conditions.
+
+SAS mis-wire conditions can be one of the following:
+
+* Invalid SAS topologies
+* Controller host port to expansion tray connection
+* Initiator to drive topology connection
+* ESM mis-wire
+
+== Syntax
+
+----
+recover sasPort miswire
+----
+
+== Parameters
+
+None.
+
+== Notes
+
+When a mis-wire condition is detected the controller firmware reports the following:
+
+* A critical MEL event indicating the presence of a mis-wire condition
+* A "`Needs Attention`" condition
+* A Recovery Action indicating the mis-wire
+
+In addition, the controller reports "`Redundancy Loss`" information for the drives, ESMs, and trays for which it has only one access path due to the mis-wire (for example the bottom two trays in a storage array). The Redundancy Loss information is not unique to SAS topologies.
+
+Following are the event notifications related to SAS port mis-wire:
+
+* SAS mis-wire detected
+* HBA connected to drive channel
+* Drive channels cross wired
+
+For mis-wire conditions where the controller disables one or more SAS ports to protect the integrity of the SAS domain, take these steps to recover from the condition:
+
+. Determine which cable is in the wrong place and remove it. If the last action taken was to install a new cable, this is the most likely candidate. If not, look for cables attached to devices that are not part of the storage array or cables attached between channels. The recovery event should report the channel on which the mis-wire was detected, and possibly the tray.
+. After you remove a cable or move the cable to the correct location, run the `recover sasPort miswire` command. The controller will attempt to re-enable any SAS ports that were disabled when the mis-wire was detected.
+. If the cable that you removed or moved to correct for the mis-wire provided the controller its only access to the disabled port, the controller will not be able to re-enable the SAS port that was disabled. To complete the recovery, you must power cycle the trays in the storage array.
+
+== Minimum firmware level
+
+8.10

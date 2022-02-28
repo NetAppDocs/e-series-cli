@@ -1,0 +1,92 @@
+---
+permalink: wombat/wombat-set-storagearray-learncycledate-controller.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray learnCycleDate controller command sets controller battery learn cycles.'
+---
+= Set storage array controller battery learn cycle
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray learnCycleDate controller` command sets controller battery learn cycles.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+To set individual learn cycles for each controller in the storage array, send this command to both controllers.
+====
+
+[NOTE]
+====
+The learn cycles are not linked together and so a disruption in one controller battery learn cycle will not impact the learn cycle for the battery in the other controller.
+====
+
+[NOTE]
+====
+A learn cycle might take several hours to complete.
+====
+
+== Syntax
+
+----
+set storageArray learnCycleDate (controller[(a| b)] )
+(daysToNextLearnCycle=numberOfDays |
+day=dayOfTheWeek) time=HH:MM
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+The controller for which you want to specify a battery learn cycle. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the controller firmware returns a syntax error.
+[NOTE]
+====
+Omitting this parameter sets the learn cycle for both controller batteries in a dual-controller array.
+====
+
+a|
+`daysToNextLearnCycle`
+a|
+Valid values are `0` through `7`, where `0` is immediately and `7` is in seven days. The `daysToNextLearnCycle` parameter takes place up to seven days after the next scheduled learn cycle.
+a|
+`day`
+a|
+Valid values for the `day` parameter include the days of the week (`Sunday`, `Monday`, `Tuesday`, `Wednesday`, `Thursday`, `Friday`, and `Saturday`). Setting the day causes the next learn cycle to be scheduled on the specified day, after the currently scheduled learn cycle.
+a|
+`time`
+a|
+The time in 24-hour format; for example 8:00 a.m. is entered as `08:00`. Nine o'clock p.m. is entered as `21:00`, and 9:30 p.m. is entered as `21:30`.
+|===
+
+== Example
+
+----
+set storageArray learnCycleDate controller [a] daysToNextLearnCycle=4 time=08:30;
+----
+
+== Notes
+
+You can set the learn cycle to occur only once during a seven-day period.
+
+The `time` parameter selects a specific time that you want to run the learn cycle. If a value is not entered, the command uses a default value of `00:00` (midnight).
+
+If the day and time specified are in the past, the next learn cycle takes place on the next possible day specified.
+
+== Minimum firmware level
+
+7.15
+
+8.30 - added the `controller` parameter.

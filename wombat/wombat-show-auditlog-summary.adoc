@@ -1,0 +1,48 @@
+---
+permalink: wombat/wombat-show-auditlog-summary.html
+sidebar: sidebar
+keywords: 
+summary: 'The show auditLog summary command displays the audit log summary information.'
+---
+= Show audit log summary
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show auditLog summary` command displays the audit log summary information.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+
+show auditLog summary
+----
+
+== Parameters
+
+None.
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "show auditLog summary;"
+
+Total log records: 1,532
+First log record: 1493070393313 (2017-04-24T16:46:33.313-0500)
+Last log record: 1493134565128 (2017-04-25T10:36:05.128-0500)
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

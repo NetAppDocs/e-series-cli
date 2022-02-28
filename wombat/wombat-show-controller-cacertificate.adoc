@@ -1,0 +1,74 @@
+---
+permalink: wombat/wombat-show-controller-cacertificate.html
+sidebar: sidebar
+keywords: 
+summary: 'The show controller caCertificate command displays the installed CA certificates summary from the specified controller. This command is useful to use before performing the delete controller caCertificate command so that you know the alias names of the certificates to delete.'
+---
+= Show installed root/intermediate CA certificates summary
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show controller caCertificate` command displays the installed CA certificates summary from the specified controller. This command is useful to use before performing the `delete controller caCertificate` command so that you know the alias names of the certificates to delete.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+
+show controller [(a|b)] caCertificate [all | aliases=("alias1" ... "aliasN")] summary
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+Allows the user to specify the controller on which you want to retrieve the root/intermediate certificates. Valid controller identifiers are a or b, where a is the controller in slot A, and b is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
+a|
+`all`
+a|
+Allows the user to specify the retrieval of all root/intermediate certificates.
+a|
+`aliases`
+a|
+Allows the user to specify which root/intermediate certificate to retrieve by alias. Enclose all the aliases in parentheses. If you enter more than one alias, separate them with a space.
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "show controller[a] caCertificate all summary;"
+
+SMcli -n Array1 -c "show controller[b] caCertificate alias=("myAlias" "anotherAlias") summary;"
+============================
+Controller A Authority Certificates
+============================
+Alias:        19527b38-8d26-44e5-8c7f-5bf2ca9db7cf
+Subject DN:   CN=My Corp Issuing CA 1
+Issuer DN:    CN=My Corp Root CA
+Start:        date
+Expire:       date
+---------------------
+Alias:        myAliasName
+Subject DN:   CN=My Corp Issuing CA 1
+Issuer DN:    CN=My Corp Root CA
+Start:        date
+Expire:       date
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

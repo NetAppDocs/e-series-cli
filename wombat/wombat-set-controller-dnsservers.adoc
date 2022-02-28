@@ -1,0 +1,78 @@
+---
+permalink: wombat/wombat-set-controller-dnsservers.html
+sidebar: sidebar
+keywords: 
+summary: 'The set controller DNSServers command updates the Domain Name System \(DNS\) settings for a controller. DNS is used to resolve fully qualified domain names for the controllers and a Network Time Protocol \(NTP\) server.'
+---
+= Set controller DNS settings
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The``set controller DNSServers`` command updates the Domain Name System (DNS) settings for a controller. DNS is used to resolve fully qualified domain names for the controllers and a Network Time Protocol (NTP) server.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Before you begin make sure that:
+
+* A DNS server is configured.
+* You know the addresses of a primary DNS server and a backup DNS server, in case the primary DNS server fails. These addresses can be IPv4 addresses or IPv6 addresses.
+
+[NOTE]
+====
+You need to send this command to both controllers. This command is controller-specific.
+====
+
+[NOTE]
+====
+If you already configured the array's management ports with DHCP (Dynamic Host Configuration Protocol), and you have one or more DNS or NTP servers associated with the DHCP setup, then you do not need to manually configure DNS/NTP. In this case, the array should have already obtained the DNS/NTP server addresses automatically.
+====
+
+== Syntax
+
+----
+
+set controller[a] DNSServers=(auto|(Address1 [Address2]))
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`DNSServers`
+a|
+This parameter configures the DNS servers for the controller. Specify `auto` to use the DNS servers provided by DHCP. Otherwise, use a whitespace separated list of one or two DNS servers.
+[NOTE]
+====
+The management Ethernet ports on the array can support IPv4 or IPv6 protocols simultaneously. The addresses may be an IPv4 address or an IPv6 address. If specifying more than one address, the address types do not need to match.
+====
+
+If more than one address is specified, they will be used in the order they are specified (first is primary, second is backup).
+a|
+`AddressX `
+a|
+IPv4Address\|IPv6Address
+|===
+
+== Examples
+
+----
+
+set controller[a] DNSServers=auto;
+set controller[a] DNSServers=(192.168.1.1);
+set controller[b] DNSServers=(192.168.1.1 192.168.1.105);
+set controller[b] DNSServers=(2001:0db8:85a3:0000:0000:8a2e:0370:7334 192.168.1.1)
+----
+
+== Minimum firmware level
+
+8.25

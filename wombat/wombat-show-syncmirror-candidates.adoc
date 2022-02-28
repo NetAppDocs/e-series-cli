@@ -1,0 +1,57 @@
+---
+permalink: wombat/wombat-show-syncmirror-candidates.html
+sidebar: sidebar
+keywords: 
+summary: 'The show syncMirror candidates command returns information about the candidate volumes on a remote storage array that you can use as secondary volumes in a Synchronous Mirroring configuration.'
+---
+= Show synchronous mirroring volume candidates
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show syncMirror candidates` command returns information about the candidate volumes on a remote storage array that you can use as secondary volumes in a Synchronous Mirroring configuration.
+
+== Supported Arrays
+
+This command applies to any individual storage array, with some restrictions. If you are running the command on the E2700 or E5600 array, there are no restrictions.
+
+[NOTE]
+====
+If you are running the command on the E2800 or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+====
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Context
+
+[NOTE]
+====
+In previous versions of this command the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `syncMirror`.
+====
+
+== Syntax
+
+----
+show syncMirror candidates primary="volumeName"
+remoteStorageArrayName="storageArrayName"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`primary`
+a|
+The name of the local volume that you want for the primary volume in the remote-mirrored pair. Enclose the primary volume name in double quotation marks (" ").
+a|
+`remoteStorageArrayName`
+a|
+The remote storage array that contains possible volumes for a secondary volume. If the remote storage array name has special characters, you must also enclose the remote storage array name in double quotation marks (" ").
+|===
+
+== Minimum firmware level
+
+5.40

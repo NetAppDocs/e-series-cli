@@ -1,0 +1,206 @@
+---
+permalink: wombat/wombat-create-volume-diskpool.html
+sidebar: sidebar
+keywords: 
+summary: 'The create volume diskPool command creates a new standard RAID volume or a thin volume in an existing disk pool.'
+---
+= Create volume in disk pool
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create volume diskPool` command creates a new standard RAID volume or a thin volume in an existing disk pool.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+Some parameters for creating a standard RAID volume in a volume group are not compatible for creating volumes of any type in a disk pool. When using older scripts to create volumes in disk pools, make sure that all of the parameters are valid for disk pools. Invalid parameters prevent the scripts from running correctly and cause an error to be posted.
+====
+
+== Syntax for Creating a Standard Volume
+
+----
+create volume diskPool="diskPoolName"
+userLabel="volumeName"
+capacity=volumeCapacity
+[thinProvisioned=(TRUE | FALSE)]
+[owner=(a|b)]
+[mapping=(none|default)]
+[dataAssurance=(none|enabled)]
+[cacheReadPrefetch=(TRUE | FALSE)]
+[raidLevel=(1 | 6)]
+----
+
+----
+create volume diskPool="diskPoolName"
+userLabel="volumeName"
+capacity=volumeCapacity
+[thinProvisioned=(TRUE | FALSE)]
+[owner=(a|b)]
+[mapping=(none|default)]
+[cacheReadPrefetch=(TRUE | FALSE)]
+[raidLevel=(1 | 6)]
+----
+
+== Syntax for Creating a Thin Provisioned Volume
+
+----
+create volume diskPool="diskPoolName"
+userLabel="volumeName"
+capacity=volumeCapacity
+[thinProvisioned=(TRUE | FALSE)]
+[owner=(a|b)]
+[mapping=(none|default)]
+[dataAssurance=(none|enabled)]
+[(existingRepositoryLabel=existingRepositoryName |
+[newRepositoryCapacity=newRepositoryCapacityValue (KB | MB | GB | TB | Bytes)]
+[repositoryMaxCapacity=repositoryMaxCapacityValue(KB|MB|GB|TB|Bytes)]
+[warningThresholdPercent=warningThresholdPercentValue]
+[repositoryExpansionPolicy=(automatic|manual)]
+[cacheReadPrefetch=(TRUE | FALSE)]
+----
+
+----
+create volume diskPool="diskPoolName"
+userLabel="volumeName"
+capacity=volumeCapacity
+[thinProvisioned=(TRUE | FALSE)]
+[owner=(a|b)]
+[mapping=(none|default)]
+[(existingRepositoryLabel=existingRepositoryName |
+[newRepositoryCapacity=newRepositoryCapacityValue (KB | MB | GB | TB | Bytes)]
+[repositoryMaxCapacity=repositoryMaxCapacityValue(KB|MB|GB|TB|Bytes)]
+[warningThresholdPercent=warningThresholdPercentValue]
+[repositoryExpansionPolicy=(automatic|manual)]
+[cacheReadPrefetch=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`diskPool`
+a|
+The name of the disk pool in which to create the new volume. Enclose the disk pool name in double quotation marks (" ").
+a|
+`userLabel`
+a|
+The name that you want to give the new volume. Enclose the volume name in double quotation marks (" ").
+a|
+`capacity`
+a|
+The size of the volume that you are creating.
+
+For a standard RAID volume, the capacity that will be allocated for the volume.
+
+For a thin volume, the virtual capacity value that will be exposed by the thin volume.
+
+Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`. The following are examples of the syntax:
+
+* `capacity=500MB`
+* `capacity=2GB`
+
+a|
+`thinProvisioned`
+a|
+This parameter enables thin provisioning for the new volume. To use thin provisioning, set this parameter to `TRUE`. If you do not want thin provisioning, set this parameter to `FALSE`.
+
+a|
+`owner`
+a|
+The controller that owns the volume. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. If you do not specify an owner, the controller firmware determines the owner.
+
+a|
+`mapping`
+a|
+This parameter enables you to map the volume to a host. If you want to map later, set this parameter to `none`. If you want to map now, set this parameter to `default`. The volume is mapped to all hosts that have access to the storage pool.
+
+The default value is `none`.
+
+a|
+`existingRepositoryLabel`
+a|
+This parameter identifies an existing repository for a thin volume. A repository volume has the physical capacity for a thin volume. This parameter applies only for thin provisioning. If you use the `existingRepositoryLabel` parameter, you must not use the `newRepositoryCapacity` parameter.
+a|
+`newRepositoryCapacity`
+a|
+This parameter creates a new repository for a thin volume. A repository volume has the physical capacity for a thin volume. Use this parameter only if you set the value of the `thinProvisioned` parameter to``TRUE``.
+
+Size is defined in units of `MB`, `GB`, or `TB`. The following are examples of the syntax:
+
+* `capacity=500MB`
+* `capacity=2GB`
+
+The default value is 50 percent of the virtual capacity.
+
+a|
+`repositoryMaxCapacity`
+a|
+This parameter defines the maximum capacity for a repository for a thin volume. Use this parameter only if you se the value of the `thinProvisioned` parameter to``TRUE``.
+
+Size is defined in units of `MB`, `GB`, or `TB`. The following are examples of the syntax:
+
+* `capacity=500MB`
+* `capacity=2GB`
+
+a|
+`warningThresholdPercent`
+a|
+The percentage of thin volume capacity at which you receive a warning alert that the thin volume is nearing full. Use integer values. For example, a value of 70 means 70 percent.
+
+Valid values are from 1 to 100.
+
+Setting this parameter to 100 disables warning alerts.
+
+a|
+`repositoryExpansionPolicy`
+a|
+This parameter sets the expansion policy to `automatic` or `manual`. When you change the policy from `automatic` to `manual`, the maximum capacity value (quota) changes to the physical capacity of the repository volume.
+a|
+`cacheReadPrefetch`
+a|
+The setting to turn on or turn off cache read prefetch. To turn off cache read prefetch, set this parameter to `FALSE`. To turn on cache read prefetch, set this parameter to `TRUE`.
+a|
+`raidLevel`
+a|
+Sets the raid level for the volume being created in the disk pool. To specify RAID1, set to `1`. To specify RAID6, set to `6`. If the raid level is not set, RAID6 is used for the disk pool by default.
+|===
+
+== Notes
+
+Each volume name must be unique. You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. User labels can have a maximum of 30 characters.
+
+For thin volumes, the `capacity` parameter specifies the virtual capacity of the volume, and the `repositoryCapacity` parameter specifies the capacity of the volume created as the repository volume. Use the `existingRepositoryLabel` parameter to specify an existing unused repository volume instead of creating a new volume.
+
+For best results when creating a thin volume, the repository volume must already exist or must be created in an already existing disk pool. If you do not specify some of the optional parameters when creating thin volumes the storage management software will attempt to create the repository volume. The most desirable candidate volume is a repository volume that already exists and that is within the size requirements. The next most desirable candidate volume is a new repository volume that is created in the disk pool free extent.
+
+Repository volumes for thin volumes cannot be created in volume groups.
+
+== Data assurance management
+
+The Data Assurance (DA) feature increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur when data is moved between the hosts and the drives. When this feature is enabled, the storage array appends error-checking codes (also known as cyclic redundancy checks or CRCs) to each block of data in the volume. After a data block is moved, the storage array uses these CRC codes to determine if any errors occurred during transmission. Potentially corrupted data is neither written to disk nor returned to the host.
+
+If you want to use the DA feature, start with a pool or volume group that includes only drives that support DA. Then, create DA-capable volumes. Finally, map these DA-capable volumes to the host using an I/O interface that is capable of DA. I/O interfaces that are capable of DA include Fibre Channel, SAS, and iSER over InfiniBand (iSCSI Extensions for RDMA/IB). DA is not supported by iSCSI over Ethernet, or by the SRP over InfiniBand.
+
+[NOTE]
+====
+When all drives are DA-capable, you can set the `dataAssurance` parameter to `enabled` and then use DA with certain operations. For example, you can create a volume group that includes DA-capable drives, and then create a volume within that volume group that is DA-enabled. Other operations that use a DA-enabled volume have options to support the DA feature.
+====
+
+If `dataAssurance` parameter is set to `enabled`, only data assurance capable drives will be considered for volume candidates, otherwise both data assurance capable and non-data assurance capable drives will be considered. If only data assurance drives are available, the new volume will be created using the enabled data assurance drives.
+
+== Minimum firmware level
+
+7.83
+
+8.70 adds the `raidLevel` parameter.

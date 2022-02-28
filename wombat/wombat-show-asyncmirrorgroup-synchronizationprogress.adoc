@@ -1,0 +1,62 @@
+---
+permalink: wombat/wombat-show-asyncmirrorgroup-synchronizationprogress.html
+sidebar: sidebar
+keywords: 
+summary: 'The show asyncMirrorGroup synchronizationProgress command displays the progress of periodic synchronization of the asynchronous mirror group between the local and remote storage array.'
+---
+= Show asynchronous mirror group synchronization progress
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show asyncMirrorGroup synchronizationProgress` command displays the progress of _periodic_ synchronization of the asynchronous mirror group between the local and remote storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+This command returns the progress of data synchronization on all of the mirrored pairs within the asynchronous mirror group. This command shows the progress as a percentage of data synchronization that has been completed.
+
+[NOTE]
+====
+There are two types of synchronization: initial synchronization and periodic synchronization. Initial asynchronous mirror group synchronization progress is displayed in the Long Running Operations dialog and by executing the `show storageArray longRunningOperations` command.
+====
+
+== Syntax
+
+----
+show asyncMirrorGroup [asyncMirrorGroupName]
+[synchronizationProgress]
+[summary]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`asyncMirrorGroup`
+a|
+The name of an asynchronous mirror group for which you want to show synchronization of the asynchronous mirror group between the local and remote storage array. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name has special characters or numbers, you must enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets.
+
+a|
+`synchronizationProgress`
+a|
+This parameter displays the periodic synchronization progress of the asynchronous mirror group.
+
+a|
+`summary`
+a|
+This parameter displays a concise list of information about the synchronization of the asynchronous mirror group between the local and remote storage array.
+
+|===
+
+== Minimum firmware level
+
+7.84

@@ -1,0 +1,44 @@
+---
+permalink: wombat/wombat-set-storagearray-icmppingresponse.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray icmpPingResponse command returns the default values for negotiable settings for sessions and connections, which represent the starting point for the storage array for negotiations.'
+---
+= Set storage array ICMP response
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray icmpPingResponse` command returns the default values for negotiable settings for sessions and connections, which represent the starting point for the storage array for negotiations.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set storageArray icmpPingResponse=(TRUE | FALSE)
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`icmpPingResponse`
+a|
+This parameter turns on or turns off Echo Request messages. Set the parameter to `TRUE` to turn on Echo Request messages. Set the parameter to `FALSE` to turn off Echo Request messages.
+|===
+
+== Notes
+
+The Internet Control Message Protocol (ICMP) is used by operating systems in a network to send error messages, test packets, and informational messages related to the IP, such as a requested service is not available or that a host or router could not be reached. The ICMP response command sends ICMP Echo Request messages and receives ICMP Echo Response messages to determine if a host is reachable and the time it takes for packets to get to and from that host.
+
+== Minimum firmware level
+
+7.10

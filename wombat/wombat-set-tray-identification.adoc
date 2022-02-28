@@ -1,0 +1,63 @@
+---
+permalink: wombat/wombat-set-tray-identification.html
+sidebar: sidebar
+keywords: 
+summary: 'The set tray command sets the tray ID of a controller tray, a controller-drive tray, or a drive tray in a storage array.'
+---
+= Set tray identification
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set tray` command sets the tray ID of a controller tray, a controller-drive tray, or a drive tray in a storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+This command is valid only for controller trays, controller-drive trays, or drive trays that have tray IDs that you can set through the controller firmware. You cannot use this command for controller trays, controller-drive trays, or drive trays that have a tray ID that you set with a switch.
+
+== Syntax
+
+----
+set tray ["serialNumber"] id=trayID
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`tray`
+a|
+The serial number of the controller tray, controller-drive tray, or the drive tray for which you are setting the tray ID. Serial numbers can be any combination of alphanumeric characters and any length. Enclose the serial number in double quotation marks (" ").
+a|
+`id`
+a|
+The value for the controller tray tray ID, controller-drive tray tray ID, or the drive tray tray ID. Tray ID values are `0` through `9` or `10` through `99`.
+[NOTE]
+====
+For the DE5600, DE1600, and DE6600 enclosures, precede the serial number with the text string "SN" and a space. For example, `SN SV23802522`.
+====
+
+[NOTE]
+====
+You do not need to enclose the tray ID value in parentheses.
+====
+
+[NOTE]
+====
+Tray values of `00` through `09` are rejected by the controller. Use `0` through `9` to specify those values.
+====
+
+|===
+
+== Notes
+
+This command originally supported the CE6998 controller tray. The CE6998-series controller trays can connect to a variety of drive trays, including those whose tray IDs are set by switches. When connecting a CE6998-series controller tray to drive trays whose tray IDs are set by switches, valid values for tray IDs for the controller tray are `80` through `99`. This range avoids conflicts with tray IDs that are used for attached drive trays.
