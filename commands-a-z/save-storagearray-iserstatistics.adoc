@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-storagearray-iserstatistics.html
+permalink: /commands-a-z/save-storagearray-iserstatistics.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray iserStatistics command saves the iSER performance statistics of the storage array to a file.'

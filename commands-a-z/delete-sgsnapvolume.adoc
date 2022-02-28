@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-sgsnapvolume.html
+permalink: /commands-a-z/delete-sgsnapvolume.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete sgSnapVolume command deletes the snapshot volume of a consistency group. Optionally, you can also delete the repository members.'

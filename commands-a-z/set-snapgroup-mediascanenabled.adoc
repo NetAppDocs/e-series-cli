@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-snapgroup-mediascanenabled.html
+permalink: /commands-a-z/set-snapgroup-mediascanenabled.html
 sidebar: sidebar
 keywords: 
 summary: 'The set snapGroup mediaScanEnabled command runs a media scan on a snapshot group.'

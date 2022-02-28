@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/create-storagearray-securitykey.html
+permalink: /commands-a-z/create-storagearray-securitykey.html
 sidebar: sidebar
 keywords: 
 summary: 'The create storageArray securityKey command creates or changes a new security key for a storage array that has full disk encryption \(FDE\) drives.'

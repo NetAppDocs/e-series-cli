@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-tray-attribute.html
+permalink: /commands-a-z/set-tray-attribute.html
 sidebar: sidebar
 keywords: 
 summary: 'The set tray command sets user-defined attributes for an tray.'

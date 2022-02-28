@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-alldrives-logfile.html
+permalink: /commands-a-z/save-alldrives-logfile.html
 sidebar: sidebar
 keywords: 
 summary: 'The save allDrives logFile command saves the drive logs to a file.'

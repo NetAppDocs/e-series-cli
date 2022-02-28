@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-controller-cacertificate.html
+permalink: /commands-a-z/delete-controller-cacertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete controller caCertificate command removes the installed root/intermediate CA certificate from the specified controller.'

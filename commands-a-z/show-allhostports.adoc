@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-allhostports.html
+permalink: /commands-a-z/show-allhostports.html
 sidebar: sidebar
 keywords: 
 summary: 'The show allHostPorts command returns information about configured host ports.'

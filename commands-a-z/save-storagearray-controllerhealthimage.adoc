@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-storagearray-controllerhealthimage.html
+permalink: /commands-a-z/save-storagearray-controllerhealthimage.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray controllerHealthImage command saves a controller health image to a specified file on a host, for storage arrays that support the controller health image feature.'

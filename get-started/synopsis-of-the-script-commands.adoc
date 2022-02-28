@@ -1,5 +1,5 @@
 ---
-permalink: get-started/synopsis-of-the-script-commands.html
+permalink: /get-started/synopsis-of-the-script-commands.html
 sidebar: sidebar
 keywords: 
 summary: ''

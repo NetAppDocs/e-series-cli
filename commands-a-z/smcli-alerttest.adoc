@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/smcli-alerttest.html
+permalink: /commands-a-z/smcli-alerttest.html
 sidebar: sidebar
 keywords: 
 summary: 'The SMcli alertTest command sends out a test alert to the Windows Event Log and all configured syslog receivers.'

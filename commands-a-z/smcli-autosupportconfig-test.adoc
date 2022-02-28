@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/smcli-autosupportconfig-test.html
+permalink: /commands-a-z/smcli-autosupportconfig-test.html
 sidebar: sidebar
 keywords: 
 summary: 'Use the SMcli -autoSupportConfig test command to test the AutoSupport configuration by sending a test message. This command operates on the management domain. The storage management software chooses an Auto-Support capable array in the management domain for sample data to include with the test message.'

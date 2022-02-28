@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/stop-ssdcache-performancemodeling.html
+permalink: /commands-a-z/stop-ssdcache-performancemodeling.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop ssdCache performanceModeling command stops the performance modeling operation and displays the performance modeling data for the SSD cache.'

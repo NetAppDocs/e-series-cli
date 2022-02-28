@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/remove-array-label.html
+permalink: /commands-a-z/remove-array-label.html
 sidebar: sidebar
 keywords: 
 summary: 'The Remove array label command allows you to remove a user-defined label for a storage array.'

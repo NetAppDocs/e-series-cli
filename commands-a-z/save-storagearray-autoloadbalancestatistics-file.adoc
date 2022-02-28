@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-storagearray-autoloadbalancestatistics-file.html
+permalink: /commands-a-z/save-storagearray-autoloadbalancestatistics-file.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray autoLoadBalanceStatistics file command provides automated I/O workload balancing and ensures that incoming I/O traffic from the hosts is dynamically managed and balanced across both controllers.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-snapvolume.html
+permalink: /commands-a-z/delete-snapvolume.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete snapVolume command deletes a snapshot volume and optionally the associated snapshot repository members.'

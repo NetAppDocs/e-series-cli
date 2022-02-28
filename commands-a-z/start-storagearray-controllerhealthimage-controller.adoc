@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-storagearray-controllerhealthimage-controller.html
+permalink: /commands-a-z/start-storagearray-controllerhealthimage-controller.html
 sidebar: sidebar
 keywords: 
 summary: 'The start storageArray controllerHealthImage controller command produces a storage array controller health image on storage arrays that support the controller health image feature.'

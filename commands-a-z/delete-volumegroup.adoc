@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-volumegroup.html
+permalink: /commands-a-z/delete-volumegroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete volumeGroup command deletes an entire volume group and its associated volumes.'

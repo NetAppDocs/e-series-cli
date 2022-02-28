@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-snapgroup.html
+permalink: /commands-a-z/delete-snapgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete snapGroup command an entire snapshot group and optionally the associated repository volumes.'

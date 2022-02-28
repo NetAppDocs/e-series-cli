@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/resume-asyncmirrorgroup.html
+permalink: /commands-a-z/resume-asyncmirrorgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The resume asyncMirrorGroup command resumes data transfer between all mirrored pairs in an asynchronous mirror group.'

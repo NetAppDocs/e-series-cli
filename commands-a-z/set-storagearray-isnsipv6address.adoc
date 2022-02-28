@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-storagearray-isnsipv6address.html
+permalink: /commands-a-z/set-storagearray-isnsipv6address.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray isnsIPv6Address command sets the IPv6 address for the iSNS server.'

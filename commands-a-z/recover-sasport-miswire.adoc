@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/recover-sasport-miswire.html
+permalink: /commands-a-z/recover-sasport-miswire.html
 sidebar: sidebar
 keywords: 
 summary: 'The recover sasPort miswire command tells a controller that corrective action has been taken to recover from a mis-wire condition.'

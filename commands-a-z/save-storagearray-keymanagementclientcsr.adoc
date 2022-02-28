@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-storagearray-keymanagementclientcsr.html
+permalink: /commands-a-z/save-storagearray-keymanagementclientcsr.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray keyManagementClientCSR command requests a generated CSR for the storage array that you can save to a file.'

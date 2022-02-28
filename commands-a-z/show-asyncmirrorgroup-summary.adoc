@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-asyncmirrorgroup-summary.html
+permalink: /commands-a-z/show-asyncmirrorgroup-summary.html
 sidebar: sidebar
 keywords: 
 summary: 'The show asyncMirrorGroup summary command displays configuration information for one or more asynchronous mirror groups.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-hostgroup.html
+permalink: /commands-a-z/delete-hostgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete hostGroup command deletes a host group.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/add-volume-asyncmirrorgroup.html
+permalink: /commands-a-z/add-volume-asyncmirrorgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The add volume asyncMirrorGroup command adds a primary volume to an asynchronous mirror group.'

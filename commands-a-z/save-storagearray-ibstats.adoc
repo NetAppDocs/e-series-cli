@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-storagearray-ibstats.html
+permalink: /commands-a-z/save-storagearray-ibstats.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray ibStats command saves the InfiniBand performance statistics of the storage array to a file.'

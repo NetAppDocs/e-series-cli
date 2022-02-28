@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-hostport.html
+permalink: /commands-a-z/set-hostport.html
 sidebar: sidebar
 keywords: 
 summary: 'The set hostPort command changes the properties for a host port.'

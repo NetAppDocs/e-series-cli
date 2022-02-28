@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-asyncmirrorgroup-synchronize.html
+permalink: /commands-a-z/start-asyncmirrorgroup-synchronize.html
 sidebar: sidebar
 keywords: 
 summary: 'The start asyncMirrorGroup synchronize command starts Asynchronous Mirroring synchronization.'

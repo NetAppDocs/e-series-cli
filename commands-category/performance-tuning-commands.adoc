@@ -1,5 +1,5 @@
 ---
-permalink: commands-category/performance-tuning-commands.html
+permalink: /commands-category/performance-tuning-commands.html
 sidebar: sidebar
 keywords: create ssdCache,delete ssdCache,resume ssdCache,save storageArray autoLoadBalanceStatistics file,set ssdCache,set ssdCache \(remove drives\),set ssdCache \(renaming\),set storageArray autoLoadBalancingEnable,set volume ssdCacheEnabled,show ssdCache,show ssdCache \(statistics\),start ssdCache locate,start ssdCache performanceModeling,stop ssdCache locate,stop ssdCache performanceModeling,suspend ssdCache
 summary: ''

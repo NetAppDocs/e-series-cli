@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-auditlog-summary.html
+permalink: /commands-a-z/show-auditlog-summary.html
 sidebar: sidebar
 keywords: 
 summary: 'The show auditLog summary command displays the audit log summary information.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/repair-volume-parity.html
+permalink: /commands-a-z/repair-volume-parity.html
 sidebar: sidebar
 keywords: 
 summary: 'The repair volume parity command repairs the parity errors on a volume.'

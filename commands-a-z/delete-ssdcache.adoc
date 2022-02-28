@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-ssdcache.html
+permalink: /commands-a-z/delete-ssdcache.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete ssdCache command deletes the SSD cache. All data in the SSD cache is purged.'

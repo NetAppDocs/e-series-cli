@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-snmptrapdestination.html
+permalink: /commands-a-z/delete-snmptrapdestination.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete snmpTrapDestination command deletes an existing Simple Network Management Protocol \(SNMP\) trap destination that you previously created and registered using the create snmpTrapDestination command.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/reset-storagearray-iserstatsbaseline.html
+permalink: /commands-a-z/reset-storagearray-iserstatsbaseline.html
 sidebar: sidebar
 keywords: 
 summary: 'The reset storageArray iserStatsBaseline command resets the iSER baseline to 0 for the storage array.'

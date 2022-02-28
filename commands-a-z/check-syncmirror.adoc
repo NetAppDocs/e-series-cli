@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/check-syncmirror.html
+permalink: /commands-a-z/check-syncmirror.html
 sidebar: sidebar
 keywords: 
 summary: 'The check syncMirror command returns the status of a remote-mirror volume. Use this command to determine when the status of the remote-mirror volume becomes Optimal.'

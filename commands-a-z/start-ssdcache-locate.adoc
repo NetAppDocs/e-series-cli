@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-ssdcache-locate.html
+permalink: /commands-a-z/start-ssdcache-locate.html
 sidebar: sidebar
 keywords: 
 summary: 'The start ssdCache locate command identifies the Solid State Disks \(SSDs\) that are logically grouped together to form the SSD cache by blinking the indicator lights on the SSDs.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-category/mirroring-commands.html
+permalink: /commands-category/mirroring-commands.html
 sidebar: sidebar
 keywords: activate storageArray feature,add volume asyncMirrorGroup,check asyncMirrorGroup repositoryConsistency,check storageArray connectivity,check syncMirror,clear asyncMirrorFault,create asyncMirrorGroup,create syncMirror,deactivate storageArray feature,delete asyncMirrorGroup,diagnose asyncMirrorGroup,diagnose syncMirror,remove asyncMirrorGroup,remove syncMirror,remove volume asyncMirrorGroup,reset iscsiIpAddress,reset storageArray arvmStats asyncMirrorGroup,resume asyncMirrorGroup,resume syncMirror,save storageArray arvmStats asyncMirrorGroup,set asyncMirrorGroup,set syncMirror,show asyncMirrorGroup summary,show asyncMirrorGroup synchronizationProgress,show syncMirror candidates,show syncMirror synchronizationProgress,start asyncMirrorGroup synchronize,start syncMirror primary synchronize,stop asyncMirrorGroup rolechange,suspend asyncMirrorGroup,suspend syncMirror primaries
 summary: ''

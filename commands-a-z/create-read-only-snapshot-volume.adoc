@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/create-read-only-snapshot-volume.html
+permalink: /commands-a-z/create-read-only-snapshot-volume.html
 sidebar: sidebar
 keywords: 
 summary: 'The create snapVolume command creates a read-only snapshot volume for the snapshot images of a base volume. To change a read-only snapshot volume to a read/write volume, use the set snapVolume convertToReadWrite command.'

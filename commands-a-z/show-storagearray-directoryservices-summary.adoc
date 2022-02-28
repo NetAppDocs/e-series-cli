@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-storagearray-directoryservices-summary.html
+permalink: /commands-a-z/show-storagearray-directoryservices-summary.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray directoryServices summary command displays the directory services configuration summary.'

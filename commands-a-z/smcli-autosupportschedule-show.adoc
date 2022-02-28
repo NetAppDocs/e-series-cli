@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/smcli-autosupportschedule-show.html
+permalink: /commands-a-z/smcli-autosupportschedule-show.html
 sidebar: sidebar
 keywords: 
 summary: 'The SMcli -autoSupportSchedule show command shows the schedule for collection and processing of both daily and weekly AutoSupport messages.'

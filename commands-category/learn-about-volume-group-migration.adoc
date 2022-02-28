@@ -1,5 +1,5 @@
 ---
-permalink: commands-category/learn-about-volume-group-migration.html
+permalink: /commands-category/learn-about-volume-group-migration.html
 sidebar: sidebar
 keywords: 
 summary: ''

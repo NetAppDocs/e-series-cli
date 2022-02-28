@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/create-storagearray-syslog.html
+permalink: /commands-a-z/create-storagearray-syslog.html
 sidebar: sidebar
 keywords: 
 summary: 'The create storageArray syslog command allows you to archive audit logs onto an external syslog server. After a connection is established between the storage array and syslog server, audit logs are automatically saved to the syslog server.'

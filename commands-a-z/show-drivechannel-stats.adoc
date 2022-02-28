@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-drivechannel-stats.html
+permalink: /commands-a-z/show-drivechannel-stats.html
 sidebar: sidebar
 keywords: 
 summary: 'The show driveChannel stats command shows the cumulative data transfer for the drive channel and error information.'

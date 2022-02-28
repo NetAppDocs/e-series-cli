@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-controller-cacertificate.html
+permalink: /commands-a-z/show-controller-cacertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The show controller caCertificate command displays the installed CA certificates summary from the specified controller. This command is useful to use before performing the delete controller caCertificate command so that you know the alias names of the certificates to delete.'

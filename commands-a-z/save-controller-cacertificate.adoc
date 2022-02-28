@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-controller-cacertificate.html
+permalink: /commands-a-z/save-controller-cacertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The save controller caCertificate command retrieves the installed CA certificates from the specified controller. Included in the retrieved certificates are any requested CA certificates from the controller’s web server.'

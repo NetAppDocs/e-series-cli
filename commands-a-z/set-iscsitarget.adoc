@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-iscsitarget.html
+permalink: /commands-a-z/set-iscsitarget.html
 sidebar: sidebar
 keywords: 
 summary: 'The set iscsiTarget command defines properties for an iSCSI target.'

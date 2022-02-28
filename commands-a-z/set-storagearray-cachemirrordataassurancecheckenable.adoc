@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-storagearray-cachemirrordataassurancecheckenable.html
+permalink: /commands-a-z/set-storagearray-cachemirrordataassurancecheckenable.html
 sidebar: sidebar
 keywords: set storageArray cacheMirrorDataAssuranceCheckEnable
 summary: 'The set storageArray cacheMirrorDataAssuranceCheckEnable command allows you to enable or disable the cache mirror data assurance check.'

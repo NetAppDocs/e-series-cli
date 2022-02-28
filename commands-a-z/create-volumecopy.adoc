@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/create-volumecopy.html
+permalink: /commands-a-z/create-volumecopy.html
 sidebar: sidebar
 keywords: 
 summary: 'The create volumeCopy command creates a volume copy and starts the volume copy operation. This command is valid for snapshot image volume copy pairs.'

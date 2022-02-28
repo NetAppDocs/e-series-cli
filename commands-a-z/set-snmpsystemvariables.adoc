@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-snmpsystemvariables.html
+permalink: /commands-a-z/set-snmpsystemvariables.html
 sidebar: sidebar
 keywords: 
 summary: 'The set snmpSystemVariables command changes the system variables for the Simple Network Management Protocol \(SNMP\).'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/stop-volumecopy-target-source.html
+permalink: /commands-a-z/stop-volumecopy-target-source.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop volumeCopy target source command stops a volume copy operation. This command is valid for snapshot volume copy pairs.'

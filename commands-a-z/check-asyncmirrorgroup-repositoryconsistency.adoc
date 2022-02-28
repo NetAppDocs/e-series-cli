@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/check-asyncmirrorgroup-repositoryconsistency.html
+permalink: /commands-a-z/check-asyncmirrorgroup-repositoryconsistency.html
 sidebar: sidebar
 keywords: 
 summary: 'The check asyncMirrorGroup repositoryConsistency command produces a report based on analysis of the data in the underlying repository volume of the specified asynchronous mirror group.'

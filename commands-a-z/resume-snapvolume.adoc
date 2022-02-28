@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/resume-snapvolume.html
+permalink: /commands-a-z/resume-snapvolume.html
 sidebar: sidebar
 keywords: 
 summary: 'The resume snapVolume command resumes a snapshot volume operation that was stopped.'

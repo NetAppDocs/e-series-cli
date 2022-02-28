@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-volume-from-disk-pool.html
+permalink: /commands-a-z/delete-volume-from-disk-pool.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete volume command deletes either normal or thin volumes from a disk pool.'

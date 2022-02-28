@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/stop-drive-locate.html
+permalink: /commands-a-z/stop-drive-locate.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop drive locate command turns off the indicator light on the drive that was turned on by the start drive locate command.'

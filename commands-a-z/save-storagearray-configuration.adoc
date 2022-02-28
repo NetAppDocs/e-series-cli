@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-storagearray-configuration.html
+permalink: /commands-a-z/save-storagearray-configuration.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray configuration command creates a script file that you can use to re-create the current storage array volume configuration.'

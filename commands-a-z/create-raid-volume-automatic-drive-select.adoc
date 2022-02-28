@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/create-raid-volume-automatic-drive-select.html
+permalink: /commands-a-z/create-raid-volume-automatic-drive-select.html
 sidebar: sidebar
 keywords: 
 summary: 'The create volume command creates a volume group across the drives in the storage array and a new volume in the volume group. The storage array controllers choose the drives to be included in the volume.'

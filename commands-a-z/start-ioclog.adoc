@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-ioclog.html
+permalink: /commands-a-z/start-ioclog.html
 sidebar: sidebar
 keywords: 
 summary: 'The start IOCLog command produces a dump of the IOC log of data transmissions between a host and a controller.'

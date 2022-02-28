@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-controller-nvsram-file.html
+permalink: /commands-a-z/save-controller-nvsram-file.html
 sidebar: sidebar
 keywords: 
 summary: 'The save controller NVSRAM file command saves a selected set of controller NVSRAM regions to a file.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/download-controller-trustedcertificate.html
+permalink: /commands-a-z/download-controller-trustedcertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The download controller trustedCertificate command installs the trusted CA certificates on the controllers’ web servers to validate the LDAP server signed certificate.'

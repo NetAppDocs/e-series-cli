@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-storagearray-isnsserverrefresh.html
+permalink: /commands-a-z/set-storagearray-isnsserverrefresh.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray isnsServerRefresh command refreshes the network address information for the iSNS server.'

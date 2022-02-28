@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/disable-storagearray-externalkeymanagement-file.html
+permalink: /commands-a-z/disable-storagearray-externalkeymanagement-file.html
 sidebar: sidebar
 keywords: 
 summary: 'The disable storageArray externalKeyManagement file command disables external security key management for a storage array that has Full Disk Encryption drives.'

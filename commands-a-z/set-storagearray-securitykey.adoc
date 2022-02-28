@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-storagearray-securitykey.html
+permalink: /commands-a-z/set-storagearray-securitykey.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray securityKey command sets the security key that is used throughout the storage array to implement the Drive Security feature.'

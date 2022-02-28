@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-storagearray-syslog-test.html
+permalink: /commands-a-z/start-storagearray-syslog-test.html
 sidebar: sidebar
 keywords: 
 summary: 'The start storageArray syslog test command allows you to test communications between the storage array and a syslog server.'

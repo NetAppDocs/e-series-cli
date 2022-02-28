@@ -1,5 +1,5 @@
 ---
-permalink: get-started/firmware-compatibility-levels.html
+permalink: /get-started/firmware-compatibility-levels.html
 sidebar: sidebar
 keywords: 
 summary: ''

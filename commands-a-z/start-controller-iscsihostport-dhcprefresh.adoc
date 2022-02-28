@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-controller-iscsihostport-dhcprefresh.html
+permalink: /commands-a-z/start-controller-iscsihostport-dhcprefresh.html
 sidebar: sidebar
 keywords: 
 summary: 'The start controller iscsiHostPort dhcpRefresh command initiates a refresh of the DHCP parameters for the iSCSI interface.'

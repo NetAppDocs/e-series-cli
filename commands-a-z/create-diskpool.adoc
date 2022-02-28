@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/create-diskpool.html
+permalink: /commands-a-z/create-diskpool.html
 sidebar: sidebar
 keywords: 
 summary: 'The create diskPool command creates a new disk pool based on the specified parameters.'

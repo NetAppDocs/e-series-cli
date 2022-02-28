@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-storagearray-loginbanner.html
+permalink: /commands-a-z/delete-storagearray-loginbanner.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete storageArray loginBanner command allows you to delete the login banner text file that was previously uploaded and saved.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-storagearray-externalkeymanagement-test.html
+permalink: /commands-a-z/start-storagearray-externalkeymanagement-test.html
 sidebar: sidebar
 keywords: 
 summary: 'The start storageArray externalKeyManagement test command uses the configured credentials \(certificates, address of the KMIP server, and the KMIP port number\) to verify that the storage array is able to communicate with the external KMIP server.'

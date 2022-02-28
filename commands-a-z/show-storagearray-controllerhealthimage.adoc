@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-storagearray-controllerhealthimage.html
+permalink: /commands-a-z/show-storagearray-controllerhealthimage.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray controllerHealthImage command shows details of the controller health image on the controller cache, if a controller health image is available, on storage arrays that support the controller health image.'

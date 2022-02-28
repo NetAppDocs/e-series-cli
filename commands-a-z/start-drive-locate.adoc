@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-drive-locate.html
+permalink: /commands-a-z/start-drive-locate.html
 sidebar: sidebar
 keywords: 
 summary: 'The start drive locate command locates a drive by turning on an indicator light on the drive.'

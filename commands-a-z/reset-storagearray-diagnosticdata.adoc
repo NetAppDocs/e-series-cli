@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/reset-storagearray-diagnosticdata.html
+permalink: /commands-a-z/reset-storagearray-diagnosticdata.html
 sidebar: sidebar
 keywords: 
 summary: 'The reset storageArray diagnosticData command resets the NVSRAM that contains the diagnostic data for the storage array.'

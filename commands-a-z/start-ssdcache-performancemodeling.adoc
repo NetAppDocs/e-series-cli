@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-ssdcache-performancemodeling.html
+permalink: /commands-a-z/start-ssdcache-performancemodeling.html
 sidebar: sidebar
 keywords: 
 summary: 'The start ssdCache performanceModeling command starts performance modeling for the SSD cache.'

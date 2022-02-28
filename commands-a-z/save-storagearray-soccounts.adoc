@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-storagearray-soccounts.html
+permalink: /commands-a-z/save-storagearray-soccounts.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray SOCCounts command saves the SOC error statistics to a file.'

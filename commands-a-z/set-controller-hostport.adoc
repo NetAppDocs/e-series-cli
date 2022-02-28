@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-controller-hostport.html
+permalink: /commands-a-z/set-controller-hostport.html
 sidebar: sidebar
 keywords: 
 summary: 'The set controller hostPort command changes the network properties for the following types of host ports: iSCSI, iSER, NVMe over InfiniBand, and NVMe over RoCE. Property changes include IPv4 and IPv6 properties, port speed, and maximum frame payload.'

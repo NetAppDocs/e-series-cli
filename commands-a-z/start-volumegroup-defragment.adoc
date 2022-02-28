@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-volumegroup-defragment.html
+permalink: /commands-a-z/start-volumegroup-defragment.html
 sidebar: sidebar
 keywords: 
 summary: 'The start volumeGroup defragment command starts a defragment operation on the specified volume group.'

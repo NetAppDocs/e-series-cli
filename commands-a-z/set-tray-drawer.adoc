@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-tray-drawer.html
+permalink: /commands-a-z/set-tray-drawer.html
 sidebar: sidebar
 keywords: 
 summary: 'The set tray drawer command turns on or turns off the Service Action Allowed indicator light on a drawer that holds drives.'

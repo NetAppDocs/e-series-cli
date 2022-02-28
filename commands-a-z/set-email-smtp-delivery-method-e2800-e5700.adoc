@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html
+permalink: /commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray autoSupport deliveryMethod command sets up the delivery method for sending AutoSupport messages to email \(SMTP\).'

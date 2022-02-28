@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/revive-drive.html
+permalink: /commands-a-z/revive-drive.html
 sidebar: sidebar
 keywords: 
 summary: 'The revive drive command forces the specified drive to the Optimal state.'

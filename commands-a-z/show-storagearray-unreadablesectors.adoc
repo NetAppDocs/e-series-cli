@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-storagearray-unreadablesectors.html
+permalink: /commands-a-z/show-storagearray-unreadablesectors.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray unreadableSectors command returns a table of the addresses of all of the sectors in the storage array that cannot be read.'

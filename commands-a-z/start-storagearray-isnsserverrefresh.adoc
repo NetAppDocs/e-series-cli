@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-storagearray-isnsserverrefresh.html
+permalink: /commands-a-z/start-storagearray-isnsserverrefresh.html
 sidebar: sidebar
 keywords: 
 summary: 'The start storageArray isnsServerRefresh command initiates a refresh of the network address information for the iSNS server.'

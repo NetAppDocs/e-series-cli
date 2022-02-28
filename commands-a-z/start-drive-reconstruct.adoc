@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-drive-reconstruct.html
+permalink: /commands-a-z/start-drive-reconstruct.html
 sidebar: sidebar
 keywords: 
 summary: 'The start drive reconstruct command starts reconstructing a drive.'

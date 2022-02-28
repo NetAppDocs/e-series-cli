@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-iscsiinitiator.html
+permalink: /commands-a-z/set-iscsiinitiator.html
 sidebar: sidebar
 keywords: 
 summary: 'The set iscsiInitiator command sets the attributes for an iSCSI initiator.'

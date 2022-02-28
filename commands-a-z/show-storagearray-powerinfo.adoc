@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-storagearray-powerinfo.html
+permalink: /commands-a-z/show-storagearray-powerinfo.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray powerInfo command returns information about the amount of power consumed by the entire storage array and each tray in the storage array.'

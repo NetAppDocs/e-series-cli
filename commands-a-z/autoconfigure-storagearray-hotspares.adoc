@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/autoconfigure-storagearray-hotspares.html
+permalink: /commands-a-z/autoconfigure-storagearray-hotspares.html
 sidebar: sidebar
 keywords: 
 summary: 'The autoConfigure storageArray hotSpares command automatically defines and configures the hot spares in a storage array. You can run this command at any time. This command provides the best hot spare coverage for a storage array.'

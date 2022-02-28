@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-syslog-test.html
+permalink: /commands-a-z/start-syslog-test.html
 sidebar: sidebar
 keywords: 
 summary: 'The start syslog test command sends a sample message to test the syslog configuration.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-syncmirror.html
+permalink: /commands-a-z/set-syncmirror.html
 sidebar: sidebar
 keywords: 
 summary: 'The set syncMirror command defines the properties for a remote-mirrored pair.'

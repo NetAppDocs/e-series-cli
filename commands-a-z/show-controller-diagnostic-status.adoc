@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-controller-diagnostic-status.html
+permalink: /commands-a-z/show-controller-diagnostic-status.html
 sidebar: sidebar
 keywords: 
 summary: 'The show controller command returns the status of controller diagnostics started by the start controller diagnostic command.'

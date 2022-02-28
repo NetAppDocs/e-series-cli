@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/smcli-autosupportconfig-show.html
+permalink: /commands-a-z/smcli-autosupportconfig-show.html
 sidebar: sidebar
 keywords: 
 summary: 'The SMcli -autoSupportConfig show command displays the AutoSupport bundle collection settings for the management domain. These settings apply to all of the storage arrays in your management domain for which you have enabled AutoSupport.'

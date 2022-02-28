@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-volumegroup-export.html
+permalink: /commands-a-z/start-volumegroup-export.html
 sidebar: sidebar
 keywords: 
 summary: 'The start volumeGroup export command moves a volume group into an Exported state.'

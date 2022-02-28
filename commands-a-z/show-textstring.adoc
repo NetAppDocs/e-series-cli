@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-textstring.html
+permalink: /commands-a-z/show-textstring.html
 sidebar: sidebar
 keywords: 
 summary: 'The show textstring command shows a string of text from a script file. This command is similar to the echo command in MS-DOS and UNIX.'

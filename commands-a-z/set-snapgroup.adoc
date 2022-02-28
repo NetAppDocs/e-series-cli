@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-snapgroup.html
+permalink: /commands-a-z/set-snapgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The set snapGroup command defines the properties for a snapshot group.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/reset-controller.html
+permalink: /commands-a-z/reset-controller.html
 sidebar: sidebar
 keywords: 
 summary: 'The reset controller command resets a controller, and is disruptive to I/O operations.'

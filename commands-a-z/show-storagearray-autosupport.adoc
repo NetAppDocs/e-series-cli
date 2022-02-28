@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-storagearray-autosupport.html
+permalink: /commands-a-z/show-storagearray-autosupport.html
 sidebar: sidebar
 keywords: 
 summary: 'The show storageArray autoSupport command displays the AutoSupport bundle collection settings for the storage array.'

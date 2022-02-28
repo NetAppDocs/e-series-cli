@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/import-storagearray-securitykey-file.html
+permalink: /commands-a-z/import-storagearray-securitykey-file.html
 sidebar: sidebar
 keywords: 
 summary: 'The import storageArray securityKey file command unlocks one or more full disk encryption \(FDE\) drives that you have moved from one storage array to another storage array.'

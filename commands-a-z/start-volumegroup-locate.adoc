@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-volumegroup-locate.html
+permalink: /commands-a-z/start-volumegroup-locate.html
 sidebar: sidebar
 keywords: 
 summary: 'The start volumeGroup locate command identifies the drives that are logically grouped together to form the specified volume group by blinking the indicator lights on the drives.'

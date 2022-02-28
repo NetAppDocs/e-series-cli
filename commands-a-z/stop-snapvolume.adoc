@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/stop-snapvolume.html
+permalink: /commands-a-z/stop-snapvolume.html
 sidebar: sidebar
 keywords: 
 summary: 'The stop snapVolume command stops a snapshot volume operation.'

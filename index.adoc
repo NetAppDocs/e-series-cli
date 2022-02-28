@@ -1,7 +1,7 @@
 ---
 layout: astra
 sidebar: sidebar
-permalink: index.html
+permalink: /index.html
 lead: 'Describes syntax and usage of SANtricity commands.'
 summary: 'Describes syntax and usage of SANtricity commands.'
 ---

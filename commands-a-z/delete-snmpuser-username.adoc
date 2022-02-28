@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/delete-snmpuser-username.html
+permalink: /commands-a-z/delete-snmpuser-username.html
 sidebar: sidebar
 keywords: 
 summary: 'The delete snmpUser userName command deletes an existing Simple Network Management Protocol \(SNMP\) USM user that you previously created and registered using the "create snmpUser" command. Deleting an SNMP user effectively unregisters the user. Any trap destinations associated with that user are also removed.'

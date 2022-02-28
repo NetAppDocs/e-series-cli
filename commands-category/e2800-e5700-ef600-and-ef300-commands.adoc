@@ -1,5 +1,5 @@
 ---
-permalink: commands-category/e2800-e5700-ef600-and-ef300-commands.html
+permalink: /commands-category/e2800-e5700-ef600-and-ef300-commands.html
 sidebar: sidebar
 keywords: 
 summary: ''

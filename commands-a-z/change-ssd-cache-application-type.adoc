@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/change-ssd-cache-application-type.html
+permalink: /commands-a-z/change-ssd-cache-application-type.html
 sidebar: sidebar
 keywords: 
 summary: 'The set ssdCache command changes the application type associated with the SSD cache. The application type can be web server, database, or multimedia. Changing the application type changes the block size, sub-block size, populate on read threshold, and populate on write threshold for the volumes underlying the SSD cache.'

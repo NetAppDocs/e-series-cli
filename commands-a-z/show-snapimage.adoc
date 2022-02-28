@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-snapimage.html
+permalink: /commands-a-z/show-snapimage.html
 sidebar: sidebar
 keywords: 
 summary: 'The show snapImage command returns information about the snapshot images that a user had previously created.'

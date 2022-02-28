@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-emailalert-test.html
+permalink: /commands-a-z/start-emailalert-test.html
 sidebar: sidebar
 keywords: 
 summary: 'The start emailAlert test command allows you to test the alert configuration by sending a sample email message.'

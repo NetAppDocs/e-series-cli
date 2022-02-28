@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/start-volumegroup-resourceprovisioning.html
+permalink: /commands-a-z/start-volumegroup-resourceprovisioning.html
 sidebar: sidebar
 keywords: 
 summary: 'The start volumeGroup resourceProvisioning command enables resource provisioning on a given volume group and starts a resource provisioning enablement asynchronous operation on each volume in the volume group. Resource provisioning requires that all the drives in the volume group support NVMe’s DULBE feature.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/create-hostport.html
+permalink: /commands-a-z/create-hostport.html
 sidebar: sidebar
 keywords: 
 summary: 'The create hostPort command creates a new host port identification on a host bus adapter \(HBA\) or on a host channel adapter \(HCA\).'

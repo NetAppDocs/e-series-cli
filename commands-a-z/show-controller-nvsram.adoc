@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-controller-nvsram.html
+permalink: /commands-a-z/show-controller-nvsram.html
 sidebar: sidebar
 keywords: 
 summary: 'The show controller NVSRAM command returns information about NVSRAM byte values.'

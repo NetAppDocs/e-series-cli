@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/create-snmpuser-username.html
+permalink: /commands-a-z/create-snmpuser-username.html
 sidebar: sidebar
 keywords: 
 summary: 'The create snmpUser userName command creates a new Simple Network Management Protocol \(SNMP\) user and registers the new user as a known entity to the SNMP agent. Any attempt to register a new user with the same name and engine ID as that of an existing user is rejected.'

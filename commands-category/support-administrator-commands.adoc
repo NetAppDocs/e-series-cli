@@ -1,5 +1,5 @@
 ---
-permalink: commands-category/support-administrator-commands.html
+permalink: /commands-category/support-administrator-commands.html
 sidebar: sidebar
 keywords: 
 summary: ''

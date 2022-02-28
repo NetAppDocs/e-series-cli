@@ -1,5 +1,5 @@
 ---
-permalink: get-started/usage-guidelines.html
+permalink: /get-started/usage-guidelines.html
 sidebar: sidebar
 keywords: 
 summary: ''

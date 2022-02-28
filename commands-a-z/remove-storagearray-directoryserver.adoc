@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/remove-storagearray-directoryserver.html
+permalink: /commands-a-z/remove-storagearray-directoryserver.html
 sidebar: sidebar
 keywords: 
 summary: 'The remove storageArray directoryServer command removes the defined role mappings for the specified directory server.'

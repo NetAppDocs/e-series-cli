@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-hostgroup.html
+permalink: /commands-a-z/set-hostgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The set hostGroup command renames a host group.'

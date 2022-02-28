@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-storagearray-directoryserver-roles.html
+permalink: /commands-a-z/set-storagearray-directoryserver-roles.html
 sidebar: sidebar
 keywords: 
 summary: 'The set storageArray directoryServer roles command allows you to define role mappings for a specified directory server. These role mappings are used to authenticate users that attempt to execute various SMcli commands.'

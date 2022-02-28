@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/revive-volumegroup.html
+permalink: /commands-a-z/revive-volumegroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The revive volumeGroup command forces the specified volume group and its associated failed drives to the Optimal state.'

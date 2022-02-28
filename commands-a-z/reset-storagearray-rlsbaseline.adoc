@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/reset-storagearray-rlsbaseline.html
+permalink: /commands-a-z/reset-storagearray-rlsbaseline.html
 sidebar: sidebar
 keywords: 
 summary: 'The reset storageArray RLSBaseline command resets the read link status \(RLS\) baseline for all devices by setting all of the RLS counts to 0.'

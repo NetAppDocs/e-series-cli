@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/enable-storagearray-feature-file.html
+permalink: /commands-a-z/enable-storagearray-feature-file.html
 sidebar: sidebar
 keywords: 
 summary: 'The enable storageArray feature file command enables a feature for either a permanent upgrade to the storage array or a trial period.'

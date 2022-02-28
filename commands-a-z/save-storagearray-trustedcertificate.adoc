@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/save-storagearray-trustedcertificate.html
+permalink: /commands-a-z/save-storagearray-trustedcertificate.html
 sidebar: sidebar
 keywords: 
 summary: 'The save storageArray trustedCertificate command retrieves the installed trusted CA certificates for the array. Included in the retrieved files are any requested CA certificates from the array’s web servers.'

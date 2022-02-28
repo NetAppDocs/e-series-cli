@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/reset-storagearray-ibstatsbaseline.html
+permalink: /commands-a-z/reset-storagearray-ibstatsbaseline.html
 sidebar: sidebar
 keywords: 
 summary: 'The reset storageArray ibStatsBaseline command resets the InfiniBand statistics baseline to 0 for the storage array.'

@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/establish-asyncmirror-volume.html
+permalink: /commands-a-z/establish-asyncmirror-volume.html
 sidebar: sidebar
 keywords: 
 summary: 'The establish asyncMirror volume command completes an asynchronous mirrored pair on the remote storage array by adding a secondary volume to an existing asynchronous mirror group.'

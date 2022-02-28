@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-snmptrapdestination-trapreceiverip.html
+permalink: /commands-a-z/set-snmptrapdestination-trapreceiverip.html
 sidebar: sidebar
 keywords: 
 summary: 'The set snmpTrapDestination trapReceiverIP command turns on or turns off sending authentication failure messages for an SNMP trap destination. Failure occurs when the SNMP agent received a message from an SNMP manager, but the message contained an invalid community name or user name.'

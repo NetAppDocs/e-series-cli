@@ -1,5 +1,5 @@
 ---
-permalink: commands-category/auto-support-commands.html
+permalink: /commands-category/auto-support-commands.html
 sidebar: sidebar
 keywords: reset storageArray autoSupport schedule,save storageArray autoSupport log,save storageArray supportData,set storageArray autoSupport,set storageArray autoSupport deliveryMethod,set storageArray autoSupport schedule,set storageArray autoSupportMaintenanceWindow,set storageArray autoSupportOnDemand,set storageArray autoSupportRemoteDiag,show storageArray autoSupport,SMcli -autoSupportConfig,SMcli -autoSupportConfig show,SMcli -autoSupportConfig test,SMcli -autoSupportLog,SMcli autoSupportSchedule reset,SMcli -autoSupportSchedule show,SMcli enable autoSupportFeature,SMcli enable\|disable autoSupportOnDemand,SMcli -supportBundle schedule,start storageArray autoSupport deliveryTest
 summary: ''

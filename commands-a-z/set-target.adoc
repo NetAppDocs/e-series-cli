@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/set-target.html
+permalink: /commands-a-z/set-target.html
 sidebar: sidebar
 keywords: 
 summary: 'The set target command changes the properties for an iSCSI/iSER target, including authentication method and alias name.'

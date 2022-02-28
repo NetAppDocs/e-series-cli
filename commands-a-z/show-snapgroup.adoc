@@ -1,5 +1,5 @@
 ---
-permalink: commands-a-z/show-snapgroup.html
+permalink: /commands-a-z/show-snapgroup.html
 sidebar: sidebar
 keywords: 
 summary: 'The show snapGroup command returns information about one or more snapshot image groups.'
