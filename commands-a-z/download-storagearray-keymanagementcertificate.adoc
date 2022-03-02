@@ -1,0 +1,63 @@
+---
+permalink: commands-a-z/download-storagearray-keymanagementcertificate.html
+sidebar: sidebar
+keywords: 
+summary: 'The download storageArray keyManagementCertificate command installs the external key management certificates on the storage array.'
+---
+= Install storage array external key management certificate
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `download storageArray keyManagementCertificate` command installs the external key management certificates on the storage array.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+[NOTE]
+====
+This command applies only to external key management.
+====
+
+== Syntax
+
+----
+
+download storageArray keyManagementClientCertificate certificateType=(client|server) file="filename"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`certificateType`
+a|
+Allows you to specify the certificate file type. Valid choices are `client` or `server`.
+a|
+`file`
+a|
+Allows you to specify the client signed certificate or server root/intermediate CA certificate. The file must be in PEM/DER format.
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "download storageArray keyManagementClientCertificate certificateType=client
+   file="C:\serverSignedKeyMgmtClientCert.cer";"
+
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

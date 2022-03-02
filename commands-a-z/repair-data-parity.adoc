@@ -1,0 +1,83 @@
+---
+permalink: commands-a-z/repair-data-parity.html
+sidebar: sidebar
+keywords: 
+summary: 'The Repair Data Parity command repairs data parity errors.'
+---
+= Repair Data Parity
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `Repair Data Parity` command repairs data parity errors.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Before utilizing this command, consult with NetApp Support for guidance on the affected firmware, drives, and RAID stripe.
+
+== Syntax
+
+----
+repair volume[volumeName] parity
+   [startingLBA=LBAvalue]
+   [endingLBA=LBAvalue]
+   [repairMethods=(repairMethod . . . repairMethod)]
+           Space delimited list where possible repair methods are: reconstruct, unmap, updateP, updateQ, updateData, and writeZeros
+   [repairPI=(TRUE|FALSE)]
+   [suspectDrives=(trayID1,[drawerID1,]slotID1 . . . trayIDn,[drawerIDn,]slotIDn)]
+   [timeout=(0-65535)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`volume`
+a|
+The name of the volume for which you are repairing parity. Enclose the volume name in square brackets ([ ])
+a|
+`startingLBA`
+a|
+The starting logical block address.
+a|
+`endingLBA`
+a|
+The ending logical block address.
+a|
+`repairMethods`
+a|
+The method used to repair the parity error. Available methods include:
+
+* reconstruct: Reconstructs drives specified under the `suspectDrives` parameter.
+* unmap: For R5/R6 dulbe volumes, used to make a R5/R6 RAID stripe unmapped
+* updateP: Used to fix the data parity mismatch type.
+* updateQ: Used to fix the data parity mismatch type.
+* updateData: Used to fix the data parity mismatch type.
+* writeZeros: For R5/R6 dulbe volumes, used when an unexpected RAID5/6 stripe containing a mix of mapped and unmapped data is found. Takes the unmapped blocks in the stripe and write zeros to it and then updates parity
+
+a|
+`repairPI`
+a|
+Set to TRUE to repair PI in the extent beginning at startingLBA.
+a|
+`suspectDrives`
+a|
+Used to specify the drives for reconstruction.
+a|
+`timeout`
+a|
+The length of time in minutes that you want to run the operation.
+|===
+
+== Minimum Firmware Level
+
+8.63

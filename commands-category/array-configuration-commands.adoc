@@ -1,0 +1,376 @@
+---
+permalink: commands-category/array-configuration-commands.html
+sidebar: sidebar
+keywords:
+summary: ''
+---
+= Array configuration commands
+:icons: font
+:imagesdir: ./media/
+
+
+== Cache mirror data assurance commands
+
+link:../commands-a-z/set-storagearray-cachemirrordataassurancecheckenable.html[Set storage array to enable or disable cache mirror data]
+
+link:../commands-a-z/show-storagearray-cachemirrordataassurancecheckenable.html[Show storage array cache mirror data assurance check enable]
+
+== Controller commands
+
+link:../commands-a-z/clear-alldrivechannels-stats.html[Clear drive channel statistics]
+
+link:../commands-a-z/diagnose-controller.html[Diagnose controller]
+
+link:../commands-a-z/diagnose-controller-iscsihostport.html[Diagnose controller iSCSI host cable]
+
+link:../commands-a-z/enable-controller-datatransfer.html[Enable controller data transfer]
+
+link:../commands-a-z/reset-controller.html[Reset controller]
+
+link:../commands-a-z/save-controller-nvsram-file.html[Save controller NVSRAM]
+
+link:../commands-a-z/save-drivechannel-faultdiagnostics-file.html[Save drive channel fault isolation diagnostic status]
+
+link:../commands-a-z/set-controller.html[Set controller]
+
+link:../commands-a-z/set-controller-dnsservers.html[Set controller DNS settings]
+
+link:../commands-a-z/set-controller-ntpservers.html[Set controller NTP settings]
+
+link:../commands-a-z/set-controller-service-action-allowed-indicator.html[Set controller service action allowed indicator]
+
+link:../commands-a-z/set-drivechannel.html[Set drive channel status]
+
+link:../commands-a-z/set-hostchannel.html[Set host channel]
+
+link:../commands-a-z/show-controller.html[Show controller]
+
+link:../commands-a-z/show-controller-diagnostic-status.html[Show controller diagnostic status]
+
+link:../commands-a-z/show-controller-nvsram.html[Show controller NVSRAM]
+
+link:../commands-a-z/show-drivechannel-stats.html[Show drive channel statistics]
+
+link:../commands-a-z/start-controller.html[Start controller trace]
+
+link:../commands-a-z/start-drivechannel-faultdiagnostics.html[Start drive channel fault isolation diagnostics]
+
+link:../commands-a-z/start-drivechannel-locate.html[Start drive channel locate]
+
+link:../commands-a-z/start-controller-iscsihostport-dhcprefresh.html[Start iSCSI DHCP refresh]
+
+link:../commands-a-z/stop-drivechannel-faultdiagnostics.html[Stop drive channel fault isolation diagnostics]
+
+link:../commands-a-z/stop-drivechannel-locate.html[Stop drive channel locate]
+
+== Controller health image commands
+
+link:../commands-a-z/save-storagearray-controllerhealthimage.html[Save storage array controller health image]
+
+link:../commands-a-z/set-storagearray-controllerhealthimageallowoverwrite.html[Set storage array controller health image allow overwrite]
+
+link:../commands-a-z/show-storagearray-controllerhealthimage.html[Show storage array controller health image]
+
+link:../commands-a-z/start-storagearray-controllerhealthimage-controller.html[Start storage array controller health image]
+
+== Controller host port configuration commands
+
+link:../commands-a-z/create-hostport.html[Create host port]
+
+link:../commands-a-z/create-initiator.html[Create initiator]
+
+link:../commands-a-z/delete-initiator.html[Delete initiator]
+
+link:../commands-a-z/set-initiator.html[Set initiator]
+
+link:../commands-a-z/reset-storagearray-hostportstatisticsbaseline.html[Reset storage array host port statistics baseline]
+
+link:../commands-a-z/save-storagearray-hostportstatistics.html[Save storage array host port statistics]
+
+link:../commands-a-z/set-controller-hostport.html[Set controller host port properties]
+
+link:../commands-a-z/set-target.html[Set target properties]
+
+link:../commands-a-z/set-controller-iscsihostport.html[Set iSCSI host port networking properties]
+
+link:../commands-a-z/set-iscsiinitiator.html[Set iSCSI initiator]
+
+link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.html[Show storage array unconfigured iSCSI initiators]
+
+link:../commands-a-z/show-storagearray-unconfiguredinitiators.html[Show unconfigured initiators]
+
+== Drive commands
+
+link:../commands-a-z/download-drive-firmware.html[Download drive firmware]
+
+link:../commands-a-z/recover-disabled-driveports.html[Recover disabled drive ports]
+
+link:../commands-a-z/replace-drive-replacementdrive.html[Replace drive]
+
+link:../commands-a-z/revive-drive.html[Revive drive]
+
+link:../commands-a-z/save-drivechannel-faultdiagnostics-file.html[Save drive channel fault isolation diagnostic status]
+
+link:../commands-a-z/save-alldrives-logfile.html[Save drive log]
+
+link:../commands-a-z/set-drive-hotspare.html[Set drive hot spare]
+
+link:../commands-a-z/set-drive-serviceallowedindicator.html[Set drive service action allowed indicator]
+
+link:../commands-a-z/set-drive-operationalstate.html[Set drive state]
+
+link:../commands-a-z/set-drive-securityid.html[Set FIPS drive security identifier]
+
+link:../commands-a-z/set-drive-nativestate.html[Set foreign drive to native]
+
+link:../commands-a-z/show-alldrives.html[Show drive]
+
+link:../commands-a-z/show-alldrives-downloadprogress.html[Show drive download progress]
+
+link:../commands-a-z/show-alldrives-performancestats.html[Show drive performance statistics]
+
+link:../commands-a-z/show-replaceabledrives.html[Show replaceable drives]
+
+link:../commands-a-z/start-drivechannel-faultdiagnostics.html[Start drive channel fault isolation diagnostics]
+
+link:../commands-a-z/start-drive-initialize.html[Start drive initialize]
+
+link:../commands-a-z/start-drive-locate.html[Start drive locate]
+
+link:../commands-a-z/start-drive-reconstruct.html[Start drive reconstruction]
+
+link:../commands-a-z/start-secureerase-drive.html[Start secure drive erase]
+
+link:../commands-a-z/stop-drivechannel-faultdiagnostics.html[Stop drive channel fault isolation diagnostics]
+
+link:../commands-a-z/stop-drive-locate.html[Stop drive locate]
+
+== Feature management commands
+
+link:../commands-a-z/disable-storagearray.html[Disable storage array feature]
+
+link:../commands-a-z/enable-storagearray-feature-file.html[Enable storage array feature]
+
+link:../commands-a-z/set-storagearray-autoloadbalancingenable.html[Set storage array to enable or disable Automatic Load Balancing...]
+
+link:../commands-a-z/show-storagearray.html[Show storage array]
+
+== Input output controller (IOC) dump commands
+
+link:../commands-a-z/save-ioclog.html[Save input output controller (IOC) dump]
+
+link:../commands-a-z/start-ioclog.html[Start input output controller (IOC) dump]
+
+== Misbehaving drive (MBD) commands
+
+link:../commands-a-z/replace-drive-replacementdrive.html[Replace drive]
+
+link:../commands-a-z/reset-drive.html[Reset drive]
+
+link:../commands-a-z/set-drive-operationalstate.html[Set drive state]
+
+link:../commands-a-z/stop-drive-replace.html[Stop drive replace]
+
+== Offloaded data transfer (ODX) commands
+
+link:../commands-a-z/set-storagearray-odxenabled.html[Enable or disable ODX]
+
+link:../commands-a-z/set-storagearray-vaaienabled.html[Enable or disable VAAI]
+
+link:../commands-a-z/show-storagearray-odxsetting.html[Show storage array ODX setting]
+
+== Repository volume analysis commands
+
+link:../commands-a-z/check-repositoryconsistency.html[Check repository consistency]
+
+== Session commands
+
+link:../commands-a-z/set-session-erroraction.html[Set session]
+
+== Storage array commands
+
+link:../commands-a-z/activate-storagearray-firmware.html[Activate storage array firmware]
+
+link:../commands-a-z/add-certificate-from-array.html[Add certificate from array]
+
+link:../commands-a-z/add-certificate-from-file.html[Add certificate from file]
+
+link:../commands-a-z/autoconfigure-storagearray.html[Autoconfigure storage array]
+
+link:../commands-a-z/autoconfigure-storagearray-hotspares.html[Autoconfigure storage array hot spares]
+
+link:../commands-a-z/clear-storagearray-configuration.html[Clear storage array configuration]
+
+link:../commands-a-z/clear-storagearray-eventlog.html[Clear storage array event log]
+
+link:../commands-a-z/clear-storagearray-firmwarependingarea.html[Clear storage array firmware pending area]
+
+link:../commands-a-z/clear-storagearray-recoverymode.html[Clear storage array recovery mode]
+
+link:../commands-a-z/create-storagearray-securitykey.html[Create storage array security key]
+
+link:../commands-a-z/delete-certificates.html[Delete certificates]
+
+link:../commands-a-z/disable-storagearray-externalkeymanagement-file.html[Disable external security key management]
+
+link:../commands-a-z/disable-storagearray.html[Disable storage array feature]
+
+link:../commands-a-z/download-storagearray-drivefirmware-file.html[Download storage array drive firmware]
+
+link:../commands-a-z/download-storagearray-firmware.html[Download storage array firmware/NVSRAM]
+
+link:../commands-a-z/download-storagearray-nvsram.html[Download storage array NVSRAM]
+
+link:../commands-a-z/enable-storagearray-externalkeymanagement-file.html[Enable external security key management]
+
+link:../commands-a-z/set-storagearray-hostconnectivityreporting.html[Enable or disable host connectivity reporting]
+
+link:../commands-a-z/enable-storagearray-feature-file.html[Enable storage array feature]
+
+link:../commands-a-z/export-storagearray-securitykey.html[Export storage array security key]
+
+link:../commands-a-z/import-storagearray-securitykey-file.html[Import storage array security key]
+
+link:../commands-a-z/load-storagearray-dbmdatabase.html[Load storage array DBM database]
+
+link:../commands-a-z/recreate-storagearray-securitykey.html[Re-create external security key]
+
+link:../commands-a-z/reset-storagearray-diagnosticdata.html[Reset storage array diagnostic data]
+
+link:../commands-a-z/reset-storagearray-ibstatsbaseline.html[Reset storage array InfiniBand statistics baseline]
+
+link:../commands-a-z/reset-storagearray-iscsistatsbaseline.html[Reset storage array iSCSI baseline]
+
+link:../commands-a-z/reset-storagearray-rlsbaseline.html[Reset storage array RLS baseline]
+
+link:../commands-a-z/reset-storagearray-sasphybaseline.html[Reset storage array SAS PHY baseline]
+
+link:../commands-a-z/reset-storagearray-socbaseline.html[Reset storage array SOC baseline]
+
+link:../commands-a-z/reset-storagearray-volumedistribution.html[Reset storage array volume distribution]
+
+link:../commands-a-z/save-storagearray-configuration.html[Save storage array configuration]
+
+link:../commands-a-z/save-storagearray-dbmdatabase.html[Save storage array DBM database]
+
+link:../commands-a-z/save-storagearray-dbmvalidatorinfo.html[Save storage array DBM validator information file]
+
+link:../commands-a-z/save-storage-array-diagnostic-data.html[Save storage array diagnostic data]
+
+link:../commands-a-z/save-storagearray-warningevents.html[Save storage array events]
+
+link:../commands-a-z/save-storagearray-firmwareinventory.html[Save storage array firmware inventory]
+
+link:../commands-a-z/save-storagearray-ibstats.html[Save storage array InfiniBand statistics]
+
+link:../commands-a-z/save-storagearray-iscsistatistics.html[Save storage array iSCSI statistics]
+
+link:../commands-a-z/save-storagearray-performancestats.html[Save storage array performance statistics]
+
+link:../commands-a-z/save-storagearray-rlscounts.html[Save storage array RLS counts]
+
+link:../commands-a-z/save-storagearray-sasphycounts.html[Save storage array SAS PHY counts]
+
+link:../commands-a-z/save-storagearray-soccounts.html[Save storage array SOC counts]
+
+link:../commands-a-z/save-storagearray-statecapture.html[Save storage array state capture]
+
+link:../commands-a-z/save-storagearray-supportdata.html[Save storage array support data]
+
+link:../commands-a-z/set-storagearray.html[Set storage array]
+
+link:../commands-a-z/set-storagearray-icmppingresponse.html[Set storage array ICMP response]
+
+link:../commands-a-z/set-storagearray-isnsipv4configurationmethod.html[Set storage array iSNS server IPv4 address]
+
+link:../commands-a-z/set-storagearray-isnsipv6address.html[Set storage array iSNS server IPv6 address]
+
+link:../commands-a-z/set-storagearray-isnslisteningport.html[Set storage array iSNS server listening port]
+
+link:../commands-a-z/set-storagearray-isnsserverrefresh.html[Set storage array iSNS server refresh]
+
+link:../commands-a-z/set-storagearray-learncycledate-controller.html[Set storage array learn cycle]
+
+link:../commands-a-z/set-storagearray-pqvalidateonreconstruct.html[Set storage array PQ validation on reconstruct]
+
+link:../commands-a-z/set-storagearray-redundancymode.html[Set storage array redundancy mode]
+
+link:../commands-a-z/set-storagearray-resourceprovisionedvolumes.html[Set Storage Array Resource Provisioned Volumes]
+
+link:../commands-a-z/set-storagearray-securitykey.html[Set storage array security key]
+
+link:../commands-a-z/set-storagearray-time.html[Set storage array time]
+
+link:../commands-a-z/set-storagearray-traypositions.html[Set storage array tray positions]
+
+link:../commands-a-z/set-storagearray-unnameddiscoverysession.html[Set storage array unnamed discovery session]
+
+link:../commands-a-z/show-certificates.html[Show certificates]
+
+link:../commands-a-z/show-storagearray.html[Show storage array]
+
+link:../commands-a-z/show-storagearray-autoconfiguration.html[Show storage array auto configuration]
+
+link:../commands-a-z/show-storagearray-dbmdatabase.html[Show storage array DBM database]
+
+link:../commands-a-z/show-storagearray-hostconnectivityreporting.html[Show storage array host connectivity reporting]
+
+link:../commands-a-z/show-storagearray-hosttopology.html[Show storage array host topology]
+
+link:../commands-a-z/show-storagearray-lunmappings.html[Show storage array LUN mappings]
+
+link:../commands-a-z/show-storagearray-iscsinegotiationdefaults.html[Show storage array negotiation defaults]
+
+link:../commands-a-z/show-storagearray-odxsetting.html[Show storage array ODX setting]
+
+link:../commands-a-z/show-storagearray-powerinfo.html[Show storage array power information]
+
+link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.html[Show storage array unconfigured iSCSI initiators]
+
+link:../commands-a-z/show-storagearray-unreadablesectors.html[Show storage array unreadable sectors]
+
+link:../commands-a-z/show-textstring.html[Show string]
+
+link:../commands-a-z/start-storagearray-autosupport-manualdispatch.html[Start Storage Array AutoSupport Manual Dispatch]
+
+link:../commands-a-z/start-storagearray-configdbdiagnostic.html[Start storage array configuration database diagnostic]
+
+link:../commands-a-z/start-storagearray-isnsserverrefresh.html[Start storage array iSNS server refresh]
+
+link:../commands-a-z/start-storagearray-locate.html[Start storage array locate]
+
+link:../commands-a-z/stop-storagearray-configdbdiagnostic.html[Stop storage array configuration database diagnostic]
+
+link:../commands-a-z/stop-storagearray-drivefirmwaredownload.html[Stop storage array drive firmware download]
+
+link:../commands-a-z/stop-storagearray-iscsisession.html[Stop storage array iSCSI session]
+
+link:../commands-a-z/stop-storagearray-locate.html[Stop storage array locate]
+
+link:../commands-a-z/validate-storagearray-securitykey.html[Validate storage array security key]
+
+== Tray commands
+
+link:../commands-a-z/download-tray-firmware-file.html[Download environmental card firmware]
+
+link:../commands-a-z/download-tray-configurationsettings.html[Download tray configuration settings]
+
+link:../commands-a-z/save-alltrays-logfile.html[Save tray log]
+
+link:../commands-a-z/set-tray-drawer.html[Set drawer service action allowed indicator]
+
+link:../commands-a-z/set-tray-attribute.html[Set tray attribute]
+
+link:../commands-a-z/set-tray-identification.html[Set tray identification]
+
+link:../commands-a-z/set-tray-serviceallowedindicator.html[Set tray service action allowed indicator]
+
+link:../commands-a-z/start-tray-locate.html[Start tray locate]
+
+link:../commands-a-z/stop-tray-locate.html[Stop tray locate]
+
+== Uncategorized commands
+
+link:../commands-a-z/recover-sasport-miswire.html[Recover SAS port mis-wire]
+
+link:../commands-a-z/show-textstring.html[Show string]

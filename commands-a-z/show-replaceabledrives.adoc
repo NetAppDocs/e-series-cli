@@ -1,0 +1,56 @@
+---
+permalink: commands-a-z/show-replaceabledrives.html
+sidebar: sidebar
+keywords: 
+summary: 'The show replaceableDrives command shows all replaceable drives in a storage array.'
+---
+= Show replaceable drives
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show replaceableDrives` command shows all replaceable drives in a storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+For each replaceable drive in the storage array, this command returns the following information:
+
+* The tray location and the slot location
+* The volume group name to which the drive belongs
+* The World Wide Name (WWN)
+* The status of the drive
+
+== Syntax
+
+----
+show replaceableDrives
+----
+
+== Example output
+
+----
+Replaceable drive at Tray 0, Slot 3
+                Volume group: 2
+                World-wide name: 5000c50028785aff0000000000000000
+                Status: Removed
+Replaceable drive at Tray 0, Slot 23
+                Volume group: 2
+                World-wide name: 5000c500095d46df0000000000000000
+                Status: Removed
+Replaceable drive at Tray 0, Slot 24
+                Volume group: 2
+                World-wide name: 5000c500287854d70000000000000000
+                Status: Removed
+----
+
+== Minimum firmware level
+
+7.10

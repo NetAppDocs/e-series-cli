@@ -1,0 +1,51 @@
+---
+permalink: commands-a-z/check-syncmirror.html
+sidebar: sidebar
+keywords: 
+summary: 'The check syncMirror command returns the status of a remote-mirror volume. Use this command to determine when the status of the remote-mirror volume becomes Optimal.'
+---
+= Check synchronous mirroring status
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `check syncMirror` command returns the status of a remote-mirror volume. Use this command to determine when the status of the remote-mirror volume becomes Optimal.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+In previous versions of this command the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `syncMirror`.
+====
+
+== Syntax
+
+----
+check syncMirror localVolume [volumeName] optimalStatus timeout=timeoutValue
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`localVolume`
+a|
+The name of any remote-mirror volume. The remote-mirror volume can be the primary volume or the secondary volume of a remote mirrored pair. Enclose the volume name in square brackets ([ ]). If the volume name has special characters, you must enclose the volume name in double quotation marks (" ").
+a|
+`timeout`
+a|
+The time interval within which the software can return the remote-mirror volume status. The timeout value is in minutes.
+|===
+
+== Notes
+
+This command waits until the status becomes Optimal or the timeout interval expires. Use this command when you run the Asynchronous Synchronous Mirroring utility.

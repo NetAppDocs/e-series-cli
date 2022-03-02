@@ -1,0 +1,93 @@
+---
+permalink: commands-a-z/diagnose-controller.html
+sidebar: sidebar
+keywords: 
+summary: 'The diagnose controller command runs diagnostic tests on the controller.'
+---
+= Diagnose controller
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `diagnose controller` command runs diagnostic tests on the controller.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+The diagnostic tests consist of loopback tests in which data is written to the drives and read from the drives.
+
+== Syntax
+
+----
+diagnose controller [(a| b)]
+loopbackDriveChannel=(allchannels | (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8))
+testID=(1 | 2 | 3 | discreteLines)
+[patternFile="filename"]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+The controller on which you want to run the diagnostic tests. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the storage management software returns a syntax error.
+a|
+`loopbackDriveChannel`
+a|
+The drive channels on which you want to run the diagnostic tests. You can either choose to run the diagnostics on all channels or select a specific channel on which to run diagnostics. If you select a specific channel, valid values for the drive channels are `1`, `2`, `3`, `4`, `5`, `6`, `7`, or `8`.
+a|
+`testID`
+a|
+The identifier for the diagnostic test you want to run. The identifier and corresponding tests are as follows:
+
+* `1` -- Read test
+* `2` -- Write test
+* `3` -- Data loop-back test
+* `discreteLines` -- Discrete lines diagnostic test
+
+a|
+`patternFile`
+a|
+The file path and the file name that contains a data pattern that you want to use as test data. Enclose the file name of the data pattern in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\sup\patfile.txt"`
+
+|===
+
+== Notes
+
+When you run a data loop-back test, you can optionally specify a file that contains a data pattern. If you do not specify a file, the controller firmware provides a default pattern.
+
+Discrete lines are control lines and status lines that are connected between two controllers in a controller tray. The discrete lines diagnostic test lets each controller check that control signal transitions can be observed at the control inputs of the alternate controller. The discrete lines diagnostic test automatically runs after each power-cycle or each controller-reset. You can run the discrete lines diagnostic test after you have replaced a component that failed the initial discrete lines diagnostic test. The discrete lines diagnostic test returns one of these messages:
+
+* When the discrete lines diagnostic test runs successfully, this message appears:
++
+----
+The controller discrete lines successfully passed the diagnostic
+test. No failures were detected.
+----
+
+* If the discrete lines diagnostic test fails, this message appears:
++
+----
+One or more controller discrete lines failed the diagnostic test.
+----
+
+* If the CLI cannot run the discrete lines diagnostic test, the CLI returns Error 270, which means that the discrete lines diagnostic test could not start nor complete.
+
+== Minimum firmware level
+
+6.10 adds the read test, the write test, and the data loop-back test.
+
+6.14 adds the discrete lines diagnostic test.
+
+7.30 adds the updated drive channel identifier.

@@ -1,0 +1,74 @@
+---
+permalink: commands-a-z/set-storagearray-autosupport-schedule.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray autoSupport schedule command sets the daily and weekly times and days of the week that AutoSupport messages are sent.'
+---
+= Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray autoSupport schedule` command sets the daily and weekly times and days of the week that AutoSupport messages are sent.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Context
+
+* If AutoSupport is enabled, the management software sends both daily AutoSupport messages and weekly AutoSupport messages.
+* You can specify a range (hour-level granularity) of when to send daily and when to send weekly messages for the storage arrays in your management domain.
+* For the weekly schedule, you select preferred days of the week for AutoSupport collection and transmission.
+
+== Syntax
+
+----
+set storageArray autoSupport schedule dailyTime=startTime-endTime
+ [dayOfWeek=(Sunday Monday Tuesday Wednesday Thursday Friday Saturday)]
+weeklyTime=startTime-endTime
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`dailyTime`
+a|
+<``startTime``> - <``endTime``> Specifies the time of day that you want to start and end the collection of AutoSupport data for all storage arrays. The startTime and endTime must be in the 24-hour form of HH:00 and must be on the hour. For example, 9:00 p.m. should be entered as 21:00.
+
+a|
+`dayOfWeek`
+a|
+(Sunday\|Monday\|Tuesday\|Wednesday\|Thursday\|Friday\|Saturday) Specifies the preferred days of the week (Sunday through Saturday) that you want to collect AutoSupport bundle collection data. The `dayOfWeek` parameter must be surrounded by parentheses and separated with a space.
+
+a|
+`weeklyTime`
+a|
+<``startTime``> - <``endTime``> Specifies the time of day that you want to start and end the collection of the AutoSupport bundle collection data for each day of the week that you have selected. The `startTime` and `endTime` must be in the form of HH:MM[am\|pm].
+
+|===
+
+== Minimum Firmware Level
+
+8.40
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "set storageArray autoSupport schedule dailyTime=14:00-15:00 weeklyTime=1:00-5:00;"
+
+SMcli -n Array1 -c "set storageArray autoSupport schedule dailyTime=14:00-15:00 dayOfWeek=(Monday Friday) weeklyTime=1:00-5:00;"
+
+SMcli completed successfully.
+----
+
+== Verification
+
+Use the `show storageArray autoSupport` command to see the resulting change to the schedule.

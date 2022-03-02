@@ -1,0 +1,81 @@
+---
+permalink: commands-a-z/create-ssdcache.html
+sidebar: sidebar
+keywords: 
+summary: 'The create ssdCache command creates a read cache for a storage array using Solid State Disks \(SSDs\).'
+---
+= Create SSD cache
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create ssdCache` command creates a read cache for a storage array using Solid State Disks (SSDs).
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Support Admin role.
+
+== Context
+
+Using high performance SSDs to cache read data improves the application I/O performance and response times, and delivers sustained performance improvement across different workloads, especially for high-IOP workloads. SSD cache maximizes the use of expensive fast SSDs. SSD cache works in addition to the primary cache in the controller DRAM. With controller cache, the data is stored in DRAM after a host read. With SSD cache, the data is copied from user-specified base volumes, and then cached on SSDs.
+
+== Syntax
+
+----
+create ssdCache userLabel="ssdCacheName"
+drives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn)
+[updateExistingVolumes=(TRUE|FALSE)]
+[securityType=(none|capable|enabled)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`userLabel`
+a|
+The name that you want to name the new SSD cache. Enclose the SSD cache name in double quotation marks (" ").
+a|
+`drives`
+a|
+The drives that you want to use to create the SSD cache. For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+a|
+`updateExistingVolumes`
+a|
+This optional parameter specifies whether the SSD cache should be enabled for all existing volumes in the storage array. To enable the SSD cache for all existing volumes, set this parameter to `TRUE`. If you want to enable the SSD cache for individual volumes later, set this parameter to `FALSE`. The default value is `TRUE`.
+a|
+`securityType`
+a|
+This optional parameter specifies the security level when creating an SSD cache. These settings are valid:
+
+* `none` - The SSD cache is not secure.
+* `capable` - The SSD cache is capable of having security set, but security has not been enabled.
+* `enabled` - The SSD cache has security enabled.
+
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the name. Names can have a maximum of 30 characters.
+
+A storage array can have only one SSD cache.
+
+Only volumes created using hard disk drives can use the SSD cache. You cannot enable SSD cache on snapshot images.
+
+If all of the SSDs in the SSD cache are data assurance (DA)-capable and the DA feature is enabled, DA is automatically enabled for the SSD cache and cannot be disabled. In addition, you cannot add non-DA capable SSDs to a DA-enabled SSD cache.
+
+== Minimum firmware level
+
+7.84
+
+8.20 _M3 - FDE drives are now supported. Added the``securityType``parameter.

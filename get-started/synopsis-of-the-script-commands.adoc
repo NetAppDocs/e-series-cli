@@ -1,0 +1,263 @@
+---
+permalink: get-started/synopsis-of-the-script-commands.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Synopsis of the script commands
+:icons: font
+:imagesdir: ./media/
+
+Because you can use the script commands to define and manage the different aspects of a storage array (such as host topology, drive configuration, controller configuration, volume definitions, and volume group definitions), the actual number of commands is extensive. The commands, however, fall into general categories that are reused when you apply the commands to configure or maintain a storage array. The following table lists the general form of the script commands and a definition of each command.
+
+|===
+| Syntax| Description
+a|
+
+----
+accept object
+{statement-data}
+----
+
+a|
+Performs the pending operation.
+a|
+
+----
+activate object
+{statement-data}
+----
+
+a|
+Sets up the environment so that an operation can take place or performs the operation if the environment is already set up correctly.
+a|
+
+----
+autoConfigure storageArray
+{statement-data}
+----
+
+a|
+Automatically creates a configuration that is based on the parameters that are specified in the command.
+a|
+
+----
+check object
+{statement-data}
+----
+
+a|
+Starts an operation to report on errors in the object, which is a synchronous operation.
+a|
+
+----
+clear object
+{statement-data}
+----
+
+a|
+Discards the contents of some attributes of an object. This operation is destructive and cannot be reversed.
+a|
+
+----
+create object
+{statement-data}
+----
+
+a|
+Creates an object of the specified type.
+a|
+
+----
+deactivate object
+{statement-data}
+----
+
+a|
+Removes the environment for an operation.
+a|
+
+----
+delete object
+----
+
+a|
+Deletes a previously created object.
+a|
+
+----
+diagnose object
+{statement-data}
+----
+
+a|
+Runs a test and shows the results.
+a|
+
+----
+disable object {statement-data}
+----
+
+a|
+Prevents a feature from operating.
+a|
+
+----
+download object
+{statement-data}
+----
+
+a|
+Transfers data to the storage array or to the hardware that is associated with the storage array.
+a|
+
+----
+enable object
+{statement-data}
+----
+
+a|
+Sets a feature to operate.
+a|
+
+----
+load object
+{statement-data}
+----
+
+a|
+Transfers data to the storage array or to the hardware that is associated with the storage array. This command is functionally similar to the `download` command.
+a|
+
+----
+recopy object
+{statement-data}
+----
+
+a|
+Restarts a volume copy operation by using an existing volume copy pair. You can change the parameters before the operation is restarted.
+a|
+
+----
+recover object
+{statement-data}
+----
+
+a|
+Re-creates an object from saved configuration data and the statement parameters. (This command is similar to the `create` command.)
+a|
+
+----
+remove object
+{statement-data}
+----
+
+a|
+Removes a relationship between objects.
+a|
+
+----
+repair object
+{statement-data}
+----
+
+a|
+Repairs errors found by the `check` command.
+a|
+
+----
+replace object
+{statement-data}
+----
+
+a|
+The specified object replaces an existing object in the storage array.
+a|
+
+----
+reset object
+{statement-data}
+----
+
+a|
+Returns the hardware or an object to an initial state.
+a|
+
+----
+resume object
+----
+
+a|
+Starts a suspended operation. The operation starts where it left off when it was suspended.
+a|
+
+----
+revive object
+----
+
+a|
+Forces the object from the Failed state to the Optimal state. Use this command only as part of an error recovery procedure.
+a|
+
+----
+save object
+{statement-data}
+----
+
+a|
+Writes information about the object to a file.
+a|
+
+----
+set object
+{statement-data}
+----
+
+a|
+Changes object attributes. All changes are completed when the command returns.
+a|
+
+----
+show object
+{statement-data}
+----
+
+a|
+Shows information about the object.
+a|
+
+----
+start object
+{statement-data}
+----
+
+a|
+Starts an asynchronous operation. You can stop some operations after they have started. You can query the progress of some operations.
+a|
+
+----
+stop object
+{statement-data}
+----
+
+a|
+Stops an asynchronous operation.
+a|
+
+----
+suspend object
+{statement-data}
+----
+
+a|
+Stops an operation. You can then restart the suspended operation, and it continues from the point where it was suspended.
+a|
+
+----
+validate object
+{statement-data}
+----
+
+a|
+Validates a security key.
+|===

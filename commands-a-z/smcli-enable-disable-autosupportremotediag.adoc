@@ -1,0 +1,59 @@
+---
+permalink: commands-a-z/smcli-enable-disable-autosupportremotediag.html
+sidebar: sidebar
+keywords: 
+summary: 'The SMcli enable\|disable autoSupportRemoteDiag command turns on or turns off the AutoSupport Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely.'
+---
+= Enable or disable the AutoSupport remote diagnostics feature at the EMW management domain level (SMcli only)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `SMcli enable|disable autoSupportRemoteDiag` command turns on or turns off the AutoSupport Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely.
+
+== Supported Arrays
+
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+
+== Context
+
+[NOTE]
+====
+This command is an SMcli command, not a script command. You must run this command from a command line. You cannot run this command from the script editor in the storage management software.
+====
+
+[NOTE]
+====
+This command impacts all ASUP-capable storage arrays in the management domain.
+====
+
+Before enabling this feature, first enable the AutoSupport feature and then the AutoSupport OnDemand feature on the management domain. You must enable the three features in this order.
+
+image::../media/baseasup_w_third_enable.gif[]
+
+== Syntax
+
+----
+SMcli enable|disable autoSupportRemoteDiag
+----
+
+== Parameters
+
+None.
+
+== Minimum Firmware Level
+
+8.25
+
+== Verification
+
+Use the `SMcli -autoSupportConfig show` command to see whether you have enabled the feature. The initial three lines of the displayed output show the enable status of the AutoSupport feature, followed by the AutoSupport OnDemand feature, followed by the status of the AutoSupport Remote Diagnostics feature:
+
+----
+The AutoSupport feature is activated on this storage management
+station.
+The AutoSupport OnDemand feature is activated on this storage management
+station.
+The AutoSupport Remote Diagnostics feature is activated on this storage
+management station.
+----

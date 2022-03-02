@@ -1,0 +1,85 @@
+---
+permalink: commands-a-z/export-storagearray-securitykey.html
+sidebar: sidebar
+keywords: 
+summary: 'The export storageArray securityKey command saves a drive security key to a file.'
+---
+= Export storage array security key
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `export storageArray securityKey` command saves a drive security key to a file.
+
+== Supported Arrays
+
+If external key management is enabled, then this command applies only to the E2800, E5700, EF600, and EF300 arrays. If internal key management is enabled, then the command applies to any individual storage array, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+When the key file is exported from one storage array, that key can be imported into another storage array. This enables you to move security-capable drives between storage arrays.
+
+[NOTE]
+====
+This command applies to both internal and external key management.
+====
+
+== Syntax
+
+----
+export storageArray securityKey
+passPhrase="passPhraseString"
+file="fileName"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`passPhrase`
+a|
+A character string that encrypts the security key so that you can store the security key in an external file. Enclose the pass phrase in double quotation marks (" ").
+a|
+`file`
+a|
+The file path and the file name to which you want to save the security key. For example:
+
+----
+file="C:\Program Files\CLI\sup\drivesecurity.slk"
+----
+
+[NOTE]
+====
+The file name must have an extension of `.slk`.
+====
+
+|===
+
+== Notes
+
+The storage array to which you will be moving drives must have drives with a capacity that is equal to or greater than the drives that you are importing.
+
+The controller firmware creates a lock that restricts access to the full disk encryption (FDE) drives. FDE drives have a state called Security Capable. When you create a security key, the state is set to Security Enabled, which restricts access to all FDE drives that exist within the storage array.
+
+Your pass phrase must meet these criteria:
+
+* Must be between eight and 32 characters long.
+* Must contain no whitespace.
+* Must contain at least one uppercase letter.
+* Must contain at least one lowercase letter.
+* Must contain at least one number.
+* Must contain at least one non-alphanumeric character, for example, < > @ +.
+
+[NOTE]
+====
+If your pass phrase does not meet these criteria, you will receive an error message and will be asked to retry the command.
+====
+
+== Minimum firmware level
+
+7.40

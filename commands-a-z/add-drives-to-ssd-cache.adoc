@@ -1,0 +1,56 @@
+---
+permalink: commands-a-z/add-drives-to-ssd-cache.html
+sidebar: sidebar
+keywords: 
+summary: 'The set ssdCache command increases the capacity of an existing SSD cache by adding more solid state disks \(SSDs\).'
+---
+= Add drives to SSD cache
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set ssdCache` command increases the capacity of an existing SSD cache by adding more solid state disks (SSDs).
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+[NOTE]
+====
+To execute this command on an E2800 or E5700 storage array, you must have the Support Admin role.
+====
+
+== Syntax
+
+[source,monospace]
+----
+set ssdCache [ssdCacheName]
+addDrives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn)
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`ssdCache`
+a|
+The name of the SSD cache to which you want to add SSDs. Enclose the name in square brackets ([ ]). If the SSD cache name contains special characters or consists only of numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
+a|
+`addDrives`
+a|
+The drives that you want to add to the SSD cache.For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+|===
+
+== Notes
+
+The SSD cache can contain any number of SSDs. The maximum size of the SSD cache is 5 TB, but might be less depending on the size of the controller's primary cache.
+
+== Minimum firmware level
+
+7.84

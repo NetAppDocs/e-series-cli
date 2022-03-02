@@ -1,0 +1,80 @@
+---
+permalink: commands-a-z/set-volumecopy-target.html
+sidebar: sidebar
+keywords: 
+summary: 'The set volumeCopy target command defines the properties for a volume copy pair.'
+---
+= Set volume copy
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set volumeCopy target` command defines the properties for a volume copy pair.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+With firmware version 7.83 the `copyType=(online | offline)` parameter is no longer used.
+====
+
+This command is valid for snapshot volume copy pairs.
+
+== Syntax
+
+----
+set volumeCopy target [targetName]
+source [sourceName]
+[copyPriority=(highest | high | medium | low | lowest)]
+[targetReadOnlyEnabled=(TRUE | FALSE)]
+[copyType=(online | offline)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`target`
+a|
+The name of the volume to which the data will be copied. Enclose the target volume name in square brackets ([ ]). If the target volume name has special characters or numbers, you must enclose the target volume name in double quotation marks (" ") inside square brackets.
+a|
+`source`
+a|
+The name of the volume from which the data will be copied. Enclose the source volume name in square brackets ([ ]). If the source volume name has special characters or numbers, you must enclose the source volume name in double quotation marks (" ") inside square brackets.
+a|
+`copyPriority`
+a|
+The priority that the volume copy has relative to host I/O activity. Valid values are `highest`, `high`, `medium`, `low`, or `lowest`.
+a|
+`targetReadOnlyEnabled`
+a|
+The setting so that you can write to the target volume or only read from the target volume. To write to the target volume, set this parameter to `FALSE`. To prevent writing to the target volume, set this parameter to `TRUE`.
+a|
+`copyType`
+a|
+
+[NOTE]
+====
+This parameter has been deprecated.
+====
+
+|===
+
+== Notes
+
+When you use this command, you can specify one or more of the optional parameters.
+
+== Minimum firmware level
+
+5.40
+
+7.83 removes the `copyType=(online | offline)` parameter.

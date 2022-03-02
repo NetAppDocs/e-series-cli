@@ -1,0 +1,118 @@
+---
+permalink: commands-a-z/create-snapshot-volume.html
+sidebar: sidebar
+keywords: 
+summary: 'The create snapVolume command creates a snapshot volume with read-write capabilities for snapshot images of a base volume.'
+---
+= Create snapshot volume
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create snapVolume` command creates a snapshot volume with read-write capabilities for snapshot images of a base volume.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+You can map the snapshot volume to a host and all of the host writes reside in the repository volume associated with the snapshot volume. You can assign the new snapshot volume to an existing repository volume, or you can create a new repository volume in a volume group or disk pool.
+
+[NOTE]
+====
+You cannot use this command for a snapshot image that is used in online volume copy.
+====
+
+== Syntax
+
+----
+create snapVolume userLabel="snapVolumeName" snapImageID="snapCGID:imageID"
+[(repositoryVolume="repos_xxxx"]
+[repositoryVolume=(volumeGroupName [capacity=capacityValue]]
+[repositoryVolume=(diskPoolName [capacity=capacityValue])]
+[repositoryFullLimit=percentValue]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`userLabel`
+a|
+The name that you want to give to a snapshot volume. Enclose the snapshot volume name in double quotation marks (" ").
+a|
+`snapImageID`
+a|
+The alphanumeric identifier of a snapshot image that you want to add to the new snapshot volume. The identifier of a snapshot image is comprised of two parts:
+
+* The name of the snapshot group
+* An identifier for the snapshot image in the snapshot group
+
+The identifier for the snapshot image can be one of these:
+
+* An integer value that is the sequence number of the snapshot in the snapshot group.
+* `NEWEST` - Use this option when you want to show the latest snapshot image created in the snapshot group.
+* `OLDEST` - Use this option when you want to show the earliest snapshot image created in the snapshot group.
+
+Enclose the snapshot image name in double quotation marks (" ").
+
+a|
+`repositoryVolume`
+a|
+The name of the repository volume that holds changed data from the snapshot image.
+
+You have two options for defining the name of a repository volume:
+
+* Use an existing repository volume name
+* Create a new repository volume when you run this command
+
+The name of an existing repository volume is comprised of two parts:
+
+* The term "repos"
+* A four digit numerical identifier that the storage management software assigns to the repository volume name
+
+Enclose the name of the existing repository volume in double quotation marks (" ").
+
+If you want to create a new repository volume when you run this command you must enter the name of either a volume group or a disk pool in which you want the repository volume. Optionally, you can also define the capacity of the repository volume. If you want to define the capacity you can use these values:
+
+* An integer value that represents a percentage of the base volume capacity
+* A decimal fraction value that represents a percentage of the base volume capacity
+* A specific size for the repository volume. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`.
+
+If you do not use the capacity option, the storage management software sets the capacity to 20 percent of the base volume capacity.
+
+When you run this command the storage management software creates the repository volume for the snapshot volume.
+
+a|
+`repositoryFullLimit`
+a|
+The percentage of repository capacity at which you receive a warning that the snapshot repository volume is nearing full. Use integer values. For example, a value of 70 means 70 percent. The default value is 75.
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+The identifier of a snapshot image has two parts separated by a colon (:):
+
+* The name of the snapshot group
+* The identifier of the snapshot image
+
+For example, if you want to create a snapshot volume named snapData1 using the most recent snapshot image in a snapshot group that has the name snapGroup1 with a maximum fill limit of 80 percent for the repository volume, you would use this command:
+
+----
+create snapVolume userLabel="snapData1" snapImageID="snapGroup1:newest"
+repositoryVolume="repos_1234" repositoryFullLimit=80;
+----
+
+The repository volume identifier is automatically created by the storage management software and the firmware when you create a new snapshot group. You cannot rename the repository volume because renaming the repository volume breaks the linkage with the snapshot images.
+
+== Minimum firmware level
+
+7.83

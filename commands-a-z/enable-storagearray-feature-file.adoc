@@ -1,0 +1,78 @@
+---
+permalink: commands-a-z/enable-storagearray-feature-file.html
+sidebar: sidebar
+keywords: 
+summary: 'The enable storageArray feature file command enables a feature for either a permanent upgrade to the storage array or a trial period.'
+---
+= Enable storage array feature
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `enable storageArray feature file` command enables a feature for either a permanent upgrade to the storage array or a trial period.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Context
+
+This command performs one of these actions:
+
+* Enables a feature key for a permanent upgrade of a feature
+* Enables a feature key for a permanent upgrade of a feature pack
+* Enables a feature for a trial period
+
+A feature pack is a predefined set of several features, such as Storage Partitioning and Synchronous Mirroring. These features are combined for the convenience of the users. When users install a feature pack, all of the features in the feature pack are installed at one time.
+
+Each feature is managed by a license key that is generated for a specific feature or feature pack and a specific storage array. The license key is delivered as a file that you run to apply the license for the feature.
+
+To determine which features are loaded on the storage array run the `show storageArray features` command. The `show storageArray features` command lists all of the features installed on the storage array, which features can be evaluated for a trial period, which features are enabled, and which features are disabled.
+
+== Syntax to enable a feature key
+
+----
+enable storageArray feature file="filename"
+----
+
+The `file` parameter identifies the file path and the file name of a valid feature key file. Enclose the file path and the file name in double quotation marks (" "). For example:
+
+----
+file="C:\Program Files\CLI\dnld\ftrkey.key"
+----
+
+Valid file names for feature key files end with a `.key` extension.
+
+You will need a feature key file for each feature that you want to enable.
+
+== Syntax to enable a feature pack
+
+----
+enable storageArray featurePack file="filename"
+----
+
+The `file` parameter identifies the file path and the file name of a valid feature pack file. Enclose the file path and the file name in double quotation marks (" "). For example:
+
+----
+file="C:\Program Files\CLI\dnld\ftrpk.key"
+----
+
+Valid file names for feature key files end with a `.key` extension.
+
+== Syntax to enable a feature for a trial period
+
+----
+enable storageArray feature=featureAttributeList
+----
+
+To evaluate a feature for a trial period, you can enter one or more of the following attribute values for the `featureAttributeList`. If you enter more than one attribute value, separate the values with a space.
+
+* driveSecurity
+
+== Minimum firmware level
+
+8.25 removes all attributes that are no longer valid.

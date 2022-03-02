@@ -1,0 +1,65 @@
+---
+permalink: commands-a-z/smcli-autosupportschedule-show.html
+sidebar: sidebar
+keywords: 
+summary: 'The SMcli -autoSupportSchedule show command shows the schedule for collection and processing of both daily and weekly AutoSupport messages.'
+---
+= Display AutoSupport message collection schedule
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `SMcli -autoSupportSchedule show` command shows the schedule for collection and processing of both daily and weekly AutoSupport messages.
+
+== Supported Arrays
+
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+
+== Context
+
+[NOTE]
+====
+This command is an SMcli command, not a script command. You must run this command from a command line. You cannot run this command from the script editor in the storage management software.
+====
+
+Note the following with regard to the scheduling of Automatic Support Bundle collection:
+
+* If AutoSupport is enabled, the management software sends both daily AutoSupport messages and weekly AutoSupport messages.
+* The management software randomly selects a time of day for both daily and weekly messages and a day of the week for weekly messages.
+* The management software makes all attempts to ensure that no two storage arrays within a management domain send scheduled AutoSupport messages at the same time.
+* Using the `SMcli -autoSupportSchedule reset` command, you can specify a range (hour-level granularity) of preferred times to send both daily and weekly messages for the storage arrays in your management domain. For the weekly messages schedule, you use the command to select preferred days of the week.
+
+== Syntax
+
+----
+SMcli -autoSupportSchedule show
+----
+
+== Parameters
+
+None.
+
+== Minimum Firmware Level
+
+8.25
+
+== Example
+
+The output shows both the preferred time ranges, followed by the daily and weekly schedule.
+
+[NOTE]
+====
+If you do not select preferred time ranges for both schedules, and preferred days of the week, then this command shows the daily schedule and weekly schedule that the storage management software picked at random.
+====
+
+----
+SMcli -autoSupportSchedule show
+The AutoSupport daily schedule preferred time range is from 12:00 AM to 01:00 AM.
+The AutoSupport weekly schedule preferred time range is from 10:00 PM to 11:00 PM on Thursday, Saturday.
+
+Name           Daily Schedule         Weekly Schedule
+Accounting     12:55 AM               10:08 PM on Thursdays
+Finance        12:02 AM               10:30 PM on Saturdays
+
+SMcli completed successfully.
+----

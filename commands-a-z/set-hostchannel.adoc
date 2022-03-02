@@ -1,0 +1,52 @@
+---
+permalink: commands-a-z/set-hostchannel.html
+sidebar: sidebar
+keywords: 
+summary: 'The set hostChannel command defines the loop ID for the host channel.'
+---
+= Set host channel
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set hostChannel` command defines the loop ID for the host channel.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set hostChannel [hostChannelNumber]
+preferredID=portID
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`hostChannel`
+a|
+The identifier number of the host channel for which you want to set the loop ID. Enclose the host channel identifier number in square brackets ([  ]).
+
+Use a host channel value that is appropriate for your particular controller model. A controller tray might support one host channel or as many as eight host channels. Valid host channel values are `a1`, `a2`, `a3`, `a4`, `a5`, `a6`, `a7`, `a8`, `b1`, `b2`, `b3`, `b4`, `b5`, `b6`, `b7`, or `b8`.
+
+a|
+`preferredID`
+a|
+The port identifier for the specified host channel. Port ID values are `0` to `127`.
+|===
+
+== Minimum firmware level
+
+6.10
+
+6.14 adds an update to the host channel identifier.
+
+7.15 adds an update to the host channel identifier.

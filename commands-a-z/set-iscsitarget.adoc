@@ -1,0 +1,262 @@
+---
+permalink: commands-a-z/set-iscsitarget.html
+sidebar: sidebar
+keywords: 
+summary: 'The set iscsiTarget command defines properties for an iSCSI target.'
+---
+= Set iSCSI target properties
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set iscsiTarget` command defines properties for an iSCSI target.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+[NOTE]
+====
+This command is deprecated and is replaced by the xref:wombat-set-target.adoc[Set target properties] command.
+====
+
+== Syntax
+
+----
+set iscsiTarget ["userLabel"]
+authenticationMethod=(none | chap) |
+chapSecret=securityKey |
+targetAlias="userLabel"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`iscsiTarget`
+a|
+The iSCSI target for which you want to set properties. Enclose the `userLabel` in double quotation marks (" "). You must also enclose the `userLabel` in square brackets ([ ]) if the user label is a target alias or angle brackets (< >) if the user label is an iSCSI Qualified Name (IQN).
+
+a|
+`authenticationMethod`
+a|
+The means of authenticating your iSCSI session.
+a|
+`chapSecret`
+a|
+The security key that you want to use to authenticate a peer connection.
+a|
+`targetAlias`
+a|
+The new name that you want to use for the target. Enclose the name in double quotation marks (" ").
+|===
+
+== Notes
+
+Challenge Handshake Authentication Protocol (CHAP) is a protocol that authenticates the peer of a connection. CHAP is based upon the peers sharing a _secret_. A secret is a security key that is similar to a password.
+
+Use the `chapSecret` parameter to set up the security keys for initiators that require a mutual authentication. The CHAP secret must be between 12 characters and 57 characters. This table lists the valid characters.
+
+|===
+a|
+Space
+a|
+!
+a|
+"
+a|
+#
+a|
+$
+a|
+%
+a|
+&
+a|
+'
+a|
+(
+a|
+)
+a|
+*
+a|
+a|
+,
+a|
+-
+a|
+.
+a|
+/
+a|
+0
+a|
+1
+a|
+2
+a|
+3
+a|
+4
+a|
+5
+a|
+6
+a|
+7
+a|
+8
+a|
+9
+a|
+:
+a|
+;
+a|
+<
+a|
+=
+a|
+>
+a|
+?
+a|
+@
+a|
+A
+a|
+B
+a|
+C
+a|
+D
+a|
+E
+a|
+F
+a|
+G
+a|
+H
+a|
+I
+a|
+J
+a|
+K
+a|
+L
+a|
+M
+a|
+N
+a|
+O
+a|
+P
+a|
+Q
+a|
+R
+a|
+S
+a|
+T
+a|
+U
+a|
+V
+a|
+W
+a|
+X
+a|
+Y
+a|
+Z
+a|
+[
+a|
+ a|
+]
+a|
+
+a|
+_
+a|
+'
+a|
+a
+a|
+b
+a|
+c
+a|
+d
+a|
+e
+a|
+f
+a|
+g
+a|
+h
+a|
+i
+a|
+j
+a|
+k
+a|
+l
+a|
+m
+a|
+n
+a|
+o
+a|
+p
+a|
+q
+a|
+r
+a|
+s
+a|
+t
+a|
+u
+a|
+v
+a|
+w
+a|
+x
+a|
+y
+a|
+z
+a|
+{
+a|
+\|
+a|
+}
+a|
+~
+a|
+ 
+|===
+
+== Minimum firmware level
+
+7.10
+
+8.41 This command is deprecated.

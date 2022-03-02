@@ -1,0 +1,57 @@
+---
+permalink: commands-a-z/save-storagearray-soccounts.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray SOCCounts command saves the SOC error statistics to a file.'
+---
+= Save storage array SOC counts
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray SOCCounts` command saves the SOC error statistics to a file.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+This command is valid only for Fibre Channel devices in an arbitrated loop topology.
+
+== Syntax
+
+----
+save storageArray SOCCounts file="filename"
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name to which you want to save the SOC error statistics. Enclose the file name in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\logs\socstat.csv"`
+
+The default name of the file that contains the SOC error statistics is `soc-statistics.csv`. You can use any file name, but you must use the `.csv` extension.
+
+|===
+
+== Notes
+
+To more effectively save SOC error statistics to a file, perform these steps:
+
+. Run the `reset storageArray SOCBaseline` command to set all of the SOC counters to 0.
+. Run the storage array for a predetermined amount of time (for example, two hours).
+. Run the `save storageArray SOCCounts file="``filename``"` command.
+
+== Minimum firmware level
+
+6.16

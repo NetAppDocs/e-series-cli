@@ -1,0 +1,73 @@
+---
+permalink: commands-a-z/show-storagearray-hosttopology.html
+sidebar: sidebar
+keywords: 
+summary: 'The show storageArray hostTopology command returns the storage partition topology, the host type labels, and the host type index for the host storage array.'
+---
+= Show storage array host topology
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show storageArray hostTopology` command returns the storage partition topology, the host type labels, and the host type index for the host storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Syntax
+
+----
+show storageArray hostTopology
+----
+
+== Parameters
+
+None.
+
+== Notes
+
+This command returns the host topology information similar to this example.
+
+----
+TOPOLOGY DEFINITIONS
+ DEFAULT GROUP
+  Default type: Windows 2000/Server 2003 Non-Clustered
+  Host Group: scott
+   Host: scott1
+    Host Port: 28:37:48:55:55:55:55:55
+     Alias: scott11
+     Type: Windows 2000/Server 2003 Clustered
+   Host: scott2
+    Host Port: 98:77:66:55:44:33:21:23
+     Alias: scott21
+     Type: Windows 2000/Server 2003 Clustered
+   Host: Bill
+    Host Port: 12:34:55:67:89:88:88:88
+     Alias: Bill1
+     Type: Windows 2000/Server 2003 Non-Clustered
+NVSRAM HOST TYPE INDEX DEFINITIONS
+HOST TYPE                         ALUA/AVT STATUS   ASSOCIATED INDEXS
+AIX MPIO                          Disabled          9
+AVT_4M                            Enabled           5
+Factory Default                   Disabled          0
+HP-UX                             Enabled           15
+Linux (ATTO)                      Enabled           24
+Linux (DM-MP)                     Disabled          6
+Linux (Pathmanager)               Enabled           25
+Mac OS                            Enabled           22
+ONTAP                             Disabled          4
+SVC                               Enabled           18
+Solaris (v11 or Later)            Enabled           17
+Solaris (version 10 or earlier)   Disabled          2
+VMWare                            Enabled           10 (Default)
+Windows                           Enabled           1
+----
+
+== Minimum firmware level
+
+5.20

@@ -1,0 +1,85 @@
+---
+permalink: commands-a-z/enable-storagearray-externalkeymanagement-file.html
+sidebar: sidebar
+keywords: 
+summary: 'The enable storageArray externalKeyManagement file command enables external security key management for a storage array that has Full Disk Encryption drives, and creates the initial drive security key.'
+---
+= Enable external security key management
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `enable storageArray externalKeyManagement file` command enables external security key management for a storage array that has Full Disk Encryption drives, and creates the initial drive security key.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+[NOTE]
+====
+This command applies only to external key management.
+====
+
+== Syntax
+
+----
+enable storageArray externalKeyManagement
+file="fileName"
+passPhrase="passPhraseString"
+saveFile=(TRUE | FALSE)
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name where the new security key will be stored. Enclose the file path and the file name in double quotation marks (" "). For example:
+
+----
+file="C:\Program Files\CLI\sup\drivesecurity.slk"
+----
+
+[NOTE]
+====
+The file name must have an extension of `.slk`.
+====
+
+a|
+`passPhrase`
+a|
+A character string that encrypts the security key so that you can store the security key in an external file. Enclose the pass phrase character string in double quotation marks (" ").
+a|
+`saveFile`
+a|
+Verifies and saves the security key to a file. Set to `FALSE` to not save and verify the security key to a file. The default value is `TRUE`.
+|===
+
+== Notes
+
+Your pass phrase must meet these criteria:
+
+* Must be between eight and 32 characters long.
+* Must contain at least one uppercase letter.
+* Must contain at least one lowercase letter.
+* Must contain at least one number.
+* Must contain at least one non-alphanumeric character, for example, < > @ +.
+
+[NOTE]
+====
+If your pass phrase does not meet these criteria, you will receive an error message.
+====
+
+== Minimum firmware level
+
+8.40
+
+8.70 adds the `saveFile` parameter.

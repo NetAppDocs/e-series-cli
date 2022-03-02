@@ -1,0 +1,185 @@
+---
+permalink: commands-a-z/create-cgsnapvolume.html
+sidebar: sidebar
+keywords: 
+summary: 'The create cgSnapVolume command creates a snapshot volume of specific images in the base volumes in a consistency group.'
+---
+= Create consistency group snapshot volume
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create cgSnapVolume` command creates a snapshot volume of specific images in the base volumes in a consistency group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+You can select one base volume or more than one base volume from the consistency group to include in the snapshot volume. When you create a snapshot volume of a consistency group, you are creating a volume with contents that you can view.
+
+== Syntax with user specified base volumes
+
+----
+create cgSnapVolume userLabel="cgVolumeName"
+cgSnapImageID="snapCGID:imageID"
+members=(baseVolume1:repos_XXXX ... baseVolumen:repos_YYYY)
+----
+
+== Syntax when setting the consistency group snapshot volume to read only
+
+----
+create cgSnapVolume userLabel="cgVolumeName"
+cgSnapImageID="snapCGID:imageID"
+readOnly
+----
+
+== Syntax when setting the repository full limit
+
+----
+create cgSnapVolume userLabel="cgVolumeName"
+cgSnapImageID="snapCGID:imageID"
+members=(baseVolume1:repos_XXXX |
+baseVolume1: (volumeGroupName [capacity=capacityValue]) |
+(baseVolume1:diskPoolName [capacity=capacityValue])
+... baseVolumen:repos_YYYY |
+baseVolumen: (volumeGroupName [capacity=capacityValue]) |
+baseVolumen: (diskPoolName [capacity=capacityValue]))
+repositoryFullLimit=percentValue
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`userLabel`
+a|
+The name that you want to give the consistency group snapshot volume that you are creating. Enclose the consistency group snapshot volume name in double quotation marks (" ").
+a|
+`cgSnapImageID`
+a|
+The name of the snapshot image in a consistency group. The name of a snapshot image is comprised of two parts:
+
+* The name of the consistency group
+* An identifier for the snapshot image in the consistency group
+
+The identifier for the snapshot image can be one of the following:
+
+* `newest` - Use this option when you want to show the latest snapshot image created in the consistency group.
+* `oldest` - Use this option when you want to show the earliest snapshot image created in the consistency group.
+
+Enclose the snapshot image name in double quotation marks (" ").
+
+You can enter more than one snapshot image name or sequence number. Enclose all of the snapshot image names inside parentheses. Separate each snapshot image name with a space.
+
+a|
+`members`
+a|
+The identifier of one base volume or more than one base volume that you want to add. The members identifier is comprised of the base volume name concatenated with the repository volume name. You must use a colon (:) between the two names. Enclose all of the member identifiers in parentheses. If you enter more than one member separated the members with a space.
+
+When you do not use the members parameter, all of the members are automatically added to the new consistency group snapshot volume.
+
+a|
+`repositoryVolume`
+a|
+The name of the repository volume that will contain the consistency group member volumes.
+
+You have two options for defining the name of a repository volume:
+
+* Use an existing repository volume: name
+* Create a new repository volume when you run this command
+
+The name of an existing repository volume is comprised of two parts:
+
+* The term "repos"
+* A four-digit numerical identifier that the storage management software assigns to the repository volume name
+
+Enclose the name of the existing repository volume in double quotation marks (" ").
+
+If you want to create a new repository volume when you run this command, you must enter the name of either a volume group or a disk pool in which you want the repository volume. Optionally, you can also define the capacity of the repository volume. If you want to define the capacity you can use these values:
+
+* An integer value that represents a percentage of the base volume capacity
+* A decimal fraction value that represents a percentage of the base volume capacity
+* A specific size for the repository volume. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`.
+
+If you do not use the capacity option, the storage management software sets the capacity to 20 percent of the base volume capacity.
+
+When you run this command the storage management software creates the repository volume for the snapshot volume.
+
+a|
+`repositoryFullLimit`
+a|
+The percentage of repository capacity at which the consistency group snapshot repository volume is nearing full. Use integer values. For example, a value of 70 means 70 percent.
+a|
+`readOnly`
+a|
+The setting to determine whether you can write to the snapshot volume or only read from the snapshot volume. To write to the snapshot volume, do not include this parameter. To prevent writing to the snapshot volume, include this parameter.
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+The name of a snapshot image has two parts separated by a colon (:):
+
+* The identifier of the snapshot group
+* The identifier of the snapshot image
+
+If you do not specify the `repositoryVolumeType` or `readOnly` parameters, the storage management software selects the repositories for the consistency group snapshot volume. If the volume group or disk pool where the base volume resides does not have enough space, this command fails.
+
+The `create cgSnapVolume` command has unique forms that are explained by these examples:
+
+* Creating a read/write consistency group snapshot volume on a snapshot consistency group named "snapCG1" that has three members: cgm1, cgm2, and cgm3. The repository volumes already exist and are selected by the user in this command.
++
+----
+create cgSnapVolume userLabel="cgSnapVolume1"
+cgSnapImageID="snapCG1:oldest"
+members=(cgm1:repos_0010 cgm2:repos_0011 cgm3:repos_0007);
+----
++
+Note the use of the colon (:) in the name of the snapshot image to be included in the consistency group snapshot volume. The colon is a delimiter that separates the name of the snapshot volume from a particular snapshot image that you might want to use. You can use one of these options following the colon:
+
+ ** An integer value that is the actual sequence number of the snapshot image.
+ ** `newest` - Use this option when you want to show the latest consistency group snapshot image.
+ ** `oldest` - Use this option when you want to show the earliest snapshot image created.
+The use of the colon following the names of the members of the snapshot consistency group define the mapping between the member and a repository volume. For example, in `cgm1:repos_10`, member cgm1 maps to repository volume repos_0010.
+
+* Creating a read/write consistency group snapshot volume on a snapshot consistency group named "snapCG1" of only members cgm1 and cgm2:
++
+----
+create cgSnapVolume userLabel="cgSnapVolume2"
+cgSnapImageID="snapCG1:14214"
+members=(cgm1:repos_1000 cgm2:repos_1001);
+----
+
+* Creating a read-only consistency group snapshot volume on a snapshot consistency group named snapCG1 that has three members: cgm1, cgm2, and cgm3:
++
+----
+create cgSnapVolume userLabel="cgSnapVolume3"
+cgSnapImageID="snapCG1:oldest" readOnly;
+----
+
+* Creating a consistency group snapshot volume that has a repository full limit set to 60 percent on a snapshot consistency group named snapCG1 that has three members: cgm1, cgm2, and cgm3:
++
+----
+create cgSnapVolume userLabel="cgSnapVolume3"
+cgSnapImageID="snapCG1:oldest"
+repositoryFullLimit=60;
+----
+
+* Creating a read/write consistency group snapshot volume with automatic repository selection on a snapshot consistency group named snapCG1 that has three members: cgm1, cgm2, and cgm3:
++
+----
+create cgSnapVolume userLabel="cgSnapVolume4"
+cgSnapImageID="snapCG1:oldest";
+----
+
+== Minimum firmware level
+
+7.83
