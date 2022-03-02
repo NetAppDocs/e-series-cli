@@ -1,0 +1,674 @@
+---
+permalink: commands-a-z/create-snapgroup.html
+sidebar: sidebar
+keywords: 
+summary: 'The create snapGroup command creates a new snapshot group and the associated repository volume.'
+---
+= Create snapshot group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create snapGroup` command creates a new snapshot group and the associated repository volume.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+A snapshot group contains a sequence of snapshot images of an associated base volume. A snapshot group has a repository volume that is used to save data for all of the snapshot images that are part of the snapshot group.
+
+[NOTE]
+====
+Before you create a snapshot group, make sure a volume group with free capacity is available.
+====
+
+== Syntax
+
+----
+create snapGroup userLabel="snapGroupName" sourceVolume="volumeName"
+[(repositoryVolume="repos_xxxx" |
+repositoryVolume=(volumeGroupName [capacity=capacityValue]) |
+repositoryVolume=(diskPoolName [capacity=capacityValue]))]
+[repositoryFullPolicy=(failBaseWrites | purgeSnapImages)]
+[rollbackPriority=(highest | high | medium | low | lowest)]
+[repositoryFullLimit=percentValue]
+[autoDeleteLimit=numberOfSnapImages]|
+[enableSchedule=(TRUE | FALSE)]
+[schedule (immediate | snapshotSchedule)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`userLabel`
+a|
+The name that you want to give the new snapshot group. Enclose the snapshot group identifier in double quotation marks (" ").
+a|
+`sourceVolume`
+a|
+The name of the volume that you want to use as the source for your snapshot images. Enclose the source volume name in double quotation marks (" ").
+a|
+`repositoryVolume`
+a|
+The name of the repository volume that will contain the changed data of the snapshot group.
+
+You have two options for defining the name of a repository volume:
+
+* Use an existing repository volume: name
+* Create a new repository volume when you run this command
+
+The name of an existing repository volume is comprised of two parts:
+
+* The term "repos"
+* A four digit numerical identifier that the storage management software assigns to the repository volume name
+
+Enclose the name of the existing repository volume in double quotation marks (" ").
+
+If you want to create a new repository volume when you run this command you must enter the name of either a volume group or a disk pool in which you want the repository volume. Optionally, you also can define the capacity of the repository volume. If you want to define the capacity you can use these values:
+
+* An integer value that represents a percentage of the base volume capacity
+* A decimal fraction value that represents a percentage of the base volume capacity
+* A specific size for the repository volume. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`.
+
+If you do not use the capacity option, the storage management software sets the capacity to 20 percent of the base volume capacity.
+
+When you run this command the storage management software creates the repository volume for the snapshot volume.
+
+a|
+`repositoryFullPolicy`
+a|
+Defines how snapshot image processing continues if the snapshot group repository volume is full. You can choose to fail I/O writes to the base volume (`failBaseWrites`) or delete (purge) the snapshot images (`purgeSnapImages`) in the repository volume. The `purgeSnapImages` option deletes the oldest snapshot images to free up space. The default action is `purgeSnapImages`.
+a|
+`rollBackPriority`
+a|
+Determines whether system resources should be allocated to the rollback operation at the expense of system performance. A value of `high` indicates that the rollback operation is prioritized over all other host I/O. A value of `low` indicates that the rollback operation should be performed with minimal impact to host I/O. The default value is `medium`.
+
+a|
+`repositoryFullLimit`
+a|
+The percentage of repository capacity at which you receive a warning that the snapshot group repository volume is nearing full. Use integer values. For example, a value of 70 means 70 percent. The default value is 75.
+
+a|
+`autoDeleteLimit`
+a|
+Each snapshot group can be configured to perform automatic deletion of its snapshot images to keep the total number of snapshot images in the snapshot group at or below a designated level. When this option is enabled, then any time a new snapshot image is created in the snapshot group, the system automatically deletes the oldest snapshot image in the group to comply with the limit value. This action frees repository capacity so it can be used to satisfy ongoing copy-on-write requirements for the remaining snapshot images.
+
+a|
+`enableSchedule`
+a|
+Use this parameter to turn on or to turn off the ability to schedule a snapshot operation. To turn on snapshot scheduling, set this parameter to `TRUE`. To turn off snapshot scheduling, set this parameter to `FALSE`.
+|===
+
+== Notes
+
+Each snapshot group name must be unique. You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. User labels can have a maximum of 30 characters.
+
+To create a snapshot group, you must have an associated repository volume in which you store the snapshot images. You can either use an existing repository volume or create a new repository volume. You can create the repository volume when you create the snapshot group. A snapshot group repository volume is an expandable volume that is structured as a concatenated collection of up to 16 standard volume entities. Initially, an expandable repository volume has only a single element. The capacity of the expandable repository volume is exactly that of the single element. You can increase the capacity of an expandable repository volume by attaching additional standard volumes to it. The composite expandable repository volume capacity then becomes the sum of the capacities of all of the concatenated standard volumes.
+
+A snapshot group has a strict ordering of snapshot images based on the time that each snapshot image is created. A snapshot image that is created after another snapshot image is a _successor_ relative to that other snapshot image. A snapshot image that is created before another snapshot image is a _predecessor_ relative to that other one.
+
+A snapshot group repository volume must satisfy a minimum capacity requirement that is the sum of the following:
+
+* 32 MB to support fixed overhead for the snapshot group and for copy-on-write processing.
+* Capacity for rollback processing, which is 1/5000th of the capacity of the base volume.
+
+The minimum capacity is enforcement by the controller firmware and the storage management software.
+
+When you first create a snapshot group, it does not contains any snapshot images. When you create snapshot images, you add the snapshot images to a snapshot group. Use the `create snapImage` command to create snapshot images and add the snapshot images to a snapshot group.
+
+A snapshot group can have one of these states:
+
+* *Optimal* -- The snapshot group is operating normally.
+* *Full* -- The snapshot group repository is full. Additional copy-on-write operations can not be performed. This state is possible only for snapshot groups that have the Repository Full policy set to Fail Base Writes. Any snapshot group in a Full state causes a Needs-Attention condition to be posted for the storage array.
+* *Over Threshold* -- The snapshot group repository volume usage is at or beyond its alert threshold. Any snapshot group in this state causes a Needs-Attention condition to be posted for the storage array.
+* *Failed* -- The snapshot group has encountered a problem that has made all snapshot images in the snapshot group unusable. For example, certain types of repository volume failures can cause a Failed state. To recover from a Failed state use the `revive snapGroup` command.
+
+You can configure each snapshot group to automatically delete the snapshot images by using the `autoDeleteLimit` parameter. Automatically deleting the snapshot images enables you to avoid having to routinely, manually delete the images that you do not want and that might prevent the creation of future snapshot images because the repository volume is full. When you use the `autoDeleteLimit` parameter it causes the storage management software to automatically delete snapshot images, starting with the oldest. The storage management software deletes snapshot images until it reaches a number of snapshot images that is equal to the number that you enter with `autoDeleteLimit` parameter. When new snapshot images are added to the repository volume, the storage management software deletes the oldest snapshot images until the `autoDeleteLimit` parameter number is reached.
+
+The `enableSchedule` parameter and the `schedule` parameter provide a way for you to schedule creating snapshot images for a snapshot group. Using these parameters, you can schedule snapshots daily, weekly, or monthly (by day or by date). The `enableSchedule` parameter turns on or turns off the ability to schedule snapshots. When you enable scheduling, you use the `schedule` parameter to define when you want the snapshots to occur.
+
+This table explains how to use the options for the `schedule` parameter:
+
+|===
+| Parameter| Description
+a|
+`schedule`
+a|
+Required for specifying schedule parameters.
+a|
+`immediate`
+a|
+Start the operation immediately. This item is mutually exclusive with any other scheduling parameters.
+a|
+`enableSchedule`
+a|
+When set to `true`, scheduling is turned on. When set to `false`, scheduling is turned off.
+
+[NOTE]
+====
+The default is `false`.
+====
+
+a|
+`startDate`
+a|
+A specific date on which to start the operation. The format for entering the date is MM:DD:YY. The default is the current date. An example of this option is `startDate=06:27:11`.
+a|
+`scheduleDay`
+a|
+A day of the week on which to start the operation. Can either be all or one or more of the following values:
+
+* `monday`
+* `tuesday`
+* `wednesday`
+* `thursday`
+* `friday`
+* `saturday`
+* `sunday`
+
+[NOTE]
+====
+Enclose the value in parentheses. For example, `scheduleDay=(wednesday)`.
+====
+
+More than one day can be specified by enclosing the days in a single set of parentheses and separating each day with a space. For example, `scheduleDay=(monday wednesday friday)`.
+
+[NOTE]
+====
+This parameter is not compatible with a monthly schedule.
+====
+
+a|
+`startTime`
+a|
+The time of a day on which to start the operation. The format for entering the time is HH:MM, where HH is the hour and MM is the minute past the hour. Uses a 24-hour clock. For example, 2:00 in the afternoon is 14:00. An example of this option is `startTime=14:27`.
+a|
+`scheduleInterval`
+a|
+An amount of time, in minutes, to have as a minimum between operations.Schedule interval should not be more than 1440 (24 hours) and it should be a multiple of 30.
+
+An example of this option is``scheduleInterval=180``.
+a|
+`endDate`
+a|
+A specific date on which to stop the operation. The format for entering the date is MM:DD:YY. If no end date is desired, you can specify `noEndDate`. An example of this option is `endDate=11:26:11`.
+a|
+`timesPerDay`
+a|
+The number of times to perform the operation in a day. An example of this option is `timesPerDay=4`.
+a|
+`timezone`
+a|
+Specifies the time zone to be used for the schedule. Can be specified in two ways:
+
+* *GMT±HH:MM*
++
+The time zone offset from GMT. Example: `timezone=GMT-06:00`.
+
+* *Text String*
++
+Standard time zone text string, must be enclosed in quotes. Example:``timezone="America/Chicago"``
+
+a|
+`scheduleDate`
+a|
+A day of the month on which to perform the operation. The values for the days are numerical and in the range of 1-31.
+[NOTE]
+====
+This parameter is not compatible with a weekly schedule.
+====
+
+An example of the `scheduleDate` option is `scheduleDate=("15")`.
+a|
+`month`
+a|
+A specific month on which to perform the operation. The values for the months are:
+
+* `jan` - January
+* `feb` - February
+* `mar` - March
+* `apr` - April
+* `may` - May
+* `jun` - June
+* `jul` - July
+* `aug` - August
+* `sep` - September
+* `oct` - October
+* `nov` - November
+* `dec` - December
+
+[NOTE]
+====
+Enclose the value in parentheses. For example, `month=(jan)`.
+====
+
+More than one month can be specified by enclosing the months in a single set of parentheses and separating each month with a space. For example, `month=(jan jul dec)`.
+
+Use this parameter with the `scheduleDate` parameter to perform the operation on a specific day of the month.
+
+[NOTE]
+====
+This parameter is not compatible with a weekly schedule.
+====
+
+|===
+This table explains how to use the `timeZone` parameter:
+
+|===
+| Timezone Name| GMT offset
+a|
+`Etc/GMT+12`
+a|
+`GMT-12:00`
+a|
+`Etc/GMT+11`
+a|
+`GMT-11:00`
+a|
+`Pacific/Honolulu`
+a|
+`GMT-10:00`
+a|
+`America/Anchorage`
+a|
+`GMT-09:00`
+a|
+`America/Santa_Isabel`
+a|
+`GMT-08:00`
+a|
+`America/Los_Angeles`
+a|
+`GMT-08:00`
+a|
+`America/Phoenix`
+a|
+`GMT-07:00`
+a|
+`America/Chihuahua`
+a|
+`GMT-07:00`
+a|
+`America/Denver`
+a|
+`GMT-07:00`
+a|
+`America/Guatemala`
+a|
+`GMT-06:00`
+a|
+`America/Chicago`
+a|
+`GMT-06:00`
+a|
+`America/Mexico_City`
+a|
+`GMT-06:00`
+a|
+`America/Regina`
+a|
+`GMT-06:00`
+a|
+`America/Bogota`
+a|
+`GMT-05:00`
+a|
+`America/New_York`
+a|
+`GMT-05:00`
+a|
+`Etc/GMT+5`
+a|
+`GMT-05:00`
+a|
+`America/Caracas`
+a|
+`GMT-04:30`
+a|
+`America/Asuncion`
+a|
+`GMT-04:00`
+a|
+`America/Halifax`
+a|
+`GMT-04:00`
+a|
+`America/Cuiaba`
+a|
+`GMT-04:00`
+a|
+`America/La_Paz`
+a|
+`GMT-04:00`
+a|
+`America/Santiago`
+a|
+`GMT-04:00`
+a|
+`America/St_Johns`
+a|
+`GMT-03:30`
+a|
+`America/Sao_Paulo`
+a|
+`GMT-03:00`
+a|
+`America/Buenos_Aires`
+a|
+`GMT-03:00`
+a|
+`America/Cayenne`
+a|
+`GMT-03:00`
+a|
+`America/Godthab`
+a|
+`GMT-03:00`
+a|
+`America/Montevideo`
+a|
+`GMT-03:00`
+a|
+`Etc/GMT+2`
+a|
+`GMT-02:00`
+a|
+`Atlantic/Azores`
+a|
+`GMT-01:00`
+a|
+`Atlantic/Cape_Verde`
+a|
+`GMT-01:00`
+a|
+`Africa/Casablanca`
+a|
+`GMT`
+a|
+`Etc/GMT`
+a|
+`GMT`
+a|
+`Europe/London`
+a|
+`GMT`
+a|
+`Atlantic/Reykjavik`
+a|
+`GMT`
+a|
+`Europe/Berlin`
+a|
+`GMT+01:00`
+a|
+`Europe/Budapest`
+a|
+`GMT+01:00`
+a|
+`Europe/Paris`
+a|
+`GMT+01:00`
+a|
+`Europe/Warsaw`
+a|
+`GMT+01:00`
+a|
+`Africa/Lagos`
+a|
+`GMT+01:00`
+a|
+`Africa/Windhoek`
+a|
+`GMT+01:00`
+a|
+`Asia/Anman`
+a|
+`GMT+02:00`
+a|
+`Asia/Beirut`
+a|
+`GMT+02:00`
+a|
+`Africa/Cairo`
+a|
+`GMT+02:00`
+a|
+`Asia/Damascus`
+a|
+`GMT+02:00`
+a|
+`Africa/Johannesburg`
+a|
+`GMT+02:00`
+a|
+`Europe/Kiev`
+a|
+`GMT+02:00`
+a|
+`Asia/Jerusalem`
+a|
+`GMT+02:00`
+a|
+`Europe/Istanbul`
+a|
+`GMT+03:00`
+a|
+`Europe/Minsk`
+a|
+`GMT+02:00`
+a|
+`Asia/Baghdad`
+a|
+`GMT+03:00`
+a|
+`Asia/Riyadh`
+a|
+`GMT+03:00`
+a|
+`Africa/Nairobi`
+a|
+`GMT+03:00`
+a|
+`Asia/Tehran`
+a|
+`GMT+03:30`
+a|
+`Europe/Moscow`
+a|
+`GMT+04:00`
+a|
+`Asia/Dubai`
+a|
+`GMT+04:00`
+a|
+`Asia/Baku`
+a|
+`GMT+04:00`
+a|
+`Indian/Mauritius`
+a|
+`GMT+04:00`
+a|
+`Asia/Tbilisi`
+a|
+`GMT+04:00`
+a|
+`Asia/Yerevan`
+a|
+`GMT+04:00`
+a|
+`Asia/Kabul`
+a|
+`GMT+04:30`
+a|
+`Asia/Karachi`
+a|
+`GMT+05:00`
+a|
+`Asia//Tashkent`
+a|
+`GMT+05:00`
+a|
+`Asia/Calcutta`
+a|
+`GMT+05:30`
+a|
+`Asia/Colombo`
+a|
+`GMT+05:30`
+a|
+`Asia/Katmandu`
+a|
+`GMT+05:45`
+a|
+`Asia/Yekaterinburg`
+a|
+`GMT+06:00`
+a|
+`Asia/Almaty`
+a|
+`GMT+06:00`
+a|
+`Asia/Dhaka`
+a|
+`GMT+06:00`
+a|
+`Asia/Rangoon`
+a|
+`GMT+06:30`
+a|
+`Asia/Novosibirsk`
+a|
+`GMT+07:00`
+a|
+`Asia/Bangkok`
+a|
+`GMT+07:00`
+a|
+`Asia/Krasnoyarsk`
+a|
+`GMT+08:00`
+a|
+`Asia/Shanghai`
+a|
+`GMT+08:00`
+a|
+`Asia/Singapore`
+a|
+`GMT+08:00`
+a|
+`Australia/Perth`
+a|
+`GMT+08:00`
+a|
+`Asia/Taipei`
+a|
+`GMT+08:00`
+a|
+`Asia/Ulaanbaatar`
+a|
+`GMT+08:00`
+a|
+`Asia/Irkutsk`
+a|
+`GMT+09:00`
+a|
+`Asia/Tokyo`
+a|
+`GMT+09:00`
+a|
+`Asia/Seoul`
+a|
+`GMT+09:00`
+a|
+`Australia/Adelaide`
+a|
+`GMT+09:30`
+a|
+`Australia/Darwin`
+a|
+`GMT+09:30`
+a|
+`Asia/Yakutsk`
+a|
+`GMT+10:00`
+a|
+`Australia/Brisbane`
+a|
+`GMT+10:00`
+a|
+`Australia/Sydney`
+a|
+`GMT+10:00`
+a|
+`Pacific/Port Moresby`
+a|
+`GMT+10:00`
+a|
+`Australia/Hobart`
+a|
+`GMT+10:00`
+a|
+`Asia/Vladivostok`
+a|
+`GMT+11:00`
+a|
+`Pacific/Guadalcanal`
+a|
+`GMT+11:00`
+a|
+`Pacific/Auckland`
+a|
+`GMT+12:00`
+a|
+`Etc/GMT-12`
+a|
+`GMT+12:00`
+a|
+`Pacific/Fiji`
+a|
+`GMT+12:00`
+a|
+`Asia/Kamchatka`
+a|
+`GMT+12:00`
+a|
+`Pacific/Tongatapu`
+a|
+`GMT+13:00`
+|===
+The code string for defining a schedule is similar to these examples:
+
+----
+enableSchedule=true schedule startTime=14:27
+----
+
+----
+enableSchedule=true schedule scheduleInterval=180
+----
+
+----
+enableSchedule=true schedule timeZone=GMT-06:00
+----
+
+----
+enableSchedule=true schedule timeZone="America/Chicago"
+----
+
+If you also use the `scheduleInterval` option, the firmware chooses between the `timesPerDay` option and the `scheduleInterval` option by selecting the lowest value of the two options. The firmware calculates an integer value for the `scheduleInterval` option by dividing 1440 by the `scheduleInterval` option value that you set. For example, 1440/180 = 8. The firmware then compares the `timesPerDay` integer value with the calculated `scheduleInterval` integer value and uses the smaller value.
+
+To remove a schedule, use the `delete volume` command with the `schedule` parameter. The `delete volume` command with the `schedule` parameter deletes only the schedule, not the snapshot volume.
+
+== Minimum firmware level
+
+7.83
+
+7.86 adds the `scheduleDate` option and the `month` option.

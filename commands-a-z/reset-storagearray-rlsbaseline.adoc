@@ -1,0 +1,34 @@
+---
+permalink: commands-a-z/reset-storagearray-rlsbaseline.html
+sidebar: sidebar
+keywords: 
+summary: 'The reset storageArray RLSBaseline command resets the read link status \(RLS\) baseline for all devices by setting all of the RLS counts to 0.'
+---
+= Reset storage array RLS baseline
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `reset storageArray RLSBaseline` command resets the read link status (RLS) baseline for all devices by setting all of the RLS counts to 0.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+reset storageArray RLSBaseline
+----
+
+== Parameters
+
+None.
+
+== Minimum firmware level
+
+5.00

@@ -1,0 +1,62 @@
+---
+permalink: commands-a-z/start-ioclog.html
+sidebar: sidebar
+keywords: 
+summary: 'The start IOCLog command produces a dump of the IOC log of data transmissions between a host and a controller.'
+---
+= Start input output controller (IOC) dump
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start IOCLog` command produces a dump of the IOC log of data transmissions between a host and a controller.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Controllers are identified as "a " or "b". Each controller can have up to four host channels; each channel is uniquely identified by a number from 1 through 4.
+
+== Syntax
+
+----
+start IOCLog [(a1 | a2 | a3 | a4 | b1 | b2 | b3 | b4)]
+[overwrite=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller-channel identifiers`
+a|
+This parameter specifies the controller and host channel from which to produce the IOC dump. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Host channels have numerical identifiers. Enclose the controller identifier and host channel identifier in square brackets ([ ]).
+
+Valid controller identifier and host channel values are `a1`, `a2`, `a3`, `a4`, `b1`, `b2`, `b3`, `b4`.
+
+If you do not specify a controller, the storage management software returns a syntax error.
+
+a|
+`overwrite`
+a|
+This parameter causes the new IOC log dump to overwrite an existing dump. To overwrite the existing dump, set this parameter to `TRUE`. The default value is `FALSE`.
+|===
+
+== Notes
+
+This command generates a debug log from the IOC of the selected controller and stores the data in a compressed format in a persistent memory buffer on the controller. You can retrieve the data from the debug log using the `save IOCLog` command. The controller returns an error for these conditions:
+
+* The controller platform and HIC do not support an IOC dump.
+* The specified controller has an outstanding IOC dump and the overwrite parameter is false.
+* The specified controller identifier or channel identifier are out of the valid range.
+
+== Minimum firmware level
+
+8.20

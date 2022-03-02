@@ -1,0 +1,58 @@
+---
+permalink: commands-a-z/download-storagearray-drivefirmware-file.html
+sidebar: sidebar
+keywords: 
+summary: 'The download storageArray driveFirmware file command downloads firmware images to all of the drives in the storage array.'
+---
+= Download storage array drive firmware
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `download storageArray driveFirmware file` command downloads firmware images to all of the drives in the storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Syntax
+
+----
+download storageArray driveFirmware file="filename"
+[file="filename2"... file="filenameN"]
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name of the file that contains the firmware image. Enclose the file path and the file name of the firmware image in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\dnld\sadrvfrm.dlp"`
+
+Valid file names have a `.dlp`  extension.
+
+|===
+
+== Notes
+
+When you run this command, you can download more than one firmware image file to the drives in a storage array. The number of firmware image files that you can download depends on the storage array. The storage management software returns an error if you try to download more firmware image files than the storage array can accept.
+
+You can schedule downloads for multiple drives at the same time, including multiple drives in a redundant volume group. Each firmware image file contains information about the drive types on which the firmware image runs. The specified firmware images can be downloaded only to a compatible drive. Use the `download drive firmware` command to download a firmware image to a specific drive.
+
+The `download storageArray driveFirmware` command blocks all I/O activity until either download try has been made for each candidate drive or you run the `stop storageArray downloadDriveFirmware` command. When the `download storageArray driveFirmware` command finishes downloading the firmware image, each candidate drive shows the download status for each drive. One of these statuses is returned:
+
+* Successful
+* Unsuccessful With Reason
+* Never Attempted With Reason
+
+== Minimum firmware level
+
+5.20

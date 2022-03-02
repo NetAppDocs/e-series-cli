@@ -1,0 +1,78 @@
+---
+permalink: commands-a-z/set-storagearray-directoryserver-roles.html
+sidebar: sidebar
+keywords: 
+summary: 'The set storageArray directoryServer roles command allows you to define role mappings for a specified directory server. These role mappings are used to authenticate users that attempt to execute various SMcli commands.'
+---
+= Set storage array directory server role mapping
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray directoryServer roles` command allows you to define role mappings for a specified directory server. These role mappings are used to authenticate users that attempt to execute various SMcli commands.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Before you begin
+
+The following roles are available to be mapped:
+
+* *Storage admin* -- Full read/write access to the storage objects (for example, volumes and disk pools), but no access to the security configuration.
+* *Security admin* -- Access to the security configuration in Access Management, certificate management, audit log management, and the ability to turn the legacy management interface (SYMbol) on or off.
+* *Support admin* -- Access to all hardware resources on the storage array, failure data, MEL events, and controller firmware upgrades. No access to storage objects or the security configuration.
+* *Monitor* -- Read-only access to all storage objects, but no access to the security configuration.
+
+== Syntax
+
+----
+
+set storageArray directoryServer ["domainId"]
+    groupDN="groupDistinguishedName" roles=("role1"..."roleN")
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`directoryServer`
+a|
+Allows you to specify the domain by its ID for which you want to set up role mappings.
+a|
+`groupDN`
+a|
+Allows you to specify the group's distinguished name (DN) to be added to the mapping list.
+a|
+`roles`
+a|
+Allows you to specify one or more roles for the user(s) in the defined group. If you enter more than one role, separate the values with a space. Valid choices are:
+
+* storage.monitor
+* storage.admin
+* security.admin
+* support.admin
+
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "set storageArray directoryServer ["domain1"]
+                    groupDN="CN=ng-hsg-bc-madridsecurity,OU=Managed,
+                    OU=MyCompanyGroups,DC=hq,DC=mycompany,DC=com"
+                    roles=("storage.monitor" "security.admin" "storage.admin");"
+
+SMcli -n Array1 -c "set storageArray directoryServer ["domain1"]
+                    groupDN="CN=ng-epg-engr-manageability,OU=Managed,
+                    OU=MyCompanyGroups,DC=hq,DC=mycompany,DC=com"
+                    roles=("support.admin");"
+
+SMcli completed successfully.
+----

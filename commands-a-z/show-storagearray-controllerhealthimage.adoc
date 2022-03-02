@@ -1,0 +1,45 @@
+---
+permalink: commands-a-z/show-storagearray-controllerhealthimage.html
+sidebar: sidebar
+keywords: 
+summary: 'The show storageArray controllerHealthImage command shows details of the controller health image on the controller cache, if a controller health image is available, on storage arrays that support the controller health image.'
+---
+= Show storage array controller health image
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show storageArray controllerHealthImage` command shows details of the controller health image on the controller cache, if a controller health image is available, on storage arrays that support the controller health image.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Context
+
+[NOTE]
+====
+With firmware version 8.20 the `coreDump` parameter is replaced with the `controllerHealthImage` parameter.
+====
+
+If the storage array does not support the controller health image feature, this command returns an error.
+
+== Syntax
+
+----
+show storageArray controllerHealthImage
+----
+
+== Parameters
+
+None.
+
+== Minimum firmware level
+
+7.83
+
+8.20 replaces the `coreDump` parameter with the `controllerHealthImage` parameter.

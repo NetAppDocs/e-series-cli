@@ -1,0 +1,44 @@
+---
+permalink: commands-a-z/change-ssd-cache-application-type.html
+sidebar: sidebar
+keywords: 
+summary: 'The set ssdCache command changes the application type associated with the SSD cache. The application type can be web server, database, or multimedia. Changing the application type changes the block size, sub-block size, populate on read threshold, and populate on write threshold for the volumes underlying the SSD cache.'
+---
+= Change SSD cache application type
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set ssdCache` command changes the application type associated with the SSD cache. The application type can be web server, database, or multimedia. Changing the application type changes the block size, sub-block size, populate on read threshold, and populate on write threshold for the volumes underlying the SSD cache.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Support Admin role.
+
+== Syntax
+
+----
+set ssdCache [ssdCacheName] usageHint=(webServer|dataBase|fileSystem)
+----
+
+== Parameter
+
+|===
+| Parameter| Description
+a|
+`ssdCache`
+a|
+The name of the SSD cache for which you want to change the application type. Enclose the SSD cache name in square brackets ([ ]). If the SSD cache name contains special characters or consists only of numbers, you must enclose the SSD cache name in double quotation marks (" ") inside square brackets.
+a|
+`usageHint`
+a|
+The values are based on the typical I/O usage pattern of the application that is using the SSD cache. Valid values are `webServer`, `dataBase`, or `fileSystem`.
+|===
+
+== Minimum firmware level
+
+7.84

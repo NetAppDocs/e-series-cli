@@ -1,0 +1,57 @@
+---
+permalink: commands-a-z/start-ssdcache-performancemodeling.html
+sidebar: sidebar
+keywords: 
+summary: 'The start ssdCache performanceModeling command starts performance modeling for the SSD cache.'
+---
+= Start SSD cache performance modeling
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start ssdCache performanceModeling` command starts performance modeling for the SSD cache.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Support Admin role.
+
+== Context
+
+Performance modeling monitors and measures I/O activity for a period of time and estimates performance for various SSD cache sizes. Performance is estimated using two metrics: cache hit percentage and average response time. The performance modeling data is not available until you stop the operation using the `stop ssdCache performanceModeling` command.
+
+== Syntax
+
+----
+start ssdCache [ssdCacheName] performanceModeling
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`ssdCache`
+a|
+The name of the SSD cache for which you want to model performance. Enclose the SSD cache name in square brackets ([ ]). If the SSD cache name contains special characters or consists only of numbers, you must enclose the SSD cache name in double quotation marks (" ") inside square brackets.
+|===
+
+== Notes
+
+Performance modeling ends and the performance modeling data is available when one of the following conditions occurs:
+
+* Run the `stop ssdCache performanceModeling` command.
+* Retrieve the performance modeling data using the storage management software.
+
+Performance modeling ends, but no data is available when one of the following conditions occurs:
+
+* You reboot the controller.
+* You make any changes to the SSD cache configuration.
+* The state of the SSD cache changes.
+
+== Minimum firmware level
+
+7.84

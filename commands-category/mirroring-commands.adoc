@@ -1,0 +1,82 @@
+---
+permalink: commands-category/mirroring-commands.html
+sidebar: sidebar
+keywords:
+summary: ''
+---
+= Mirroring commands
+:icons: font
+:imagesdir: ./media/
+
+
+== Asynchronous mirroring commands
+
+link:../commands-a-z/activate-asynchronous-mirroring.html[Activate asynchronous mirroring]
+
+link:../commands-a-z/add-volume-asyncmirrorgroup.html[Add volume to asynchronous mirror group]
+
+link:../commands-a-z/stop-asyncmirrorgroup-rolechange.html[Cancel asynchronous mirror group role reversal]
+
+link:../commands-a-z/check-asyncmirrorgroup-repositoryconsistency.html[Check asynchronous mirror group consistency]
+
+link:../commands-a-z/clear-asyncmirrorfault.html[Clear asynchronous mirroring fault]
+
+link:../commands-a-z/create-asyncmirrorgroup.html[Create asynchronous mirror group]
+
+link:../commands-a-z/deactivate-storagearray.html[Deactivate asynchronous mirroring]
+
+link:../commands-a-z/delete-asyncmirrorgroup.html[Delete asynchronous mirror group]
+
+link:../commands-a-z/establish-asyncmirror-volume.html[Establish asynchronous mirrored pair]
+
+link:../commands-a-z/remove-asyncmirrorgroup.html[Remove incomplete asynchronous mirrored pair from asynchronous mirror group]
+
+link:../commands-a-z/remove-volume-asyncmirrorgroup.html[Remove volume from asynchronous mirror group]
+
+link:../commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.html[Reset asynchronous mirror group statistics]
+
+link:../commands-a-z/reset-iscsiipaddress.html[Reset iSCSI IP address]
+
+link:../commands-a-z/resume-asyncmirrorgroup.html[Resume asynchronous mirror group]
+
+link:../commands-a-z/save-storagearray-arvmstats-asyncmirrorgroup.html[Save asynchronous mirror group statistics]
+
+link:../commands-a-z/set-asyncmirrorgroup.html[Set asynchronous mirror group]
+
+link:../commands-a-z/show-asyncmirrorgroup-summary.html[Show asynchronous mirror groups]
+
+link:../commands-a-z/show-asyncmirrorgroup-synchronizationprogress.html[Show asynchronous mirror group synchronization progress]
+
+link:../commands-a-z/start-asyncmirrorgroup-synchronize.html[Start asynchronous mirroring synchronization]
+
+link:../commands-a-z/suspend-asyncmirrorgroup.html[Suspend asynchronous mirror group]
+
+link:../commands-a-z/diagnose-asyncmirrorgroup.html[Test asynchronous mirror group connectivity]
+
+== Synchronous mirroring commands
+
+link:../commands-a-z/activate-synchronous-mirroring.html[Activate Synchronous Mirroring]
+
+link:../commands-a-z/check-syncmirror.html[Check synchronous mirroring status]
+
+link:../commands-a-z/create-syncmirror.html[Create synchronous mirroring]
+
+link:../commands-a-z/deactivate-storagearray-feature.html[Deactivate synchronous mirroring]
+
+link:../commands-a-z/diagnose-syncmirror.html[Diagnose synchronous mirroring]
+
+link:../commands-a-z/recreate-storagearray-mirrorrepository.html[Re-create synchronous mirroring repository volume]
+
+link:../commands-a-z/remove-syncmirror.html[Remove synchronous mirroring]
+
+link:../commands-a-z/resume-syncmirror.html[Resume synchronous mirroring]
+
+link:../commands-a-z/set-syncmirror.html[Set synchronous mirroring]
+
+link:../commands-a-z/show-syncmirror-candidates.html[Show synchronous mirroring volume candidates]
+
+link:../commands-a-z/show-syncmirror-synchronizationprogress.html[Show synchronous mirroring volume synchronization progress]
+
+link:../commands-a-z/start-syncmirror-primary-synchronize.html[Start synchronous mirroring synchronization]
+
+link:../commands-a-z/suspend-syncmirror-primaries.html[Suspend synchronous mirroring]

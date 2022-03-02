@@ -1,0 +1,108 @@
+---
+permalink: commands-a-z/smcli-autosupportconfig-show.html
+sidebar: sidebar
+keywords: 
+summary: 'The SMcli -autoSupportConfig show command displays the AutoSupport bundle collection settings for the management domain. These settings apply to all of the storage arrays in your management domain for which you have enabled AutoSupport.'
+---
+= Display AutoSupport bundle collection settings
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `SMcli -autoSupportConfig show` command displays the AutoSupport bundle collection settings for the management domain. These settings apply to all of the storage arrays in your management domain for which you have enabled AutoSupport.
+
+== Supported Arrays
+
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+
+== Context
+
+The command output from this command shows the following configuration information:
+
+* The activation status for this management domain of the AutoSupport feature, the AutoSupport OnDemand feature, and the AutoSupport Remote Diagnostics feature
+* Delivery parameters that depend on the configured delivery method:
+ ** Delivery method is SMTP: Destination email address, mail relay server, and sender email address are shown
+ ** Delivery method is HTTP or HTTPs:
+  *** Direct connection - destination IP address is shown
+  *** Proxy server connection - Host address, port number, and authentication details are shown
+  *** Automatic proxy configuration script (PAC) connection - script location is shown
+* A table that lists, for each storage array, the name of the array, whether or not it is an ASUP-capable array, the chassis serial numbers, and the IP addresses for the controllers in the array
+
+== Context
+
+[NOTE]
+====
+This command is an SMcli command, not a script command. You must run this command from a command line. You cannot run this command from the script editor in the storage management software.
+====
+
+[NOTE]
+====
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+====
+
+== Syntax
+
+----
+SMcli -autoSupportConfig show
+----
+
+== Parameters
+
+None.
+
+== Minimum Firmware Level
+
+8.25
+
+== Example output for the activation statuses
+
+----
+The AutoSupport feature is activated on this storage management station.
+The AutoSupport OnDemand feature is de-activated on this storage management station.
+The AutoSupport Remote Diagnostics feature is de-activated on this storage management station.
+----
+
+== Example output for the SMTP delivery method
+
+----
+Delivery method: SMTP
+Destination email address:  http://asupserver.corp.netapp.com/put/AsupPut/
+Mail relay server: server.eng.netapp.com
+Sender email address:  user@netapp.com
+----
+
+== Example output for the HTTP or HTTPS delivery method with a direct connection
+
+----
+Delivery method:  HTTP
+Destination IP address:  http://asupserver.corp.netapp.com/put/AsupPut/
+Connection:  Direct
+----
+
+== Example output for the HTTP delivery method with a proxy connection
+
+----
+Connection:  Proxy server
+Host Address:  10.227.76.123
+Port number: 8080
+Authentication required: Yes
+User name: admin
+Password: **********
+----
+
+== Example output for the HTTP delivery method with an automatic proxy configuration script (PAC)
+
+----
+Connection: Automatic proxy configuration script (PAC)
+Script location: http://esgweb.eng.netapp.com/~user/proxy.pac
+----
+
+== Example output for array table (all delivery methods)
+
+----
+
+Name  AutoSupport Capable   Chassis Serial Number   IP Address
+SA_1  Yes (enabled)         SX94500434              10.113.173.123, 10.113.173.456
+SA_2  Yes (disabled)        SX94607107              10.113.174.789, 10.113.174.345
+SA_3  No                    Not available           10.113.59.58, 10.113.59.59
+----

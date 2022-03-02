@@ -1,0 +1,111 @@
+---
+permalink: get-started/structure-of-a-script-command.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Structure of a script command
+:icons: font
+:imagesdir: ./media/
+
+All script commands have the following structure:
+
+----
+
+      *command operand-data* (*statement-data*)
+----
+
+* `command` identifies the action to be performed.
+* `operand-data` represents the objects associated with a storage array that you want to configure or manage.
+* `statement-data` provides the information needed to perform the command.
+
+The syntax for `operand-data` has the following structure:
+
+----
+(*object-type* | all *object-types* | [*qualifier*] (*object-type* [*identifier*] (*object-type* [*identifier*] | *object-types* [*identifier-list*])))
+----
+
+An object can be identified in four ways:
+
+* Object type -- Use when the command is not referencing a specific object.
+* `all` parameter prefix -- Use when the command is referencing all of the objects of the specified type in the storage array (for example, `allVolumes`).
+* Square brackets -- Use when performing a command on a specific object to identify the object (for example, `volume [engineering]`).
+* A list of identifiers -- Use to specify a subset of objects. Enclose the object identifiers in square brackets (for example, `volumes [sales engineering marketing]`).
+
+A qualifier is required if you want to include additional information to describe the objects.
+
+The object type and the identifiers that are associated with each object type are listed in this table.
+
+|===
+| Object Type| Identifier
+a|
+`controller`
+a|
+a or b
+a|
+`drive`
+a|
+For enclosures with drawers, use tray ID, drawer ID, and slot ID. Alternatively, just tray ID and slot ID.
+a|
+`replacementDrive`
+a|
+For enclosures with drawers, use tray ID, drawer ID, and slot ID. Alternatively, just tray ID and slot ID.
+a|
+`driveChannel`
+a|
+Drive channel identifier
+a|
+`host`
+a|
+User label
+a|
+`hostChannel`
+a|
+Host channel identifier
+a|
+`hostGroup`
+a|
+User label
+a|
+`hostPort`
+a|
+User label
+a|
+`iscsiInitiator`
+a|
+User label or iSCSI Qualified Name (IQN)
+a|
+`iscsiTarget`
+a|
+User label or IQN
+a|
+`storageArray`
+a|
+Not applicable
+a|
+`tray`
+a|
+Tray ID
+a|
+`volume`
+a|
+Volume user label or volume World Wide Identifier (WWID) (`set` command only)
+a|
+`volumeCopy`
+a|
+Target volume user label and, optionally, the source volume user label
+a|
+`volumeGroup`
+a|
+User label
+
+Valid characters are alphanumeric, a hyphen, and an underscore.
+
+|===
+Statement data is in the form of:
+
+* Parameter = value (such as `raidLevel=5`)
+* Parameter-name (such as `batteryInstallDate`)
+* Operation-name (such as `redundancyCheck`)
+
+A user-defined entry (such as user label) is called a variable. In the syntax, it is shown in italic (such as `trayID` or `volumeGroupName`).

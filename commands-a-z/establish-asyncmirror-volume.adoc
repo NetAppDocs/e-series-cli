@@ -1,0 +1,67 @@
+---
+permalink: commands-a-z/establish-asyncmirror-volume.html
+sidebar: sidebar
+keywords: 
+summary: 'The establish asyncMirror volume command completes an asynchronous mirrored pair on the remote storage array by adding a secondary volume to an existing asynchronous mirror group.'
+---
+= Establish asynchronous mirrored pair
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `establish asyncMirror volume` command completes an asynchronous mirrored pair on the remote storage array by adding a secondary volume to an existing asynchronous mirror group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+Before you run this command, the asynchronous mirror group must exist and the primary volume must exist in the asynchronous mirror group. After this command successfully completes, asynchronous mirroring starts between the primary volume and the secondary volume.
+
+The two volumes that comprise an asynchronous mirrored pair function as a single entity. Establishing an asynchronous mirrored pair allows you to perform actions on the entire mirrored pair versus the two individual volumes.
+
+== Syntax
+
+----
+establish asyncMirror volume="secondaryVolumeName"
+asyncMirrorGroup="asyncMirrorGroupName"
+primaryVolume="primaryVolumeName"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`volume`
+a|
+The name of an existing volume on the remote storage array that you want to use for the secondary volume. Enclose the volume name in double quotation marks (" ").
+
+a|
+`asyncMirrorGroup`
+a|
+The name of an existing asynchronous mirror group that you want to use to contain the asynchronous mirrored pair. Enclose the asynchronous mirror group name in double quotation marks (" ").
+
+a|
+`primaryVolume`
+a|
+The name of an existing volume on the local storage array that you want to use for the primary volume. Enclose the volume name in double quotation marks (" ").
+
+|===
+
+== Notes
+
+An asynchronous mirrored pair is comprised of two volumes, a primary volume and a secondary volume, that contain identical copies of the same data. The mirrored pair is a part of an asynchronous mirror group, which allows the mirrored pair to synchronize at the same time as any other mirrored pairs within the asynchronous mirror group.
+
+You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Names can have a maximum of 30 characters.
+
+When you choose the primary volume and the secondary volume, the secondary volume must be of equal or greater size than the primary volume. The RAID level of the secondary volume does not have to be the same as the primary volume.
+
+== Minimum firmware level
+
+7.84

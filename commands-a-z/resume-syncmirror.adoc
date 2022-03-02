@@ -1,0 +1,72 @@
+---
+permalink: commands-a-z/resume-syncmirror.html
+sidebar: sidebar
+keywords: 
+summary: 'The resume syncMirror command resumes a suspended synchronous mirroring operation.'
+---
+= Resume synchronous mirroring
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `resume syncMirror` command resumes a suspended synchronous mirroring operation.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+In previous versions of this command, the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `syncMirror`.
+====
+
+== Syntax
+
+----
+resume syncMirror (primary [volumeName] |
+primaries [volumeName1 ... volumeNameN])
+[writeConsistency=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`primary`
+a|
+The name of the primary volume for which you want to resume a Synchronous Mirroring operation. Enclose the primary volume name in square brackets ([ ]). If the primary volume name has special characters or numbers, you must enclose the primary volume name in double quotation marks (" ") inside square brackets.
+
+a|
+`primaries`
+a|
+The names of several primary volumes for which you want to resume a Synchronous Mirroring operation. Enter the names of the primary volumes using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Separate each of the names with a space.
+
+If the primary volume names have special characters or consist only of numbers, enter the names using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+a|
+`writeConsistency`
+a|
+The setting to identify the volumes in this command that are in a write-consistency group or are separate. For the volumes to be in the same write-consistency group, set this parameter to `TRUE`. For the volumes to be separate, set this parameter to `FALSE`.
+|===
+
+== Notes
+
+If you set the `writeConsistency` parameter to `TRUE`, the volumes must be in a write-consistency group (or groups). This command resumes all write-consistency groups that contain the volumes. For example, if volumes A, B, and C are in a write-consistency group and they have remote counterparts A`', B`', and C`', the `resume syncMirror volume ["A"] writeConsistency=TRUE` command resumes A-A`', B-B`', and C-C`'.
+
+== Minimum firmware level
+
+6.10

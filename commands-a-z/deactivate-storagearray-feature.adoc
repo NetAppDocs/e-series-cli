@@ -1,0 +1,43 @@
+---
+permalink: commands-a-z/deactivate-storagearray-feature.html
+sidebar: sidebar
+keywords: 
+summary: 'The deactivate storageArray feature command deactivates the synchronous mirroring feature, disassembles the mirror repository volume, and releases the controller owner of the secondary volume.'
+---
+= Deactivate synchronous mirroring
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `deactivate storageArray feature` command deactivates the synchronous mirroring feature, disassembles the mirror repository volume, and releases the controller owner of the secondary volume.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin or Support Admin role.
+
+== Context
+
+The controller host port that is dedicated to the secondary volume is available for host data transfers.
+
+[NOTE]
+====
+In previous versions of this command the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `syncMirror`.
+====
+
+== Syntax
+
+----
+deactivate storageArray feature=syncMirror
+----
+
+== Parameters
+
+None.
+
+== Minimum firmware level
+
+6.10

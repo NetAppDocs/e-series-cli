@@ -1,0 +1,644 @@
+---
+permalink: commands-category/e2700-and-e5600-commands.html
+sidebar: sidebar
+keywords:
+summary: ''
+---
+= E2700 and E5600 commands
+:icons: font
+:imagesdir: ./media/
+
+
+link:../commands-a-z/activate-asynchronous-mirroring.html[Activate asynchronous mirroring]
+
+link:../commands-a-z/activate-synchronous-mirroring.html[Activate Synchronous Mirroring]
+
+link:../commands-a-z/add-drives-to-ssd-cache.html[Add drives to SSD cache]
+
+link:../commands-a-z/set-consistencygroup-addcgmembervolume.html[Add member to consistency group]
+
+link:../commands-a-z/add-volume-asyncmirrorgroup.html[Add volume to asynchronous mirror group]
+
+link:../commands-a-z/autoconfigure-storagearray.html[Autoconfigure storage array]
+
+link:../commands-a-z/autoconfigure-storagearray-hotspares.html[Autoconfigure storage array hot spares]
+
+link:../commands-a-z/stop-asyncmirrorgroup-rolechange.html[Cancel asynchronous mirror group role reversal]
+
+link:../commands-a-z/smcli-autosupportlog.html[Capture or view an AutoSupport log]
+
+link:../commands-a-z/change-ssd-cache-application-type.html[Change SSD cache application type]
+
+link:../commands-a-z/check-asyncmirrorgroup-repositoryconsistency.html[Check asynchronous mirror group consistency]
+
+link:../commands-a-z/check-repositoryconsistency.html[Check repository consistency]
+
+link:../commands-a-z/check-storagearray-connectivity.html[Check storage array connectivity]
+
+link:../commands-a-z/check-syncmirror.html[Check synchronous mirroring status]
+
+link:../commands-a-z/check-volume-parity.html[Check volume parity]
+
+link:../commands-a-z/clear-asyncmirrorfault.html[Clear asynchronous mirroring fault]
+
+link:../commands-a-z/clear-alldrivechannels-stats.html[Clear drive channel statistics]
+
+link:../commands-a-z/clear-storagearray-configuration.html[Clear storage array configuration]
+
+link:../commands-a-z/clear-storagearray-eventlog.html[Clear storage array event log]
+
+link:../commands-a-z/clear-storagearray-firmwarependingarea.html[Clear storage array firmware pending area]
+
+link:../commands-a-z/clear-storagearray-recoverymode.html[Clear storage array recovery mode]
+
+link:../commands-a-z/clear-volume-reservations.html[Clear volume reservations]
+
+link:../commands-a-z/clear-volume-unreadablesectors.html[Clear volume unreadable sectors]
+
+link:../commands-a-z/create-asyncmirrorgroup.html[Create asynchronous mirror group]
+
+link:../commands-a-z/create-consistencygroup.html[Create consistency group]
+
+link:../commands-a-z/create-cgsnapimage-consistencygroup.html[Create consistency group snapshot image]
+
+link:../commands-a-z/create-cgsnapvolume.html[Create consistency group snapshot volume]
+
+link:../commands-a-z/create-mapping-cgsnapvolume.html[Create consistency group snapshot volume mapping]
+
+link:../commands-a-z/create-diskpool.html[Create disk pool]
+
+link:../commands-a-z/create-host.html[Create host]
+
+link:../commands-a-z/create-hostgroup.html[Create host group]
+
+link:../commands-a-z/create-hostport.html[Create host port]
+
+link:../commands-a-z/create-iscsiinitiator.html[Create iSCSI initiator]
+
+link:../commands-a-z/create-raid-volume-automatic-drive-select.html[Create RAID volume (automatic drive select)]
+
+link:../commands-a-z/create-raid-volume-free-extent-based-select.html[Create RAID volume (free extent based select)]
+
+link:../commands-a-z/create-raid-volume-manual-drive-select.html[Create RAID volume (manual drive select)]
+
+link:../commands-a-z/create-read-only-snapshot-volume.html[Create read-only snapshot volume]
+
+link:../commands-a-z/create-snapgroup.html[Create snapshot group]
+
+link:../commands-a-z/create-snapimage.html[Create snapshot image]
+
+link:../commands-a-z/create-snapshot-volume.html[Create snapshot volume]
+
+link:../commands-a-z/create-ssdcache.html[Create SSD cache]
+
+link:../commands-a-z/create-storagearray-securitykey.html[Create storage array security key]
+
+link:../commands-a-z/create-syncmirror.html[Create synchronous mirroring]
+
+link:../commands-a-z/create-volumecopy.html[Create volume copy]
+
+link:../commands-a-z/create-volumegroup.html[Create volume group]
+
+link:../commands-a-z/create-volume-diskpool.html[Create volume in disk pool]
+
+link:../commands-a-z/deactivate-storagearray.html[Deactivate asynchronous mirroring]
+
+link:../commands-a-z/deactivate-storagearray-feature.html[Deactivate synchronous mirroring]
+
+link:../commands-a-z/delete-asyncmirrorgroup.html[Delete asynchronous mirror group]
+
+link:../commands-a-z/delete-consistencygroup.html[Delete consistency group]
+
+link:../commands-a-z/delete-cgsnapimage-consistencygroup.html[Delete consistency group snapshot image]
+
+link:../commands-a-z/delete-sgsnapvolume.html[Delete consistency group snapshot volume]
+
+link:../commands-a-z/delete-diskpool.html[Delete disk pool]
+
+link:../commands-a-z/delete-host.html[Delete host]
+
+link:../commands-a-z/delete-hostgroup.html[Delete host group]
+
+link:../commands-a-z/delete-hostport.html[Delete host port]
+
+link:../commands-a-z/delete-iscsiinitiator.html[Delete iSCSI initiator]
+
+link:../commands-a-z/delete-snapgroup.html[Delete snapshot group]
+
+link:../commands-a-z/delete-snapimage.html[Delete snapshot image]
+
+link:../commands-a-z/delete-snapvolume.html[Delete snapshot volume]
+
+link:../commands-a-z/delete-ssdcache.html[Delete SSD cache]
+
+link:../commands-a-z/delete-volume.html[Delete volume]
+
+link:../commands-a-z/delete-volume-from-disk-pool.html[Delete volume from disk pool]
+
+link:../commands-a-z/delete-volumegroup.html[Delete volume group]
+
+link:../commands-a-z/diagnose-controller.html[Diagnose controller]
+
+link:../commands-a-z/diagnose-controller.html[Diagnose controller]
+
+link:../commands-a-z/diagnose-controller-iscsihostport.html[Diagnose controller iSCSI host cable]
+
+link:../commands-a-z/diagnose-syncmirror.html[Diagnose synchronous mirroring]
+
+link:../commands-a-z/disable-storagearray-externalkeymanagement-file.html[Disable external security key management]
+
+link:../commands-a-z/disable-storagearray.html[Disable storage array feature]
+
+link:../commands-a-z/smcli-autosupportschedule-show.html[Display AutoSupport message collection schedule]
+
+link:../commands-a-z/smcli-autosupportconfig-show.html[Display AutoSupport bundle collection settings]
+
+link:../commands-a-z/download-drive-firmware.html[Download drive firmware]
+
+link:../commands-a-z/download-tray-firmware-file.html[Download environmental card firmware]
+
+link:../commands-a-z/download-storagearray-drivefirmware-file.html[Download storage array drive firmware]
+
+link:../commands-a-z/download-storagearray-firmware.html[Download storage array firmware/NVSRAM]
+
+link:../commands-a-z/download-storagearray-nvsram.html[Download storage array NVSRAM]
+
+link:../commands-a-z/download-tray-configurationsettings.html[Download tray configuration settings]
+
+link:../commands-a-z/enable-controller-datatransfer.html[Enable controller data transfer]
+
+link:../commands-a-z/enable-diskpool-security.html[Enable disk pool security]
+
+link:../commands-a-z/enable-storagearray-externalkeymanagement-file.html[Enable external security key management]
+
+link:../commands-a-z/set-storagearray-odxenabled.html[Enable or disable ODX]
+
+link:../commands-a-z/smcli-enable-autosupportfeature.html[Enable or disable AutoSupport at the EMW management domain level...]
+
+link:../commands-a-z/smcli-enable-disable-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature at the EMW...]
+
+link:../commands-a-z/smcli-enable-disable-autosupportremotediag.html[Enable or disable the AutoSupport OnDemand Remote Diagnostics feature at...]
+
+link:../commands-a-z/set-storagearray-vaaienabled.html[Enable or disable VAAI]
+
+link:../commands-a-z/enable-storagearray-feature-file.html[Enable storage array feature]
+
+link:../commands-a-z/enable-volumegroup-security.html[Enable volume group security]
+
+link:../commands-a-z/establish-asyncmirror-volume.html[Establish asynchronous mirrored pair]
+
+link:../commands-a-z/export-storagearray-securitykey.html[Export storage array security key]
+
+link:../commands-a-z/import-storagearray-securitykey-file.html[Import storage array security key]
+
+link:../commands-a-z/start-increasevolumecapacity-volume.html[Increase capacity of volume in disk pool or volume group...]
+
+link:../commands-a-z/start-volume-initialize.html[Initialize thin volume]
+
+link:../commands-a-z/load-storagearray-dbmdatabase.html[Load storage array DBM database]
+
+link:../commands-a-z/recopy-volumecopy-target.html[Recopy volume copy]
+
+link:../commands-a-z/recover-disabled-driveports.html[Recover disabled drive ports]
+
+link:../commands-a-z/recover-volume.html[Recover RAID volume]
+
+link:../commands-a-z/recover-sasport-miswire.html[Recover SAS port mis-wire]
+
+link:../commands-a-z/recreate-storagearray-mirrorrepository.html[Re-create synchronous mirroring repository volume]
+
+link:../commands-a-z/reduce-disk-pool-capacity.html[Reduce disk pool capacity]
+
+link:../commands-a-z/remove-drives-from-ssd-cache.html[Remove drives from SSD cache]
+
+link:../commands-a-z/remove-asyncmirrorgroup.html[Remove incomplete asynchronous mirrored pair from asynchronous mirror group]
+
+link:../commands-a-z/remove-member-volume-from-consistency-group.html[Remove member volume from consistency group]
+
+link:../commands-a-z/remove-syncmirror.html[Remove synchronous mirroring]
+
+link:../commands-a-z/remove-volumecopy-target.html[Remove volume copy]
+
+link:../commands-a-z/remove-volume-asyncmirrorgroup.html[Remove volume from asynchronous mirror group]
+
+link:../commands-a-z/remove-lunmapping.html[Remove volume LUN mapping]
+
+link:../commands-a-z/set-snapvolume.html[Rename snapshot volume]
+
+link:../commands-a-z/rename-ssd-cache.html[Rename SSD cache]
+
+link:../commands-a-z/repair-volume-parity.html[Repair volume parity]
+
+link:../commands-a-z/replace-drive-replacementdrive.html[Replace drive]
+
+link:../commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.html[Reset asynchronous mirror group statistics]
+
+link:../commands-a-z/smcli-autosupportschedule-reset.html[Reset AutoSupport message collection schedule]
+
+link:../commands-a-z/reset-controller.html[Reset controller]
+
+link:../commands-a-z/reset-drive.html[Reset drive]
+
+link:../commands-a-z/reset-iscsiipaddress.html[Reset iSCSI IP address]
+
+link:../commands-a-z/reset-storagearray-diagnosticdata.html[Reset storage array diagnostic data]
+
+link:../commands-a-z/reset-storagearray-ibstatsbaseline.html[Reset storage array InfiniBand statistics baseline]
+
+link:../commands-a-z/reset-storagearray-iscsistatsbaseline.html[Reset storage array iSCSI baseline]
+
+link:../commands-a-z/reset-storagearray-iserstatsbaseline.html[Reset storage array iSER baseline]
+
+link:../commands-a-z/reset-storagearray-rlsbaseline.html[Reset storage array RLS baseline]
+
+link:../commands-a-z/reset-storagearray-sasphybaseline.html[Reset storage array SAS PHY baseline]
+
+link:../commands-a-z/reset-storagearray-socbaseline.html[Reset storage array SOC baseline]
+
+link:../commands-a-z/reset-storagearray-volumedistribution.html[Reset storage array volume distribution]
+
+link:../commands-a-z/resume-asyncmirrorgroup.html[Resume asynchronous mirror group]
+
+link:../commands-a-z/resume-cgsnapvolume.html[Resume consistency group snapshot volume]
+
+link:../commands-a-z/resume-snapimage-rollback.html[Resume snapshot image rollback]
+
+link:../commands-a-z/resume-snapvolume.html[Resume snapshot volume]
+
+link:../commands-a-z/resume-ssdcache.html[Resume SSD cache]
+
+link:../commands-a-z/resume-syncmirror.html[Resume synchronous mirroring]
+
+link:../commands-a-z/revive-drive.html[Revive drive]
+
+link:../commands-a-z/revive-snapgroup.html[Revive snapshot group]
+
+link:../commands-a-z/revive-snapvolume.html[Revive snapshot volume]
+
+link:../commands-a-z/revive-volumegroup.html[Revive volume group]
+
+link:../commands-a-z/save-storagearray-arvmstats-asyncmirrorgroup.html[Save asynchronous mirror group statistics]
+
+link:../commands-a-z/save-controller-nvsram-file.html[Save controller NVSRAM]
+
+link:../commands-a-z/save-drivechannel-faultdiagnostics-file.html[Save drive channel fault isolation diagnostic status]
+
+link:../commands-a-z/save-alldrives-logfile.html[Save drive log]
+
+link:../commands-a-z/save-ioclog.html[Save input output controller (IOC) dump]
+
+link:../commands-a-z/save-storagearray-autoloadbalancestatistics-file.html[Save auto-load balancing statistics]
+
+link:../commands-a-z/save-storagearray-configuration.html[Save storage array configuration]
+
+link:../commands-a-z/save-storagearray-controllerhealthimage.html[Save storage array controller health image]
+
+link:../commands-a-z/save-storagearray-dbmdatabase.html[Save storage array DBM database]
+
+link:../commands-a-z/save-storagearray-dbmvalidatorinfo.html[Save storage array DBM validator information file]
+
+link:../commands-a-z/save-storage-array-diagnostic-data.html[Save storage array diagnostic data]
+
+link:../commands-a-z/save-storagearray-warningevents.html[Save storage array events]
+
+link:../commands-a-z/save-storagearray-firmwareinventory.html[Save storage array firmware inventory]
+
+link:../commands-a-z/save-storagearray-ibstats.html[Save storage array InfiniBand statistics]
+
+link:../commands-a-z/save-storagearray-iscsistatistics.html[Save storage array iSCSI statistics]
+
+link:../commands-a-z/save-storagearray-iserstatistics.html[Save storage array iSER statistics]
+
+link:../commands-a-z/save-storagearray-performancestats.html[Save storage array performance statistics]
+
+link:../commands-a-z/save-storagearray-rlscounts.html[Save storage array RLS counts]
+
+link:../commands-a-z/save-storagearray-sasphycounts.html[Save storage array SAS PHY counts]
+
+link:../commands-a-z/save-storagearray-soccounts.html[Save storage array SOC counts]
+
+link:../commands-a-z/save-storagearray-statecapture.html[Save storage array state capture]
+
+link:../commands-a-z/save-storagearray-supportdata.html[Save storage array support data]
+
+link:../commands-a-z/save-alltrays-logfile.html[Save tray log]
+
+link:../commands-a-z/smcli-supportbundle-schedule.html[Schedule automatic support bundle collection configuration]
+
+link:../commands-a-z/set-asyncmirrorgroup.html[Set asynchronous mirror group]
+
+link:../commands-a-z/set-consistency-group-attributes.html[Set consistency group attributes]
+
+link:../commands-a-z/set-cgsnapvolume.html[Set consistency group snapshot volume]
+
+link:../commands-a-z/set-controller.html[Set controller]
+
+link:../commands-a-z/set-controller-dnsservers.html[Set controller DNS settings]
+
+link:../commands-a-z/set-controller-ntpservers.html[Set controller NTP settings]
+
+link:../commands-a-z/set-controller-service-action-allowed-indicator.html[Set controller service action allowed indicator]
+
+link:../commands-a-z/set-disk-pool.html[Set disk pool]
+
+link:../commands-a-z/set-disk-pool-modify-disk-pool.html[Set disk pool (modify disk pool)]
+
+link:../commands-a-z/set-tray-drawer.html[Set drawer service action allowed indicator]
+
+link:../commands-a-z/set-drivechannel.html[Set drive channel status]
+
+link:../commands-a-z/set-drive-hotspare.html[Set drive hot spare]
+
+link:../commands-a-z/set-drive-serviceallowedindicator.html[Set drive service action allowed indicator]
+
+link:../commands-a-z/set-drive-operationalstate.html[Set drive state]
+
+link:../commands-a-z/set-event-alert.html[Set event alert filtering]
+
+link:../commands-a-z/set-drive-securityid.html[Set FIPS drive security identifier]
+
+link:../commands-a-z/set-drive-nativestate.html[Set foreign drive to native]
+
+link:../commands-a-z/set-host.html[Set host]
+
+link:../commands-a-z/set-hostchannel.html[Set host channel]
+
+link:../commands-a-z/set-hostgroup.html[Set host group]
+
+link:../commands-a-z/set-hostport.html[Set host port]
+
+link:../commands-a-z/set-storagearray-securitykey.html[Set internal storage array security key]
+
+link:../commands-a-z/set-iscsiinitiator.html[Set iSCSI initiator]
+
+link:../commands-a-z/set-iscsitarget.html[Set iSCSI target properties]
+
+link:../commands-a-z/set-isertarget.html[Set iSER target]
+
+link:../commands-a-z/set-snapvolume-converttoreadwrite.html[Set read-only snapshot volume to read/write volume]
+
+link:../commands-a-z/set-session-erroraction.html[Set session]
+
+link:../commands-a-z/set-snapgroup.html[Set snapshot group attributes]
+
+link:../commands-a-z/set-snapgroup-mediascanenabled.html[Set snapshot group media scan]
+
+link:../commands-a-z/set-snapgroup-increase-decreaserepositorycapacity.html[Set snapshot group repository volume capacity]
+
+link:../commands-a-z/set-snapgroup-enableschedule.html[Set snapshot group schedule]
+
+link:../commands-a-z/set-snapvolume-mediascanenabled.html[Set snapshot volume media scan]
+
+link:../commands-a-z/set-snapvolume-increase-decreaserepositorycapacity.html[Set snapshot volume repository volume capacity]
+
+link:../commands-a-z/set-volume-ssdcacheenabled.html[Set SSD cache for a volume]
+
+link:../commands-a-z/set-storagearray.html[Set storage array]
+
+link:../commands-a-z/set-storagearray-controllerhealthimageallowoverwrite.html[Set storage array controller health image allow overwrite]
+
+link:../commands-a-z/set-storagearray-autoloadbalancingenable.html[Set storage array to enable or disable Automatic Load Balancing...]
+
+link:../commands-a-z/set-storagearray-icmppingresponse.html[Set storage array ICMP response]
+
+link:../commands-a-z/set-storagearray-isnsregistration.html[Set storage array iSNS registration]
+
+link:../commands-a-z/set-storagearray-isnsipv4configurationmethod.html[Set storage array iSNS server IPv4 address]
+
+link:../commands-a-z/set-storagearray-isnsipv6address.html[Set storage array iSNS server IPv6 address]
+
+link:../commands-a-z/set-storagearray-isnslisteningport.html[Set storage array iSNS server listening port]
+
+link:../commands-a-z/set-storagearray-isnsserverrefresh.html[Set storage array iSNS server refresh]
+
+link:../commands-a-z/set-storagearray-learncycledate-controller.html[Set storage array controller battery learn cycle]
+
+link:../commands-a-z/set-storagearray-redundancymode.html[Set storage array redundancy mode]
+
+link:../commands-a-z/set-storagearray-time.html[Set storage array time]
+
+link:../commands-a-z/set-storagearray-traypositions.html[Set storage array tray positions]
+
+link:../commands-a-z/set-storagearray-unnameddiscoverysession.html[Set storage array unnamed discovery session]
+
+link:../commands-a-z/set-syncmirror.html[Set synchronous mirroring]
+
+link:../commands-a-z/set-thin-volume-attributes.html[Set thin volume attributes]
+
+link:../commands-a-z/set-tray-identification.html[Set tray identification]
+
+link:../commands-a-z/set-tray-serviceallowedindicator.html[Set tray service action allowed indicator]
+
+link:../commands-a-z/set-volumes.html[Set volume attributes for a volume in a disk pool...]
+
+link:../commands-a-z/set-volume-group-attributes-for-volume-in-a-volume-group.html[Set volume attributes for a volume in a volume group...]
+
+link:../commands-a-z/set-volumecopy-target.html[Set volume copy]
+
+link:../commands-a-z/set-volumegroup.html[Set volume group]
+
+link:../commands-a-z/set-volumegroup-forcedstate.html[Set volume group forced state]
+
+link:../commands-a-z/set-volume-logicalunitnumber.html[Set volume mapping]
+
+link:../commands-a-z/show-asyncmirrorgroup-summary.html[Show asynchronous mirror groups]
+
+link:../commands-a-z/show-asyncmirrorgroup-synchronizationprogress.html[Show asynchronous mirror group synchronization progress]
+
+link:../commands-a-z/show-storagearray-autosupport.html[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
+
+link:../commands-a-z/show-blockedeventalertlist.html[Show blocked events]
+
+link:../commands-a-z/show-consistencygroup.html[Show consistency group]
+
+link:../commands-a-z/show-cgsnapimage.html[Show consistency group snapshot image]
+
+link:../commands-a-z/show-controller.html[Show controller]
+
+link:../commands-a-z/show-controller-nvsram.html[Show controller NVSRAM]
+
+link:../commands-a-z/show-iscsisessions.html[Show current iSCSI sessions]
+
+link:../commands-a-z/show-diskpool.html[Show disk pool]
+
+link:../commands-a-z/show-alldrives.html[Show drive]
+
+link:../commands-a-z/show-drivechannel-stats.html[Show drive channel statistics]
+
+link:../commands-a-z/show-alldrives-downloadprogress.html[Show drive download progress]
+
+link:../commands-a-z/show-alldrives-performancestats.html[Show drive performance statistics]
+
+link:../commands-a-z/show-allhostports.html[Show host ports]
+
+link:../commands-a-z/show-replaceabledrives.html[Show replaceable drives]
+
+link:../commands-a-z/show-snapgroup.html[Show snapshot group]
+
+link:../commands-a-z/show-snapimage.html[Show snapshot image]
+
+link:../commands-a-z/show-snapvolume.html[Show snapshot volumes]
+
+link:../commands-a-z/show-ssd-cache.html[Show SSD cache]
+
+link:../commands-a-z/show-ssd-cache-statistics.html[Show SSD cache statistics]
+
+link:../commands-a-z/show-storagearray.html[Show storage array]
+
+link:../commands-a-z/show-storagearray-autoconfiguration.html[Show storage array auto configuration]
+
+link:../commands-a-z/show-storagearray-controllerhealthimage.html[Show storage array controller health image]
+
+link:../commands-a-z/show-storagearray-dbmdatabase.html[Show storage array DBM database]
+
+link:../commands-a-z/show-storagearray-hosttopology.html[Show storage array host topology]
+
+link:../commands-a-z/show-storagearray-lunmappings.html[Show storage array LUN mappings]
+
+link:../commands-a-z/show-storagearray-iscsinegotiationdefaults.html[Show storage array negotiation defaults]
+
+link:../commands-a-z/show-storagearray-odxsetting.html[Show storage array ODX setting]
+
+link:../commands-a-z/show-storagearray-powerinfo.html[Show storage array power information]
+
+link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.html[Show storage array unconfigured iSCSI initiators]
+
+link:../commands-a-z/show-storagearray-unreadablesectors.html[Show storage array unreadable sectors]
+
+link:../commands-a-z/show-textstring.html[Show string]
+
+link:../commands-a-z/show-syncmirror-candidates.html[Show synchronous mirroring volume candidates]
+
+link:../commands-a-z/show-syncmirror-synchronizationprogress.html[Show synchronous mirroring volume synchronization progress]
+
+link:../commands-a-z/show-volume.html[Show thin volume]
+
+link:../commands-a-z/show-volume-summary.html[Show volume]
+
+link:../commands-a-z/show-volume-actionprogress.html[Show volume action progress]
+
+link:../commands-a-z/show-volumecopy.html[Show volume copy]
+
+link:../commands-a-z/show-volumecopy-sourcecandidates.html[Show volume copy source candidates]
+
+link:../commands-a-z/show-volumecopy-source-targetcandidates.html[Show volume copy target candidates]
+
+link:../commands-a-z/show-volumegroup.html[Show volume group]
+
+link:../commands-a-z/show-volumegroup-exportdependencies.html[Show volume group export dependencies]
+
+link:../commands-a-z/show-volumegroup-importdependencies.html[Show volume group import dependencies]
+
+link:../commands-a-z/show-volume-performancestats.html[Show volume performance statistics]
+
+link:../commands-a-z/show-volume-reservations.html[Show volume reservations]
+
+link:../commands-a-z/smcli-autosupportconfig.html[Specify the AutoSupport delivery method]
+
+link:../commands-a-z/start-asyncmirrorgroup-synchronize.html[Start asynchronous mirroring synchronization]
+
+link:../commands-a-z/smcli-autosupportconfig.html[Specify the AutoSupport delivery method]
+
+link:../commands-a-z/start-cgsnapimage-rollback.html[Start consistency group snapshot rollback]
+
+link:../commands-a-z/start-controller.html[Start controller trace]
+
+link:../commands-a-z/start-diskpool-locate.html[Start disk pool locate]
+
+link:../commands-a-z/start-drivechannel-faultdiagnostics.html[Start drive channel fault isolation diagnostics]
+
+link:../commands-a-z/start-drivechannel-locate.html[Start drive channel locate]
+
+link:../commands-a-z/start-drive-initialize.html[Start drive initialize]
+
+link:../commands-a-z/start-drive-locate.html[Start drive locate]
+
+link:../commands-a-z/start-drive-reconstruct.html[Start drive reconstruction]
+
+link:../commands-a-z/start-ioclog.html[Start input output controller (IOC) dump]
+
+link:../commands-a-z/start-controller-iscsihostport-dhcprefresh.html[Start iSCSI DHCP refresh]
+
+link:../commands-a-z/start-secureerase-drive.html[Start FDE secure drive erase]
+
+link:../commands-a-z/start-snapimage-rollback.html[Start snapshot image rollback]
+
+link:../commands-a-z/start-ssdcache-locate.html[Start SSD cache locate]
+
+link:../commands-a-z/start-ssdcache-performancemodeling.html[Start SSD cache performance modeling]
+
+link:../commands-a-z/start-storagearray-configdbdiagnostic.html[Start storage array configuration database diagnostic]
+
+link:../commands-a-z/start-storagearray-controllerhealthimage-controller.html[Start storage array controller health image]
+
+link:../commands-a-z/start-storagearray-isnsserverrefresh.html[Start storage array iSNS server refresh]
+
+link:../commands-a-z/start-storagearray-locate.html[Start storage array locate]
+
+link:../commands-a-z/start-syncmirror-primary-synchronize.html[Start synchronous mirroring synchronization]
+
+link:../commands-a-z/start-tray-locate.html[Start tray locate]
+
+link:../commands-a-z/start-volumegroup-defragment.html[Start volume group defragment]
+
+link:../commands-a-z/start-volumegroup-export.html[Start volume group export]
+
+link:../commands-a-z/start-volumegroup-import.html[Start volume group import]
+
+link:../commands-a-z/start-volumegroup-locate.html[Start volume group locate]
+
+link:../commands-a-z/start-volume-initialization.html[Start volume initialization]
+
+link:../commands-a-z/stop-cgsnapimage-rollback.html[Stop consistency group snapshot rollback]
+
+link:../commands-a-z/stop-cgsnapvolume.html[Stop consistency group snapshot volume]
+
+link:../commands-a-z/stop-diskpool-locate.html[Stop disk pool locate]
+
+link:../commands-a-z/stop-drivechannel-faultdiagnostics.html[Stop drive channel fault isolation diagnostics]
+
+link:../commands-a-z/stop-drivechannel-locate.html[Stop drive channel locate]
+
+link:../commands-a-z/stop-drive-locate.html[Stop drive locate]
+
+link:../commands-a-z/stop-drive-replace.html[Stop drive replace]
+
+link:../commands-a-z/stop-consistencygroup-pendingsnapimagecreation.html[Stop pending snapshot images on consistency group]
+
+link:../commands-a-z/stop-pendingsnapimagecreation.html[Stop snapshot group pending snapshot images]
+
+link:../commands-a-z/stop-snapimage-rollback.html[Stop snapshot image rollback]
+
+link:../commands-a-z/stop-snapvolume.html[Stop snapshot volume]
+
+link:../commands-a-z/stop-ssdcache-locate.html[Stop SSD cache locate]
+
+link:../commands-a-z/stop-ssdcache-performancemodeling.html[Stop SSD cache performance modeling]
+
+link:../commands-a-z/stop-storagearray-configdbdiagnostic.html[Stop storage array configuration database diagnostic]
+
+link:../commands-a-z/stop-storagearray-drivefirmwaredownload.html[Stop storage array drive firmware download]
+
+link:../commands-a-z/stop-storagearray-iscsisession.html[Stop storage array iSCSI session]
+
+link:../commands-a-z/stop-storagearray-locate.html[Stop storage array locate]
+
+link:../commands-a-z/stop-tray-locate.html[Stop tray locate]
+
+link:../commands-a-z/stop-volumecopy-target-source.html[Stop volume copy]
+
+link:../commands-a-z/stop-volumegroup-locate.html[Stop volume group locate]
+
+link:../commands-a-z/suspend-asyncmirrorgroup.html[Suspend asynchronous mirror group]
+
+link:../commands-a-z/suspend-ssdcache.html[Suspend SSD cache]
+
+link:../commands-a-z/suspend-syncmirror-primaries.html[Suspend synchronous mirroring]
+
+link:../commands-a-z/smcli-alerttest.html[Test alerts]
+
+link:../commands-a-z/diagnose-asyncmirrorgroup.html[Test asynchronous mirror group connectivity]
+
+link:../commands-a-z/smcli-autosupportconfig-test.html[Test the AutoSupport configuration]
+
+link:../commands-a-z/validate-storagearray-securitykey.html[Validate storage array security key]

@@ -1,0 +1,330 @@
+---
+permalink: commands-a-z/show-storagearray.html
+sidebar: sidebar
+keywords: 
+summary: 'The show storageArray command returns configuration information about the storage array.'
+---
+= Show storage array
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show storageArray` command returns configuration information about the storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Context
+
+The parameters return lists of values for the components and features in the storage array. You can enter the command with a single parameter or more than one parameter. If you enter the command without any parameters, the entire storage array profile is shown (which is the same information as if you entered the `profile` parameter).
+
+== Syntax
+
+----
+show storageArray
+[autoSupport| autoSupportConfig | profile |
+batteryAge | connections | defaultHostType | healthStatus |
+hostTypeTable | hotSpareCoverage | features | time |
+volumeDistribution | longRunningOperations | summary | preferredVolumeOwners |
+iscsiNegotiationDefaults | unconfiguredIscsiInitiators | autoLoadBalancingEnable |
+cacheMirrorDataAssuranceCheckEnable | hostConnectivityReporting]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`autoLoadBalancingEnable`
+a|
+The parameter to return the enablement status of the Automatic Load Balancing feature.
+[NOTE]
+====
+When the Automatic Load Balancing feature is enabled, the Host Connectivity Reporting feature will also be enabled.
+====
+
+a|
+`autoSupport`
+a|
+
+[NOTE]
+====
+This parameter is only valid for E2800 or E5700 storage arrays running with an `https` client type. For E2800 or E5700 storage arrays running with a client type, use the `autoSupportConfig` parameter.
+====
+
+a|
+`autoSupportConfig`
+a|
+The parameter to return information about the current state of the operation to automatically collect support data. The following information is returned:
+
+* Whether the operation is enabled or disabled
+* The location of the folder where the support data file is located
+
+[NOTE]
+====
+This parameter is only valid for E2800 or E5700 storage arrays running with a `symbol` client type. For E2800 or E5700 storage arrays running with an `https` client type, use the `autoSupport` parameter.
+====
+
+a|
+`batteryAge`
+a|
+The parameter to show the status, the age of the battery in days, and the number of days until the battery needs to be replaced. The information for both batteries is shown.
+a|
+`cacheMirrorDataAssuranceCheckEnable`
+a|
+The parameter to returns the enablement status of the cache mirror data assurance feature.
+a|
+`connections`
+a|
+The parameter to show a list of where the drive channel ports are located and where the drive channels are connected.
+a|
+`defaultHostType`
+a|
+The parameter to show the default host type and the host type index.
+a|
+`features`
+a|
+The parameter to show the feature configuration of the storage array.
+a|
+`healthStatus`
+a|
+The parameter to show the health, logical properties, and physical component properties of the storage array.
+a|
+`hostConnectivityReporting`
+a|
+The parameter to return the enablement status of the host connectivity reporting feature.
+a|
+`hostTypeTable`
+a|
+The parameter to show a table of all of the host types that are known to the controller. Each row in the table shows a host type index and the platform that the host type index represents.
+a|
+`hotSpareCoverage`
+a|
+The parameter to show information about which volumes of the storage array have hot spare coverage and which volumes do not.
+a|
+`iscsiNegotiationDefaults`
+a|
+The parameter to return information about connection-level settings that are subject to initiator-target negotiation.
+a|
+`longRunningOperations`
+a|
+The parameter to show the long running operations for each volume group and each volume in the storage array.
+
+The `longRunningOperation` parameter returns this information:
+
+* Name of the volume group or volume
+* Long running operation
+* Status
+* % complete
+* Time left
+
+a|
+`preferredVolumeOwners`
+a|
+The parameter to show the preferred controller owner for each volume in the storage array.
+a|
+`profile`
+a|
+The parameter to show all of the properties of the logical components and the physical components that comprise the storage array. The information appears in several screens.
+
+[NOTE]
+====
+The profile parameter returns detailed information about the storage array. The information covers several screens on a display. You might need to increase the size of your display buffer to see all the information. Because this information is so detailed, you might want to save the output of this parameter to a file.
+====
+
+Use the following command to save the profile output to a file:
+
+----
+c:\...\smX\client>smcli 123.45.67.88
+123.45.67.89 -c "show storagearray profile;"
+-o "c:\folder\storagearray
+profile.txt"
+----
+
+a|
+`summary`
+a|
+The parameter to show a concise list of information about the storage array configuration.
+a|
+`time`
+a|
+The parameter to show the current time to which both controllers in the storage array are set.
+a|
+`unconfiguredIscsiInitiators`
+a|
+The parameter to return a list of initiators that have been detected by the storage array but are not yet configured into the storage array topology.
+a|
+`volumeDistribution`
+a|
+The parameter to show the current controller owner for each volume in the storage array.
+|===
+
+== Notes
+
+The `profile` parameter shows detailed information about the storage array. The information appears on several screens on a display monitor. You might need to increase the size of your display buffer to see all of the information. Because this information is so detailed, you might want to save the output of this parameter to a file. To save the output to a file, run the `show storageArray` command that looks like this example.
+
+----
+-c "show storageArray profile;" -o "c:\\folder\\storageArrayProfile.txt"
+----
+
+The previous command syntax is for a host that is running a Windows operating system. The actual syntax varies depending on your operating system.
+
+When you save information to a file, you can use the information as a record of your configuration and as an aid during recovery.
+
+[NOTE]
+====
+While the storage array profile returns a large amount of data that is all clearly labeled, what's new in the 8.41 release is the additional wear life reporting information for SSD drives in E2800 or E5700 storage arrays. While previously the wear life reporting included information on average erase count and spare blocks remaining, it now includes the percent endurance used. The percent endurance used is the amount of data written to the SSD drives to date divided by the total theoretical write limit for the drives.
+====
+
+The `batteryAge` parameter returns information in this form.
+
+----
+Battery status: Optimal
+    Age: 1 day(s)
+    Days until replacement: 718 day(s)
+----
+
+The newer controller trays do not support the `batteryAge` parameter.
+
+The `defaultHostType` parameter returns information in this form.
+
+----
+Default host type: Linux (Host type index 6)
+----
+
+The `healthStatus` parameter returns information in this form.
+
+----
+Storage array health status = optimal.
+----
+
+The `hostTypeTable` parameter returns information in this form.
+
+----
+NVSRAM HOST TYPE INDEX DEFINITIONS
+HOST TYPE                         ALUA/AVT STATUS   ASSOCIATED INDEXS
+AIX MPIO                          Disabled          9
+AVT_4M                            Enabled           5
+Factory Default                   Disabled          0
+HP-UX                             Enabled           15
+Linux (ATTO)                      Enabled           24
+Linux (DM-MP)                     Disabled          6
+Linux (Pathmanager)               Enabled           25
+Mac OS                            Enabled           22
+ONTAP                             Disabled          4
+SVC                               Enabled           18
+Solaris (v11 or Later)            Enabled           17
+Solaris (version 10 or earlier)   Disabled          2
+VMWare                            Enabled           10 (Default)
+Windows                           Enabled           1
+----
+
+The `hotSpareCoverage` parameter returns information in this form.
+
+----
+The following volume groups are not protected: 2, 1
+Total hot spare drives: 0
+   Standby: 0
+   In use: 0
+----
+
+The `features` parameter returns information that shows which features are enabled, disabled, evaluation, and available to be installed. This command returns the feature information in a format similar to this:
+
+----
+PREMIUM FEATURE           STATUS
+
+asyncMirror               Trial available
+syncMirror                Trial available/Deactivated
+thinProvisioning          Trial available
+driveSlotLimit            Enabled (12 of 192 used)
+snapImage                 Enabled (0 of 512 used) - Trial version expires m/d/y
+snapshot                  Enabled (1 of 4 used)
+storagePartition          Enabled (0 of 2 used)
+volumeCopy                Enabled (1 of 511 used)
+SSDSupport                Disabled (0 of 192 used) - Feature Key required
+driveSecurity             Disabled - Feature Key required
+enterpriseSecurityKeyMgr  Disabled - Feature Key required
+highPerformanceTier       Disabled - Feature Key required
+----
+
+The `time` parameter returns information in this form.
+
+----
+Controller in Slot A
+
+Date/Time: Thu Jun 03 14:54:55 MDT 2004
+Controller in Slot B
+
+Date/Time: Thu Jun 03 14:54:55 MDT 2004
+----
+
+The `longRunningOperations` parameter returns information in this form:
+
+----
+LOGICAL DEVICES  OPERATION         STATUS        TIME REMAINING
+Volume-2         Volume Disk Copy  10% COMPLETED  5 min
+----
+
+Right.
+
+The information fields returned by the `longRunningOperations` parameter have these meanings:
+
+* `NAME` is the name of a volume that is currently in a long running operation. The volume name must have the "Volume" as a prefix.
+* `OPERATION` lists the operation being performed on the volume group or volume.
+* `% COMPLETE` shows how much of the long running operation has been performed.
+* `STATUS` can have one of these meanings:
+ ** Pending -- The long running operation has not started but will start after the current operation is completed.
+ ** In Progress -- The long running operation has started and will run until completed or stopped by user request.
+* `TIME REMAINING` indicates the duration remaining to completing the current long running operation. The time is in an "hours minute" format. If less than an hour remains, only the minutes are shown. If less than a minute remains, the message "[.code]``less than a minute``" is shown.
+
+The `volumeDistribution` parameter returns information in this form.
+
+----
+volume name: 10
+     Current owner is controller in slot: A
+
+volume name: CTL 0 Mirror Repository
+     Current owner is controller in slot: A
+
+volume name: Mirror Repository 1
+     Current owner is controller in slot:A
+
+volume name: 20
+     Current owner is controller in slot:A
+
+volume name: JCG_Remote_MirrorMenuTests
+     Current owner is controller in slot:A
+----
+
+== Minimum firmware level
+
+5.00 adds the `defaultHostType` parameter.
+
+5.43 adds the `summary` parameter.
+
+6.10 adds the `volumeDistribution` parameter.
+
+6.14 adds the `connections` parameter.
+
+7.10 adds the `autoSupportConfig` parameter.
+
+7.77 adds the `longRunningOperations` parameter.
+
+7.83 returns information that includes the support for the new features released in the storage management software version 10.83. In addition, the information returned has been expanded to show the status of the features in the storage array.
+
+8.30 adds the `autoLoadBalancingEnable` parameter.
+
+8.40 adds the `autoSupport` parameter.
+
+8.40 deprecates the `autoSupportConfig` parameter for E2800 or E5700 storage arrays running with an `https` client type.
+
+8.41 adds wear life monitoring for SSD drives to the storage array profile. This information is only displayed for E2800 and E5700 storage arrays.
+
+8.42 adds the `hostConnectivityReporting` parameter.
+
+8.63 adds the Resource-Provisioned Volumes entry under the `profile` parameter results.

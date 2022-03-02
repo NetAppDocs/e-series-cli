@@ -1,0 +1,85 @@
+---
+permalink: get-started/formatting-rules-for-script-commands.html
+sidebar: sidebar
+keywords: 
+summary: ''
+---
+= Formatting rules for script commands
+:icons: font
+:imagesdir: ./media/
+
+Syntax unique to a specific script command is explained in the Notes section at the end of each script command description.
+
+*Case sensitivity* -- The script commands are not case sensitive. You can type the script commands in lowercase, uppercase, or mixed case. (In the following command descriptions, mixed case is used as an aid to reading the command names and understanding the purpose of the command.)
+
+*Spaces* -- You must enter spaces in the script commands as they are shown in the command descriptions.
+
+*Square brackets* -- Square brackets are used in two ways:
+
+* As part of the command syntax.
+* To indicate that the parameters are optional. The description of each parameter tells you if you need to enclose a parameter value in square brackets.
+
+*Parentheses* -- Parentheses shown in the command syntax enclose specific choices for a parameter. That is, if you want to use the parameter, you must enter one of the values enclosed in parentheses. Generally, you do not include parentheses in a script command; however, in some instances, when you enter lists, you must enclose the list in parentheses. Such a list might be a list of tray ID values and slot ID values. The description of each parameter tells you if you need to enclose a parameter value in parentheses.
+
+*Vertical bars* -- Vertical bars in a script command indicate "`or`" and separate the valid values for the parameter. For example, the syntax for the `raidLevel` parameter in the command description appears as follows:
+
+----
+ raidLevel=(0 | 1 | 3 | 5 | 6)
+----
+
+To use the `raidLevel` parameter to set RAID level 5, enter this value:
+
+----
+ raidLevel=5
+----
+
+*Drive locations* -- The CLI commands that identify drive locations support both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to 0, and specify the ID of the slot in which a drive resides. Separate the ID values with a comma. If you enter more than one set of ID values, separate each set of values with a space.
+
+There are two conventions for specifying drives in the CLI. The convention you should use is specified in each command. One convention uses an equal sign and parentheses:
+
+----
+
+        drive=\(trayID,[drawerID,]slotID\)
+----
+
+The second convention uses no equal sign, but a pair of braces around the specified drives:
+
+----
+
+        drive \[trayID,[drawerID,]slotID\]
+----
+
+Here are some examples using parentheses:
+
+----
+(1,1 1,2 1,3 1,4 2,1 2,2 2,3 2,4)
+----
+
+or, for a high-capacity drive tray, this example:
+
+----
+(1,1,1 1,2,2 1,3,3 1,4,4 2,1,1 2,2,2 2,3,3 2,4,4)
+----
+
+*Italicized terms* -- Italicized terms in the command indicate a value or information that you need to provide. For example, when you encounter the italicized term:
+
+----
+
+          *numberOfDrives*
+----
+
+Replace the italicized term with a value for the number of drives that you want to include with the script command.
+
+*Semicolon* -- Script commands must end with a semicolon (`;` ). You can enter more than one script command on the command line or in a script file. For example, a semicolon is used to separate each script command in the following script file.
+
+----
+create volume drives=(0,2 0,3 1,4 1,5 2,6 2,7) raidLevel=5 userLabel=”v1” capacity=2gb owner=a;
+create volume volumeGroup=2 userLabel=”v2” capacity=1gb owner=b;
+create volume volumeGroup=2 userLabel=”v3” capacity=1gb owner=a;
+----
+
+----
+create volume drives=(0,4 0,5 1,6 1,7 2,8 2,9) raidLevel=5 userLabel=”v4” capacity=2gb owner=b;
+create volume volumeGroup=3 userLabel=”v5” capacity=1gb owner=a;
+create volume volumeGroup=3 userLabel=”v6” capacity=1gb owner=b;
+----

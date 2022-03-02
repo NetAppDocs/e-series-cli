@@ -1,0 +1,40 @@
+---
+permalink: commands-a-z/set-tray-attribute.html
+sidebar: sidebar
+keywords: 
+summary: 'The set tray command sets user-defined attributes for an tray.'
+---
+= Set tray attribute
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set tray` command sets user-defined attributes for an tray.
+
+== Syntax
+
+----
+set tray [trayID] (chassisName | assetTag)="userID"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`tray`
+a|
+Identifies a specific tray for which to set the attribute. Tray ID values are 0 to 99. You must put brackets ([ ]) around the enclosure ID value.
+a|
+`chassisName`
+a|
+Chassis name or number to give the new enclosure. Chassis names can be any combination of alphanumeric characters with a maximum length of 32 characters. Alphabetical characters can be uppercase or lowercase. You can also use the underscore character (_) and the hyphen (-) character. You cannot use spaces in a chassis name. You must put quotation marks (" ") around the chassis name.
+a|
+`assetTag`
+a|
+Asset tag name or number to give the new enclosure. Asset tags can be any combination of alphanumeric characters with a maximum length of ten characters. Alphabetical characters can be uppercase or lowercase. You can also use the underscore character (_) and the hyphen (-) character. You cannot use spaces in an asset tag name. You must put quotation marks (" ") around the asset tag name.
+|===
+
+== Minimum firmware level
+
+6.16

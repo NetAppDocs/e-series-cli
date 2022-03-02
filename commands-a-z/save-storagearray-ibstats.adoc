@@ -1,0 +1,65 @@
+---
+permalink: commands-a-z/save-storagearray-ibstats.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray ibStats command saves the InfiniBand performance statistics of the storage array to a file.'
+---
+= Save storage array InfiniBand statistics
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray ibStats` command saves the InfiniBand performance statistics of the storage array to a file.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+[NOTE]
+====
+This command is deprecated and is replaced by the xref:wombat-save-storagearray-hostportstatistics.adoc[Save storage array host port statistics] command.
+====
+
+== Syntax
+
+----
+save storageArray ibStats [raw | baseline]
+file=*"filename"*
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`raw`
+a|
+The statistics that are collected are all statistics from the controller start-of-day. Enclose the parameter in square brackets ([ ]).
+a|
+`baseline`
+a|
+The statistics that are collected are all statistics from the time the controllers were reset to zero using the `reset storageArray ibStatsBaseline` command. Enclose the parameter in square brackets ([ ]).
+a|
+`file`
+a|
+The file path and the file name to which you want to save the performance statistics. Enclose the file name in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\sup\ibstat.csv"`
+
+The default name of the file that contains the InfiniBand performance statistics is `ib-statistics.csv`. You can use any file name, but you must use the `.csv` extension.
+
+|===
+
+== Notes
+
+If you have not reset the InfiniBand baseline statistics since the controller start-of-day, the time at the start-of-day is the default baseline time.
+
+== Minimum firmware level
+
+7.32
+
+8.41 This command is deprecated.

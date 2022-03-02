@@ -1,0 +1,76 @@
+---
+permalink: commands-a-z/set-disk-pool-modify-disk-pool.html
+sidebar: sidebar
+keywords: 
+summary: 'The set diskPool command adds capacity to a disk pool \(Dynamic Capacity Expansion or DCE\) or changes the controller ownership for the entire disk pool.'
+---
+= Set disk pool (modify disk pool)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set diskPool` command adds capacity to a disk pool (Dynamic Capacity Expansion or DCE) or changes the controller ownership for the entire disk pool.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+These two operations are mutually exclusive.
+
+== Syntax
+
+----
+set diskPool [diskPoolName]
+(addDrives=[trayID1,drawerID1,slotID1 ... trayIDn,drawerIDn,slotIDn] |
+addCapacity=(diskPoolCapacity))
+[owner=(a| b)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`diskPool`
+a|
+The name of the disk pool that you want to modify. Enclose the disk pool name in square brackets ([ ]). If the disk pool name has special characters or consists only of numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
+
+a|
+`addDrives`
+a|
+The drives that you want to add to the disk pool. For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value of the drive that you want to add. For low-capacity drive trays, specify the tray ID value and the slot ID value of the drive that you want to add. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`. Slot ID values are `1` to `24`. Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+[NOTE]
+====
+This feature has a 12-drive limit.
+====
+
+a|
+`addCapacity`
+a|
+The amount of additional storage capacity that you want to add to the disk pool. This parameter automatically selects the drives to meet the capacity that you want to add. The capacity is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`.
+
+a|
+`owner`
+a|
+The controller that owns the disk pool. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. If you do not specify an owner, the controller firmware determines the owner.
+
+|===
+
+== Notes
+
+Volumes already in the disk pool remain on line and available for I/O operations while you add new drives. The disk pool must be in the Complete state before you add capacity. If the disk pool is not in the Complete state, run the `set diskPool complete` command before you add new drives.
+
+To add capacity, specify individual drives with the `addDrives` parameter, or an amount of drive capacity with the `addCapacity` parameter. If you use `addDrives`, the host must validate the drive set before allowing the operation to run. If you use the `addCapacity` parameter, the capacity you specify is taken as the minimum capacity to be added. The candidate drives with the best match for quality of service and a capacity greater than or equal to what you specified are used. If no candidate is available with a minimum match, or the drive list specified is not available or attribute mismatches are detected, the operation fails.
+
+You also can use this command to change ownership of a disk pool from one controller in the storage array to the other. Using this command to change ownership is mutually exclusive with using the command to add drives or to add capacity.
+
+== Minimum firmware level
+
+7.83

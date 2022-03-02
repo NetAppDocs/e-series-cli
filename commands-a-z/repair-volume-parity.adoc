@@ -1,0 +1,66 @@
+---
+permalink: commands-a-z/repair-volume-parity.html
+sidebar: sidebar
+keywords: 
+summary: 'The repair volume parity command repairs the parity errors on a volume.'
+---
+= Repair volume parity
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `repair volume parity` command repairs the parity errors on a volume.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[CAUTION]
+====
+If volume parity and volume data do not match, volume data might be defective rather than volume parity. Repairing volume parity destroys the ability to repair the defective volume data, if necessary.
+====
+
+== Syntax
+
+----
+repair volume [volumeName] parity
+parityErrorFile="filename"
+[verbose=(TRUE | FALSE)]
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`volume`
+a|
+The name of the volume for which you are repairing parity. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
+
+a|
+`parityErrorFile`
+a|
+The file path and the file name that contains the parity error information that you use to repair the errors. Enclose the file name in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\sup\parfile.txt"`
+
+[NOTE]
+====
+A `parityErrorFile` is the result of a previous `check volume parity` operation.
+====
+
+a|
+`verbose`
+a|
+The setting to capture progress details, such as percent complete, and to show the information as the volume parity is being repaired. To capture progress details, set this parameter to `TRUE`. To prevent capturing progress details, set this parameter to `FALSE`.
+|===
+
+== Minimum firmware level
+
+6.10

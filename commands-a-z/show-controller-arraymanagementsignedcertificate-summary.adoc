@@ -1,0 +1,60 @@
+---
+permalink: commands-a-z/show-controller-arraymanagementsignedcertificate-summary.html
+sidebar: sidebar
+keywords: 
+summary: 'The show controller arrayManagementSignedCertificate summary command displays the current signed certificate summary from the specified controller.'
+---
+= Show signed certificate
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show controller arrayManagementSignedCertificate summary` command displays the current signed certificate summary from the specified controller.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+----
+
+show controller [(a|b)] arrayManagementSignedCertificate summary
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+Allows you to specify the controller on which you want to retrieve the root/intermediate certificates. Valid controller identifiers are a or b, where a is the controller in slot A, and b is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
+|===
+
+== Example
+
+Sample output may be different than illustrated below.
+
+----
+
+SMcli -n Array1 -c "show controller[a] arrayManagementSignedCertificate all summary;"
+
+============================
+Controller A Signed Certificate
+============================
+Subject DN:   CN=Corp Issuing CA 1
+Issuer DN:    CN=Corp Root CA
+Start:        <date>
+Expire:       <date>
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

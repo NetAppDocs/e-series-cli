@@ -1,0 +1,23 @@
+---
+permalink: commands-a-z/getting-started-with-aurthentication.html
+sidebar: sidebar
+keywords: 
+summary: 'Authentication requires that users access the system with assigned login credentials. Each user login is associated with a user profile that includes specific roles and access permissions.'
+---
+= Getting started with authentication
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+Authentication requires that users access the system with assigned login credentials. Each user login is associated with a user profile that includes specific roles and access permissions.
+
+Administrators can implement system authentication as follows:
+
+* Using RBAC (role-based access control) capabilities enforced in the storage array, which include pre-defined users and roles.
+* Connecting to an LDAP (Lightweight Directory Access Protocol) server and directory service, such as Microsoft's Active Directory, and then mapping the LDAP users to the storage array's embedded roles.
+* Connecting with an Identity Provider (IdP) using the Security Assertion Markup Language (SAML) 2.0, and then mapping users to the storage array's embedded roles.
++
+[NOTE]
+====
+SAML is an embedded feature in the storage array (firmware level 8.42 and above), and is only configurable from the SANtricity System Manager user interface.
+====

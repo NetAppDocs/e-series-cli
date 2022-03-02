@@ -1,0 +1,138 @@
+---
+permalink: commands-a-z/save-storagearray-hostportstatistics.html
+sidebar: sidebar
+keywords: 
+summary: 'The save storageArray hostPortStatistics command saves the storage array host port statistics.'
+---
+= Save storage array host port statistics
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray hostPortStatistics` command saves the storage array host port statistics.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Security Admin role.
+
+== Context
+
+[NOTE]
+====
+This command replaces the deprecated xref:wombat-save-storagearray-iscsistatistics.adoc[Save storage array iSCSI statistics], xref:wombat-save-storagearray-iserstatistics.adoc[Save storage array iSER statistics], and xref:wombat-save-storagearray-ibstats.adoc[Save storage array InfiniBand statistics] commands.
+====
+
+== Syntax
+
+----
+save storageArray hostPortStatistics [(raw | baseline)] type=(ISCSI| ISER | SRP | NVMEOF) file="filename"
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+`raw`
+a|
+Allows you to retrieve the collected statistics since start-of-day. Enclose the parameter in square brackets ([ ]).
+a|
+`baseline`
+a|
+Allows you to retrieve the collected statistics from the time the controllers`' baselines were reset to zero. Enclose the parameter in square brackets ([ ]).
+a|
+`type`
+a|
+Allows you to indicate which statistics type to collect. Valid choices are:``ISCSI``, `ISER`, `SRP`, and `NVMEOF`.
+a|
+`file`
+a|
+Allows you to specify the file path and filename to save the statistics. Enclose the file name in double quotation marks (" "). Use any file name with the `.csv` extension.
+|===
+|===
+| Type| Ethernet MAC, Ethernet TCP/IP, Local Initiator (Protocol), DCBX Operational State, LLDP TLV, DCBX TLV| Target (Protocol)| InfiniBand Interface| NVMe Subsystem| ASUP Filename
+a|
+`iscsi`
+a|
+
+____
+X
+____
+
+a|
+
+____
+X
+____
+
+a|
+ 
+a|
+ 
+a|
+ 
+a|
+`iser`
+a|
+ 
+a|
+
+____
+X
+____
+
+a|
+
+____
+X
+____
+
+a|
+ 
+a|
+ 
+a|
+`srp`
+a|
+ 
+a|
+ 
+a|
+
+____
+X
+____
+
+a|
+ 
+a|
+ 
+a|
+`nvmeof`
+a|
+ 
+a|
+ 
+a|
+
+____
+X
+____
+
+a|
+
+____
+X
+____
+
+a|
+ 
+|===
+
+== Minimum firmware level
+
+8.41

@@ -1,0 +1,111 @@
+---
+permalink: commands-a-z/clear-storagearray-configuration.html
+sidebar: sidebar
+keywords: 
+summary: 'The clear storageArray configuration command clears an entire storage array configuration or part of a storage array configuration, or clears volume group and volume configuration only.'
+---
+= Clear storage array configuration
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `clear storageArray configuration` command clears an entire storage array configuration or part of a storage array configuration, or clears volume group and volume configuration only.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Use this command to perform one of these operations:
+
+* Clear the entire storage array configuration, and return it back to the initial installation state.
+* Clear the configuration except for security information and identification information.
+* Clear volume group configuration information and volume configuration information only.
+
+[NOTE]
+====
+*Possible damage to the storage array configuration* -- As soon as you run this command, the existing storage array configuration is deleted.
+====
+
+== Syntax
+
+----
+clear storageArray configuration (all | volumeGroups)
+----
+
+----
+clear storageArray configuration factoryReset
+----
+
+== Parameters
+
+|===
+| Parameter| Description
+a|
+None
+a|
+If you do not enter a parameter, this command removes all configuration information for the storage array, except for information related to security and identification.
+a|
+`all`
+a|
+The setting to remove the entire configuration of the storage array, including security information and identification information. Removing all configuration information returns the storage array to its initial state.
+a|
+`volumeGroups`
+a|
+The setting to remove the volume configuration and the volume group configuration. The rest of the configuration stays intact.
+a|
+`factoryReset`
+a|
+This setting removes the entire configuration of the storage array (the same function as the `all` parameter), but also resets network configuration and any password information stored in the controller.
+a|
+`supportReset`
+a|
+
+[NOTE]
+====
+This command is for technical support use only.
+====
+
+This setting behaves like the `factoryReset` parameter, but also clears all bundle keys.
+|===
+
+== Notes
+
+With this command, you can clear the configuration of the storage array in a number of different ways. When you clear the storage array for volume groups, recovery mode automatically starts. In recovery mode, onboard (cache) backups (if they exist on the platform) are retained. When the storage array is in recovery mode, you can, optionally, restore the storage array configuration from a host-based backup file or from one of the onboard (cache) backups.
+
+This command also resets the storage array identifier. Any premium features enabled with a key file are invalidated, and new premium feature keys must be created and applied. Contact technical support.
+
+When you run this command, the storage array becomes unresponsive, and all script processing is canceled. You must remove and re-add the storage array to resume communication with the host. To remove an unresponsive storage array, use this SMcli wrapper command:
+
+----
+SMcli -X -n storageArrayName
+----
+
+The `X` is a unique SMcli terminal and must be uppercase.
+
+To re-add the storage array, use this SMcli wrapper command:
+
+----
+SMcli -A -n storageArrayName
+----
+
+The `A` is a unique SMcli terminal and must be uppercase.
+
+== Minimum firmware level
+
+7.10 adds these parameters:
+
+* `all`
+* `volumeGroups`
+
+7.83 adds the recovery mode capability.
+
+11.41 adds these parameters:
+
+* `factoryReset`
+* `supportReset`
