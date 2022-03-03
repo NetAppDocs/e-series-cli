@@ -7,20 +7,18 @@ entries:
     entries:
     - title: Overview
       url: get-started/overview-format-commands.html
-    - title: Command structure
+    - title: CLI structure
       entries:
-      - title: CLI structure
-        entries:
         - title: Structure of CLI commands
           url: /get-started/structure-of-a-cli-command.html
         - title: Interactive mode
           url: /get-started/interactive-mode.html
-        - title: CLI command wrapper syntax
+        - title: CLI wrapper syntax
           url: /get-started/cli-command-wrapper-syntax.html
-        - title: Command line parameters
+        - title: CLI parameters
           url: /get-started/command-line-parameters.html
-      - title: Script command structure
-        entries:
+    - title: Script command structure
+      entries:
         - title: Structure of a script command
           url: /get-started/structure-of-a-script-command.html
         - title: Synopsis of script commands
