@@ -1,10 +1,10 @@
 ---
 permalink: get-started/formatting-rules-for-script-commands.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
-= Formatting rules for script commands
+= Format rules for script commands
 :icons: font
 :imagesdir: ./media/
 

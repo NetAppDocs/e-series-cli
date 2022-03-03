@@ -1,10 +1,10 @@
 ---
 permalink: get-started/formatting-cli-commands.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
-= Formatting CLI commands
+= Format rules for CLI commands
 :icons: font
 :imagesdir: ./media/
 
