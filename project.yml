@@ -12,7 +12,7 @@ settings:
 
 sidebar:
   entries:
-  - title: Home
+  - title: SANtricity CLI docs
     url: /index.html
   - section: get-started
   - section: commands-category

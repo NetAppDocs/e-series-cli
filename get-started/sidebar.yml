@@ -29,12 +29,14 @@ entries:
           url: /get-started/recurring-syntax-elements.html
     - title: Naming conventions
       url: /get-started/naming-conventions.html
-    - title: Format rules for CLI commands
-      url: /get-started/formatting-cli-commands.html
-    - title: Format rules for script commands
-      url: /get-started/formatting-rules-for-script-commands.html
-    - title: Format rules in Windows PowerShell
-      url: /get-started/formatting-cli-commands-in-windows-powershell.html
+    - title: Format rules
+      entries:
+        - title: CLI commands
+          url: /get-started/formatting-cli-commands.html
+        - title: Script commands
+          url: /get-started/formatting-rules-for-script-commands.html
+        - title: Windows PowerShell
+          url: /get-started/formatting-cli-commands-in-windows-powershell.html
     - title: Detailed error reporting
       url: /get-started/detailed-error-reporting.html
     - title: Exit status
