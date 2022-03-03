@@ -6,7 +6,7 @@ entries:
   - title: Command formatting
     entries:
     - title: Overview
-      url: get-started/overview-format-commands.html
+      url: /get-started/overview-format-commands.html
     - title: CLI structure
       entries:
         - title: Structure of CLI commands
