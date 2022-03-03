@@ -1,10 +1,10 @@
 ---
 permalink: get-started/usage-guidelines.html
 sidebar: sidebar
-keywords: 
+keywords:
 summary: ''
 ---
-= Usage guidelines
+= Script command guidelines
 :icons: font
 :imagesdir: ./media/
 

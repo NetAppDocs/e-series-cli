@@ -1,11 +1,12 @@
 section: get-started
 title: Get started
 entries:
-  - title: Changes in the CLI and script commands in this release
+  - title: What's new
     url: /get-started/changes-in-the-cli-and-script-commands-in-this-release.html
   - title: Formatting the commands
-    url: /get-started/formatting-the-commands.html
     entries:
+    - title: Overview
+      url: get-started/formatting-the-commands.html
     - title: Structure of a CLI command
       url: /get-started/structure-of-a-cli-command.html
       entries:
@@ -18,23 +19,23 @@ entries:
     - title: Structure of a script command
       url: /get-started/structure-of-a-script-command.html
       entries:
-      - title: Synopsis of the script commands
+      - title: Synopsis of script commands
         url: /get-started/synopsis-of-the-script-commands.html
       - title: Recurring syntax elements
         url: /get-started/recurring-syntax-elements.html
     - title: Naming conventions
       url: /get-started/naming-conventions.html
-    - title: Formatting CLI commands
+    - title: Format CLI commands
       url: /get-started/formatting-cli-commands.html
-    - title: Formatting rules for script commands
+    - title: Format rules for script commands
       url: /get-started/formatting-rules-for-script-commands.html
-    - title: Formatting CLI commands in Windows PowerShell
+    - title: Format CLI commands in Windows PowerShell
       url: /get-started/formatting-cli-commands-in-windows-powershell.html
     - title: Detailed error reporting
       url: /get-started/detailed-error-reporting.html
     - title: Exit status
       url: /get-started/exit-status.html
-    - title: Adding comments to a script file
+    - title: Add comments to a script file
       url: /get-started/adding-comments-to-a-script-file.html
       entries:
       - title: Usage guidelines
