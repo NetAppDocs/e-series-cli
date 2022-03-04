@@ -2,7 +2,7 @@
 layout: astra
 sidebar: sidebar
 permalink: index.html
-lead: 'Describes syntax and usage of SANtricity commands.'
+lead: 'Welcome to the SANtricity System Manager Embedded CLI User Assistance, where you can find out how to configure, monitor, and tune your storage array using the Command Line Interface (CLI).'
 summary: 'Describes syntax and usage of SANtricity commands.'
 ---
 = SANtricity System Manager commands
