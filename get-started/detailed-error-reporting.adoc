@@ -1,8 +1,8 @@
 ---
 permalink: get-started/detailed-error-reporting.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: detailed, error, report
+summary: " "
 ---
 = Detailed error reporting
 :icons: font

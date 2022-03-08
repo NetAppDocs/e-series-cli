@@ -1,8 +1,8 @@
 ---
 permalink: get-started/adding-comments-to-a-script-file.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: add, comments, script file
+summary: " "
 ---
 = Add comments to a script file
 :icons: font

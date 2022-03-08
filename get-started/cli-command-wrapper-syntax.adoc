@@ -1,8 +1,8 @@
 ---
 permalink: get-started/cli-command-wrapper-syntax.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: cli, command, wrapper, syntax
+summary: " "
 ---
 = CLI command wrapper syntax
 :icons: font
@@ -10,14 +10,15 @@ summary: ''
 
 General syntax forms of the CLI command wrappers are listed in this section. The conventions used in the CLI command wrapper syntax are listed in the following table.
 
+[cols="2*",options="header"]
 |===
 | Convention| Definition
 a|
-`a | b`
+`a \| b`
 a|
 Alternative ("a" or "b")
 a|
-`italicized-words`
+`_italicized-words_`
 
 a|
 Needs user input to fulfill a parameter (a response to a variable)
@@ -30,11 +31,11 @@ a|
 a|
 Zero or more occurrences
 a|
-`(a | b | c)`
+`(a \| b \| c)`
 a|
 Choose only one of the alternatives
 a|
-`a &| b`
+`a &\| b`
 a|
 And/or. This is used for https client mode, when you can use with one or both controller IP addresses. This way, if one controller is not responding, SMcli will use the alternative IP address. This also covers the case when both IP addresses are required, such as for firmware download.
 |===

@@ -1,8 +1,8 @@
 ---
 permalink: get-started/command-line-parameters.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: command line, parameters
+summary: " "
 ---
 = Command line parameters
 :icons: font
@@ -12,10 +12,11 @@ summary: ''
 
 The SANtricity OS 11.40 release introduces, for the E2800 and E5700 controllers with embedded web services, the ability to interact on the Command Line using a secure HTTPS protocol. These controllers can optionally use the SYMbol protocol for Command Line interactions instead. The SYMbol protocol is the only supported protocol for the E2700 and E5600 controllers. To preserve existing scripts and minimize transition time, the CLI options and grammar are preserved as much as possible. However, there are some differences in the capabilities of the E2800 and E5700 controllers with regards to security, authentication, AutoSupport, and alert messaging that render some of the CLI grammar for those controllers obsolete. However, in some cases the grammar is only obsolete on the E2800 or E5700 when the new https protocol is used.
 
-For the new parameters that only apply to the `https` client type, it follows that they also apply only to the E2800 or E5700 controllers.
+For the new parameters that only apply to the `*https*` client type, it follows that they also apply only to the E2800 or E5700 controllers.
 
 For a list of new, deprecated, and obsolete commands with this release, see xref:alpaca-changes-in-the-cli-and-script-commands-in-this-release.adoc[Changes in the CLI and Script commands in this release].
 
+[cols="2*",options="header"]
 |===
 | Parameter| Definition
 a|
@@ -23,37 +24,38 @@ a|
 a|
 This argument forces the creation of an appropriate script engine. Use this optional parameter with one of the following values:
 
-* `auto` - Device discovery is automatically performed to detect the appropriate script engine type.
-* `https` - A REST-based script engine is created.
-* `symbol` - A SYMbol-based script engine is created.
+* `*auto*` - Device discovery is automatically performed to detect the appropriate script engine type.
+* `*https*` - A REST-based script engine is created.
+* `*symbol*` - A SYMbol-based script engine is created.
 
 a|
 `-u`
 a|
-Follow this parameter with the `username` variable. The username is only required for the `https` client type. This argument is not applicable to the `symbol` client type and will be silently ignored.
+Follow this parameter with the `_username_` variable. The username is only required for the `*https*` client type. This argument is not applicable to the `*symbol*` client type and will be silently ignored.
 
-If the username argument is specified, device discovery is performed to determine the correct client type (`https` vs. `symbol`).
+If the username argument is specified, device discovery is performed to determine the correct client type (`*https*` vs. `*symbol*`).
 
 a|
 `-P`
 a|
 This argument requires one of two arguments:
 
-* `password_file` - Contains the password to use for authentication.
+* `_password_file_` - Contains the password to use for authentication.
 * `-` (one dash) - Read the password from `stdin`.
 
-Note that the addition of this argument is applicable to all controllers, regardless of whether the `https` client type or `symbol` client type is used.
+Note that the addition of this argument is applicable to all controllers, regardless of whether the `*https*` client type or `*symbol*` client type is used.
 
 a|
 `-k`
 a|
-This optional argument allows an `https` client to operate in insecure mode. This means that the storage array's certificate will not be validated. By default, if omitted, the proper authentication will be performed. This argument is not applicable to the `symbol` client type and will be silently ignored.
+This optional argument allows an `*https*` client to operate in insecure mode. This means that the storage array's certificate will not be validated. By default, if omitted, the proper authentication will be performed. This argument is not applicable to the `*symbol*` client type and will be silently ignored.
 |===
 
 == Command line parameters that only apply to E2700 or E5600 controllers
 
 Because the E2700 and E5600 controllers do not have embedded alert management capabilities, these command line parameters are applicable. These parameters are not applicable to the E2800 or E5700 controllers.
 
+[cols="2*",options="header"]
 |===
 | Parameter| Definition
 a|
@@ -61,8 +63,8 @@ a|
 a|
 Adds a Simple Network Management Protocol (SNMP) trap destination or an email address alert destination.
 
-* When you add an SNMP trap destination, the SNMP community is automatically defined as the community name for the trap, and the `host` is the IP address or Domain Name Server (DNS) host name of the system to which the trap should be sent.
-* When you add an email address for an alert destination, the `email-address` is the email address to which you want the alert message to be sent.
+* When you add an SNMP trap destination, the SNMP community is automatically defined as the community name for the trap, and the `*host*` is the IP address or Domain Name Server (DNS) host name of the system to which the trap should be sent.
+* When you add an email address for an alert destination, the `*email-address*` is the email address to which you want the alert message to be sent.
 
 [NOTE]
 ====
@@ -90,7 +92,7 @@ This command line option is obsolete for the E2800 and E5700 storage arrays. Use
 a|
 `-x` (lowercase)
 a|
-Removes an SNMP trap destination or an email address alert destination. The `community` is the SNMP community name for the trap, and the `host` is the IP address or DNS host name of the system to which you want the trap sent.
+Removes an SNMP trap destination or an email address alert destination. The `_community_` is the SNMP community name for the trap, and the `_host_` is the IP address or DNS host name of the system to which you want the trap sent.
 [NOTE]
 ====
 This command line option is obsolete for the E2800 and E5700 storage arrays. Use the RESTful API, SANtricity System Manager, or cURL commands.
@@ -100,6 +102,7 @@ This command line option is obsolete for the E2800 and E5700 storage arrays. Use
 
 == Command line parameters that apply to all controllers running with a symbol client type
 
+[cols="2*",options="header"]
 |===
 | Parameter| Definition
 a|
@@ -107,12 +110,12 @@ a|
 a|
 Defines the user role for the password. The roles can be either:
 
-* `admin` -- The user has privilege to change the storage array configuration.
-* `monitor` -- The user has privilege to view the storage array configuration, but cannot make changes.
+* `*admin*` -- The user has privilege to change the storage array configuration.
+* `*monitor*` -- The user has privilege to view the storage array configuration, but cannot make changes.
 
-The `-R` parameter is valid only when used with the `–p` parameter, which specifies that you define a password for a storage array.
+The `*-R*` parameter is valid only when used with the `*–p*` parameter, which specifies that you define a password for a storage array.
 
-The `-R` parameter is required only if the dual password feature is enabled on the storage array. The `-R` parameter is not necessary under these conditions:
+The `*-R*` parameter is required only if the dual password feature is enabled on the storage array. The `*-R*` parameter is not necessary under these conditions:
 
 * The dual password feature is not enabled on the storage array.
 * Only one admin role is set and the monitor role is not set for the storage array.
@@ -121,22 +124,23 @@ The `-R` parameter is required only if the dual password feature is enabled on t
 
 == Command line parameters applicable to all controllers and all client types
 
+[cols="2*",options="header"]
 |===
 | Parameter| Definition
 a|
-`host-name-or-IP-address`
+`_host-name-or-IP-address_`
 a|
-Specifies either the host name or the Internet Protocol (IP) address (`xxx.xxx.xxx.xxx`) of an in-band managed storage array or an out-of-band managed storage array.
+Specifies either the host name or the Internet Protocol (IP) address (`_xxx.xxx.xxx.xxx_`) of an in-band managed storage array or an out-of-band managed storage array.
 
 * If you are managing a storage array by using a host through in-band storage management, you must use the `-n` parameter or the `-w` parameter if more than one storage array is connected to the host.
-* If you are managing a storage array by using out-of-band storage management through the Ethernet connection on each controller, you must specify the `host-name-or-IP-address` of the controllers.
+* If you are managing a storage array by using out-of-band storage management through the Ethernet connection on each controller, you must specify the `_host-name-or-IP-address_` of the controllers.
 * If you have previously configured a storage array in the Enterprise Management Window, you can specify the storage array by its user-supplied name by using the `-n` parameter.
 * If you have previously configured a storage array in the Enterprise Management Window, you can specify the storage array by its World Wide Identifier (WWID) by using the `-w` parameter.
 
 a|
 `-A`
 a|
-Adds a storage array to the configuration file. If you do not follow the `-A` parameter with a `host-name-or-IP-address`, auto-discovery scans the local subnet for storage arrays.
+Adds a storage array to the configuration file. If you do not follow the `-A` parameter with a `_host-name-or-IP-address_`, auto-discovery scans the local subnet for storage arrays.
 a|
 `-c`
 a|
@@ -144,7 +148,7 @@ Indicates that you are entering one or more script commands to run on the specif
 a|
 `-d`
 a|
-Shows the contents of the script configuration file. The file content has this format: `storage-system-name host-name1 host-name2`
+Shows the contents of the script configuration file. The file content has this format: `_storage-system-name host-name1 host-name2_`
 a|
 `-e`
 a|
@@ -183,12 +187,12 @@ You can specify the frequency for the email deliveries using the `-q` parameter.
 a|
 `-i` (lowercase)
 a|
-Shows the IP address of the known storage arrays. Use the `-i` parameter with the `-d` parameter. The file content has this format:``storage-system-name IP-address1 IPaddress2``
+Shows the IP address of the known storage arrays. Use the `-i` parameter with the `-d` parameter. The file content has this format: `_storage-system-name IP-address1 IPaddress2_`
 
 a|
 `-n`
 a|
-Specifies the name of the storage array on which you want to run the script commands. This name is optional when you use a `host-name-or-IP-address`. If you are using the in-band method for managing the storage array, you must use the `-n` parameter if more than one storage array is connected to the host at the specified address. The storage array name is required when the `host-name-or-IP-address` is not used. The name of the storage array that is configured for use in the Enterprise Management Window (that is, the name is listed in the configuration file) must not be a duplicate name of any other configured storage array.
+Specifies the name of the storage array on which you want to run the script commands. This name is optional when you use a `_host-name-or-IP-address_`. If you are using the in-band method for managing the storage array, you must use the `-n` parameter if more than one storage array is connected to the host at the specified address. The storage array name is required when the `_host-name-or-IP-address_` is not used. The name of the storage array that is configured for use in the Enterprise Management Window (that is, the name is listed in the configuration file) must not be a duplicate name of any other configured storage array.
 a|
 `-o`
 a|
@@ -217,10 +221,10 @@ a|
 a|
 This argument requires one of two arguments:
 
-* `password_file` - contains the password to use for authentication.
+* `_password_file_` - contains the password to use for authentication.
 * `-`(dash) - read the password from `stdin`.
 
-Note that the addition of this argument is applicable to all controllers, regardless of whether the `https` client type or `symbol` client type is used.
+Note that the addition of this argument is applicable to all controllers, regardless of whether the `*https*` client type or `*symbol*` client type is used.
 
 a|
 `-q`
@@ -262,7 +266,7 @@ Shows the current global status of the known devices in a configuration file whe
 a|
 `-w`
 a|
-Specifies the WWID of the storage array. This parameter is an alternate to the `-n` parameter. Use the `-w` parameter with the `-d` parameter to show the WWIDs of the known storage arrays. The file content has this format: `storage-system-name world-wide-ID IP-address1 IP-address2`
+Specifies the WWID of the storage array. This parameter is an alternate to the `-n` parameter. Use the `-w` parameter with the `-d` parameter to show the WWIDs of the known storage arrays. The file content has this format: `_storage-system-name world-wide-ID IP-address1 IP-address2_`
 
 a|
 `-X` (uppercase)
