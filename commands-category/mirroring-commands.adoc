@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/mirroring-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: commands, mirroring
+summary: "Mirroring commands"
 ---
 = Mirroring commands
 :icons: font

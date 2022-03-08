@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/alert-configuration-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: configuration, commands, alert, embedded
+summary: "Alert configuration commands"
 ---
 = Alert configuration commands
 :icons: font
