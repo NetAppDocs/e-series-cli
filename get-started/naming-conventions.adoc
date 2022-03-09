@@ -1,8 +1,8 @@
 ---
 permalink: get-started/naming-conventions.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: name, conventions
+summary: " "
 ---
 = Naming conventions
 :icons: font

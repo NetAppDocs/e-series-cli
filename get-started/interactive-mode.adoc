@@ -1,8 +1,8 @@
 ---
 permalink: get-started/interactive-mode.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: interactive mode
+summary: " "
 ---
 = Interactive mode
 :icons: font

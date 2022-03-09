@@ -1,8 +1,8 @@
 ---
 permalink: get-started/overview-format-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: overview, cli
+summary: " "
 ---
 = Overview of CLI
 :icons: font
