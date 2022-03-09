@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/storage-monitor-personal-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: storage, monitor, personnel, commands
+summary: "Storage monitor personnel commands"
 ---
 = Storage monitor personnel commands
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/performance-tuning-commands.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: performance, tuning, commands
+summary: "Performance tuning commands"
 ---
 = Performance tuning commands
 :icons: font

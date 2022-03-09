@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/storage-administrator-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: storage, administrator, commands
+summary: "Storage administrators commands"
 ---
 = Storage administrators commands
 :icons: font

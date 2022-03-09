@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/security-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: security, commands
+summary: "Security commands"
 ---
 = Security commands
 :icons: font
