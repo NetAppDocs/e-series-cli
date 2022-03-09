@@ -1,8 +1,8 @@
 ---
 permalink: get-started/recurring-syntax-elements.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: recur, syntax, elements
+summary: " "
 ---
 = Recurring syntax elements
 :icons: font
@@ -10,10 +10,11 @@ summary: ''
 
 Recurring syntax elements are a general category of parameters and options that you can use in the script commands. The following table lists the conventions used in the recurring syntax elements.
 
+[cols="2*",options="header"]
 |===
 | Convention| Definition
 a|
-`a | b`
+`*a \| b*`
 a|
 Alternative ("a" or "b")
 a|
@@ -30,40 +31,41 @@ a|
 a|
 Zero or more occurrences
 a|
-`(a | b | c)`
+`(*a \| b \| c*)`
 a|
 Choose only one of the alternatives
 |===
 The following table lists the recurring syntax parameters and the values that you can use with the recurring syntax parameters.
 
+[cols="2*",options="header"]
 |===
 | Recurring Syntax| Syntax Value
 a|
-`autoconfigure-vols-attr- value-list`
+`_autoconfigure-vols-attr- value-list_`
 a|
-`autoconfigure-vols-attr-value-pair` {`autoconfigure-vols-attr-value-pair`}
+`_autoconfigure-vols-attr-value-pair_` {`_autoconfigure-vols-attr-value-pair_`}
 a|
-`autoconfigure-vols-attr- value-pair`
-a|
-
-----
-driveType=drive-type | driveMediaType=drive-media-type |
-raidLevel=raid-level | volumeGroupWidth=integer-literal |
-volumeGroupCount=integer-literal | volumesPerGroupCount=integer-literal6|
-hotSpareCount=integer-literal | segmentSize=segment-size-spec | cacheReadPrefetch=(TRUE | FALSE)
-securityType=(none | capable | enabled)7| dataAssurance=(none | enabled)5
-----
-
-a|
-`boolean`
+`_autoconfigure-vols-attr- value-pair_`
 a|
 
 ----
-(TRUE | FALSE)
+driveType=drive-type \| driveMediaType=drive-media-type \|
+raidLevel=raid-level \| volumeGroupWidth=integer-literal \|
+volumeGroupCount=integer-literal \| volumesPerGroupCount=integer-literal6\|
+hotSpareCount=integer-literal \| segmentSize=segment-size-spec \| cacheReadPrefetch=(TRUE \| FALSE)
+securityType=(none \| capable \| enabled)7\| dataAssurance=(none \| enabled)5
 ----
 
 a|
-`cache-flush-modifier- setting`
+`_boolean_`
+a|
+
+----
+(TRUE \| FALSE)
+----
+
+a|
+`_cache-flush-modifier- setting_`
 a|
 
 ----
@@ -71,91 +73,91 @@ immediate, 0, .25, .5, .75, 1, 1.5, 2, 5, 10, 20, 60, 120, 300, 1200, 3600, infi
 ----
 
 a|
-`capacity-spec`
+`_capacity-spec_`
 a|
-`integer-literal` `[KB | MB | GB | TB | Bytes]`
+`_integer-literal_` `[KB \| MB \| GB \| TB \| Bytes]`
 a|
-`count-based-repository- spec`
+`_count-based-repository- spec_`
 a|
 
 ----
 repositoryRAIDLevel =repository-raid-level repositoryDriveCount=integer-literal
 [repositoryVolumeGroupUserLabel =user-label] [driveType=drive-type4
-] [trayLossProtect=(TRUE | FALSE)1] | [drawerLossProtect=(TRUE | FALSE)2] |
-[dataAssurance=(none | enabled)5] |
+] [trayLossProtect=(TRUE \| FALSE)1] \| [drawerLossProtect=(TRUE \| FALSE)2] \|
+[dataAssurance=(none \| enabled)5] \|
 ----
 
 a|
-`create-raid-vol-attr- value-list`
+`_create-raid-vol-attr- value-list_`
 a|
-`create-raid-volume-attribute-value-pair` {`create-raid-volume-attribute-value-pair`}
+`_create-raid-volume-attribute-value-pair_` {`_create-raid-volume-attribute-value-pair_`}
 a|
-`create-raid-volume- attribute-value-pair`
+`_create-raid-volume- attribute-value-pair_`
 a|
 
 ----
-capacity=capacity-spec | owner=(a | b) |
-cacheReadPrefetch=(TRUE | FALSE) | segmentSize=integer-literal |
+capacity=capacity-spec \| owner=(a \| b) \|
+cacheReadPrefetch=(TRUE \| FALSE) \| segmentSize=integer-literal \|
 usageHint=usage-hint-spec
 ----
 
 a|
-`create-volume-copy-attr- value-list`
+`_create-volume-copy-attr- value-list_`
 a|
-`create-volume-copy-attr-value-pair` {`create-volume-copy-attr-value-pair`}
+`_create-volume-copy-attr-value-pair_` {`_create-volume-copy-attr-value-pair_`}
 a|
-`create-volume-copy-attr- value-pair`
+`_create-volume-copy-attr- value-pair_`
 a|
 
 ----
-copyPriority=(highest | high | medium | low | lowest) |
-targetReadOnlyEnabled=(TRUE | FALSE) | copyType=(offline | online) |
-repositoryPercentOfBase=(20 | 40 | 60 | 120 | default) |
-repositoryGroupPreference=(sameAsSource | otherThanSource | default)
+copyPriority=(highest \| high \| medium \| low \| lowest) \|
+targetReadOnlyEnabled=(TRUE \| FALSE) \| copyType=(offline \| online) \|
+repositoryPercentOfBase=(20 \| 40 \| 60 \| 120 \| default) \|
+repositoryGroupPreference=(sameAsSource \| otherThanSource \| default)
 ----
 
 a|
-`drive-media-type`
+`_drive-media-type_`
 a|
-`(HDD | SSD | unknown | allMedia)` _HDD_ means hard disk drive. _SSD_ means solid state disk.
+`(HDD \| SSD \| unknown \| allMedia)` _HDD_ means hard disk drive. _SSD_ means solid state disk.
 
 a|
-`drive-spec`
+`_drive-spec_`
 a|
-`trayID,slotID` or ``trayID,drawerID,slotID``A drive is defined as two or three integer literal values separated by a comma. Low-density trays require two values. High-density trays, those trays that have drawers, require three values.
+`_trayID,slotID` or `trayID,drawerID,slotID_` A drive is defined as two or three integer literal values separated by a comma. Low-density trays require two values. High-density trays, those trays that have drawers, require three values.
 
 a|
-`drive-spec-list`
+`_drive-spec-list_`
 a|
-`drive-spec` `drive-spec`
+`_drive-spec_` `_drive-spec_`
 a|
 `drive-type`
 a|
-`(fibre | SATA | SAS)`
+`(fibre \| SATA \| SAS)`
 [NOTE]
 ====
 Only SAS drives are supported for firmware versions 7.86 and later.
 ====
 
 a|
-`error-action`
+`_error-action_`
 a|
-`(stop | continue)`
+`(stop \| continue)`
 a|
-`ethernet-port-options`
+`_ethernet-port-options_`
 a|
 
 ----
-enableIPv4=(TRUE | FALSE) | enableIPv6=(TRUE | FALSE) |
-IPv6LocalAddress=ipv6-address | IPv6RoutableAddress=ipv6-address |
-IPv6RouterAddress=ipv6-address | IPv4Address=ip-address |
-IPv4ConfigurationMethod= (static | dhcp) | IPv4GatewayIP=ip-address |
-IPv4SubnetMask=ip-address | duplexMode=(TRUE | FALSE) | portSpeed=(autoNegotiate | 10 | 100 |
+enableIPv4=(TRUE \| FALSE) \| enableIPv6=(TRUE \| FALSE) \|
+IPv6LocalAddress=ipv6-address \| IPv6RoutableAddress=ipv6-address \|
+IPv6RouterAddress=ipv6-address \| IPv4Address=ip-address \|
+IPv4ConfigurationMethod= (static \| dhcp) \| IPv4GatewayIP=ip-address \|
+IPv4SubnetMask=ip-address \| duplexMode=(TRUE \| FALSE) \| portSpeed=(autoNegotiate \| 10 \| 100 \|
 1000)
 ----
 
 a|
-`feature-identifier`
+`_feature-identifier_`
 a|
 
 [NOTE]
@@ -164,78 +166,80 @@ All features in SANtricity 11.40 are enabled by default.
 ====
 
 a|
-`filename`
+`_filename_`
 a|
-`string-literal`
+`_string-literal_`
 a|
-`gid`
+`_gid_`
 a|
-`string-literal`
+`_string-literal_`
 a|
-`hex-literal`
+`_hex-literal_`
 a|
 A literal in the range of 0x00 - 0xFF.
 a|
-`host-card-identifier`
+`_host-card-identifier_`
 a|
-`(1 | 2 | 3 | 4)`
+`(1 \| 2 \| 3 \| 4)`
 a|
-`host-type`
+`_host-type_`
 a|
 `string-literal`\| `integer-literal`
 a|
-`instance-based- repository-spec`
+`_instance-based- repository-spec_`
 a|
 
 ----
 (repositoryRAIDLevel =repository-raid-level repositoryDrives= (drive-spec-list)
-[repositoryVolumeGroupUserLabel =user-label] [trayLossProtect=(TRUE | FALSE)1]) |
-[drawerLossProtect=(TRUE | FALSE)2]) | (repositoryVolumeGroup=user-label
+[repositoryVolumeGroupUserLabel =user-label] [trayLossProtect=(TRUE \| FALSE)1]) \|
+[drawerLossProtect=(TRUE \| FALSE)2]) \| (repositoryVolumeGroup=user-label
 [freeCapacityArea=integer-literal3])
 ----
 
-Specify the `repositoryRAIDLevel` parameter with the `repositoryDrives` parameter. Do not specify the RAID level or the drives with the volume group. Do not set a value for the `trayLossProtect` parameter when you specify a volume group.
+Specify the `*repositoryRAIDLevel*` parameter with the `*repositoryDrives*` parameter. Do not specify the RAID level or the drives with the volume group. Do not set a value for the `*trayLossProtect*` parameter when you specify a volume group.
 
 a|
-`ip-address`
+`_ip-address_`
 a|
-`(0-255).(0-255).(0-255).(0-255)`
+`*(0-255).(0-255).(0-255).(0-255)*`
 a|
-`ipv6-address`
+`_ipv6-address_`
 a|
-`(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF)` You must enter all 32 hexadecimal characters.
+`*(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF)*`
+
+You must enter all 32 hexadecimal characters.
 
 a|
-`iscsi-host-port`
+`_iscsi-host-port_`
 a|
 
 ----
-(1 | 2 | 3 | 4)
+(1 \| 2 \| 3 \| 4)
 ----
 
 The host port number might be 2, 3, or 4 depending on the type of controller you are using.
 
 a|
-`iscsi-host-port-options`
+`_iscsi-host-port-options_`
 a|
 
 ----
-IPv4Address=ip-address | IPv6LocalAddress=ipv6-address |
-IPv6RoutableAddress=ipv6-address | IPv6RouterAddress=ipv6-address |
-enableIPv4=(TRUE | FALSE) | enableIPv6=(TRUE | FALSE) | enableIPv4Priority=(TRUE | FALSE) |
-enableIPv6Priority=(TRUE | FALSE) | IPv4ConfigurationMethod=(static | dhcp) |
-IPv6ConfigurationMethod= (static | auto) | IPv4GatewayIP=ip-address |
-IPv6HopLimit=integer | IPv6NdDetectDuplicateAddress=integer |
-IPv6NdReachableTime=time-interval | IPv6NdRetransmitTime=time-interval |
-IPv6NdTimeOut=time-interval | IPv4Priority=integer |
-IPv6Priority=integer | IPv4SubnetMask=ip-address |
-IPv4VlanId=integer | IPv6VlanId=integer |
-maxFramePayload=integer | tcpListeningPort=tcp-port-id |
-portSpeed=(autoNegotiate | 1 | 10)
+IPv4Address=ip-address \| IPv6LocalAddress=ipv6-address \|
+IPv6RoutableAddress=ipv6-address \| IPv6RouterAddress=ipv6-address \|
+enableIPv4=(TRUE \| FALSE) \| enableIPv6=(TRUE \| FALSE) \| enableIPv4Priority=(TRUE \| FALSE) \|
+enableIPv6Priority=(TRUE \| FALSE) \| IPv4ConfigurationMethod=(static \| dhcp) \|
+IPv6ConfigurationMethod= (static \| auto) \| IPv4GatewayIP=ip-address \|
+IPv6HopLimit=integer \| IPv6NdDetectDuplicateAddress=integer \|
+IPv6NdReachableTime=time-interval \| IPv6NdRetransmitTime=time-interval \|
+IPv6NdTimeOut=time-interval \| IPv4Priority=integer \|
+IPv6Priority=integer \| IPv4SubnetMask=ip-address \|
+IPv4VlanId=integer \| IPv6VlanId=integer \|
+maxFramePayload=integer \| tcpListeningPort=tcp-port-id \|
+portSpeed=(autoNegotiate \| 1 \| 10)
 ----
 
 a|
-`iscsiSession`
+`_iscsiSession_`
 a|
 
 ----
@@ -243,21 +247,25 @@ a|
 ----
 
 a|
-`nvsram-offset`
+`_nvsram-offset_`
 a|
-`hex-literal`
+`_hex-literal_`
 a|
-`nvsramBitSetting`
+`_nvsramBitSetting_`
 a|
-`nvsram-mask, nvsram-value` = `0xhexadecimal, 0xhexadecimal` \| ``integer-literal``The `0xhexadecimal` value is typically a value from 0x00 to 0xFF.
+`_nvsram-mask, nvsram-value_` = `_0xhexadecimal, 0xhexadecimal_` \| `_integer-literal_`
+
+The `_0xhexadecimal_` value is typically a value from 0x00 to 0xFF.
 
 a|
-`nvsramByteSetting`
+`_nvsramByteSetting_`
 a|
-`nvsram-value` = `0xhexadecimal` \| ``integer-literal``The `0xhexadecimal` value is typically a value from 0x00 to 0xFF.
+`_nvsram-value_` = `_0xhexadecimal_` \| `_integer-literal_`
+
+The `0xhexadecimal` value is typically a value from 0x00 to 0xFF.
 
 a|
-`portID`
+`_portID_`
 a|
 
 ----
@@ -265,43 +273,43 @@ a|
 ----
 
 a|
-`raid-level`
+`_raid-level_`
 a|
 
 ----
-(0 | 1 | 3 | 5 | 6)
+(0 \| 1 \| 3 \| 5 \| 6)
 ----
 
 a|
-`recover-raid-volume-attr- value-list`
+`_recover-raid-volume-attr- value-list_`
 a|
-`recover-raid-volume-attr-value-pair` {`recover-raid-volume-attr-value-pair`}
+`_recover-raid-volume-attr-value-pair_` {`_recover-raid-volume-attr-value-pair_`}
 a|
-`recover-raid-volume-attr- value-pair`
-a|
-
-----
-owner=(a|b) |cacheReadPrefetch=(TRUE | FALSE) | dataAssurance=(none | enabled)
-----
-
-a|
-`repository-raid-level`
+`_recover-raid-volume-attr- value-pair_`
 a|
 
 ----
-(1 | 3 | 5 | 6)
+owner=(a\|b) \|cacheReadPrefetch=(TRUE \| FALSE) \| dataAssurance=(none \| enabled)
 ----
 
 a|
-`repository-spec`
+`_repository-raid-level_`
+a|
+
+----
+(1 \| 3 \| 5 \| 6)
+----
+
+a|
+`_repository-spec_`
 a|
 `instance-based-repository-spec` \| `count-based-repository-spec`
 a|
-`segment-size-spec`
+`_segment-size-spec_`
 a|
-`integer-literal` - all capacities are in base-2.
+`_integer-literal_` - all capacities are in base-2.
 a|
-`serial-number`
+`_serial-number_`
 a|
 
 ----
@@ -309,7 +317,7 @@ string-literal
 ----
 
 a|
-`slotID`
+`_slotID_`
 a|
 For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
@@ -318,65 +326,68 @@ All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on
 Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
 
 ----
-(drive=\(trayID,[drawerID,]slotID\)|
+(drive=\(trayID,[drawerID,]slotID\)\|
 drives=\(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\) )
 ----
 
 a|
-`test-devices`
+`_test-devices_`
 a|
 
 ----
-controller=(a|b)
+controller=(a\|b)
 esms=(esm-spec-list)drives=(drive-spec-list)
 ----
 
 a|
-`test-devices-list`
+`_test-devices-list_`
 a|
-`test-devices` {`test-devices`}
+`_test-devices_` {`_test-devices_`}
 a|
-`time-zone-spec`
-a|
-
-----
-(GMT+HH:MM | GMT-HH:MM) [dayLightSaving=HH:MM]
-----
-
-a|
-`trayID-list`
-a|
-`trayID` {`trayID`}
-a|
-`usage-hint-spec`
+`_time-zone-spec_`
 a|
 
 ----
-usageHint=(multiMedia | database | fileSystem)
+(GMT+HH:MM \| GMT-HH:MM) [dayLightSaving=HH:MM]
+----
+
+a|
+`_trayID-list_`
+a|
+`_trayID_` {`_trayID_`}
+a|
+`_usage-hint-spec_`
+a|
+
+----
+usageHint=(multiMedia \| database \| fileSystem)
 ----
 
 The usage hint, or expected I/O characteristics, of the volume are used by the controller to indicate an appropriate default volume segment size and dynamic cache read prefetch. For file system and database, a 128 KB segment size is used. For multimedia, a 256 KB segment size is used. All three usage hints enable dynamic cache read prefetch.
 
 a|
-`user-label`
+`_user-label_`
 a|
-`string-literal` Valid characters are alphanumeric, the dash, and the underscore.
+`_string-literal_`
+
+Valid characters are alphanumeric, the dash, and the underscore.
 
 a|
-`user-label-list`
+`_user-label-list_`
 a|
-`user-label` {`user-label`}
+`_user-label_` {`_user-label_`}
 a|
-`volumeGroup-number`
+`_volumeGroup-number_`
 a|
-`integer-literal`
+`_integer-literal_`
 a|
-`wwID`
+`_wwID_`
 a|
-`string-literal`
+`_string-literal_`
 |===
 1For tray loss protection to work, your configuration must adhere to the following guidelines:
 
+[cols="3*",options="header"]
 |===
 | Level| Criteria for Tray Loss Protection| Minimum number of trays required
 a|
@@ -412,6 +423,7 @@ Not applicable
 |===
 2For drawer loss protection to work, your configuration must adhere to the following guidelines:
 
+[cols="3*",options="header"]
 |===
 | Level| Criteria for drawer loss protection| Minimum number of drawers required
 a|
@@ -445,15 +457,15 @@ Cannot achieve Drawer Loss Protection.
 a|
 Not applicable
 |===
-If you have a storage array configuration in which a volume group spans several trays, you must make sure that the setting for drawer loss protection works with the setting for tray loss protection. You can have drawer loss protection without tray loss protection. You cannot have tray loss protection without drawer loss protection. If the `trayLossProtect` parameter and the `drawerLossProtect` parameter are not set to the same value, the storage array returns an error message and a storage array configuration will not be created.
+If you have a storage array configuration in which a volume group spans several trays, you must make sure that the setting for drawer loss protection works with the setting for tray loss protection. You can have drawer loss protection without tray loss protection. You cannot have tray loss protection without drawer loss protection. If the `*trayLossProtect*` parameter and the `*drawerLossProtect*` parameter are not set to the same value, the storage array returns an error message and a storage array configuration will not be created.
 
 3 To determine if a free capacity area exists, run the `show volumeGroup` command.
 
 4 The default drive (drive type) is `SAS`.
 
-The `driveType` parameter is not required if only one type of drive is in the storage array. If you use the `driveType` parameter, you also must use the `hotSpareCount` parameter and the `volumeGroupWidth` parameter.
+The `*driveType*` parameter is not required if only one type of drive is in the storage array. If you use the `*driveType*` parameter, you also must use the `*hotSpareCount*` parameter and the `*volumeGroupWidth*` parameter.
 
-5 The `dataAssurance` parameter relates to the Data Assurance (DA) feature.
+5 The `*dataAssurance*` parameter relates to the Data Assurance (DA) feature.
 
 The Data Assurance (DA) feature increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur when data is moved between the hosts and the drives. When this feature is enabled, the storage array appends error-checking codes (also known as cyclic redundancy checks or CRCs) to each block of data in the volume. After a data block is moved, the storage array uses these CRC codes to determine if any errors occurred during transmission. Potentially corrupted data is neither written to disk nor returned to the host.
 
@@ -461,12 +473,12 @@ If you want to use the DA feature, start with a pool or volume group that includ
 
 [NOTE]
 ====
-When all the required hardware and the I/O interface is DA-capable, you can set the `dataAssurance` parameter to `enabled` and then use DA with certain operations. For example, you can create a volume group that includes DA-capable drives, and then create a volume within that volume group that is DA-enabled. Other operations that use a DA-enabled volume have options to support the DA feature.
+When all the required hardware and the I/O interface is DA-capable, you can set the `*dataAssurance*` parameter to `enabled` and then use DA with certain operations. For example, you can create a volume group that includes DA-capable drives, and then create a volume within that volume group that is DA-enabled. Other operations that use a DA-enabled volume have options to support the DA feature.
 ====
 
-6 The `volumesPerGroupCount` parameter is the number of equal-capacity volumes per volume group.
+6 The `*volumesPerGroupCount*` parameter is the number of equal-capacity volumes per volume group.
 
-7 The `securityType` parameter enables you to specify the security setting for a volume group that you are creating. All of the volumes are also set to the security setting that you choose. Available options for setting the security setting include:
+7 The `*securityType*` parameter enables you to specify the security setting for a volume group that you are creating. All of the volumes are also set to the security setting that you choose. Available options for setting the security setting include:
 
 * `none` -- The volume group is not secure.
 * `capable` -- The volume group is security capable, but security has not been enabled.
@@ -474,5 +486,5 @@ When all the required hardware and the I/O interface is DA-capable, you can set 
 
 [NOTE]
 ====
-A storage array security key must already be created for the storage array if you want to set `securityType=enabled`. (To create a storage array security key, use the `create storageArray securityKey` command.)
+A storage array security key must already be created for the storage array if you want to set `*securityType=enabled*`. (To create a storage array security key, use the `create storageArray securityKey` command.)
 ====

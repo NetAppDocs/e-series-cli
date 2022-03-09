@@ -1,8 +1,8 @@
 ---
 permalink: get-started/usage-guidelines.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: script command, guidelines
+summary: " "
 ---
 = Script command guidelines
 :icons: font
@@ -14,7 +14,7 @@ This list provides guidelines for writing script commands on the command line:
 * You can enter more than one command on a line, but you must separate each command with a semicolon (`;`).
 * You must separate each base command and its associated primary parameters and secondary parameters with a space.
 * The script engine is not case sensitive. You can enter commands by using uppercase letters, lowercase letters, or mixed-case letters.
-* Add comments to your scripts to make it easier for you and future users to understand the purpose of the script commands. (For information about how to add comments, see link:alpaca-adding-comments-to-a-script-file.md#[Adding comments to a script file].)
+* Add comments to your scripts to make it easier for you and future users to understand the purpose of the script commands. (For information about how to add comments, see link:alpaca-adding-comments-to-a-script-file.html[Adding comments to a script file^].)
 
 [NOTE]
 ====

@@ -1,8 +1,8 @@
 ---
 permalink: get-started/structure-of-a-cli-command.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: structure, cli, commands
+summary: " "
 ---
 = Structure of CLI commands
 :icons: font
