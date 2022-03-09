@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/activate-synchronous-mirroring.html
 sidebar: sidebar
-keywords: 
-summary: 'The activate storageArray feature command activates the Synchronous Mirroring feature and creates the mirror repository volume.'
+keywords: activate, synchronous mirroring, supported arrays, roles, context, syntax, parameters, data assurance management, minimum firmware level
+summary: "The activate storageArray feature command activates the Synchronous Mirroring feature and creates the mirror repository volume."
 ---
 = Activate synchronous mirroring
 :icons: font
@@ -183,7 +183,7 @@ If the `dataAssurance` parameter is set to `enabled`, only data assurance capabl
 
 7.10 adds RAID Level 6 capability.
 
-7.60 adds the ``drawerID``user input, the `driveMediaType` parameter, and the `drawerLossProtect` parameter.
+7.60 adds the `drawerID` user input, the `driveMediaType` parameter, and the `drawerLossProtect` parameter.
 
 7.75 adds the `dataAssurance` parameter.
 
