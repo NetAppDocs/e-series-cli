@@ -1,8 +1,8 @@
 ---
 permalink: get-started/formatting-cli-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: format, rules, cli, commands
+summary: " "
 ---
 = Format rules for CLI commands
 :icons: font
@@ -10,13 +10,17 @@ summary: ''
 
 Double quotation marks (" ") that are used as part of a name or label require special consideration when you run the CLI commands and the script commands on a Windows, Linux, or Solaris operating system.
 
-When double quotation marks (" ") are part of a name or value, you must insert a backslash (\) before each double quotation mark character. For example:
+When double quotation marks (" ") are part of a name or value, you must insert a backslash (\) before each double quotation mark character.
+
+For example:
 
 ----
 -c "set storageArray userLabel=\"Engineering\";"
 ----
 
-In this example, "Engineering" is the storage array name. A second example is:
+In this example, "Engineering" is the storage array name.
+
+A second example is:
 
 ----
 -n \"My\"_Array
@@ -46,7 +50,8 @@ Insert one caret ({caret}) before each special script character when used within
 
 [NOTE]
 ====
-When issuing SMcli commands at the command prompt, an additional backslash (`\`) character is required as an escape character in the file path name of an input or output file when using the Windows OS. The additional backslash (`\`) must be included when using SMcli in secure, https mode, by providing the -u option to specify a role-based access management user.*Example:*
+When issuing SMcli commands at the command prompt, an additional backslash (`\`) character is required as an escape character in the file path name of an input or output file when using the Windows OS. The additional backslash (`\`) must be included when using SMcli in secure, https mode, by providing the -u option to specify a role-based access management user.
+*Example:*
 
 ----
 C:\\dir\\subdir\\filename
