@@ -1,7 +1,7 @@
 ---
 permalink: commands-category/security-administrator-commands.html
 sidebar: sidebar
-keywords: security, administrator, commands
+keywords: security, administrator, commands, storage, array, key, external, configuration
 summary: "Security administrators commands"
 ---
 = Security administrators commands

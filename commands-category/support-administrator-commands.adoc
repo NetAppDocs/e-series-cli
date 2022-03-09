@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/support-administrator-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: support, administrator, commands, snapshot, mirror, group
+summary: "Support administrators commands"
 ---
 = Support administrators commands
 :icons: font

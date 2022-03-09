@@ -1,7 +1,7 @@
 ---
 permalink: commands-category/storage-administrator-commands.html
 sidebar: sidebar
-keywords: storage, administrator, commands
+keywords: storage, administrator, commands, autosupport, array, volume, asynchronous, application
 summary: "Storage administrators commands"
 ---
 = Storage administrators commands

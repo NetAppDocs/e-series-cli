@@ -1,7 +1,7 @@
 ---
 permalink: commands-category/performance-tuning-commands.html
 sidebar: sidebar
-keywords: performance, tuning, commands
+keywords: performance, tuning, commands, automatic, load balance, cache commands
 summary: "Performance tuning commands"
 ---
 = Performance tuning commands
