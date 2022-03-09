@@ -2,7 +2,7 @@
 permalink: get-started/formatting-cli-commands.html
 sidebar: sidebar
 keywords: format, rules, cli, commands
-summary: "Double quotation marks (" ") that are used as part of a name or label require special consideration when you run the CLI commands and the script commands on a Windows, Linux, or Solaris operating system."
+summary: "Double quotation marks that are used as part of a name or label require special consideration when you run the CLI commands and the script commands on a Windows, Linux, or Solaris operating system."
 ---
 = Format rules for CLI commands
 :icons: font
