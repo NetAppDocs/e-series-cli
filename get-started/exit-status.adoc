@@ -2,7 +2,7 @@
 permalink: get-started/exit-status.html
 sidebar: sidebar
 keywords: exit, status
-summary: " "
+summary: "This table lists the exit statuses that might be returned and the meaning of each status."
 ---
 = Exit status
 :icons: font

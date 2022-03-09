@@ -2,7 +2,7 @@
 permalink: get-started/structure-of-a-cli-command.html
 sidebar: sidebar
 keywords: structure, cli, commands
-summary: " "
+summary: "The CLI commands are in the form of a command wrapper and elements embedded into the wrapper."
 ---
 = Structure of CLI commands
 :icons: font

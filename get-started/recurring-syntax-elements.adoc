@@ -2,7 +2,7 @@
 permalink: get-started/recurring-syntax-elements.html
 sidebar: sidebar
 keywords: recur, syntax, elements
-summary: " "
+summary: "Recurring syntax elements are a general category of parameters and options that you can use in the script commands."
 ---
 = Recurring syntax elements
 :icons: font

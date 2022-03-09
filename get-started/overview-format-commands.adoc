@@ -2,7 +2,7 @@
 permalink: get-started/overview-format-commands.html
 sidebar: sidebar
 keywords: overview, cli
-summary: " "
+summary: "The command line interface (CLI) is a software application that provides a way to configure and monitor storage arrays."
 ---
 = Overview of CLI
 :icons: font

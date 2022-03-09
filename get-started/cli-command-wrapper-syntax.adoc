@@ -2,7 +2,7 @@
 permalink: get-started/cli-command-wrapper-syntax.html
 sidebar: sidebar
 keywords: cli, command, wrapper, syntax
-summary: " "
+summary: "General syntax forms of the CLI command wrappers are listed in this section."
 ---
 = CLI command wrapper syntax
 :icons: font
@@ -47,7 +47,7 @@ To run all of the CLI commands you must have administrator privileges. Some CLI 
 
 == Example in https client mode
 
-The following examples demonstrate the `https` client mode command line parameters described in xref:alpaca-command-line-parameters.adoc[Command line parameters].
+The following examples demonstrate the `https` client mode command line parameters described in xref:command-line-parameters.adoc[Command line parameters].
 
 ----
 SMcli (Controller A host-name-or-IP-address&|
@@ -61,7 +61,7 @@ If you do not specify a `clientType`, but do include the `-u` option and the `us
 
 == Examples in symbol client mode
 
-The following examples demonstrate the `symbol` client mode command line parameters described in xref:alpaca-command-line-parameters.adoc[Command line parameters].
+The following examples demonstrate the `symbol` client mode command line parameters described in xref:command-line-parameters.adoc[Command line parameters].
 
 ----
 SMcli **-a** **email:** email-address [host-name-or-IP-address1 [host-name-or-IP-address2]] [**-n** storage-system-name | **-w** wwID | **-h** host-name] [**-I** information-to-include] [**-q** frequency] [**-S**]

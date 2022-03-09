@@ -2,7 +2,7 @@
 permalink: get-started/structure-of-a-script-command.html
 sidebar: sidebar
 keywords: structure, script command
-summary: " "
+summary: "All script commands have the following structure."
 ---
 = Structure of a script command
 :icons: font

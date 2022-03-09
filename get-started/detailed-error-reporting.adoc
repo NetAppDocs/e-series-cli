@@ -2,7 +2,7 @@
 permalink: get-started/detailed-error-reporting.html
 sidebar: sidebar
 keywords: detailed, error, report
-summary: " "
+summary: "Data collected from an error encountered by the CLI is written to a file."
 ---
 = Detailed error reporting
 :icons: font

@@ -2,7 +2,7 @@
 permalink: get-started/command-line-parameters.html
 sidebar: sidebar
 keywords: command line, parameters
-summary: " "
+summary: "The SANtricity OS 11.40 release introduces, for the E2800 and E5700 controllers with embedded web services, the ability to interact on the Command Line using a secure HTTPS protocol. These controllers can optionally use the SYMbol protocol for Command Line interactions instead."
 ---
 = Command line parameters
 :icons: font
@@ -14,7 +14,7 @@ The SANtricity OS 11.40 release introduces, for the E2800 and E5700 controllers 
 
 For the new parameters that only apply to the `*https*` client type, it follows that they also apply only to the E2800 or E5700 controllers.
 
-For a list of new, deprecated, and obsolete commands with this release, see xref:alpaca-changes-in-the-cli-and-script-commands-in-this-release.adoc[Changes in the CLI and Script commands in this release].
+For a list of new, deprecated, and obsolete commands with this release, see xref:changes-in-the-cli-and-script-commands-in-this-release.adoc[Changes in the CLI and Script commands in this release].
 
 [cols="2*",options="header"]
 |===

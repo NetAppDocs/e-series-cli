@@ -2,7 +2,7 @@
 permalink: get-started/firmware-compatibility-levels.html
 sidebar: sidebar
 keywords: firmware, compatibility, levels
-summary: " "
+summary: "The script commands and the command parameters do not run under all versions of the controller firmware."
 ---
 = Firmware compatibility levels
 :icons: font

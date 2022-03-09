@@ -2,7 +2,7 @@
 permalink: get-started/formatting-the-commands.html
 sidebar: sidebar
 keywords: format, commands
-summary: " "
+summary: "Formatting the commands."
 ---
 = Formatting the commands
 :icons: font

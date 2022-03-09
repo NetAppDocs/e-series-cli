@@ -2,7 +2,7 @@
 permalink: get-started/formatting-cli-commands-in-windows-powershell.html
 sidebar: sidebar
 keywords: format, rules, cli, commands, windows, powershell
-summary: " "
+summary: "The Windows PowerShell is an interactive and scripting shell that provides access to command-line tools."
 ---
 = Format rules for CLI commands in Windows PowerShell
 :icons: font
