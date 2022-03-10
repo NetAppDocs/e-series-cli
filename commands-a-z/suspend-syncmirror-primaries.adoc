@@ -27,10 +27,11 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-suspend syncMirror (primary [primaryVolumeName]
-primaries [primaryVolumeName1 ... primaryVolumeNameN])
+
+suspend syncMirror (primary pass:quotes[[_primaryVolumeName_]]
+primaries pass:quotes[[_primaryVolumeName1_ ... _primaryVolumeNameN_])]
 [writeConsistency=(TRUE | FALSE)]
 ----
 
