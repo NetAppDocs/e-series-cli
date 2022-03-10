@@ -29,9 +29,10 @@ This command applies to both internal and external key management.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-validate storageArray securityKey file="fileName" passPhrase="passPhraseString"
+
+pass:quotes[validate storageArray securityKey file="_fileName_" passPhrase="_passPhraseString_"]
 ----
 
 == Parameters

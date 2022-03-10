@@ -24,9 +24,10 @@ To execute this command on an E2800 or E5700 storage array, you must have the St
 This `suspend` command helps to reduce any performance impact to the host application that might occur while any changed data on the local storage array is copied to the remote storage array.
 
 == Syntax
-
+[subs=+macros]
 ----
-suspend asyncMirrorGroup [asyncMirrorGroupName]
+
+pass:quotes[suspend asyncMirrorGroup [_asyncMirrorGroupName_]]
 ----
 
 == Parameters

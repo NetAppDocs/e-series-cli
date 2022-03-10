@@ -24,9 +24,10 @@ To execute this command on an E2800 or E5700 storage array, you must have the Su
 While caching is stopped, host reads are serviced from the base volumes instead of from the SSD cache.
 
 == Syntax
-
+[subs=+macros]
 ----
-suspend ssdCache [ssdCacheName]
+
+pass:quotes[suspend ssdCache [_ssdCacheName_]]
 ----
 
 == Parameter
