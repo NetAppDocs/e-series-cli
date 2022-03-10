@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/cli-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: cli commands, synchronous, asynchronous, certificate, autoconfigure, storage
+summary: "CLI commands (Alphabetical List)"
 ---
 = CLI commands (Alphabetical List)
 :icons: font

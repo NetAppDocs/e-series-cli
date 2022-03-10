@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/e2800-e5700-ef600-and-ef300-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: commands, cache, file, array, certificate, autoconfigure, storage array
+summary: "E2800, E5700, EF600, and EF300 commands"
 ---
 = E2800, E5700, EF600, and EF300 commands
 :icons: font
