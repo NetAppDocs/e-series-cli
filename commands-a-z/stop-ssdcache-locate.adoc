@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-ssdcache-locate.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop ssdCache locate command turns off the indicator lights on the Solid State Disks \(SSDs\) that were turned on by the start ssdCache locate command.'
+keywords: stop, ssd, cache, locate
+summary: "The stop ssdCache locate command turns off the indicator lights on the Solid State Disks (SSDs) that were turned on by the start ssdCache locate command."
 ---
 = Stop SSD cache locate
 :icons: font

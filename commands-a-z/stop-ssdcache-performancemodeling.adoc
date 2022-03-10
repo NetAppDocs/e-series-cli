@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-ssdcache-performancemodeling.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop ssdCache performanceModeling command stops the performance modeling operation and displays the performance modeling data for the SSD cache.'
+keywords: stop, ssd, cache, performance, model
+summary: "The stop ssdCache performanceModeling command stops the performance modeling operation and displays the performance modeling data for the SSD cache."
 ---
 = Stop SSD cache performance modeling
 :icons: font
@@ -24,13 +24,14 @@ To execute this command on an E2800 or E5700 storage array, you must have the Su
 Before running this command, you must start the performance modeling operation with the `start ssdCache performanceModeling` command. Optionally, you can save the data to a file.
 
 == Syntax
-
+[subs=+macros]
 ----
-stop ssdCache [ssdCacheName] performanceModeling [file="filename"]
+
+pass:quotes[stop ssdCache [_ssdCacheName_]] performanceModeling pass:quotes[[file="_filename_"]]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
