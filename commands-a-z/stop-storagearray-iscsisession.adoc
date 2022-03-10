@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-storagearray-iscsisession.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop storageArray iscsiSession command forces the termination of a storage array iSCSI session.'
+keywords: stop, storage, array, iscsi session
+summary: "The stop storageArray iscsiSession command forces the termination of a storage array iSCSI session."
 ---
 = Stop storage array iSCSI session
 :icons: font
@@ -26,11 +26,11 @@ stop storageArray iscsiSession [sessionNumber]
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`iscsiSession`
+`*iscsiSession*`
 a|
 The identifier number of the iSCSI session. Enclose the identifier number of the iSCSI session in square brackets ([ ]).
 |===

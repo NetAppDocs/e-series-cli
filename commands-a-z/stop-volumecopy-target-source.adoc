@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-volumecopy-target-source.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop volumeCopy target source command stops a volume copy operation. This command is valid for snapshot volume copy pairs.'
+keywords: stop, volume, copy
+summary: "The stop volumeCopy target source command stops a volume copy operation. This command is valid for snapshot volume copy pairs."
 ---
 = Stop volume copy
 :icons: font
@@ -26,15 +26,15 @@ stop volumeCopy target [targetName] source [sourceName]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`target`
+`*target*`
 a|
 The name of the target volume for which you want to stop a volume copy operation. Enclose the target volume name in square brackets ([ ]). If the target volume name has special characters or numbers, you must enclose the target volume name in double quotation marks (" ") inside square brackets.
 a|
-`source`
+`*source*`
 a|
 The name of the source volume for which you want to stop a volume copy operation. Enclose the source volume name in square brackets ([ ]). If the source volume name has special characters or numbers, you must enclose the source volume name in double quotation marks (" ") inside square brackets.
 |===

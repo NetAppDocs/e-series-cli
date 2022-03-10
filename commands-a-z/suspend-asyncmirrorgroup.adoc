@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/suspend-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The suspend asyncMirrorGroup command suspends the synchronization of data on all mirrored pairs at the asynchronous mirror group level.'
+keywords: suspend, asynchronous, mirror, group
+summary: "The suspend asyncMirrorGroup command suspends the synchronization of data on all mirrored pairs at the asynchronous mirror group level."
 ---
 = Suspend asynchronous mirror group
 :icons: font
@@ -30,7 +30,7 @@ suspend asyncMirrorGroup [asyncMirrorGroupName]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

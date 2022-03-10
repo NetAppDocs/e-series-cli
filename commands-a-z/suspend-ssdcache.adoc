@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/suspend-ssdcache.html
 sidebar: sidebar
-keywords: 
-summary: 'The suspend ssdCache command temporarily stops caching for all of the volumes that are using the SSD cache.'
+keywords: suspend, ssd cache
+summary: "The suspend ssdCache command temporarily stops caching for all of the volumes that are using the SSD cache."
 ---
 = Suspend SSD cache
 :icons: font
@@ -30,11 +30,11 @@ suspend ssdCache [ssdCacheName]
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`ssdCache`
+`*ssdCache*`
 a|
 The name of the SSD cache that you want to suspend. Enclose the SSD cache name in square brackets ([ ]). If the SSD cache name has special characters or numbers, you must enclose the SSD cache name in double quotation marks (" ") inside square brackets.
 |===

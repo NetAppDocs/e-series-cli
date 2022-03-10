@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/validate-storagearray-securitykey.html
 sidebar: sidebar
-keywords: 
-summary: 'The validate storageArray securityKey command validates the security key for a storage array that has security-capable drives to make sure that the back-up security key file is not corrupt.'
+keywords: validate, storage array, security key
+summary: "The validate storageArray securityKey command validates the security key for a storage array that has security-capable drives to make sure that the back-up security key file is not corrupt."
 ---
 = Validate storage array security key
 :icons: font
@@ -35,11 +35,11 @@ validate storageArray securityKey file="fileName" passPhrase="passPhraseString"
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`file`
+`*file*`
 a|
 The file path and the file name that has the security key. Enclose file path and the file name in double quotation marks (" "). For example:
 
@@ -53,7 +53,7 @@ The file name must have an extension of `.slk`.
 ====
 
 a|
-`passPhrase`
+`*passPhrase*`
 a|
 A character string that encrypts the security key so that you can store the security key in an external file. Enclose the pass phrase in double quotation marks (" ").
 |===
