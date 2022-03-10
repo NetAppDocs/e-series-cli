@@ -34,7 +34,7 @@ suspend asyncMirrorGroup [asyncMirrorGroupName]
 |===
 | Parameter| Description
 a|
-`asyncMirrorGroup`
+`*asyncMirrorGroup*`
 a|
 The name of the asynchronous mirror group for which you want to suspend synchronization of data. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name has special characters or numbers, you must enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets.
 
