@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/add-drives-to-ssd-cache.html
 sidebar: sidebar
-keywords: 
-summary: 'The set ssdCache command increases the capacity of an existing SSD cache by adding more solid state disks \(SSDs\).'
+keywords: add drives ssd cache, supported arrays, syntax, parameters, minimum firmware level
+summary: "The set ssdCache command increases the capacity of an existing SSD cache by adding more solid state disks (SSDs)."
 ---
 = Add drives to SSD cache
 :icons: font
@@ -22,10 +22,10 @@ To execute this command on an E2800 or E5700 storage array, you must have the Su
 
 == Syntax
 
-[source,monospace]
+[subs=+macros]
 ----
-set ssdCache [ssdCacheName]
-addDrives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn)
+pass:quotes[set ssdCache [_ssdCacheName_]]
+pass:quotes[addDrives=(_trayID1_,[_drawerID1_,]]pass:quotes[_slotID1 ... trayIDn_,]pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_)]
 ----
 
 == Parameters

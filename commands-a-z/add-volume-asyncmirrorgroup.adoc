@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/add-volume-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The add volume asyncMirrorGroup command adds a primary volume to an asynchronous mirror group.'
+keywords: add volume, asynchronous, mirror group, supported arrays, roles, context, syntax, parameter, minimum firmware level
+summary: "The add volume asyncMirrorGroup command adds a primary volume to an asynchronous mirror group."
 ---
 = Add volume to asynchronous mirror group
 :icons: font
@@ -29,13 +29,13 @@ To execute this command on an E2800 or E5700 storage array, you must have the St
 This command is valid only on the local storage array that contains the asynchronous mirror group to which you want to add the primary volume. An asynchronous mirror group has a repository volume that is used to save data for all of the point-in-time images that are part of the asynchronous mirror group. Each primary volume in the asynchronous mirror group has a corresponding mirror volume on a remote storage array.
 
 == Syntax
-
+[subs=+macros]
 ----
-add volume="volumeName" asyncMirrorGroup="asyncMirrorGroupName"
-remotePassword="password"
+pass:quotes[add volume="_volumeName_" asyncMirrorGroup="_asyncMirrorGroupName_"
+remotePassword="_password_"
 (repositoryVolume="repos_xxxx" |
-repositoryVolume=(volumeGroupName [capacity=capacityValue])
-repositoryVolume=(diskPoolName [capacity=capacityValue]))
+repositoryVolume=(_volumeGroupName_ ]pass:quotes[[capacity=_capacityValue_])]
+repositoryVolume=pass:quotes[(_diskPoolName_] pass:quotes[[capacity=_capacityValue_]))
 ----
 
 == Parameter
