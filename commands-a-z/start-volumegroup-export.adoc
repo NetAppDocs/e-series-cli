@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-volumegroup-export.html
 sidebar: sidebar
-keywords: 
-summary: 'The start volumeGroup export command moves a volume group into an Exported state.'
+keywords: start, volume, group, export
+summary: "The start volumeGroup export command moves a volume group into an Exported state."
 ---
 = Start volume group export
 :icons: font
@@ -34,17 +34,18 @@ Within the volume group, you cannot move volumes that are associated with the fe
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start volumeGroup [volumeGroupName] export
+pass:quotes[start volumeGroup [_volumeGroupName_]] export
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`volumeGroup`
+`*volumeGroup*`
 a|
 The name of the volume group that you want to export. Enclose the volume group name in square brackets ([ ]).
 |===

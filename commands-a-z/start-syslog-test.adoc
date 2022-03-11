@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-syslog-test.html
 sidebar: sidebar
-keywords: 
-summary: 'The start syslog test command sends a sample message to test the syslog configuration.'
+keywords: test, syslog, configuration
+summary: "The start syslog test command sends a sample message to test the syslog configuration."
 ---
 = Test syslog configuration
 :icons: font

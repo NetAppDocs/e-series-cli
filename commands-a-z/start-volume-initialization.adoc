@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-volume-initialization.html
 sidebar: sidebar
-keywords: 
-summary: 'The start volume initialize command starts the formatting of a volume in a storage array.'
+keywords: start, volume, initialization
+summary: "The start volume initialize command starts the formatting of a volume in a storage array."
 ---
 = Start volume initialization
 :icons: font
@@ -27,17 +27,18 @@ Formatting a volume starts a long-running operation that you cannot stop.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start volume [volumeName] initialize
+pass:quotes[start volume [_volumeName_]] initialize
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`volume`
+`*volume*`
 a|
 The name of a volume that you want to format. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
 

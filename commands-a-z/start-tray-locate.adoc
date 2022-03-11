@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-tray-locate.html
 sidebar: sidebar
-keywords: 
-summary: 'The start tray locate command locates a tray by turning on the indicator light.'
+keywords: start, tray, locate
+summary: "The start tray locate command locates a tray by turning on the indicator light."
 ---
 = Start tray locate
 :icons: font
@@ -24,17 +24,18 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 Use the `stop tray locate` command to turn off the indicator light for the tray.
 
 == Syntax
-
+[subs=+macros]
 ----
-start tray [trayID] locate
+pass:quotes[start tray [_trayID_]] locate
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`tray`
+`*tray*`
 a|
 The tray that you want to locate. Tray ID values are `0` to `99`. Enclose the tray ID value in square brackets ([ ]).
 |===
