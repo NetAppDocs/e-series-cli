@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/load-storagearray-dbmdatabase.html
 sidebar: sidebar
-keywords: 
-summary: 'The load storageArray dbmDatabase command restores a Database Management \(DBM\) database image by retrieving the image from a file or from cache.'
+keywords: load, storage array, database, command, management
+summary: "The load storageArray dbmDatabase command restores a Database Management (DBM) database image by retrieving the image from a file or from cache."
 ---
 = Load storage array DBM database
 :icons: font
@@ -26,10 +26,10 @@ This command restores a storage array DBM database to the exact configuration th
 Before using this command with the `file` option, you must first obtain a validator string (a security code) from technical support. To obtain a validator, use the `save storageArray dbmValidatorInfo` command to generate an XML file that contains validator information. Technical support uses the XML file to generate the validator string required for this command.
 
 == Syntax
-
+[subs=+macros]
 ----
 load storageArray dbmDatabase
-((file="filename" validator="validatorValue") | sourceLocation=onboard)
+pass:quotes[((file="_filename_" validator="_validatorValue_") | sourceLocation=onboard)]
 [controller [(a|b)]]
 [contentType= all]
 ----
