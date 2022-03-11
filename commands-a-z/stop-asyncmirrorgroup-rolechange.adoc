@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-asyncmirrorgroup-rolechange.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop asyncMirrorGroup rolechange command cancels a pending role reversal operation between asynchronous mirror groups.'
+keywords: cancel, asynchronous, mirror, group, role, reversal
+summary: "The stop asyncMirrorGroup rolechange command cancels a pending role reversal operation between asynchronous mirror groups."
 ---
 = Cancel asynchronous mirror group role reversal
 :icons: font
@@ -20,17 +20,18 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, or E5700 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-stop asyncMirrorGroup [asyncMirrorGroupName] rolechange
+pass:quotes[stop asyncMirrorGroup [_asyncMirrorGroupName_]] rolechange
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`asyncMirrorGroup`
+`*asyncMirrorGroup*`
 a|
 The name of the asynchronous mirror group for which or which you want to cancel the pending role reversal operation. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name contains special characters or consists only of numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
 

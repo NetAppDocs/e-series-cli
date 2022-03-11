@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-drivechannel-faultdiagnostics.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop driveChannel faultDiagnostics command stops the drive channel fault isolation diagnostics, which stops the start drive channel fault isolation diagnostics command before it completes.'
+keywords: stop, drive, channel, fault, isolation, diagnostics
+summary: "The stop driveChannel faultDiagnostics command stops the drive channel fault isolation diagnostics, which stops the start drive channel fault isolation diagnostics command before it completes."
 ---
 = Stop drive channel fault isolation diagnostics
 :icons: font
@@ -38,9 +38,9 @@ None.
 
 == Notes
 
-Use the `start driveChannel faultDiagnostics` command and the `save driveChannel faultDiagnostics` command with the `stop driveChannel faultDiagnostics` command. These commands are needed to start the diagnostic test and save diagnostic test results to a file.
+Use the `*start driveChannel faultDiagnostics*` command and the `*save driveChannel faultDiagnostics*` command with the `*stop driveChannel faultDiagnostics*` command. These commands are needed to start the diagnostic test and save diagnostic test results to a file.
 
-You also can stop the `start driveChannel faultDiagnostics` command at any time by pressing *Ctrl+C*.
+You also can stop the `*start driveChannel faultDiagnostics*` command at any time by pressing `Ctrl+C`.
 
 == Minimum firmware level
 
