@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-directoryservices-test.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray directoryServices test command checks communication with all configured directory servers and validates the server domain configurations.'
+keywords: test, storage, array, directory, server
+summary: "The start storageArray directoryServices test command checks communication with all configured directory servers and validates the server domain configurations."
 ---
 = Test storage array directory server
 :icons: font
@@ -35,12 +35,12 @@ start storageArray directoryServices test
 None.
 
 == Examples
-
+[subs=+macros]
 ----
 
 SMcli -n Array1 -c "start storageArray directoryServices test;"
 
-<test results for each domain configured are returned>
+pass:quotes[<_test results for each domain configured are returned_>]
 
 SMcli completed successfully.
 ----

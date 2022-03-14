@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-ocspresponderurl-test.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray ocspResponderUrl test command checks for an open connection to the specified URL of the Online Certificate Status Protocol \(OCSP\) server.'
+keywords: start, ocsp, server, url, test
+summary: "The start storageArray ocspResponderUrl test command checks for an open connection to the specified URL of the Online Certificate Status Protocol (OCSP) server."
 ---
 = Start OCSP server URL test
 :icons: font
@@ -21,10 +21,11 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`url`
+`*url*`
 a|
 The literal string of the OCSP server's URL.
 [NOTE]
