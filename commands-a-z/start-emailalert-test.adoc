@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-emailalert-test.html
 sidebar: sidebar
-keywords: 
-summary: 'The start emailAlert test command allows you to test the alert configuration by sending a sample email message.'
+keywords: test, email, alert, configuration
+summary: "The start emailAlert test command allows you to test the alert configuration by sending a sample email message."
 ---
 = Test email alert configuration
 :icons: font
