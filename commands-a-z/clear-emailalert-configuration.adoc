@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/clear-emailalert-configuration.html
 sidebar: sidebar
-keywords: 
-summary: 'The clear emailAlert configuration command clears the email alert configuration to default values.'
+keywords: clear email, alert, configuration
+summary: "The clear emailAlert configuration command clears the email alert configuration to default values."
 ---
 = Clear email alert configuration
 :icons: font

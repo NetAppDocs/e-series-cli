@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/check-syncmirror.html
 sidebar: sidebar
-keywords: 
-summary: 'The check syncMirror command returns the status of a remote-mirror volume. Use this command to determine when the status of the remote-mirror volume becomes Optimal.'
+keywords: check, synchronous, mirroring status
+summary: "The check syncMirror command returns the status of a remote-mirror volume. Use this command to determine when the status of the remote-mirror volume becomes Optimal."
 ---
 = Check synchronous mirroring status
 :icons: font
@@ -27,9 +27,9 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-check syncMirror localVolume [volumeName] optimalStatus timeout=timeoutValue
+check syncMirror localVolume pass:quotes[[_volumeName_]] optimalStatus timeout=pass:quotes[_timeoutValue_]
 ----
 
 == Parameters

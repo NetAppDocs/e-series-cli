@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/clear-storagearray-configuration.html
 sidebar: sidebar
-keywords: 
-summary: 'The clear storageArray configuration command clears an entire storage array configuration or part of a storage array configuration, or clears volume group and volume configuration only.'
+keywords: clear, storage array, configuration
+summary: "The clear storageArray configuration command clears an entire storage array configuration or part of a storage array configuration, or clears volume group and volume configuration only."
 ---
 = Clear storage array configuration
 :icons: font
@@ -81,17 +81,17 @@ With this command, you can clear the configuration of the storage array in a num
 This command also resets the storage array identifier. Any premium features enabled with a key file are invalidated, and new premium feature keys must be created and applied. Contact technical support.
 
 When you run this command, the storage array becomes unresponsive, and all script processing is canceled. You must remove and re-add the storage array to resume communication with the host. To remove an unresponsive storage array, use this SMcli wrapper command:
-
+[subs=+macros]
 ----
-SMcli -X -n storageArrayName
+SMcli -X -n pass:quotes[_storageArrayName_]
 ----
 
 The `X` is a unique SMcli terminal and must be uppercase.
 
 To re-add the storage array, use this SMcli wrapper command:
-
+[subs=+macros]
 ----
-SMcli -A -n storageArrayName
+SMcli -A -n pass:quotes[_storageArrayName_]
 ----
 
 The `A` is a unique SMcli terminal and must be uppercase.

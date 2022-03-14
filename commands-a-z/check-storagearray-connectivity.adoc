@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/check-storagearray-connectivity.html
 sidebar: sidebar
-keywords: 
-summary: 'The check storageArray connectivity command verifies that the local storage array and the remote storage array have a communication path and displays the connection details between the local and remote storage array.'
+keywords: check, storage array, connectivity
+summary: "The check storageArray connectivity command verifies that the local storage array and the remote storage array have a communication path and displays the connection details between the local and remote storage array."
 ---
 = Check storage array connectivity
 :icons: font
@@ -34,11 +34,11 @@ Connectivity is tested using all possible channels, and if it is a dual controll
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 check storageArray connectivity
-(remoteStorageArrayName="storageArrayName" |
-remoteStorageArrayWwid=<wwID>)
+(remoteStorageArrayName=pass:quotes[_"storageArrayName"_]|
+remoteStorageArrayWwid=<pass:quotes[_wwID_]>)
 ----
 
 == Parameters

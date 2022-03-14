@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/check-asyncmirrorgroup-repositoryconsistency.html
 sidebar: sidebar
-keywords: 
-summary: 'The check asyncMirrorGroup repositoryConsistency command produces a report based on analysis of the data in the underlying repository volume of the specified asynchronous mirror group.'
+keywords: check, asynchronous mirror group, consistency
+summary: "The check asyncMirrorGroup repositoryConsistency command produces a report based on analysis of the data in the underlying repository volume of the specified asynchronous mirror group."
 ---
 = Check asynchronous mirror group consistency
 :icons: font
@@ -20,11 +20,11 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-check asyncMirrorGroup[asyncMirrorGroupName]
-repositoryConsistency localVolume=[localVolumeName"]
-file="filePath"
+check asyncMirrorGrouppass:quotes[[_asyncMirrorGroupName_]]
+repositoryConsistency localVolume=pass:quotes[[_localVolumeName"_]]
+file=pass:quotes[_"filePath"_]
 ----
 
 == Parameters
