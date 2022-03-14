@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/download-tray-configurationsettings.html
 sidebar: sidebar
-keywords: 
-summary: 'The download tray configurationSettings command downloads the factory default settings to all of the drive trays in a storage array or to a specific drive tray in a storage array.'
+keywords: download, tray, configuration, settings, commands, factory, default, drive, array, specific, storage, roles, support
+summary: "The download tray configurationSettings command downloads the factory default settings to all of the drive trays in a storage array or to a specific drive tray in a storage array."
 ---
 = Download tray configuration settings
 :icons: font
@@ -20,10 +20,10 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-download (allTrays | tray [trayID]) configurationSettings
-file="filename"
+pass:quotes[download (allTrays | tray [_trayID_]] configurationSettings
+pass:quotes[file="_filename_"]
 ----
 
 == Parameters

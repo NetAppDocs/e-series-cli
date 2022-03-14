@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/enable-diskpool-security.html
 sidebar: sidebar
-keywords: 
-summary: 'The enable diskPool security command converts a non-secure disk pool to a secure disk pool.'
+keywords: enable, diskpool, security, command, convert, non secure, diskpool, support, arrays, role, context
+summary: "The enable diskPool security command converts a non-secure disk pool to a secure disk pool."
 ---
 = Enable disk pool security
 :icons: font
@@ -27,9 +27,9 @@ All of the drives that comprise the disk pool must be secure-capable.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-enable diskPool [diskPoolName] security
+pass:quotes[enable diskPool [_diskPoolName_]] security
 ----
 
 == Parameter

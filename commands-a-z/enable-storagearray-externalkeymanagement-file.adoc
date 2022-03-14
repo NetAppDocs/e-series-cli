@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/enable-storagearray-externalkeymanagement-file.html
 sidebar: sidebar
-keywords: 
-summary: 'The enable storageArray externalKeyManagement file command enables external security key management for a storage array that has Full Disk Encryption drives, and creates the initial drive security key.'
+keywords: enable, storage, array, external, key, management, file, command, security, disk, encryption, initial, roles, context, support
+summary: "The enable storageArray externalKeyManagement file command enables external security key management for a storage array that has Full Disk Encryption drives, and creates the initial drive security key."
 ---
 = Enable external security key management
 :icons: font
@@ -27,12 +27,12 @@ This command applies only to external key management.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 enable storageArray externalKeyManagement
-file="fileName"
-passPhrase="passPhraseString"
-saveFile=(TRUE | FALSE)
+pass:quotes[file="_fileName_"]
+pass:quotes[passPhrase="_passPhraseString_"]
+pass:quotes[saveFile=_(TRUE | FALSE)_]
 ----
 
 == Parameters
@@ -82,4 +82,4 @@ If your pass phrase does not meet these criteria, you will receive an error mess
 
 8.40
 
-8.70 adds the `saveFile` parameter.
+8.70 adds the `_saveFile_` parameter.

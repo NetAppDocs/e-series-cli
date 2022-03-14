@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/enable-controller-datatransfer.html
 sidebar: sidebar
-keywords: 
-summary: 'The enable controller dataTransfer command revives a controller that has become quiesced while running diagnostics.'
+keywords: enable, controller, datatransfer, command, revive, quiesced, running, diagnostics, role, syntax, parameter, firmware level
+summary: "The enable controller dataTransfer command revives a controller that has become quiesced while running diagnostics."
 ---
 = Enable controller data transfer
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/enable-or-disable-autosupport-individual-arrays.html
 sidebar: sidebar
-keywords: 
-summary: 'This command enables or disables AutoSupport \(ASUP\) feature for the storage array and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, the ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis.'
+keywords: command, enable, disable, autosupport, feature, storage, array, possible, transit, messages, technical, support, site, capable, automatically, prepare, collect, data, remote, troubleshooting, problem, analysis
+summary: "This command enables or disables AutoSupport (ASUP) feature for the storage array and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, the ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis."
 ---
 = Enable or disable AutoSupport (all individual arrays)
 :icons: font
@@ -32,11 +32,11 @@ set storageArray autoSupport (enable | disable)
 ----
 
 == Parameters
-
+[cols="2*"]
 |===
 | Parameter| Description
 a|
-`enable | disable`
+`*enable \| disable*`
 a|
 Allows you to enable or disable AutoSupport. If the OnDemand and Remote Diagnostics features are enabled, the disable action will turn off OnDemand and Remote Diagnostics features as well.
 |===

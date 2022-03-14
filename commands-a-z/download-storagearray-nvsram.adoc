@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/download-storagearray-nvsram.html
 sidebar: sidebar
-keywords: 
-summary: 'The download storageArray NVSRAM command downloads the NVSRAM values for the storage array controller.'
+keywords: download, storagearray, down, values, controller, support, role, command, array
+summary: "The download storageArray NVSRAM command downloads the NVSRAM values for the storage array controller."
 ---
 = Download storage array NVSRAM
 :icons: font
@@ -20,9 +20,9 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-download storageArray NVSRAM file="filename"
+pass:quotes[download storageArray NVSRAM file="_filename_"]
 [healthCheckMelOverride=(TRUE | FALSE)]
 ----
 
