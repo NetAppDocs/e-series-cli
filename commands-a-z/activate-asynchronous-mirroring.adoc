@@ -89,7 +89,7 @@ repositoryDriveCount=numberOfDrives
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

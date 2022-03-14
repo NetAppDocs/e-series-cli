@@ -33,7 +33,7 @@ check syncMirror localVolume pass:quotes[[_volumeName_]] optimalStatus timeout=p
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

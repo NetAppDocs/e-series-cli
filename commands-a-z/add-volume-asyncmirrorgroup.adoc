@@ -39,7 +39,7 @@ repositoryVolume=pass:quotes[(_diskPoolName_] pass:quotes[[capacity=_capacityVal
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|

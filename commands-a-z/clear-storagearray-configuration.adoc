@@ -43,7 +43,7 @@ clear storageArray configuration factoryReset
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

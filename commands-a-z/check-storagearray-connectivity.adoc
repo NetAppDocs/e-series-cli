@@ -42,7 +42,7 @@ remoteStorageArrayWwid=<pass:quotes[_wwID_]>)
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

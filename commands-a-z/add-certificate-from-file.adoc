@@ -22,7 +22,7 @@ pass:quotes[trust localCertificate file _filename_ alias user _specified alias_]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

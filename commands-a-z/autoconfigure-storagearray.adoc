@@ -43,7 +43,7 @@ pass:quotes[[readAheadMultiplier=_multiplierValue_]]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
