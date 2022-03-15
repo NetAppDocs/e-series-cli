@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/smcli-enable-disable-autosupportondemand.html
 sidebar: sidebar
-keywords: 
-summary: 'The SMcli enable\|disable autoSupportOnDemand command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data.'
+keywords: enable, disable, autosupport, ondemand, feature, emw, management, domain, level, smcli
+summary: "The SMcli enable|disable autoSupportOnDemand command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data."
 ---
 = Enable or disable the AutoSupport OnDemand feature at the EMW management domain level (SMcli only)
 :icons: font

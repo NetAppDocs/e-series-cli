@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-cgsnapimage-rollback.html
 sidebar: sidebar
-keywords: 
-summary: 'The start cgSnapImage rollback command starts a rollback operation to the member base volumes in a snapshot consistency group.'
+keywords: start, consistency, group, snapshot, rollback
+summary: "The start cgSnapImage rollback command starts a rollback operation to the member base volumes in a snapshot consistency group."
 ---
 = Start consistency group snapshot rollback
 :icons: font
@@ -28,18 +28,19 @@ The repository volume that is associated with the consistency group snapshot vol
 To stop a rollback operation to the member base volumes use the `stop cgSnapImage rollback` command.
 
 == Syntax
-
+[subs=+macros]
 ----
-start cgSnapImage ["snapCGID:imageID"] rollback
-memberVolumeSet ("memberVolumeName1" ... "memberVolumeNameN")
+start cgSnapImage pass:quotes[["_snapCGID:imageID_"]] rollback
+memberVolumeSet pass:quotes[("_memberVolumeName1_" ... "_memberVolumeNameN_")]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`cgSnapImage`
+`*cgSnapImage*`
 a|
 The name of the consistency group snapshot image for which you want to start a rollback operation. The name of a snapshot image is comprised of two parts:
 
@@ -55,13 +56,13 @@ The identifier for the snapshot image can be one of these:
 Enclose the snapshot image name in double quotation marks (" ") inside square brackets ([ ]).
 
 a|
-`memberVolumeSet`
+`*memberVolumeSet*`
 a|
 The name of one or more member base volumes in a consistency group that you want to rollback. Enclose each member base volume name in double quotation marks (" ") inside parentheses.
 
 You can enter more than one volume name. Enclose all of the volume names in one set of square brackets ([ ]). Enclose each volume name in double quotation marks (" "). Separate each volume name with a space.
 
-When the `memberVolumeSet` parameter is not used the rollback process applies to all member volumes of the consistency group.
+When the `*memberVolumeSet*` parameter is not used the rollback process applies to all member volumes of the consistency group.
 
 |===
 

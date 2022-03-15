@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/smcli-enable-autosupportfeature.html
 sidebar: sidebar
-keywords: 
-summary: 'The SMcli enable autoSupportFeature command turns on the AutoSupport \(ASUP\) feature for all managed storage arrays and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, any ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis.'
+keywords: enable, disable, autosupport, emw, management, domain, level, smcli
+summary: "The SMcli enable autoSupportFeature command turns on the AutoSupport (ASUP) feature for all managed storage arrays and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, any ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis."
 ---
 = Enable or disable AutoSupport at the EMW management domain level (SMcli only)
 :icons: font
