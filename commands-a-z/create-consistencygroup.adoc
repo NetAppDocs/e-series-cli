@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-consistencygroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The create consistencyGroup command creates a new, empty consistency group that can contain snapshot groups. You must add the snapshot groups using the set consistencyGroup addCGMember command.'
+keywords: create, consistency, group
+summary: "The create consistencyGroup command creates a new, empty consistency group that can contain snapshot groups. You must add the snapshot groups using the set consistencyGroup addCGMember command."
 ---
 = Create consistency group
 :icons: font
@@ -20,19 +20,19 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-create consistencyGroup userLabel="consistencyGroupName"
+create consistencyGroup userLabel=pass:quotes[_"consistencyGroupName"_]
 [repositoryFullPolicy=(failBaseWrites | purgeSnapImages)]
-[repositoryFullLimit=percentValue]
-[autoDeleteLimit=numberOfSnapImages]
+[repositoryFullLimit=pass:quotes[_percentValue_]]
+[autoDeleteLimit=pass:quotes[_numberOfSnapImages_]]
 [enableSchedule=(TRUE | FALSE)]
-[schedule (immediate | snapSchedule)]
+[schedule (immediate | pass:quotes[_snapSchedule_])]
 [rollbackPriority=(lowest | low | medium | high | highest)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -86,7 +86,7 @@ You can configure each snapshot group to automatically delete its snapshot image
 The `enableSchedule` parameter and the `schedule` parameter provide a way for you to schedule snapshots. Using these parameters, you can schedule snapshots daily, weekly, or monthly (by day or by date). The `enableSchedule` parameter turns on or turns off the ability to schedule snapshots. When you enable scheduling, you use the `schedule` parameter to define when you want the snapshots to occur.
 
 This table explains how to use the options for the `schedule` parameter:
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -211,7 +211,7 @@ This parameter is not compatible with a weekly schedule.
 
 |===
 This table explains how to use the `timeZone` parameter:
-
+[options="header"]
 |===
 | Timezone Name| GMT offset
 a|

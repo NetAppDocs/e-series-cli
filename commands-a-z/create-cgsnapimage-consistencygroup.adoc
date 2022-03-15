@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-cgsnapimage-consistencygroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The create cgSnapImage consistencyGroup command creates a new snapshot image for each base volume that is a member of a snapshot consistency group.'
+keywords: create, consistency group, snapshot image
+summary: "he create cgSnapImage consistencyGroup command creates a new snapshot image for each base volume that is a member of a snapshot consistency group."
 ---
 = Create consistency group snapshot image
 :icons: font
@@ -20,13 +20,13 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-create cgSnapImage consistencyGroup="consistencyGroupName"
+create cgSnapImage consistencyGroup=pass:quotes[_"consistencyGroupName"_]
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|
