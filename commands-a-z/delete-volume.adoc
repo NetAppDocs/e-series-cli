@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-volume.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete volume command deletes one or more standard volumes.'
+keywords: delete, volume, command, one, standard, volume, supported, array, role
+summary: "The delete volume command deletes one or more standard volumes."
 ---
 = Delete volume
 :icons: font
@@ -34,15 +34,15 @@ When a volume exceeds a given size (currently 128 TB) the delete is being perfor
 == Syntax
 
 ----
-delete (allVolumes |
+delete (allVolumes) |
 volume [volumeName] |
-volumes [volumeName1 ... volumeNameN])
+volumes [volumeName1 ... volumeNameN]
 [removeVolumeGroup=(TRUE | FALSE)]
 [force=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

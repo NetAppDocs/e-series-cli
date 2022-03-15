@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/diagnose-controller.html
 sidebar: sidebar
-keywords: 
-summary: 'The diagnose controller command runs diagnostic tests on the controller.'
+keywords: diagnose, controller, command, run, diagnostic, tests, arrays, roles, context
+summary: "The diagnose controller command runs diagnostic tests on the controller."
 ---
 = Diagnose controller
 :icons: font
@@ -24,28 +24,28 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 The diagnostic tests consist of loopback tests in which data is written to the drives and read from the drives.
 
 == Syntax
-
+[subs=+macros]
 ----
 diagnose controller [(a| b)]
 loopbackDriveChannel=(allchannels | (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8))
 testID=(1 | 2 | 3 | discreteLines)
-[patternFile="filename"]
+pass:quotes[[patternFile="_filename_"]]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`controller`
+`*controller*`
 a|
 The controller on which you want to run the diagnostic tests. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the storage management software returns a syntax error.
 a|
-`loopbackDriveChannel`
+`*loopbackDriveChannel*`
 a|
 The drive channels on which you want to run the diagnostic tests. You can either choose to run the diagnostics on all channels or select a specific channel on which to run diagnostics. If you select a specific channel, valid values for the drive channels are `1`, `2`, `3`, `4`, `5`, `6`, `7`, or `8`.
 a|
-`testID`
+`*testID*`
 a|
 The identifier for the diagnostic test you want to run. The identifier and corresponding tests are as follows:
 
@@ -55,7 +55,7 @@ The identifier for the diagnostic test you want to run. The identifier and corre
 * `discreteLines` -- Discrete lines diagnostic test
 
 a|
-`patternFile`
+`*patternFile*`
 a|
 The file path and the file name that contains a data pattern that you want to use as test data. Enclose the file name of the data pattern in double quotation marks (" "). For example:
 

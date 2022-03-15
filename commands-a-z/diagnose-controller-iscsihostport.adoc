@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/diagnose-controller-iscsihostport.html
 sidebar: sidebar
-keywords: 
-summary: 'The diagnose controller iscsiHostPort command runs diagnostic tests on the copper cables between iSCSI host interface cards and a controller.'
+keywords: diagnose, controller, hostport, command, diagnostic, tests, copper, cable, host, interface, cards, support, roles
+summary: "The diagnose controller iscsiHostPort command runs diagnostic tests on the copper cables between iSCSI host interface cards and a controller."
 ---
 = Diagnose controller iSCSI host cable
 :icons: font
@@ -24,15 +24,15 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 You can run diagnostics on a selected port or all ports. The ports must be able to support the cable diagnostics. If the ports do not support cable diagnostics, an error is returned.
 
 == Syntax
-
+[subs=+macros]
 ----
 diagnose controller [(a|b)]
-iscsiHostPort ([all] | [portLabel])
+iscsiHostPort ([all] | pass:quotes[[_portLabel_]])
 testID=cableDiagnostics
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -65,7 +65,7 @@ You must specify a label for the host port. Follow these steps to specify the ho
 The port label is the complete value returned for the `Port` field.
 ====
 
-. Enclose the entire value of the port label in both quotes and square brackets: ["[.code]``portLabel``"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
+. Enclose the entire value of the port label in both quotes and square brackets: ["[.code][``portLabel``"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
 +
 ----
 iscsiHostPort[\"ch 2\"]
