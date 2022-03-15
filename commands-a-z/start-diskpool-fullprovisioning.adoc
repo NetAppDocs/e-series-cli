@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-diskpool-fullprovisioning.html
 sidebar: sidebar
-keywords: 
-summary: 'The start diskPool fullProvisioning command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the disk pool.'
+keywords: start, disk pool, full, provision
+summary: "The start diskPool fullProvisioning command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the disk pool."
 ---
 = Start Disk Pool Full Provisioning
 :icons: font
@@ -35,14 +35,15 @@ start diskPool[diskPoolName] fullProvisioning [disableResourceProvisioning=(TRUE
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`diskPool`
+`*diskPool*`
 a|
 The disk pool you want to start the full provisioning operation. Enclose the disk pool name in square brackets ([ ])
 a|
-`disableResourceProvisioning`
+`*disableResourceProvisioning*`
 a|
 The setting to specify if resource provisioning should be disabled after the full provisioning operation completes. To skip disabling resource provisioning, set this to `FALSE`. The default value is `TRUE`.
 

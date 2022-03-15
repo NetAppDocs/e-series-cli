@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-controller.html
 sidebar: sidebar
-keywords: 
-summary: 'The start controller command starts an operation that saves debug trace information to a compressed file.'
+keywords: start, controller, trace
+summary: "The start controller command starts an operation that saves debug trace information to a compressed file."
 ---
 = Start controller trace
 :icons: font
@@ -24,26 +24,27 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 The debug trace information can be used by technical support to help analyze how well a storage array is running.
 
 == Syntax
-
+[subs=+macros]
 ----
 start controller [(a
  | b
  | both)] trace
 dataType=(current | flushed | currentFlushed | all)
 forceFlush=(TRUE | FALSE)
-file="fileName"
+pass:quotes[file="_fileName_]"
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`controller`
+`*controller*`
 a|
 The controller for which you want to collect the trace debug information. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A , and `b` is the controller in slot B. You can also simultaneously collect debug for both controllers by entering `both` . Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the storage management software returns a syntax error.
 a|
-`dataType`
+`*dataType*`
 a|
 The type of data that you want to collect:
 
@@ -52,17 +53,23 @@ The type of data that you want to collect:
 * `currentFlushed` -- Retrieves both the current DQ trace and the flushed DQ trace
 * `all` -- Retrieves the current DQ trace, flushed DQ trace, and all platform DQ traces
 
-*NOTE* -- If `dataType=flushed` and `forceFlush=True`, an error message is returned indicating that only active traces can be flushed to the buffer on retrieval.
+[NOTE]
+====
+If `*dataType=flushed*` and `*forceFlush=True*`, an error message is returned indicating that only active traces can be flushed to the buffer on retrieval.
+====
 
 a|
-`forceFlush`
+`*forceFlush*`
 a|
-The setting to move the DQ information in the current buffer to the flushed buffer when the DQ trace information defined by the `dataType` parameter is retrieved. To enable force flush, set this parameter to `TRUE`. To disable force flush, set this parameter to `FALSE`.
+The setting to move the DQ information in the current buffer to the flushed buffer when the DQ trace information defined by the `*dataType*` parameter is retrieved. To enable force flush, set this parameter to `TRUE`. To disable force flush, set this parameter to `FALSE`.
 
-*NOTE* -- If `dataType=flushed` and `forceFlush=True`, an error message is returned indicating that only active traces can be flushed to the buffer on retrieval.
+[NOTE]
+====
+If `*dataType=flushed*` and `*forceFlush=True*`, an error message is returned indicating that only active traces can be flushed to the buffer on retrieval.
+====
 
 a|
-`file`
+`*file*`
 a|
 The file path and the file name to which you want to save the DQ trace information. Enclose the file name in double quotation marks (" ").
 
@@ -75,12 +82,12 @@ Refer to the Notes section for information about naming the files.
 The DQ trace information is written to a compressed file with an extension of .zip. The file name is a combination of a user-defined file name and the storage array identifier (SAID). A constant of "dq" is also added to the file name. The complete file name has this form:
 
 ----
-
-        user_defined_file_name-SAID-dq.zip
+user_defined_file_name-SAID-dq.zip
 ----
 
 The compressed file contains the information listed in this table.
 
+[cols="3*",options="header"]
 |===
 | File Name| Directory| Comments
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-controller-iscsihostport-dhcprefresh.html
 sidebar: sidebar
-keywords: 
-summary: 'The start controller iscsiHostPort dhcpRefresh command initiates a refresh of the DHCP parameters for the iSCSI interface.'
+keywords: start, iscsi, dhcp, refresh
+summary: "The start controller iscsiHostPort dhcpRefresh command initiates a refresh of the DHCP parameters for the iSCSI interface."
 ---
 = Start iSCSI DHCP refresh
 :icons: font
@@ -24,21 +24,22 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 If the configuration method for the interface is not set to DHCP, the procedure returns an error.
 
 == Syntax
-
+[subs=+macros]
 ----
-start controller [(a|b)] iscsiHostPort [portLabel] dhcpRefresh
+start controller [(a|b)] iscsiHostPort pass:quotes[[_portLabel_]] dhcpRefresh
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`controller`
+`*controller*`
 a|
 The identifier letter of the controller that has the iSCSI host ports. Valid controller identifier values are `a` or `b` where `a` is the controller in slot A, and `b` is the controller in slot B.
 a|
-`iscsiHostPort`
+`*iscsiHostPort*`
 a|
 The host port label or the number of the iSCSI host port for which you want to refresh the DHCP parameters.
 
@@ -52,12 +53,14 @@ See the following for more information:
 
 You must specify a label for the host port. Follow these steps to specify the host port label:
 
+.Steps
+
 . If you do not know the port label for the iSCSI host port, run the `show controller` command.
 . In the Host interface section of the results, locate the host port you want to select.
 +
 [NOTE]
 ====
-The port label is the complete value returned for the `Port` field.
+The port label is the complete value returned for the `*Port*` field.
 ====
 
 . Enclose the entire value of the port label in both quotes and square brackets: ["[.code]``portLabel``"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
