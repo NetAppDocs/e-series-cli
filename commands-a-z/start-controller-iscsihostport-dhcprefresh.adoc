@@ -45,7 +45,7 @@ The host port label or the number of the iSCSI host port for which you want to r
 
 See the following for more information:
 
-link:ESERIES-SECTION_ID_ON_CONREFFED_SECTION.html[Identifying an iSCSI host port label]
+<<ESERIES-SECTION_ID_ON_CONREFFED_SECTION,"Identifying an iSCSI host port label">>
 
 |===
 
