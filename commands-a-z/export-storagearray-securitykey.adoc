@@ -37,7 +37,7 @@ pass:quotes[file="_fileName_"]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

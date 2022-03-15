@@ -33,7 +33,7 @@ pass:quotes[enable diskPool [_diskPoolName_]] security
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -32,7 +32,7 @@ set storageArray autoSupport (enable | disable)
 ----
 
 == Parameters
-[cols="2*"]
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

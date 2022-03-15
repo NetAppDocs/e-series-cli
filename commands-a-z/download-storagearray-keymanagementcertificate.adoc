@@ -34,7 +34,7 @@ pass:quotes[download storageArray keyManagementClientCertificate certificateType
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

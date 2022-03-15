@@ -36,12 +36,12 @@ This command is intended for downloading a firmware image to only one drive mode
 == Syntax
 [subs=+macros]
 ----
-pass:quotes[download (drive \[_trayID_,[_drawerID,_]slotID \| drives\[trayID1,[_drawerID1_,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\])
+pass:quotes[download (drive \[_trayID_,[_drawerID,_]pass:quotes[_slotID_] \| drives\ pass:quotes[[_trayID1_,[_drawerID1_,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\])
  [online|offline] firmware file="filename"
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

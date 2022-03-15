@@ -26,7 +26,7 @@ enable controller [(a|b)] dataTransfer
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

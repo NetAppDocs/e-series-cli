@@ -34,7 +34,7 @@ pass:quotes[primaryVolume="_primaryVolumeName_"]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
