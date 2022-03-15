@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-iscsiinitiator.html
 sidebar: sidebar
-keywords: 
-summary: 'The create iscsiInitiator command creates a new iSCSI initiator object.'
+keywords: create, iscsi, initiator
+summary: "The create iscsiInitiator command creates a new iSCSI initiator object."
 ---
 = Create iSCSI initiator
 :icons: font
@@ -25,16 +25,16 @@ This command is deprecated and is replaced by the xref:wombat-create-initiator.a
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-create iscsiInitiator iscsiName="iscsiID"
-userLabel="name"
-host="hostName"
-[chapSecret="securityKey"]
+create iscsiInitiator iscsiName=pass:quotes[_"iscsiID"_
+userLabel="_name_"
+host="_hostName"_]
+[chapSecret=pass:quotes[_"securityKey"_]]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameters| Description
 a|

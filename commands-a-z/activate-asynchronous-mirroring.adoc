@@ -1,7 +1,7 @@
 ---
-permalink: commands-a-z/activate-synchronous-mirroring.html
+permalink: commands-a-z/activate-asynchronous-mirroring.html
 sidebar: sidebar
-keywords: activate, asynchronous, supported arrays, roles, context, syntax, parameters, minimum firmware level
+keywords: activate, asynchronous, mirroring
 summary: "The activate storageArray feature command activates the Asynchronous Mirroring feature."
 ---
 = Activate asynchronous mirroring
