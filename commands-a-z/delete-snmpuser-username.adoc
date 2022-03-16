@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-snmpuser-username.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete snmpUser userName command deletes an existing Simple Network Management Protocol \(SNMP\) USM user that you previously created and registered using the "create snmpUser" command. Deleting an SNMP user effectively unregisters the user. Any trap destinations associated with that user are also removed.'
+keywords: delete, user, name, command, simple, network, management, protocol, create, register, effective, unregister, trap, destination, associate, remove
+summary: "The delete snmpUser userName command deletes an existing Simple Network Management Protocol (SNMP) USM user that you previously created and registered using the "create snmpUser" command. Deleting an SNMP user effectively unregisters the user. Any trap destinations associated with that user are also removed."
 ---
 = Unregister SNMPv3 USM user
 :icons: font
@@ -20,23 +20,23 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-delete snmpUser userName="snmpUserName" [engineId=(local | engineId)]
+pass:quotes[delete snmpUser userName="_snmpUserName_" [engineId=(local | engineId)]]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`userName`
+`*userName*`
 a|
 The name of the SNMP USM user that you want to delete. Enclose the SNMP USM user name in double quotation marks (" ")
 a|
-`engineId`
+`*engineId*`
 a|
-The engine ID of the SNMP USM user that you want to update. The engine ID is required if there is more than one USM user with the same user name. The value may be "[.code]``local``" to specify the local SNMP agent is the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID.
+The engine ID of the SNMP USM user that you want to update. The engine ID is required if there is more than one USM user with the same user name. The value may be "[.code]``_local_``" to specify the local SNMP agent is the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID.
 |===
 
 == Minimum firmware level

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-storagearray-loginbanner.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete storageArray loginBanner command allows you to delete the login banner text file that was previously uploaded and saved.'
+keywords: delete, storage, array, loginbanner, command, allow, login, banner, text, file, upload, save, role
+summary: "The delete storageArray loginBanner command allows you to delete the login banner text file that was previously uploaded and saved."
 ---
 = Delete storage array login banner
 :icons: font

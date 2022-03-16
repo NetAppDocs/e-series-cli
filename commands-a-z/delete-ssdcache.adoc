@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-ssdcache.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete ssdCache command deletes the SSD cache. All data in the SSD cache is purged.'
+keywords: delete, cache, command, data, purged, array, support, role, parameter
+summary: "The delete ssdCache command deletes the SSD cache. All data in the SSD cache is purged."
 ---
 = Delete SSD cache
 :icons: font
@@ -20,17 +20,17 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800 or E5700 storage array, you must have the Support Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-delete ssdCache [ssdCacheName]
+pass:quotes[delete ssdCache [_ssdCacheName_]]
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`ssdCache`
+`*ssdCache*`
 a|
 The name of the SSD cache that you want to delete. Enclose the SSD cache name in square brackets ([ ]). If the SSD cache name contains special characters or consists only of numbers, you must enclose the SSD cache name in double quotation marks (" ") inside square brackets.
 |===
