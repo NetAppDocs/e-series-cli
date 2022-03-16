@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volume.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volume command returns the expansion history or the consumed capacity for the specified thin volume or volumes.'
+keywords: show, thin, volume
+summary: "The show volume command returns the expansion history or the consumed capacity for the specified thin volume or volumes."
 ---
 = Show thin volume
 :icons: font
@@ -20,29 +20,30 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Syntax
-
+[subs=+macros]
 ----
-show (allVolumes | volume [volumeName] |
-volumes [volumeName1 ... volumeNameN])
+show (allVolumes | volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]])
 (consumedCapacity |
-(expansionHistory [file=fileName]))
+(expansionHistory pass:quotes[[file=_fileName_]]))
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`allVolumes`
+`*allVolumes*`
 a|
 This parameter returns information about all of the thin volumes in the storage array.
 a|
-`volume`
+`*volume*`
 a|
 The name of a thin volume for which you are retrieving information. Enclose the thin volume name in square brackets ([ ]). If the thin volume name has special characters or numbers, you must enclose the thin volume name in double quotation marks (" ") inside square brackets.
 
 a|
-`volumes`
+`*volumes*`
 a|
 The names of several thin volumes for which you want to retrieve information. Enter the names of the volumes using these rules:
 
@@ -56,23 +57,23 @@ If the volume names have special characters or numbers, enter the names using th
 * Separate each of the names with a space.
 
 a|
-`consumedCapacity`
+`*consumedCapacity*`
 a|
 The setting to return a concise list of information about the consumed capacity of the thin volumes.
 a|
-`expansionHistory`
+`*expansionHistory*`
 a|
 The setting to return a concise list of information about the expansion history of the thin volumes.
 a|
-`file`
+`*file*`
 a|
-The `file` parameter specifies a file to log the output of the `expansionHistory` parameter. The `file` is valid only when used with the `expansionHistory` parameter. An invalid file name causes the command to fail.
+The `*file*` parameter specifies a file to log the output of the `*expansionHistory*` parameter. The `*file*` is valid only when used with the `*expansionHistory*` parameter. An invalid file name causes the command to fail.
 
 |===
 
 == Notes
 
-With the `expansionHistory` parameter, the command returns information similar to the example shown below.
+With the `*expansionHistory*` parameter, the command returns information similar to the example shown below.
 
 |===
 a|

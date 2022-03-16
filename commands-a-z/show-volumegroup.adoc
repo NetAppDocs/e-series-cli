@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volumegroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volumeGroup command returns information about a volume group.'
+keywords: show, volume, group
+summary: "The show volumeGroup command returns information about a volume group."
 ---
 = Show volume group
 :icons: font
@@ -38,17 +38,18 @@ This command returns this information about a volume group:
 * Resource provisioning capabilities
 
 == Syntax
-
+[subs=+macros]
 ----
-show volumeGroup [volumeGroupName]
+pass:quotes[show volumeGroup [_volumeGroupName_]]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`volumeGroup`
+`*volumeGroup*`
 a|
 The name of the volume group for which you want to show information. Enclose the volume group name in square brackets ([ ]).
 |===
