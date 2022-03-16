@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-storagearray-directoryserver.html
 sidebar: sidebar
-keywords: 
-summary: 'The create storageArray directoryServer command allows you to add a new directory server to be used for authenticating and authorizing users.'
+keywords: create, storage, array, directory server
+summary: "The create storageArray directoryServer command allows you to add a new directory server to be used for authenticating and authorizing users."
 ---
 = Create storage array directory server
 :icons: font
@@ -20,22 +20,22 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
 
 create storageArray directoryServer
-       [domainId="domainId"]
-       domainNames=("domainName1"..."domainNameN")
-       serverUrl="serverUrl"
-       [bindAccount="username" bindPassword="password"]
-       searchBaseDN="distinguishedName"
-       usernameAttribute="attributeName"
-       groupAttributes=("attrName1"..."attrNameN")
+       [domainId=pass:quotes[_"domainId"_
+       domainNames=(_"domainName1"..."domainNameN"_)
+       serverUrl="_serverUrl"_]
+       [bindAccount=pass:quotes[_"username_" bindPassword="_password_"]]
+       searchBaseDN=pass:quotes[_"distinguishedName"_
+       usernameAttribute="_attributeName_"
+       groupAttributes=("_attrName1"..."attrNameN_")]
         [skipConfigurationTest={true | false}]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
