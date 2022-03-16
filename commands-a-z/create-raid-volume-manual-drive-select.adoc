@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-raid-volume-manual-drive-select.html
 sidebar: sidebar
-keywords: 
-summary: 'The create volume command creates a new volume group and volume, and lets you specify the drives for the volume.'
+keywords: create, raid, volume, manual, drive, select
+summary: "The create volume command creates a new volume group and volume, and lets you specify the drives for the volume."
 ---
 = Create RAID volume (manual drive select)
 :icons: font
@@ -20,16 +20,16 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-create volume drives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn)
-[volumeGroupUserLabel="volumeGroupName"]
+create volume drives=pass:quotes[(_trayID1_],pass:quotes[[_drawerID1,_]]pass:quotes[_slotID1 ... trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_)]
+[volumeGroupUserLabel=pass:quotes[_"volumeGroupName"_]]
 raidLevel=(0 | 1 | 3 | 5 | 6)
-userLabel="volumeName"
-[capacity=volumeCapacity]
+userLabel=pass:quotes[_"volumeName"_]
+[capacity=pass:quotes[_volumeCapacity_]]
 [owner=(a|b)]
 [cacheReadPrefetch=(TRUE | FALSE)]
-[segmentSize=segmentSizeValue]
+[segmentSize=pass:quotes[_segmentSizeValue_]]
 [usageHint=(fileSystem | dataBase | multiMedia)]
 [trayLossProtect=(TRUE | FALSE)]
 [drawerLossProtect=(TRUE | FALSE)]
@@ -38,16 +38,16 @@ userLabel="volumeName"
 [dataAssurance=(none | enabled)]
 [resourceProvisioningCapable=(TRUE | FALSE)]
 ----
-
+[subs=+macros]
 ----
-create volume drives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn)
-[volumeGroupUserLabel="volumeGroupName"]
+create volume drives=pass:quotes[_(trayID1,_]pass:quotes[[_drawerID1,_]pass:quotes[_slotID1 ... trayIDn_],pass:quotes[[_drawerIDn,_]]pass:quotes[_slotIDn_)]
+[volumeGroupUserLabel=pass:quotes[_"volumeGroupName"_]]
 raidLevel=(0 | 1 | 5 | 6)
-userLabel="volumeName"
-[capacity=volumeCapacity]
+userLabel=pass:quotes[_"volumeName"_]
+[capacity=pass:quotes[_volumeCapacity_]]
 [owner=(a|b)]
 [cacheReadPrefetch=(TRUE | FALSE)]
-[segmentSize=segmentSizeValue]
+[segmentSize=pass:quotes[_segmentSizeValue_]]
 [usageHint=(fileSystem | dataBase | multiMedia)]
 [trayLossProtect=(TRUE | FALSE)]
 [drawerLossProtect=(TRUE | FALSE)]
@@ -58,7 +58,7 @@ userLabel="volumeName"
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -159,7 +159,7 @@ If you do not specify a capacity using the `capacity` parameter, all of the driv
 == Tray loss protection and drawer loss protection
 
 For tray loss protection to work, your configuration must adhere to the following guidelines:
-
+[options="header"]
 |===
 | Level| Criteria for Tray Loss Protection| Minimum number of trays required
 a|
@@ -194,7 +194,7 @@ a|
 Not applicable
 |===
 For drawer loss protection to work (in high density enclosure environments), your configuration must adhere to the following guidelines:
-
+[options="header"]
 |===
 | Level| Criteria for drawer loss protection| Minimum number of drawers required
 a|
@@ -243,7 +243,7 @@ For optimal performance in a multiuser database or file system storage environme
 ====
 You do not need to enter a value for the `cacheReadPrefetch` parameter or the `segmentSize` parameter. If you do not enter a value, the controller firmware uses the `usageHint` parameter with `fileSystem` as the default value. Entering a value for the `usageHint` parameter and a value for the `cacheReadPrefetch` parameter or a value for the `segmentSize` parameter does not cause an error. The value that you enter for the `cacheReadPrefetch` parameter or the `segmentSize` parameter takes priority over the value for the `usageHint` parameter. The segment size and cache read prefetch settings for various usage hints are shown in the following table:
 ====
-
+[options="header"]
 |===
 | Usage hint| Segment size setting| Dynamic cache read prefetch setting
 a|

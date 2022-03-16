@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-mapping-cgsnapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The create mapping cgSnapVolume command creates a logical mapping from a consistency group snapshot volume to a host or a host group.'
+keywords: create, consistency, group, snapshot, volume, map
+summary: "The create mapping cgSnapVolume command creates a logical mapping from a consistency group snapshot volume to a host or a host group."
 ---
 = Create consistency group snapshot volume mapping
 :icons: font
@@ -20,14 +20,14 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-create mapping cgSnapVolume="snapVolumeName"
-(host="hostName" | hostGroup=("hostGroupName" | defaultGroup))
+create mapping cgSnapVolume=pass:quotes[_"snapVolumeName"_
+(host="_hostName_" | hostGroup=("_hostGroupName_" | defaultGroup))]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

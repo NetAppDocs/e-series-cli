@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-raid-volume-free-extent-based-select.html
 sidebar: sidebar
-keywords: 
-summary: 'The create volume command creates a volume in the free space of a volume group.'
+keywords: create, raid, volume, free, extent, based, select
+summary: "The create volume command creates a volume in the free space of a volume group."
 ---
 = Create RAID volume (free extent based select)
 :icons: font
@@ -20,15 +20,15 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-create volume volumeGroup="volumeGroupName"
-userLabel="volumeName"
-[freeCapacityArea=freeCapacityIndexNumber]
-[capacity=volumeCapacity]
+create volume volumeGroup=pass:quotes[_"volumeGroupName"_
+userLabel="_volumeName"_]
+[freeCapacityArea=pass:quotes[_freeCapacityIndexNumber_]]
+[capacity=pass:quotes[_volumeCapacity_]]
 [owner=(a|b)]
 [cacheReadPrefetch=(TRUE | FALSE)]
-[segmentSize=segmentSizeValue]
+[segmentSize=pass:quotes[_segmentSizeValue_]]
 [usageHint=(fileSystem | dataBase | multiMedia)]
 [dssPreAllocate=(TRUE | FALSE)]
 [securityType=(none | capable | enabled)]
@@ -36,7 +36,7 @@ userLabel="volumeName"
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -128,7 +128,7 @@ For optimal performance in a multiuser database or file system storage environme
 ====
 You do not need to enter a value for the `cacheReadPrefetch` parameter or the `segmentSize` parameter. If you do not enter a value, the controller firmware uses the `usageHint` parameter with `fileSystem` as the default value. Entering a value for the `usageHint` parameter and a value for the `cacheReadPrefetch` parameter or a value for the `segmentSize` parameter does not cause an error. The value that you enter for the `cacheReadPrefetch` parameter or the `segmentSize` parameter takes priority over the value for the `usageHint` parameter. The segment size and cache read prefetch settings for various usage hints are shown in the following table:
 ====
-
+[options="header"]
 |===
 | Usage hint| Segment size setting| Dynamic cache read prefetch setting
 a|
