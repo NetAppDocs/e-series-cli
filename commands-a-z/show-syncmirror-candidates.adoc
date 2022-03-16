@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-syncmirror-candidates.html
 sidebar: sidebar
-keywords: 
-summary: 'The show syncMirror candidates command returns information about the candidate volumes on a remote storage array that you can use as secondary volumes in a Synchronous Mirroring configuration.'
+keywords: show, synchronous, mirror, volume, candidates
+summary: "The show syncMirror candidates command returns information about the candidate volumes on a remote storage array that you can use as secondary volumes in a Synchronous Mirroring configuration."
 ---
 = Show synchronous mirroring volume candidates
 :icons: font
@@ -28,26 +28,27 @@ To execute this command on an E2800 or E5700 storage array, you must have the St
 
 [NOTE]
 ====
-In previous versions of this command the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `syncMirror`.
+In previous versions of this command the feature identifier was `*remoteMirror*`. This feature identifier is no longer valid and is replaced by `*syncMirror*`.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-show syncMirror candidates primary="volumeName"
-remoteStorageArrayName="storageArrayName"
+pass:quotes[show syncMirror candidates primary="_volumeName_"
+remoteStorageArrayName="_storageArrayName_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`primary`
+`*primary*`
 a|
 The name of the local volume that you want for the primary volume in the remote-mirrored pair. Enclose the primary volume name in double quotation marks (" ").
 a|
-`remoteStorageArrayName`
+`*remoteStorageArrayName*`
 a|
 The remote storage array that contains possible volumes for a secondary volume. If the remote storage array name has special characters, you must also enclose the remote storage array name in double quotation marks (" ").
 |===

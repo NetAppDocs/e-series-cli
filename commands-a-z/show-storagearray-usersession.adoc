@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-usersession.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray userSession command allows you to view the session timeout period for System Manager.'
+keywords: display, storage, array, user, session
+summary: "The show storageArray userSession command allows you to view the session timeout period for System Manager."
 ---
 = Display storage array user session
 :icons: font
