@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-hosttopology.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray hostTopology command returns the storage partition topology, the host type labels, and the host type index for the host storage array.'
+keywords: show, storage, array, host, topology
+summary: "The show storageArray hostTopology command returns the storage partition topology, the host type labels, and the host type index for the host storage array."
 ---
 = Show storage array host topology
 :icons: font

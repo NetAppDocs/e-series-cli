@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-revocationchecksettings.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray revocationCheckSettings command allows you to view the certificate revocation settings for the storage array.'
+keywords: show, certificate, revocation, check, set
+summary: "The show storageArray revocationCheckSettings command allows you to view the certificate revocation settings for the storage array."
 ---
 = Show certificate revocation check settings
 :icons: font

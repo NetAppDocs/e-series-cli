@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-hostconnectivityreporting.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray hostConnectivityReporting command returns the enablement status of the host connectivity reporting feature.'
+keywords: show, storage, array, host, connectivity, report
+summary: "The show storageArray hostConnectivityReporting command returns the enablement status of the host connectivity reporting feature."
 ---
 = Show storage array host connectivity reporting
 :icons: font

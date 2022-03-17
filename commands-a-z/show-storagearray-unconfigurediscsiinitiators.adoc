@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-unconfigurediscsiinitiators.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray unconfiguredIscsiInitiators command returns a list of initiators that have been detected by the storage array but are not yet configured into the storage array topology.'
+keywords: show, storage, array, unconfigured, iscsi, initiators
+summary: "The show storageArray unconfiguredIscsiInitiators command returns a list of initiators that have been detected by the storage array but are not yet configured into the storage array topology."
 ---
 = Show storage array unconfigured iSCSI initiators
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-lunmappings.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray lunMappings command returns information from the storage array profile about the logical unit number \(LUN\) or namespace ID \(NSID\) mappings in the storage array.'
+keywords: show, storage, array, lun, map
+summary: "The show storageArray lunMappings command returns information from the storage array profile about the logical unit number (LUN) or namespace ID (NSID) mappings in the storage array."
 ---
 = Show storage array LUN mappings
 :icons: font
@@ -25,21 +25,23 @@ Default group LUN or NSID mappings are always shown. If you run this command wit
 
 == Syntax
 
+[subs=+macros]
 ----
-show storageArray lunMappings (host ["hostName"] |
-hostgroup ["hostGroupName"])
+show storageArray lunMappings (host pass:quotes[["_hostName_"]] |
+hostgroup pass:quotes[["_hostGroupName_"]])
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`host`
+`*host*`
 a|
 The name of a specific host for which you want to see the LUN or NSID mappings. Enclose the host name in double quotation marks (" ") inside of square brackets ([ ]).
 a|
-`hostGroup`
+`*hostGroup*`
 a|
 The name of a specific host group for which you want to see the LUN or NSID mappings. Enclose the host group name in double quotation marks (" ") inside of square brackets ([ ]).
 |===

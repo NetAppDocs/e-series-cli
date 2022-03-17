@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-iscsinegotiationdefaults.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray iscsiNegotiationDefaults command returns information about connection-level settings that are subject to initiator-target negotiation.'
+keywords: show, storage, array, negotiation, defaults
+summary: "The show storageArray iscsiNegotiationDefaults command returns information about connection-level settings that are subject to initiator-target negotiation."
 ---
 = Show storage array negotiation defaults
 :icons: font

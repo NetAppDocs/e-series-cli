@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-dbmdatabase.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray dbmDatabase command retrieves and shows metadata for the on-board backup locations of a storage array. When there are multiple backup locations, metadata is shown for each location.'
+keywords: show, storage, array, dbm, database
+summary: "The show storageArray dbmDatabase command retrieves and shows metadata for the on-board backup locations of a storage array. When there are multiple backup locations, metadata is shown for each location."
 ---
 = Show storage array DBM database
 :icons: font
@@ -33,181 +33,53 @@ None.
 
 This command returns the configuration database information in a format similar to this example.
 
+`Configuration Database MetadataLast Host Backup: <date stamp>`
+
+[cols="7*",options="header"]
 |===
+| CTL| LOCATION| REVISION| ID| GEN NUMBER| STATUS| ACCESS MODE
 a|
-
-----
-Configuration Database MetadataLast Host Backup: <date stamp>
-----
-
-a|
-
-----
-CTL
-----
-
-a|
-
-----
-LOCATION
-----
-
-a|
-
-----
-REVISION
-----
-
-a|
-
-----
-ID
-----
-
-a|
-
-----
-GEN NUMBER
-----
-
-a|
-
-----
-STATUS
-----
-
-a|
-
-----
-ACCESS MODE
-----
-
-a|
-
-----
 A
-----
-
 a|
-
-----
 Cache
-----
-
 a|
-
-----
 X.Y
-----
-
 a|
-
-----
 999999
-----
-
 a|
-
-----
 999999
-----
-
 a|
-
-----
 R/W
-----
-
 a|
-
-----
 Optimal
-----
-
 a|
-
-----
 B
-----
-
 a|
-
-----
 Cache
-----
-
 a|
-
-----
 X.Y
-----
-
 a|
-
-----
 999999
-----
-
 a|
-
-----
 999999
-----
-
 a|
-
-----
 R/W
-----
-
 a|
-
-----
 Optimal
-----
-
 a|
-
-----
 N/A
-----
-
 a|
-
-----
 Disk
-----
-
 a|
-
-----
 X.Y
-----
-
 a|
-
-----
 999999
-----
-
 a|
-
-----
 999999
-----
-
 a|
-
-----
 R/W
-----
-
 a|
-
-----
 Optimal
-----
-
 |===
 
 == Minimum firmware level
