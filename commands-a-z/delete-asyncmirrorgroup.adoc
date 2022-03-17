@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete asyncMirrorGroup command deletes one or more asynchronous mirror groups from the local storage array and the remote storage array.'
+keywords: delete, asynchronous, mirror group
+summary: "The delete asyncMirrorGroup command deletes one or more asynchronous mirror groups from the local storage array and the remote storage array."
 ---
 = Delete asynchronous mirror group
 :icons: font
@@ -24,14 +24,14 @@ To execute this command on an E2800, or E5700 storage array, you must have the S
 The asynchronous mirror group must be empty before it can be successfully deleted. You must remove all asynchronous mirrored pairs from the asynchronous mirror group before using this command.
 
 == Syntax
-
+[subs=+macros]
 ----
-delete (allAsyncMirrorGroups | asyncMirrorGroup["asyncMirrorGroupName"] |
-asyncMirrorGroups ["asyncMirrorGroupName_1" ... "asyncMirrorGroupName_n"])
+delete (allAsyncMirrorGroups | asyncMirrorGrouppass:quotes[[_"asyncMirrorGroupName"_] |
+asyncMirrorGroups pass:quotes[[_"asyncMirrorGroupName_1" ... "asyncMirrorGroupName_n"_]])
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|
