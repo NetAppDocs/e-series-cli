@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-volume-diskpool.html
 sidebar: sidebar
-keywords: 
-summary: 'The create volume diskPool command creates a new standard RAID volume or a thin volume in an existing disk pool.'
+keywords: create, volume, disk pool
+summary: "The create volume diskPool command creates a new standard RAID volume or a thin volume in an existing disk pool."
 ---
 = Create volume in disk pool
 :icons: font
@@ -27,11 +27,11 @@ Some parameters for creating a standard RAID volume in a volume group are not co
 ====
 
 == Syntax for Creating a Standard Volume
-
+[subs=+macros]
 ----
-create volume diskPool="diskPoolName"
-userLabel="volumeName"
-capacity=volumeCapacity
+create volume diskPool=pass:quotes[_"diskPoolName"_
+userLabel="_volumeName_"
+capacity=_volumeCapacity_]
 [thinProvisioned=(TRUE | FALSE)]
 [owner=(a|b)]
 [mapping=(none|default)]
@@ -39,11 +39,11 @@ capacity=volumeCapacity
 [cacheReadPrefetch=(TRUE | FALSE)]
 [raidLevel=(1 | 6)]
 ----
-
+[subs=+macros]
 ----
-create volume diskPool="diskPoolName"
-userLabel="volumeName"
-capacity=volumeCapacity
+create volume diskPool=pass:quotes[_"diskPoolName"_
+userLabel="_volumeName_"
+capacity=_volumeCapacity_]
 [thinProvisioned=(TRUE | FALSE)]
 [owner=(a|b)]
 [mapping=(none|default)]
@@ -52,40 +52,40 @@ capacity=volumeCapacity
 ----
 
 == Syntax for Creating a Thin Provisioned Volume
-
+[subs=+macros]
 ----
-create volume diskPool="diskPoolName"
-userLabel="volumeName"
-capacity=volumeCapacity
+create volume diskPool=pass:quotes[_"diskPoolName"_
+userLabel="_volumeName_"
+capacity=_volumeCapacity_]
 [thinProvisioned=(TRUE | FALSE)]
 [owner=(a|b)]
 [mapping=(none|default)]
 [dataAssurance=(none|enabled)]
-[(existingRepositoryLabel=existingRepositoryName |
-[newRepositoryCapacity=newRepositoryCapacityValue (KB | MB | GB | TB | Bytes)]
-[repositoryMaxCapacity=repositoryMaxCapacityValue(KB|MB|GB|TB|Bytes)]
-[warningThresholdPercent=warningThresholdPercentValue]
+[(existingRepositoryLabel=pass:quotes[_existingRepositoryName_] |
+[newRepositoryCapacity=pass:quotes[_newRepositoryCapacityValue_] (KB | MB | GB | TB | Bytes)]
+[repositoryMaxCapacity=pass:quotes[_repositoryMaxCapacityValue_](KB|MB|GB|TB|Bytes)]
+[warningThresholdPercent=pass:quotes[_warningThresholdPercentValue_]
 [repositoryExpansionPolicy=(automatic|manual)]
 [cacheReadPrefetch=(TRUE | FALSE)]
 ----
-
+[subs=+macros]
 ----
-create volume diskPool="diskPoolName"
-userLabel="volumeName"
-capacity=volumeCapacity
+create volume diskPool=pass:quotes[_"diskPoolName"_
+userLabel="_volumeName_"
+capacity=_volumeCapacity_]
 [thinProvisioned=(TRUE | FALSE)]
 [owner=(a|b)]
 [mapping=(none|default)]
-[(existingRepositoryLabel=existingRepositoryName |
-[newRepositoryCapacity=newRepositoryCapacityValue (KB | MB | GB | TB | Bytes)]
-[repositoryMaxCapacity=repositoryMaxCapacityValue(KB|MB|GB|TB|Bytes)]
-[warningThresholdPercent=warningThresholdPercentValue]
+[(existingRepositoryLabel=pass:quotes[_existingRepositoryName_] |
+[newRepositoryCapacity=pass:quotes[_newRepositoryCapacityValue_] (KB | MB | GB | TB | Bytes)]
+[repositoryMaxCapacity=pass:quotes[_repositoryMaxCapacityValue_](KB|MB|GB|TB|Bytes)]
+[warningThresholdPercent=pass:quotes[_warningThresholdPercentValue_]]
 [repositoryExpansionPolicy=(automatic|manual)]
 [cacheReadPrefetch=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -134,7 +134,7 @@ This parameter identifies an existing repository for a thin volume. A repository
 a|
 `newRepositoryCapacity`
 a|
-This parameter creates a new repository for a thin volume. A repository volume has the physical capacity for a thin volume. Use this parameter only if you set the value of the `thinProvisioned` parameter to``TRUE``.
+This parameter creates a new repository for a thin volume. A repository volume has the physical capacity for a thin volume. Use this parameter only if you set the value of the `thinProvisioned` parameter to `TRUE`.
 
 Size is defined in units of `MB`, `GB`, or `TB`. The following are examples of the syntax:
 
@@ -146,7 +146,7 @@ The default value is 50 percent of the virtual capacity.
 a|
 `repositoryMaxCapacity`
 a|
-This parameter defines the maximum capacity for a repository for a thin volume. Use this parameter only if you se the value of the `thinProvisioned` parameter to``TRUE``.
+This parameter defines the maximum capacity for a repository for a thin volume. Use this parameter only if you se the value of the `thinProvisioned` parameter to `TRUE`.
 
 Size is defined in units of `MB`, `GB`, or `TB`. The following are examples of the syntax:
 
@@ -203,4 +203,4 @@ If `dataAssurance` parameter is set to `enabled`, only data assurance capable dr
 
 7.83
 
-8.70 adds the `raidLevel` parameter.
+8.70 adds the `_raidLevel_` parameter.

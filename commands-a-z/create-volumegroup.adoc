@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-volumegroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The create volumeGroup command creates either a free-capacity volume group or a volume group with one volume when you enter a set of unassigned drives.'
+keywords: create, volume, group
+summary: "The create volumeGroup command creates either a free-capacity volume group or a volume group with one volume when you enter a set of unassigned drives."
 ---
 = Create volume group
 :icons: font
@@ -20,12 +20,12 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
 create volumeGroup
-drives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn)
+drives=pass:quotes[(_trayID1_,]pass:quotes[[_drawerID1,_]]pass:quotes[_slotID1 ... trayIDn_],pass:quotes[[_drawerIDn,_]pass:quotes[_slotIDn)_]
 raidLevel=(0 | 1 | 3 | 5 | 6)
-userLabel="volumeGroupName"
+userLabel=pass:quotes[_"volumeGroupName"_]
 [driveMediaType=(HDD | SSD | unknown | allMedia)]
 [driveType=(SAS | NVMe4K)]
 [trayLossProtect=(TRUE | FALSE)]
@@ -36,7 +36,7 @@ userLabel="volumeGroupName"
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -124,6 +124,7 @@ A volume group is a set of drives that are logically grouped together by the con
  ** If a volume group with RAID level 1 has four or more drives, the storage management software automatically converts the volume group to a RAID level 10, which is RAID level 1 + RAID level 0.
 * To enable tray/drawer loss protection, refer to the following tables for additional criteria:
 
+[options="header"]
 |===
 | Level| Criteria for Tray Loss Protection| Minimum number of trays required
 a|
@@ -157,6 +158,7 @@ Cannot achieve Tray Loss Protection.
 a|
 Not applicable
 |===
+[options="header"]
 |===
 | Level| Criteria for drawer loss protection| Minimum number of drawers required
 a|
@@ -229,7 +231,7 @@ For optimal performance in a multiuser database or file system storage environme
 ====
 You do not need to enter a value for the `cacheReadPrefetch` parameter or the `segmentSize` parameter. If you do not enter a value, the controller firmware uses the `usageHint` parameter with `fileSystem` as the default value. Entering a value for the `usageHint` parameter and a value for the `cacheReadPrefetch` parameter or a value for the `segmentSize` parameter does not cause an error. The value that you enter for the `cacheReadPrefetch` parameter or the `segmentSize` parameter takes priority over the value for the `usageHint` parameter. The segment size and cache read prefetch settings for various usage hints are shown in the following table:
 ====
-
+[options="header"]
 |===
 | Usage hint| Segment size setting| Dynamic cache read prefetch setting
 a|

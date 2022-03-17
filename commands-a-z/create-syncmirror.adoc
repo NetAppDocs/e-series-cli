@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-syncmirror.html
 sidebar: sidebar
-keywords: 
-summary: 'The create syncMirror command creates both the primary volume and the secondary volume for a synchronous remote mirrored pair. This command also sets the write mode \(synchronous write mode or asynchronous write mode\) and the synchronization priority.'
+keywords: create, synchronous, mirroring
+summary: "The create syncMirror command creates both the primary volume and the secondary volume for a synchronous remote mirrored pair. This command also sets the write mode (synchronous write mode or asynchronous write mode) and the synchronization priority."
 ---
 = Create synchronous mirroring
 :icons: font
@@ -32,12 +32,12 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-create syncMirror primary="primaryVolumeName"
-secondary="secondaryVolumeName"
-(remoteStorageArrayName="storageArrayName" |
-remoteStorageArrayWwn="wwID")
+create syncMirror primary=pass:quotes[_"primaryVolumeName_"
+secondary="_secondaryVolumeName_"
+(remoteStorageArrayName="_storageArrayName_" |
+remoteStorageArrayWwn="_wwID_")]
 [remotePassword="password"]
 [syncPriority=(highest | high | medium | low | lowest)]
 [autoResync=(enabled | disabled)]
@@ -48,7 +48,7 @@ remoteStorageArrayWwn="wwID")
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
