@@ -19,7 +19,7 @@ This command applies to any individual storage array, including the E2700, E5600
 
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
-This command is deprecated. The command that replaces it is xref:wombat-show-storagearray-unconfiguredinitiators.adoc[show storageArray unconfiguredInitiators].
+This command is deprecated. The command that replaces it is link:wombat-show-storagearray-unconfiguredinitiators.html[show storageArray unconfiguredInitiators].
 
 == Syntax
 
