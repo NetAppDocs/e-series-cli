@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-replaceabledrives.html
 sidebar: sidebar
-keywords: 
-summary: 'The show replaceableDrives command shows all replaceable drives in a storage array.'
+keywords: show, replaceable, drives
+summary: "The show replaceableDrives command shows all replaceable drives in a storage array."
 ---
 = Show replaceable drives
 :icons: font

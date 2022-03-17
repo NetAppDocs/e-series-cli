@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-autoconfiguration.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray autoConfiguration command shows the default auto-configuration that the storage array creates if you run the autoConfigure storageArray command.'
+keywords: show, storage, array, auto, configuration
+summary: "The show storageArray autoConfiguration command shows the default auto-configuration that the storage array creates if you run the autoConfigure storageArray command."
 ---
 = Show storage array auto configuration
 :icons: font
@@ -25,16 +25,17 @@ If you want to determine whether the storage array can support specific properti
 
 == Syntax
 
+[subs=+macros]
 ----
 show storageArray autoConfiguration
 [driveType=(SAS | NVMe4K)
 driveMediaType=(HDD | SSD | unknown | allMedia)
 raidLevel=(0 | 1 | 3 | 5 | 6)
-volumeGroupWidth=numberOfDrives
-volumeGroupCount=numberOfVolumeGroups
-volumesPerGroupCount=numberOfVolumesPerGroup
-hotSpareCount=numberOfHotspares
-segmentSize=segmentSizeValue
+pass:quotes[volumeGroupWidth=_numberOfDrives_]
+pass:quotes[volumeGroupCount=_numberOfVolumeGroups_]
+pass:quotes[volumesPerGroupCount=_numberOfVolumesPerGroup_]
+pass:quotes[hotSpareCount=_numberOfHotspares_]
+pass:quotes[segmentSize=_segmentSizeValue_]
 cacheReadPrefetch=(TRUE | FALSE)
 securityType=(none | capable | enabled)
 secureDrives=(fips | fde)]
@@ -42,14 +43,15 @@ secureDrives=(fips | fde)]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`driveType`
+`*driveType*`
 a|
 The type of drives that you want to use for the storage array.
 
-The `driveType` parameter is not required if only one type of drive is in the storage array. You must use this parameter when you have more than one type of drive in your storage array.
+The `*driveType*` parameter is not required if only one type of drive is in the storage array. You must use this parameter when you have more than one type of drive in your storage array.
 
 Valid drive types are:
 
@@ -57,7 +59,7 @@ Valid drive types are:
 * `NVMe4K`
 
 a|
-`driveMediaType`
+`*driveMediaType*`
 
 a|
 The type of drive media that you want to use for the mirror repository volume group. Valid drive media are these:
@@ -67,40 +69,40 @@ The type of drive media that you want to use for the mirror repository volume gr
 * `unknown` -- Use if you are not sure what types of drive media are in the drive tray.
 * `allMedia` -- Use this option when you want to use all types of drive media that are in the drive tray.
 
-Use this parameter when you use the `repositoryDriveCount` parameter.
+Use this parameter when you use the `*repositoryDriveCount*` parameter.
 
 You must use this parameter when you have more than one type of drive media in your storage array.
 
 a|
-`raidLevel`
+`*raidLevel*`
 a|
 The RAID level of the volume group that contains the drives in the storage array. Valid RAID levels are `0`, `1`, `3`, `5`, or `6`.
 a|
-`volumeGroupWidth`
+`*volumeGroupWidth*`
 a|
 The number of drives in a volume group in the storage array, which depends on the capacity of the drives. Use integer values.
 a|
-`volumeGroupCount`
+`*volumeGroupCount*`
 a|
 The number of volume groups in the storage array. Use integer values.
 a|
-`volumesPerGroupCount`
+`*volumesPerGroupCount*`
 a|
 The number of equal-capacity volumes per volume group. Use integer values.
 a|
-`hotSpareCount`
+`*hotSpareCount*`
 a|
 The number of hot spares that you want in the storage array. Use integer values.
 a|
-`segmentSize`
+`*segmentSize*`
 a|
 The amount of data (in KB) that the controller writes on a single drive in a volume before writing data on the next drive. Valid values are `8`, `16`, `32`, `64`, `128`, `256`, or `512`.
 a|
-`cacheReadPrefetch`
+`*cacheReadPrefetch*`
 a|
 The setting to turn on or turn off cache read prefetch. To turn off cache read prefetch, set this parameter to `FALSE`. To turn on cache read prefetch, set this parameter to `TRUE`.
 a|
-`securityType`
+`*securityType*`
 a|
 The setting to specify the security level when creating the volume groups and all associated volumes. These settings are valid:
 
@@ -109,7 +111,7 @@ The setting to specify the security level when creating the volume groups and al
 * `enabled` -- The volume group and volumes have security enabled.
 
 a|
-`secureDrives`
+`*secureDrives*`
 a|
 The type of secure drives to use in the volume group. These settings are valid:
 
@@ -118,7 +120,7 @@ The type of secure drives to use in the volume group. These settings are valid:
 
 [NOTE]
 ====
-Use this parameter along with the `securityType` parameter. If you specify `none` for the `securityType` parameter, the value of the `secureDrives` parameter is ignored, because non-secure volume groups do not need to have secure drive types specified.
+Use this parameter along with the `*securityType*` parameter. If you specify `none` for the `*securityType*` parameter, the value of the `*secureDrives*` parameter is ignored, because non-secure volume groups do not need to have secure drive types specified.
 ====
 
 |===
@@ -145,6 +147,7 @@ A volume group is a set of drives that are logically grouped together by the con
 * If a volume group contains drives that have different capacities, the overall capacity of the volume group is based on the smallest capacity drive.
 * To enable tray/drawer loss protection, refer to the following tables for additional criteria:
 
+[cols="3*",options="header"]
 |===
 | Level| Criteria for Tray Loss Protection| Minimum number of trays required
 a|
@@ -178,6 +181,8 @@ Cannot achieve Tray Loss Protection.
 a|
 Not applicable
 |===
+
+[cols="3*",options="header"]
 |===
 | Level| Criteria for drawer loss protection| Minimum number of drawers required
 a|
@@ -246,13 +251,13 @@ For optimal performance in a multiuser database or file system storage environme
 
 == Cache read prefetch
 
-Cache read prefetch lets the controller copy additional data blocks into cache while the controller reads and copies data blocks that are requested by the host from the drive into cache. This action increases the chance that a future request for data can be fulfilled from cache. Cache read prefetch is important for multimedia applications that use sequential data transfers. Valid values for the `cacheReadPrefetch` parameter are `TRUE` or `FALSE`. The default is `TRUE`.
+Cache read prefetch lets the controller copy additional data blocks into cache while the controller reads and copies data blocks that are requested by the host from the drive into cache. This action increases the chance that a future request for data can be fulfilled from cache. Cache read prefetch is important for multimedia applications that use sequential data transfers. Valid values for the `*cacheReadPrefetch*` parameter are `TRUE` or `FALSE`. The default is `TRUE`.
 
 == Security type
 
-Use the `securityType` parameter to specify the security settings for the storage array.
+Use the `*securityType*` parameter to specify the security settings for the storage array.
 
-Before you can set the `securityType` parameter to `enabled`, you must create a storage array security key. Use the `create storageArray securityKey` command to create a storage array security key. These commands are related to the security key:
+Before you can set the `*securityType*` parameter to `enabled`, you must create a storage array security key. Use the `create storageArray securityKey` command to create a storage array security key. These commands are related to the security key:
 
 * `create storageArray securityKey`
 * `export storageArray securityKey`
@@ -263,7 +268,7 @@ Before you can set the `securityType` parameter to `enabled`, you must create a 
 
 == Secure drives
 
-Secure-capable drives can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives. Use the `secureDrives` parameter to specify the type of secure drives to use. The values you can use are `fips` and `fde`.
+Secure-capable drives can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives. Use the `*secureDrives*` parameter to specify the type of secure drives to use. The values you can use are `fips` and `fde`.
 
 == Example command
 
@@ -275,8 +280,8 @@ show storageArray autoConfiguration securityType=capable secureDrives=fips;
 
 7.10 adds RAID Level 6 capability and removes hot spare limits.
 
-7.50 adds the `securityType` parameter.
+7.50 adds the `*securityType*` parameter.
 
-7.75 adds the `dataAssurance` parameter.
+7.75 adds the `*dataAssurance*` parameter.
 
-8.25 adds the `secureDrives` parameter.
+8.25 adds the `*secureDrives*` parameter.

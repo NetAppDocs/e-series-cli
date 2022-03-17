@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-cachemirrordataassurancecheckenable.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray cacheMirrorDataAssuranceCheckEnable command returns the enablement status of the cache mirror data assurance check feature.'
+keywords: show, storage, array, cache, mirror, data, assurance, check, enable
+summary: "The show storageArray cacheMirrorDataAssuranceCheckEnable command returns the enablement status of the cache mirror data assurance check feature."
 ---
 = Show storage array cache mirror data assurance check enable
 :icons: font

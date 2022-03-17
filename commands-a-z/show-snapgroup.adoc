@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-snapgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The show snapGroup command returns information about one or more snapshot image groups.'
+keywords: show, snapshot, group
+summary: "The show snapGroup command returns information about one or more snapshot image groups."
 ---
 = Show snapshot group
 :icons: font
@@ -21,27 +21,29 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-show (allSnapGroups | snapGroup [snapGroupName] |
-snapGroups ["snapGroupName1" ... "snapGroupNamen"])
+show (allSnapGroups | snapGroup pass:quotes[[_snapGroupName_]] |
+snapGroups pass:quotes[["_snapGroupName1_" ... "_snapGroupNamen_"]])
 [summary | schedule]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`allSnapGroups`
+`*allSnapGroups*`
 a|
 The parameter to return information about all of the snapshot groups in the storage array.
 a|
-`snapGroup`
+`*snapGroup*`
 a|
 The name of the snapshot group for which you want to retrieve information. Enclose the snapshot group name in square brackets ([ ]). If the snapshot group name has special characters or numbers, you must enclose the snapshot group name in double quotation marks (" ") inside square brackets.
 
 a|
-`snapGroups`
+`*snapGroups*`
 a|
 The names of several snapshot groups for which you want to retrieve information. Enter the names of the snapshot groups using these rules:
 
@@ -55,11 +57,11 @@ If the snapshot group names have special characters or consist only of numbers, 
 * Separate each of the names with a space.
 
 a|
-`summary`
+`*summary*`
 a|
 The parameter to return a concise list of information about the snapshot groups.
 a|
-`schedule`
+`*schedule*`
 a|
 The parameter to return a concise list of information about the schedules for the snapshot group copy operations.
 |===
