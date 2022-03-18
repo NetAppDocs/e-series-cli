@@ -36,7 +36,7 @@ delete diskPool pass:quotes[[_diskPoolName_]]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
