@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-cgsnapimage.html
 sidebar: sidebar
-keywords: 
-summary: 'The show CGSnapImage command shows one snapshot image or several snapshot images that are in one or more snapshot consistency groups.'
+keywords: show, consistency, group, snapshot, image
+summary: "The show CGSnapImage command shows one snapshot image or several snapshot images that are in one or more snapshot consistency groups."
 ---
 = Show consistency group snapshot image
 :icons: font
@@ -21,20 +21,22 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-show ((CGSnapImage [(CGSnapImageName | CGSnapImageSequenceNumber)]) |
-(CGSnapImages [(CGSnapImageNumber1 ... CGSnapImageNumbern |
-CGSnapImageSequenceNumber1 ... CGSnapImageSequenceNumbern)]) |
+show ((CGSnapImage pass:quotes[[(_CGSnapImageName_ | _CGSnapImageSequenceNumber_)]]) |
+(CGSnapImages pass:quotes[[(_CGSnapImageNumber1_ ... _CGSnapImageNumbern_ |
+_CGSnapImageSequenceNumber1_ ... _CGSnapImageSequenceNumbern_)]]) |
 allCGSnapImages
 [summary]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`CGSnapImage` or `CGSnapImages`
+`*CGSnapImage*` or `*CGSnapImages*`
 a|
 The name of the snapshot image in a consistency group. The name of a snapshot image is comprised of two parts:
 
@@ -52,11 +54,11 @@ Enclose the snapshot image name in double quotation marks (" ") inside square br
 You can enter more than one snapshot image name or sequence number. Enclose all of the snapshot image names in one set of double quotation marks (" ") inside square brackets ([ ]). Separate each snapshot image name with a space.
 
 a|
-`allCGSnapImages`
+`*allCGSnapImages*`
 a|
 The setting to return all of the snapshot images from the consistency groups.
 a|
-`summary`
+`*summary*`
 a|
 The setting to return a concise list of information about all of the snapshot images in the storage array.
 |===

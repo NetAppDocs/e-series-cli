@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-auditlog-summary.html
 sidebar: sidebar
-keywords: 
-summary: 'The show auditLog summary command displays the audit log summary information.'
+keywords: show, audit, log, summary
+summary: "The show auditLog summary command displays the audit log summary information."
 ---
 = Show audit log summary
 :icons: font
