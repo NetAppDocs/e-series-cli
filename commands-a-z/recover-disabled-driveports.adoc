@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/recover-disabled-driveports.html
 sidebar: sidebar
-keywords: 
-summary: 'The recover disabled drivePorts command recovers disabled drive ports.'
+keywords: recover, disable, drive ports
+summary: "The recover disabled drivePorts command recovers disabled drive ports."
 ---
 = Recover disabled drive ports
 :icons: font

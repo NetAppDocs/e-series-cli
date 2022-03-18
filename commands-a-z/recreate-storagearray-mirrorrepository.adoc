@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/recreate-storagearray-mirrorrepository.html
 sidebar: sidebar
-keywords: 
-summary: 'The recreate storageArray mirrorRepository command creates a new Synchronous Mirroring repository volume \(also called a mirror repository volume\) by using the parameters defined for a previous mirror repository volume.'
+keywords: recreate, synchronous, mirror, repository, volume
+summary: "The recreate storageArray mirrorRepository command creates a new Synchronous Mirroring repository volume (also called a mirror repository volume) by using the parameters defined for a previous mirror repository volume."
 ---
 = Re-create synchronous mirroring repository volume
 :icons: font
@@ -29,30 +29,30 @@ With firmware version 7.80, the `recreate storageArray mirrorRepository` command
 The underlying requirement is that you have previously created a mirror repository volume. When you use this command, you can define the mirror repository volume in one of three ways: user-defined drives, user-defined volume group, or user-defined number of drives for the mirror repository volume. If you choose to define a number of drives, the controller firmware chooses which drives to use for the mirror repository volume.
 
 == Syntax (user-defined drives)
-
+[subs=+macros]
 ----
 recreate storageArray mirrorRepository
 repositoryRAIDLevel=(1 | 3 | 5 | 6)
-repositoryDrives=(trayID1,[drawerID1,]slotID1
-... trayIDN,[drawerIDN,]slotIDN)
+repositoryDrives=pass:quotes[(_trayID1_,pass:quotes[[_drawerID1,_]]pass:quotes[_slotID1
+... trayIDN_],pass:quotes[[_drawerIDN,_]]pass:quotes[_slotIDN_])
 [trayLossProtect=(TRUE | FALSE)]
 [dataAssurance=(none | enabled)]
 ----
 
 == Syntax (user-defined volume group)
-
+[subs=+macros]
 ----
 recreate storageArray mirrorRepository
-repositoryVolumeGroup=volumeGroupName
-[freeCapacityArea=freeCapacityIndexNumber]
+repositoryVolumeGroup=pass:quotes[_volumeGroupName_
+[freeCapacityArea=pass:quotes[_freeCapacityIndexNumber_]]
 ----
 
 == Syntax (user-defined number of drives)
-
+[subs=+macros]
 ----
 recreate storageArray mirrorRepository
 repositoryRAIDLevel=(1 | 3 | 5 | 6)
-repositoryDriveCount=numberOfDrives
+repositoryDriveCount=pass:quotes[_numberOfDrives_]
 (
   [driveMediaType=(HDD | SSD | unknown | allMedia)] |
   [driveType=(SAS | NVMe4K)]
@@ -64,7 +64,7 @@ repositoryDriveCount=numberOfDrives
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -130,7 +130,7 @@ You must use this parameter when you have more than one type of drive in your st
 Valid drive types are:
 
 * `SAS`
-* NVMe4K
+* `NVMe4K`
 
 If you do not specify a drive type, the command defaults to any type.
 

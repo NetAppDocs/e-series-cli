@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reduce-disk-pool-capacity.html
 sidebar: sidebar
-keywords: 
-summary: 'The set diskPool command reduces the capacity of the disk pool by logically removing the drives from the pool.'
+keywords: reduce, disk pool, capacity
+summary: "The set diskPool command reduces the capacity of the disk pool by logically removing the drives from the pool."
 ---
 = Reduce disk pool capacity
 :icons: font
@@ -26,15 +26,15 @@ This command uses the Dynamic Capacity Reduction (DCR) feature, which enables yo
 The maximum number of drives that you can remove from a disk pool in a single DCR operation is 60. You cannot reduce the disk pool to below the minimum disk pool size.
 
 == Syntax
-
+[subs=+macros]
 ----
-set diskPool [diskPoolName]
-removeDrives=(trayID1,[drawerID1,]slotID1
-... trayIDn,[drawerIDn,]slotIDn)
+set diskPool pass:quotes[[_diskPoolName_]]
+removeDrives=pass:quotes[(_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1
+... trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_])
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|

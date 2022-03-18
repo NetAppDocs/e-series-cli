@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/recreate-storagearray-securitykey.html
 sidebar: sidebar
-keywords: 
-summary: 'The recreate storageArray securityKey command regenerates a storage array security key for use with the external security key management feature.'
+keywords: recreate, external, security key
+summary: "The recreate storageArray securityKey command regenerates a storage array security key for use with the external security key management feature."
 ---
 = Re-create external security key
 :icons: font
@@ -27,15 +27,15 @@ This command applies only to external key management.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 recreate storageArray securityKey
-passPhrase="passPhraseString"
-file="fileName"
+passPhrase=pass:quotes[_"passPhraseString"_
+file="_fileName"_]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
