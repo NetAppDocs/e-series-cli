@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-consistencygroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete consistencyGroup command deletes a snapshot consistency group.'
+keywords: delete, consistency, group
+summary: "The delete consistencyGroup command deletes a snapshot consistency group."
 ---
 = Delete consistency group
 :icons: font
@@ -27,14 +27,14 @@ This command works in two ways:
 * You can delete only the consistency group and leave the repository volumes that are contained by the consistency group intact.
 
 == Syntax
-
+[subs=+macros]
 ----
-delete consistencyGroup ["consistencyGroupName"]
+delete consistencyGroup pass:quotes[[_"consistencyGroupName"_]]
 [deleteRepositoryMembers=(TRUE | FALSE)]
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|

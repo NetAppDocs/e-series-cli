@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-emailalert.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete emailAlert command deletes recipient email address\(es\) from the Email alert configuration.'
+keywords: delete, email, alert, recipient
+summary: "The delete emailAlert command deletes recipient email address(es) from the Email alert configuration."
 ---
 = Delete email alert recipient
 :icons: font
@@ -20,16 +20,16 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
 
 delete emailAlert
        (allEmailRecipients |
-        emailRecipients [emailAddress1 ... emailAddressN])
+        emailRecipients pass:quotes[[_emailAddress1 ... emailAddressN_]])
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
