@@ -741,6 +741,12 @@ entries:
         url: /commands-a-z/smcli-autosupportschedule-reset.html
       - title: smcli autosupportschedule show
         url: /commands-a-z/smcli-autosupportschedule-show.html
+      - title: smcli enable autosupportfeature
+        url: /commands-a-z/smcli-enable-autosupportfeature.html
+      - title: smcli enable disable autosupportondemand
+        url: /commands-a-z/smcli-enable-disable-autosupportondemand.html
+      - title: smcli enable disable autosupportremotediag
+        url: /commands-a-z/smcli-enable-disable-autosupportremotediag.html
       - title: smcli supportbundle schedule
         url: /commands-a-z/smcli-supportbundle-schedule.html
     - title: "start ..."
