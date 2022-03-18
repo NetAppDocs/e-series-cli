@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-drivechannel-stats.html
 sidebar: sidebar
-keywords: 
-summary: 'The show driveChannel stats command shows the cumulative data transfer for the drive channel and error information.'
+keywords: show, drive channel, statistics
+summary: "The show driveChannel stats command shows the cumulative data transfer for the drive channel and error information."
 ---
 = Show drive channel statistics
 :icons: font
@@ -33,24 +33,25 @@ show (driveChannel [(1 | 2 | 3 | 4 | 5 | 6 | 7 | 8)] |
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`driveChannel`
+`*driveChannel*`
 a|
 The identifier number of the drive channel for which you want to show information. Valid drive channel values are `1`, `2`, `3`, `4`, `5`, `6`, `7`, or `8`. Enclose the drive channel in square brackets ([ ]).
 
 Use this parameter when you want to show the statistics for only one drive channel.
 
 a|
-`driveChannels`
+`*driveChannels*`
 a|
 The identifier numbers of several drive channels for which you want to show information. Valid drive channel values are `1`, `2`, `3`, `4`, `5`, `6`, `7`, or `8`. Enclose the drive channels in square brackets ([ ]) with the drive channel value separated with a space.
 
 Use this parameter when you want to show the statistics for more than one drive channel.
 
 a|
-`allDriveChannels`
+`*allDriveChannels*`
 a|
 The identifier that selects all of the drive channels.
 |===

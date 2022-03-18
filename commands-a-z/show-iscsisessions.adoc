@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-iscsisessions.html
 sidebar: sidebar
-keywords: 
-summary: 'The show iscsiSessions command returns information about an iSCSI session for either an iSCSI initiator or an iSCSI target.'
+keywords: show, current, iscsi, sessions
+summary: "The show iscsiSessions command returns information about an iSCSI session for either an iSCSI initiator or an iSCSI target."
 ---
 = Show current iSCSI sessions
 :icons: font
@@ -21,20 +21,23 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-show iscsiInitiator ["initiatorName" | <"iqn">] iscsiSessions
+show iscsiInitiator pass:quotes[["_initiatorName_"] | <"iqn">] iscsiSessions
 ----
 
+[subs=+macros]
 ----
-show iscsiTarget ["targetName" | <"iqn">] iscsiSessions
+show iscsiTarget pass:quotes[["_targetName_"] | <"iqn">] iscsiSessions
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`iscsiInitiator`
+`*iscsiInitiator*`
 a|
 The name of the iSCSI initiator for which you want to obtain session information.
 
@@ -43,7 +46,7 @@ If the iSCSI initiator uses a label or an alias, enclose the iSCSI initiator lab
 If the iSCSI initiator uses an iSCSI qualified name (IQN), enclose the IQN in double quotation marks (" ") inside angle brackets (< >).
 
 a|
-`iscsiTarget`
+`*iscsiTarget*`
 a|
 The name of the iSCSI target for which you want to obtain session information.
 

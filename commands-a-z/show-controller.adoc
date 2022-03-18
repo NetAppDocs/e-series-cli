@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-controller.html
 sidebar: sidebar
-keywords: 
-summary: 'The show controller command returns information about a controller.'
+keywords: show, controller
+summary: "The show controller command returns information about a controller."
 ---
 = Show controller
 :icons: font
@@ -47,18 +47,19 @@ show (allControllers | controller [(a|b)])
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`allControllers`
+`*allControllers*`
 a|
 The setting to return information about both controllers in the storage array.
 a|
-`controller`
+`*controller*`
 a|
 The setting to return information about a specific controller in the storage array. Valid controller identifiers are `a` or `b` , where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
 a|
-`summary`
+`*summary*`
 a|
 The setting to return a concise list of information about both controllers in the storage array.
 |===
@@ -156,10 +157,10 @@ Controller in slot A
       Part type: HPFC-5200    revision 10
 ----
 
-When you use the `summary` parameter, the command returns the list of information without the drive channel information and the host channel information.
+When you use the `*summary*` parameter, the command returns the list of information without the drive channel information and the host channel information.
 
 The `show storageArray` command also returns detailed information about the controller.
 
 == Minimum firmware level
 
-5.43 adds the `summary` parameter.
+5.43 adds the `*summary*` parameter.
