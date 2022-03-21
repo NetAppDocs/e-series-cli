@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/remove-volume-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The remove volume asyncMirrorGroup command removes a member volume from an existing asynchronous mirror group.'
+keywords: remove, volume, asynchronous, mirror, group
+summary: "The remove volume asyncMirrorGroup command removes a member volume from an existing asynchronous mirror group."
 ---
 = Remove volume from asynchronous mirror group
 :icons: font
@@ -26,14 +26,14 @@ Optionally, you can delete the repository volume members from the asynchronous m
 This command is valid only on the local storage array that contains the asynchronous mirror group whose member volume that you want to remove.
 
 == Syntax
-
+[subs=+macros]
 ----
-remove volume ["volumeName"] asyncMirrorGroup="asyncMirrorGroupName"
+remove volume pass:quotes[[_"volumeName"_]] asyncMirrorGroup=pass:quotes[_"asyncMirrorGroupName"_]
 [deleteRepositoryMembers=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
