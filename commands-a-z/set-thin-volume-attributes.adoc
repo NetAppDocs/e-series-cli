@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-thin-volume-attributes.html
 sidebar: sidebar
-keywords: 
-summary: 'The set volume command defines the properties for a thin volume.'
+keywords: set, thin, volume, attributes
+summary: "The set volume command defines the properties for a thin volume."
 ---
 = Set thin volume attributes
 :icons: font
@@ -25,31 +25,33 @@ You can use the parameters to define properties for one or more thin volumes.
 
 == Syntax
 
+[subs=+macros]
 ----
-set (volume [volumeName] |
-volumes [volumeName1 ... volumeNameN] | volume <"wwID">)
-[newCapacity=capacityValue]
-[repositoryMaxCapacity=capacityValue]
+set (volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]] | volume <"wwID">)
+[newCapacity=pass:quotes[_capacityValue_]]
+[repositoryMaxCapacity=pass:quotes[_capacityValue_]]
 [repositoryExpansionPolicy=(automatic|manual)]
-[warningThresholdPercent=warningThresholdPercentValue]
+[warningThresholdPercent=pass:quotes[_warningThresholdPercentValue_]]
 [addRepositoryCapacity=capacity-spec][hostReportingPolicy=(standard | thin)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`volume`
+`*volume*`
 a|
 The name of the volume for which you want to define properties. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
 
 a|
-`volume`
+`*volume*`
 a|
 The World Wide Identifier (WWID) of the volume for which you want to define properties. Enclose the WWID in double quotation marks (" ") inside angle brackets (< >).
 a|
-`volumes`
+`*volumes*`
 a|
 The names of several volumes for which you want to define properties. All of the volumes will have the same properties. Enter the names of the volumes using these rules:
 
@@ -63,7 +65,7 @@ If the volume names have special characters or consist only of numbers, enter th
 * Separate each of the names with a space.
 
 a|
-`newCapacity`
+`*newCapacity*`
 a|
 This parameter increases the virtual capacity of the thin volume. The virtual capacity is the value that the volume will report to a host that is mapped to the volume. Values smaller or equal to the existing capacity will cause an error. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`.
 
@@ -72,7 +74,7 @@ The minimum virtual capacity is 32 MB.
 The maximum virtual capacity is 63 TB.
 
 a|
-`repositoryMaxCapacity`
+`*repositoryMaxCapacity*`
 a|
 This parameter sets the maximum capacity of the repository volume. The value must not be smaller that the physical capacity of the repository volume. If the new value results in a reduction in capacity to a level below the warning threshold, the command will produce an error.
 [NOTE]
@@ -81,11 +83,11 @@ The command `repositoryMaxCapacity` works with `repositoryExpansionPolicy=automa
 ====
 
 a|
-`repositoryExpansionPolicy`
+`*repositoryExpansionPolicy*`
 a|
 This parameter sets the expansion policy to `automatic` or `manual`.When you change the policy from `automatic` to `manual`, the maximum capacity value (quota) changes to the physical capacity of the repository volume.
 a|
-`warningThresholdPercent`
+`*warningThresholdPercent*`
 a|
 The percentage of thin volume capacity at which you receive a warning alert that the thin volume is nearing full. Use integer values. For example, a value of 70 means 70 percent.
 
@@ -94,7 +96,7 @@ Valid values are from 1 to 100.
 Setting this parameter to 100 disables warning alerts.
 
 a|
-`addRepositoryCapacity`
+`*addRepositoryCapacity*`
 a|
 This parameter allocates capacity from the free extent of the disk pool. If insufficient space is available the command fails.
 [NOTE]
@@ -103,7 +105,7 @@ The command `addRepositoryCapacity` works with `repositoryExpansionPolicy=manual
 ====
 
 a|
-`hostReportingPolicy`
+`*hostReportingPolicy*`
 a|
 This parameter changes the way in which the thin volume is reported to the host. Valid values are `standard` or `thin`.
 |===
@@ -114,6 +116,7 @@ When you use this command, you can specify one or more of the optional parameter
 
 The following table lists the capacity limits for a thin volume.
 
+[cols="2*",options="header"]
 |===
 | Type of Capacity| Size
 a|
