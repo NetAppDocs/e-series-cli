@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-alldrives-performancestats.html
 sidebar: sidebar
-keywords: 
-summary: 'The show allDrives performanceStats command returns information about drive performance.'
+keywords: show, drive, performance, statistics
+summary: "The show allDrives performanceStats command returns information about drive performance."
 ---
 = Show drive performance statistics
 :icons: font
@@ -31,20 +31,22 @@ For each drive in the storage array, this command returns the following informat
 
 == Syntax
 
+[subs=+macros]
 ----
-show (allDrives |drive \[trayID,[drawerID,]slotID\] \| drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\]) performanceStats
+show (allDrives |drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] | drives pass:quotes[[_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1_] ... pass:quotes[_trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_]]) performanceStats
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`allDrives`
+`*allDrives*`
 a|
 The setting to return information about all of the drives in the storage array.
 a|
-`drive` or `drives`
+`*drive*` or `*drives*`
 a|
 For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
@@ -56,7 +58,7 @@ Enclose the tray ID value, the drawer ID value, and the slot ID value in square 
 
 == Notes
 
-The `drive` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+The `*drive*` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
 
 The `show drive performanceStats` command returns drive performance statistics as shown in this example:
 

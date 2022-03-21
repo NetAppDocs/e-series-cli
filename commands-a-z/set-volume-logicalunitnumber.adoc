@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-volume-logicalunitnumber.html
 sidebar: sidebar
-keywords: 
-summary: 'The set volume logicalUnitNumber command defines the logical unit number \(LUN\) or namespace ID \(NSID\) mapping between a volume and a host or host group.'
+keywords: set, volume, map
+summary: "The set volume logicalUnitNumber command defines the logical unit number (LUN) or namespace ID (NSID) mapping between a volume and a host or host group."
 ---
 = Set volume mapping
 :icons: font
@@ -30,33 +30,35 @@ You cannot use this command for a snapshot volume that is used in online volume 
 
 == Syntax
 
+[subs=+macros]
 ----
-set (volume [volumeName] | volume <"wwID"> | accessVolume)
-logicalUnitNumber=lun
-(host="hostName" |
-hostGroup=("hostGroupName" | defaultGroup)
+set (volume pass:quotes[[_volumeName_]] | volume <"wwID"> | accessVolume)
+pass:quotes[logicalUnitNumber=_lun_]
+pass:quotes[(host="_hostName_"] |
+hostGroup=pass:quotes[("_hostGroupName_"] | defaultGroup)
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`volume`
+`*volume*`
 a|
 The name of the volume for which you want to define the logical unit number. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
 
 a|
-`volume`
+`*volume*`
 a|
 The World Wide Identifier (WWID) of the volume for which you want to define the logical unit number. Enclose the WWID in double quotation marks (" ") inside angle brackets (< >).
 a|
-`accessVolume`
+`*accessVolume*`
 a|
 The logical unit number for the access volume. The logical unit number is the only property that you can set for the access volume.
 
 a|
-`logicalUnitNumber`
+`*logicalUnitNumber*`
 a|
 The logical unit number or namespace ID that you want to use to map to a specific host. This parameter also assigns the host to a host group.
 
@@ -66,12 +68,12 @@ The logical unit number or namespace ID you specify must not already be in use, 
 ====
 
 a|
-`host`
+`*host*`
 a|
 The name of the host to which the volume is mapped. Enclose the host name in double quotation marks (" ").
 
 a|
-`hostGroup`
+`*hostGroup*`
 a|
 The name of the host group to which the volume is mapped. Enclose the host group name in double quotation marks (" "). `defaultGroup` is the host group that contains the host to which the volume is mapped.
 
@@ -83,7 +85,7 @@ A host group is an optional topological element that you can define if you want 
 
 You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Names can have a maximum of 30 characters.
 
-The access volume is the volume in a SAN environment that is used for in-band communication between the storage management software and the storage array controller. This volume uses a LUN or NSID address and consumes 20 MB of storage space that is not available for application data storage. An access volume is required only for in-band managed storage arrays. If you specify the `accessVolume` parameter, the only property you can set is the `logicalUnitNumber` parameter.
+The access volume is the volume in a SAN environment that is used for in-band communication between the storage management software and the storage array controller. This volume uses a LUN or NSID address and consumes 20 MB of storage space that is not available for application data storage. An access volume is required only for in-band managed storage arrays. If you specify the `*accessVolume*` parameter, the only property you can set is the `*logicalUnitNumber*` parameter.
 
 == Minimum firmware level
 

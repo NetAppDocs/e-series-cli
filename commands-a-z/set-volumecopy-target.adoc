@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-volumecopy-target.html
 sidebar: sidebar
-keywords: 
-summary: 'The set volumeCopy target command defines the properties for a volume copy pair.'
+keywords: set, volume, copy
+summary: "The set volumeCopy target command defines the properties for a volume copy pair."
 ---
 = Set volume copy
 :icons: font
@@ -30,9 +30,10 @@ This command is valid for snapshot volume copy pairs.
 
 == Syntax
 
+[subs=+macros]
 ----
-set volumeCopy target [targetName]
-source [sourceName]
+set volumeCopy target pass:quotes[[_targetName_]]
+source pass:quotes[[_sourceName_]]
 [copyPriority=(highest | high | medium | low | lowest)]
 [targetReadOnlyEnabled=(TRUE | FALSE)]
 [copyType=(online | offline)]
@@ -40,26 +41,27 @@ source [sourceName]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`target`
+`*target*`
 a|
 The name of the volume to which the data will be copied. Enclose the target volume name in square brackets ([ ]). If the target volume name has special characters or numbers, you must enclose the target volume name in double quotation marks (" ") inside square brackets.
 a|
-`source`
+`*source*`
 a|
 The name of the volume from which the data will be copied. Enclose the source volume name in square brackets ([ ]). If the source volume name has special characters or numbers, you must enclose the source volume name in double quotation marks (" ") inside square brackets.
 a|
-`copyPriority`
+`*copyPriority*`
 a|
 The priority that the volume copy has relative to host I/O activity. Valid values are `highest`, `high`, `medium`, `low`, or `lowest`.
 a|
-`targetReadOnlyEnabled`
+`*targetReadOnlyEnabled*`
 a|
 The setting so that you can write to the target volume or only read from the target volume. To write to the target volume, set this parameter to `FALSE`. To prevent writing to the target volume, set this parameter to `TRUE`.
 a|
-`copyType`
+`*copyType*`
 a|
 
 [NOTE]
