@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-syslog.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray syslog command allows you to change the syslog server address, protocol, or port number.'
+keywords: update, storage, array, syslog, configuration
+summary: "The set storageArray syslog command allows you to change the syslog server address, protocol, or port number."
 ---
 = Update storage array syslog configuration
 :icons: font
@@ -30,6 +30,7 @@ components=(componentName=("auditLog") ...)
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-usersession.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray userSession command allows you to set a timeout in System Manager, so that users’ inactive sessions are disconnected after a specified time.'
+keywords: set, storage, array, user, session
+summary: "The set storageArray userSession command allows you to set a timeout in System Manager, so that users’ inactive sessions are disconnected after a specified time."
 ---
 = Set storage array user session
 :icons: font

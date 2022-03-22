@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-resourceprovisionedvolumes.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray resourceProvisionedVolumes command disables the DULBE feature.'
+keywords: set, storage, array, resource, provisioned, volumes
+summary: "The set storageArray resourceProvisionedVolumes command disables the DULBE feature."
 ---
 = Set Storage Array Resource Provisioned Volumes
 :icons: font
@@ -35,10 +35,11 @@ set storageArray resourceProvisionedVolumes=(enable|disable)
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`resourceProvisionedVolumes`
+`*resourceProvisionedVolumes*`
 a|
 The setting to specify if resource provisioning capabilities are enabled. To disable resource provisioning, set this parameter to `disable`. The default value is `enable`.
 

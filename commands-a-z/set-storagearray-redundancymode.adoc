@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-redundancymode.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray redundancyMode command sets the redundancy mode of the storage array to either simplex or duplex.'
+keywords: set, storage, array, redundancy, mode
+summary: "The set storageArray redundancyMode command sets the redundancy mode of the storage array to either simplex or duplex."
 ---
 = Set storage array redundancy mode
 :icons: font
@@ -27,10 +27,11 @@ set storageArray redundancyMode=(simplex | duplex)
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`redundancyMode`
+`*redundancyMode*`
 a|
 Use `simplex` mode when you have a single controller. Use `duplex` mode when you have two controllers.
 |===
