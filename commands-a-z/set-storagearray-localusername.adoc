@@ -23,7 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [subs=+macros]
 ----
-set storageArray (localUsername=pass:quotes[{ _admin | storage | security | support | monitor_}]
+set storageArray (localUsername=pass:quotes[{ _admin_ | _storage_ | _security_ | _support_ | _monitor_}]
 | symbol [userRole={admin | monitor}])
 password="string" adminPassword="string"
 ----
