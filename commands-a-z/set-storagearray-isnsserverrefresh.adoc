@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-isnsserverrefresh.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray isnsServerRefresh command refreshes the network address information for the iSNS server.'
+keywords: set, storage, array, isns, server, refresh
+summary: "The set storageArray isnsServerRefresh command refreshes the network address information for the iSNS server."
 ---
 = Set storage array iSNS server refresh
 :icons: font

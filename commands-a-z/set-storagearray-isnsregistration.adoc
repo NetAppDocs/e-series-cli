@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-isnsregistration.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray isnsRegistration command enables you to list a storage array on either an IPv4 or an IPv6 Internet Storage Name Service \(iSNS\) server.'
+keywords: set, storage, array, isns, registration
+summary: "The set storageArray isnsRegistration command enables you to list a storage array on either an IPv4 or an IPv6 Internet Storage Name Service (iSNS) server."
 ---
 = Set storage array iSNS registration
 :icons: font
@@ -21,57 +21,60 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax for IPv4
 
+[subs=+macros]
 ----
 set storageArray isnsRegistration=(TRUE | FALSE)
 isnsIPv4ConfigurationMethod=[static | dhcp]
-isnsIPv4Address=ipAddress
+isnsIPv4Address=pass:quotes[_ipAddress_]
 [isnsListeningPort]
 ----
 
 == Syntax for IPv6
 
+[subs=+macros]
 ----
 set storageArray isnsRegistration=(TRUE | FALSE)
-isnsIPv6Address=ipAddress
+isnsIPv6Address=pass:quotes[_ipAddress_]
 [isnsListeningPort]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameters| Description
 a|
-`isnsRegistration`
+`*isnsRegistration*`
 a|
 The means of registering the iSCSI target on the iSNS server. Set the parameter to `TRUE` to list an iSCSI target.
 
 When you set this parameter to `TRUE` you must also use these parameters for IPV4 configurations:
 
-* `isnsIPV4ConfigurationMethod`
-* `isnsIPV4Address`
+* `*isnsIPV4ConfigurationMethod*`
+* `*isnsIPV4Address*`
 
 When you set this parameter to `TRUE` you must also use these parameters for IPV6 configurations:
 
-* `isnsIPV6Address`
+* `*isnsIPV6Address*`
 
-Optionally, you can also use the `isnsListeningPort` parameter to define the port monitor and manage traffic to the server.
+Optionally, you can also use the `*isnsListeningPort*` parameter to define the port monitor and manage traffic to the server.
 
 To remove the registration for the storage array from the iSNS server set this parameter to `FALSE`.
 
 a|
-`isnsIPv4ConfigurationMethod`
+`*isnsIPv4ConfigurationMethod*`
 a|
-The method that you want to use to define the iSNS server configuration. You can enter the IP address for the IPv4 iSNS servers by selecting `static`. For IPv4, you can choose to have a Dynamic Host Configuration Protocol (DHCP) server select the iSNS server IP address by entering `dhcp`. To enable DHCP, you must set the `isnsIPv4Address` parameter to `0.0.0.0`.
+The method that you want to use to define the iSNS server configuration. You can enter the IP address for the IPv4 iSNS servers by selecting `static`. For IPv4, you can choose to have a Dynamic Host Configuration Protocol (DHCP) server select the iSNS server IP address by entering `dhcp`. To enable DHCP, you must set the `*isnsIPv4Address*` parameter to `0.0.0.0`.
 a|
-`isnsIPv4Address`
+`*isnsIPv4Address*`
 a|
-The IPv4 address used to connect to the iSNS server. Use this parameter with the `static` value for IPv4 configurations. If you choose to have a DHCP server set the IP address for an IPv4 Internet iSNS server, you must set the `isnsIPv4Address` parameter to `0.0.0.0`.
+The IPv4 address used to connect to the iSNS server. Use this parameter with the `static` value for IPv4 configurations. If you choose to have a DHCP server set the IP address for an IPv4 Internet iSNS server, you must set the `*isnsIPv4Address*` parameter to `0.0.0.0`.
 a|
-`isnsIPv6Address`
+`*isnsIPv6Address*`
 a|
 The IPv6 address used to connect to the iSNS server.
 a|
-`isnsListeningPort`
+`*isnsListeningPort*`
 a|
 The port number that you want to use for the iSNS server listening port. The range of values for the listening port is `49152` to `65535`. The default value is `3205`.
 
