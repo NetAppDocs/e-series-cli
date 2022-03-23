@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-autoloadbalancingenable.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray autoLoadBalancingEnable command enables or disables the Automatic Load Balancing feature.'
+keywords: set, storage, array, enable, disable, automatic, load, balance
+summary: "The set storageArray autoLoadBalancingEnable command enables or disables the Automatic Load Balancing feature."
 ---
 = Set storage array to enable or disable automatic load balancing
 :icons: font
@@ -27,14 +27,15 @@ set storageArray autoLoadBalancingEnable=(TRUE | FALSE)
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`storageArray`
+`*storageArray*`
 a|
 Indicates that this parameter works on a storage array.
 a|
-`autoLoadBalancingEnable`
+`*autoLoadBalancingEnable*`
 a|
 This parameter turns on or turns off Automatic Load Balancing on the controller. Set the parameter to `TRUE` to turn on Automatic Load Balancing. Set the parameter to `FALSE` to turn off Automatic Load Balancing.
 |===
@@ -61,14 +62,14 @@ You might want to disable Automatic Load Balancing on your storage array for the
 
 In SANtricity Storage Manager, select the *Storage Array* > *Configuration* > *Automatic Load Balancing* menu option to enable or disable the Automatic Load Balancing feature for an individual storage array.
 
-In SANtricity System Manager, select *Settings* > *System*, scroll down to the Additional Settings section, click the E**nable/Disable Automatic Load Balancing** link, and select the**Enable/Disable automatic load balancing** checkbox to enable or disable the feature for an individual storage array.
+In SANtricity System Manager, select *Settings* > *System*, scroll down to the *Additional Settings* section, click the E**nable/Disable Automatic Load Balancing** link, and select the**Enable/Disable automatic load balancing** checkbox to enable or disable the feature for an individual storage array.
 
 == Examples
 
 ----
-   SMcli -n Array1 -c "set storageArray autoLoadBalancingEnable=true;"
+SMcli -n Array1 -c "set storageArray autoLoadBalancingEnable=true;"
 
-   SMcli completed successfully.
+SMcli completed successfully.
 ----
 
 [NOTE]
