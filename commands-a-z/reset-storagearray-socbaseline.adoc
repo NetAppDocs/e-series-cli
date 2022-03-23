@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reset-storagearray-socbaseline.html
 sidebar: sidebar
-keywords: 
-summary: 'The reset storageArray SOCBaseline command resets the baseline for all switch-on-a-chip \(SOC\) devices that are accessed through the controllers.'
+keywords: reset, storage array, soc, baseline
+summary: "The reset storageArray SOCBaseline command resets the baseline for all switch-on-a-chip (SOC) devices that are accessed through the controllers."
 ---
 = Reset storage array SOC baseline
 :icons: font
