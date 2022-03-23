@@ -46,9 +46,9 @@ Allows the user to enable or disable AutoSupport Remote Diagnostics feature. If 
 
 ----
 
-   SMcli -n Array1 -c "set storageArray autoSupportRemoteDiag enable;"
+SMcli -n Array1 -c "set storageArray autoSupportRemoteDiag enable;"
 
-   SMcli completed successfully.
+SMcli completed successfully.
 ----
 
 == Verification
@@ -56,9 +56,9 @@ Allows the user to enable or disable AutoSupport Remote Diagnostics feature. If 
 Use the `show storageArray autoSupport` command to see if you have enabled the feature. The initial three lines of the displayed output show the enable status of the AutoSupport feature, followed by the AutoSupport OnDemand feature and the AutoSupport Remote Diagnostics feature:
 
 ----
-   The AutoSupport feature is enabled on this storage array.
-   The AutoSupport OnDemand feature is enabled on this storage array.
-   The AutoSupport Remote Diagnostics feature is enabled on this storage array.
+The AutoSupport feature is enabled on this storage array.
+The AutoSupport OnDemand feature is enabled on this storage array.
+The AutoSupport Remote Diagnostics feature is enabled on this storage array.
 ----
 
 == Minimum Firmware Level
