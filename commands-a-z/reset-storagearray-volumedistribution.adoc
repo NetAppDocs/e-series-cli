@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reset-storagearray-volumedistribution.html
 sidebar: sidebar
-keywords: 
-summary: 'The reset storageArray volumeDistribution command reassigns \(moves\) all of the volumes to their preferred controller.'
+keywords: reset, storage array, volume, distribution
+summary: "The reset storageArray volumeDistribution command reassigns (moves) all of the volumes to their preferred controller."
 ---
 = Reset storage array volume distribution
 :icons: font
