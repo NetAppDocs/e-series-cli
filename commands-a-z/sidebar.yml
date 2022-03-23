@@ -501,6 +501,14 @@ entries:
         url: /commands-a-z/set-snmpuser-username.html
       - title: set storagearray autoloadbalancingenable
         url: /commands-a-z/set-storagearray-autoloadbalancingenable.html
+      - title: set storagearray autosupport schedule
+        url: /commands-a-z/set-storagearray-autosupport-schedule.html
+      - title: set storagearray autosupportmaintenancewindow
+        url: /commands-a-z/set-storagearray-autosupportmaintenancewindow.html
+      - title: set storagearray autosupportondemand
+        url: /commands-a-z/set-storagearray-autosupportondemand.html
+      - title: set storagearray autosupportremotediag
+        url: /commands-a-z/set-storagearray-autosupportremotediag.html
       - title: set storagearray cachemirrordataassurancecheckenable
         url: /commands-a-z/set-storagearray-cachemirrordataassurancecheckenable.html
       - title: set storagearray controllerhealthimageallowoverwrite
