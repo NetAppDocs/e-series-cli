@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reset-controller.html
 sidebar: sidebar
-keywords: 
-summary: 'The reset controller command resets a controller, and is disruptive to I/O operations.'
+keywords: reset, controller
+summary: "The reset controller command resets a controller, and is disruptive to I/O operations."
 ---
 = Reset controller
 :icons: font
@@ -38,7 +38,7 @@ reset controller [(a|b)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

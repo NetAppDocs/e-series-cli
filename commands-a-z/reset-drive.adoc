@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reset-drive.html
 sidebar: sidebar
-keywords: 
-summary: 'The reset drive command power cycles a drive in a volume group or a disk pool to aid in the recovery of a drive that is exhibiting inconsistent or non-optimal behavior.'
+keywords: reset, drive
+summary: "The reset drive command power cycles a drive in a volume group or a disk pool to aid in the recovery of a drive that is exhibiting inconsistent or non-optimal behavior."
 ---
 = Reset drive
 :icons: font
@@ -31,13 +31,13 @@ This command cannot be used for SSD drives manufactured by Pliant. Use the `show
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-reset drive([trayID,[drawerID,]slotID] | <"wwID">)
+reset drive(pass:quotes[[_trayID_],pass:quotes[[_drawerID,_]pass:quotes[_slotID_] | pass:quotes[<_"wwID"_]>)
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
