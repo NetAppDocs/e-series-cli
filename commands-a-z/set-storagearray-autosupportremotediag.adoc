@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-autosupportremotediag.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray autoSupportRemoteDiag command turns on or turns off the AutoSupport OnDemand Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely.'
+keywords: enable, disable, autosupport, remote, diagnostics, feature, individual, E2800, E5700, arrays
+summary: "The set storageArray autoSupportRemoteDiag command turns on or turns off the AutoSupport OnDemand Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely."
 ---
 = Enable or disable the AutoSupport Remote Diagnostics feature (for individual E2800 or E5700 arrays)
 :icons: font
@@ -33,10 +33,11 @@ set storageArray autoSupportRemoteDiag (enable | disable)
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`enable | disable`
+`*enable* \| *disable*`
 a|
 Allows the user to enable or disable AutoSupport Remote Diagnostics feature. If AutoSupport and AutoSupport OnDemand are disabled, then the enable action will error and asks the user to enable them first.
 |===

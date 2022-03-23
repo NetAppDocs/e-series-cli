@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-directoryserver-roles.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray directoryServer roles command allows you to define role mappings for a specified directory server. These role mappings are used to authenticate users that attempt to execute various SMcli commands.'
+keywords: set, storage, array, directory, server, role, map
+summary: "The set storageArray directoryServer roles command allows you to define role mappings for a specified directory server. These role mappings are used to authenticate users that attempt to execute various SMcli commands."
 ---
 = Set storage array directory server role mapping
 :icons: font
@@ -19,7 +19,7 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
-== Before you begin
+== What you'll need
 
 The following roles are available to be mapped:
 
@@ -30,26 +30,28 @@ The following roles are available to be mapped:
 
 == Syntax
 
+[subs=+macros]
 ----
 
-set storageArray directoryServer ["domainId"]
-    groupDN="groupDistinguishedName" roles=("role1"..."roleN")
+set storageArray directoryServer pass:quotes[["_domainId_"]]
+    groupDN=pass:quotes["_groupDistinguishedName_"] roles=pass:quotes[("_role1_"..."_roleN_")]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`directoryServer`
+`*directoryServer*`
 a|
 Allows you to specify the domain by its ID for which you want to set up role mappings.
 a|
-`groupDN`
+`*groupDN*`
 a|
 Allows you to specify the group's distinguished name (DN) to be added to the mapping list.
 a|
-`roles`
+`*roles*`
 a|
 Allows you to specify one or more roles for the user(s) in the defined group. If you enter more than one role, separate the values with a space. Valid choices are:
 

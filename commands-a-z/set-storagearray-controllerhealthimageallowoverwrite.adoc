@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-controllerhealthimageallowoverwrite.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray controllerHealthImageAllowOverWrite command sets a flag on a controller to allow a new controller health image to overwrite an existing controller health image on storage arrays that support the controller health image feature.'
+keywords: set, storage, array, controller, health, image, allow, overwrite
+summary: "The set storageArray controllerHealthImageAllowOverWrite command sets a flag on a controller to allow a new controller health image to overwrite an existing controller health image on storage arrays that support the controller health image feature."
 ---
 = Set storage array controller health image allow overwrite
 :icons: font
@@ -25,7 +25,7 @@ If the storage array does not support the controller health image feature, the c
 
 [NOTE]
 ====
-With firmware version 8.20 the `coreDumpAllowOverWrite` parameter is replaced with the `controllerHealthImageAllowOverWrite` parameter.
+With firmware version 8.20 the `*coreDumpAllowOverWrite*` parameter is replaced with the `*controllerHealthImageAllowOverWrite*` parameter.
 ====
 
 == Syntax
@@ -46,4 +46,4 @@ When the controller health image is retrieved, the `allow overwrite` flag is set
 
 7.86
 
-8.20 replaces the `coreDumpAllowOverWrite` parameter with the `controllerHealthImageAllowOverWrite` parameter.
+8.20 replaces the `*coreDumpAllowOverWrite*` parameter with the `controllerHealthImageAllowOverWrite` parameter.

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-cachemirrordataassurancecheckenable.html
 sidebar: sidebar
-keywords: set storageArray cacheMirrorDataAssuranceCheckEnable
-summary: 'The set storageArray cacheMirrorDataAssuranceCheckEnable command allows you to enable or disable the cache mirror data assurance check.'
+keywords: set, storage, array, enable, disable, cache, mirror, data, assurance, check
+summary: "The set storageArray cacheMirrorDataAssuranceCheckEnable command allows you to enable or disable the cache mirror data assurance check."
 ---
 = Set storage array to enable or disable cache mirror data assurance check
 :icons: font
