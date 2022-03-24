@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/revive-snapgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The revive snapGroup command forces the specified snapshot group to the Optimal state.'
+keywords: revive, snapshot, group
+summary: "The revive snapGroup command forces the specified snapshot group to the Optimal state."
 ---
 = Revive snapshot group
 :icons: font
@@ -24,13 +24,13 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 If the snapshot group is not in a Failed state, the firmware displays an error message and does not run this command.
 
 == Syntax
-
+[subs=+macros]
 ----
-revive snapGroup [snapGroupName]
+revive snapGroup pass:quotes[[_snapGroupName_]]
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|

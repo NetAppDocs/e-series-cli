@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/resume-syncmirror.html
 sidebar: sidebar
-keywords: 
-summary: 'The resume syncMirror command resumes a suspended synchronous mirroring operation.'
+keywords: resume, synchronous, mirroring
+summary: "The resume syncMirror command resumes a suspended synchronous mirroring operation."
 ---
 = Resume synchronous mirroring
 :icons: font
@@ -29,13 +29,13 @@ In previous versions of this command, the feature identifier was `remoteMirror`.
 == Syntax
 
 ----
-resume syncMirror (primary [volumeName] |
-primaries [volumeName1 ... volumeNameN])
+resume syncMirror (primary pass:quotes[[_volumeName_]] |
+primaries pass:quotes[[_volumeName1 ... volumeNameN_]])
 [writeConsistency=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/revive-snapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The revive snapVolume command forces a specified snapshot volume to the Optimal state.'
+keywords: revive, snapshot, volume
+summary: "The revive snapVolume command forces a specified snapshot volume to the Optimal state."
 ---
 = Revive snapshot volume
 :icons: font
@@ -34,13 +34,13 @@ You cannot use this command for a snapshot volume that is used in online volume 
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-revive snapVolume [snapVolumeName]
+revive snapVolume pass:quotes[[_snapVolumeName_]]
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/revive-volumegroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The revive volumeGroup command forces the specified volume group and its associated failed drives to the Optimal state.'
+keywords: revive, volume, group
+summary: "The revive volumeGroup command forces the specified volume group and its associated failed drives to the Optimal state."
 ---
 = Revive volume group
 :icons: font
@@ -27,13 +27,13 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-revive volumeGroup [volumeGroupName]
+revive volumeGroup pass:quotes[[_volumeGroupName_]]
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|
