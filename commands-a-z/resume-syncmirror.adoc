@@ -27,7 +27,7 @@ In previous versions of this command, the feature identifier was `remoteMirror`.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 resume syncMirror (primary pass:quotes[[_volumeName_]] |
 primaries pass:quotes[[_volumeName1 ... volumeNameN_]])
