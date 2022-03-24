@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-hostgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The set hostGroup command renames a host group.'
+keywords: set, host, group
+summary: "The set hostGroup command renames a host group."
 ---
 = Set host group
 :icons: font
@@ -21,21 +21,23 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set hostGroup [hostGroupName]
-userLabel="newHostGroupName"
+set hostGroup pass:quotes[[_hostGroupName_]]
+userLabel=pass:quotes["_newHostGroupName_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`hostGroup`
+`*hostGroup*`
 a|
 The name of the host group that you want to rename. Enclose the host group name in square brackets ([ ]). If the host group name has special characters or numbers, you must enclose the host group name in double quotation marks (" ") inside square brackets.
 a|
-`userLabel`
+`*userLabel*`
 a|
 The new name for the host group. Enclose the new host group name in double quotation marks (" ").
 |===

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-host.html
 sidebar: sidebar
-keywords: 
-summary: 'The set host command assigns a host to a host group or moves a host to a different host group.'
+keywords: set, host
+summary: "The set host command assigns a host to a host group or moves a host to a different host group."
 ---
 = Set host
 :icons: font
@@ -25,55 +25,58 @@ You can also create a new host group and assign the host to the new host group w
 
 == Syntax
 
+[subs=+macros]
 ----
 set host [hostName]
-hostGroup=("hostGroupName" | none | defaultGroup)
-userLabel="newHostName"
-hostType=(hostTypeIndexLabel | hostTypeIndexNumber)
+hostGroup=pass:quotes[("_hostGroupName_"] | none | defaultGroup)
+userLabel=pass:quotes["_newHostName_"]
+hostType=pass:quotes[(_hostTypeIndexLabel_ | _hostTypeIndexNumber_)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`host`
+`*host*`
 a|
 The name of the host that you want to assign to a host group. Enclose the host name in square brackets ([ ]). If the host name has special characters or numbers, you must enclose the host name in double quotation marks (" ") inside square brackets.
 a|
-`hostGroup`
+`*hostGroup*`
 a|
 The name of the host group to which you want to assign the host. (The following table defines how the command runs if the host does or does not have individual mappings.) Enclose the host group name in double quotation marks (" "). The `defaultGroup` option is the host group that contains the host to which the volume is mapped.
 a|
-`userLabel`
+`*userLabel*`
 a|
 The new host name. Enclose the host name in double quotation marks (" ").
 a|
-`hostType`
+`*hostType*`
 a|
 The index label or number of the host type for the host port. Use the `show storageArray hostTypeTable` command to generate a list of available host type identifiers. If the host type has special characters, enclose the host type in double quotation marks (" ").
 |===
- 
 
+
+[cols="3*",options="header"]
 |===
 | Host Group Parameter| Host Has Individual Mappings| Host Does Not Have Individual Mappings
 a|
-`hostGroupName`
+`_hostGroupName_`
 
 a|
-The host is removed from the present host group and is placed under the new host group defined by `hostGroupName`.
+The host is removed from the present host group and is placed under the new host group defined by `_hostGroupName_`.
 
 a|
-The host is removed from the present host group and is placed under the new host group defined by `hostGroupName`.
+The host is removed from the present host group and is placed under the new host group defined by `_hostGroupName_`.
 
 a|
-`none`
+`*none*`
 a|
 The host is removed from the host group as an independent partition and is placed under the root node.
 a|
 The host is removed from the present host group and is placed under the default group.
 a|
-`defaultGroup`
+`*defaultGroup*`
 a|
 The command fails.
 a|

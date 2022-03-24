@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-hostchannel.html
 sidebar: sidebar
-keywords: 
-summary: 'The set hostChannel command defines the loop ID for the host channel.'
+keywords: set, host, channel
+summary: "The set hostChannel command defines the loop ID for the host channel."
 ---
 = Set host channel
 :icons: font
@@ -21,24 +21,26 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set hostChannel [hostChannelNumber]
-preferredID=portID
+set hostChannel pass:quotes[[_hostChannelNumber_]]
+preferredID=pass:quotes[_portID_]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`hostChannel`
+`*hostChannel*`
 a|
 The identifier number of the host channel for which you want to set the loop ID. Enclose the host channel identifier number in square brackets ([  ]).
 
 Use a host channel value that is appropriate for your particular controller model. A controller tray might support one host channel or as many as eight host channels. Valid host channel values are `a1`, `a2`, `a3`, `a4`, `a5`, `a6`, `a7`, `a8`, `b1`, `b2`, `b3`, `b4`, `b5`, `b6`, `b7`, or `b8`.
 
 a|
-`preferredID`
+`*preferredID*`
 a|
 The port identifier for the specified host channel. Port ID values are `0` to `127`.
 |===
