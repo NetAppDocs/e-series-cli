@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray autoSupport deliveryMethod command sets up the delivery method for sending AutoSupport messages to HTTP\(S\).'
+keywords: Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)
+summary: "The set storageArray autoSupport deliveryMethod command sets up the delivery method for sending AutoSupport messages to HTTP(S)."
 ---
 = Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)
 :icons: font
@@ -21,20 +21,22 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
 
 set storageArray autoSupport deliveryMethod={HTTP | HTTPS}
-   {direct | proxyConfigScript="proxyConfigScriptUrl" |
-proxyServer hostAddress=address portNumber=portNumber
- [userName="username" password="password"]}
+   {direct | proxyConfigScript=pass:quotes["_proxyConfigScriptUrl_"] |
+proxyServer hostAddress=pass:quotes[_address_] portNumber=pass:quotes[_portNumber_]
+ [userName=pass:quotes["_username_"] password=pass:quotes["_password_"]]}
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`deliveryMethod`
+`*deliveryMethod*`
 a|
 Allows the user to specify the delivery method for AutoSupport collection. Valid choices are:
 
@@ -48,31 +50,31 @@ If the email method is configured, then the AutoSupport OnDemand and Remote Diag
 ====
 
 a|
-`direct`
+`*direct*`
 a|
 Allows the user to connect directly to the destination technical support systems using the HTTP or HTTPS protocol.
 a|
-`proxyConfigScript`
+`*proxyConfigScript*`
 a|
 Allows the user to specify the location of a Proxy Auto-Configuration (PAC) script file
 a|
-`proxyServer`
+`*proxyServer*`
 a|
 Allows the user to specify the HTTP(S) proxy server details required for establishing connection with the destination technical support system.
 a|
-`hostAddress`
+`*hostAddress*`
 a|
 Allows the user to specify the proxy server's host address. Required if proxyServer is used.
 a|
-`portNumber`
+`*portNumber*`
 a|
 Allows the user to specify the proxy server's port number. Required if proxyServer is used.
 a|
-`username`
+`*username*`
 a|
 Allows the user to specify the proxy server's username if it is configured.
 a|
-`password`
+`*password*`
 a|
 Allows the user to specify the proxy server's password if it is configured.
 |===
