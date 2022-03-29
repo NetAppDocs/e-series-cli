@@ -303,6 +303,8 @@ entries:
       url: /commands-a-z/reset-iscsiipaddress.html
     - title: reset storagearray arvmstats asyncmirrorgroup
       url: /commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.html
+    - title: reset storagearray autosupport schedule
+      url: /commands-a-z/reset-storagearray-autosupport-schedule.html
     - title: reset storagearray diagnosticdata
       url: /commands-a-z/reset-storagearray-diagnosticdata.html
     - title: reset storagearray hostportstatisticsbaseline
@@ -405,8 +407,6 @@ entries:
         url: /commands-a-z/save-storagearray-soccounts.html
       - title: save storagearray statecapture
         url: /commands-a-z/save-storagearray-statecapture.html
-      - title: save storagearray supportdata
-        url: /commands-a-z/save-storagearray-supportdata.html
       - title: save storagearray supportdata
         url: /commands-a-z/save-storagearray-supportdata.html
       - title: save storagearray trustedcertificate
