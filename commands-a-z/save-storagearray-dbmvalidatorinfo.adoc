@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-dbmvalidatorinfo.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray dbmValidatorInfo command saves the database management \(DBM\) validation information for a storage array in an XML file.'
+keywords: save, storage, array, dbm, validator, information, file
+summary: "The save storageArray dbmValidatorInfo command saves the database management (DBM) validation information for a storage array in an XML file."
 ---
 = Save storage array DBM validator information file
 :icons: font
@@ -25,23 +25,25 @@ Technical support can use this XML file to generate a validator string (a securi
 
 == Syntax
 
+[subs=+macros]
 ----
-save storageArray dbmValidatorInfo file="filename" dbmDatabase="filename"
+save storageArray dbmValidatorInfo file=pass:quotes["_filename_"] dbmDatabase=pass:quotes["_filename_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`file`
+`*file*`
 a|
 The file path and the file name of the DBM validator required for technical support. Enclose the file name in double quotation marks (" "). For example:
 
 `file="C:\Array Backups \DBMvalidator.xml"` This command does not automatically append a file extension to the saved file. You must specify the .xml file extension when you enter the file name.
 
 a|
-`dbmDatabase`
+`*dbmDatabase*`
 a|
 The file path and the file name of the DBM database from which you want to generate the XML information file. Enclose the file name in double quotation marks (" "). For example:
 
