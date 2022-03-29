@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-supportdata.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray supportData command saves the support-related information of the storage array to a file.'
+keywords: save, storage, array, support, data
+summary: "The save storageArray supportData command saves the support-related information of the storage array to a file."
 ---
 = Save storage array support data
 :icons: font
@@ -23,6 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 The following table lists the type of support data that you can collect.
 
+[cols="2*",options="header"]
 |===
 | Type of data| File name and description
 a|
@@ -362,30 +363,33 @@ a|
 
 == Syntax
 
+[subs=+macros]
 ----
-save storageArray supportData file="filename" [force=(TRUE | FALSE)]
+save storageArray supportData file=pass:quotes["_filename_"] [force=(TRUE | FALSE)]
 ----
 
+[subs=+macros]
 ----
-save storageArray supportData file="filename"
+save storageArray supportData file=pass:quotes["_filename_"]
 [force=(TRUE | FALSE) |
 csbSubsetid=(basic | weekly | event | daily | complete) |
-csbTimeStamp=hh:mm]
+csbTimeStamp=pass:quotes[_hh:mm_]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`file`
+`*file*`
 a|
 The file path and the file name to which you want to save the support-related data for the storage array. Enclose the file path and the file name in double quotation marks (" "). For example:
 
 `file="C:\Program Files\CLI\logs\supdat.7z"`
 
 a|
-`force`
+`*force*`
 a|
 This parameter forces the collection of support data if there are any failures in securing a lock on controller operations. To force the collection of support data, set this parameter to `TRUE`. The default value is `FALSE`.
 
@@ -397,6 +401,6 @@ Starting with firmware level 7.86, the file name extension must be `.7z` on syst
 
 == Minimum firmware level
 
-7.80 adds the `force` parameter.
+7.80 adds the `*force*` parameter.
 
 8.30 adds information for the E2800 storage array.

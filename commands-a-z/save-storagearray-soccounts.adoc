@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-soccounts.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray SOCCounts command saves the SOC error statistics to a file.'
+keywords: save, storage, array, soc, counts
+summary: "The save storageArray SOCCounts command saves the SOC error statistics to a file."
 ---
 = Save storage array SOC counts
 :icons: font
@@ -25,16 +25,18 @@ This command is valid only for Fibre Channel devices in an arbitrated loop topol
 
 == Syntax
 
+[subs=+macros]
 ----
-save storageArray SOCCounts file="filename"
+save storageArray SOCCounts file=pass:quotes["_filename_"]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`file`
+`*file*`
 a|
 The file path and the file name to which you want to save the SOC error statistics. Enclose the file name in double quotation marks (" "). For example:
 
@@ -50,7 +52,7 @@ To more effectively save SOC error statistics to a file, perform these steps:
 
 . Run the `reset storageArray SOCBaseline` command to set all of the SOC counters to 0.
 . Run the storage array for a predetermined amount of time (for example, two hours).
-. Run the `save storageArray SOCCounts file="``filename``"` command.
+. Run the `save storageArray SOCCounts file`="[.code]``_filename_``" command.
 
 == Minimum firmware level
 

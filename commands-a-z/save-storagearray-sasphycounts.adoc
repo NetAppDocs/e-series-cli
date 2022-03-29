@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-sasphycounts.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray SASPHYCounts command saves the SAS physical layer \(SAS PHY\) counters to a file.'
+keywords: save, storage, array, sas, phy, counts
+summary: "The save storageArray SASPHYCounts command saves the SAS physical layer (SAS PHY) counters to a file."
 ---
 = Save storage array SAS PHY counts
 :icons: font
@@ -25,16 +25,18 @@ To reset the SAS PHY counters, run the `reset storageArray SASPHYBaseline` comma
 
 == Syntax
 
+[subs=+macros]
 ----
-save storageArray SASPHYCounts file="*filename*"
+save storageArray SASPHYCounts file=pass:quotes["_filename_"]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`file`
+`*file*`
 a|
 The file path and the file name to which you want to save the SAS PHY counters. Enclose the file path and the file name in double quotation marks (" "). For example:
 
