@@ -66,7 +66,7 @@ The port label is the complete value returned for the `*Port*` field.
 . Enclose the entire value of the port label in both quotes and square brackets: [`portLabel`]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
 +
 ----
-iscsiHostPort[ch 2]
+iscsiHostPort['ch 2']
 ----
 +
 [NOTE]
@@ -75,7 +75,7 @@ If you are using a Windows command line and the label contains a pipe (|), the c
 ====
 +
 ----
-iscsiHostPort[e0b^|0b]
+iscsiHostPort['e0b^|0b']
 ----
 
 [NOTE]
