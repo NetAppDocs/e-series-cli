@@ -67,7 +67,7 @@ The port label is the complete value returned for the `*Port*` field.
 +
 ----
 iscsiHostPort[\"ch 2\"]
-iscsiHostPort&#91;"ch 2"&#93;
+iscsiHostPort&#91; "ch 2" &#93;
 ----
 +
 [NOTE]
