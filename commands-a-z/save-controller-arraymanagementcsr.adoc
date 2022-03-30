@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-controller-arraymanagementcsr.html
 sidebar: sidebar
-keywords: 
-summary: 'The save controller arrayManagementCSR command generates a Certificate Signing Request \(CSR\) for the controller.'
+keywords: generate, web server, certificate, sign, request, csr
+summary: "The save controller arrayManagementCSR command generates a Certificate Signing Request (CSR) for the controller."
 ---
 = Generate web server Certificate Signing Request (CSR)
 :icons: font
@@ -25,62 +25,64 @@ The CSR must be signed by a Certificate Authority (CA). The resulting signed cer
 
 == Syntax
 
+[subs=+macros]
 ----
 
 save controller [(a|b)] arrayManagementCSR
-     commonName="ipOrDnsName"
-     [alternateIPAddresses=(ipvX1...ipvXN)]
-     [alternateDnsNames=("dnsName1"..."dnsNameN")]
-     organization="organizationName"
-     [organizationalUnit="organizationalUnitName"]
-     locality="cityOrLocality"
-     [stateProvince="stateOrRegion"]
-     country="string"
-     file="filename"
+     commonName=pass:quotes["_ipOrDnsName_"]
+     [alternateIPAddresses=pass:quotes[(_ipvX1_..._ipvXN_)]]
+     [alternateDnsNames=pass:quotes[("_dnsName1_"..."_dnsNameN_")]]
+     organization=pass:quotes["_organizationName_"]
+     [organizationalUnit=pass:quotes["_organizationalUnitName_"]]
+     locality=pass:quotes["_cityOrLocality_"]
+     [stateProvince=pass:quotes["_stateOrRegion_"]]
+     country=pass:quotes["_string_"]
+     file=pass:quotes["_filename_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`controller`
+`*controller*`
 a|
 Allows you to specify the controller on which you want to create the CSR for. Valid controller identifiers are a or b, where a is the controller in slot A, and b is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
 a|
-`commonName`
+`*commonName*`
 a|
 Allows you to specify the IP address or DNS name of the controller. This must match exactly what will be typed in the browser to access System Manager (do not include http:// nor https://) or there will be a name mismatch error.
 a|
-`alternateIPAddresses`
+`*alternateIPAddresses*`
 a|
 Allows you to specify additional IP addresses or aliases for the controller. Enclose all the IP addresses in parentheses. If you enter more than one IP address, separate the them with a space.
 a|
-`alternateDnsNames`
+`*alternateDnsNames*`
 a|
 Allows you to specify additional DNS names for the controller. Enclose all the DNS names in parentheses. If you enter more than one name, separate them with a space.
 a|
-`organization`
+`*organization*`
 a|
 Allows you to specify the organization's full legal name that the storage array belongs to. Do not abbreviate it and include any suffixes such as Inc, Corp, or LLC.
 a|
-`organizationalUnit`
+`*organizationalUnit*`
 a|
 Allows the user to specify the organization's division that handles the certificate.
 a|
-`locality`
+`*locality*`
 a|
 Allows you to specify the city or locality where the storage array is located.
 a|
-`stateProvince`
+`*stateProvince*`
 a|
 Allows you to specify the state or region where the storage array is located. This should not be abbreviated.
 a|
-`country`
+`*country*`
 a|
 Allows you to specify your country's two-digit ISO (International Organization for Standardization) code, such as US.
 a|
-`file`
+`*file*`
 a|
 Allows you to specify the file for which to save the controller's CSR file.
 |===

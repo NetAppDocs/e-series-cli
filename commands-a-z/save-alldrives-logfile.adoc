@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-alldrives-logfile.html
 sidebar: sidebar
-keywords: 
-summary: 'The save allDrives logFile command saves the drive logs to a file.'
+keywords: save, drive log
+summary: "The save allDrives logFile command saves the drive logs to a file."
 ---
 = Save drive log
 :icons: font
@@ -30,16 +30,18 @@ Do not run this command unless you are instructed to do so by technical support.
 
 == Syntax
 
+[subs=+macros]
 ----
-save allDrives logFile="filename"
+save allDrives logFile=pass:quotes["_filename_"]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`logFile`
+`*logFile*`
 a|
 The file path and the file name to which you want to save the drive logs. Enclose the file name in double quotation marks (" "). For example:
 

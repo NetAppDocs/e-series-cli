@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-alltrays-logfile.html
 sidebar: sidebar
-keywords: 
-summary: 'The save allTrays logFile command saves the log sense data to a file.'
+keywords: save, tray log
+summary: "The save allTrays logFile command saves the log sense data to a file."
 ---
 = Save tray log
 :icons: font
@@ -25,16 +25,18 @@ Log sense data is maintained by the environmental cards for each tray. Not all o
 
 == Syntax
 
+[subs=+macros]
 ----
-save allTrays logFile="filename"
+save allTrays logFile=pass:quotes["_filename_"]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`logFile`
+`*logFile*`
 a|
 The file path and the file name to which you want to save the log sense data. Enclose the file name in double quotation marks (" "). For example:
 
