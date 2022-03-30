@@ -67,7 +67,6 @@ The port label is the complete value returned for the `*Port*` field.
 +
 ----
 iscsiHostPort[\"ch 2\"]
-iscsiHostPort&#91; "ch 2" &#93;
 ----
 +
 [NOTE]
@@ -76,7 +75,7 @@ If you are using a Windows command line and the label contains a pipe (|), the c
 ====
 +
 ----
-iscsiHostPort['e0b^|0b']
+iscsiHostPort[\"e0b^|0b\"]
 ----
 
 [NOTE]
