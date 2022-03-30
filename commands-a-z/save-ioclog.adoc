@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-ioclog.html
 sidebar: sidebar
-keywords: 
-summary: 'The save IOCLog command saves the IOC dumps from the controllers in a storage array to a file on a host.'
+keywords: save, input, output, controller, ioc, dump
+summary: "The save IOCLog command saves the IOC dumps from the controllers in a storage array to a file on a host."
 ---
 = Save input output controller (IOC) dump
 :icons: font
@@ -21,16 +21,18 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-save IOCLog [file="filename"]
+save IOCLog [file=pass:quotes["_filename_"]]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`file`
+`*file*`
 a|
 The file path and the file name to which you save the IOC dump. Enclose the file name in double quotation marks (" "). For example:
 
