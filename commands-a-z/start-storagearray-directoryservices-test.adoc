@@ -35,12 +35,12 @@ start storageArray directoryServices test
 None.
 
 == Examples
-[subs=+macros]
+
 ----
 
 SMcli -n Array1 -c "start storageArray directoryServices test;"
 
-pass:quotes[<_test results for each domain configured are returned_>]
+<test results for each domain configured are returned>
 
 SMcli completed successfully.
 ----

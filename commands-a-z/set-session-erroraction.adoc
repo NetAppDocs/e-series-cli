@@ -25,21 +25,19 @@ For the purpose of this command a session is the duration for the running of the
 
 == Syntax
 
-[subs=+macros]
 ----
 set session errorAction=(stop | continue)
-password=pass:quotes["_storageArrayPassword_"]
-performanceMonitorInterval=pass:quotes[_intervalValue_]
-performanceMonitorIterations=pass:quotes[_iterationValue_]
+password="storageArrayPassword"
+performanceMonitorInterval=intervalValue
+performanceMonitorIterations=iterationValue
 ----
 
-[subs=+macros]
 ----
 set session errorAction=(stop | continue)
-password=pass:quotes["_storageArrayPassword_"]
+password="storageArrayPassword"
 userRole=(admin | monitor)
-performanceMonitorInterval=pass:quotes[_intervalValue_]
-performanceMonitorIterations=pass:quotes[_iterationValue_]
+performanceMonitorInterval=intervalValue
+performanceMonitorIterations=iterationValue
 ----
 
 == Parameters

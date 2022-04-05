@@ -63,7 +63,7 @@ You must specify a label for the host port. Follow these steps to specify the ho
 The port label is the complete value returned for the `*Port*` field.
 ====
 
-. Enclose the entire value of the port label in both quotes and square brackets: [\`portLabel\`]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
+. Enclose the entire value of the port label in both quotes and square brackets: ["portLabel"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
 +
 ----
 iscsiHostPort[\"ch 2\"]
