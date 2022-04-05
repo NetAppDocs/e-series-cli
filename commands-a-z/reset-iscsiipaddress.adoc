@@ -35,9 +35,9 @@ The storage array with the changed IP address sends a message to each remote sto
 If the storage array with the changed IP address is unable to send its inter-controller message to a remote storage array, the system sends you an alert of the connectivity issue. Use the `reset` command to re-establish connection with the local storage array.
 
 == Syntax
-[subs=+macros]
+
 ----
-reset (remoteStorageArrayName=pass:quotes[_"storageArrayName"_] | remoteStorageArrayWwid=pass:quotes[_<wwID>_])
+reset (remoteStorageArrayName="storageArrayName" | remoteStorageArrayWwid=<wwID>)
 iscsiIpAddress
 ----
 

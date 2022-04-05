@@ -24,11 +24,10 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 Replacing a drive in a volume group redefines the composition of a volume group. You can use this command to replace a drive with either an unassigned drive or a fully integrated hot spare.
 
 == Syntax
-[subs=+macros]
 ----
-replace (drive pass:quotes[[_trayID_],pass:quotes[[_drawerID,_]]pass:quotes[_slotID_]] | drivespass:quotes[[_trayID1_],pass:quotes[[_drawerID1,_]]pass:quotes[_slotID1 ... trayIDn_],pass:quotes[[_drawerIDn,_]]pass:quotes[_slotIDn_]]
- | pass:quotes[<_"wwID"_]>)
-replacementDrive=pass:quotes[_trayID,drawerID,slotID_]
+replace (drive \[trayID,[drawerID,]slotID\] \| drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\]
+ | <"wwID">)
+replacementDrive=trayID,drawerID,slotID
 [copyDrive][failDrive]
 ----
 

@@ -31,9 +31,9 @@ This command cannot be used for SSD drives manufactured by Pliant. Use the `show
 ====
 
 == Syntax
-[subs=+macros]
+
 ----
-reset drive(pass:quotes[[_trayID_],pass:quotes[[_drawerID_]],pass:quotes[_slotID_]] | pass:quotes[<_"wwID"_]>)
+reset drive([trayID,[drawerID,]slotID] | <"wwID">)
 ----
 
 == Parameters
