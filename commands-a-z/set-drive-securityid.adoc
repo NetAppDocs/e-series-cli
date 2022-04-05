@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-drive-securityid.html
 sidebar: sidebar
-keywords: 
-summary: 'The set drive securityID command is used to reset a FIPS drive back to the original manufacturer settings.'
+keywords: set, fips, drive, security, identifier
+summary: "The set drive securityID command is used to reset a FIPS drive back to the original manufacturer settings."
 ---
 = Set FIPS drive security identifier
 :icons: font
@@ -30,16 +30,18 @@ To erase an FDE drive, use the `start secureErase` command.
 
 == Syntax
 
+[subs=+macros]
 ----
-set drive [trayID,[drawerID,]slotID] securityID="string"
+set drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] securityID="string"
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`drive`
+`*drive*`
 a|
 For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
@@ -48,7 +50,7 @@ All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on
 Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
 
 a|
-`securityID`
+`*securityID*`
 a|
 The security ID of the drive to erase, in string form. This string can have a maximum of 32 characters. The form of the security ID will vary by manufacturer.
 
@@ -61,7 +63,7 @@ To find the security ID, remove the drive and read the security ID on the canist
 
 == Notes
 
-The `drive` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+The `*drive*` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
 
 == Example
 

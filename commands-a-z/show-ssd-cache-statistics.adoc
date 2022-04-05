@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-ssd-cache-statistics.html
 sidebar: sidebar
-keywords: 
-summary: 'The show ssdCache command displays data about the SSD cache usage.'
+keywords: show, ssd, cache, statistics
+summary: "The show ssdCache command displays data about the SSD cache usage."
 ---
 = Show SSD cache statistics
 :icons: font
@@ -21,31 +21,33 @@ To execute this command on an E2800 or E5700 storage array, you must have the Su
 
 == Syntax
 
+[subs=+macros]
 ----
-show ssdCache [ssdCacheName] [ssdCacheStatistics]
+show ssdCache pass:quotes[[_ssdCacheName_]] [ssdCacheStatistics]
 [controller=(a|b|both)]
-[file="filename"]
+pass:quotes[[file="_filename_"]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`ssdCache`
+`*ssdCache*`
 a|
 The name of the SSD cache for which you want to retrieve information. Enclose the SSD cache name in square brackets ([ ]). If the SSD cache name has special characters or numbers, you must enclose the SSD cache name in double quotation marks (" ") inside square brackets.
 a|
-`ssdCacheStatistics`
+`*ssdCacheStatistics*`
 a|
 An optional parameter to the `show ssdCache` command that indicates you want to retrieve cache statistics.
 a|
-`controller`
+`*controller*`
 a|
 Each controller stores SSD cache metadata for the volumes that it owns. Therefore, the SSD cache statistics are maintained and displayed per controller. Valid controller identifiers are `a`, `b`, or `both`, where `a` is the controller in slot A , `b` is the controller in slot B, and `both` is both controllers. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the default value is `both`.
 
 a|
-`file`
+`*file*`
 a|
 The file path and the file name to which you want to save the SSD cache statistics. Additional statistics are available when you save the statistics to a file.
 

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-syslog.html
 sidebar: sidebar
-keywords: 
-summary: 'The set syslog command configures the syslog alert information. You can configure the event monitor to send alerts to the syslog server whenever an alertable event occurs.'
+keywords: configure, syslog, set
+summary: "The set syslog command configures the syslog alert information. You can configure the event monitor to send alerts to the syslog server whenever an alertable event occurs."
 ---
 = Configure syslog settings
 :icons: font
@@ -26,29 +26,31 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
 
-set syslog [defaultFacility=facilityNumber]
-| [defaultTag=defaultTag]
-| [syslogFormat=rfc3164|rfc5424]
-| (serverAddresses=(serverAddress:portNumber ... serverAddress:portNumber)
-| addServerAddresses=(serverAddress:portNumber ... serverAddress:portNumber))
+set syslog [defaultFacility=pass:quotes[_facilityNumber_]]
+| [defaultTag=pass:quotes[_defaultTag_]]
+| [syslogFormat=pass:quotes[_rfc3164_|_rfc5424_]]
+| (serverAddresses=pass:quotes[(_serverAddress:portNumber ... serverAddress:portNumber_)]
+| addServerAddresses=pass:quotes[(_serverAddress:portNumber ... serverAddress:portNumber_))]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`defaultFacility`
+`*defaultFacility*`
 a|
 Optional. Allows you to specify the default facility number. The default facility must be a numerical value between 0 and 23.
 a|
-`defaultTag`
+`*defaultTag*`
 a|
 Optional. Allows you to specify the default tag. Enclose string in quotes.
 a|
-`syslogFormat`
+`*syslogFormat*`
 a|
 The messaging format used for the syslog messages. The value may be one of the following:
 
@@ -56,11 +58,11 @@ The messaging format used for the syslog messages. The value may be one of the f
 * `rfc5424` - RFC 5424 compliant format
 
 a|
-`serverAddresses`
+`*serverAddresses*`
 a|
 Allows you to set one or more syslog server addresses with associated port numbers. Using this set option will clear out existing server addresses. A syslog server address can be a fully qualified domain name, IPv4 address, or IPv6 address. The UDP Port must be a numerical value between 0 and 65535. Typically, the UDP Port for syslog is 514. Enclose all the addresses in parentheses. If you enter more than one address, then separate them with a space.
 a|
-`addServerAddresses`
+`*addServerAddresses*`
 a|
 Allows you to add one or more syslog server addresses with associated port numbers. Using this set option will not clear out existing server addresses. A syslog server address can be a fully qualified domain name, IPv4 address, or IPv6 address. The UDP Port must be a numerical value between 0 and 65535. Typically, the UDP Port for syslog is 514. Enclose all the addresses in parentheses. If you enter more than one address, then separate them with a space.
 |===
@@ -81,4 +83,4 @@ SMcli completed successfully.
 
 8.40
 
-11.70.1 added the `syslogFormat` parameter to specify the Syslog message format.
+11.70.1 added the `*syslogFormat*` parameter to specify the Syslog message format.

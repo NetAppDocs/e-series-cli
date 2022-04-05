@@ -1,8 +1,8 @@
 ---
 permalink: get-started/firmware-compatibility-levels.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: firmware, compatibility, levels
+summary: "The script commands and the command parameters do not run under all versions of the controller firmware."
 ---
 = Firmware compatibility levels
 :icons: font
@@ -35,6 +35,6 @@ The `create ssdCache` command has the following section.
 
 7.84
 
-8.20.11 - Added the `securityType` parameter.
+8.20.11 - Added the `*securityType*` parameter.
 
-These notations indicate that the script command and all of the parameters except `securityType` run under a minimum of controller firmware version 7.84. The `securityType` parameter runs under a minimum of controller firmware version 8.20_M3.
+These notations indicate that the script command and all of the parameters except `*securityType*` run under a minimum of controller firmware version 7.84. The `*securityType*` parameter runs under a minimum of controller firmware version 8.20_M3.

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-controller-arraymanagementsignedcertificate-summary.html
 sidebar: sidebar
-keywords: 
-summary: 'The show controller arrayManagementSignedCertificate summary command displays the current signed certificate summary from the specified controller.'
+keywords: show, signed, certificate
+summary: "The show controller arrayManagementSignedCertificate summary command displays the current signed certificate summary from the specified controller."
 ---
 = Show signed certificate
 :icons: font
@@ -28,10 +28,11 @@ show controller [(a|b)] arrayManagementSignedCertificate summary
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`controller`
+`*controller*`
 a|
 Allows you to specify the controller on which you want to retrieve the root/intermediate certificates. Valid controller identifiers are a or b, where a is the controller in slot A, and b is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
 |===

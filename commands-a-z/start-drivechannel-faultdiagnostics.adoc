@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-drivechannel-faultdiagnostics.html
 sidebar: sidebar
-keywords: 
-summary: 'The start driveChannel faultDiagnostics command runs the drive channel fault isolation diagnostics and stores the results.'
+keywords: start, drive channel, fault, isolation, diagnostics
+summary: "The start driveChannel faultDiagnostics command runs the drive channel fault isolation diagnostics and stores the results."
 ---
 = Start drive channel fault isolation diagnostics
 :icons: font
@@ -27,41 +27,42 @@ With firmware version 8.10, the `start driveChannel faultDiagnostics` command is
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 start driveChannel [(1 | 2 | 3 | 4 | 5 | 6 | 7 | 8)]
 controller [(a|b)] faultDiagnostics
 testDevices=[all |
 controller=(a|b) |
-esms=[trayID1 (left | right), ... , trayIDN (left | right)] |
-drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\]
+esms=pass:quotes[[_trayID1_ (left | right), ... , _trayIDN_] (left | right)] |
+drivespass:quotes[[_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1_] ... pass:quotes[_trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_]]
 |[dataPattern=(fixed | pseudoRandom) |
-patternNumber=[(0xhexadecimal | number)] |
-maxErrorCount=integer |
-testIterations=integer |
-timeout=timeInterval]
+patternNumber=[pass:quotes[(_0xhexadecimal_ | _number_)]] |
+pass:quotes[maxErrorCount=_integer_] |
+pass:quotes[testIterations=_integer_] |
+pass:quotes[timeout=_timeInterval_]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`driveChannel`
+`*driveChannel*`
 a|
 The identifier number of the drive channel that you want to locate. Valid values for the identifier number for the drive channel are `1`, `2`, `3`, `4`, `5`, `6`, `7`, or `8`. Enclose the drive channel identifier number in square brackets ([ ]).
 a|
-`controller`
+`*controller*`
 a|
 The identifier letter of the controller that you want to test. Valid controller identifier values are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
 a|
-`testDevices`
+`*testDevices*`
 a|
-The identifiers of the devices (controllers, environmental services module [ESMs], or drives) that you want to test. You can specify `all` or enter the specific identifiers for the devices that you want to diagnose.The `controller` identifiers are ``a``or `b`, where `a` is the RAID controller module in slot A, and `b` is the RAID controller module in slot B.
+The identifiers of the devices (controllers, environmental services module [ESMs], or drives) that you want to test. You can specify `all` or enter the specific identifiers for the devices that you want to diagnose.The `*controller*` identifiers are `a` or `b`, where `a` is the RAID controller module in slot A, and `b` is the RAID controller module in slot B.
 
-The `esms` identifiers are tray ID and left or right, where tray ID is a value from 0 through 99, and left or right are determined when viewing the drive tray from the rear.
+The `*esms*` identifiers are tray ID and left or right, where tray ID is a value from 0 through 99, and left or right are determined when viewing the drive tray from the rear.
 
-The `drive` identifiers include a tray identifier, a drawer identifier when the tray has drawers, and a slot identifier.
+The `*drive*` identifiers include a tray identifier, a drawer identifier when the tray has drawers, and a slot identifier.
 
 For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
@@ -70,23 +71,23 @@ All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on
 Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
 
 a|
-`dataPattern`
+`*dataPattern*`
 a|
 The method of repeatability that you want to test.
 a|
-`patternNumber`
+`*patternNumber*`
 a|
 The hexadecimal data pattern that you want to use to run the test. This number can be any hexadecimal number between `0000` to `FFFF`. You must place `0x` in front to indicate a hexadecimal number.
 a|
-`maxErrorCount`
+`*maxErrorCount*`
 a|
 The number of errors that you want to accept before terminating the test.
 a|
-`testIterations`
+`*testIterations*`
 a|
 The number of times that you want to repeat the test.
 a|
-`timeout`
+`*timeout*`
 a|
 The length of time in minutes that you want to run the test.
 |===
@@ -95,11 +96,11 @@ The length of time in minutes that you want to run the test.
 
 You can enter more than one type of device to test, and you can enter more than one type of test to run.
 
-Use the `save driveChannel faultDiagnostics` command and the `stop driveChannel faultDiagnostics` command with the `start driveChannel faultDiagnostics` command. These commands are needed to save diagnostic test results to a file and to stop the diagnostic test.
+Use the `*save driveChannel faultDiagnostics*` command and the `*stop driveChannel faultDiagnostics*` command with the `*start driveChannel faultDiagnostics*` command. These commands are needed to save diagnostic test results to a file and to stop the diagnostic test.
 
-Examples of valid `patternNumber` entries are `0xA5A5`, `0x3C3C`, `8787`, and `1234`.
+Examples of valid `*patternNumber*` entries are `0xA5A5`, `0x3C3C`, `8787`, and `1234`.
 
-You also can stop this command at any time by pressing *Ctrl+C*.
+You also can stop this command at any time by pressing `Ctrl+C`.
 
 == Minimum firmware level
 

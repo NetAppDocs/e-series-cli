@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-controllerhealthimage-controller.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray controllerHealthImage controller command produces a storage array controller health image on storage arrays that support the controller health image feature.'
+keywords: start, storage, array, controller, health, image
+summary: "The start storageArray controllerHealthImage controller command produces a storage array controller health image on storage arrays that support the controller health image feature."
 ---
 = Start storage array controller health image
 :icons: font
@@ -23,7 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-With firmware version 8.20 the `coreDump` parameter is replaced with the `controllerHealthImage` parameter.
+With firmware version 8.20 the `*coreDump*` parameter is replaced with the `*controllerHealthImage*` parameter.
 ====
 
 [NOTE]
@@ -41,10 +41,11 @@ start storageArray controllerHealthImage controller [(a|b)]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`controller`
+`*controller*`
 a|
 This parameter specifies the controller from which to produce the controller health image. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the storage management software returns a syntax error.
 |===
@@ -57,4 +58,4 @@ This command forces the selected controller to dump its core data to cache. Use 
 
 7.83
 
-8.20 replaces the `coreDump` parameter with the `controllerHealthImage` parameter.
+8.20 replaces the `*coreDump*` parameter with the `controllerHealthImage` parameter.

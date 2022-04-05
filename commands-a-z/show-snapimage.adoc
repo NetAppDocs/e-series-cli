@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-snapimage.html
 sidebar: sidebar
-keywords: 
-summary: 'The show snapImage command returns information about the snapshot images that a user had previously created.'
+keywords: show, snapshot, image
+summary: "The show snapImage command returns information about the snapshot images that a user had previously created."
 ---
 = Show snapshot image
 :icons: font
@@ -21,23 +21,25 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax for showing a specific snapshot image
 
+[subs=+macros]
 ----
-show (allSnapImages | snapImage ["snapImageName"] |
-snapImages ["snapImageName1" ... "snapImageNamen"]])
+show (allSnapImages | snapImage pass:quotes[["_snapImageName_"]] |
+snapImages pass:quotes[["_snapImageName1_" ... "_snapImageNamen_"]])
 [summary]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`allSnapImages`
+`*allSnapImages*`
 a|
 The parameter to return information about all of the snapshot images in the storage array.
 
 a|
-`snapImage`
+`*snapImage*`
 a|
 The name of a snapshot image for which you want to retrieve information. The name of a snapshot image is comprised of two parts:
 
@@ -53,7 +55,7 @@ The identifier for the snapshot image can be one of these:
 Enclose the snapshot image name in double quotation marks (" ") inside square brackets ([ ]).
 
 a|
-`snapImages`
+`*snapImages*`
 a|
 The names of several snapshot images for which you want to retrieve information. Enter the names of the snapshot images using these rules:
 
@@ -62,7 +64,7 @@ The names of several snapshot images for which you want to retrieve information.
 * Separate each of the names with a space.
 
 a|
-`summary`
+`*summary*`
 a|
 This parameter returns a concise list of information about the snapshot images.
 

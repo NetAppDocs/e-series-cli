@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/smcli-autosupportschedule-show.html
 sidebar: sidebar
-keywords: 
-summary: 'The SMcli -autoSupportSchedule show command shows the schedule for collection and processing of both daily and weekly AutoSupport messages.'
+keywords: display, autosupport, message, collection, schedule
+summary: "The SMcli -autoSupportSchedule show command shows the schedule for collection and processing of both daily and weekly AutoSupport messages."
 ---
 = Display AutoSupport message collection schedule
 :icons: font

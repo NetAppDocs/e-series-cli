@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volume-actionprogress.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volume actionProgress command returns information about the volume action and amount of the long-running operation that is completed for a long-running operation on a volume.'
+keywords: show, volume, action, progress
+summary: "The show volume actionProgress command returns information about the volume action and amount of the long-running operation that is completed for a long-running operation on a volume."
 ---
 = Show volume action progress
 :icons: font
@@ -29,17 +29,18 @@ With firmware version 7.77, the `show volume actionProgress` command is deprecat
 The amount of the long-running operation that is completed is shown as a percentage (for example, 25 means that 25 percent of the long-running operation is completed).
 
 == Syntax
-
+[subs=+macros]
 ----
-show volume [volumeName] actionProgress
+show volume pass:quotes[[_volumeName_]] actionProgress
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`volume`
+`*volume*`
 a|
 The name of a volume for which you want to retrieve information about a long running operation. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
 

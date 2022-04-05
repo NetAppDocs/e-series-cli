@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-snapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop snapVolume command stops a snapshot volume operation.'
+keywords: stop, snapshot, volume
+summary: "The stop snapVolume command stops a snapshot volume operation."
 ---
 = Stop snapshot volume
 :icons: font
@@ -20,13 +20,14 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-stop snapVolume ["snapVolumeName"]
+pass:quotes[stop snapVolume ["_snapVolumeName_"]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

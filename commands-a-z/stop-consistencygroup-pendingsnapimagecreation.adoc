@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-consistencygroup-pendingsnapimagecreation.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop consistencyGroup pendingSnapImageCreation command stops all of the pending snapshot images that are to be created on a snapshot consistency group.'
+keywords: stop, snapshot, images, consistency, group
+summary: "The stop consistencyGroup pendingSnapImageCreation command stops all of the pending snapshot images that are to be created on a snapshot consistency group."
 ---
 = Stop pending snapshot images on consistency group
 :icons: font
@@ -24,17 +24,18 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 If the snapshot consistency group does not have any pending snapshot images, the storage management software displays an error message and does not run the command.
 
 == Syntax
-
+[subs=+macros]
 ----
-stop consistencyGroup [consistencyGroupName] pendingSnapImageCreation
+stop consistencyGroup pass:quotes[[_consistencyGroupName_]]pendingSnapImageCreation
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`consistencyGroupName`
+`*consistencyGroupName*`
 a|
 The name of the consistency group for which you want to stop any pending snapshot operation. Enclose the name of the consistency group in square brackets ([ ]). If the consistency group name has special characters or numbers, you must enclose the consistency group name in double quotation marks (" ") inside square brackets.
 |===

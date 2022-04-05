@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-volumegroup-import.html
 sidebar: sidebar
-keywords: 
-summary: 'The start volumeGroup import command moves a volume group into a Complete state to make a newly introduced volume group available to its new storage array.'
+keywords: start, volume, group, import
+summary: "The start volumeGroup import command moves a volume group into a Complete state to make a newly introduced volume group available to its new storage array."
 ---
 = Start volume group import
 :icons: font
@@ -29,17 +29,18 @@ Within the volume group, you cannot move volumes that are associated with the fe
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start volumeGroup [volumeGroupName] import
+pass:quotes[start volumeGroup [_volumeGroupName_]] import
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`volumeGroup`
+`*volumeGroup*`
 a|
 The name of the volume group that you want to import. Enclose the volume group name in square brackets ([ ]).
 |===

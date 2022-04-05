@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-unnameddiscoverysession.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray unnamedDiscoverySession command enables the storage array to participate in unnamed discovery sessions.'
+keywords: set, storage, array, unnamed, discovery, session
+summary: "The set storageArray unnamedDiscoverySession command enables the storage array to participate in unnamed discovery sessions."
 ---
 = Set storage array unnamed discovery session
 :icons: font
@@ -27,10 +27,11 @@ set storageArray unnamedDiscoverySession=(TRUE | FALSE)
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`unnamedDiscoverySession`
+`*unnamedDiscoverySession*`
 a|
 This parameter turns on or turns off unnamed discovery sessions. Set the parameter to `TRUE` to turn on unnamed discovery sessions. Set the parameter to `FALSE` to turn off unnamed discovery sessions.
 |===

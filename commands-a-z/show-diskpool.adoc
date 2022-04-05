@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-diskpool.html
 sidebar: sidebar
-keywords: 
-summary: 'The show diskPool command returns information about a disk pool.'
+keywords: show, disk pool
+summary: "The show diskPool command returns information about a disk pool."
 ---
 = Show disk pool
 :icons: font
@@ -43,16 +43,18 @@ This command returns this information about a disk pool:
 
 == Syntax
 
+[subs=+macros]
 ----
-show diskPool [diskPoolName]
+pass:quotes[show diskPool [_diskPoolName_]]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`diskPool`
+`*diskPool*`
 a|
 The name of the disk pool for which you are retrieving information. Enclose the disk pool name in square brackets ([ ]). If the disk pool name has special characters or numbers, you must enclose the disk pool name in double quotation marks (" ") inside square brackets.
 

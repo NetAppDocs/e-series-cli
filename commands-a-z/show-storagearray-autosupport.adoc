@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-autosupport.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray autoSupport command displays the AutoSupport bundle collection settings for the storage array.'
+keywords: show, autosupport, configuration, e2800, e5700, storage, arrays
+summary: "The show storageArray autoSupport command displays the AutoSupport bundle collection settings for the storage array."
 ---
 = Show AutoSupport configuration (for E2800 or E5700 storage arrays)
 :icons: font

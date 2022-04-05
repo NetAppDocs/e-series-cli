@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volumegroup-importdependencies.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volumeGroup importDependencies command shows a list of dependencies for the drives in a volume group that you want to move from one storage array to a second storage array.'
+keywords: show, volume, group, import, dependencies
+summary: "The show volumeGroup importDependencies command shows a list of dependencies for the drives in a volume group that you want to move from one storage array to a second storage array."
 ---
 = Show volume group import dependencies
 :icons: font
@@ -20,29 +20,30 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Syntax
-
+[subs=+macros]
 ----
-show volumeGroup [volumeGroupName] importDependencies
+pass:quotes[show volumeGroup [_volumeGroupName_]] importDependencies
 [cancelImport=(TRUE | FALSE)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`volumeGroup`
+`*volumeGroup*`
 a|
 The name of the volume group for which you want to show import dependencies. Enclose the volume group name in square brackets ([ ]).
 a|
-`cancelImport`
+`*cancelImport*`
 a|
 The setting to spin the drives back down after the volume group dependencies have been read. To spin down the drives, set this parameter to `TRUE`. To let the drives stay spinning, set this parameter to `FALSE`.
 |===
 
 == Notes
 
-This command returns the dependencies of a specific volume group, which must be in an Exported state or a Forced state. If a decision is made to retain the listed dependencies, then the `cancelImport` parameter can be enforced to spin the drives back down.
+This command returns the dependencies of a specific volume group, which must be in an Exported state or a Forced state. If a decision is made to retain the listed dependencies, then the `*cancelImport*` parameter can be enforced to spin the drives back down.
 
 You must run the `show volumeGroup importDependencies` command before you run the `start volumeGroup import` command.
 

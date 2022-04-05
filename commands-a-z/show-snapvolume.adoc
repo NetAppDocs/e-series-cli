@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-snapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The show snapVolume command returns information about one or more snapshot volumes.'
+keywords: show, snapshot, volumes
+summary: "The show snapVolume command returns information about one or more snapshot volumes."
 ---
 = Show snapshot volumes
 :icons: font
@@ -21,27 +21,29 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-show (allSnapVolumes | snapVolume ["snapVolumeName"] |
-snapVolumes ["snapVolumeName1" ... "snapVolumeNamen"])
+show (allSnapVolumes | snapVolume pass:quotes[["_snapVolumeName_"]] |
+snapVolumes pass:quotes[["_snapVolumeName1_" ... "_snapVolumeNamen_"]])
 [summary]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`allSnapVolumes`
+`*allSnapVolumes*`
 a|
 The parameter to return information about all of the snapshot volumes in the storage array.
 a|
-`snapVolume`
+`*snapVolume*`
 a|
 The name of a snapshot volume about which you want to retrieve information. Enclose the snapshot volume name in double quotation marks (" ") inside of square brackets ([ ]).
 
 a|
-`snapVolumes`
+`*snapVolumes*`
 a|
 The names of several snapshot volumes for which you want to retrieve information. Enter the names of the snapshot volumes using these rules:
 
@@ -50,7 +52,7 @@ The names of several snapshot volumes for which you want to retrieve information
 * Separate each of the names with a space.
 
 a|
-`summary`
+`*summary*`
 a|
 The parameter to return a concise list of information about the snapshot volumes.
 |===

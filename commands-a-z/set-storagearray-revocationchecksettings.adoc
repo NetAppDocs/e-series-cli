@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-revocationchecksettings.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray revocationCheckSettings command allows you to enable or disable revocation checking, and configure an Online Certificate Status Protocol \(OCSP\) server.'
+keywords: set, certificate, revocation, check, set
+summary: "The set storageArray revocationCheckSettings command allows you to enable or disable revocation checking, and configure an Online Certificate Status Protocol (OCSP) server."
 ---
 = Set certificate revocation check settings
 :icons: font
@@ -38,14 +38,15 @@ set storageArray revocationCheckSettings ([revocationCheckEnable = boolean] &| [
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`revocationCheckEnable`
+`*revocationCheckEnable*`
 a|
-Set to `true` to enable certificate revocation checking.
+Set to `*true*` to enable certificate revocation checking.
 a|
-`ocspResponderUrl`
+`*ocspResponderUrl*`
 a|
 The URL of the OCSP responder server to be used for the certificate revocation check.
 [NOTE]

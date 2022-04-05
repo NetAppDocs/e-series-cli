@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-snapimage-rollback.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop snapImage rollback command stops a snapshot image rollback operation that was initiated by the start snapImage rollback command.'
+keywords: stop, snapshot, image, rollback
+summary: "The stop snapImage rollback command stops a snapshot image rollback operation that was initiated by the start snapImage rollback command."
 ---
 = Stop snapshot image rollback
 :icons: font
@@ -27,13 +27,14 @@ Canceling a snapshot image rollback operation leaves the base volume in an indet
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-stop snapImage [snapCGID:imageID] rollback
+pass:quotes[stop snapImage [_snapCGID:imageID_] rollback]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

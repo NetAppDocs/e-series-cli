@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-auditlog.html
 sidebar: sidebar
-keywords: 
-summary: 'The save auditLog command retrieves the audit log records.'
+keywords: save, audit log, records
+summary: "The save auditLog command retrieves the audit log records."
 ---
 = Save audit log records
 :icons: font
@@ -21,22 +21,24 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
 
-save auditLog (all | (beginDate=date | endDate=date)
-|(beginRecord=timestamp | endRecord=timestamp)) file="filename"
+save auditLog (all | (beginDate=pass:quotes[_date_ | endDate=_date_)]
+|(beginRecord=pass:quotes[_timestamp_] | endRecord=pass:quotes[_timestamp_))] file=pass:quotes["_filename_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`all`
+`*all*`
 a|
 Allows you to retrieve all audit log records.
 a|
-`beginDate`
+`*beginDate*`
 a|
 Allows you to specify the beginning date to retrieve. The format for entering the date is MM:DD:YY in the client time zone. The first audit log record retrieved will be the first record that was posted on or after the specified date.
 [NOTE]
@@ -45,7 +47,7 @@ The midnight-to-midnight range is based on the client's time zone.
 ====
 
 a|
-`endDate`
+`*endDate*`
 a|
 Allows you to specify the ending date to retrieve. If not specified, then the last record in the log will be retrieved. The format for entering the date is MM:DD:YY in the client time zone. The last audit log record retrieved will be the last record that was posted on or before the specified date.
 [NOTE]
@@ -54,15 +56,15 @@ The midnight-to-midnight range is based on the client's time zone.
 ====
 
 a|
-`beginRecord`
+`*beginRecord*`
 a|
 Allows you to specify the beginning record to retrieve. The value is the integral value that represents the time stamp of the first audit log record, inclusive. If not specified, the first record in the log will be retrieved.
 a|
-`endRecord`
+`*endRecord*`
 a|
 Allows you to specify the ending record to retrieve. The value is the integral value that represents the time stamp of the last audit log record, inclusive. If not specified, then the last record in the log will be retrieved.
 a|
-`file`
+`*file*`
 a|
 Allows you to specify the audit log's output filename.
 [NOTE]

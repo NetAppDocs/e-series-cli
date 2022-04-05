@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-snapgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The set snapGroup command defines the properties for a snapshot group.'
+keywords: set, snapshot, group, attributes
+summary: "The set snapGroup command defines the properties for a snapshot group."
 ---
 = Set snapshot group attributes
 :icons: font
@@ -21,43 +21,45 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set snapGroup ["snapGroupName"]
-[userLabel="snapGroupName"] |
+set snapGroup pass:quotes[["_snapGroupName_"]]
+[userLabel=pass:quotes["_snapGroupName_"]] |
 [repositoryFullPolicy=(failBaseWrites | purgeSnapImages) |
-[repositoryFullLimit=percentValue |
-[autoDeleteLimit=numberOfSnapImages] |
+[repositoryFullLimit=pass:quotes[_percentValue_] |
+[autoDeleteLimit=pass:quotes[_numberOfSnapImages_]] |
 [rollbackPriority=(lowest | low | medium | high | highest)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`snapGroup`
+`*snapGroup*`
 a|
 The name of the snapshot group for which you are setting properties. Enclose the snapshot group name in double quotation marks (" ") inside of square brackets ([ ]).
 a|
-`userLabel`
+`*userLabel*`
 a|
 The new name that you want to give to the snapshot group. Use this parameter when you want to rename the snapshot group. Enclose the new snapshot group name in double quotation marks (" ").
 a|
-`repositoryFullPolicy`
+`*repositoryFullPolicy*`
 a|
 How you want snapshot image processing to continue if the repository volumes for the snapshot image group are full. You can choose to fail writes to the base volume (`failBaseWrites`) or delete (purge) the snapshot images (`purgeSnapImages`). The default action is `purgeSnapImages`.
 a|
-`repositoryFullLimit`
+`*repositoryFullLimit*`
 a|
 The percentage of repository volume capacity at which you receive a warning that the snapshot image repository volume is nearing full. Use integer values. For example, a value of 70 means 70 percent. The default value is 75.
 
 a|
-`autoDeleteLimit`
+`*autoDeleteLimit*`
 a|
 The maximum number of snapshot images that you want to automatically delete if you have selected to purge the snapshot images for a repository full policy. Use integer values. The default value is 32.
 
 a|
-`rollBackPriority`
+`*rollBackPriority*`
 a|
 Use this parameter to determine whether system resources should be allocated to the rollback operation at the expense of system performance. Valid values are `highest`, `high`, `medium`, `low`, or `lowest` A value of `high` indicates that the rollback operation is prioritized over all other host I/O. A value of `lowest` indicates that the rollback operation should be performed with minimal impact to host I/O.
 

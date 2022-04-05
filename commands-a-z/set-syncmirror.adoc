@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-syncmirror.html
 sidebar: sidebar
-keywords: 
-summary: 'The set syncMirror command defines the properties for a remote-mirrored pair.'
+keywords: set, synchronous, mirror
+summary: "The set syncMirror command defines the properties for a remote-mirrored pair."
 ---
 = Set synchronous mirroring
 :icons: font
@@ -23,14 +23,15 @@ To execute this command on an E2800 or E5700 storage array, you must have the St
 
 [NOTE]
 ====
-In previous versions of this command the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `syncMirror`.
+In previous versions of this command the feature identifier was `*remoteMirror*`. This feature identifier is no longer valid and is replaced by `*syncMirror*`.
 ====
 
 == Syntax
 
+[subs=+macros]
 ----
-set syncMirror (localVolume [volumeName] |
-localVolumes [volumeName1 ... volumeNameN])
+set syncMirror (localVolume pass:quotes[[_volumeName_]] |
+localVolumes pass:quotes[[_volumeName1 ... volumeNameN_]])
 [role=(primary | secondary)]
 [syncPriority=(highest | high | medium | low | lowest)]
 [autoResync=(enabled | disabled)]
@@ -41,15 +42,16 @@ localVolumes [volumeName1 ... volumeNameN])
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`localVolume`
+`*localVolume*`
 a|
 The name of the local volume for which you want to define properties. Enclose the primary volume name in square brackets ([ ]). If the primary volume name has special characters or numbers, you must enclose the primary volume name in double quotation marks (" ") inside square brackets.
 
 a|
-`localVolumes`
+`*localVolumes*`
 a|
 The names of several local volumes for which you want to define properties. Enter the names of the volumes using these rules:
 
@@ -63,15 +65,15 @@ If the volume names have special characters or consist only of numbers, enter th
 * Separate each of the names with a space.
 
 a|
-`role`
+`*role*`
 a|
 The setting for the local volume to act as the primary volume or the secondary volume. To define the volume as the primary volume, set this parameter to `primary`. To define the volume as the secondary volume, set this parameter to `secondary`. This parameter applies only when the volume is part of a mirror relationship.
 a|
-`syncPriority`
+`*syncPriority*`
 a|
 The priority that full synchronization has relative to host I/O activity. Valid values are `highest`, `high`, `medium`, `low`, or `lowest`.
 a|
-`autoResync`
+`*autoResync*`
 a|
 The settings for automatic resynchronization between the primary volumes and the secondary volumes of a remote-mirrored pair. This parameter has these values:
 
@@ -79,21 +81,21 @@ The settings for automatic resynchronization between the primary volumes and the
 * `disabled` -- Automatic resynchronization is turned off. To resynchronize the primary volumes and the secondary volume, you must run the `resume syncMirror` command.
 
 a|
-`writeOrder`
+`*writeOrder*`
 a|
 This parameter defines write order for data transmission between the primary volume and the secondary volume. Valid values are `preserved` or `notPreserved`.
 a|
-`writeMode`
+`*writeMode*`
 a|
 This parameter defines how the primary volume writes to the secondary volume. Valid values are `synchronous` or `asynchronous`.
 a|
-`force`
+`*force*`
 a|
 The role reversal is forced if the communications link between the storage arrays is down and promotion or demotion on the local side results in a dual-primary condition or a dual-secondary condition. To force a role reversal, set this parameter to `TRUE`. The default value is `FALSE`.
 
 [NOTE]
 ====
-Use the `force` parameter only when using the `role` parameter.
+Use the `*force*` parameter only when using the `*role*` parameter.
 ====
 
 |===
@@ -104,7 +106,7 @@ When you use this command, you can specify one or more of the optional parameter
 
 Synchronization priority defines the amount of system resources that are used to synchronize the data between the primary volumes and the secondary volumes of a mirror relationship. If you select the highest priority level, the data synchronization uses the most system resources to perform the full synchronization, which decreases the performance for host data transfers.
 
-The `writeOrder` parameter applies only to asynchronous write modes and makes them become part of a consistency group. Setting the `writeOrder` parameter to `preserved` causes the remote-mirrored pair to transmit data from the primary volume to the secondary volume in the same order as the host writes to the primary volume. In the event of a transmission link failure, the data is buffered until a full synchronization can occur. This action can require additional system overhead to maintain the buffered data, which slows operations. Setting the `writeOrder` parameter to `notPreserved` frees the system from having to maintain data in a buffer, but it requires forcing a full synchronization to make sure that the secondary volume has the same data as the primary volume.
+The `*writeOrder*` parameter applies only to asynchronous write modes and makes them become part of a consistency group. Setting the `*writeOrder*` parameter to `*preserved*` causes the remote-mirrored pair to transmit data from the primary volume to the secondary volume in the same order as the host writes to the primary volume. In the event of a transmission link failure, the data is buffered until a full synchronization can occur. This action can require additional system overhead to maintain the buffered data, which slows operations. Setting the `*writeOrder*` parameter to `notPreserved` frees the system from having to maintain data in a buffer, but it requires forcing a full synchronization to make sure that the secondary volume has the same data as the primary volume.
 
 == Minimum firmware level
 

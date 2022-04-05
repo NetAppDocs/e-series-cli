@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-configdbdiagnostic.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray configDbDiagnostic command runs a consistency check against a configuration database.'
+keywords: start, storage, array, configuration, database, diagnostic
+summary: "The start storageArray configDbDiagnostic command runs a consistency check against a configuration database."
 ---
 = Start storage array configuration database diagnostic
 :icons: font
@@ -30,10 +30,11 @@ controller[(a|b)]]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`sourceLocation`
+`*sourceLocation*`
 a|
 This parameter specifies the location of the database.
 
@@ -42,16 +43,16 @@ This parameter specifies the location of the database.
 
 The default location is `disk`.
 a|
-`diagnosticType`
+`*diagnosticType*`
 a|
 The level of diagnostic testing that you want to run on the database. You can run one of these levels of testing:
 
 `fileSystem` -- This option checks the structural integrity of the database.
 
-`mirror` -- The tests run using this option vary according to the value of the `sourceLocation` parameter:
+`mirror` -- The tests run using this option vary according to the value of the `*sourceLocation*` parameter:
 
-* When the `sourceLocation` parameter is set to `disk`, the peer controller initiates a block check.
-* When the `sourceLocation` parameter is set to `onboard` , the peer controller initiates a record check.
+* When the `*sourceLocation*` parameter is set to `disk`, the peer controller initiates a block check.
+* When the `*sourceLocation*` parameter is set to `onboard` , the peer controller initiates a record check.
 
 [NOTE]
 ====
@@ -61,7 +62,7 @@ You can run the `mirror` option only from a command line or from the Script edit
 The default value is `fileSystem`.
 
 a|
-`controller`
+`*controller*`
 a|
 The controller that has the database on which you want to run the diagnostic tests. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
 |===
@@ -103,6 +104,6 @@ In addition, you can start the database configuration diagnostic test through th
 
 7.83 adds these parameters:
 
-* `sourceLocation`
-* `diagnosticType`
-* `controller`
+* `*sourceLocation*`
+* `*diagnosticType*`
+* `*controller*`

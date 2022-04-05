@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-cgsnapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop cgSnapVolume command stops the copy-on-write operation for creating a consistency group snapshot volume.'
+keywords: stop, consistency, group, snapshot, volume
+summary: "The stop cgSnapVolume command stops the copy-on-write operation for creating a consistency group snapshot volume."
 ---
 = Stop consistency group snapshot volume
 :icons: font
@@ -29,17 +29,18 @@ This command does not delete a consistency group snapshot volume. To delete a co
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-stop cgSnapVolume [snapVolumeName]
+pass:quotes[stop cgSnapVolume [_snapVolumeName_]]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`cgSnapVolume`
+`*cgSnapVolume*`
 a|
 The name of the consistency group snapshot volume that you want to stop creating. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
 

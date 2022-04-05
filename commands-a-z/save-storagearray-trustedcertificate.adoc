@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-trustedcertificate.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray trustedCertificate command retrieves the installed trusted CA certificates for the array. Included in the retrieved files are any requested CA certificates from the array’s web servers.'
+keywords: retrieve, installed, trusted, ca, certificates
+summary: "The save storageArray trustedCertificate command retrieves the installed trusted CA certificates for the array. Included in the retrieved files are any requested CA certificates from the array’s web servers."
 ---
 = Retrieve installed trusted CA certificates
 :icons: font
@@ -21,26 +21,28 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
 
 save storageArray trustedCertificate [allUserInstalled |
-aliases=("alias1" ... "aliasN")] path="fileLocation"
+aliases=pass:quotes[("_alias1_" ... "_aliasN_")]] path=pass:quotes["_fileLocation_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`allUserInstalled`
+`*allUserInstalled*`
 a|
-Allows you to specify the retrieval of user installed certificates. The default option is `allUserInstalled` if you didn't specify any aliases.
+Allows you to specify the retrieval of user installed certificates. The default option is `*allUserInstalled*` if you didn't specify any aliases.
 a|
-`aliases`
+`*aliases*`
 a|
 Allows you to specify which user installed trusted certificate to retrieve by alias. Enclose all the aliases in parentheses. If you enter more than one alias, separate them with a space.
 a|
-`path`
+`*path*`
 a|
 Allows you to specify the local location for which to save the controller's trusted certificates.
 |===

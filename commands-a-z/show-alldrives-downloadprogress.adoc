@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-alldrives-downloadprogress.html
 sidebar: sidebar
-keywords: 
-summary: 'The show allDrives downloadProgress command returns the status of firmware downloads for the drives that are targeted by the download drive firmware command or the download storageArray driveFirmware command.'
+keywords: show, drive, download, progress
+summary: "The show allDrives downloadProgress command returns the status of firmware downloads for the drives that are targeted by the download drive firmware command or the download storageArray driveFirmware command."
 ---
 = Show drive download progress
 :icons: font
@@ -33,6 +33,7 @@ None.
 
 When all of the firmware downloads have successfully completed, this command returns good status. If any firmware downloads fail, this command shows the firmware download status of each drive that was targeted. This command returns the statuses shown in this table.
 
+[cols="2*",options="header"]
 |===
 | Status| Definition
 a|

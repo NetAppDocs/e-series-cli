@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray autoSupport deliveryMethod command sets up the delivery method for sending AutoSupport messages to email \(SMTP\).'
+keywords: specify, email, smtp, delivery method, individual, E2800, E5700, arrays
+summary: "The set storageArray autoSupport deliveryMethod command sets up the delivery method for sending AutoSupport messages to email (SMTP)."
 ---
 = Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)
 :icons: font
@@ -21,17 +21,19 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
 set storageArray autoSupport deliveryMethod=email
-mailRelayServer="serverAddress" senderEmail="emailAddress"
+mailRelayServer=pass:quotes["_serverAddress_" senderEmail="_emailAddress_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`deliveryMethod`
+`*deliveryMethod*`
 a|
 Allows the user to specify the delivery method for AutoSupport collection. Valid choices are:
 
@@ -45,11 +47,11 @@ If the email method is configured, then the AutoSupport OnDemand and Remote Diag
 ====
 
 a|
-`mailRelayServer`
+`*mailRelayServer*`
 a|
 Allows the user to specify the mail relay server for the AutoSupport collection.
 a|
-`senderEmail`
+`*senderEmail*`
 a|
 Allows the user to specify send email address for the AutoSupport collection.
 |===
@@ -69,4 +71,4 @@ SMcli completed successfully.
 
 == Verification
 
-Send a test message using the `start storageArray autoSupport deliveryTest` command to verify that your delivery methods are set up correctly.
+Send a test message using the `_start storageArray autoSupport deliveryTest_` command to verify that your delivery methods are set up correctly.

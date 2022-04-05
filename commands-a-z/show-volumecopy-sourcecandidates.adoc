@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volumecopy-sourcecandidates.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volumeCopy sourceCandidates command returns information about the candidate volumes that you can use as the source for a volume copy operation. This command is valid for snapshot volume copy pairs.'
+keywords: show, volume, copy, source, candidates
+summary: "The show volumeCopy sourceCandidates command returns information about the candidate volumes that you can use as the source for a volume copy operation. This command is valid for snapshot volume copy pairs."
 ---
 = Show volume copy source candidates
 :icons: font

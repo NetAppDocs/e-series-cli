@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-isertarget.html
 sidebar: sidebar
-keywords: 
-summary: 'The set iserTarget command defines properties for an iSER target.'
+keywords: set, iser, target
+summary: "The set iserTarget command defines properties for an iSER target."
 ---
 = Set iSER target
 :icons: font
@@ -21,37 +21,39 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-This command is deprecated and is replaced by the xref:wombat-set-target.adoc[Set target properties] command.
+This command is deprecated and is replaced by the xref:set-target.adoc[Set target properties] command.
 ====
 
 == Syntax
 
+[subs=+macros]
 ----
-set iserTarget ["userLabel"]
+set iserTarget pass:quotes[["_userLabel_"]]
 authenticationMethod=(none | chap) |
-chapSecret=securityKey |
-targetAlias="userLabel"
+chapSecret=pass:quotes[_securityKey_] |
+targetAlias=pass:quotes["_userLabel_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`iserTarget`
+`*iserTarget*`
 a|
-The iSER target for which you want to set properties. Enclose the `userLabel` in double quotation marks (" "). You must also enclose the `userLabel` in square brackets ([ ]) if the user label is a target alias or angle brackets (< >) if the user label is an iSCSI Qualified Name (IQN).
+The iSER target for which you want to set properties. Enclose the `_userLabel_` in double quotation marks (" "). You must also enclose the `_userLabel_` in square brackets ([ ]) if the user label is a target alias or angle brackets (< >) if the user label is an iSCSI Qualified Name (IQN).
 
 a|
-`authenticationMethod`
+`*authenticationMethod*`
 a|
 The means of authenticating your iSCSI session.
 a|
-`chapSecret`
+`*chapSecret*`
 a|
 The security key that you want to use to authenticate a peer connection.
 a|
-`targetAlias`
+`*targetAlias*`
 a|
 The new name that you want to use for the target. Enclose the name in double quotation marks (" ").
 |===
@@ -60,8 +62,9 @@ The new name that you want to use for the target. Enclose the name in double quo
 
 Challenge Handshake Authentication Protocol (CHAP) is a protocol that authenticates the peer of a connection. CHAP is based upon the peers sharing a _secret_. A secret is a security key that is similar to a password.
 
-Use the `chapSecret` parameter to set up the security keys for initiators that require a mutual authentication. The CHAP secret must be between 12 characters and 57 characters. This table lists the valid characters.
+Use the `*chapSecret*` parameter to set up the security keys for initiators that require a mutual authentication. The CHAP secret must be between 12 characters and 57 characters. This table lists the valid characters.
 
+[cols="1a,1a,1a,1a,1a,1a,1a,1a,1a,1a,1a,1a"]
 |===
 a|
 Space
@@ -183,10 +186,11 @@ Z
 a|
 [
 a|
- a|
+\
+a|
 ]
 a|
-
+^
 a|
 _
 a|
@@ -252,7 +256,7 @@ a|
 a|
 ~
 a|
- 
+
 |===
 
 == Minimum firmware level

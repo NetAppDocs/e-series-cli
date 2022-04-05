@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-ssdcache-locate.html
 sidebar: sidebar
-keywords: 
-summary: 'The start ssdCache locate command identifies the Solid State Disks \(SSDs\) that are logically grouped together to form the SSD cache by blinking the indicator lights on the SSDs.'
+keywords: start, ssd, cache, locate
+summary: "The start ssdCache locate command identifies the Solid State Disks (SSDs) that are logically grouped together to form the SSD cache by blinking the indicator lights on the SSDs."
 ---
 = Start SSD cache locate
 :icons: font
@@ -24,17 +24,18 @@ To execute this command on an E2800 or E5700 storage array, you must have the Su
 Use the `stop ssdCache locate` command to turn off the indicator lights on the drives.
 
 == Syntax
-
+[subs=+macros]
 ----
-start ssdCache [ssdCacheName] locate
+start ssdCache pass:quotes[[_ssdCacheName_]] locate
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`ssdCache`
+`*ssdCache*`
 a|
 The name of the SSD cache that you want to locate. Enclose the SSD cache name in square brackets ([ ]). If the SSD cache name contains special characters or consists only of numbers, you must enclose the SSD cache name in double quotation marks (" ") inside square brackets.
 |===

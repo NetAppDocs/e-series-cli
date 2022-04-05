@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-volumegroup-forcedstate.html
 sidebar: sidebar
-keywords: 
-summary: 'The set volumeGroup forcedState command moves a volume group into a Forced state.'
+keywords: set, volume, group, forced, state
+summary: "The set volumeGroup forcedState command moves a volume group into a Forced state."
 ---
 = Set volume group forced state
 :icons: font
@@ -25,16 +25,18 @@ Use this command if the `start volumeGroup import` command does not move the vol
 
 == Syntax
 
+[subs=+macros]
 ----
-set volumeGroup [volumeGroupName] forcedState
+set volumeGroup pass:quotes[[_volumeGroupName_]] forcedState
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`volumeGroup`
+`*volumeGroup*`
 a|
 The name of the volume group that you want to place in a Forced state. Enclose the volume group name in square brackets ([ ]).
 |===

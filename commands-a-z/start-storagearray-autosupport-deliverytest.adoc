@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-autosupport-deliverytest.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray autoSupport deliveryTest command sends a sample AutoSupport bundle collection message so you can test the connection to the destination technical support system using the specified delivery parameters.'
+keywords: test, autosupport, delivery, set, individual, E2800, E5700, arrays
+summary: "The start storageArray autoSupport deliveryTest command sends a sample AutoSupport bundle collection message so you can test the connection to the destination technical support system using the specified delivery parameters."
 ---
 = Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)
 :icons: font
@@ -20,17 +20,18 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-start storageArray autoSupport deliveryTest [replyToEmail="address"]
+start storageArray autoSupport deliveryTest pass:quotes[[replyToEmail="_address_"]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`replyToEmail`
+`*replyToEmail*`
 a|
 Allows the user to specify the reply-to email address for the AutoSupport test message. It is only used/required when delivery method is set to email.
 |===

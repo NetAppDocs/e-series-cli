@@ -1,15 +1,15 @@
 ---
 permalink: commands-a-z/stop-drive-replace.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop drive replace command stops a data copy operation that was started by either a set drive command or a replace drive command with the copyDrive user input.'
+keywords: stop, drive, replace
+summary: "The stop drive replace command stops a data copy operation that was started by either a set drive command or a replace drive command with the copyDrive user input."
 ---
 = Stop drive replace
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-The `stop drive replace` command stops a data copy operation that was started by either a `set drive` command or a `replace drive` command with the `copyDrive` user input.
+The `stop drive replace` command stops a data copy operation that was started by either a `set drive` command or a `replace drive` command with the `*copyDrive*` user input.
 
 == Supported Arrays
 
@@ -27,10 +27,11 @@ stop drive replace ([trayID,[drawerID,]slotID] | <"wwID">)
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`drive`
+`*drive*`
 a|
 For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
@@ -39,14 +40,14 @@ All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on
 Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
 
 a|
-`drive`
+`*drive*`
 a|
 The World Wide Identifier (WWID) of the drive that you want to replace. Enclose the WWID in double quotation marks (" ") inside angle brackets (< >).
 |===
 
 == Notes
 
-The `drive` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+The `*drive*` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
 
 == Minimum firmware level
 

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-snmpsystemvariables.html
 sidebar: sidebar
-keywords: 
-summary: 'The show snmpSystemVariables command returns information about the Simple Network Management Protocol \(SNMP\) system variables. The system variables are maintained in a Management Information Base II \(MIB-II\) database.'
+keywords: show, snmp, mib ii, system, group, variables
+summary: "The show snmpSystemVariables command returns information about the Simple Network Management Protocol (SNMP) system variables. The system variables are maintained in a Management Information Base II (MIB-II) database."
 ---
 = Show SNMP MIB II system group variables
 :icons: font

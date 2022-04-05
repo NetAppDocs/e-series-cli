@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-syslog-test.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray syslog test command allows you to test communications between the storage array and a syslog server.'
+keywords: start, storage, array, syslog, test
+summary: "The start storageArray syslog test command allows you to test communications between the storage array and a syslog server."
 ---
 = Start storage array syslog test
 :icons: font
@@ -27,6 +27,7 @@ start storageArray syslog test id="<id>"
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

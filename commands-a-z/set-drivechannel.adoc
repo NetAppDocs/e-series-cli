@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-drivechannel.html
 sidebar: sidebar
-keywords: 
-summary: 'The set driveChannel command defines how the drive channel performs.'
+keywords: set, drive, channel, status
+summary: "The set driveChannel command defines how the drive channel performs."
 ---
 = Set drive channel status
 :icons: font
@@ -28,14 +28,15 @@ status=(optimal | degraded)
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`driveChannel`
+`*driveChannel*`
 a|
 The identifier number of the drive channel for which you want to set the status. Valid drive channel values are `1`, `2`, `3`, `4`, `5`, `6`, `7`, or `8`. Enclose the drive channel number in square brackets ([ ]).
 a|
-`status`
+`*status*`
 a|
 The condition of the drive channel. You can set the drive channel status to `optimal` or `degraded`.
 |===

@@ -1,8 +1,8 @@
 ---
 permalink: get-started/adding-comments-to-a-script-file.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: add, comments, script file
+summary: "The script engine looks for certain characters or a command to show comments. You can add comments to a script file in three ways."
 ---
 = Add comments to a script file
 :icons: font

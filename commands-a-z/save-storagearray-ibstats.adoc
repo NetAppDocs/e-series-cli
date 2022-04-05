@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-ibstats.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray ibStats command saves the InfiniBand performance statistics of the storage array to a file.'
+keywords: save, storage, array, infiniband, statistics
+summary: "The save storageArray ibStats command saves the InfiniBand performance statistics of the storage array to a file."
 ---
 = Save storage array InfiniBand statistics
 :icons: font
@@ -21,30 +21,32 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-This command is deprecated and is replaced by the xref:wombat-save-storagearray-hostportstatistics.adoc[Save storage array host port statistics] command.
+This command is deprecated and is replaced by the xref:save-storagearray-hostportstatistics.adoc[Save storage array host port statistics] command.
 ====
 
 == Syntax
 
+[subs=+macros]
 ----
 save storageArray ibStats [raw | baseline]
-file=*"filename"*
+file=pass:quotes["_filename_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`raw`
+`*raw*`
 a|
 The statistics that are collected are all statistics from the controller start-of-day. Enclose the parameter in square brackets ([ ]).
 a|
-`baseline`
+`*baseline*`
 a|
 The statistics that are collected are all statistics from the time the controllers were reset to zero using the `reset storageArray ibStatsBaseline` command. Enclose the parameter in square brackets ([ ]).
 a|
-`file`
+`*file*`
 a|
 The file path and the file name to which you want to save the performance statistics. Enclose the file name in double quotation marks (" "). For example:
 

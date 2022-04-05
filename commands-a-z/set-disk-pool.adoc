@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-disk-pool.html
 sidebar: sidebar
-keywords: 
-summary: 'The set diskPool command sets the attributes associated with a disk pool based on the specified parameters.'
+keywords: set, disk pool
+summary: "The set diskPool command sets the attributes associated with a disk pool based on the specified parameters."
 ---
 = Set disk pool
 :icons: font
@@ -21,29 +21,31 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set (diskPool [diskPoolName] |
-diskPools [diskPoolName1 ... diskPoolNameN] | allDiskPools)
-[reservedDriveCount=reservedDriveCountValue]
+set (diskPool pass:quotes[[_diskPoolName_]] |
+diskPools pass:quotes[[_diskPoolName1_ ... _diskPoolNameN_]] | allDiskPools)
+[reservedDriveCount=pass:quotes[_reservedDriveCountValue_]]
 [warningThreshold=(warningThresholdValue | default)]
 [criticalThreshold=(criticalThresholdValue | default)]
 [criticalPriority=(highest | high | medium |low |lowest)]
 [degradedPriority=(highest |high |medium |low |lowest)]
 [backgroundPriority=(highest | high | medium |low |lowest)]
-[userLabel=diskPoolName]
+[userLabel=pass:quotes[_diskPoolName_]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`diskPool`
+`*diskPool*`
 a|
 The name of the disk pool for which you are setting attributes. Enclose the disk pool name in square brackets ([ ]). If the disk pool name has special characters or consists only of numbers, you must enclose the disk pool name in double quotation marks (" ") inside square brackets.
 
 a|
-`diskPools`
+`*diskPools*`
 a|
 The names of several disk pools for which you want to set attributes. Enter the names of the disk pools using these rules:
 
@@ -57,18 +59,18 @@ If the disk pool names have special characters or numbers, enter the names using
 * Separate each of the names with a space.
 
 a|
-`allDiskPools`
+`*allDiskPools*`
 a|
 This parameter sets attributes for all of the disk pools in the storage array.
 a|
-`reservedDriveCount`
+`*reservedDriveCount*`
 a|
 This parameter reserves space on every drive in the disk pool, to be used exclusively for reconstruction of failed drives. Each unit in this count represents the capacity to reconstruct one failed drive to the remainder of the disk pool.
 
 a|
-`warningThreshold`
+`*warningThreshold*`
 a|
-The percentage of disk pool capacity at which you receive a warning alert that the disk pool is nearing full. Use integer values. For example, a value of 70 means 70 percent. For best operation, the value for this parameter must be less than the value for the `criticalThreshold` parameter.
+The percentage of disk pool capacity at which you receive a warning alert that the disk pool is nearing full. Use integer values. For example, a value of 70 means 70 percent. For best operation, the value for this parameter must be less than the value for the `*criticalThreshold*` parameter.
 
 Valid values are from 0 to 100.
 
@@ -79,9 +81,9 @@ Setting this parameter to `0` disables warning alerts.
 If you set this to `default`, the warning alert threshold value is determined by the controller firmware.
 
 a|
-`criticalThreshold`
+`*criticalThreshold*`
 a|
-The percentage of disk pool capacity at which you receive a critical alert that the disk pool is nearing full. Use integer values. For example, a value of 70 means 70 percent. For best operation, the value for this parameter must be greater than the value for the `warningThreshold` parameter.
+The percentage of disk pool capacity at which you receive a critical alert that the disk pool is nearing full. Use integer values. For example, a value of 70 means 70 percent. For best operation, the value for this parameter must be greater than the value for the `*warningThreshold*` parameter.
 
 Valid values are from 0 to 100.
 
@@ -92,28 +94,28 @@ Setting this parameter to `0` disables both warning alerts and critical alerts.
 If you set this to `default`, the critical alert threshold value is determined by the controller firmware.
 
 a|
-`criticalPriority`
+`*criticalPriority*`
 a|
 The priority for reconstruction operations for critical events on the disk pool. For example, disk pool reconstruction after at least two drive failures.
 
 Valid values are `highest`, `high`, `medium`, `low`, and `lowest`. The default value is `highest`.
 
 a|
-`degradedPriority`
+`*degradedPriority*`
 a|
 The priority for reconstruction operations for degraded events on the disk pool. For example, disk pool reconstruction after at one drive failure.
 
 Valid values are `highest`, `high`, `medium`, `low`, and `lowest`. The default value is `high`.
 
 a|
-`backgroundPriority`
+`*backgroundPriority*`
 a|
 The priority for background operations on the disk pool.
 
 Valid values are `highest`, `high`, `medium`, `low`, and `lowest`. The default value is `low`.
 
 a|
-`userLabel`
+`*userLabel*`
 a|
 The new name that you want to give the disk pool. Enclose the disk pool name in double quotation marks (" ").
 |===
@@ -122,7 +124,7 @@ The new name that you want to give the disk pool. Enclose the disk pool name in 
 
 Each disk pool name must be unique. You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. User labels can have a maximum of 30 characters.
 
-You can specify an arbitrary set of disk pools. If you select multiple disk pools, setting a value for the `userLabel` causes an error.
+You can specify an arbitrary set of disk pools. If you select multiple disk pools, setting a value for the `*userLabel*` causes an error.
 
 If you do not specify a value for an optional parameter, a default value is assigned.
 

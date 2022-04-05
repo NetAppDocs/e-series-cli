@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-syncmirror-primary-synchronize.html
 sidebar: sidebar
-keywords: 
-summary: 'The start syncMirror primary synchronize command starts synchronous mirroring synchronization.'
+keywords: start, synchronous, mirror, synchronization
+summary: "The start syncMirror primary synchronize command starts synchronous mirroring synchronization."
 ---
 = Start synchronous mirroring synchronization
 :icons: font
@@ -27,17 +27,18 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start syncMirror primary ["volumeName"] synchronize
+pass:quotes[start syncMirror primary ["_volumeName_"]] synchronize
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`primary`
+`*primary*`
 a|
 The name of the primary volume for which you want to start synchronization. Enclose the primary volume name in double quotation marks (" ") inside of square brackets ([ ]).
 |===

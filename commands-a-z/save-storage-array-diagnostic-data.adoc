@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storage-array-diagnostic-data.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray diagnosticData command saves the storage array diagnostic data from either the controllers or the environmental services modules \(ESMs\) to a file.'
+keywords: save, storage, array, diagnostic, data
+summary: "The save storageArray diagnosticData command saves the storage array diagnostic data from either the controllers or the environmental services modules (ESMs) to a file."
 ---
 = Save storage array diagnostic data
 :icons: font
@@ -32,21 +32,23 @@ Run this command only with the assistance of technical support.
 
 == Syntax
 
+[subs=+macros]
 ----
 save storageArray diagnosticData [(controller | tray)]
-file="filename"
+file=pass:quotes["_filename_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`diagnosticData`
+`*diagnosticData*`
 a|
 This parameter allows you to download the diagnostic data from either the controllers or the ESMs.
 a|
-`file`
+`*file*`
 a|
 The file path and the file name to which you want to save the storage array diagnostic data. Enclose the file name in double quotation marks (" "). For example:
 
@@ -58,10 +60,10 @@ This command automatically saves the data to a compressed file; however, this co
 
 == Notes
 
-In versions of this command before 7.77, the user option was `esm` instead of `tray`. Starting in 7.77, `tray` replaces `esm`. The use of `esm` is still supported, but for best compatibility with future releases, replace `esm` with `tray`.
+In versions of this command before 7.77, the user option was `*esm*` instead of `*tray*`. Starting in 7.77, `*tray*` replaces `*esm*`. The use of `*esm*` is still supported, but for best compatibility with future releases, replace `*esm*` with `*tray*`.
 
 == Minimum firmware level
 
 6.16
 
-7.77 `tray` replaces `esm`.
+7.77 `*tray*` replaces `*esm*`.

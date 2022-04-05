@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/smcli-autosupportconfig.html
 sidebar: sidebar
-keywords: 
-summary: 'The SMcli -autoSupportConfig command sets up the delivery method for sending AutoSupport messages.'
+keywords: specify, autosupport, delivery, method
+summary: "The SMcli -autoSupportConfig command sets up the delivery method for sending AutoSupport messages."
 ---
 = Specify the AutoSupport delivery method
 :icons: font
@@ -36,20 +36,21 @@ mailRelayServer=<mailRelayServerName> senderMail=<senderEmailAddress>
 
 == Parameters for the SMTP Delivery Method
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`deliveryMethod`
+`*deliveryMethod*`
 a|
 Allows you to specify the delivery method of the AutoSupport messages. Valid choice is SMTP. See the next section of this topic for information about using HTTP or HTTPS, which are also valid.
 
 a|
-`mailRelayServer`
+`*mailRelayServer*`
 a|
 Allows you to specify the mail relay server for the AutoSupport messages.
 
 a|
-`senderMail`
+`*senderMail*`
 a|
 Allows you to specify the sender email address for the AutoSupport messages.
 
@@ -67,45 +68,46 @@ hostAddress:<address>portNumber=<portNumber> [userName=<userName>password=<passw
 
 The following table lists the parameters for the HTTP/HTTPS delivery methods.
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`deliveryMethod`
+`*deliveryMethod*`
 a|
 Allows you to specify the delivery method of the AutoSupport messages. Valid choices are HTTPS and HTTP (see prior section for use of SMTP, which is also valid).
 
 a|
-`direct`
+`*direct*`
 a|
 Allows you to connect directly to the destination technical support systems using the HTTPS or HTTP protocols.
 
 a|
-`proxyConfigScript`
+`*proxyConfigScript*`
 a|
 Allows you to specify the location of a Proxy Auto-Configuration (PAC) script file.
 
 a|
-`proxyServer`
+`*proxyServer*`
 a|
 Allows you to specify the HTTP(s) proxy server details required for establishing connection with the destination technical support system.
 
 a|
-`hostAddress`
+`*hostAddress*`
 a|
 The host IP address of the proxyServer.
 
 a|
-`portNumber`
+`*portNumber*`
 a|
 The port number of the proxy server. This parameter is required when the proxyServer parameter is used.
 
 a|
-`userName`
+`*userName*`
 a|
 The user name. This parameter is required.
 
 a|
-`password`
+`*password*`
 a|
 The authentication password. This parameter is required.
 

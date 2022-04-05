@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-snmpsystemvariables.html
 sidebar: sidebar
-keywords: 
-summary: 'The set snmpSystemVariables command changes the system variables for the Simple Network Management Protocol \(SNMP\).'
+keywords: update, snmp, mib, system, group, variables
+summary: "The set snmpSystemVariables command changes the system variables for the Simple Network Management Protocol (SNMP)."
 ---
 = Update SNMP MIB II system group variables
 :icons: font
@@ -29,27 +29,29 @@ The following system variables are maintained in a Management Information Base I
 
 == Syntax
 
+[subs=+macros]
 ----
 set snmpSystemVariables
-[sysName=newSystemName]
-[sysContact=contactName]
-[sysLocation=systemLocation]
+[sysName=pass:quotes[_newSystemName_]]
+[sysContact=pass:quotes[_contactName_]]
+[sysLocation=pass:quotes[_systemLocation_]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`sysName`
+`*sysName*`
 a|
 The new name that you want to give to the SNMP system. Use standard SNMP and MIB conventions for the system name. Enclose the SNMP system name in square brackets ([ ]).
 a|
-`sysContact`
+`*sysContact*`
 a|
 The name of contact person for the managed system with information on how to contact this person. Enclose the SNMP contact name in square brackets ([ ]).
 a|
-`sysLocation`
+`*sysLocation*`
 a|
 The physical location of the system, such as "3rd flr". Enclose the SNMP system location in square brackets ([ ]).
 |===

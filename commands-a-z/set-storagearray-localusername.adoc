@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-localusername.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray localUsername command and the set storageArray symbol command allow you to set a local user name password or a SYMbol password for a particular role.'
+keywords: set, storage, array, local, user, password, symbol
+summary: "The set storageArray localUsername command and the set storageArray symbol command allow you to set a local user name password or a SYMbol password for a particular role."
 ---
 = Set storage array local user password or SYMbol password
 :icons: font
@@ -21,35 +21,37 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set storageArray (localUsername={ admin | storage | security | support | monitor}
+set storageArray (localUsername=pass:quotes[{ _admin_ | _storage_ | _security_ | _support_ | _monitor_}]
 | symbol [userRole={admin | monitor}])
 password="string" adminPassword="string"
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`localUsername`
+`*localUsername*`
 a|
-Allows you to specify the user to change the password. Valid choices are: `admin`, `storage`, `support`, `monitor`, and `security`.
+Allows you to specify the user to change the password. Valid choices are: `*admin*`, `*storage*`, `*support*`, `*monitor*`, and `*security*`.
 a|
-`symbol`
+`*symbol*`
 a|
-Allows you to change the SYMbol password. Valid choices are: `admin` and `monitor`.
+Allows you to change the SYMbol password. Valid choices are: `*admin*` and `*monitor*`.
 [NOTE]
 ====
 This is the replacement command for the deprecated `set storageArray password` command.
 ====
 
 a|
-`password`
+`*password*`
 a|
 Allows you to specify the password for the role.
 a|
-`adminPassword`
+`*adminPassword*`
 a|
 Allows you to specify the admin password, which is required to set any new password.
 |===

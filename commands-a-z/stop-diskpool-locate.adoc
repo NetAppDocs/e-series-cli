@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-diskpool-locate.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop diskPool locate command turns off the indicator lights on the drives that were turned on by the start diskPool locate command.'
+keywords: stop, disk pool, locate
+summary: "The stop diskPool locate command turns off the indicator lights on the drives that were turned on by the start diskPool locate command."
 ---
 = Stop disk pool locate
 :icons: font

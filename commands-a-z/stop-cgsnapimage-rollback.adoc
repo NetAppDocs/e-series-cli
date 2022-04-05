@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-cgsnapimage-rollback.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop cgSnapImage rollback command stops a rollback operation to member base volumes in a snapshot consistency group.'
+keywords: stop, consistency, group, snapshot, rollback
+summary: "The stop cgSnapImage rollback command stops a rollback operation to member base volumes in a snapshot consistency group."
 ---
 = Stop consistency group snapshot rollback
 :icons: font
@@ -27,18 +27,19 @@ Canceling a consistency group snapshot rollback operation leaves the base volume
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-stop cgSnapImage["snapCGID:imageID"] rollback
-memberVolumeSet ("memberVolumeName1" ... "memberVolumeNamen")
+pass:quotes[stop cgSnapImage["_snapCGID:imageID_"]] rollback
+memberVolumeSet pass:quotes[("_memberVolumeName1_" ... "_memberVolumeNamen_")]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`cgSnapImage`
+`*cgSnapImage*`
 a|
 The name of the consistency group snapshot image for which you want to stop a rollback operation. The name of a snapshot image is comprised of two parts:
 
@@ -54,13 +55,13 @@ The identifier for the snapshot image can be one of these:
 Enclose the snapshot image name in double quotation marks (" ") inside square brackets ([ ]).
 
 a|
-`memberVolumeSet`
+`*memberVolumeSet*`
 a|
 The name of one or more member base volumes in a consistency group that you want to stop a rollback operation. Enclose each member base volume name in double quotation marks (" ") inside parentheses.
 
 You can enter more than one member base volume name. Enclose all of the member base volume names in one set of square brackets ([ ]). Enclose each member base volume name in double quotation marks (" "). Separate each member base volume name with a space.
 
-When the `memberVolumeSet` parameter is not used stopping the rollback process applies to all member volumes of the consistency group.
+When the `*memberVolumeSet*` parameter is not used stopping the rollback process applies to all member volumes of the consistency group.
 
 |===
 

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-loginbanner.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray loginBanner command allows you to upload a text file to be used as a login banner. The banner text can include an advisory notice and consent message, which is presented to users before they establish sessions in SANtricity System Manager or before they run commands.'
+keywords: set, storage, array, login, banner
+summary: "The set storageArray loginBanner command allows you to upload a text file to be used as a login banner. The banner text can include an advisory notice and consent message, which is presented to users before they establish sessions in SANtricity System Manager or before they run commands."
 ---
 = Set storage array login banner
 :icons: font
@@ -31,10 +31,11 @@ After you load the text file, it is saved to the storage array. The banner text 
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`file`
+`*file*`
 a|
 The file path and the file name where the login banner text file is stored.
 

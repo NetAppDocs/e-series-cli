@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-directoryservices-test.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray directoryServices test command checks communication with all configured directory servers and validates the server domain configurations.'
+keywords: test, storage, array, directory, server
+summary: "The start storageArray directoryServices test command checks communication with all configured directory servers and validates the server domain configurations."
 ---
 = Test storage array directory server
 :icons: font

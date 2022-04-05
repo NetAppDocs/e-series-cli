@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-loginbanner.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray loginBanner command allows you to save a login banner to your local machine. The banner text can include an advisory notice and consent message, which is presented to users before they establish sessions.'
+keywords: save, storage, array, login, banner
+summary: "The save storageArray loginBanner command allows you to save a login banner to your local machine. The banner text can include an advisory notice and consent message, which is presented to users before they establish sessions."
 ---
 = Save storage array login banner
 :icons: font
@@ -27,10 +27,11 @@ save storageArray loginBanner file="file_name"
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`file`
+`*file*`
 a|
 The name for the login banner file.
 
