@@ -45,5 +45,7 @@ entries:
       url: /get-started/usage-guidelines.html
     - title: Firmware compatibility levels
       url: /get-started/firmware-compatibility-levels.html
-  - title: New SMcli https mode
+  - title: SMcli https mode
     url: /get-started/new-https-mode.html
+  - title: Volume group migration
+    url: ../commands-category/learn-about-volume-group-migration.html

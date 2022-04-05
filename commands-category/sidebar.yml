@@ -1,14 +1,8 @@
 section: commands-category
 title: Commands by category
 entries:
-  - title: Storage administrators commands
-    url: /commands-category/storage-administrator-commands.html
-  - title: Storage monitor personnel commands
-    url: /commands-category/storage-monitor-personal-commands.html
-  - title: Support administrators commands
-    url: /commands-category/support-administrator-commands.html
-  - title: Security administrators commands
-    url: /commands-category/security-administrator-commands.html
+  - title: Administrators commands
+    url: /commands-category/administrator-commands.html
   - title: Alert configuration commands
     url: /commands-category/alert-configuration-commands.html
   - title: Array configuration commands
@@ -23,8 +17,7 @@ entries:
     url: /commands-category/replication-commands.html
   - title: Security commands
     url: /commands-category/security-commands.html
+  - title: Storage monitor personnel commands
+    url: /commands-category/storage-monitor-personal-commands.html
   - title: Volume configuration commands
     url: /commands-category/volume-configuration-commands.html
-    entries:
-    - title: Learn about volume group migration
-      url: /commands-category/learn-about-volume-group-migration.html
