@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The reset storageArray arvmStats asyncMirrorGroup command resets the synchronization statistics for one or more member volumes in an asynchronous mirror group to a relative 0.'
+keywords: reset, asynchronous, mirror group, statistics
+summary: "The reset storageArray arvmStats asyncMirrorGroup command resets the synchronization statistics for one or more member volumes in an asynchronous mirror group to a relative 0."
 ---
 = Reset asynchronous mirror group statistics
 :icons: font
@@ -20,14 +20,14 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-reset storageArray arvmStats asyncMirrorGroup [asyncMirrorGroupName]
-volume="volumeName" sampleType=(all | mostRecent | longestSyncTime | errors)
+reset storageArray arvmStats asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]]
+volume=pass:quotes[_"volumeName"_] sampleType=(all | mostRecent | longestSyncTime | errors)
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

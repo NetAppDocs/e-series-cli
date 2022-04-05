@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/clear-storagearray-recoverymode.html
 sidebar: sidebar
-keywords: 
-summary: 'The clear storageArray recoveryMode command forces a storage array to exit recovery mode.'
+keywords: clear, storage array, recovery, mode
+summary: "The clear storageArray recoveryMode command forces a storage array to exit recovery mode."
 ---
 = Clear storage array recovery mode
 :icons: font
@@ -33,7 +33,7 @@ None.
 
 [NOTE]
 ====
-Recovery mode is entered during start-of-day operations when the system configuration is cleared and a valid on board backup is available. This mode is exited by either restoring the system configuration from a backup location, or by clearing the existing on board backups. While recovery mode is in force, a *needs attention* condition is raised and the Recovery Guru is available from the user interface. However, the system configuration is empty during recovery mode.
+Recovery mode is entered during start-of-day operations when the system configuration is cleared and a valid on board backup is available. This mode is exited by either restoring the system configuration from a backup location, or by clearing the existing on board backups. While recovery mode is in force, a needs attention condition is raised and the Recovery Guru is available from the user interface. However, the system configuration is empty during recovery mode.
 ====
 
 [NOTE]

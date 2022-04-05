@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-mapping-volume.html
 sidebar: sidebar
-keywords: 
-summary: 'The create mapping volume command creates a logical mapping from a volume to a host or a host group.'
+keywords: create, volume, map
+summary: "The create mapping volume command creates a logical mapping from a volume to a host or a host group."
 ---
 = Create Volume Mapping
 :icons: font
@@ -20,16 +20,16 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-create mapping volume="VolumeName"
-(host="hostName" | hostGroup=("hostGroupName" | defaultGroup))
+create mapping volume=pass:quotes[_"VolumeName"_
+(host="_hostName_" | hostGroup=("_hostGroupName_"] | defaultGroup))
 logicalUnitNumber=lun
 mapWaitPeriod=mapWaitPeriodValue
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

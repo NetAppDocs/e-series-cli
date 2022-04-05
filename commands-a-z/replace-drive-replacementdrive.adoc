@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/replace-drive-replacementdrive.html
 sidebar: sidebar
-keywords: 
-summary: 'The replace drive replacementDrive command replaces a drive in a volume group.'
+keywords: replace, drive
+summary: "The replace drive replacementDrive command replaces a drive in a volume group."
 ---
 = Replace drive
 :icons: font
@@ -24,7 +24,6 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 Replacing a drive in a volume group redefines the composition of a volume group. You can use this command to replace a drive with either an unassigned drive or a fully integrated hot spare.
 
 == Syntax
-
 ----
 replace (drive \[trayID,[drawerID,]slotID\] \| drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\]
  | <"wwID">)
@@ -33,7 +32,7 @@ replacementDrive=trayID,drawerID,slotID
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -63,4 +62,4 @@ The `drive` parameter supports both high-capacity drive trays and low-capacity d
 
 7.10
 
-7.60 adds the `drawerID` user input.
+7.60 adds the `_drawerID_` user input.

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/resume-cgsnapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The resume cgSnapVolume command restarts a copy-on-write operation for creating a consistency group snapshot volume that you stopped using the stop cgSnapVolume command.'
+keywords: resume, consistency, group, snapshot, volume
+summary: "The resume cgSnapVolume command restarts a copy-on-write operation for creating a consistency group snapshot volume that you stopped using the stop cgSnapVolume command."
 ---
 = Resume consistency group snapshot volume
 :icons: font
@@ -20,14 +20,14 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-resume cgSnapVolume ["snapVolumeName"]
-cgSnapImage="snapImageName"
+resume cgSnapVolume pass:quotes[[_"snapVolumeName"_]]
+cgSnapImage=pass:quotes[_"snapImageName"_]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

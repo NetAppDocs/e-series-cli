@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reset-storagearray-ibstatsbaseline.html
 sidebar: sidebar
-keywords: 
-summary: 'The reset storageArray ibStatsBaseline command resets the InfiniBand statistics baseline to 0 for the storage array.'
+keywords: reset, storage array, infiniband, statistics, baseline
+summary: "The reset storageArray ibStatsBaseline command resets the InfiniBand statistics baseline to 0 for the storage array."
 ---
 = Reset storage array InfiniBand statistics baseline
 :icons: font
@@ -21,7 +21,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-This command is deprecated and is replaced by the xref:wombat-reset-storagearray-hostportstatisticsbaseline.adoc[Reset storage array host port statistics baseline] command.
+This command is deprecated and is replaced by the xref:reset-storagearray-hostportstatisticsbaseline.adoc[Reset storage array host port statistics baseline] command.
 ====
 
 == Syntax

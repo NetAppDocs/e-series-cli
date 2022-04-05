@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/remove-syncmirror.html
 sidebar: sidebar
-keywords: 
-summary: 'The remove syncMirror command removes the mirror relationship between the primary volume and the secondary volume in a remote-mirrored pair.'
+keywords: remove, synchronous, mirror
+summary: "The remove syncMirror command removes the mirror relationship between the primary volume and the secondary volume in a remote-mirrored pair."
 ---
 = Remove synchronous mirroring
 :icons: font
@@ -27,14 +27,14 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-remove syncMirror (localVolume [volumeName] |
-localVolumes [volumeName1 ... volumeNameN])
+remove syncMirror (localVolume pass:quotes[[_volumeName_]] |
+localVolumes pass:quotes[[_volumeName1 ... volumeNameN_]])
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

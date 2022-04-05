@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/deactivate-storagearray.html
 sidebar: sidebar
-keywords: 
-summary: 'The deactivate storageArray feature deactivates the Asynchronous Mirroring feature.'
+keywords: deactivate, asynchronous, mirroring
+summary: "The deactivate storageArray feature deactivates the Asynchronous Mirroring feature."
 ---
 = Deactivate asynchronous mirroring
 :icons: font

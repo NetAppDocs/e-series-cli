@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-diskpool.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete diskPool command deletes a disk pool.'
+keywords: delete, disk pool
+summary: "The delete diskPool command deletes a disk pool."
 ---
 = Delete disk pool
 :icons: font
@@ -29,14 +29,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 Depending on your version of the storage management software, this command also deletes all of the volumes in the disk pool. If your version of the storage management software does not support automatic deletion of the volumes, you can force the deletion of the disk pool and volumes.
 
 == Syntax
-
+[subs=+macros]
 ----
-delete diskPool [diskPoolName]
+delete diskPool pass:quotes[[_diskPoolName_]]
 [force=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

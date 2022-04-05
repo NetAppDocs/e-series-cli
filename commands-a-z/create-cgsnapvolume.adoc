@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-cgsnapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The create cgSnapVolume command creates a snapshot volume of specific images in the base volumes in a consistency group.'
+keywords: create, consistency group, snapshot, volume
+summary: "The create cgSnapVolume command creates a snapshot volume of specific images in the base volumes in a consistency group."
 ---
 = Create consistency group snapshot volume
 :icons: font
@@ -24,37 +24,37 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 You can select one base volume or more than one base volume from the consistency group to include in the snapshot volume. When you create a snapshot volume of a consistency group, you are creating a volume with contents that you can view.
 
 == Syntax with user specified base volumes
-
+[subs=+macros]
 ----
-create cgSnapVolume userLabel="cgVolumeName"
-cgSnapImageID="snapCGID:imageID"
-members=(baseVolume1:repos_XXXX ... baseVolumen:repos_YYYY)
+create cgSnapVolume userLabel=pass:quotes[_"cgVolumeName"_]
+cgSnapImageID=pass:quotes[_"snapCGID:imageID"_]
+members=pass:quotes[_(baseVolume1:repos_XXXX ... baseVolumen:repos_YYYY)_]
 ----
 
 == Syntax when setting the consistency group snapshot volume to read only
-
+[subs=+macros]
 ----
-create cgSnapVolume userLabel="cgVolumeName"
-cgSnapImageID="snapCGID:imageID"
+create cgSnapVolume userLabel=pass:quotes[_"cgVolumeName"_]
+cgSnapImageID=pass:quotes[_"snapCGID:imageID"_]
 readOnly
 ----
 
 == Syntax when setting the repository full limit
-
+[subs=+macros]
 ----
-create cgSnapVolume userLabel="cgVolumeName"
-cgSnapImageID="snapCGID:imageID"
-members=(baseVolume1:repos_XXXX |
-baseVolume1: (volumeGroupName [capacity=capacityValue]) |
-(baseVolume1:diskPoolName [capacity=capacityValue])
+create cgSnapVolume userLabel=pass:quotes[_"cgVolumeName"_]
+cgSnapImageID=pass:quotes[_"snapCGID:imageID"_]
+members=pass:quotes[_(baseVolume1:repos_XXXX_] |
+baseVolume1: (pass:quotes[_volumeGroupName_] pass:quotes[[_capacity=capacityValue_])] |
+(baseVolume1:pass:quotes[_diskPoolName_] [capacity=pass:quotes[_capacityValue_]])
 ... baseVolumen:repos_YYYY |
-baseVolumen: (volumeGroupName [capacity=capacityValue]) |
-baseVolumen: (diskPoolName [capacity=capacityValue]))
-repositoryFullLimit=percentValue
+baseVolumen: (pass:quotes[_volumeGroupName_] [capacity=pass:quotes[_capacityValue_]]) |
+baseVolumen: (pass:quotes[_diskPoolName_] [capacity=pass:quotes{_capacityValue_]]))
+repositoryFullLimit=pass:quotes[_percentValue_]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

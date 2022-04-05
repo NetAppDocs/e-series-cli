@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The create asyncMirrorGroup command creates a new, empty asynchronous mirror group on both the local storage array and the remote storage array.'
+keywords: create, asynchronous, mirror, group
+summary: "The create asyncMirrorGroup command creates a new, empty asynchronous mirror group on both the local storage array and the remote storage array."
 ---
 = Create asynchronous mirror group
 :icons: font
@@ -33,21 +33,21 @@ The asynchronous mirror group is associated with the local storage array and rem
 Make sure that you execute the `Create Asynchronous Mirror Group` command on the local storage array. Asynchronous mirror group creation is initiated from the storage array that contains the volumes that hold the primary role in the mirror relationship. You use the `Create Asynchronous Mirror Group` command to specify the identity of the remote storage array that contains the volumes that hold the secondary role in the mirror relationship.
 
 == Syntax
-
+[subs=+macros]
 ----
-create asyncMirrorGroup userLabel="asyncMirrorGroupName"
-(remoteStorageArrayName="storageArrayName" | remoteStorageArrayWWN="wwID")
-[remotePassword="password"]
+create asyncMirrorGroup userLabel=pass:quotes[_"asyncMirrorGroupName"_]
+(remoteStorageArrayName=pass:quotes[_"storageArrayName"_] | remoteStorageArrayWWN=pass:quotes[_"wwID"_])
+[remotePassword=pass:quotes[_"password"_]
 interfaceType=(FC | iSCSI)
-[syncInterval=integer(minutes | hours | days)]
-[warningSyncThreshold=integer(minutes | hours | days)]
-[warningRecoveryThreshold=integer(minutes | hours | days)]
-[warningThresholdPercent=percentValue]
+[syncInterval=pass:quotes[_integer_](minutes | hours | days)]
+[warningSyncThreshold=pass:quotes[_integer_](minutes | hours | days)]
+[warningRecoveryThreshold=pass:quotes[_integer_](minutes | hours | days)]
+[warningThresholdPercent=pass:quotes[_percentValue_]]
 [autoResync=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

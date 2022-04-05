@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/activate-asynchronous-mirroring.html
 sidebar: sidebar
-keywords: 
-summary: 'The activate storageArray feature command activates the Asynchronous Mirroring feature.'
+keywords: activate, asynchronous, mirroring
+summary: "The activate storageArray feature command activates the Asynchronous Mirroring feature."
 ---
 = Activate asynchronous mirroring
 :icons: font

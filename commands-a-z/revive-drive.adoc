@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/revive-drive.html
 sidebar: sidebar
-keywords: 
-summary: 'The revive drive command forces the specified drive to the Optimal state.'
+keywords: revive, drive
+summary: "The revive drive command forces the specified drive to the Optimal state."
 ---
 = Revive drive
 :icons: font
@@ -27,13 +27,13 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-revive drive [trayID,[drawerID,]slotID]
+revive drive pass:quotes[[_trayID_],pass:quotes[[_drawerID,_]]pass:quotes[_slotID_]]
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-diskpool.html
 sidebar: sidebar
-keywords: 
-summary: 'The create diskPool command creates a new disk pool based on the specified parameters.'
+keywords: create, disk pool
+summary: "The create diskPool command creates a new disk pool based on the specified parameters."
 ---
 = Create disk pool
 :icons: font
@@ -29,17 +29,17 @@ If you enter a list of drives, make sure that all of the drives have the same ca
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 create diskPool
-(drives=(trayID1,[drawerID1,]slotID1 ... trayIDN,[drawerIDN,]slotIDN)|
+(drives=pass:quotes[_(trayID1_],pass:quotes[[_drawerID1,_]]pass:quotes[_slotID1 ... trayIDN_],pass:quotes[[_drawerIDN,_]]pass:quotes[_slotIDN)_]|
 driveType=(fibre | SATA | SAS | NVMe4K))
- userLabel="diskPoolName"
-[driveCount=driveCountValue]
+ userLabel=pass:quotes[_"diskPoolName"_]
+[driveCount=pass:quotes[_driveCountValue_]]
 [trayLossProtect=(TRUE | FALSE)]
 [drawerLossProtect=(TRUE | FALSE)]
-[warningThreshold=(warningThresholdValue | default)]
-[criticalThreshold=(criticalThresholdValue | default)]
+[warningThreshold=(pass:quotes[_warningThresholdValue_] | default)]
+[criticalThreshold=(pass:quotes[_criticalThresholdValue_] | default)]
 [criticalPriority=(highest|high|medium|low|lowest)]
 [backgroundPriority=(highest|high|medium|low|lowest)]
 [degradedPriority=(highest|high|medium|low|lowest)]
@@ -51,7 +51,7 @@ driveType=(fibre | SATA | SAS | NVMe4K))
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

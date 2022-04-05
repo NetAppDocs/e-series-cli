@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-snmptrapdestination.html
 sidebar: sidebar
-keywords: 
-summary: 'The create snmpTrapDestination command creates a new Simple Network Management Protocol \(SNMP\) trap destination. A trap destination is the SNMP manager to receive the trap messages.'
+keywords: register, snmp, trap, destination
+summary: "The create snmpTrapDestination command creates a new Simple Network Management Protocol (SNMP) trap destination. A trap destination is the SNMP manager to receive the trap messages."
 ---
 = Register SNMP trap destination
 :icons: font
@@ -20,15 +20,15 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
 create snmpTrapDestination trapReceiverIP=ipAddress
-    (communityName="communityName" | (userName="userName" [engineId=(local | engineId)]))
+    (communityName=pass:quotes[_"communityName" | (userName="userName"_] [engineId=(local | engineId)]))
     [sendAuthenticationFailureTraps=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

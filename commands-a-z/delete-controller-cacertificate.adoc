@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-controller-cacertificate.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete controller caCertificate command removes the installed root/intermediate CA certificate from the specified controller.'
+keywords: remove, install, root, intermediate, ca, certificates
+summary: "The delete controller caCertificate command removes the installed root or intermediate CA certificate from the specified controller."
 ---
 = Remove installed root/intermediate CA certificates
 :icons: font
@@ -27,7 +27,7 @@ delete controller [(a|b)] caCertificate aliases=("alias1" ... "aliasN")
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

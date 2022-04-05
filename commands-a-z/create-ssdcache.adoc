@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-ssdcache.html
 sidebar: sidebar
-keywords: 
-summary: 'The create ssdCache command creates a read cache for a storage array using Solid State Disks \(SSDs\).'
+keywords: create, ssd, cache
+summary: "The create ssdCache command creates a read cache for a storage array using Solid State Disks (SSDs)."
 ---
 = Create SSD cache
 :icons: font
@@ -24,16 +24,16 @@ To execute this command on an E2800 or E5700 storage array, you must have the Su
 Using high performance SSDs to cache read data improves the application I/O performance and response times, and delivers sustained performance improvement across different workloads, especially for high-IOP workloads. SSD cache maximizes the use of expensive fast SSDs. SSD cache works in addition to the primary cache in the controller DRAM. With controller cache, the data is stored in DRAM after a host read. With SSD cache, the data is copied from user-specified base volumes, and then cached on SSDs.
 
 == Syntax
-
+[subs=+macros]
 ----
-create ssdCache userLabel="ssdCacheName"
-drives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn)
+create ssdCache userLabel=pass:quotes[_"ssdCacheName"_]
+drives=pass:quotes[_(trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1 ... trayIDn,[drawerIDn,_]]pass:quotes[_slotIDn_)]
 [updateExistingVolumes=(TRUE|FALSE)]
 [securityType=(none|capable|enabled)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -78,4 +78,4 @@ If all of the SSDs in the SSD cache are data assurance (DA)-capable and the DA f
 
 7.84
 
-8.20 _M3 - FDE drives are now supported. Added the``securityType``parameter.
+8.20 _M3 - FDE drives are now supported. Added the `securityType` parameter.

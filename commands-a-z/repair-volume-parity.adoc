@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/repair-volume-parity.html
 sidebar: sidebar
-keywords: 
-summary: 'The repair volume parity command repairs the parity errors on a volume.'
+keywords: repair, volume, parity
+summary: "The repair volume parity command repairs the parity errors on a volume."
 ---
 = Repair volume parity
 :icons: font
@@ -27,15 +27,15 @@ If volume parity and volume data do not match, volume data might be defective ra
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-repair volume [volumeName] parity
-parityErrorFile="filename"
+repair volume pass:quotes[[_volumeName_]] parity
+parityErrorFile=pass:quotes[_"filename"_]
 [verbose=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/check-repositoryconsistency.html
 sidebar: sidebar
-keywords: 
-summary: 'The check repositoryConsistency command produces a report based on analysis of the data in a specified object’s underlying repository volume.'
+keywords: check, repository, consistency
+summary: "The check repositoryConsistency command produces a report based on analysis of the data in a specified object’s underlying repository volume."
 ---
 = Check repository consistency
 :icons: font
@@ -20,19 +20,19 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-check (snapGroup [snapGroupName] repositoryConsistency |
-snapVolume [snapVolumeName] repositoryConsistency |
-volume [volumeName] repositoryConsistency |
-volumeCopy target [targetName] repositoryConsistency |
-asyncMirrorGroup [asyncMirrorGroupName]
-repositoryConsistency localVolume="localVolumeName"]
-file="filePath"
+check (snapGroup pass:quotes[[_snapGroupName_]] repositoryConsistency |
+snapVolume pass:quotes[[_snapVolumeName_]] repositoryConsistency |
+volume pass:quotes[[_volumeName_]] repositoryConsistency |
+volumeCopy target pass:quotes[[_targetName_]] repositoryConsistency |
+asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]]
+repositoryConsistency localVolume=pass:quotes[_"localVolumeName"_]]
+file=pass:quotes[_"filePath"_]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
