@@ -28,48 +28,47 @@ With firmware version 8.10 the `*cacheFlushStop*` parameter is deprecated and wi
 
 == Syntax
 
-[subs=+macros]
 ----
 set storageArray
 ([autoLoadBalancingEnable=(TRUE | FALSE)]|
-pass:quotes[[autoSupportMaintenanceWindow _AutoSupport Maintenance Window parameters_]]
-pass:quotes[[autoSupport schedule _AutoSupport Schedule Parameters_]]|
+[autoSupportMaintenanceWindow AutoSupport Maintenance Window parameters]
+[autoSupport schedule AutoSupport Schedule Parameters]|
 [autoSupportConfig (enable | disable)]|
 [autoSupportOnDemand (enable | disable)]|
 [autoSupportRemoteDiag (enable |disable)]|
-pass:quotes[[cacheBlockSize=_cacheBlockSizeValue_]]|
-pass:quotes[[cacheFlushStart=_cacheFlushStartSize_]]|
-pass:quotes[[cacheFlushStop=_cacheFlushStopSize_]]|
+[cacheBlockSize=cacheBlockSizeValue]|
+[cacheFlushStart=cacheFlushStartSize]|
+[cacheFlushStop=cacheFlushStopSize]|
 [cacheMirrorDataAssuranceCheckEnable=(TRUE | FALSE)]|
 [controllerHealthImageAllowOverWrite]|
-[defaultHostType=pass:quotes[("_hostTypeName_" |"_hostTypeIdentifier_")]] |
-pass:quotes[[directoryServer _directory server parameters_]]|
-pass:quotes[[externalKeyManagement _external key management parameters_]]|
-pass:quotes[[failoverAlertDelay=_delayValue_]]|
+[defaultHostType=("hostTypeName" |"hostTypeIdentifier")] |
+[directoryServer directory server parameters]|
+[externalKeyManagement external key management parameters]|
+[failoverAlertDelay=delayValue]|
 [hostConnectivityReporting (enable | disable)]|
 [icmpPingResponse=(TRUE | FALSE)]|
-pass:quotes[[isnsIPV4ConfigurationMethod _isns IPv4 Config Method Parameters_]]|
-pass:quotes[[isnsIPv6Address=_ipAddress_]]|
-pass:quotes[[isnsListeningPort=_listeningPortIPAddress_]]]|
+[isnsIPV4ConfigurationMethod isns IPv4 Config Method Parameters]|
+[isnsIPv6Address=ipAddress]|
+[isnsListeningPort=listeningPortIPAddress]]|
 [isnsRegistration=(TRUE | FALSE)]|
-pass:quotes[[learnCycleDate _learn cycle parameters_]]|
-pass:quotes[[localUsername=_local user name parameters_]]|
+[learnCycleDate learn cycle parameters]|
+[localUsername=local user name parameters]|
 [loginBanner file="path_to_login_banner"]|
 [managementInterface restOnly={true | false}]|
 [mediaScanRate=(disabled | 1-30)]|
 [odxEnabled=(TRUE | FALSE)]|
-pass:quotes[[password="_password_"]]|
-pass:quotes[[passwordLength=<_INTEGER_>]]|
-pass:quotes[[pqValidateOnReconstruct _P/Q Validate on Reconstruct parameters_]]|
+[password="password"]|
+[passwordLength=<INTEGER>]|
+[pqValidateOnReconstruct P/Q Validate on Reconstruct parameters]|
 [redundancyMode=(simplex | duplex)]|
-pass:quotes[[revocationCheckSettings _revocation check settings parameters_]]|
+[revocationCheckSettings revocation check settings parameters]|
 [securityKey]|
-pass:quotes[[symbol _SYMbol user name and password parameters_]]|
-pass:quotes[[syslog _syslog parameters_]]|
+[symbol SYMbol user name and password parameters]|
+[syslog syslog parameters]|
 [time]|
-[trayPositions=pass:quotes[(controller | _trayID ... trayIDn_)]]|
+[trayPositions=(controller | trayID ... trayIDn)]|
 [unnamedDiscoverySession=(TRUE | FALSE)]|
-pass:quotes[[userLabel="_storageArrayName_"]]|
+[userLabel="storageArrayName"]|
 [userSession sessionTimeout=n]|
 [vaaiEnabled=(TRUE | FALSE)])
 ----

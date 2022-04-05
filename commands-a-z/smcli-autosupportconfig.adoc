@@ -29,10 +29,9 @@ You can create two major types of delivery methods for sending AutoSupport messa
 
 == Syntax for SMTP Delivery Method
 
-[subs=+macros]
 ----
 SMcli -autoSupportConfig deliveryMethod=SMTP
-mailRelayServer=pass:quotes[<*mailRelayServerName*>] senderMail=pass:quotes[<*senderEmailAddress*>]
+mailRelayServer=<mailRelayServerName> senderMail=<senderEmailAddress>
 ----
 
 == Parameters for the SMTP Delivery Method
@@ -59,11 +58,10 @@ Allows you to specify the sender email address for the AutoSupport messages.
 
 == Syntax for HTTP/HTTPs Delivery Methods
 
-[subs=+macros]
 ----
-SMcli -autoSupportConfig deliveryMethod=pass:quotes[{_HTTP|HTTPS_}]
- {direct|proxyConfigScript=pass:quotes[<_proxyConfigScript_>]| proxyServer
-hostAddress:pass:quotes[<_address_>]portNumber=pass:quotes[<_portNumber_>] [userName=pass:quotes[<_userName_>password=<_password_>]]}
+SMcli -autoSupportConfig deliveryMethod={HTTP|HTTPS}
+ {direct|proxyConfigScript=<proxyConfigScript>| proxyServer
+hostAddress:<address>portNumber=<portNumber> [userName=<userName>password=<password>]}
 ----
 
 == Parameters for the HTTP/HTTPS Delivery Methods
