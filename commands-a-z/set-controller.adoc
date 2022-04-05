@@ -21,16 +21,15 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
-[subs=+macros]
 ----
 set controller [(a|b)]
 [availability=(online | offline | serviceMode)]
-[ethernetPort [(1| 2)] pass:quotes[_ethernetPortOptions_]]
-[globalNVSRAMByte [nvsramOffset]=pass:quotes[(_nvsramByteSetting_ | _nvsramBitSetting_)]]
-[hostNVSRAMByte pass:quotes[[_hostType_, _nvsramOffset_]]=pass:quotes[(_nvsramByteSetting_ |_nvsramBitSetting_)]]
-[IPv4GatewayIP=pass:quotes[_ipAddress_]]
-[IPv6RouterAddress=pass:quotes[_ipv6Address_]]
-[iscsiHostPort pass:quotes[[_portLabel_]] pass:quotes[_iscsiHostPortOptions_]]
+[ethernetPort [(1| 2)] ethernetPortOptions]
+[globalNVSRAMByte [nvsramOffset]=(nvsramByteSetting | nvsramBitSetting)]
+[hostNVSRAMByte [hostType, nvsramOffset]=(nvsramByteSetting | nvsramBitSetting)]
+[IPv4GatewayIP=ipAddress]
+[IPv6RouterAddress=ipv6Address]
+[iscsiHostPort [portLabel] iscsiHostPortOptions]
 [rloginEnabled=(TRUE | FALSE)]
 [serviceAllowedIndicator=(on | off)]
 ----

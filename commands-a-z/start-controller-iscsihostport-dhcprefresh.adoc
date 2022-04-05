@@ -24,9 +24,9 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 If the configuration method for the interface is not set to DHCP, the procedure returns an error.
 
 == Syntax
-[subs=+macros]
+
 ----
-start controller [(a|b)] iscsiHostPort pass:quotes[[_portLabel_]] dhcpRefresh
+start controller [(a|b)] iscsiHostPort [portLabel] dhcpRefresh
 ----
 
 == Parameter

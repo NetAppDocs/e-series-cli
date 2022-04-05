@@ -26,10 +26,9 @@ This command is deprecated and is replaced by the xref:set-controller-hostport.a
 
 == Syntax
 
-[subs=+macros]
 ----
 set controller [(a|b)]
- iscsiHostPort pass:quotes[[_portLabel_]]
+iscsiHostPort [portLabel]
 ----
 
 ----
