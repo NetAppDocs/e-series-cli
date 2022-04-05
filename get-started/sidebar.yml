@@ -48,4 +48,4 @@ entries:
   - title: SMcli https mode
     url: /get-started/new-https-mode.html
   - title: Volume group migration
-    url: ../commands-category/learn-about-volume-group-migration.html
+    url: /get-started/learn-about-volume-group-migration.html

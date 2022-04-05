@@ -4,12 +4,12 @@ sidebar: sidebar
 keywords: new, smcli, https mode
 summary: "The new SMcli can operate in an https mode that offers additional security features."
 ---
-= New SMcli https mode
+= SMcli https mode
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-The new SMcli can operate in an `*https*` mode that offers additional security features.
+The SMcli can operate in an `*https*` mode that offers additional security features.
 
 [NOTE]
 ====

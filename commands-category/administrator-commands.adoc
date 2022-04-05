@@ -832,7 +832,7 @@ link:../commands-a-z/set-snmpsystemvariables.html[Update SNMP MIB II system grou
 
 link:../commands-a-z/set-snmptrapdestination-trapreceiverip.html[Update SNMP trap destination]
 
-= Security administrators commands
+== Security administrators commands
 
 link:../commands-a-z/create-storagearray-directoryserver.html[Create storage array directory server]
 
