@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/replication-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: replication, commands, consistency group, command, repository volume,
+summary: "Replication commands"
 ---
 = Replication commands
 :icons: font

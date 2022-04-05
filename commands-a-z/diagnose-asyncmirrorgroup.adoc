@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/diagnose-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The diagnose asyncMirrorGroup command tests possible communication problems between the local storage array and the remote storage array associated with an asynchronous mirror group.'
+keywords: diagnose, command, tests, possible, communication, problems, local, storage, array, remote, asynchronous, mirror, group
+summary: "The diagnose asyncMirrorGroup command tests possible communication problems between the local storage array and the remote storage array associated with an asynchronous mirror group."
 ---
 = Test asynchronous mirror group connectivity
 :icons: font
@@ -25,23 +25,23 @@ If you are running the command on the E2800 or E5700 array, the client type must
 To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-diagnose asyncMirrorGroup [asyncMirrorGroupName]
+pass:quotes[diagnose asyncMirrorGroup [_asyncMirrorGroupName_]]
 testID=(all | connectivity | latency | bandwidth | portConnections)
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`asyncMirrorGroup`
+`*asyncMirrorGroup*`
 a|
 The name of an existing asynchronous mirror group that you want to test. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name has special characters or numbers, you must enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets.
 
 a|
-`testID`
+`*testID*`
 a|
 The identifier for the diagnostic test you want to run. The identifier and corresponding tests are as follows:
 

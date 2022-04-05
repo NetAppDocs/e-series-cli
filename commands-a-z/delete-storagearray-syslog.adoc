@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-storagearray-syslog.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete storageArray syslog command allows you to delete the specified syslog configuration used for storing audit logs.'
+keywords: delete, storage, array, syslog, command, allow, delete, specified, configuration, storing, audit, logs, role
+summary: "The delete storageArray syslog command allows you to delete the specified syslog configuration used for storing audit logs."
 ---
 = Delete storage array syslog configuration
 :icons: font
@@ -26,7 +26,7 @@ delete storageArray syslog (allServers | id="<id>")
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/enable-volumegroup-security.html
 sidebar: sidebar
-keywords: 
-summary: 'The enable volumeGroup security command converts a non-secure volume group to a secure volume group.'
+keywords: enable, volumegroup, security, command, non secure, volume, group
+summary: "The enable volumeGroup security command converts a non-secure volume group to a secure volume group."
 ---
 = Enable volume group security
 :icons: font
@@ -20,13 +20,13 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-enable volumeGroup [volumeGroupName] security
+pass:quotes[enable volumeGroup [_volumeGroupName_]] security
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

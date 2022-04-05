@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/disable-storagearray.html
 sidebar: sidebar
-keywords: 
-summary: 'The disable storageArray command disables a storage array feature.'
+keywords: disable, storage, array, command, storage, feature
+summary: "The disable storageArray command disables a storage array feature."
 ---
 = Disable storage array feature
 :icons: font
@@ -24,12 +24,12 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 Run the `show storageArray` command to show a list of the feature identifiers for all enabled features in the storage array.
 
 == Syntax
-
+[subs=+macros]
 ----
-disable storageArray (featurePack | feature=featureAttributeList)
+pass:quotes[disable storageArray (featurePack | feature=_featureAttributeList_)]
 ----
 
-The `featureAttributeList` can be one or more of these attribute values. If you enter more than one attribute value, separate the values with a space.
+pass:quotes[The `_featureAttributeList_`] can be one or more of these attribute values. If you enter more than one attribute value, separate the values with a space.
 
 * `driveSecurity`
 

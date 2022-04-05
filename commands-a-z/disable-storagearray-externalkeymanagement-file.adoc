@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/disable-storagearray-externalkeymanagement-file.html
 sidebar: sidebar
-keywords: 
-summary: 'The disable storageArray externalKeyManagement file command disables external security key management for a storage array that has Full Disk Encryption drives.'
+keywords: disable, storage, array, external, management, file, command, disable, security, key, full, disk, encryption, drives
+summary: "The disable storageArray externalKeyManagement file command disables external security key management for a storage array that has Full Disk Encryption drives."
 ---
 = Disable external security key management
 :icons: font
@@ -20,12 +20,12 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
 disable storageArray externalKeyManagement
-file="fileName"
-passPhrase="passPhraseString"
-saveFile=(TRUE | FALSE)
+pass:quotes[file="_fileName_"]
+pass:quotes[passPhrase="_passPhraseString_"]
+pass:quotes[saveFile=(_TRUE_ | _FALSE_)]
 ----
 
 == Context
@@ -41,7 +41,7 @@ This command applies only to external key management.
 ====
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -53,7 +53,7 @@ The file path and the file name where the internal security key file is stored. 
 file="C:\Program Files\CLI\sup\drivesecurity.slk"
 ----
 
-[NOTE]
+[IMPORTANT]
 ====
 The file name must have an extension of `.slk`.
 ====

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-storagearray-directoryservers.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete storageArray directoryServers command allows you to delete one or more directory servers.'
+keywords: delete, storage, array, directory, servers, command, allow, directory, role
+summary: "The delete storageArray directoryServers command allows you to delete one or more directory servers."
 ---
 = Delete storage array directory server
 :icons: font
@@ -20,14 +20,14 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-delete storageArray (allDirectoryServers |
- directoryServers ["domainId1" ... "domainIdN"])
+pass:quotes[delete storageArray (allDirectoryServers |
+ directoryServers ["_domainId1_" ... "_domainIdN_"])
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

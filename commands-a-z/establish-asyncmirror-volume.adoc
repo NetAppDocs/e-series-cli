@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/establish-asyncmirror-volume.html
 sidebar: sidebar
-keywords: 
-summary: 'The establish asyncMirror volume command completes an asynchronous mirrored pair on the remote storage array by adding a secondary volume to an existing asynchronous mirror group.'
+keywords: establish, asynmirror, volume, asynchronous, mirrored, remote, storage, array, secondary, existing
+summary: "The establish asyncMirror volume command completes an asynchronous mirrored pair on the remote storage array by adding a secondary volume to an existing asynchronous mirror group."
 ---
 = Establish asynchronous mirrored pair
 :icons: font
@@ -26,15 +26,15 @@ Before you run this command, the asynchronous mirror group must exist and the pr
 The two volumes that comprise an asynchronous mirrored pair function as a single entity. Establishing an asynchronous mirrored pair allows you to perform actions on the entire mirrored pair versus the two individual volumes.
 
 == Syntax
-
+[subs=+macros]
 ----
-establish asyncMirror volume="secondaryVolumeName"
-asyncMirrorGroup="asyncMirrorGroupName"
-primaryVolume="primaryVolumeName"
+pass:quotes[establish asyncMirror volume="_secondaryVolumeName_"]
+pass:quotes[asyncMirrorGroup="_asyncMirrorGroupName_"]
+pass:quotes[primaryVolume="_primaryVolumeName_"]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

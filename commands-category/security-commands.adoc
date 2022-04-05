@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/security-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: security, commands, audit, log management, authentication, certificate, management, embedded, external, key
+summary: "Security commands"
 ---
 = Security commands
 :icons: font

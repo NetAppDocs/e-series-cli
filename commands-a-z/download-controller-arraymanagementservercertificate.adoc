@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/download-controller-arraymanagementservercertificate.html
 sidebar: sidebar
-keywords: 
-summary: 'The download controller arrayManagementServerCertificate command installs the server certificate on the controller.'
+keywords: download, controller, array, management, server, certificate, command, install
+summary: "The download controller arrayManagementServerCertificate command installs the server certificate on the controller."
 ---
 = Install server signed certificate
 :icons: font
@@ -24,14 +24,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 Perform this action for each controller using the signed certificate that is applicable to the controller. The signed certificate must include the controller's IPs/DNS names.
 
 == Syntax
-
+[subs=+macros]
 ----
 
-download controller [(a|b)] arrayManagementServerCertificate file="filename"
+download controller [(a|b)] pass:quotes[arrayManagementServerCertificate file="_filename_"]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

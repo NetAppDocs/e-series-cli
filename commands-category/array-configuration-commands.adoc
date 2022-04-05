@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/array-configuration-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: configuration, commands, array, controller, health, image, hostport, feature, management
+summary: "Array configuration commands"
 ---
 = Array configuration commands
 :icons: font

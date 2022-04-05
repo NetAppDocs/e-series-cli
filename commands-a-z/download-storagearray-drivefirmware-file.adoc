@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/download-storagearray-drivefirmware-file.html
 sidebar: sidebar
-keywords: 
-summary: 'The download storageArray driveFirmware file command downloads firmware images to all of the drives in the storage array.'
+keywords: download, storage, array, drive, firmware, command, images, roles, supported
+summary: "The download storageArray driveFirmware file command downloads firmware images to all of the drives in the storage array."
 ---
 = Download storage array drive firmware
 :icons: font
@@ -20,18 +20,18 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-download storageArray driveFirmware file="filename"
-[file="filename2"... file="filenameN"]
+pass:quotes[download storageArray driveFirmware file="_filename_"]
+pass:quotes[[file="_filename2_"... file="_filenameN_"]]
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`file`
+`*file*`
 a|
 The file path and the file name of the file that contains the firmware image. Enclose the file path and the file name of the firmware image in double quotation marks (" "). For example:
 

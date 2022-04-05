@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/download-drive-firmware.html
 sidebar: sidebar
-keywords: 
-summary: 'The download drive firmware command downloads a firmware image to a drive.'
+keywords: download, drive, firmware, array, support, role, context, level
+summary: "The download drive firmware command downloads a firmware image to a drive."
 ---
 = Download drive firmware
 :icons: font
@@ -21,7 +21,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Context
 
-[NOTE]
+[ATTENTION]
 ====
 *Possible damage to the storage array configuration* -- Downloading drive firmware incorrectly can result in damage to the drives or a loss of data access.
 ====
@@ -34,18 +34,18 @@ The `content` parameter is deprecated. Use the `firmware` parameter instead.
 This command is intended for downloading a firmware image to only one drive model at a time. If you use this command in a script, make sure that you use this command only once. If you use this command more than once, the operation can fail. You can download firmware images to all of the drives in a storage array at one time by using the `download storageArray driveFirmware` command.
 
 == Syntax
-
+[subs=+macros]
 ----
-download (drive \[trayID,[drawerID,]slotID\] \| drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\])
+pass:quotes[download (drive \[_trayID_,[_drawerID,_]pass:quotes[_slotID_] \| drives\ pass:quotes[[_trayID1_,[_drawerID1_,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\])
  [online|offline] firmware file="filename"
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`drive` or `drives`
+`*drive*` or `*drives*`
 a|
 For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
@@ -54,12 +54,12 @@ All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on
 Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
 
 a|
-`online` or `offline`
+`*online*` or `*offline*`
 a|
-Select `online` to perform an online drive firmware download, otherwise select `offline`. The default value is `offline`.
+Select `*online*` to perform an online drive firmware download, otherwise select `*offline*`. The default value is `*offline*`.
 
 a|
-`file`
+`*file*`
 a|
 The file path and the file name of the file that contains the firmware image. Enclose the file path and the file name of the firmware image in double quotation marks (" "). For example:
 
@@ -68,7 +68,7 @@ The file path and the file name of the file that contains the firmware image. En
 Valid file names have a `.dlp`  extension.
 
 a|
-`firmware`
+`*firmware*`
 a|
 Indicates to download controller firmware.
 
@@ -95,6 +95,6 @@ The `drive` parameter supports both high-capacity drive trays and low-capacity d
 
 == Minimum firmware level
 
-7.60 adds the `drawerID` user input.
+7.60 adds the `*drawerID*` user input.
 
-8.25 adds the `online` parameter.
+8.25 adds the `*online*` parameter.

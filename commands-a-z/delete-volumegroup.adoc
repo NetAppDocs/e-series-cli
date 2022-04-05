@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-volumegroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete volumeGroup command deletes an entire volume group and its associated volumes.'
+keywords: delete, volume, group, command, entire, associated, support, role
+summary: "The delete volumeGroup command deletes an entire volume group and its associated volumes."
 ---
 = Delete volume group
 :icons: font
@@ -21,23 +21,23 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Context
 
-[NOTE]
+[IMPORTANT]
 ====
 *Possible damage to the storage array configuration* -- All of the data in the volume group is lost as soon as you run this command.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-delete volumeGroup [volumeGroupName]
+pass:quotes[delete volumeGroup [_volumeGroupName_]]
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`volumeGroup`
+`*volumeGroup*`
 a|
 The name of the volume group that you want to delete. Enclose the volume group name in square brackets ([ ]).
 |===

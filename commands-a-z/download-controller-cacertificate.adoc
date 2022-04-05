@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/download-controller-cacertificate.html
 sidebar: sidebar
-keywords: 
-summary: 'The download controller caCertificate command installs the root/intermediate CA certificates on the controllers’ web servers to validate the web server signed certificate.'
+keywords: download, controller, certificate, command, install, root, intermediate, web, servers, validate, array, roles, context
+summary: "The download controller caCertificate command installs the root/intermediate CA certificates on the controllers’ web servers to validate the web server signed certificate."
 ---
 = Install root/intermediate CA certificates
 :icons: font
@@ -24,15 +24,15 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 Perform this action for each controller.
 
 == Syntax
-
+[subs=+macros]
 ----
 
-download controller[(a|b)] caCertificate [alias="string"]
-         file="filename"
+download controller[(a|b)] caCertificate pass:quotes[[alias="_string_"]]
+         pass:quotes[file="_filename_"]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

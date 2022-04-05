@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/learn-about-volume-group-migration.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: volume, group, migration, learn, data, access, export, import, component
+summary: "Learn about volume group migration"
 ---
 = Learn about volume group migration
 :icons: font

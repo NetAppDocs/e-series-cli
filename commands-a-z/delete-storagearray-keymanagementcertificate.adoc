@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-storagearray-keymanagementcertificate.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete storageArray keyManagementCertificate command removes the installed external key management certificate from the storage array.'
+keywords: delete, storage, array, key, management, certificate, command, remove, install, external
+summary: "The delete storageArray keyManagementCertificate command removes the installed external key management certificate from the storage array."
 ---
 = Remove installed external key management certificate
 :icons: font
@@ -27,18 +27,18 @@ This command applies only to external key management.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 
-delete storageArray keyManagementCertificate certificateType=certificate_type
+pass:quotes[delete storageArray keyManagementCertificate certificateType=_certificate_type_]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`certificateType`
+`*certificateType*`
 a|
 Allows you to specify the certificate type to delete. Valid choices are: `client` or `server`.
 |===

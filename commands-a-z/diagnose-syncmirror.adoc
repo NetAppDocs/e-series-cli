@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/diagnose-syncmirror.html
 sidebar: sidebar
-keywords: 
-summary: 'The diagnose syncMirror command tests the connection between the specified primary volumes and the mirror volumes on a storage array with the synchronous mirroring feature enabled.'
+keywords: diagnose, syncmirror, command, test, connection, specified, primary, volumes, mirror, storage, array, synchronous, feature, enabled
+summary: "The diagnose syncMirror command tests the connection between the specified primary volumes and the mirror volumes on a storage array with the synchronous mirroring feature enabled."
 ---
 = Diagnose synchronous mirroring
 :icons: font
@@ -27,24 +27,23 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-diagnose syncMirror (primary [primaryVolumeName] |
-primaries ["primaryVolumeName1" ... "primaryVolumeNameN"])
+pass:quotes[diagnose syncMirror (_primary [primaryVolumeName_]] |pass:quotes[primaries ["_primaryVolumeName1_]" ... pass:quotes[_"primaryVolumeNameN"_]])
 testID=connectivity
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`primary`
+`*primary*`
 a|
 The name of the primary volume of the remote mirror pair that you want to test. Enclose the primary volume name in square brackets ([ ]). If the primary volume name has special characters or consists only of numbers, you must enclose the primary volume name in double quotation marks (" ") inside square brackets.
 
 a|
-`primaries`
+`*primaries*`
 a|
 You can enter more than one volume name. Enclose all of the volume names in one set of square brackets ([ ]). Enclose each volume name in double quotation marks (" "). Separate each volume name with a space.
 

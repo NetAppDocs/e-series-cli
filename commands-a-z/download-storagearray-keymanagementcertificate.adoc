@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/download-storagearray-keymanagementcertificate.html
 sidebar: sidebar
-keywords: 
-summary: 'The download storageArray keyManagementCertificate command installs the external key management certificates on the storage array.'
+keywords: download, storage, array, management, key, certificate, command, intall, external, support, role
+summary: "The download storageArray keyManagementCertificate command installs the external key management certificates on the storage array."
 ---
 = Install storage array external key management certificate
 :icons: font
@@ -27,14 +27,14 @@ This command applies only to external key management.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 
-download storageArray keyManagementClientCertificate certificateType=(client|server) file="filename"
+pass:quotes[download storageArray keyManagementClientCertificate certificateType=(client|server) file="_filename_"]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/external-key-management-commands-related-to-certificates.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: external, key, management, commands, certificates
+summary: "External key management commands related to certificates"
 ---
 = External key management commands related to certificates
 :icons: font
