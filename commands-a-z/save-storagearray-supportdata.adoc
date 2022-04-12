@@ -69,11 +69,16 @@ a|
 This file contains all the transmitted AutoSupport messages.
 
 a|
-Web Server Client Info (E2800 or E5700 only)
+Web Server Client Info
 a|
 `client-info.txt`
 
 This file specifies various Web Services client information.
+
+[NOTE]
+====
+This parameter is not applicable for E2700 and E5600 arrays.
+====
 
 a|
 Drive cabling topology

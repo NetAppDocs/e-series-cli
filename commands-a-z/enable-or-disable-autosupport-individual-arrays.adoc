@@ -21,9 +21,13 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Context
 
-After enabling this feature, you can next enable the AutoSupport OnDemand feature (if desired), and then enable the AutoSupport Remote Diagnostics feature (if desired). You must enable the three features in this order.
+After enabling this feature, you can next enable the AutoSupport OnDemand feature (if desired), and then enable the AutoSupport Remote Diagnostics feature (if desired).
 
-image::../media/baseasup_w_first_enable.gif[]
+You must enable the three features in this order:
+[START=1]
+. Enable AutoSupport
+. Enable AutoSupport OnDemand
+. Enable AutoSupport Remote Diagnostics
 
 == Syntax
 
@@ -41,13 +45,7 @@ a|
 Allows you to enable or disable AutoSupport. If the OnDemand and Remote Diagnostics features are enabled, the disable action will turn off OnDemand and Remote Diagnostics features as well.
 |===
 
-== Minimum Firmware Level
-
-7.86 - added command for all storage arrays up to model E2700 and E5600
-
-8.40 - added support for the E2800 and E5700
-
-== Examples
+=== Examples
 
 ----
 
@@ -63,3 +61,9 @@ Use the `show storageArray autoSupport` command to see whether you have enabled 
 ----
 The AutoSupport feature is enabled on this storage array.
 ----
+
+== Minimum Firmware Level
+
+7.86 - added command for all storage arrays up to model E2700 and E5600
+
+8.40 - added support for the E2800 and E5700

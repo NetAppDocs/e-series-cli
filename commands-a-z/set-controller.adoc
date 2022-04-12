@@ -72,9 +72,8 @@ a|
 a|
 This parameter enables you to set options for the iSCSI ports on the controller. Enter the iSCSI port label or number and then select the options for that port.
 
-See the following for more information:
+For more information, see the _Identifying an iSCSI host port label_ section below. 
 
-<<ESERIES-SECTION_ID_ON_CONREFFED_SECTION,"Identifying an iSCSI host port label">>
 
 a|
 `*rloginEnabled*`

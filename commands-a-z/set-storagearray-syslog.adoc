@@ -55,11 +55,7 @@ a|
 Component name; currently only "auditLog" is supported.
 |===
 
-== Minimum firmware level
-
-8.42
-
-== Example
+=== Example
 
 ----
 SMcli -n Array1 -c "set storageArray syslog
@@ -72,3 +68,7 @@ Components
 1. Component Name: auditLog
 SMcli completed successfully.
 ----
+
+== Minimum firmware level
+
+8.42

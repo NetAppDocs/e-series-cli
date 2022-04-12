@@ -13,7 +13,7 @@ The `set emailAlert` command configures the email to send an email to a specifie
 
 == Supported Arrays
 
-This command applies to theE2800, E5700, EF600, and EF300 storage arrays. However, you can use the command as an SMcli command, not a script command, for E2700 or E5600 arrays. In this case, the command applies to all of the arrays in the management domain.
+This command applies to the E2800, E5700, EF600, and EF300 storage arrays. However, you can use the command as an SMcli command, not a script command, for E2700 or E5600 arrays. In this case, the command applies to all of the arrays in the management domain.
 
 == Syntax
 

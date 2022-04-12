@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: enable, disable, autosupport, ondemand, feature, individual, E2800, E5700, arrays
 summary: "The set storageArray autoSupportOnDemand command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data."
 ---
-= Enable or disable the AutoSupport OnDemand feature (for individual E2800 or E5700 arrays)
+= Enable or disable the AutoSupport OnDemand feature
 :icons: font
 :imagesdir: ./media/
 
@@ -22,8 +22,6 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 == Context
 
 Before enabling this feature, you must first enable the AutoSupport feature on the storage array. After enabling this feature, you can next enable the AutoSupport Remote Diagnostics feature (if desired).
-
-image::../media/baseasup_w_second_enable.gif[]
 
 == Syntax
 
