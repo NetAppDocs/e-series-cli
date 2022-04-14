@@ -1,7 +1,7 @@
 ---
 settings:
   name: SANtricity commands
-  internal:
+  internal: 
     pdf_enabled: true
   prod:
     pdf_enabled: true
