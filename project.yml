@@ -2,7 +2,7 @@
 settings:
   name: SANtricity commands
   internal:
-    pdf_enabled: true
+    pdf_enabled: true 
   prod:
     pdf_enabled: true
     harmony_enabled: true
