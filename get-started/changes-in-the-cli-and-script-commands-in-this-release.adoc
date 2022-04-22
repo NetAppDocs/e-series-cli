@@ -45,7 +45,7 @@ xref:../commands-a-z/start-diskpool-resourceprovisioning.adoc[Start Disk Pool Re
 a|
 Updated `disableResourceProvisioning` parameter description.
 a|
-xref:..commands-a-z/recreate-storagearray-securitykey.html[Re-create external security key]
+xref:../commands-a-z/recreate-storagearray-securitykey.html[Re-create external security key]
 a|
 Added `deleteOldKey` parameter.
 |===

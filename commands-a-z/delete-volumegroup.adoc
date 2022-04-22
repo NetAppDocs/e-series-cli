@@ -37,7 +37,7 @@ pass:quotes[delete volumeGroup [_volumeGroupName_]]
 |===
 | Parameter| Description
 a|
-`*volumeGroup*`
+`volumeGroup`
 a|
 The name of the volume group that you want to delete. Enclose the volume group name in square brackets ([ ]).
 |===

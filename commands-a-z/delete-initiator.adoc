@@ -43,7 +43,7 @@ delete initiator (["initiatorName"] | <"initiatorQualifiedName">)
 |===
 | Parameter| Description
 a|
-`*initiator*`
+`initiator`
 a|
 Allows you to specify the initiator identifier for which you want to delete. Enclose the name in double quotation marks ("` "`). You also must enclose the name in square brackets ([ ]) if the value is a user label or angle brackets (< >) if the value is a qualified name (for example, iqn or nqn).
 |===

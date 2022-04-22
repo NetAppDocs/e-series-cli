@@ -31,11 +31,11 @@ delete syslog (allServers | serverAddresses pass:quotes[[_serverAddress1_ ... _s
 |===
 | Parameter| Description
 a|
-`*allServers*`
+`allServers`
 a|
 Allows the user to delete all syslog servers.
 a|
-`*serverAddresses*`
+`serverAddresses`
 a|
 Allows the user to delete the syslog servers. Enclose the servers in square brackets ([ ]).
 |===

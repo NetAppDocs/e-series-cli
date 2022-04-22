@@ -69,7 +69,7 @@ a|
 *Possible damage to the storage array configuration* -- Downloading a previous version of the controller firmware or NVSRAM incorrectly can result in damage to the controllers or a loss of data access. Contact technical support before using this parameter.
 ====
 
-This setting allows a previous version of firmware to be loaded. The default value is `FALSE`. Set the `*downgrade*` parameter to `TRUE` if you want to download an earlier version of firmware.
+This setting allows a previous version of firmware to be loaded. The default value is `FALSE`. Set the `downgrade` parameter to `TRUE` if you want to download an earlier version of firmware.
 
 [NOTE]
 ====

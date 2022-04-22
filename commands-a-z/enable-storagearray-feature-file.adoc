@@ -71,7 +71,7 @@ pass:quotes[enable storageArray feature=_featureAttributeList_]
 
 To evaluate a feature for a trial period, you can enter one or more of the following attribute values for the `featureAttributeList`. If you enter more than one attribute value, separate the values with a space.
 
-* driveSecurity
+* `driveSecurity`
 
 == Minimum firmware level
 

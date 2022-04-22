@@ -38,7 +38,7 @@ pass:quotes[delete storageArray keyManagementCertificate certificateType=_certif
 |===
 | Parameter| Description
 a|
-`*certificateType*`
+`certificateType`
 a|
 Allows you to specify the certificate type to delete. Valid choices are: `client` or `server`.
 |===

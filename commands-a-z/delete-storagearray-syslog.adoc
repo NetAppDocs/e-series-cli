@@ -30,11 +30,11 @@ delete storageArray syslog (allServers | id="<id>")
 |===
 | Parameter| Description
 a|
-allServers
+`allServers`
 a|
 Delete all syslog configurations.
 a|
-id
+`id`
 a|
 ID of the syslog server to delete. The ID is available using the `show storageArray syslog` command.
 |===
