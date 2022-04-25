@@ -50,27 +50,27 @@ file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*allEvents*`
+`allEvents`
 a|
 The parameter to save all of the events to a file.
 a|
-`*criticalEvents*`
+`criticalEvents`
 a|
 The parameter to save only the critical events to a file.
 a|
-`*warningEvents*`
+`warningEvents`
 a|
 The parameter to save only the warning events to a file.
 a|
-`*infoEvents*`
+`infoEvents`
 a|
 The parameter to save only the informational events to a file.
 a|
-`*debugEvents*`
+`debugEvents`
 a|
 The parameter to save only the debug events to a file.
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the events. Enclose the file name in double quotation marks (" "). For example:
 
@@ -79,11 +79,11 @@ The file path and the file name to which you want to save the events. Enclose th
 The default name of the file that contains the contents of the Major Event Log is `major-event-log.txt`. This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
 
 a|
-`*count*`
+`count`
 a|
 The number of events that you want to save to a file. If you do not enter a value for the count, all events matching the type of event you specify are saved to the file. If you enter a value for the count, only that number of events (starting with the last event entered) are saved to the file. Use integer values.
 a|
-`*forceSave*`
+`forceSave`
 a|
 The parameter to force saving the debug events you may have filtered from view to a file. To force saving the events, set this parameter to `TRUE`. The default value is `FALSE`.
 [NOTE]
@@ -97,7 +97,7 @@ Using this parameter saves debug events that have been filtered out of the SANtr
 
 7.77 add these parameters:
 
-* `*warningEvents*`
-* `*infoEvents*`
-* `*debugEvents*`
-* `*forceSave*`
+* `warningEvents`
+* `infoEvents`
+* `debugEvents`
+* `forceSave`

@@ -43,7 +43,7 @@ save storageArray configuration file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the configuration settings. Enclose the file name in double quotation marks (" "). For example:
 
@@ -52,23 +52,23 @@ The file path and the file name to which you want to save the configuration sett
 The default name of the file that contains the configuration settings is `storage-array-configuration.cfg`. This command does not automatically append a file extension to the saved file. You must specify a file extension when entering the file name.
 
 a|
-`*allConfig*`
+`allConfig`
 a|
 The setting to save all of the configuration values to the file. (If you choose this parameter, all of the configuration parameters are set to `TRUE` .)
 a|
-`*globalSettings*`
+`globalSettings`
 a|
 The setting to save the global settings to the file. To save the global settings, set this parameter to `TRUE`. To prevent saving the global settings, set this parameter to `FALSE`. The default value is `TRUE`.
 a|
-`*volumeConfigAndSettings*`
+`volumeConfigAndSettings`
 a|
 The setting to save the volume configuration settings and all of the global settings to the file. To save the volume configuration settings and global settings, set this parameter to `TRUE`. To prevent saving the volume configuration settings and global settings, set this parameter to `FALSE`. The default value is `TRUE`.
 a|
-`*hostTopology*`
+`hostTopology`
 a|
 The setting to save the host topology to the file. To save the host topology, set this parameter to `TRUE`. To prevent saving the host topology, set this parameter to `FALSE`. The default value is `FALSE`.
 a|
-`*lunMappings*`
+`lunMappings`
 a|
 The setting to save the LUN or NSID mapping to the file. To save the LUN or NSID mapping, set this parameter to `TRUE`. To prevent saving the LUN or NSID mapping, set this parameter to `FALSE`. The default value is `FALSE`.
 |===

@@ -40,47 +40,47 @@ set controller [(a|b)]
 |===
 | Parameter| Description
 a|
-`*controller*`
+`controller`
 a|
 The controller for which you want to define properties. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the identifier for the controller in square brackets ([ ]). If you do not specify a controller, the firmware for the controller returns a syntax error.
 a|
-`*availability*`
+`availability`
 a|
 The mode for the controller, which you can set to `online`, `offline`, or `serviceMode` (service).
 a|
-`*ethernetPort*`
+`ethernetPort`
 a|
 The attributes (options) for the management Ethernet ports. The entries to support this parameter are listed in the Syntax Element Statement Data table that follows. Many settings are possible, including setting the IP address, the gateway address, and the subnet mask address.
 a|
-`*globalNVSRAMByte*`
+`globalNVSRAMByte`
 a|
 A portion of the controller NVSRAM. Specify the region to be modified using the starting byte offset within the region and the byte value or bit value of the new data to be stored into the NVSRAM.
 a|
-`*hostNVSRAMByte*`
+`hostNVSRAMByte`
 a|
 The NVSRAM for the host-specific region. The setting specifies the host index for the specific host, the starting offset within the region, the number of bytes, and the byte value or bit value of the new data to be stored into the NVSRAM.
 a|
-`*IPv4GatewayIP*`
+`IPv4GatewayIP`
 a|
 The IP address of the node that provides the interface to the network. The address format for the IPv4 gateway is *(0--255).(0--255).(0--255).(0--255)*
 a|
-`*IPv6RouterAddress*`
+`IPv6RouterAddress`
 a|
 The IP address of IPv6 router that connects two or more logical subnets. The address format for the IPv6 router is `(0–FFFF):(0–FFFF):(0–FFFF):(0–FFFF): (0–FFFF):(0–FFFF):(0–FFFF):(0–FFFF)`.
 a|
-`*iscsiHostPort*`
+`iscsiHostPort`
 a|
 This parameter enables you to set options for the iSCSI ports on the controller. Enter the iSCSI port label or number and then select the options for that port.
 
-For more information, see the _Identifying an iSCSI host port label_ section below. 
+For more information, see the _Identifying an iSCSI host port label_ section below.
 
 
 a|
-`*rloginEnabled*`
+`rloginEnabled`
 a|
 The setting for whether the remote login feature is turned on or turned off. To turn on the remote login feature, set this parameter to `TRUE`. To turn off the remote login feature, set this parameter to `FALSE`.
 a|
-`*serviceAllowedIndicator*`
+`serviceAllowedIndicator`
 a|
 The setting for whether the Service Action Allowed indicator light is turned on or turned off. To turn on the Service Action Allowed indicator light, set this parameter to `on`. To turn off the Service Action Allowed indicator light, set this parameter to `off`.
 |===
@@ -94,7 +94,7 @@ You must specify a label for the host port. Follow these steps to specify the ho
 +
 [NOTE]
 ====
-The port label is the complete value returned for the `*Port*` field.
+The port label is the complete value returned for the `Port` field.
 ====
 
 . Enclose the entire value of the port label in both quotes and square brackets: ["portLabel"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
@@ -255,21 +255,21 @@ portSpeed=[( 10 | 25)]
 
 [NOTE]
 ====
-Before firmware version 7.75, the `set controller` command supported an `*NVSRAMByte*` parameter. The `*NVSRAMByte*` parameter is deprecated and must be replaced with either the `*hostNVSRAMByte*` parameter or the `*globalNVSRAMByte*` parameter.
+Before firmware version 7.75, the `set controller` command supported an `NVSRAMByte` parameter. The `NVSRAMByte` parameter is deprecated and must be replaced with either the `hostNVSRAMByte` parameter or the `globalNVSRAMByte` parameter.
 ====
 
 When you use this command, you can specify one or more of the parameters. You do not need to use all of the parameters.
 
-Setting the `*availability*` parameter to `serviceMode` causes the alternate controller to take ownership of all of the volumes. The specified controller no longer has any volumes and refuses to take ownership of any more volumes. Service mode is persistent across reset cycles and power cycles until the `*availability*` parameter is set to `online`.
+Setting the `availability` parameter to `serviceMode` causes the alternate controller to take ownership of all of the volumes. The specified controller no longer has any volumes and refuses to take ownership of any more volumes. Service mode is persistent across reset cycles and power cycles until the `availability` parameter is set to `online`.
 
 Use the `show controller NVSRAM` command to show the NVSRAM information. Before making any changes to the NVSRAM, contact technical support to learn what regions of the NVSRAM you can modify.
 
 When the `duplexMode` option is set to `TRUE`, the selected Ethernet port is set to full duplex. The default value is half duplex (the `duplexMode` parameter is set to `FALSE`).
 
-To make sure that the IPv4 settings or the IPv6 settings are applied, you must set these `*iscsiHostPort*` options:
+To make sure that the IPv4 settings or the IPv6 settings are applied, you must set these `iscsiHostPort` options:
 
-* `*enableIPV4=*` `TRUE`
-* `*enableIPV6=*` `TRUE`
+* `enableIPV4=` `TRUE`
+* `enableIPV6=` `TRUE`
 
 The IPv6 address space is 128 bits. It is represented by eight 16-bit hexadecimal blocks separated by colons.
 
@@ -277,7 +277,7 @@ The `maxFramePayload` option is shared between IPv4 and IPv6. The payload portio
 
 The `portSpeed` option is expressed as megabits per second (Mb/s).
 
-Values for the `portSpeed` option of the `*iscsiHostPort*` parameter are in megabits per second (Mb/s).
+Values for the `portSpeed` option of the `iscsiHostPort` parameter are in megabits per second (Mb/s).
 
 The following values are the default values for the `iscsiHostOptions`:
 
@@ -289,12 +289,12 @@ The following values are the default values for the `iscsiHostOptions`:
 
 == Minimum firmware level
 
-7.15 removes the `*bootp*` parameter, and adds the new Ethernet port options and the new iSCSI host port options.
+7.15 removes the `bootp` parameter, and adds the new Ethernet port options and the new iSCSI host port options.
 
-7.50 moves the `*IPV4Gateway*` parameter and the `*IPV6RouterAddress*` parameter from the iSCSI host port options to the command.
+7.50 moves the `IPV4Gateway` parameter and the `IPV6RouterAddress` parameter from the iSCSI host port options to the command.
 
-7.60 adds the `*portSpeed*` option of the `*iscsiHostPort*` parameter.
+7.60 adds the `portSpeed` option of the `iscsiHostPort` parameter.
 
-7.75 deprecates the `*NVSRAMByte*` parameter.
+7.75 deprecates the `NVSRAMByte` parameter.
 
 8.10 revises the identification method for iSCSI host ports.

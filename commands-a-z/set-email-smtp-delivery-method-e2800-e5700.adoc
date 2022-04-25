@@ -33,7 +33,7 @@ mailRelayServer=pass:quotes["_serverAddress_" senderEmail="_emailAddress_"]
 |===
 | Parameter| Description
 a|
-`*deliveryMethod*`
+`deliveryMethod`
 a|
 Allows the user to specify the delivery method for AutoSupport collection. Valid choices are:
 
@@ -47,11 +47,11 @@ If the email method is configured, then the AutoSupport OnDemand and Remote Diag
 ====
 
 a|
-`*mailRelayServer*`
+`mailRelayServer`
 a|
 Allows the user to specify the mail relay server for the AutoSupport collection.
 a|
-`*senderEmail*`
+`senderEmail`
 a|
 Allows the user to specify send email address for the AutoSupport collection.
 |===

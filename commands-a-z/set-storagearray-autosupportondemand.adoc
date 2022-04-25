@@ -35,7 +35,7 @@ set storageArray autoSupportOnDemand (enable | disable)
 |===
 | Parameter| Description
 a|
-`*enable* \| *disable*`
+`enable \| disable`
 a|
 Allows the user to enable or disable AutoSupport OnDemand feature. If AutoSupport is disabled, the enable action will error and asks the user to enable it first. If the Remote Diagnostics feature is enabled, the disable action will also turn off Remote Diagnostics feature.
 |===

@@ -36,14 +36,14 @@ save storageArray dbmValidatorInfo file=pass:quotes["_filename_"] dbmDatabase=pa
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name of the DBM validator required for technical support. Enclose the file name in double quotation marks (" "). For example:
 
 `file="C:\Array Backups \DBMvalidator.xml"` This command does not automatically append a file extension to the saved file. You must specify the .xml file extension when you enter the file name.
 
 a|
-`*dbmDatabase*`
+`dbmDatabase`
 a|
 The file path and the file name of the DBM database from which you want to generate the XML information file. Enclose the file name in double quotation marks (" "). For example:
 

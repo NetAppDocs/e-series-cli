@@ -43,15 +43,15 @@ snmpCommunities pass:quotes[[_snmpCommunityName1_ ... _snmpCommunityNameN_]])
 |===
 | Parameter| Description
 a|
-`*allSnmpCommunities*`
+`allSnmpCommunities`
 a|
 This parameter returns information about all of the SNMP communities in the storage array.
 a|
-`*communityName*`
+`communityName`
 a|
 The name of the SNMP community for which you want to retrieve information. Enclose the SNMP community name in double quotation marks (" ").
 a|
-`*snmpCommunities*`
+`snmpCommunities`
 a|
 The names of several SNMP communities for which you want to retrieve information. Enter the names of the SNMP communities using these rules:
 
@@ -60,7 +60,7 @@ The names of several SNMP communities for which you want to retrieve information
 * Separate each of the names with a space.
 
 a|
-`*summary*`
+`summary`
 a|
 This parameter returns a list of the total number of SNMP communities and the total number of SNMP trap destinations. When you use this parameter, all of the detail information is omitted.
 |===

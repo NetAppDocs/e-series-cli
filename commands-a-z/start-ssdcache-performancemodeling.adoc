@@ -35,7 +35,7 @@ start ssdCache pass:quotes[[_ssdCacheName_]] performanceModeling
 |===
 | Parameter| Description
 a|
-`*ssdCache*`
+`ssdCache`
 a|
 The name of the SSD cache for which you want to model performance. Enclose the SSD cache name in square brackets ([ ]). If the SSD cache name contains special characters or consists only of numbers, you must enclose the SSD cache name in double quotation marks (" ") inside square brackets.
 |===

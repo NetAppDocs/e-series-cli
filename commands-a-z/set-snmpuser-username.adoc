@@ -34,23 +34,23 @@ set snmpUser userName="snmpUserName" [engineId=(local | engineId)]
 |===
 | Parameter| Description
 a|
-`*userName*`
+`userName`
 a|
 The name of the SNMP USM user that you want to update. Enclose the SNMP USM user name in double quotation marks (" ")
 a|
-`*engineId*`
+`engineId`
 a|
 The engine ID of the SNMP USM user that you want to update. The engine ID is required if there is more than one USM user with the same user name. The value may be `local` to specify the local SNMP agent is the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID.
 a|
-`*newSnmpUserName*`
+`newSnmpUserName`
 a|
 The new name that you want to give to the SNMP user. Enclose the SNMP user name in double quotation marks (" "). The default value is the previously defined user name for the user.
 a|
-`*newEngineId*`
+`newEngineId`
 a|
 The new engineID to use as the identifier of the authoritative SNMP engine ID for the user. The value may be "[.code]``local``" to specify the local SNMP agent to be the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID. The default value is the previously defined engine ID for the user.
 a|
-`*authProtocol*`
+`authProtocol`
 a|
 The authentication protocol (HMAC) to be used for the user. The value may be one of the following:
 
@@ -62,11 +62,11 @@ The authentication protocol (HMAC) to be used for the user. The value may be one
 The default value is the previously defined authentication protocol for the user.
 
 a|
-`*authPassword*`
+`authPassword`
 a|
 The password to be used for authentication for the user. Must be specified if the authentication protocol is `sha`, `sha256` or `sha512`
 a|
-`*privProtocol*`
+`privProtocol`
 a|
 The privacy protocol (encryption) to be used for the user. The value may be one of the following:
 
@@ -76,7 +76,7 @@ The privacy protocol (encryption) to be used for the user. The value may be one 
 The default value is the previously defined privacy protocol for the user.
 
 a|
-`*privPassword*`
+`privPassword`
 a|
 The password to be used for privacy/encryption for the user. Must be specified if the privacy protocol is "[.code]``aes128``".
 |===

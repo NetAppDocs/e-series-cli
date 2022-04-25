@@ -41,11 +41,11 @@ file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*certificateType*`
+`certificateType`
 a|
 Allows you to specify the certificate type to install. Valid choices are: `client` or `server`.
 a|
-`*file*`
+`file`
 a|
 Allows you to specify the filename for the signed certificate or server CA certificate.
 |===

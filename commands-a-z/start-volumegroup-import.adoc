@@ -40,7 +40,7 @@ pass:quotes[start volumeGroup [_volumeGroupName_]] import
 |===
 | Parameter| Description
 a|
-`*volumeGroup*`
+`volumeGroup`
 a|
 The name of the volume group that you want to import. Enclose the volume group name in square brackets ([ ]).
 |===

@@ -38,7 +38,7 @@ pass:quotes[start volume [_volumeName_]] initialize
 |===
 | Parameter| Description
 a|
-`*volume*`
+`volume`
 a|
 The name of a volume that you want to format. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
 

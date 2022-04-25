@@ -34,23 +34,23 @@ components=(componentName=("auditLog") ...)
 |===
 | Parameter| Description
 a|
-serverAddress
+`serverAddress`
 a|
 Syslog receiver hostname or IP address.
 a|
-port
+`port`
 a|
 Syslog receiver port number.
 a|
-protocol
+`protocol`
 a|
 Syslog transmission protocol. Acceptable values include UDP, TCP, or TLS.
 a|
-components
+`components`
 a|
 List of component entries that will be logged to the syslog server. Currently, only audit logs are supported.
 a|
-componentName
+`componentName`
 a|
 Component name; currently only "auditLog" is supported.
 |===

@@ -43,15 +43,15 @@ set snmpSystemVariables
 |===
 | Parameter| Description
 a|
-`*sysName*`
+`sysName`
 a|
 The new name that you want to give to the SNMP system. Use standard SNMP and MIB conventions for the system name. Enclose the SNMP system name in square brackets ([ ]).
 a|
-`*sysContact*`
+`sysContact`
 a|
 The name of contact person for the managed system with information on how to contact this person. Enclose the SNMP contact name in square brackets ([ ]).
 a|
-`*sysLocation*`
+`sysLocation`
 a|
 The physical location of the system, such as "3rd flr". Enclose the SNMP system location in square brackets ([ ]).
 |===

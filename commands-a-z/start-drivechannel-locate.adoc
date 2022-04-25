@@ -35,7 +35,7 @@ start driveChannel [(1 | 2 | 3 | 4 | 5 | 6 | 7 | 8)] locate
 |===
 | Parameter| Description
 a|
-`*driveChannel*`
+`driveChannel`
 a|
 The identifier number of the drive channel that you want to locate. Valid values for the identifier number for the drive channel are `1`, `2`, `3`, `4`, `5`, `6`, `7`, or `8`. Enclose the drive channel identifier number in square brackets ([ ]).
 |===

@@ -40,11 +40,11 @@ pass:quotes[file="_fileName_]"
 |===
 | Parameter| Description
 a|
-`*controller*`
+`controller`
 a|
 The controller for which you want to collect the trace debug information. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A , and `b` is the controller in slot B. You can also simultaneously collect debug for both controllers by entering `both` . Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the storage management software returns a syntax error.
 a|
-`*dataType*`
+`dataType`
 a|
 The type of data that you want to collect:
 
@@ -55,21 +55,21 @@ The type of data that you want to collect:
 
 [NOTE]
 ====
-If `*dataType=flushed*` and `*forceFlush=True*`, an error message is returned indicating that only active traces can be flushed to the buffer on retrieval.
+If `dataType=flushed` and `forceFlush=True`, an error message is returned indicating that only active traces can be flushed to the buffer on retrieval.
 ====
 
 a|
 `*forceFlush*`
 a|
-The setting to move the DQ information in the current buffer to the flushed buffer when the DQ trace information defined by the `*dataType*` parameter is retrieved. To enable force flush, set this parameter to `TRUE`. To disable force flush, set this parameter to `FALSE`.
+The setting to move the DQ information in the current buffer to the flushed buffer when the DQ trace information defined by the `dataType` parameter is retrieved. To enable force flush, set this parameter to `TRUE`. To disable force flush, set this parameter to `FALSE`.
 
 [NOTE]
 ====
-If `*dataType=flushed*` and `*forceFlush=True*`, an error message is returned indicating that only active traces can be flushed to the buffer on retrieval.
+If `dataType=flushed` and `forceFlush=True`, an error message is returned indicating that only active traces can be flushed to the buffer on retrieval.
 ====
 
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the DQ trace information. Enclose the file name in double quotation marks (" ").
 
@@ -91,21 +91,21 @@ The compressed file contains the information listed in this table.
 |===
 | File Name| Directory| Comments
 a|
-user_provided_file_name-SAID-A.dq
+`user_provided_file_name-SAID-A.dq`
 a|
-SAID/timestamp/
+`SAID/timestamp/`
 a|
 The DQ trace data retrieved from controller A.
 a|
-user_provided_file_name-SAID-B.dq
+`user_provided_file_name-SAID-B.dq`
 a|
-SAID/timestamp/
+`SAID/timestamp/`
 a|
 The DQ trace data retrieved from controller B.
 a|
-user_provided_file_name-SAID-trace_description.xm
+`user_provided_file_name-SAID-trace_description.xm`
 a|
-SAID/timestamp/
+`SAID/timestamp/`
 a|
 The description file in an xml format that describes the DQ file attributes for future data mining.
 |===

@@ -35,7 +35,7 @@ pass:quotes[start tray [_trayID_]] locate
 |===
 | Parameter| Description
 a|
-`*tray*`
+`tray`
 a|
 The tray that you want to locate. Tray ID values are `0` to `99`. Enclose the tray ID value in square brackets ([ ]).
 |===

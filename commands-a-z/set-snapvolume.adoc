@@ -32,11 +32,11 @@ set snapVolume pass:quotes[["_snapVolumeName_"]] userLabel=pass:quotes["_snapIma
 |===
 | Parameter| Description
 a|
-`*snapVolume*`
+`snapVolume`
 a|
 The name of the snapshot volume that you want to rename. Enclose the snapshot volume name in double quotation marks (" ") inside of square brackets ([ ]).
 a|
-`*userLabel*`
+`userLabel`
 a|
 A new name that you want to give to the snapshot volume. Enclose the new snapshot volume name in double quotation marks (" ").
 |===

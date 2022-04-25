@@ -34,23 +34,23 @@ set snmpTrapDestination trapReceiverIP=ipAddress
 |===
 | Parameter| Description
 a|
-`*trapReceiverIP*`
+`trapReceiverIP`
 a|
 The IP address of the SNMP manager to which you want to send trap messages.
 a|
-`*communityName*`
+`communityName`
 a|
 The name of the SNMP community for which you want to send trap messages.
 a|
-`*userName*`
+`userName`
 a|
 The name of the SNMP user for which you want to send trap messages.
 a|
-`*engineId*`
+`engineId`
 a|
 The engine ID of the SNMP user for which you want to send trap messages. The engine ID is required if there is more than one USM user with the same user name. The value may be "[.code]``local``" to specify the local SNMP agent is the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID.
 a|
-`*sendAuthenticationFailureTraps*`
+`sendAuthenticationFailureTraps`
 a|
 This parameter turns on or turns off sending authentication failure messages to an SNMP manager. To send authentication failure messages, set the parameter to `TRUE`. To prevent sending authentication failure messages, set the parameter to `FALSE`. The default is `TRUE`.
 |===

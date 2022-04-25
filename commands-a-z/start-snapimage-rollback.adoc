@@ -42,7 +42,7 @@ pass:quotes[start snapImage ["_snapImageName_"]] rollback
 |===
 | Parameter| Description
 a|
-`*snapImage*`
+`snapImage`
 a|
 The name of the snapshot image. The name of a snapshot image is comprised of two parts:
 

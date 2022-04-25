@@ -43,11 +43,11 @@ count=pass:quotes[_numberOfVolumes_]
 |===
 | Parameter| Description
 a|
-`*snapVolume*`
+`snapVolume`
 a|
 The name of the snapshot volume for which you are setting properties. Enclose the snapshot volume identifier in double quotation marks (" ") inside of square brackets ([ ]).
 a|
-`*repositoryVolume*`
+`repositoryVolume`
 a|
 The name of the repository volume for which you want to increase capacity. An available standard volume is added to the repository volume to increase the capacity of the repository volume.
 
@@ -74,7 +74,7 @@ If you do not use the capacity option, the storage management software sets the 
 Enclose the name of the new repository volume in parentheses.
 
 a|
-`*count*`
+`count`
 a|
 The number of volumes that you want to remove. Use integer values.
 |===

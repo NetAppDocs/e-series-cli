@@ -65,11 +65,11 @@ summary
 |===
 | Parameter| Description
 a|
-`*allDrives*`
+`allDrives`
 a|
 The setting to return information about all of the drives in the storage array.
 a|
-`*driveMediaType*`
+`driveMediaType`
 
 a|
 The type of drive media for which you want to retrieve information. The following values are valid types of drive media:
@@ -80,7 +80,7 @@ The type of drive media for which you want to retrieve information. The followin
 * `allMedia` -- Use this option when you want to use all types of drive media that are in the drive tray.
 
 a|
-`*driveType*`
+`driveType`
 a|
 The type of drive for which you want to retrieve information. You cannot mix drive types.
 
@@ -92,7 +92,7 @@ Valid drive types are:
 If you do not specify a drive type, the command defaults to any type.
 
 a|
-`*drive*` or `*drives*`
+`drive` or `drives`
 a|
 For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
@@ -101,25 +101,25 @@ All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on
 Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
 
 a|
-`*summary*`
+`summary`
 a|
 The setting to return the status, the capacity, the data transfer rate, the product ID, and the firmware version for the specified drives.
 |===
 
 == Notes
 
-To determine information about the type and location of all of the drives in the storage array, use the `*allDrives*` parameter.
+To determine information about the type and location of all of the drives in the storage array, use the `allDrives` parameter.
 
-To determine the information about the SAS drives in the storage array, use the `*driveType*` parameter.
+To determine the information about the SAS drives in the storage array, use the `driveType` parameter.
 
-To determine the type of drive in a specific location, use the `*drive*` parameter, and enter the tray ID and the slot ID for the drive.
+To determine the type of drive in a specific location, use the `drive` parameter, and enter the tray ID and the slot ID for the drive.
 
-The `*drive*` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+The `drive` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
 
 == Minimum firmware level
 
 5.43
 
-7.60 adds the `*drawerID*` user input and the `*driveMediaType*` parameter.
+7.60 adds the `drawerID` user input and the `driveMediaType` parameter.
 
 8.41 adds wear life reporting information, in the form of the percentage of endurance used, for SSD drives in an E2800, E5700, or EF570 system.

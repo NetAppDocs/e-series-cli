@@ -27,7 +27,7 @@ You must enable the three features in the following order:
 
 . Enable AutoSupport
 . Enable AutoSupport OnDemand
-. Enable AutoSupport Remote Diagnostics 
+. Enable AutoSupport Remote Diagnostics
 
 == Syntax
 
@@ -41,7 +41,7 @@ set storageArray autoSupportRemoteDiag (enable | disable)
 |===
 | Parameter| Description
 a|
-`*enable* \| *disable*`
+`enable \| disable`
 a|
 Allows the user to enable or disable AutoSupport Remote Diagnostics feature. If AutoSupport and AutoSupport OnDemand are disabled, then the enable action will error and asks the user to enable them first.
 |===

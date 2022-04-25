@@ -31,7 +31,7 @@ set storageArray unnamedDiscoverySession=(TRUE | FALSE)
 |===
 | Parameter| Description
 a|
-`*unnamedDiscoverySession*`
+`unnamedDiscoverySession`
 a|
 This parameter turns on or turns off unnamed discovery sessions. Set the parameter to `TRUE` to turn on unnamed discovery sessions. Set the parameter to `FALSE` to turn off unnamed discovery sessions.
 |===

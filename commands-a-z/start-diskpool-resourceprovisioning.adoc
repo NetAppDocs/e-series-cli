@@ -35,7 +35,7 @@ start diskPoolpass:quotes[[_diskPoolName_]] resourceProvisioning
 |===
 | Parameter| Description
 a|
-`*diskPoolName*`
+`diskPoolName`
 a|
 The disk pool you want to enable the resource provisioning feature. Enclose the disk pool name in square brackets ([ ]).
 |===

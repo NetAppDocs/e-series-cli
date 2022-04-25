@@ -41,16 +41,16 @@ asyncMirrorGroups pass:quotes[[_asyncMirrorGroupName1_ ... _asyncMirrorGroupName
 |===
 | Parameter| Description
 a|
-`*allAsyncMirrorGroups*`
+`allAsyncMirrorGroups`
 a|
 Use this parameter if you want to display the properties for all asynchronous mirror groups.
 a|
-`*asyncMirrorGroup*`
+`asyncMirrorGroup`
 a|
 The name of an asynchronous mirror group for which you want to show configuration information and the progress of periodic data synchronization. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name has special characters or numbers, you must enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets.
 
 a|
-`*asyncMirrorGroups*`
+`asyncMirrorGroups`
 a|
 The names of several asynchronous mirror groups for which you want to retrieve information. Enter the names of the asynchronous mirror groups using these rules:
 
@@ -64,7 +64,7 @@ If the asynchronous mirror group names have special characters or numbers, enter
 * Separate each of the names with a space.
 
 a|
-`*summary*`
+`summary`
 a|
 This parameter displays a concise list of information about the synchronization progress of one or more asynchronous mirror groups.
 

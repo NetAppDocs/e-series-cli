@@ -39,11 +39,11 @@ start diskPool[diskPoolName] fullProvisioning [disableResourceProvisioning=(TRUE
 |===
 | Parameter| Description
 a|
-`*diskPool*`
+`diskPool`
 a|
 The disk pool you want to start the full provisioning operation. Enclose the disk pool name in square brackets ([ ])
 a|
-`*disableResourceProvisioning*`
+`disableResourceProvisioning`
 a|
 The setting to specify if resource provisioning should be disabled after the full provisioning operation completes. To skip disabling resource provisioning, set this to `FALSE`. The default value is `TRUE`.
 

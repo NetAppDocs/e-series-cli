@@ -32,11 +32,11 @@ save controller [(a|b)] NVSRAM file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*controller*`
+`controller`
 a|
 The controller with the NVSRAM values that you want to save. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the NVSRAM values. Enclose the NVSRAM file name in double quotation marks (" "). For example:
 

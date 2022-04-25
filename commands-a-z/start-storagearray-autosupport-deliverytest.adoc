@@ -31,7 +31,7 @@ start storageArray autoSupport deliveryTest pass:quotes[[replyToEmail="_address_
 |===
 | Parameter| Description
 a|
-`*replyToEmail*`
+`replyToEmail`
 a|
 Allows the user to specify the reply-to email address for the AutoSupport test message. It is only used/required when delivery method is set to email.
 |===

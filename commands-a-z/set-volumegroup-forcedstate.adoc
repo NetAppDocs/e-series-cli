@@ -36,7 +36,7 @@ set volumeGroup pass:quotes[[_volumeGroupName_]] forcedState
 |===
 | Parameter| Description
 a|
-`*volumeGroup*`
+`volumeGroup`
 a|
 The name of the volume group that you want to place in a Forced state. Enclose the volume group name in square brackets ([ ]).
 |===

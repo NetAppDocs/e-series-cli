@@ -35,7 +35,7 @@ set storageArray odxEnabled=(TRUE | FALSE)
 |===
 | Parameter| Description
 a|
-`*odxEnabled*`
+`odxEnabled`
 a|
 The setting to turn on or turn off ODX. To turn on ODX set this parameter to `TRUE`. To turn off ODX set this parameter to `FALSE`. The default setting is that ODX is turned on.
 |===

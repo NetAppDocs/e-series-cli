@@ -37,15 +37,15 @@ set storageArray pqValidateOnReconstruct (enable | disable) driveMediaType=(hdd 
 |===
 | Parameter| Description
 a|
-`*pqValidateOnReconstruct*`
+`pqValidateOnReconstruct`
 a|
 Modifies the P/Q validate on reconstruction capability.
 a|
-`*enable*` or `*disable*`
+`enable` or `disable`
 a|
 Enables or disables P/Q validation on reconstruction.
 a|
-`*driveMediaType*`
+`driveMediaType`
 a|
 The drive media type on which to set the P/Q validate on reconstruction capability. The following drive media types are supported:
 

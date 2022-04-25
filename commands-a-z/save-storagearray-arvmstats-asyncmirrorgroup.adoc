@@ -45,12 +45,12 @@ arvmStats file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*asyncMirrorGroup*`
+`asyncMirrorGroup`
 a|
 The name of the asynchronous mirror group for which you are saving synchronization statistics. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name has special characters or numbers, you must enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets.
 
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the synchronization statistics. Enclose the file name in double quotation marks (" "). For example:
 
@@ -59,7 +59,7 @@ The file path and the file name to which you want to save the synchronization st
 This command does not automatically append a file extension to the saved file. You can use any file name, but you must use the `.csv` extension.
 
 a|
-`*volume*`
+`volume`
 a|
 This parameter is optional. The name of the specific member volume in the asynchronous mirror group for which you are retrieving synchronization statistics. If no volume is specified, the statistics for every member volume in the asynchronous mirror group are saved.
 
@@ -68,9 +68,9 @@ If statistics are collected for more than one volume in an asynchronous mirror g
 Enclose the volume name in double quotation marks (" ").
 
 a|
-`*sampleType*`
+`sampleType`
 a|
-This parameter is optional. The default value for `*sampleType*` is `all`.
+This parameter is optional. The default value for `sampleType` is `all`.
 
 * `all` -- Data for all three sample types are collected and written to the same file.
 * `mostRecent` -- Statistics are recorded for the most recent 50 resynchronization samples.
@@ -78,7 +78,7 @@ This parameter is optional. The default value for `*sampleType*` is `all`.
 * `errors` -- Statistics are recorded for the most recent 20 failed resynchronization samples. These samples include a failure code.
 
 a|
-`*recordLimit*`
+`recordLimit`
 a|
 This parameter is optional. The default value for record limit is `no limit`. The `recordLimit` must be greater than 0 and less than or equal to 90.
 

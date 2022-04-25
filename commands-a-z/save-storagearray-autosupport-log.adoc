@@ -40,7 +40,7 @@ file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*inputArchive*`
+`inputArchive`
 a|
 Allows you to specify the archived AutoSupport log, where the archive file is `n`, an integer starting at 0.
 
@@ -50,7 +50,7 @@ Omitting this parameter means you select the current AutoSupport log (captured a
 ====
 
 a|
-`*file*`
+`file`
 a|
 Allows you to specify the output ASUP transmission log filename.
 [NOTE]

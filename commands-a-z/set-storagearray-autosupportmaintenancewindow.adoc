@@ -35,11 +35,11 @@ set storageArray autoSupportMaintenanceWindow (enable | disable)
 |===
 | Parameter| Description
 a|
-`*emailAddresses*`
+`emailAddresses`
 a|
 The list of email addresses to receive a confirmation email that the maintenance window request has been processed. You can specify up to five email addresses.
 a|
-`*duration*`
+`duration`
 a|
 Optional. The duration (in hours) to enable maintenance window. If omitted, the maximum supported duration (72 hours) is used.
 |===

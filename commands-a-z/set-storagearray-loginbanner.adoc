@@ -35,7 +35,7 @@ After you load the text file, it is saved to the storage array. The banner text 
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name where the login banner text file is stored.
 

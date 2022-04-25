@@ -31,7 +31,7 @@ set storageArray redundancyMode=(simplex | duplex)
 |===
 | Parameter| Description
 a|
-`*redundancyMode*`
+`redundancyMode`
 a|
 Use `simplex` mode when you have a single controller. Use `duplex` mode when you have two controllers.
 |===

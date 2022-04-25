@@ -34,16 +34,16 @@ snapVolumes pass:quotes[["_snapVolumeName1_" ... "_snapVolumeNamen_"]])
 |===
 | Parameter| Description
 a|
-`*allSnapVolumes*`
+`allSnapVolumes`
 a|
 The parameter to return information about all of the snapshot volumes in the storage array.
 a|
-`*snapVolume*`
+`snapVolume`
 a|
 The name of a snapshot volume about which you want to retrieve information. Enclose the snapshot volume name in double quotation marks (" ") inside of square brackets ([ ]).
 
 a|
-`*snapVolumes*`
+`snapVolumes`
 a|
 The names of several snapshot volumes for which you want to retrieve information. Enter the names of the snapshot volumes using these rules:
 
@@ -52,7 +52,7 @@ The names of several snapshot volumes for which you want to retrieve information
 * Separate each of the names with a space.
 
 a|
-`*summary*`
+`summary`
 a|
 The parameter to return a concise list of information about the snapshot volumes.
 |===

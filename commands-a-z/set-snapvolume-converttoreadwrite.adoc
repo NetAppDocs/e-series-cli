@@ -40,11 +40,11 @@ repositoryVolume=pass:quotes[(_diskPoolName_] [capacity=pass:quotes[_capacityVal
 |===
 | Parameter| Description
 a|
-`*snapVolume*`
+`snapVolume`
 a|
 The name of the snapshot volume that you want to change from read-only to read/write. Enclose the snapshot volume identifier in double quotation marks (" ") inside of square brackets ([ ]).
 a|
-`*repositoryVolume*`
+`repositoryVolume`
 a|
 The name of the repository volume that you want to use for the read/write volume.
 
@@ -71,7 +71,7 @@ If you do not use the capacity option, the storage management software sets the 
 When you run this command the storage management software creates the repository volume for the snapshot volume.
 
 a|
-`*repositoryFullLimit*`
+`repositoryFullLimit`
 a|
 The percentage of repository volume capacity at which you receive a warning that the snapshot image repository volume is nearing full. Use integer values. For example, a value of 70 means 70 percent. The default value is 75.
 

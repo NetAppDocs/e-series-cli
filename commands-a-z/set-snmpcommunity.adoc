@@ -33,11 +33,11 @@ newCommunityName=pass:quotes["_newSnmpCommunityName_"]
 |===
 | Parameter| Description
 a|
-`*communityName*`
+`communityName`
 a|
 The name of the existing SNMP community that you want to rename. Enclose the SNMP community name in double quotation marks (" ").
 a|
-`*newCommunityName*`
+`newCommunityName`
 a|
 The new name that you want to give to the SNMP community. Enclose the SNMP community name in double quotation marks (" ").
 |===

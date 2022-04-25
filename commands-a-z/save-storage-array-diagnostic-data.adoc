@@ -44,11 +44,11 @@ file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*diagnosticData*`
+`diagnosticData`
 a|
 This parameter allows you to download the diagnostic data from either the controllers or the ESMs.
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the storage array diagnostic data. Enclose the file name in double quotation marks (" "). For example:
 
@@ -60,10 +60,10 @@ This command automatically saves the data to a compressed file; however, this co
 
 == Notes
 
-In versions of this command before 7.77, the user option was `*esm*` instead of `*tray*`. Starting in 7.77, `*tray*` replaces `*esm*`. The use of `*esm*` is still supported, but for best compatibility with future releases, replace `*esm*` with `*tray*`.
+In versions of this command before 7.77, the user option was `esm` instead of `tray`. Starting in 7.77, `tray` replaces `esm`. The use of `esm` is still supported, but for best compatibility with future releases, replace `esm` with `tray`.
 
 == Minimum firmware level
 
 6.16
 
-7.77 `*tray*` replaces `*esm*`.
+7.77 `tray` replaces `esm`.

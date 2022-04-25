@@ -32,13 +32,13 @@ set storageArray managementInterface restOnly={true | false}
 |===
 | Parameter| Description
 a|
-`*restOnly*`
+`restOnly`
 a|
 When set to `true`, indicates that the RESTful interface is the only management interface allowed. This interface enforces an encrypted connection between the storage array and the management software.
 
 When set to `false`, indicates that the legacy interface between the storage array and the management software is allowed. This interface is not encrypted.
 
-Some tools that communicate directly with the legacy management interface, such as the SANtricity SMI-S Provider or OnCommand Insight (OCI), will not work unless the `*restOnly*` parameter is set to `false`. Contact technical support for more information.
+Some tools that communicate directly with the legacy management interface, such as the SANtricity SMI-S Provider or OnCommand Insight (OCI), will not work unless the `restOnly` parameter is set to `false`. Contact technical support for more information.
 
 |===
 

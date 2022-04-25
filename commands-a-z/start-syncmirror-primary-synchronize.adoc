@@ -38,7 +38,7 @@ pass:quotes[start syncMirror primary ["_volumeName_"]] synchronize
 |===
 | Parameter| Description
 a|
-`*primary*`
+`primary`
 a|
 The name of the primary volume for which you want to start synchronization. Enclose the primary volume name in double quotation marks (" ") inside of square brackets ([ ]).
 |===

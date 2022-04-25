@@ -36,7 +36,7 @@ start IOCLog [(a1 | a2 | a3 | a4 | b1 | b2 | b3 | b4)]
 |===
 | Parameter| Description
 a|
-`*controller-channel identifiers*`
+`controller-channel identifiers`
 a|
 This parameter specifies the controller and host channel from which to produce the IOC dump. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Host channels have numerical identifiers. Enclose the controller identifier and host channel identifier in square brackets ([ ]).
 
@@ -45,7 +45,7 @@ Valid controller identifier and host channel values are `a1`, `a2`, `a3`, `a4`, 
 If you do not specify a controller, the storage management software returns a syntax error.
 
 a|
-`*overwrite*`
+`overwrite`
 a|
 This parameter causes the new IOC log dump to overwrite an existing dump. To overwrite the existing dump, set this parameter to `TRUE`. The default value is `FALSE`.
 |===

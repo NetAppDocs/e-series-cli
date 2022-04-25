@@ -43,17 +43,17 @@ show asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]]
 |===
 | Parameter| Description
 a|
-`*asyncMirrorGroup*`
+`asyncMirrorGroup`
 a|
 The name of an asynchronous mirror group for which you want to show synchronization of the asynchronous mirror group between the local and remote storage array. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name has special characters or numbers, you must enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets.
 
 a|
-`*synchronizationProgress*`
+`synchronizationProgress`
 a|
 This parameter displays the periodic synchronization progress of the asynchronous mirror group.
 
 a|
-`*summary*`
+`summary`
 a|
 This parameter displays a concise list of information about the synchronization of the asynchronous mirror group between the local and remote storage array.
 

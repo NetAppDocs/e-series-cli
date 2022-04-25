@@ -23,7 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-With firmware version 8.20 the `*coreDump*` parameter is replaced by the `*controllerHealthImage*` parameter.
+With firmware version 8.20 the `coreDump` parameter is replaced by the `controllerHealthImage` parameter.
 ====
 
 If the storage array does not support the controller health image feature, the command returns an error.
@@ -41,7 +41,7 @@ save storageArray controllerHealthImage file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you save the controller health image. Enclose the file name in double quotation marks (" "). For example:
 
@@ -90,4 +90,4 @@ When you retrieve a controller health image from the controller cache to a host,
 
 7.83
 
-8.20 replaces the `*coreDump*` parameter with the `*controllerHealthImage*` parameter.
+8.20 replaces the `coreDump` parameter with the `controllerHealthImage` parameter.

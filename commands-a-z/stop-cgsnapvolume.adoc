@@ -40,7 +40,7 @@ pass:quotes[stop cgSnapVolume [_snapVolumeName_]]
 |===
 | Parameter| Description
 a|
-`*cgSnapVolume*`
+`cgSnapVolume`
 a|
 The name of the consistency group snapshot volume that you want to stop creating. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
 

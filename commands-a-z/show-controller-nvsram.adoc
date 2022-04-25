@@ -41,19 +41,19 @@ NVSRAM pass:quotes[[hostType=_hostTypeIndexLabel_ | host="_hostName_"]]
 |===
 | Parameter| Description
 a|
-`*allControllers*`
+`allControllers`
 a|
 The setting to return information about both controllers in the storage array.
 a|
-`*controller*`
+`controller`
 a|
 The setting to return information about a specific controller in the storage array. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
 a|
-`*hostType*`
+`hostType`
 a|
 The index label or number of the host type. Use the `show storageArray hostTypeTable` command to generate a list of available host type identifiers.
 a|
-`*host*`
+`host`
 a|
 The name of the host that is connected to the controllers. Enclose the host name in double quotation marks (" ").
 |===

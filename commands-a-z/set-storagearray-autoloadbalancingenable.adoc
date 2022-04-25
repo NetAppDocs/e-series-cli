@@ -31,11 +31,11 @@ set storageArray autoLoadBalancingEnable=(TRUE | FALSE)
 |===
 | Parameter| Description
 a|
-`*storageArray*`
+`storageArray`
 a|
 Indicates that this parameter works on a storage array.
 a|
-`*autoLoadBalancingEnable*`
+`autoLoadBalancingEnable`
 a|
 This parameter turns on or turns off Automatic Load Balancing on the controller. Set the parameter to `TRUE` to turn on Automatic Load Balancing. Set the parameter to `FALSE` to turn off Automatic Load Balancing.
 |===
