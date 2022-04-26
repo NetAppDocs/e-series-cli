@@ -35,11 +35,11 @@ start controller [(a|b)] iscsiHostPort [portLabel] dhcpRefresh
 |===
 | Parameter| Description
 a|
-`*controller*`
+`controller`
 a|
 The identifier letter of the controller that has the iSCSI host ports. Valid controller identifier values are `a` or `b` where `a` is the controller in slot A, and `b` is the controller in slot B.
 a|
-`*iscsiHostPort*`
+`iscsiHostPort`
 a|
 The host port label or the number of the iSCSI host port for which you want to refresh the DHCP parameters.
 
@@ -60,7 +60,7 @@ You must specify a label for the host port. Follow these steps to specify the ho
 +
 [NOTE]
 ====
-The port label is the complete value returned for the `*Port*` field.
+The port label is the complete value returned for the `Port` field.
 ====
 
 . Enclose the entire value of the port label in both quotes and square brackets: ["portLabel"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:

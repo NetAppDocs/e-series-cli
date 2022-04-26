@@ -37,7 +37,7 @@ show iscsiTarget pass:quotes[["_targetName_"] | <"iqn">] iscsiSessions
 |===
 | Parameter| Description
 a|
-`*iscsiInitiator*`
+`iscsiInitiator`
 a|
 The name of the iSCSI initiator for which you want to obtain session information.
 
@@ -46,7 +46,7 @@ If the iSCSI initiator uses a label or an alias, enclose the iSCSI initiator lab
 If the iSCSI initiator uses an iSCSI qualified name (IQN), enclose the IQN in double quotation marks (" ") inside angle brackets (< >).
 
 a|
-`*iscsiTarget*`
+`iscsiTarget`
 a|
 The name of the iSCSI target for which you want to obtain session information.
 

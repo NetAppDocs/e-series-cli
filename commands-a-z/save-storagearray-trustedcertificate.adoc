@@ -34,15 +34,15 @@ aliases=pass:quotes[("_alias1_" ... "_aliasN_")]] path=pass:quotes["_fileLocatio
 |===
 | Parameter| Description
 a|
-`*allUserInstalled*`
+`allUserInstalled`
 a|
-Allows you to specify the retrieval of user installed certificates. The default option is `*allUserInstalled*` if you didn't specify any aliases.
+Allows you to specify the retrieval of user installed certificates. The default option is `allUserInstalled` if you didn't specify any aliases.
 a|
-`*aliases*`
+`aliases`
 a|
 Allows you to specify which user installed trusted certificate to retrieve by alias. Enclose all the aliases in parentheses. If you enter more than one alias, separate them with a space.
 a|
-`*path*`
+`path`
 a|
 Allows you to specify the local location for which to save the controller's trusted certificates.
 |===

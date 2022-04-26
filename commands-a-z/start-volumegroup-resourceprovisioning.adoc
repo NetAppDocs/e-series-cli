@@ -35,7 +35,7 @@ pass:quotes[start volumeGroup[_volumeGroupName_]] resourceProvisioning
 |===
 | Parameter| Description
 a|
-`*volumeGroupName*`
+`volumeGroupName`
 a|
 The volume group you want to enable the resource provisioning feature. Enclose the volume group name in square brackets ([ ]).
 |===

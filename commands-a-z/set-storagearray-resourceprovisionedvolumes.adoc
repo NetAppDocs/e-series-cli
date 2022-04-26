@@ -39,7 +39,7 @@ set storageArray resourceProvisionedVolumes=(enable|disable)
 |===
 | Parameter| Description
 a|
-`*resourceProvisionedVolumes*`
+`resourceProvisionedVolumes`
 a|
 The setting to specify if resource provisioning capabilities are enabled. To disable resource provisioning, set this parameter to `disable`. The default value is `enable`.
 

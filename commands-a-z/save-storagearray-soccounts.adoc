@@ -36,7 +36,7 @@ save storageArray SOCCounts file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the SOC error statistics. Enclose the file name in double quotation marks (" "). For example:
 

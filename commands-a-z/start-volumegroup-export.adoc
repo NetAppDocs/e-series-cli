@@ -45,7 +45,7 @@ pass:quotes[start volumeGroup [_volumeGroupName_]] export
 |===
 | Parameter| Description
 a|
-`*volumeGroup*`
+`volumeGroup`
 a|
 The name of the volume group that you want to export. Enclose the volume group name in square brackets ([ ]).
 |===

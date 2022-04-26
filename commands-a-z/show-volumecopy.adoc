@@ -45,15 +45,15 @@ target pass:quotes[["_targetName_"]])
 |===
 | Parameter| Description
 a|
-`*allVolumes*`
+`allVolumes`
 a|
 The setting to return information about volume copy operations for all of the volume copy pairs.
 a|
-`*source*`
+`source`
 a|
 The name of the source volume about which you want to retrieve information. Enclose the source volume name in double quotation marks (" ") inside of square brackets ([ ]).
 a|
-`*target*`
+`target`
 a|
 The name of the target volume about which you want to retrieve information. Enclose the target volume name in double quotation marks (" ") inside of square brackets ([ ]).
 |===

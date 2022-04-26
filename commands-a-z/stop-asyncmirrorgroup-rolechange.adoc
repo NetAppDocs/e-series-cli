@@ -31,7 +31,7 @@ pass:quotes[stop asyncMirrorGroup [_asyncMirrorGroupName_]] rolechange
 |===
 | Parameter| Description
 a|
-`*asyncMirrorGroup*`
+`asyncMirrorGroup`
 a|
 The name of the asynchronous mirror group for which or which you want to cancel the pending role reversal operation. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name contains special characters or consists only of numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
 

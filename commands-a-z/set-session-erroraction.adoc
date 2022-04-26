@@ -46,11 +46,11 @@ performanceMonitorIterations=iterationValue
 |===
 | Parameter| Description
 a|
-`*errorAction*`
+`errorAction`
 a|
 How the session responds if an error is encountered during processing. You can choose to stop the session if an error is encountered, or you can continue the session after encountering an error. The default value is `stop`. (This parameter defines the action for execution errors, not syntax errors. Some error conditions might override the `continue` value.)
 a|
-`*password*`
+`password`
 a|
 The password for the storage array. Enclose the password in double quotation marks (" ").
 [NOTE]
@@ -59,7 +59,7 @@ When the client type is set to `https`, this parameter is obsolete. The password
 ====
 
 a|
-`*performanceMonitorInterval*`
+`performanceMonitorInterval`
 a|
 The frequency of gathering performance data. Enter an integer value for the polling interval, in seconds, for which you want to capture data. The range of values is `3` to `3600` seconds. The default value is `5` seconds.
 [NOTE]
@@ -68,7 +68,7 @@ When the client type is set to `https`, this parameter is obsolete. Instead, to 
 ====
 
 a|
-`*performanceMonitorIterations*`
+`performanceMonitorIterations`
 a|
 The number of samples to capture. Enter an integer value. The range of values for samples captured is `1` to `3600`. The default value is `5`.
 [NOTE]

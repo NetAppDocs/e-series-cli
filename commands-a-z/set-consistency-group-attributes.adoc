@@ -37,15 +37,15 @@ set consistencyGroup pass:quotes[["_consistencyGroupName_"]]
 |===
 | Parameter| Description
 a|
-`*consistencyGroupName*`
+`consistencyGroupName`
 a|
 The name of the consistency group for which you are setting properties. Enclose the consistency group name in double quotation marks (" ") inside square brackets ([ ]).
 a|
-`*userLabel*`
+`userLabel`
 a|
 The new name that you want to give to the snapshot consistency group. Enclose the new consistency group name in double quotation marks (" ").
 a|
-`*repositoryFullPolicy*`
+`repositoryFullPolicy`
 a|
 How you want snapshot processing to continue if the snapshot repository volumes are full. You can choose to fail writes to the base volume (`failBaseWrites`) or delete (purge) the snapshot images (`purgeSnapImages`). The default action is `purgeSnapImages`.
 a|
@@ -54,12 +54,12 @@ a|
 The percentage of repository capacity at which you receive a warning that the snapshot repository volume is nearing full. Use integer values. For example, a value of 70 means 70 percent. The default value is 75.
 
 a|
-`*autoDeleteLimit*`
+`autoDeleteLimit`
 a|
 Each consistency group can be configured to perform automatic deletion of its snapshot images to keep the total number of snapshot images in the snapshot group at or below a designated level. When this option is enabled, then any time a new snapshot image is created in the snapshot group, the system automatically deletes the oldest snapshot image in the group to comply with the limit value. This action frees repository capacity so it can be used to satisfy ongoing copy-on-write requirements for the remaining snapshot images.
 
 a|
-`*rollBackPriority*`
+`rollBackPriority`
 a|
 The priority for rollback operations for a consistency group while the storage array is operational. Valid values are `highest`, `high`, `medium`, `low`, or `lowest`.
 
@@ -75,7 +75,7 @@ The rollback priority defines the amount of system resources that should be allo
 
 == Auto delete
 
-You can configure each snapshot group to perform automatic deletion of its snapshot images to keep the total number of snapshot images in the snapshot group at or below a maximum number of images. When the number of snapshot images in the snapshot group is at the maximum limit, the `*autoDeleteLimit*` parameter automatically deletes snapshot images whenever a new snapshot image is created in the snapshot group. The `*autoDeleteLimit*` parameter deletes the oldest snapshot images in the snapshot group until the maximum number of images defined with the parameter is met. Deleting snapshot images in this way frees repository capacity so it can be used to satisfy ongoing copy-on-write requirements for the remaining snapshot images.
+You can configure each snapshot group to perform automatic deletion of its snapshot images to keep the total number of snapshot images in the snapshot group at or below a maximum number of images. When the number of snapshot images in the snapshot group is at the maximum limit, the `autoDeleteLimit` parameter automatically deletes snapshot images whenever a new snapshot image is created in the snapshot group. The `autoDeleteLimit` parameter deletes the oldest snapshot images in the snapshot group until the maximum number of images defined with the parameter is met. Deleting snapshot images in this way frees repository capacity so it can be used to satisfy ongoing copy-on-write requirements for the remaining snapshot images.
 
 == Minimum firmware level
 

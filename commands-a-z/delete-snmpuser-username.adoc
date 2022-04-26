@@ -30,11 +30,11 @@ pass:quotes[delete snmpUser userName="_snmpUserName_" [engineId=(local | engineI
 |===
 | Parameter| Description
 a|
-`*userName*`
+`userName`
 a|
 The name of the SNMP USM user that you want to delete. Enclose the SNMP USM user name in double quotation marks (" ")
 a|
-`*engineId*`
+`engineId`
 a|
 The engine ID of the SNMP USM user that you want to update. The engine ID is required if there is more than one USM user with the same user name. The value may be "[.code]``_local_``" to specify the local SNMP agent is the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID.
 |===

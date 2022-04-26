@@ -69,11 +69,16 @@ a|
 This file contains all the transmitted AutoSupport messages.
 
 a|
-Web Server Client Info (E2800 or E5700 only)
+Web Server Client Info
 a|
 `client-info.txt`
 
 This file specifies various Web Services client information.
+
+[NOTE]
+====
+This parameter is not applicable for E2700 and E5600 arrays.
+====
 
 a|
 Drive cabling topology
@@ -382,14 +387,14 @@ csbTimeStamp=pass:quotes[_hh:mm_]]
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the support-related data for the storage array. Enclose the file path and the file name in double quotation marks (" "). For example:
 
 `file="C:\Program Files\CLI\logs\supdat.7z"`
 
 a|
-`*force*`
+`force`
 a|
 This parameter forces the collection of support data if there are any failures in securing a lock on controller operations. To force the collection of support data, set this parameter to `TRUE`. The default value is `FALSE`.
 
@@ -401,6 +406,6 @@ Starting with firmware level 7.86, the file name extension must be `.7z` on syst
 
 == Minimum firmware level
 
-7.80 adds the `*force*` parameter.
+7.80 adds the `force` parameter.
 
 8.30 adds information for the E2800 storage array.

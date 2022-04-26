@@ -37,19 +37,19 @@ serviceAllowedIndicator=(on | off | forceOnWarning)
 |===
 | Parameter| Description
 a|
-`*tray*`
+`tray`
 a|
 The tray where the drawer resides. Tray ID values are `0` to `99` . Enclose the tray ID value in square brackets ([ ]). If you do not enter a tray ID value, the tray ID of the controller tray is the default value.
 a|
-`*drawer*`
+`drawer`
 a|
 The location of the drawer for which you want to turn on or turn off the Service Action Allowed Indicator light. Drawer ID values are `1` to `5`. Enclose the drawer ID value in square brackets ([ ]).
 a|
-`*serviceAllowedIndicator*`
+`serviceAllowedIndicator`
 a|
 The setting to turn on or turn off the Service Action Allowed indicator light. To turn on the Service Action Allowed indicator light, set this parameter to `on`. To turn off the Service Action Allowed indicator light, set this parameter to `off`.
 
-For information about using `*forceOnWarning*`, see the Notes.
+For information about using `forceOnWarning`, see the Notes.
 
 |===
 
@@ -81,7 +81,7 @@ If you are preparing a component for removal and want to override the warning th
 serviceAllowedIndicator=forceOnWarning
 ----
 
-The `*forceOnWarning*` parameter sends the request to prepare to remove a component to the controller firmware, and forces the `set drawer serviceAllowedIndicator` command to proceed.
+The `forceOnWarning` parameter sends the request to prepare to remove a component to the controller firmware, and forces the `set drawer serviceAllowedIndicator` command to proceed.
 
 [NOTE]
 ====

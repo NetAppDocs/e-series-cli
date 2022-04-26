@@ -25,7 +25,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 |===
 | Parameter| Description
 a|
-`*url*`
+`url`
 a|
 The literal string of the OCSP server's URL.
 [NOTE]

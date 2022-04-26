@@ -31,7 +31,7 @@ save storageArray loginBanner file="file_name"
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The name for the login banner file.
 

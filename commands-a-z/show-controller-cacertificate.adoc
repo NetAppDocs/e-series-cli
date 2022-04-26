@@ -32,15 +32,15 @@ show controller [(a|b)] caCertificate [all | aliases=pass:quotes[("_alias1_" ...
 |===
 | Parameter| Description
 a|
-`*controller*`
+`controller`
 a|
 Allows the user to specify the controller on which you want to retrieve the root/intermediate certificates. Valid controller identifiers are a or b, where a is the controller in slot A, and b is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
 a|
-`*all*`
+`all`
 a|
 Allows the user to specify the retrieval of all root/intermediate certificates.
 a|
-`*aliases*`
+`aliases`
 a|
 Allows the user to specify which root/intermediate certificate to retrieve by alias. Enclose all the aliases in parentheses. If you enter more than one alias, separate them with a space.
 |===

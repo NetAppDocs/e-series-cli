@@ -38,7 +38,7 @@ pass:quotes[start volumeGroup [_volumeGroupName_]] defragment
 |===
 | Parameter| Description
 a|
-`*volumeGroup*`
+`volumeGroup`
 a|
 The name of the volume group that you want to defragment. Enclose the volume group name in square brackets ([ ]).
 |===

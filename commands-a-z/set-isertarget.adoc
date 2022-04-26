@@ -40,20 +40,20 @@ targetAlias=pass:quotes["_userLabel_"]
 |===
 | Parameter| Description
 a|
-`*iserTarget*`
+`iserTarget`
 a|
 The iSER target for which you want to set properties. Enclose the `_userLabel_` in double quotation marks (" "). You must also enclose the `_userLabel_` in square brackets ([ ]) if the user label is a target alias or angle brackets (< >) if the user label is an iSCSI Qualified Name (IQN).
 
 a|
-`*authenticationMethod*`
+`authenticationMethod`
 a|
 The means of authenticating your iSCSI session.
 a|
-`*chapSecret*`
+`chapSecret`
 a|
 The security key that you want to use to authenticate a peer connection.
 a|
-`*targetAlias*`
+`targetAlias`
 a|
 The new name that you want to use for the target. Enclose the name in double quotation marks (" ").
 |===
@@ -62,7 +62,7 @@ The new name that you want to use for the target. Enclose the name in double quo
 
 Challenge Handshake Authentication Protocol (CHAP) is a protocol that authenticates the peer of a connection. CHAP is based upon the peers sharing a _secret_. A secret is a security key that is similar to a password.
 
-Use the `*chapSecret*` parameter to set up the security keys for initiators that require a mutual authentication. The CHAP secret must be between 12 characters and 57 characters. This table lists the valid characters.
+Use the `chapSecret` parameter to set up the security keys for initiators that require a mutual authentication. The CHAP secret must be between 12 characters and 57 characters. This table lists the valid characters.
 
 [cols="1a,1a,1a,1a,1a,1a,1a,1a,1a,1a,1a,1a"]
 |===

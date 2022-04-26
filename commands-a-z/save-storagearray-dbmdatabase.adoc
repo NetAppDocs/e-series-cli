@@ -35,7 +35,7 @@ save storageArray dbmDatabase
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the database. Enclose the file name in double quotation marks (" "). For example:
 
@@ -46,7 +46,7 @@ This parameter must appear last, after any of the optional parameters.
 This command creates a .zip file and you do not need to specify a file extension.
 
 a|
-`*sourceLocation*`
+`sourceLocation`
 a|
 This parameter specifies the location from which to obtain backup database information.
 
@@ -55,14 +55,14 @@ This parameter specifies the location from which to obtain backup database infor
 
 The default location is `onboard`.
 a|
-`*controller*`
+`controller`
 a|
-This parameter specifies the controller from which data will be exclusively retrieved, if `*sourceLocation*` is set to `onboard`. If the `*controller*` parameter is not specified, data might be retrieved from either controller.
+This parameter specifies the controller from which data will be exclusively retrieved, if `sourceLocation` is set to `onboard`. If the `controller` parameter is not specified, data might be retrieved from either controller.
 
 Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B.
 
 a|
-`*contentType*`
+`contentType`
 a|
 This parameter specifies the content type of the data that will be retrieved.
 
@@ -80,6 +80,6 @@ The data that you save to the host using this command can, if needed, be restore
 
 7.83 adds these parameters:
 
-* sourceLocation
-* controller
-* contentType
+* `sourceLocation`
+* `controller`
+* `contentType`

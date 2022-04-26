@@ -42,15 +42,15 @@ incrementalCapacity=_volumeCapacity_]
 |===
 | Parameter| Description
 a|
-`*volume*`
+`volume`
 a|
 The name of the volume in a disk pool or volume group for which you want to increase capacity. Enclose the volume name in double quotation marks (" ").
 a|
-`*incrementalCapacity*`
+`incrementalCapacity`
 a|
 The setting to increase the storage size (capacity) for the volume. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`. The default value is `bytes`.
 a|
-`*addDrives*`
+`addDrives`
 a|
 The setting to add new drives to the volume. For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
@@ -60,18 +60,18 @@ Enclose the tray ID value, the drawer ID value, and the slot ID value in square 
 
 [NOTE]
 ====
-The `*addDrives*` parameter can only be used to increase the capacity of a volume group. The parameter cannot be used to increase the capacity of a disk pool.
+The `addDrives` parameter can only be used to increase the capacity of a volume group. The parameter cannot be used to increase the capacity of a disk pool.
 ====
 
 |===
 
 == Notes
 
-In some cases a `*drive*` parameter might appear as valid input for the command syntax. However, you cannot use the `*drive*` parameter with this command.
+In some cases a `drive` parameter might appear as valid input for the command syntax. However, you cannot use the `drive` parameter with this command.
 
-Setting the `*incrementalCapacity*` parameter, starts a long-running operation that you cannot stop. Long-running operations are performed in the background and do not prevent you from running other commands. To show the progress of long-running operations, use the `show volume actionProgress` command.
+Setting the `incrementalCapacity` parameter, starts a long-running operation that you cannot stop. Long-running operations are performed in the background and do not prevent you from running other commands. To show the progress of long-running operations, use the `show volume actionProgress` command.
 
-The `*addDrives*` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+The `addDrives` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
 
 == Minimum firmware level
 

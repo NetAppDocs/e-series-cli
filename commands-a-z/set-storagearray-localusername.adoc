@@ -34,24 +34,24 @@ password="string" adminPassword="string"
 |===
 | Parameter| Description
 a|
-`*localUsername*`
+`localUsername`
 a|
-Allows you to specify the user to change the password. Valid choices are: `*admin*`, `*storage*`, `*support*`, `*monitor*`, and `*security*`.
+Allows you to specify the user to change the password. Valid choices are: `admin`, `storage`, `support`, `monitor`, and `security`.
 a|
-`*symbol*`
+`symbol`
 a|
-Allows you to change the SYMbol password. Valid choices are: `*admin*` and `*monitor*`.
+Allows you to change the SYMbol password. Valid choices are: `admin` and `monitor`.
 [NOTE]
 ====
 This is the replacement command for the deprecated `set storageArray password` command.
 ====
 
 a|
-`*password*`
+`password`
 a|
 Allows you to specify the password for the role.
 a|
-`*adminPassword*`
+`adminPassword`
 a|
 Allows you to specify the admin password, which is required to set any new password.
 |===

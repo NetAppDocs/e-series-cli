@@ -32,6 +32,7 @@ This command applies only to external key management.
 recreate storageArray securityKey
 passPhrase=pass:quotes[_"passPhraseString"_
 file="_fileName"_]
+[deleteOldKey=(TRUE | FALSE)]
 ----
 
 == Parameters
@@ -56,6 +57,11 @@ file="C:\Program Files\CLI\sup\drivesecurity.slk"
 The file name must have an extension of `.slk`.
 ====
 
+a|
+`deleteOldKey`
+a|
+Set this parameter to `TRUE` to delete the old security key from the external key management server after the new security key is created. The default is `FALSE`.
+
 |===
 
 == Notes
@@ -76,3 +82,5 @@ If your pass phrase does not meet these criteria, you will receive an error mess
 == Minimum firmware level
 
 7.70
+
+11.73 adds the `deleteOldKey` parameter.

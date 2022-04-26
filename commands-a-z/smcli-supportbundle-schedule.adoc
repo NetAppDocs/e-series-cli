@@ -70,11 +70,11 @@ The following table lists the parameters for a daily/weekly schedule.
 |===
 | Parameter| Description
 a|
-`*enable*`
+`enable`
 a|
 Enable automatic collection of support bundles when a critical MEL event is detected. This parameter resumes collecting support bundle data if it has been suspended. You must use the parameter whenever you create a new schedule or modify an existing schedule.
 a|
-`*all*`
+`all`
 a|
 Use this parameter if you want to set a collection schedule for all of the storage arrays detected from the host.
 a|
@@ -82,21 +82,21 @@ a|
 a|
 The name of a specific storage array for which you want to set a schedule.
 a|
-`*startTime*`
+`startTime`
 a|
 The time of day that you want the collection of a support bundle to start. The format for entering the time is HH:MM, where HH is the hour and MM is the minute past the hour. Use a 24-hour clock.
 
 The default time is 00:00, midnight. If you do not enter a time to start and you have enabled support bundle collection, collection of the data automatically occurs at midnight.
 
 a|
-`*startDate*`
+`startDate`
 a|
 A specific date on which you want to start collecting support bundle data. The format for entering the date is MM:DD:YY.
 
 The default date is the current date.
 
 a|
-`*endDate*`
+`endDate`
 a|
 A specific date on which you want to stop collecting support bundle data. The format for entering the date is MM:DD:YY.
 
@@ -105,7 +105,7 @@ The default is none.
 If you use this parameter, it must be at least one week after the start date and cannot occur in the past.
 
 a|
-`*daysOfWeek*`
+`daysOfWeek`
 a|
 Specific day or days of the week on which you want to collect support bundle data. Use this parameter when you want to collect support bundle data on one or more days of week. For example:
 
@@ -120,7 +120,7 @@ daysOfWeek=[Monday Wednesday Friday]
 Enclose the days of the week in square brackets ([ ]). If you enter more than one day, separate each day with a space.
 
 a|
-`*data*`
+`data`
 a|
 The file path and the file name to which you want to save the support bundle data. For example:
 
@@ -142,11 +142,11 @@ The following table lists the parameters for a monthly/yearly schedule.
 |===
 | Parameter| Description
 a|
-`*enable*`
+`enable`
 a|
 Enable automatic collection of support bundles when a critical MEL event is detected. This parameter resumes collecting support bundle data if it has been suspended. You must use the parameter whenever you create a new schedule or modify an existing schedule.
 a|
-`*all*`
+`all`
 a|
 Use this parameter if you want to set a collection schedule for all of the storage arrays detected from the host.
 a|
@@ -154,28 +154,28 @@ a|
 a|
 The name of a specific storage array for which you want to set a schedule.
 a|
-`*startTime*`
+`startTime`
 a|
 The time of a day that you want the collection of a support bundle to start. The format for entering the time is HH:MM, where HH is the hour and MM is the minute past the hour. Use a 24-hour clock.
 
 The default time is 00:00, midnight. If you do not enter a time to start and you have enabled support bundle collection, collection of the data automatically occurs at midnight.
 
 a|
-`*startDate*`
+`startDate`
 a|
 A specific date on which you want to start collecting support bundle data. The format for entering the date is MM:DD:YY.
 
 The default date is the current date.
 
 a|
-`*endDate*`
+`endDate`
 a|
 A specific date on which you want to stop collecting support bundle data. The format for entering the date is MM:DD:YY.
 
 The default is none.
 
 a|
-`*months*`
+`months`
 a|
 Specific month or months of the year on which you want to collect support bundle data. Use this parameter when you want to collect support bundle data on one or more months of a year. For example:
 
@@ -190,7 +190,7 @@ months=[January April July October]
 Enclose the month in square brackets ([ ]). If you enter more than one month, separate each month with a space.
 
 a|
-`*weekNumber*`
+`weekNumber`
 a|
 A week in the month during which you want to collect support bundle data. For example:
 
@@ -199,7 +199,7 @@ weekNumber=first
 ----
 
 a|
-`*dayOfWeek*`
+`dayOfWeek`
 a|
 A specific day of the week on which you want to collect support bundle data. Use this parameter when you want to collect support bundle data on only one day of the week. For example:
 
@@ -208,7 +208,7 @@ dayOfWeek=Wednesday
 ----
 
 a|
-`*onDays*`
+`onDays`
 a|
 Specific day or days in a month on which you want to collect support bundle data. For example:
 
@@ -228,7 +228,7 @@ You cannot use the `*onDays*` parameter with either the `*weekNumber*` parameter
 ====
 
 a|
-`*data*`
+`data`
 a|
 The file path and the file name to which you want to save the support bundle data. For example:
 
@@ -250,7 +250,7 @@ The following table lists the parameters for removing a schedule.
 |===
 | Parameter| Description
 a|
-`*disable*`
+`disable`
 a|
 Disables the automatic collection of support bundles and deletes any previously defined schedules immediately.
 
@@ -260,7 +260,7 @@ Disabling a schedule also deletes the schedule.
 ====
 
 a|
-`*all*`
+`all`
 a|
 Use this parameter if you want to set a collection schedule for all of the storage arrays detected from the host.
 a|
@@ -271,7 +271,7 @@ The name of a specific storage array for which you want to set a schedule.
 
 == Notes
 
-When you use the `*all*` parameter to set a common schedule for all of the storage arrays, the schedules for individual storage arrays are deleted. If a schedule is set for all storage arrays, newly discovered storage arrays will follow the same schedule. If a schedule is set for all storage arrays and then a schedule is set for a single storage array, newly discovered storage arrays will not have a schedule defined.
+When you use the `all` parameter to set a common schedule for all of the storage arrays, the schedules for individual storage arrays are deleted. If a schedule is set for all storage arrays, newly discovered storage arrays will follow the same schedule. If a schedule is set for all storage arrays and then a schedule is set for a single storage array, newly discovered storage arrays will not have a schedule defined.
 
 Following are examples of the usage of this command. The first example is of a daily/weekly schedule that meets these criteria for collecting support bundle data:
 

@@ -36,11 +36,11 @@ set tray pass:quotes[["_serialNumber_"]] pass:quotes[id=_trayID_]
 |===
 | Parameter| Description
 a|
-`*tray*`
+`tray`
 a|
 The serial number of the controller tray, controller-drive tray, or the drive tray for which you are setting the tray ID. Serial numbers can be any combination of alphanumeric characters and any length. Enclose the serial number in double quotation marks (" ").
 a|
-`*id*`
+`id`
 a|
 The value for the controller tray tray ID, controller-drive tray tray ID, or the drive tray tray ID. Tray ID values are `0` through `9` or `10` through `99`.
 [NOTE]

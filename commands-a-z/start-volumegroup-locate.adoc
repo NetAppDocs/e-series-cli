@@ -35,7 +35,7 @@ pass:quotes[start volumeGroup [_volumeGroupName_]] locate
 |===
 | Parameter| Description
 a|
-`*volumeGroup*`
+`volumeGroup`
 a|
 The name of the volume group for which you want to locate the drives that belong to that volume group. Enclose the volume group name in square brackets ([ ]).
 |===

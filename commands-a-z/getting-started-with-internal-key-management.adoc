@@ -11,9 +11,13 @@ summary: "A security key is a string of characters, which is shared between the 
 [.lead]
 A security key is a string of characters, which is shared between the secure-enabled drives and controllers in a storage array. When using internal key management, you create and maintain security keys on the controller's persistent memory.
 
-See SANtricity System Manager online help for conceptual information on using internal security keys. The following graphic shows the basic workflow for using internal security keys:
+See SANtricity System Manager online help for conceptual information on using internal security keys.
 
-image::../media/internal_key_management_workflow.png[]
+The following is the basic workflow for using internal security keys:
+
+. *Create security keys*
+. *Set security keys*
+. *Validate security key*
 
 == Workflow steps
 

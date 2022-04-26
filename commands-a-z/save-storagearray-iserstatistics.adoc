@@ -37,15 +37,15 @@ save storageArray iserStatistics [(raw | baseline)] file=pass:quotes["_filename_
 |===
 | Parameter| Description
 a|
-`*raw*`
+`raw`
 a|
 The statistics collected are all statistics from the controller start-of-day. Enclose the parameter in square brackets ([ ]).
 a|
-`*baseline*`
+`baseline`
 a|
 The statistics that are collected are all statistics from the time the controllers were reset to zero using the `reset storageArray iserStatsBaseline` command. Enclose the parameter in square brackets ([ ]).
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the performance statistics. Enclose the file name in double quotation marks (" "). For example:
 

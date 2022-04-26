@@ -45,23 +45,23 @@ source pass:quotes[[_sourceName_]]
 |===
 | Parameter| Description
 a|
-`*target*`
+`target`
 a|
 The name of the volume to which the data will be copied. Enclose the target volume name in square brackets ([ ]). If the target volume name has special characters or numbers, you must enclose the target volume name in double quotation marks (" ") inside square brackets.
 a|
-`*source*`
+`source`
 a|
 The name of the volume from which the data will be copied. Enclose the source volume name in square brackets ([ ]). If the source volume name has special characters or numbers, you must enclose the source volume name in double quotation marks (" ") inside square brackets.
 a|
-`*copyPriority*`
+`copyPriority`
 a|
 The priority that the volume copy has relative to host I/O activity. Valid values are `highest`, `high`, `medium`, `low`, or `lowest`.
 a|
-`*targetReadOnlyEnabled*`
+`targetReadOnlyEnabled`
 a|
 The setting so that you can write to the target volume or only read from the target volume. To write to the target volume, set this parameter to `FALSE`. To prevent writing to the target volume, set this parameter to `TRUE`.
 a|
-`*copyType*`
+`copyType`
 a|
 
 [NOTE]

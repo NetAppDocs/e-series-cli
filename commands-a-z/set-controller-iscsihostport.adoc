@@ -121,7 +121,7 @@ iscsiHostPort [portLabel]
 |===
 | Parameter| Description
 a|
-`*enableIPV4*`
+`enableIPV4`
 a|
 Available options are:
 
@@ -129,7 +129,7 @@ Available options are:
 * FALSE
 
 a|
-`*enableIPV4Priority*`
+`enableIPV4Priority`
 a|
 Select this option to enable the parameter that determines the priority of accessing the network. Use the slider to select a priority between 1 and 7.
 
@@ -146,7 +146,7 @@ This parameter is not supported in an NVMe over RoCE environment.
 ====
 
 a|
-`*enableIPV4Vlan*`
+`enableIPV4Vlan`
 a|
 A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.Available options are:
 
@@ -159,7 +159,7 @@ This parameter is not supported in an NVMe over RoCE environment.
 ====
 
 a|
-`*enableIPV6*`
+`enableIPV6`
 a|
 The IPv6 address space is 128 bits. It is represented by eight 16-bit hexadecimal blocks separated by colons.
 
@@ -169,7 +169,7 @@ Available options are:
 * FALSE
 
 a|
-`*enableIPV6Priority*`
+`enableIPV6Priority`
 a|
 Select this option to enable the parameter that determines the priority of accessing the network. Use the slider to select a priority between 1 and 7.
 
@@ -186,7 +186,7 @@ This parameter is not supported in an NVMe over RoCE environment.
 ====
 
 a|
-`*enableIPV6Vlan*`
+`enableIPV6Vlan`
 a|
 A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.
 
@@ -201,12 +201,12 @@ This parameter is not supported in an NVMe over RoCE environment.
 ====
 
 a|
-`*IPV4Address*`
+`IPV4Address`
 a|
 Enter the address in this format: (0-255).(0-255).(0-255).(0-255)
 
 a|
-`*IPV4ConfigurationMethod*`
+`IPV4ConfigurationMethod`
 a|
 Available options are:
 
@@ -214,7 +214,7 @@ Available options are:
 * dhcp
 
 a|
-`*IPV4GatewayIP*`
+`IPV4GatewayIP`
 a|
 Available options are:
 
@@ -222,7 +222,7 @@ Available options are:
 * FALSE
 
 a|
-`*IPV4Priority*`
+`IPV4Priority`
 a|
 Enter a value between 0 and 7.
 
@@ -232,12 +232,12 @@ This parameter is not supported in an NVMe over RoCE environment.
 ====
 
 a|
-`*IPV4SubnetMask*`
+`IPV4SubnetMask`
 a|
 Enter the subnet mask in this format: (0-255).(0-255).(0-255).(0-255)
 
 a|
-`*IPV4VlanId*`
+`IPV4VlanId`
 a|
 Enter a value between 1 and 4094.
 
@@ -247,7 +247,7 @@ This parameter is not supported in an NVMe over RoCE environment.
 ====
 
 a|
-`*IPV6ConfigurationMethod*`
+`IPV6ConfigurationMethod`
 a|
 Available options are:
 
@@ -255,45 +255,45 @@ Available options are:
 * auto
 
 a|
-`*IPV6HopLimit*`
+`IPV6HopLimit`
 a|
 This option configures the maximum number of hops an IPv6 packet can traverse.
 
 The default value is `64`.
 
 a|
-`*IPV6LocalAddress*`
+`IPV6LocalAddress`
 a|
 Enter the address is this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF)
 
 a|
-`*IPV6NdDetectDuplicateAddress*`
+`IPV6NdDetectDuplicateAddress`
 a|
 Enter a value between 0 and 256.
 
 a|
-`*IPV6NdReachableTime*`
+`IPV6NdReachableTime`
 a|
 This option configures the amount of time that a remote IPv6 mode is considered reachable. Specify a value, in milliseconds, between 0 - 65535.
 
 The default value is `30000` milliseconds.
 
 a|
-`*IPV6NdRetransmitTime*`
+`IPV6NdRetransmitTime`
 a|
 This option configures the amount of time to continue to retransmit a packet to an IPv6 node. Specify a value, in milliseconds, between 0 - 65535.
 
 The default value is `1000` milliseconds.
 
 a|
-`*IPV6NdTimeOut*`
+`IPV6NdTimeOut`
 a|
 This option configures the timeout value for an IPv6 node. Specify a value, in milliseconds, between 0 - 65535.
 
 The default value is `30000` milliseconds.
 
 a|
-`*IPV6Priority*`
+`IPV6Priority`
 a|
 Enter a value between 0 and 7.
 
@@ -303,17 +303,17 @@ This parameter is not supported in an NVMe over RoCE environment.
 ====
 
 a|
-`*IPV6RoutableAddress*`
+`IPV6RoutableAddress`
 a|
 Enter the address is this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF)
 
 a|
-`*IPV6RouterAddress*`
+`IPV6RouterAddress`
 a|
 Enter the address is this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF)
 
 a|
-`*IPV6VlanId*`
+`IPV6VlanId`
 a|
 Enter a value between 1 and 4094.
 
@@ -323,14 +323,14 @@ This parameter is not supported in an NVMe over RoCE environment.
 ====
 
 a|
-`*maxFramePayload*`
+`maxFramePayload`
 a|
 The `maxFramePayload` option is shared between IPv4 and IPv6 and is the largest packet or frame that can be sent in a network. The payload portion of a standard Ethernet frame is set to `1500`, and a jumbo Ethernet frame is set to `9000`. When using jumbo frames, all of the devices that are in the network path should be capable of handling the larger frame size.
 
 The default value is 1500 bytes per frame. You must enter a value between 1500 and 9000.
 
 a|
-`*portSpeed*`
+`portSpeed`
 a|
 Available options are:
 
@@ -344,11 +344,11 @@ This option is only valid for the 25Gb/s Ethernet host interface card. Changing 
 
 [NOTE]
 ====
-Values for the `portSpeed` option of the `*iscsiHostPort*` parameter are in megabits per second (Mb/s).
+Values for the `portSpeed` option of the `iscsiHostPort` parameter are in megabits per second (Mb/s).
 ====
 
 a|
-`*tcpListeningPort*`
+`tcpListeningPort`
 a|
 The listening port is the TCP port number that the controller uses to listen for iSCSI logins from host iSCSI initiators. The default listening port is 3260. You must enter 3260 or a value between 49152 and 65535.
 
@@ -363,7 +363,7 @@ You must specify a label for the host port. Follow these steps to specify the ho
 +
 [NOTE]
 ====
-The port label is the complete value returned for the `*Port*` field.
+The port label is the complete value returned for the `Port` field.
 ====
 
 . Enclose the entire value of the port label in both quotes and square brackets: ["portLabel"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
@@ -400,10 +400,10 @@ iscsiHostPort[3]
 
 7.15 adds the new iSCSI host port options.
 
-7.60 adds the `*portSpeed*` option.
+7.60 adds the `portSpeed` option.
 
 8.10 revises the identification method for iSCSI host ports.
 
-8.40 revises the `*portSpeed*` option of the `*iscsiHostPort*` parameter to note that it is only valid for the 25Gb/s Ethernet host interface card, and that changing the speed of one port changes the speed of all four ports on the card.
+8.40 revises the `portSpeed` option of the `iscsiHostPort` parameter to note that it is only valid for the 25Gb/s Ethernet host interface card, and that changing the speed of one port changes the speed of all four ports on the card.
 
 8.41 This command is deprecated.

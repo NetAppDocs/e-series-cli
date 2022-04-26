@@ -44,11 +44,11 @@ count=pass:quotes[_numberOfVolumes_]
 |===
 | Parameter| Description
 a|
-`*snapGroup*`
+`snapGroup`
 a|
 The name of the snapshot group for which you want to increase capacity or decrease capacity. Enclose the snapshot group name in double quotation marks (" ") inside of square brackets ([ ]).
 a|
-`*repositoryVolume*`
+`repositoryVolume`
 a|
 The name of the repository volume for which you want to increase capacity. An available standard volume is added to the repository volume to increase the capacity of the repository volume.
 
@@ -75,7 +75,7 @@ If you do not use the capacity option, the storage management software sets the 
 When you run this command the storage management software creates the repository volume for the snapshot volume.
 
 a|
-`*count*`
+`count`
 a|
 The number of repository volumes that you want to remove from the snapshot group. Use integer values.
 

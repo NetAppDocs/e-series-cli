@@ -30,7 +30,7 @@ pass:quotes[delete snmpTrapDestination trapReceiverIP=_ipAddress_]
 |===
 | Parameter| Description
 a|
-`*trapReceiverIP*`
+`trapReceiverIP`
 a|
 The IP address of the SNMP manager from which you want to stop sending trap messages.
 |===

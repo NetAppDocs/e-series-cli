@@ -49,7 +49,7 @@ pass:quotes[show volumeGroup [_volumeGroupName_]]
 |===
 | Parameter| Description
 a|
-`*volumeGroup*`
+`volumeGroup`
 a|
 The name of the volume group for which you want to show information. Enclose the volume group name in square brackets ([ ]).
 |===

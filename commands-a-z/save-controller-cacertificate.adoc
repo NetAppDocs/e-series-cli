@@ -34,19 +34,19 @@ save controller[(a|b)] caCertificate [all | aliases=pass:quotes[("_alias1_" ... 
 |===
 | Parameter| Description
 a|
-`*controller*`
+`controller`
 a|
 Allows you to specify the controller on which you want to retrieve the root/intermediate certificates. Valid controller identifiers are a or b, where a is the controller in slot A, and b is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
 a|
-`*all*`
+`all`
 a|
 Allows you to specify the retrieval of all certificates that were imported to resolve the signed certificate chain. User-installed certificates include key management certificates.
 a|
-`*aliases*`
+`aliases`
 a|
 Allows you to specify which user installed root/intermediate certificate to retrieve by alias. Enclose all the aliases in parentheses. If you enter more than one alias, separate them with a space.
 a|
-`*path*`
+`path`
 a|
 Allows you to specify the local location to save the controllers`' root/intermediate certificates.
 |===

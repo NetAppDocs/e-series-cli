@@ -47,11 +47,11 @@ secureDrives=(fips | fde)]
 |===
 | Parameter| Description
 a|
-`*driveType*`
+`driveType`
 a|
 The type of drives that you want to use for the storage array.
 
-The `*driveType*` parameter is not required if only one type of drive is in the storage array. You must use this parameter when you have more than one type of drive in your storage array.
+The `driveType` parameter is not required if only one type of drive is in the storage array. You must use this parameter when you have more than one type of drive in your storage array.
 
 Valid drive types are:
 
@@ -59,7 +59,7 @@ Valid drive types are:
 * `NVMe4K`
 
 a|
-`*driveMediaType*`
+`driveMediaType`
 
 a|
 The type of drive media that you want to use for the mirror repository volume group. Valid drive media are these:
@@ -69,40 +69,40 @@ The type of drive media that you want to use for the mirror repository volume gr
 * `unknown` -- Use if you are not sure what types of drive media are in the drive tray.
 * `allMedia` -- Use this option when you want to use all types of drive media that are in the drive tray.
 
-Use this parameter when you use the `*repositoryDriveCount*` parameter.
+Use this parameter when you use the `repositoryDriveCount` parameter.
 
 You must use this parameter when you have more than one type of drive media in your storage array.
 
 a|
-`*raidLevel*`
+`raidLevel`
 a|
 The RAID level of the volume group that contains the drives in the storage array. Valid RAID levels are `0`, `1`, `3`, `5`, or `6`.
 a|
-`*volumeGroupWidth*`
+`volumeGroupWidth`
 a|
 The number of drives in a volume group in the storage array, which depends on the capacity of the drives. Use integer values.
 a|
-`*volumeGroupCount*`
+`volumeGroupCount`
 a|
 The number of volume groups in the storage array. Use integer values.
 a|
-`*volumesPerGroupCount*`
+`volumesPerGroupCount`
 a|
 The number of equal-capacity volumes per volume group. Use integer values.
 a|
-`*hotSpareCount*`
+`hotSpareCount`
 a|
 The number of hot spares that you want in the storage array. Use integer values.
 a|
-`*segmentSize*`
+`segmentSize`
 a|
 The amount of data (in KB) that the controller writes on a single drive in a volume before writing data on the next drive. Valid values are `8`, `16`, `32`, `64`, `128`, `256`, or `512`.
 a|
-`*cacheReadPrefetch*`
+`cacheReadPrefetch`
 a|
 The setting to turn on or turn off cache read prefetch. To turn off cache read prefetch, set this parameter to `FALSE`. To turn on cache read prefetch, set this parameter to `TRUE`.
 a|
-`*securityType*`
+`securityType`
 a|
 The setting to specify the security level when creating the volume groups and all associated volumes. These settings are valid:
 
@@ -111,7 +111,7 @@ The setting to specify the security level when creating the volume groups and al
 * `enabled` -- The volume group and volumes have security enabled.
 
 a|
-`*secureDrives*`
+`secureDrives`
 a|
 The type of secure drives to use in the volume group. These settings are valid:
 
@@ -120,7 +120,7 @@ The type of secure drives to use in the volume group. These settings are valid:
 
 [NOTE]
 ====
-Use this parameter along with the `*securityType*` parameter. If you specify `none` for the `*securityType*` parameter, the value of the `*secureDrives*` parameter is ignored, because non-secure volume groups do not need to have secure drive types specified.
+Use this parameter along with the `securityType` parameter. If you specify `none` for the `securityType` parameter, the value of the `secureDrives` parameter is ignored, because non-secure volume groups do not need to have secure drive types specified.
 ====
 
 |===
@@ -151,31 +151,31 @@ A volume group is a set of drives that are logically grouped together by the con
 |===
 | Level| Criteria for Tray Loss Protection| Minimum number of trays required
 a|
-Disk Pool
+`Disk Pool`
 a|
 The disk pool contains no more than two drives in a single tray.
 a|
 6
 a|
-RAID 6
+`RAID 6`
 a|
 The volume group contains no more than two drives in a single tray.
 a|
 3
 a|
-RAID 3 or RAID 5
+`RAID 3` or `RAID 5`
 a|
 Each drive in the volume group is located in a separate tray.
 a|
 3
 a|
-RAID 1
+`RAID 1`
 a|
 Each drive in a RAID 1 pair must be located in a separate tray.
 a|
 2
 a|
-RAID 0
+`RAID 0`
 a|
 Cannot achieve Tray Loss Protection.
 a|
@@ -186,31 +186,31 @@ Not applicable
 |===
 | Level| Criteria for drawer loss protection| Minimum number of drawers required
 a|
-Disk Pool
+`Disk Pool`
 a|
 The pool includes drives from all five drawers and there are an equal number of drives in each drawer. A 60-drive tray can achieve Drawer Loss Protection when the disk pool contains 15, 20, 25, 30, 35, 40, 45, 50, 55, or 60 drives.
 a|
 5
 a|
-RAID 6
+`RAID 6`
 a|
 The volume group contains no more than two drives in a single drawer.
 a|
 3
 a|
-RAID 3 or RAID 5
+`RAID 3` or `RAID 5`
 a|
 Each drive in the volume group is located in a separate drawer.
 a|
 3
 a|
-RAID 1
+`RAID 1`
 a|
 Each drive in a mirrored pair must be located in a separate drawer.
 a|
 2
 a|
-RAID 0
+`RAID 0`
 a|
 Cannot achieve Drawer Loss Protection.
 a|
@@ -251,13 +251,13 @@ For optimal performance in a multiuser database or file system storage environme
 
 == Cache read prefetch
 
-Cache read prefetch lets the controller copy additional data blocks into cache while the controller reads and copies data blocks that are requested by the host from the drive into cache. This action increases the chance that a future request for data can be fulfilled from cache. Cache read prefetch is important for multimedia applications that use sequential data transfers. Valid values for the `*cacheReadPrefetch*` parameter are `TRUE` or `FALSE`. The default is `TRUE`.
+Cache read prefetch lets the controller copy additional data blocks into cache while the controller reads and copies data blocks that are requested by the host from the drive into cache. This action increases the chance that a future request for data can be fulfilled from cache. Cache read prefetch is important for multimedia applications that use sequential data transfers. Valid values for the `cacheReadPrefetch` parameter are `TRUE` or `FALSE`. The default is `TRUE`.
 
 == Security type
 
-Use the `*securityType*` parameter to specify the security settings for the storage array.
+Use the `securityType` parameter to specify the security settings for the storage array.
 
-Before you can set the `*securityType*` parameter to `enabled`, you must create a storage array security key. Use the `create storageArray securityKey` command to create a storage array security key. These commands are related to the security key:
+Before you can set the `securityType` parameter to `enabled`, you must create a storage array security key. Use the `create storageArray securityKey` command to create a storage array security key. These commands are related to the security key:
 
 * `create storageArray securityKey`
 * `export storageArray securityKey`
@@ -268,7 +268,7 @@ Before you can set the `*securityType*` parameter to `enabled`, you must create 
 
 == Secure drives
 
-Secure-capable drives can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives. Use the `*secureDrives*` parameter to specify the type of secure drives to use. The values you can use are `fips` and `fde`.
+Secure-capable drives can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives. Use the `secureDrives` parameter to specify the type of secure drives to use. The values you can use are `fips` and `fde`.
 
 == Example command
 
@@ -280,8 +280,8 @@ show storageArray autoConfiguration securityType=capable secureDrives=fips;
 
 7.10 adds RAID Level 6 capability and removes hot spare limits.
 
-7.50 adds the `*securityType*` parameter.
+7.50 adds the `securityType` parameter.
 
-7.75 adds the `*dataAssurance*` parameter.
+7.75 adds the `dataAssurance` parameter.
 
-8.25 adds the `*secureDrives*` parameter.
+8.25 adds the `secureDrives` parameter.

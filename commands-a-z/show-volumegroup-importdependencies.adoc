@@ -32,18 +32,18 @@ pass:quotes[show volumeGroup [_volumeGroupName_]] importDependencies
 |===
 | Parameter| Description
 a|
-`*volumeGroup*`
+`volumeGroup`
 a|
 The name of the volume group for which you want to show import dependencies. Enclose the volume group name in square brackets ([ ]).
 a|
-`*cancelImport*`
+`cancelImport`
 a|
 The setting to spin the drives back down after the volume group dependencies have been read. To spin down the drives, set this parameter to `TRUE`. To let the drives stay spinning, set this parameter to `FALSE`.
 |===
 
 == Notes
 
-This command returns the dependencies of a specific volume group, which must be in an Exported state or a Forced state. If a decision is made to retain the listed dependencies, then the `*cancelImport*` parameter can be enforced to spin the drives back down.
+This command returns the dependencies of a specific volume group, which must be in an Exported state or a Forced state. If a decision is made to retain the listed dependencies, then the `cancelImport` parameter can be enforced to spin the drives back down.
 
 You must run the `show volumeGroup importDependencies` command before you run the `start volumeGroup import` command.
 

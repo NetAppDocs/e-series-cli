@@ -49,4 +49,4 @@ SMcli completed successfully.
 
 8.40
 
-11.70.1 added the `*syslogFormat*` parameter to specify the Syslog message format.
+11.70.1 added the `syslogFormat` parameter to specify the Syslog message format.

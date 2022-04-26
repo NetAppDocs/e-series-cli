@@ -38,12 +38,12 @@ testID=connectivity
 |===
 | Parameter| Description
 a|
-`*primary*`
+`primary`
 a|
 The name of the primary volume of the remote mirror pair that you want to test. Enclose the primary volume name in square brackets ([ ]). If the primary volume name has special characters or consists only of numbers, you must enclose the primary volume name in double quotation marks (" ") inside square brackets.
 
 a|
-`*primaries*`
+`primaries`
 a|
 You can enter more than one volume name. Enclose all of the volume names in one set of square brackets ([ ]). Enclose each volume name in double quotation marks (" "). Separate each volume name with a space.
 

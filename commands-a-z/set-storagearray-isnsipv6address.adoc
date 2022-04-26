@@ -32,7 +32,7 @@ set storageArray isnsIPv6Address=pass:quotes[_ipAddress_]
 |===
 | Parameters| Description
 a|
-`*isnsIPv6Address*`
+`isnsIPv6Address`
 a|
 The IPv6 address that you want to use for the iSNS server.
 |===

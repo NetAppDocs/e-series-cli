@@ -44,12 +44,12 @@ set asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]]
 |===
 | Parameter| Description
 a|
-`*asyncMirrorGroup*`
+`asyncMirrorGroup`
 a|
 The name of the asynchronous mirror group that you want to modify. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name has special characters or numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
 
 a|
-`*volume*`
+`volume`
 a|
 The name of an asynchronous mirror group repository volume for which you want to increase the capacity.
 
@@ -61,17 +61,17 @@ The name of a repository volume is comprised of two parts:
 Enclose the name of the repository volume in double quotation marks (" ").
 
 a|
-`*syncInterval*`
+`syncInterval`
 a|
 Specify the length of time between automatically sending updates of modified data from the local storage array to the remote storage array. You can specify the length of time in minutes, hours, or days.
 
 a|
-`*warningSyncThreshold*`
+`warningSyncThreshold`
 a|
 Specify the length of time to wait until a warning is triggered for cases in which the synchronization of all of the volumes within the asynchronous mirror group takes longer than the defined time. You can specify the length of time in minutes, hours, or days.
 
 a|
-`*warningRecoveryThreshold*`
+`warningRecoveryThreshold`
 a|
 Specify the length of time to wait until a warning is triggered when the automatic data update for the point-in-time image on the remote storage array is older than the defined time. Define the threshold from the end of the previous update. You can specify the length of time in minutes, hours, or days.
 
@@ -81,20 +81,20 @@ You must set the Recovery Point Threshold to be twice as large as the synchroniz
 ====
 
 a|
-`*userLabel*`
+`userLabel`
 a|
 The new name that you want to give to the asynchronous mirror group. Use this parameter when you want to rename the asynchronous mirror group. Enclose the new asynchronous mirror group name in double quotation marks (" ").
 a|
-`*warningThresholdPercent*`
+`warningThresholdPercent`
 a|
 Specify the percent value that determines when a warning is triggered when the capacity of a mirror repository volume reaches the defined percentage. Define the threshold by percentage (%) of the capacity remaining.
 
 a|
-`*role*`
+`role`
 a|
 Use this parameter to promote the asynchronous mirror group to a primary role or demote the asynchronous mirror group to a secondary role. To define the asynchronous mirror group as the primary role, set this parameter to `primary`. To define the asynchronous mirror group as the secondary role, set this parameter to `secondary`.
 a|
-`*autoResync*`
+`autoResync`
 a|
 The settings for automatic resynchronization between the primary volumes and the secondary volumes of an asynchronous mirrored pair within an asynchronous mirror group. This parameter has these values:
 

@@ -42,16 +42,16 @@ Send this file to technical support for interpretation.
 |===
 | Parameter| Description
 a|
-`*storageArray*`
+`storageArray`
 a|
 Specifies that this command works on a storage array.
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the auto-load balancing statistics. Enclose the file name in double quotation marks (" ").
 
 a|
-`*numberOfDays*`
+`numberOfDays`
 a|
 The number of days worth of statistics to save. This parameter is optional and the default value is 0, which indicates all available data.
 |===

@@ -27,7 +27,7 @@ show localCertificate all | alias alias
 |===
 | Parameter| Description
 a|
-`*alias*`
+`alias`
 a|
 Allows you to specify a certificate through the user-defined alias.
 |===

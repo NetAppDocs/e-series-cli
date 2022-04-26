@@ -171,16 +171,16 @@ preReadRedundancyCheck=(TRUE | FALSE)
 |===
 | Parameter| Description
 a|
-`*allVolumes*`
+`allVolumes`
 a|
 This parameter sets the properties for all of the volumes in the storage array.
 a|
-`*volume*`
+`volume`
 a|
 The name of the volume for which you want to define properties. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
 
 a|
-`*volume*`
+`volume`
 a|
 The World Wide Identifier (WWID) of the volume for which you want to define properties. Enclose the WWID in double quotation marks (" ") inside angle brackets (< >).
 
@@ -190,7 +190,7 @@ When running this command, do not use colon separators in the WWID.
 ====
 
 a|
-`*volumes*`
+`volumes`
 a|
 The names of several volumes for which you want to define properties. All of the volumes will have the same properties. Enter the names of the volumes using these rules:
 
@@ -204,31 +204,31 @@ If the volume names have special characters or numbers, enter the names using th
 * Separate each of the names with a space.
 
 a|
-`*cacheFlushModifier*`
+`cacheFlushModifier`
 a|
 The maximum amount of time that data for the volume stays in cache before the data is flushed to physical storage. Valid values are listed in the Notes section.
 a|
-`*cacheWithoutBatteryEnabled*`
+`cacheWithoutBatteryEnabled`
 a|
 The setting to turn on or turn off caching without batteries. To turn on caching without batteries, set this parameter to `TRUE`. To turn off caching without batteries, set this parameter to `FALSE`.
 a|
-`*mediaScanEnabled*`
+`mediaScanEnabled`
 a|
 The setting to turn on or turn off media scan for the volume. To turn on media scan, set this parameter to `TRUE`. To turn off media scan, set this parameter to `FALSE`. (If media scan is disabled at the storage array level, this parameter has no effect.)
 a|
-`*mirrorCacheEnabled*`
+`mirrorCacheEnabled`
 a|
 The setting to turn on or turn off the mirror cache. To turn on the mirror cache, set this parameter to `TRUE`. To turn off the mirror cache, set this parameter to `FALSE`.
 a|
-`*modificationPriority*`
+`modificationPriority`
 a|
 The priority for volume modifications while the storage array is operational. Valid values are `highest`, `high`, `medium`, `low`, or `lowest`.
 a|
-`*owner*`
+`owner`
 a|
 The controller that owns the volume. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Use this parameter only if you want to change the volume owner.
 a|
-`*preReadRedundancyCheck*`
+`preReadRedundancyCheck`
 a|
 The setting to turn on or turn off pre-read redundancy checking. Turning on pre-read redundancy checking verifies the consistency of RAID redundancy data for the stripes containing the read data. Pre-read redundancy checking is performed on read operations only. To turn on pre-read redundancy checking, set this parameter to `TRUE`. To turn off pre-read redundancy checking, set this parameter to `FALSE`.
 
@@ -238,19 +238,19 @@ Do not use this parameter on non-redundant volumes, such as RAID 0 volumes.
 ====
 
 a|
-`*readCacheEnabled*`
+`readCacheEnabled`
 a|
 The setting to turn on or turn off the read cache. To turn on the read cache, set this parameter to `TRUE`. To turn off the read cache, set this parameter to `FALSE`.
 a|
-`*writeCacheEnabled*`
+`writeCacheEnabled`
 a|
 The setting to turn on or turn off the write cache. To turn on the write cache, set this parameter to `TRUE`. To turn off the write cache, set this parameter to `FALSE`.
 a|
-`*cacheReadPrefetch*`
+`cacheReadPrefetch`
 a|
 The setting to turn on or turn off cache read prefetch. To turn off cache read prefetch, set this parameter to `FALSE`. To turn on cache read prefetch, set this parameter to `TRUE`.
 a|
-`*dataAssuranceDisabled*`
+`dataAssuranceDisabled`
 a|
 The setting to turn off data assurance for a specific volume.
 
@@ -277,11 +277,11 @@ To reset data assurance for the data on a volume, from which you removed data as
 . Move the data to the new volume.
 
 a|
-`*addCapacity*`
+`addCapacity`
 a|
 The setting to increase the storage size (capacity) of the volume for which you are defining properties. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`. The default value is `bytes`.
 a|
-`*addDrives*`
+`addDrives`
 a|
 For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
@@ -289,21 +289,21 @@ All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on
 
 Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
 
-Use this parameter with the `*addCapacity*` parameter if you need to specify additional drives to accommodate the new size.
+Use this parameter with the `addCapacity` parameter if you need to specify additional drives to accommodate the new size.
 a|
-`*redundancyCheckEnabled*`
+`redundancyCheckEnabled`
 a|
 The setting to turn on or turn off redundancy checking during a media scan. To turn on redundancy checking, set this parameter to `TRUE`. To turn off redundancy checking, set this parameter to `FALSE`.
 a|
-`*segmentSize*`
+`segmentSize`
 a|
 The amount of data (in KB) that the controller writes on a single drive in a volume before writing data on the next drive. Valid values are `8`, `16`, `32`, `64`, `128`, `256`, or `512`.
 a|
-`*userLabel*`
+`userLabel`
 a|
 The new name that you want to give an existing volume. Enclose the new volume name in double quotation marks (" ").
 a|
-`*preReadRedundancyCheck*`
+`preReadRedundancyCheck`
 a|
 The setting to check the consistency of RAID redundancy data on the stripes during read operations. Do not use this operation for non-redundant volumes, for example RAID Level 0. To check redundancy consistency, set this parameter to `TRUE`. For no stripe checking, set this parameter to `FALSE`.
 |===
@@ -316,14 +316,14 @@ When you use this command, you can specify one or more of the optional parameter
 
 You can apply these parameters to only one volume at a time:
 
-* `*addCapacity*`
-* `*segmentSize*`
-* `*userLabel*`
-* `*logicalUnitNumber*`
+* `addCapacity`
+* `segmentSize`
+* `userLabel`
+* `logicalUnitNumber`
 
 == Add capacity, add drives, and segment size
 
-Setting the `*addCapacity*` parameter, the `*addDrives*` parameter, or the `*segmentSize*` parameter starts a long-running operation that you cannot stop. These long-running operations are performed in the background and do not prevent you from running other commands. To show the progress of long-running operations, use the `show volume actionProgress` command.
+Setting the `addCapacity` parameter, the `addDrives` parameter, or the `segmentSize` parameter starts a long-running operation that you cannot stop. These long-running operations are performed in the background and do not prevent you from running other commands. To show the progress of long-running operations, use the `show volume actionProgress` command.
 
 == Cache flush modifier
 
@@ -400,7 +400,7 @@ Data in cache is not subject to any age or time constraints. The data is flushed
 
 [NOTE]
 ====
-Do not set the value of the `*cacheFlushModifier*` parameter above 10 seconds. An exception is for testing purposes. After running any tests in which you have set the values of the `*cacheFlushModifier*` parameter above 10 seconds, return the value of the `*cacheFlushModifier*` parameter to 10 or fewer seconds.
+Do not set the value of the `cacheFlushModifier` parameter above 10 seconds. An exception is for testing purposes. After running any tests in which you have set the values of the `cacheFlushModifier` parameter above 10 seconds, return the value of the `cacheFlushModifier` parameter to 10 or fewer seconds.
 ====
 
 == Cache without battery enabled
@@ -413,7 +413,7 @@ Modification priority defines the amount of system resources that are used when 
 
 == Cache read prefetch
 
-The `*cacheReadPrefetch*` parameter enables the controller to copy additional data blocks into cache while the controller reads and copies data blocks that are requested by the host from the drive into cache. This action increases the chance that a future request for data can be fulfilled from cache. Cache read prefetch is important for multimedia applications that use sequential data transfers. The configuration settings for the storage array that you use determine the number of additional data blocks that the controller reads into cache. Valid values for the `*cacheReadPrefetch*` parameter are `TRUE` or `FALSE`.
+The `cacheReadPrefetch` parameter enables the controller to copy additional data blocks into cache while the controller reads and copies data blocks that are requested by the host from the drive into cache. This action increases the chance that a future request for data can be fulfilled from cache. Cache read prefetch is important for multimedia applications that use sequential data transfers. The configuration settings for the storage array that you use determine the number of additional data blocks that the controller reads into cache. Valid values for the `cacheReadPrefetch` parameter are `TRUE` or `FALSE`.
 
 == Segment size
 
@@ -427,12 +427,12 @@ For optimal performance in a multiuser database or file system storage environme
 
 == Minimum firmware level
 
-5.00 adds the `*addCapacity*` parameter.
+5.00 adds the `addCapacity` parameter.
 
-7.10 adds the `*preReadRedundancyCheck*` parameter.
+7.10 adds the `preReadRedundancyCheck` parameter.
 
-7.60 adds the `*drawerID*` user input.
+7.60 adds the `drawerID` user input.
 
-7.75 adds the `*dataAssuranceDisabled*` parameter.
+7.75 adds the `dataAssuranceDisabled` parameter.
 
-8.10 corrects the values for the `*cacheFlushModifier*` parameter in the cache flush table.
+8.10 corrects the values for the `cacheFlushModifier` parameter in the cache flush table.

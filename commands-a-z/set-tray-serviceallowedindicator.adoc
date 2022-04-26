@@ -45,35 +45,35 @@ serviceAllowedIndicator=(on | off)
 |===
 | Parameter| Description
 a|
-`*tray*`
+`tray`
 a|
 The tray where the power-fan canister, the interconnect canister, the ESM canister, or the battery canister resides. Tray ID values are `0` to `99`. Enclose the tray ID value in square brackets ([ ]). If you do not enter a tray ID value, the tray ID of the controller tray is the default value.
 a|
-`*powerFan*`
+`powerFan`
 a|
 The Service Action Allowed indicator light on the power-fan canister that you want to turn on or turn off. Valid power-fan canister identifiers are `left`, `right`, `top`, or `bottom`. Enclose the power-fan canister identifier in square brackets ([ ]).
 a|
-`*interconnect*`
+`interconnect`
 a|
 The Service Action Allowed indicator light for the interconnect-battery canister.
 a|
-`*esm*`
+`esm`
 a|
 The Service Action Allowed indicator light for an ESM canister. Valid ESM canister identifiers are `left`, `right`, `top`, or `bottom`.
 a|
-`*battery*`
+`battery`
 a|
 The Service Action Allowed indicator light for a battery. Valid battery identifiers are `left` or `right`.
 a|
-`*fanCanister*`
+`fanCanister`
 a|
 The Service Action Allowed indicator light for a fan canister. Valid fan canister identifiers are `left` or `right`.
 a|
-`*powerCanister*`
+`powerCanister`
 a|
 The Service Action Allowed indicator light for a power canister. Valid power canister identifiers are `top` or `bottom`.
 a|
-`*serviceAllowedIndicator*`
+`serviceAllowedIndicator`
 a|
 The setting to turn on or turn off the Service Action Allowed indicator light. To turn on the Service Action Allowed indicator light, set this parameter to `on`. To turn off the Service Action Allowed indicator light, set this parameter to `off`.
 |===
@@ -95,14 +95,14 @@ ESM [left] serviceAllowedIndicator=on;"
 
 6.14 adds these parameters:
 
-* `*powerFan*`
-* `*interconnect*`
+* `powerFan`
+* `interconnect`
 
 6.16 adds these parameters:
 
-* `*tray*`
-* `*esm*`
+* `tray`
+* `esm`
 
-7.60 adds the identifiers `*top*` and `*bottom*`.
+7.60 adds the identifiers `top` and `bottom`.
 
-7.60 adds the `*powerCanister*` and `*fanCanister*` parameters.
+7.60 adds the `powerCanister` and `fanCanister` parameters.

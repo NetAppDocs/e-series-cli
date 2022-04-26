@@ -54,7 +54,7 @@ pass:quotes[show diskPool [_diskPoolName_]]
 |===
 | Parameter| Description
 a|
-`*diskPool*`
+`diskPool`
 a|
 The name of the disk pool for which you are retrieving information. Enclose the disk pool name in square brackets ([ ]). If the disk pool name has special characters or numbers, you must enclose the disk pool name in double quotation marks (" ") inside square brackets.
 

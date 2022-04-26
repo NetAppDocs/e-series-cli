@@ -25,7 +25,7 @@ If the storage array does not support the controller health image feature, the c
 
 [NOTE]
 ====
-With firmware version 8.20 the `*coreDumpAllowOverWrite*` parameter is replaced with the `*controllerHealthImageAllowOverWrite*` parameter.
+With firmware version 8.20 the `coreDumpAllowOverWrite` parameter is replaced with the `controllerHealthImageAllowOverWrite` parameter.
 ====
 
 == Syntax
