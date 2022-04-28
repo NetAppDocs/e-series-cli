@@ -47,12 +47,12 @@ set controller(a|b) NTPServers=(disabled|auto|(Address1 [keyIdentifier=integerLi
 |===
 | Parameter| Description
 a|
-`*controller*`
+`controller`
 a|
 The controller for which you want to change the NTP settings. Valid controller identifiers are a or b.
 
 a|
-`*NTPServers*`
+`NTPServers`
 a|
 This parameter configures the NTP servers for the controller.
 
@@ -72,7 +72,7 @@ Surround the NTP server name with quotes, as shown in the Examples section.
 ====
 
 a|
-`*Address*`
+`Address`
 a|
 "DomainName"\|IPv4Address\|IPv6Address
 [NOTE]
@@ -81,16 +81,16 @@ If a domain name is specified, a DNS server must also be configured to allow the
 ====
 
 a|
-`*keyIdentifier*` `*keyType*`
+`keyIdentifier` `keyType`
 
-`*passPhrase*`
+`passPhrase`
 
 a|
 Optionally, these parameters provide the key credentials for enabling NTP authentication:
 
-* `*key Identifier*` is an integer from 0 to 65535.
-* `*keyType*` is one of the following: none, sha1, sha224, sha256, sha384 or sha512.
-* `*passPhrase*` is either a hex digit (0-9, with a-f allowed), which is exactly 40 digits long entered as a stringLiteral, or an alphanumeric character string up to 20 bytes long.
+* `key Identifier` is an integer from 0 to 65535.
+* `keyType` is one of the following: none, sha1, sha224, sha256, sha384 or sha512.
+* `passPhrase` is either a hex digit (0-9, with a-f allowed), which is exactly 40 digits long entered as a stringLiteral, or an alphanumeric character string up to 20 bytes long.
 
 |===
 

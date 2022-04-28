@@ -42,11 +42,11 @@ The following table lists the parameters for sending an AutoSupport test message
 |===
 | Parameter| Description
 a|
-`*test*`
+`test`
 a|
 Required parameter for the command. Requires no value.
 a|
-`*reply-toEmail*`
+`reply-toEmail`
 a|
 Allows the user to specify the reply-to email address for the AutoSupport messages of SMTP delivery type.
 |===
@@ -68,7 +68,7 @@ SMcli completed successfully.
 
 == Example of testing using SMTP delivery
 
-Following are examples of the usage of this command. When using an SMTP delivery method, you can use the `*reply-toEmail*` parameter to specify the destination address.
+Following are examples of the usage of this command. When using an SMTP delivery method, you can use the `reply-toEmail` parameter to specify the destination address.
 
 ----
 SMcli -autoSupportConfig test reply-toEmail:user@netapp.com

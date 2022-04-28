@@ -233,8 +233,6 @@ entries:
       url: /commands-a-z/establish-asyncmirror-volume.html
     - title: export storagearray securitykey
       url: /commands-a-z/export-storagearray-securitykey.html
-    - title: external key management commands related to certificates
-      url: /commands-a-z/external-key-management-commands-related-to-certificates.html
   - title: G
     entries:
     - title: getting started with aurthentication

@@ -37,19 +37,19 @@ When all of the firmware downloads have successfully completed, this command ret
 |===
 | Status| Definition
 a|
-Successful
+`Successful`
 a|
 The downloads completed without errors.
 a|
-Not Attempted
+`Not Attempted`
 a|
 The downloads did not start.
 a|
-Partial Download
+`Partial Download`
 a|
 The downloads are in progress.
 a|
-Failed
+`Failed`
 a|
 The downloads completed with errors.
 |===

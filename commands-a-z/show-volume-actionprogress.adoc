@@ -40,7 +40,7 @@ show volume pass:quotes[[_volumeName_]] actionProgress
 |===
 | Parameter| Description
 a|
-`*volume*`
+`volume`
 a|
 The name of a volume for which you want to retrieve information about a long running operation. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
 

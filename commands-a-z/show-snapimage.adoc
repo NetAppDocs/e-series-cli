@@ -34,12 +34,12 @@ snapImages pass:quotes[["_snapImageName1_" ... "_snapImageNamen_"]])
 |===
 | Parameter| Description
 a|
-`*allSnapImages*`
+`allSnapImages`
 a|
 The parameter to return information about all of the snapshot images in the storage array.
 
 a|
-`*snapImage*`
+`snapImage`
 a|
 The name of a snapshot image for which you want to retrieve information. The name of a snapshot image is comprised of two parts:
 
@@ -55,7 +55,7 @@ The identifier for the snapshot image can be one of these:
 Enclose the snapshot image name in double quotation marks (" ") inside square brackets ([ ]).
 
 a|
-`*snapImages*`
+`snapImages`
 a|
 The names of several snapshot images for which you want to retrieve information. Enter the names of the snapshot images using these rules:
 
@@ -64,7 +64,7 @@ The names of several snapshot images for which you want to retrieve information.
 * Separate each of the names with a space.
 
 a|
-`*summary*`
+`summary`
 a|
 This parameter returns a concise list of information about the snapshot images.
 

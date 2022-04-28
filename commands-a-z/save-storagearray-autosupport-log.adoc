@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: retrieve, autosupport, log, individual, E2800, E5700, arrays
 summary: "The save storageArray autoSupport log command allows you to view an AutoSupport log file. This file provides information about status, history of transmission activity, and any errors encountered during delivery of the AutoSupport messages. The log is available for all AutoSupport-capable and AutoSupport-enabled storage arrays."
 ---
-= Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)
+= Retrieve an AutoSupport log
 :icons: font
 :imagesdir: ./media/
 
@@ -40,7 +40,7 @@ file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*inputArchive*`
+`inputArchive`
 a|
 Allows you to specify the archived AutoSupport log, where the archive file is `n`, an integer starting at 0.
 
@@ -50,7 +50,7 @@ Omitting this parameter means you select the current AutoSupport log (captured a
 ====
 
 a|
-`*file*`
+`file`
 a|
 Allows you to specify the output ASUP transmission log filename.
 [NOTE]
@@ -60,11 +60,7 @@ This parameter is required.
 
 |===
 
-== Minimum Firmware Level
-
-8.40
-
-== Examples
+=== Examples
 
 ----
 
@@ -72,3 +68,7 @@ SMcli -n Array1 -c "save storageArray autoSupport log inputArchive=0 file=\"ASUP
 
 SMcli completed successfully.
 ----
+
+== Minimum Firmware Level
+
+8.40

@@ -41,7 +41,7 @@ save driveChannel faultDiagnostics file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the results of the fault isolation diagnostics test on the drive channel. Enclose the file name in double quotation marks (" "). For example:
 

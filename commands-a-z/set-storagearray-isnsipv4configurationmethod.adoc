@@ -33,11 +33,11 @@ isnsIPv4Address=pass:quotes[_ipAddress_]
 |===
 | Parameters| Description
 a|
-`*isnsIPv4ConfigurationMethod*`
+`isnsIPv4ConfigurationMethod`
 a|
-The method that you want to use to define the iSNS server configuration. You can enter the IP address for the IPv4 iSNS servers by selecting `static`. For IPv4, you can choose to have a Dynamic Host Configuration Protocol (DHCP) server select the iSNS server IP address by entering `dhcp`. To enable DHCP, you must set the `*isnsIPv4Address*` parameter to `0.0.0.0`.
+The method that you want to use to define the iSNS server configuration. You can enter the IP address for the IPv4 iSNS servers by selecting `static`. For IPv4, you can choose to have a Dynamic Host Configuration Protocol (DHCP) server select the iSNS server IP address by entering `dhcp`. To enable DHCP, you must set the `isnsIPv4Address` parameter to `0.0.0.0`.
 a|
-`*isnsIPv4Address*`
+`isnsIPv4Address`
 a|
 The IP address that you want to use for the iSNS server. Use this parameter with the `static` value for IPv4 configurations. If you choose to have a DHCP server set the IP address for an IPv4 Internet iSNS server, you must set the `*isnsIPv4Address*` parameter to `0.0.0.0`.
 |===

@@ -42,40 +42,40 @@ set storageArray directoryServer ["domainId"]
 |===
 | Parameter| Description
 a|
-`*directoryServer*`
+`directoryServer`
 a|
 Allows you to specify the domain ID to update the settings.
 a|
-`*domainNames*`
+`domainNames`
 a|
 Allows you to set one or more valid domain names for the directory server. If you enter more than one name, separate the values with a space. Using this set option will clear out existing domain names.
 a|
-`*addDomainNames*`
+`addDomainNames`
 a|
 Allows you to add one or more valid domain names for the directory server. If you enter more than one name, separate the values with a space.
 a|
-`*serverUrl*`
+`serverUrl`
 a|
 Allows you to specify the server URL.
 a|
-`*bindAccount*`
+`bindAccount`
 a|
 Allows you to specify the username to be used as the binding account.
 a|
-`*bindPassword*`
+`bindPassword`
 a|
 Allows you to specify the password to be used as the binding password.
 a|
-`*searchBaseDN*`
+`searchBaseDN`
 a|
 Allows you to specify the search base distinguished name to search for LDAP user objects for determining group membership.
 a|
-`*usernameAttribute*`
+`usernameAttribute`
 a|
 Allows you to specify the attribute to be used to search for user objects for determining group membership. If specified, the string must contain the variable `+{uid}+` that will be replaced with the username used during login. Example: `+sAMAccountName={uid}+`
 
 a|
-`*groupAttributes*`
+`groupAttributes`
 a|
 Allows you to set one or more group attributes to be used to look for group Distinguished Names. Distinguished names are used to determine group membership for role mapping.
 [NOTE]
@@ -89,7 +89,7 @@ Using this parameter will clear out existing groups.
 ====
 
 a|
-`*addGroupAttributes*`
+`addGroupAttributes`
 a|
 Allows you to add one or more group attributes to be used to look for group Distinguished Names. Distinguished names are used to determine group membership for the purposes of role mapping.
 [NOTE]
@@ -98,9 +98,9 @@ If you enter more than one group, separate the values with a space.
 ====
 
 a|
-`*skipConfigurationTest*`
+`skipConfigurationTest`
 a|
-Allows you to skip the configuration test before the configuration is saved. The default is `*false*`.
+Allows you to skip the configuration test before the configuration is saved. The default is `false`.
 |===
 
 == Examples

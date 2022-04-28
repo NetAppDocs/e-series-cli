@@ -35,7 +35,7 @@ stop consistencyGroup pass:quotes[[_consistencyGroupName_]]pendingSnapImageCreat
 |===
 | Parameter| Description
 a|
-`*consistencyGroupName*`
+`consistencyGroupName`
 a|
 The name of the consistency group for which you want to stop any pending snapshot operation. Enclose the name of the consistency group in square brackets ([ ]). If the consistency group name has special characters or numbers, you must enclose the consistency group name in double quotation marks (" ") inside square brackets.
 |===

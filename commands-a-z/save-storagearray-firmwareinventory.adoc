@@ -44,7 +44,7 @@ save storageArray firmwareInventory file=pass:quotes["_filename_"]
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the firmware inventory. Enclose the file name in double quotation marks (" "). For example:
 

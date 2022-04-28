@@ -37,7 +37,7 @@ pass:quotes[delete hostGroup [_hostGroupName_]]
 |===
 | Parameter| Description
 a|
-`*hostGroup*`
+`hostGroup`
 a|
 The name of the host group that you want to delete. Enclose the host group name in square brackets ([ ]). If the host group name contains special characters or consists only of numbers, you must enclose the host group name in double quotation marks (" ") inside square brackets.
 |===

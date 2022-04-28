@@ -40,15 +40,15 @@ set hostPort pass:quotes[[_portLabel_]] userLabel=pass:quotes[_newPortLabel_]
 |===
 | Parameter| Description
 a|
-`*hostPort*`
+`hostPort`
 a|
 The name of the host port for which you want to change the host type, or for which you want to create a new name. Enclose the host port name in square brackets ([ ]). If the host port name has special characters or numbers, enclose the host port name in double quotation marks (" ") inside square brackets.
 a|
-`*userLabel*`
+`userLabel`
 a|
 The new name that you want to give to the host port. Enclose the new name of the host port in double quotation marks (" ").
 a|
-`*host*`
+`host`
 a|
 The name of the host for which you are defining an HBA or HCA host port. Enclose the host name in double quotation marks (" ").
 |===

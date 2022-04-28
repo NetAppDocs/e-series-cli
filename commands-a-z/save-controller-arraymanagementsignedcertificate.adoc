@@ -34,11 +34,11 @@ save controller [(a|b)] arrayManagementSignedCertificate
 |===
 | Parameter| Description
 a|
-`*controller*`
+`controller`
 a|
 Allows you to specify the controller on which you want to download the signed certificate from. Valid controller identifiers are a or b, where a is the controller in slot A, and b is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
 a|
-`*file*`
+`file`
 a|
 Allows you to specify the file for which to save the controller's signed certificate file.
 |===

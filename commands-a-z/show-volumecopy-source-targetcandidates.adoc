@@ -31,7 +31,7 @@ show volumeCopy source pass:quotes[["_sourceName_"]] targetCandidates
 |===
 | Parameter| Description
 a|
-`*source*`
+`source`
 a|
 The name of the source volume for which you are trying to find a candidate target volume. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
 

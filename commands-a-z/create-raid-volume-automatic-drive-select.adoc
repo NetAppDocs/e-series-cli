@@ -248,31 +248,31 @@ To enable tray/drawer loss protection, refer to the following tables for additio
 |===
 | Level| Criteria for Tray Loss Protection| Minimum number of trays required
 a|
-Disk Pool
+`Disk Pool`
 a|
 The disk pool contains no more than two drives in a single tray.
 a|
 6
 a|
-RAID 6
+`RAID 6`
 a|
 The volume group contains no more than two drives in a single tray.
 a|
 3
 a|
-RAID 3 or RAID 5
+`RAID 3` or `RAID 5`
 a|
 Each drive in the volume group is located in a separate tray.
 a|
 3
 a|
-RAID 1
+`RAID 1`
 a|
 Each drive in a RAID 1 pair must be located in a separate tray.
 a|
 2
 a|
-RAID 0
+`RAID 0`
 a|
 Cannot achieve Tray Loss Protection.
 a|
@@ -282,31 +282,31 @@ Not applicable
 |===
 | Level| Criteria for drawer loss protection| Minimum number of drawers required
 a|
-Disk Pool
+`Disk Pool`
 a|
 The pool includes drives from all five drawers and there are an equal number of drives in each drawer. A 60-drive tray can achieve Drawer Loss Protection when the disk pool contains 15, 20, 25, 30, 35, 40, 45, 50, 55, or 60 drives.
 a|
 5
 a|
-RAID 6
+`RAID 6`
 a|
 The volume group contains no more than two drives in a single drawer.
 a|
 3
 a|
-RAID 3 or RAID 5
+`RAID 3` or `RAID 5`
 a|
 Each drive in the volume group is located in a separate drawer.
 a|
 3
 a|
-RAID 1
+`RAID 1`
 a|
 Each drive in a mirrored pair must be located in a separate drawer.
 a|
 2
 a|
-RAID 0
+`RAID 0`
 a|
 Cannot achieve Drawer Loss Protection.
 a|

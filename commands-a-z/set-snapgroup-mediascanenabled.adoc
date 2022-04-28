@@ -34,15 +34,15 @@ redundancyCheckEnabled=(TRUE | FALSE)
 |===
 | Parameter| Description
 a|
-`*snapGroup*`
+`snapGroup`
 a|
 The name of the snapshot group on which you want to run a media scan. Enclose the snapshot group name in double quotation marks (" ") inside of square brackets ([ ]).
 a|
-`*mediaScanEnabled*`
+`mediaScanEnabled`
 a|
 The setting to turn on or turn off media scan for the volume. To turn on media scan, set this parameter to `TRUE`. To turn off media scan, set this parameter to `FALSE`. (If media scan is disabled at the storage array level, this parameter has no effect.)
 a|
-`*redundancyCheckEnabled*`
+`redundancyCheckEnabled`
 a|
 The setting to turn on or turn off redundancy checking during a media scan. To turn on redundancy checking, set this parameter to `TRUE`. To turn off redundancy checking, set this parameter to `FALSE`.
 |===

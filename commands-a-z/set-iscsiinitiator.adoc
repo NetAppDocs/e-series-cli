@@ -40,7 +40,7 @@ chapSecret=pass:quotes["_newSecurityKey_"])
 |===
 | Parameter| Description
 a|
-`*initiatorUserLabel*`
+`initiatorUserLabel`
 a|
 The iscsi Initiator user label of the iSCSI initiator for which you want to set attributes. Enclose the iSCSI initiator user label in double quotation marks (" ") inside square brackets ([ ]).
 [NOTE]
@@ -53,12 +53,12 @@ set iscsiInitiator ["ICTM1590S02H1_AA"]
 ----
 
 a|
-`*iscsiInitiatorName*`
+`iscsiInitiatorName`
 a|
-The name of the initiator for which you want to set attributes. Enclose the `*iscsiInitiatorName*` in double quotation marks (" ") inside angle brackets (< >).
+The name of the initiator for which you want to set attributes. Enclose the `iscsiInitiatorName` in double quotation marks (" ") inside angle brackets (< >).
 [NOTE]
 ====
-The `*iscsiInitiatorName*` is the iSCSI Qualified Name (iqn). An example:
+The `iscsiInitiatorName` is the iSCSI Qualified Name (iqn). An example:
 ====
 
 ----
@@ -66,7 +66,7 @@ set iscsiInitiator <"iqn.2016-11.com.vmware.iscsi:ictm1509s02h1">
 ----
 
 a|
-`*userLabel*`
+`userLabel`
 a|
 The new user label that you want to use for the iSCSI initiator. Enclose the new user label in double quotation marks (" ").
 [NOTE]
@@ -79,7 +79,7 @@ set iscsiInitiator ["ICTM1590S02H1_AA"]
 ----
 
 a|
-`*host*`
+`host`
 a|
 The name of the new host to which the host port is connected. Enclose the host name in double quotation marks (" "). An example is shown below:
 
@@ -88,7 +88,7 @@ The name of the new host to which the host port is connected. Enclose the host n
 ----
 
 a|
-`*chapSecret*`
+`chapSecret`
 a|
 The security key that you want to use to authenticate a peer connection. Enclose the security key in double quotation marks (" ").
 |===
@@ -99,7 +99,7 @@ You can use any combination of alphanumeric characters, hyphens, and underscores
 
 Challenge Handshake Authentication Protocol (CHAP) is a protocol that authenticates the peer of a connection. CHAP is based upon the peers sharing a _secret_. A secret is a security key that is similar to a password.
 
-Use the `*chapSecret*` parameter to set up the security keys for initiators that require a mutual authentication. The CHAP secret must be between 12 characters and 57 characters. This table lists the valid characters.
+Use the `chapSecret` parameter to set up the security keys for initiators that require a mutual authentication. The CHAP secret must be between 12 characters and 57 characters. This table lists the valid characters.
 
 [cols="1a,1a,1a,1a,1a,1a,1a,1a,1a,1a,1a,1a"]
 |===

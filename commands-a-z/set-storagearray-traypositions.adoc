@@ -32,18 +32,18 @@ set storageArray trayPositions=pass:quotes[(controller | _trayID_ ... _trayIDn_)
 |===
 | Parameter| Description
 a|
-`*trayPositions*`
+`trayPositions`
 a|
 A list of all of the tray IDs. The sequence of the tray IDs in the list defines the positions for the controller tray and the drive trays in a storage array. Valid values are `0` to `99`. Enter the tray ID values separated with a space. Enclose the list of tray ID values in parentheses. For storage arrays where the controller tray has a predefined identifier that is not in the range of valid tray position values, use the `controller` value.
 |===
 
 == Notes
 
-This command defines the position of a tray in a storage array by the position of the tray ID in the `*trayPositions*` list. For example, if you have a controller tray with an ID set to 84 and drive trays with IDs set to 1, 12, and 50, the `*trayPositions*` sequence (`84 1 12 50`) places the controller tray in the first position, drive tray 1 in the second position, drive tray 12 in the third position, and drive tray 50 in the fourth position. The `*trayPositions*` sequence (`1 84 50 12`) places the controller tray in the second position, drive tray 1 in the first position, drive tray 50 in the third position, and drive tray 12 in the fourth position.
+This command defines the position of a tray in a storage array by the position of the tray ID in the `trayPositions` list. For example, if you have a controller tray with an ID set to 84 and drive trays with IDs set to 1, 12, and 50, the `trayPositions` sequence (`84 1 12 50`) places the controller tray in the first position, drive tray 1 in the second position, drive tray 12 in the third position, and drive tray 50 in the fourth position. The `trayPositions` sequence (`1 84 50 12`) places the controller tray in the second position, drive tray 1 in the first position, drive tray 50 in the third position, and drive tray 12 in the fourth position.
 
 [NOTE]
 ====
-You must include all of the trays in the storage array in the list defined by the `*trayPositions*` parameter. If the number of trays in the list does not match the total number of trays in the storage array, an error message appears.
+You must include all of the trays in the storage array in the list defined by the `trayPositions` parameter. If the number of trays in the list does not match the total number of trays in the storage array, an error message appears.
 ====
 
 [NOTE]

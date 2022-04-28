@@ -31,7 +31,7 @@ set storageArray icmpPingResponse=(TRUE | FALSE)
 |===
 | Parameter| Description
 a|
-`*icmpPingResponse*`
+`icmpPingResponse`
 a|
 This parameter turns on or turns off Echo Request messages. Set the parameter to `TRUE` to turn on Echo Request messages. Set the parameter to `FALSE` to turn off Echo Request messages.
 |===

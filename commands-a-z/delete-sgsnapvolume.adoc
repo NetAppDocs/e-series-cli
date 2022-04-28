@@ -31,11 +31,11 @@ pass:quotes[delete cgSnapVolume ["_snapVolumeName_"]]
 |===
 | Parameter| Description
 a|
-`*cgSnapVolume*`
+`cgSnapVolume`
 a|
 The name of the consistency group snapshot volume that you want to delete. Enclose the name of the consistency group snapshot volume in double quotation marks (" ") inside square brackets ([ ]).
 a|
-`*deleteRepositoryMembers*`
+`deleteRepositoryMembers`
 a|
 The parameter to save or delete the member volumes. To save the member volumes, set this parameter to `TRUE`. To delete the member volumes, set this parameter to `FALSE`. The default value is `TRUE`.
 

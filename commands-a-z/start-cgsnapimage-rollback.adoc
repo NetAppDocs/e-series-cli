@@ -40,7 +40,7 @@ memberVolumeSet pass:quotes[("_memberVolumeName1_" ... "_memberVolumeNameN_")]
 |===
 | Parameter| Description
 a|
-`*cgSnapImage*`
+`cgSnapImage`
 a|
 The name of the consistency group snapshot image for which you want to start a rollback operation. The name of a snapshot image is comprised of two parts:
 
@@ -56,13 +56,13 @@ The identifier for the snapshot image can be one of these:
 Enclose the snapshot image name in double quotation marks (" ") inside square brackets ([ ]).
 
 a|
-`*memberVolumeSet*`
+`memberVolumeSet`
 a|
 The name of one or more member base volumes in a consistency group that you want to rollback. Enclose each member base volume name in double quotation marks (" ") inside parentheses.
 
 You can enter more than one volume name. Enclose all of the volume names in one set of square brackets ([ ]). Enclose each volume name in double quotation marks (" "). Separate each volume name with a space.
 
-When the `*memberVolumeSet*` parameter is not used the rollback process applies to all member volumes of the consistency group.
+When the `memberVolumeSet` parameter is not used the rollback process applies to all member volumes of the consistency group.
 
 |===
 

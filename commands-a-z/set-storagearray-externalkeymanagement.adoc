@@ -41,11 +41,11 @@ serverPort=pass:quotes[_portNumber_]
 |===
 | Parameter| Description
 a|
-`*serverAddress*`
+`serverAddress`
 a|
 Allows you to specify the external key management server address. The server address can be a fully qualified domain name, IPv4 address, or IPv6 address.
 a|
-`*serverPort*`
+`serverPort`
 a|
 Allows you to specify the port number of the external key management server.
 |===

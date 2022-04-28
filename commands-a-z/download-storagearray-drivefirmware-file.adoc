@@ -31,7 +31,7 @@ pass:quotes[[file="_filename2_"... file="_filenameN_"]]
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name of the file that contains the firmware image. Enclose the file path and the file name of the firmware image in double quotation marks (" "). For example:
 

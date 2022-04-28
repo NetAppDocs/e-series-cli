@@ -40,12 +40,12 @@ primaries pass:quotes[[_primaryVolumeName1_ ... _primaryVolumeNameN_])]
 |===
 | Parameter| Description
 a|
-`*primary*`
+`primary`
 a|
 The name of the primary volume for which you want to suspend operation. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
 
 a|
-`*primaries*`
+`primaries`
 a|
 The names of several primary volumes for which you want to suspend operations. All of the volumes will have the same properties. Enter the names of the volumes using these rules:
 
@@ -59,7 +59,7 @@ If the volume names have special characters or numbers, enter the names using th
 * Separate each of the names with a space.
 
 a|
-`*writeConsistency*`
+`writeConsistency`
 a|
 This parameter defines whether the volumes identified in this command are in a write-consistency group or are separate. For the volumes in the same write-consistency group, set this parameter to `TRUE`. For the volumes that are separate, set this parameter to `FALSE`.
 |===

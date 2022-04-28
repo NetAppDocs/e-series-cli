@@ -35,7 +35,7 @@ set storageArray vaaiEnabled=(TRUE | FALSE)
 |===
 | Parameter| Description
 a|
-`*vaaiEnabled*`
+`vaaiEnabled`
 a|
 The setting to turn on or turn off VAAI. To turn on VAAI set this parameter to `TRUE`. To turn off VAAI set this parameter to `FALSE`. The default setting is that VAAI is turned on.
 |===

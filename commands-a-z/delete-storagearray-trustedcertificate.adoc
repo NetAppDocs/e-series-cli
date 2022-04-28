@@ -32,11 +32,11 @@ aliases=("_alias1_" ... "_aliasN_]"))]
 |===
 | Parameter| Description
 a|
-`*allUserInstalled*`
+`allUserInstalled`
 a|
 Allows you to specify the removal of all user installed certificates.
 a|
-`*aliases*`
+`aliases`
 a|
 Allows you to specify one or more CA certificates to be deleted using the alias names or specify all. The aliases can be from any controllers. Enclose all the aliases in parentheses. If you enter more than one alias, separate them with a space.
 |===

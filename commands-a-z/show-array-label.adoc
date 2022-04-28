@@ -29,7 +29,7 @@ show storageArrayLabel all
 |===
 | Parameter| Description
 a|
-`*userDefinedString*`
+`userDefinedString`
 a|
 Allows you to specify a user-defined label for the storage array.
 |===

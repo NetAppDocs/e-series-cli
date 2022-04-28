@@ -13,7 +13,7 @@ The `set emailAlert` command configures the email to send an email to a specifie
 
 == Supported Arrays
 
-This command applies to theE2800, E5700, EF600, and EF300 storage arrays. However, you can use the command as an SMcli command, not a script command, for E2700 or E5600 arrays. In this case, the command applies to all of the arrays in the management domain.
+This command applies to the E2800, E5700, EF600, and EF300 storage arrays. However, you can use the command as an SMcli command, not a script command, for E2700 or E5600 arrays. In this case, the command applies to all of the arrays in the management domain.
 
 == Syntax
 
@@ -38,11 +38,11 @@ set emailAlert
 |===
 | Parameter| Description
 a|
-`*serverAddress*`
+`serverAddress`
 a|
 Allows you to set the email server address. The email server address can be a fully qualified domain name, IPv4 address, or IPv6 address.
 a|
-`*serverEncryption*`
+`serverEncryption`
 a|
 The encryption to be used to communicate with the server. The value may be one of the following:
 
@@ -51,7 +51,7 @@ The encryption to be used to communicate with the server. The value may be one o
 * `_starttls_` - Create an unencrypted connection and then establish an SSL/TLS session (explicit TLS)
 
 a|
-`*serverPort*`
+`serverPort`
 a|
 The TCP port to be used to connect to the server. The default value will depend on the encryption type.
 
@@ -60,27 +60,27 @@ The TCP port to be used to connect to the server. The default value will depend 
 * `_starttls_` - Defaults to port 587
 
 a|
-`*serverUsername*`
+`serverUsername`
 a|
 The user name to provide authentication credentials to the server. If the user name is specified, the password must also be specified.
 a|
-`*serverPassword*`
+`serverPassword`
 a|
 The password to provide authentication credentials to the server. If the password is specified, the user name must also be specified.
 a|
-`*senderAddress*`
+`senderAddress`
 a|
 Allows you to set the sender's email address.
 a|
-`*additionalContactInfo*`
+`additionalContactInfo`
 a|
 Allows you to provide the filename that contains the additional contact information to be used in the email alert.
 a|
-`*recipientAddresses*`
+`recipientAddresses`
 a|
 Allows you to set one or more recipient email addresses. Using this set option will clear out existing email addresses. Enclose all of the names in parentheses. Enclose each of the names in double quotation marks (""). Separate each of the names with a space.
 a|
-`*addRecipientAddresses*`
+`addRecipientAddresses`
 a|
 Allows you to add one or more recipient email addresses to the existing list. Enclose all of the names in parentheses. Enclose each of the names in double quotation marks (""). Separate each of the names with a space.
 |===
@@ -109,4 +109,4 @@ SMcli completed successfully.
 
 8.40
 
-11.70.1 adds the `*serverEncryption*`, `*serverPort*`, `*serverUsername*`, and `*serverPassword*` parameters.
+11.70.1 adds the `serverEncryption`, `serverPort`, `serverUsername`, and `serverPassword` parameters.

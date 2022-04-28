@@ -41,11 +41,7 @@ a|
 Displays the syslog configuration with the matching ID.
 |===
 
-== Minimum firmware level
-
-8.42
-
-== Examples
+=== Examples
 
 ----
 SMcli -n Array1 -c "show storageArray syslog allServers;"
@@ -60,3 +56,7 @@ Components
 
 SMcli completed successfully.
 ----
+
+== Minimum firmware level
+
+8.42

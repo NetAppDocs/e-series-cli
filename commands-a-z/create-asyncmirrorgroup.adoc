@@ -72,12 +72,12 @@ The World Wide Identifier (WWID) of the remote storage array on which you are mi
 The remote storage array must have the same connection type as the local storage array.
 
 a|
-*remotePassword* ``
+`remotePassword`
 a|
 The password for the remote storage array. Use this parameter when the remote storage array is password protected. Enclose the password in double quotation marks (" ").
 
 a|
-*interfaceType* ``
+`interfaceType`
 a|
 Specify which connection type to use: either Fibre Channel fabric or iSCSI interface. (The default is Fibre Channel.) The local storage array and the remote storage array must be connected through a proper Fibre Channel fabric or iSCSI interface.
 

@@ -38,19 +38,19 @@ save storageArray hostPortStatistics [(raw | baseline)] type=(ISCSI| ISER | SRP 
 |===
 | Parameter| Description
 a|
-`*raw*`
+`raw`
 a|
 Allows you to retrieve the collected statistics since start-of-day. Enclose the parameter in square brackets ([ ]).
 a|
-`*baseline*`
+`baseline`
 a|
 Allows you to retrieve the collected statistics from the time the controllers`' baselines were reset to zero. Enclose the parameter in square brackets ([ ]).
 a|
-`*type*`
+`type`
 a|
 Allows you to indicate which statistics type to collect. Valid choices are: `ISCSI`, `ISER`, `SRP`, and `NVMEOF`.
 a|
-`*file*`
+`file`
 a|
 Allows you to specify the file path and filename to save the statistics. Enclose the file name in double quotation marks (" "). Use any file name with the `.csv` extension.
 |===
@@ -60,7 +60,7 @@ Allows you to specify the file path and filename to save the statistics. Enclose
 |===
 | Type| Ethernet MAC, Ethernet TCP/IP, Local Initiator (Protocol), DCBX Operational State, LLDP TLV, DCBX TLV| Target (Protocol)| InfiniBand Interface| NVMe Subsystem| ASUP Filename
 a|
-`*iscsi*`
+`iscsi`
 a|
 
 ____
@@ -80,7 +80,7 @@ a|
 a|
 
 a|
-`*iser*`
+`iser`
 a|
 
 a|
@@ -100,7 +100,7 @@ a|
 a|
 
 a|
-`*srp*`
+`srp`
 a|
 
 a|
@@ -116,7 +116,7 @@ a|
 a|
 
 a|
-`*nvmeof*`
+`nvmeof`
 a|
 
 a|

@@ -34,20 +34,20 @@ pass:quotes[[file="_filename_"]]
 |===
 | Parameter| Description
 a|
-`*ssdCache*`
+`ssdCache`
 a|
 The name of the SSD cache for which you want to retrieve information. Enclose the SSD cache name in square brackets ([ ]). If the SSD cache name has special characters or numbers, you must enclose the SSD cache name in double quotation marks (" ") inside square brackets.
 a|
-`*ssdCacheStatistics*`
+`ssdCacheStatistics`
 a|
 An optional parameter to the `show ssdCache` command that indicates you want to retrieve cache statistics.
 a|
-`*controller*`
+`controller`
 a|
 Each controller stores SSD cache metadata for the volumes that it owns. Therefore, the SSD cache statistics are maintained and displayed per controller. Valid controller identifiers are `a`, `b`, or `both`, where `a` is the controller in slot A , `b` is the controller in slot B, and `both` is both controllers. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the default value is `both`.
 
 a|
-`*file*`
+`file`
 a|
 The file path and the file name to which you want to save the SSD cache statistics. Additional statistics are available when you save the statistics to a file.
 

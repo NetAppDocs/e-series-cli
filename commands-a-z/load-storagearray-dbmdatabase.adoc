@@ -84,6 +84,6 @@ Depending on the size of the database image, restoring the database might take u
 
 7.83 adds these parameters:
 
-* sourceLocation
-* controller
-* contentType
+* `sourceLocation`
+* `controller`
+* `contentType`

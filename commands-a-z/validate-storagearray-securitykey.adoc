@@ -40,7 +40,7 @@ pass:quotes[validate storageArray securityKey file="_fileName_" passPhrase="_pas
 |===
 | Parameter| Description
 a|
-`*file*`
+`file`
 a|
 The file path and the file name that has the security key. Enclose file path and the file name in double quotation marks (" "). For example:
 
@@ -54,7 +54,7 @@ The file name must have an extension of `.slk`.
 ====
 
 a|
-`*passPhrase*`
+`passPhrase`
 a|
 A character string that encrypts the security key so that you can store the security key in an external file. Enclose the pass phrase in double quotation marks (" ").
 |===

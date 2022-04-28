@@ -34,15 +34,15 @@ show storageArray trustedCertificate [all | allUserInstalled|
 |===
 | Parameter| Description
 a|
-`*all*`
+`all`
 a|
 Allows you to specify the retrieval of all certificates, including pre-installed and user installed certificates.
 a|
-`*allUserInstalled*`
+`allUserInstalled`
 a|
 Allows you to specify the retrieval of all user installed certificates. This is the default option.
 a|
-`*aliases*`
+`aliases`
 a|
 Allows the user to specify which pre-installed or user installed trusted certificate to retrieve by alias. Enclose all the aliases in parentheses. If you enter more than one alias, separate them with a space.
 |===

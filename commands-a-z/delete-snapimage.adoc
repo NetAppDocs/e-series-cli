@@ -36,12 +36,12 @@ snapGroups=("_snapGroupName1"
 |===
 | Parameter| Description
 a|
-`*snapGroup*`
+`snapGroup`
 a|
 The name of the snapshot group that has the snapshot image that you want to delete. Enclose the name of the snapshot group in double quotation marks (" ").
 
 a|
-`*snapGroups*`
+`snapGroups`
 a|
 The names of several snapshot groups that has the snapshot image that you want to delete. Enter the names of the snapshot groups using these rules:
 
@@ -50,7 +50,7 @@ The names of several snapshot groups that has the snapshot image that you want t
 * Separate each of the names with a space.
 
 a|
-`*deleteCount*`
+`deleteCount`
 a|
 The number of snapshot images that you want to delete from the snapshot group. Use integer values.
 
@@ -59,7 +59,7 @@ This parameter deletes the oldest snapshot image first and continues to delete t
 If the number that you enter is greater than the actual number of all of the snapshot images in the snapshot group, all of the snapshot images will be deleted. The snapshot group is left empty.
 
 a|
-`*retainCount*`
+`retainCount`
 a|
 The number of snapshot images that you want to keep in the snapshot group. Use integer values.
 
@@ -68,7 +68,7 @@ This parameter keeps the most recent snapshot images in the snapshot group and d
 If the number of existing snapshot images in the snapshot group is less than the number that you enter, none of the snapshot images are deleted.
 
 a|
-`*ignoreSnapVolume*`
+`ignoreSnapVolume`
 a|
 Use this parameter to make sure that you do not delete a snapshot image that has a snapshot volume associated with the snapshot image. You can use one of these values:
 
@@ -78,7 +78,7 @@ Use this parameter to make sure that you do not delete a snapshot image that has
 The default value is `TRUE`.
 
 a|
-`*snapImageID*`
+`snapImageID`
 a|
 The `snapImageID` parameter accepts only the `OLDEST` option. This parameter deletes the earliest snapshot image created.
 

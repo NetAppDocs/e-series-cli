@@ -46,31 +46,31 @@ file=pass:quotes["_file_"]
 |===
 | Parameter| Description
 a|
-`*commonName*`
+`commonName`
 a|
 The value entered for this parameter must match one of the user names defined on the KMIP server.
 a|
-`*organization*`
+`organization`
 a|
 Allows you to specify the organization's full legal name that the storage array belongs to. Do not abbreviate it and include any suffixes such as Inc, Corp, or LLC.
 a|
-`*locality*`
+`locality`
 a|
 Allows you to specify the city or locality where the storage array is located,
 a|
-`*country*`
+`country`
 a|
 Allows you to specify your country's two-digit ISO (International Organization for Standardization) 3166-1 alpha-2 code, such as US.
 a|
-`*file*`
+`file`
 a|
 Allows you to specify the file and file location where you will save the controller's signed certificate file.
 a|
-`*organizationalUnit*`
+`organizationalUnit`
 a|
 Allows you to specify the organization's division that handles the certificate.
 a|
-`*stateProvince*`
+`stateProvince`
 a|
 Allows you to specify the state or region where the storage array is located. This should not be abbreviated.
 |===
