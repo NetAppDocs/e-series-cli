@@ -11,9 +11,17 @@ summary: "A security key is a string of characters, which is shared between the 
 [.lead]
 A security key is a string of characters, which is shared between the secure-enabled drives and controllers in a storage array. When using external key management, you create and maintain security keys on a key management server
 
-See SANtricity System Manager online help for conceptual information on using external key management servers and security keys. The following graphic shows the basic workflow for implementing external security keys:
+See SANtricity System Manager online help for conceptual information on using external key management servers and security keys.
 
-image::../media/external_key_management_workflow.gif[]
+The following is the basic workflow for implementing external security keys:
+
+. *Generate a Certificate Signing request*
+. *Get client and server certificates from the KMIP server*
+. *Install the client certificate*
+. *Set the IP address and port number of the KMIP server*
+. *Test communication with KMIP server*
+. *Create a storage array security key*
+. *Validate the security key*
 
 == Workflow steps
 

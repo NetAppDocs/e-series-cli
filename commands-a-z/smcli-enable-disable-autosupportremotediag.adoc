@@ -27,9 +27,13 @@ This command is an SMcli command, not a script command. You must run this comman
 This command impacts all ASUP-capable storage arrays in the management domain.
 ====
 
-Before enabling this feature, first enable the AutoSupport feature and then the AutoSupport OnDemand feature on the management domain. You must enable the three features in this order.
+Before enabling this feature, first enable the AutoSupport feature and then the AutoSupport OnDemand feature on the management domain.
 
-image::../media/baseasup_w_third_enable.gif[]
+You must enable the three features in this order.
+
+. *Enable AutoSupport*
+. *Enable AutoSupport OnDemand*
+. *Enable AutoSupport Remote Diagnostics*
 
 == Syntax
 
@@ -40,10 +44,6 @@ SMcli enable|disable autoSupportRemoteDiag
 == Parameters
 
 None.
-
-== Minimum Firmware Level
-
-8.25
 
 == Verification
 
@@ -57,3 +57,7 @@ station.
 The AutoSupport Remote Diagnostics feature is activated on this storage
 management station.
 ----
+
+== Minimum Firmware Level
+
+8.25

@@ -32,7 +32,7 @@ This command replaces the deprecated xref:set-controller-iscsihostport.adoc[Set 
 
 set controller [(a|b)] hostPort ["portLabel"[, "physical"|"virtual"]]
     (IPV4Address=(0-255).(0-255).(0-255).(0-255) |
-    IPv6LocalAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
+    IPv6LocalAddress=(FE80):(0000):(0000):(0000):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
     IPv6RoutableAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
     IPv6RouterAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
     enableIPv4=(TRUE | FALSE) |
@@ -85,7 +85,7 @@ Allows you to enter the address in this format: (0-255).(0-255).(0-255).(0-255).
 a|
 `IPV6LocalAddress`
 a|
-Allows you to enter the address in this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF).
+Allows you to enter the address in this format: (FE80):(0000):(0000):(0000): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF).
 a|
 `IPv6RoutableAddress`
 a|
