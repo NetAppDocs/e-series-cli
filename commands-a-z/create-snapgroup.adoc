@@ -127,7 +127,7 @@ When you first create a snapshot group, it does not contains any snapshot images
 A snapshot group can have one of these states:
 
 * *Optimal* -- The snapshot group is operating normally.
-* *Full* -- The snapshot group repository is full. Additional copy-on-write operations can not be performed. This state is possible only for snapshot groups that have the Repository Full policy set to Fail Base Writes. Any snapshot group in a Full state causes a Needs-Attention condition to be posted for the storage array.
+* *Full* -- The snapshot group repository is full. Additional copy-on-write operations cannot be performed. This state is possible only for snapshot groups that have the Repository Full policy set to Fail Base Writes. Any snapshot group in a Full state causes a Needs-Attention condition to be posted for the storage array.
 * *Over Threshold* -- The snapshot group repository volume usage is at or beyond its alert threshold. Any snapshot group in this state causes a Needs-Attention condition to be posted for the storage array.
 * *Failed* -- The snapshot group has encountered a problem that has made all snapshot images in the snapshot group unusable. For example, certain types of repository volume failures can cause a Failed state. To recover from a Failed state use the `revive snapGroup` command.
 

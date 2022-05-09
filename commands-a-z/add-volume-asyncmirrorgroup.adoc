@@ -74,7 +74,7 @@ The name of an existing repository volume is comprised of two parts:
 
 Enclose the name of the existing repository volume in double quotation marks (" ").
 
-If you want to create a new repository volume when you run this command you must enter the name of either a a volume group or a disk pool in which you want the repository volume. Optionally, you also can define the capacity of the repository volume. If you want to define the capacity you can use these values:
+If you want to create a new repository volume when you run this command you must enter the name of either a volume group or a disk pool in which you want the repository volume. Optionally, you also can define the capacity of the repository volume. If you want to define the capacity you can use these values:
 
 * An integer value that represents a percentage of the base volume capacity.
 * A decimal fraction value that represents a percentage of the base volume capacity.

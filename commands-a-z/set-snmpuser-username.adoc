@@ -48,7 +48,7 @@ The new name that you want to give to the SNMP user. Enclose the SNMP user name 
 a|
 `newEngineId`
 a|
-The new engineID to use as the identifier of the authoritative SNMP engine ID for the user. The value may be "[.code]``local``" to specify the local SNMP agent to be the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID. The default value is the previously defined engine ID for the user.
+The new engineID to use as the identifier of the authoritative SNMP engine ID for the user. The value may be "[.code]local" to specify the local SNMP agent to be the authoritative agent or a hexadecimal digit string to specify a remote SNMP agent engine ID. The default value is the previously defined engine ID for the user.
 a|
 `authProtocol`
 a|
@@ -78,7 +78,7 @@ The default value is the previously defined privacy protocol for the user.
 a|
 `privPassword`
 a|
-The password to be used for privacy/encryption for the user. Must be specified if the privacy protocol is "[.code]``aes128``".
+The password to be used for privacy/encryption for the user. Must be specified if the privacy protocol is "[.code]`aes128`".
 |===
 
 == Minimum firmware level

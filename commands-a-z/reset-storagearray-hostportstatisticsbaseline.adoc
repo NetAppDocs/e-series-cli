@@ -23,7 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-This command replaces the deprecated xref:reset-storagearray-ibstatsbaseline.adoc[Reset storage array Infiniband statistics baseline], xref:reset-storagearray-iscsistatsbaseline.adoc[Reset storage array iSCSI baseline], and xref:reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline] commands.
+This command replaces the deprecated xref:reset-storagearray-ibstatsbaseline.adoc[Reset storage array InfiniBand statistics baseline], xref:reset-storagearray-iscsistatsbaseline.adoc[Reset storage array iSCSI baseline], and xref:reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline] commands.
 ====
 
 == Syntax

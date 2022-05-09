@@ -48,7 +48,7 @@ The name of the SNMP user for which you want to send trap messages.
 a|
 `engineId`
 a|
-The engine ID of the SNMP user for which you want to send trap messages. The engine ID is required if there is more than one USM user with the same user name. The value may be "[.code]``local``" to specify the local SNMP agent is the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID.
+The engine ID of the SNMP user for which you want to send trap messages. The engine ID is required if there is more than one USM user with the same user name. The value may be "[.code]``local``" to specify the local SNMP agent is the authoritative agent or a hexadecimal digit string to specify a remote SNMP agent engine ID.
 a|
 `sendAuthenticationFailureTraps`
 a|
