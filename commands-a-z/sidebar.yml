@@ -235,8 +235,8 @@ entries:
       url: /commands-a-z/export-storagearray-securitykey.html
   - title: G
     entries:
-    - title: getting started with aurthentication
-      url: /commands-a-z/getting-started-with-aurthentication.html
+    - title: getting started with authentication
+      url: /commands-a-z/getting-started-with-authentication.html
     - title: getting started with external key management
       url: /commands-a-z/getting-started-with-external-key-management.html
     - title: getting started with internal key management

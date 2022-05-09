@@ -2,7 +2,7 @@
 settings:
   name: SANtricity commands
   internal:
-    pdf_enabled: true 
+    pdf_enabled: true
   prod:
     pdf_enabled: true
     harmony_enabled: true
@@ -29,14 +29,14 @@ homepage:
           url: get-started/overview-format-commands.html
         - title: CLI command structure
           url: get-started/structure-of-a-cli-command.html
-    - title: E-series docs
+    - title: E-Series docs
       links:
         - title: E-Series systems docs
           url: https://docs.netapp.com/us-en/e-series/index.html
         - title: SANtricity System Manager 11.7
-          url: https://review.docs.netapp.com/us-en/e-series-santricity_admin-santricity-jsnyder/system-manager/index.html
+          url: https://docs.netapp.com/us-en/e-series-santricity/system-manager/index.html
         - title: SANtricity Unified Manager 5
-          url: https://review.docs.netapp.com/us-en/e-series-santricity_admin-santricity-jsnyder/unified-manager/index.html
+          url: https://docs.netapp.com/us-en/e-series-santricity/unified-manager/index.html
     - title: Tools & support
       links:
         - title: NetApp Interoperability Matrix

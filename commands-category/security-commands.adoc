@@ -23,7 +23,7 @@ link:../commands-a-z/show-auditlog-summary.html[Show audit log summary]
 
 == Authentication commands
 
-link:../commands-a-z/getting-started-with-aurthentication.html[Getting started with authentication]
+link:../commands-a-z/getting-started-with-authentication.html[Getting started with authentication]
 
 link:../commands-a-z/create-storagearray-directoryserver.html[Create storage array directory server]
 

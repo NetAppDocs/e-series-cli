@@ -149,6 +149,7 @@ A volume group is a set of drives that are logically grouped together by the con
  ** If a volume group with RAID level 1 has four or more drives, the storage management software automatically converts the volume group to a RAID level 10, which is RAID level 1 + RAID level 0.
 * To enable tray/drawer loss protection, refer to the following tables for additional criteria:
 
+[options="header"]
 |===
 | Level| Criteria for Tray Loss Protection| Minimum number of trays required
 a|
@@ -182,6 +183,7 @@ Cannot achieve Tray Loss Protection.
 a|
 Not applicable
 |===
+[options="header"]
 |===
 | Level| Criteria for drawer loss protection| Minimum number of drawers required
 a|

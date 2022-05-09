@@ -36,7 +36,7 @@ This command impacts all ASUP-capable storage arrays in the management domain. A
 
 After enabling this feature, you can next enable the AutoSupport OnDemand feature (if desired), and then enable the AutoSupport Remote Diagnostics feature (if desired). You must enable the three features in this order.
 
-image::../media/baseasup_w_first_enable.gif[]
+image:/media/baseasup_w_first_enable.gif[]
 
 == Syntax
 
