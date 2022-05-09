@@ -64,7 +64,7 @@ a|
 `downgrade`
 a|
 
-[ATTENTION]
+[CAUTION]
 ====
 *Possible damage to the storage array configuration* -- Downloading a previous version of the controller firmware or NVSRAM incorrectly can result in damage to the controllers or a loss of data access. Contact technical support before using this parameter.
 ====

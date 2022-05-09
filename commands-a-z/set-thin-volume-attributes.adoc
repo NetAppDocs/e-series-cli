@@ -76,7 +76,7 @@ The maximum virtual capacity is 63 TB.
 a|
 `repositoryMaxCapacity*`
 a|
-This parameter sets the maximum capacity of the repository volume. The value must not be smaller that the physical capacity of the repository volume. If the new value results in a reduction in capacity to a level below the warning threshold, the command will produce an error.
+This parameter sets the maximum capacity of the repository volume. The value must not be smaller than the physical capacity of the repository volume. If the new value results in a reduction in capacity to a level below the warning threshold, the command will produce an error.
 [NOTE]
 ====
 The command `repositoryMaxCapacity` works with `repositoryExpansionPolicy=automatic`.

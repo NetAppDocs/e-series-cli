@@ -57,7 +57,7 @@ The choices for the types of host port interfaces are:
 
 * `FC` -- Fibre Channel
 * `SAS` -- Serial-Attached SCSI
-* `IB` -- Infiniband
+* `IB` -- InfiniBand
 
 An FC or a SAS selection requires an 8-byte WWID. An IB selection requires a 16-byte group identifier (GID).
 

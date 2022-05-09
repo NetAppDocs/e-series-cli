@@ -154,8 +154,6 @@ link:../commands-a-z/delete-volumegroup.html[Delete volume group]
 
 link:../commands-a-z/diagnose-controller.html[Diagnose controller]
 
-link:../commands-a-z/diagnose-controller.html[Diagnose controller]
-
 link:../commands-a-z/diagnose-controller-iscsihostport.html[Diagnose controller iSCSI host cable]
 
 link:../commands-a-z/diagnose-syncmirror.html[Diagnose synchronous mirroring]

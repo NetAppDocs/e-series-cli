@@ -46,7 +46,7 @@ The iSCSI host port on which you want to run the diagnostic tests. You can run t
 
 See the following for more information:
 
-<<ESERIES-SECTION_ID_ON_CONREFFED_SECTION,"Identifying an iSCSI host port label">>
+<<Identifying an iSCSI host port label,"Identifying an iSCSI host port label">>
 a|
 `testID`
 a|

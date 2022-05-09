@@ -146,7 +146,7 @@ The default value is 50 percent of the virtual capacity.
 a|
 `repositoryMaxCapacity`
 a|
-This parameter defines the maximum capacity for a repository for a thin volume. Use this parameter only if you se the value of the `thinProvisioned` parameter to `TRUE`.
+This parameter defines the maximum capacity for a repository for a thin volume. Use this parameter only if you set the value of the `thinProvisioned` parameter to `TRUE`.
 
 Size is defined in units of `MB`, `GB`, or `TB`. The following are examples of the syntax:
 

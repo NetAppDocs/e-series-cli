@@ -148,7 +148,7 @@ This parameter is not supported in an NVMe over RoCE environment.
 a|
 `enableIPV4Vlan`
 a|
-A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.Available options are:
+A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both. Available options are:
 
 * TRUE
 * FALSE
