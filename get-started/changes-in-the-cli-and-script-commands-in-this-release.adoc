@@ -48,6 +48,10 @@ a|
 xref:../commands-a-z/recreate-storagearray-securitykey.html[Re-create external security key]
 a|
 Added `deleteOldKey` parameter.
+a|
+xref:../commands-a-z/create-diskpool.html[Create disk pool]
+a|
+Updated `driveCount` parameter description.
 |===
 
 == SANtricity 11.70.2
