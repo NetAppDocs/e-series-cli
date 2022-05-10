@@ -34,9 +34,13 @@ No customer data is ever transmitted to the technical support site.
 
 This command impacts all ASUP-capable storage arrays in the management domain. After enabling this feature for the management domain, you have control over the feature enablement for each storage array.
 
-After enabling this feature, you can next enable the AutoSupport OnDemand feature (if desired), and then enable the AutoSupport Remote Diagnostics feature (if desired). You must enable the three features in this order.
+After enabling this feature, you can next enable the AutoSupport OnDemand feature (if desired), and then enable the AutoSupport Remote Diagnostics feature (if desired).
 
-image::../media/baseasup_w_first_enable.gif[]
+You must enable the three features in the following order:
+
+. *Enable AutoSupport*
+. *Enable AutoSupport OnDemand*
+. *Enable AutoSupport Remote Diagnostics*
 
 == Syntax
 
@@ -48,10 +52,6 @@ SMcli enable|disable autoSupportFeature
 
 None.
 
-== Minimum Firmware Level
-
-7.86
-
 == Verification
 
 Use the `SMcli -autoSupportConfig show` command to see whether you have enabled the feature. The initial line of the displayed output shows the enable status:
@@ -59,3 +59,7 @@ Use the `SMcli -autoSupportConfig show` command to see whether you have enabled 
 ----
 The AutoSupport feature is activated on this storage management station.
 ----
+
+== Minimum Firmware Level
+
+7.86

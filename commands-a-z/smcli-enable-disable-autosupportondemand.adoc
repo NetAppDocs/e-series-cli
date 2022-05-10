@@ -24,8 +24,6 @@ This command is an SMcli command, not a script command. You must run this comman
 
 Before enabling this feature, you must first enable the AutoSupport feature on the management domain. After enabling this feature, you can next enable the AutoSupport Remote Diagnostics feature (if desired). The AutoSupport Remote Diagnostics features is enabled, by default, when the AutoSupport OnDemand feature is enabled.
 
-image::../media/baseasup_w_second_enable.gif[]
-
 == Syntax
 
 ----
@@ -35,10 +33,6 @@ SMcli enable|disable autoSupportOnDemand
 == Parameters
 
 None.
-
-== Minimum Firmware Level
-
-8.25
 
 == Verification
 
@@ -50,3 +44,7 @@ station.
 The AutoSupport OnDemand feature is activated on this storage
 management station.
 ----
+
+== Minimum Firmware Level
+
+8.25
