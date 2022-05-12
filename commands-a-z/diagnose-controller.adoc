@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/diagnose-controller.html
 sidebar: sidebar
-keywords: 
-summary: 'The diagnose controller command runs diagnostic tests on the controller.'
+keywords: diagnose, controller, command, run, diagnostic, tests, arrays, roles, context
+summary: "The diagnose controller command runs diagnostic tests on the controller."
 ---
 = Diagnose controller
 :icons: font
@@ -24,16 +24,16 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 The diagnostic tests consist of loopback tests in which data is written to the drives and read from the drives.
 
 == Syntax
-
+[subs=+macros]
 ----
 diagnose controller [(a| b)]
 loopbackDriveChannel=(allchannels | (1 | 2 | 3 | 4 | 5 | 6 | 7 | 8))
 testID=(1 | 2 | 3 | discreteLines)
-[patternFile="filename"]
+pass:quotes[[patternFile="_filename_"]]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/smcli-autosupportconfig.html
 sidebar: sidebar
-keywords: 
-summary: 'The SMcli -autoSupportConfig command sets up the delivery method for sending AutoSupport messages.'
+keywords: specify, autosupport, delivery, method
+summary: "The SMcli -autoSupportConfig command sets up the delivery method for sending AutoSupport messages."
 ---
 = Specify the AutoSupport delivery method
 :icons: font
@@ -36,6 +36,7 @@ mailRelayServer=<mailRelayServerName> senderMail=<senderEmailAddress>
 
 == Parameters for the SMTP Delivery Method
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -67,6 +68,7 @@ hostAddress:<address>portNumber=<portNumber> [userName=<userName>password=<passw
 
 The following table lists the parameters for the HTTP/HTTPS delivery methods.
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

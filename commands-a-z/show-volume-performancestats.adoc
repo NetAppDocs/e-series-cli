@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volume-performancestats.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volume performanceStats command returns information about volume performance.'
+keywords: show, volume, performance, statistics
+summary: "The show volume performanceStats command returns information about volume performance."
 ---
 = Show volume performance statistics
 :icons: font
@@ -43,14 +43,15 @@ For each volume in the storage array, this command returns the following informa
 * Average IO Latency
 
 == Syntax
-
+[subs=+macros]
 ----
-show (allVolumes | volume ["volumeName"]
-volumes ["volumeName1" ... "volumeNameN"]) performanceStats
+show (allVolumes | volume pass:quotes[["_volumeName_"]]
+volumes pass:quotes[["_volumeName1_" ... "_volumeNameN_"]]) performanceStats
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

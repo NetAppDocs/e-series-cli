@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/smcli-enable-disable-autosupportondemand.html
 sidebar: sidebar
-keywords: 
-summary: 'The SMcli enable\|disable autoSupportOnDemand command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data.'
+keywords: enable, disable, autosupport, ondemand, feature, emw, management, domain, level, smcli
+summary: "The SMcli enable|disable autoSupportOnDemand command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data."
 ---
 = Enable or disable the AutoSupport OnDemand feature at the EMW management domain level (SMcli only)
 :icons: font
@@ -24,8 +24,6 @@ This command is an SMcli command, not a script command. You must run this comman
 
 Before enabling this feature, you must first enable the AutoSupport feature on the management domain. After enabling this feature, you can next enable the AutoSupport Remote Diagnostics feature (if desired). The AutoSupport Remote Diagnostics features is enabled, by default, when the AutoSupport OnDemand feature is enabled.
 
-image::../media/baseasup_w_second_enable.gif[]
-
 == Syntax
 
 ----
@@ -35,10 +33,6 @@ SMcli enable|disable autoSupportOnDemand
 == Parameters
 
 None.
-
-== Minimum Firmware Level
-
-8.25
 
 == Verification
 
@@ -50,3 +44,7 @@ station.
 The AutoSupport OnDemand feature is activated on this storage
 management station.
 ----
+
+== Minimum Firmware Level
+
+8.25

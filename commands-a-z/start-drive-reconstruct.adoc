@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-drive-reconstruct.html
 sidebar: sidebar
-keywords: 
-summary: 'The start drive reconstruct command starts reconstructing a drive.'
+keywords: start, drive, reconstruction
+summary: "The start drive reconstruct command starts reconstructing a drive."
 ---
 = Start drive reconstruction
 :icons: font
@@ -20,13 +20,14 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-start drive [trayID,[drawerID,]slotID] reconstruct
+start drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] reconstruct
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

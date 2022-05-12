@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-statecapture.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray stateCapture command saves the state capture of a storage array to a file.'
+keywords: save, storage, array, state, capture
+summary: "The save storageArray stateCapture command saves the state capture of a storage array to a file."
 ---
 = Save storage array state capture
 :icons: font
@@ -21,12 +21,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-save storageArray stateCapture file="filename"
+save storageArray stateCapture file=pass:quotes["_filename_"]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

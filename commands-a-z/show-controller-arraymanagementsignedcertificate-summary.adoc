@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-controller-arraymanagementsignedcertificate-summary.html
 sidebar: sidebar
-keywords: 
-summary: 'The show controller arrayManagementSignedCertificate summary command displays the current signed certificate summary from the specified controller.'
+keywords: show, signed, certificate
+summary: "The show controller arrayManagementSignedCertificate summary command displays the current signed certificate summary from the specified controller."
 ---
 = Show signed certificate
 :icons: font
@@ -28,6 +28,7 @@ show controller [(a|b)] arrayManagementSignedCertificate summary
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

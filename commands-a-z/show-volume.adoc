@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volume.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volume command returns the expansion history or the consumed capacity for the specified thin volume or volumes.'
+keywords: show, thin, volume
+summary: "The show volume command returns the expansion history or the consumed capacity for the specified thin volume or volumes."
 ---
 = Show thin volume
 :icons: font
@@ -20,16 +20,17 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Syntax
-
+[subs=+macros]
 ----
-show (allVolumes | volume [volumeName] |
-volumes [volumeName1 ... volumeNameN])
+show (allVolumes | volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]])
 (consumedCapacity |
-(expansionHistory [file=fileName]))
+(expansionHistory pass:quotes[[file=_fileName_]]))
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -74,121 +75,36 @@ The `file` parameter specifies a file to log the output of the `expansionHistory
 
 With the `expansionHistory` parameter, the command returns information similar to the example shown below.
 
+`Thin volume name: volume-nameRepository volume Name: REPOS_NNNN`
+
+[cols="4*",options="header"]
 |===
+|Logged Time| Expansion Type| Start Capacity| End Capacity
 a|
-
-----
-Thin volume name: volume-nameRepository volume Name: REPOS_NNNN
-----
-
-a|
-
-----
-Logged Time
-----
-
-a|
-
-----
-Expansion Type
-----
-
-a|
-
-----
-Start Capacity
-----
-
-a|
-
-----
-End Capacity
-----
-
-a|
-
-----
 MM/DD/YYYY HH:MM:SS
-----
-
 a|
-
-----
-Manual|Automatic
-----
-
+Manual\|Automatic
 a|
-
-----
 NNNNNNNN bytes
-----
-
 a|
-
-----
 NNNNNNNN bytes
-----
-
 |===
+
 With the `consumedCapacity` parameter, the command returns information similar to the example shown below.
 
+[cols="5*",options="header"]
 |===
-a|
-
-----
-Volume
-----
-
-a|
-
-----
-Provisioned Capacity
-----
-
-a|
-
-----
-Consumed Capacity
-----
-
-a|
-
-----
-Quota
-----
-
-a|
-
-----
-% Prov.Consumed
-----
-
+|Volume| Provisioned Capacity| Consumed Capacity| Quota| % Prov.Consumed
 a|
 `volumeName`
 a|
-
-----
 500.000 GB
-----
-
 a|
-
-----
 230.000 GB
-----
-
 a|
-
-----
 700.000 GB
-----
-
 a|
-
-----
 46%
-----
-
 |===
 
 == Minimum firmware level

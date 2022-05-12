@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-auditlog.html
 sidebar: sidebar
-keywords: 
-summary: 'The set auditLog command configures the audit log settings.'
+keywords: set, audit log
+summary: "The set auditLog command configures the audit log settings."
 ---
 = Set audit log settings
 :icons: font
@@ -21,25 +21,27 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
 
 set auditLog (logLevel={all | writeOnly} |
     fullPolicy={overwrite | preventSystemAccess} |
-    maxRecords=n | warningThreshold=n)
+    pass:quotes[maxRecords=_n_] | pass:quotes[warningThreshold=_n_)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
 `logLevel`
 a|
-Allows you to specify the level of logging. Valid choices are: ``all``and `writeOnly`. The default value is `writeOnly`.
+Allows you to specify the level of logging. Valid choices are: `all` and `writeOnly`. The default value is `writeOnly`.
 a|
 `fullPolicy`
 a|
-Allows you to specify the policy when the log is full. Valid choices are: ``overwrite``and `preventSystemAccess`.
+Allows you to specify the policy when the log is full. Valid choices are: `overwrite` and `preventSystemAccess`.
 a|
 `maxRecords`
 a|

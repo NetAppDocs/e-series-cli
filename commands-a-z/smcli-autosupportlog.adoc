@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/smcli-autosupportlog.html
 sidebar: sidebar
-keywords: 
-summary: 'The SMcli -autoSupportLog command allows you to view an AutoSupport log file. This file provides information about status, history of transmission activity, and any errors encountered during delivery of the AutoSupport messages. The log is available for all AutoSupport-capable and AutoSupport-enabled storage arrays.'
+keywords: capture, view, autosupport, log
+summary: "The SMcli -autoSupportLog command allows you to view an AutoSupport log file. This file provides information about status, history of transmission activity, and any errors encountered during delivery of the AutoSupport messages. The log is available for all AutoSupport-capable and AutoSupport-enabled storage arrays."
 ---
 = Capture or view an AutoSupport log
 :icons: font
@@ -28,16 +28,17 @@ This command is an SMcli command, not a script command. You must run this comman
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-SMcli -autoSupportLog (all|-n "storageArrayName" | -w "wwID")
-inputArchive=n outputLog=filename
+SMcli -autoSupportLog pass:quotes[(all|-n "_storageArrayName_" | -w "_wwID_")]
+pass:quotes[inputArchive=_n_] pass:quotes[outputLog=_filename_]
 ----
 
 == Parameters
 
 The following table lists the command parameters.
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -45,19 +46,19 @@ a|
 a|
 Use this parameter if you want to create a transmission log for all of the storage arrays in the management domain with AutoSupport capability that have been AutoSupport enabled.
 a|
-`n`
+`_n_`
 a|
 The name for the storage array for which you want to view an AutoSupport log.
 
 a|
-`w`
+`_w_`
 a|
 The World Wide Identifier (WWID) of the storage array for which you want to view an AutoSupport log.
 
 a|
 `inputArchive`
 a|
-Allows you to specify the archived AutoSupport log, where the archive file is `n`, an integer from 0 to 5.
+Allows you to specify the archived AutoSupport log, where the archive file is `_n_`, an integer from 0 to 5.
 
 [NOTE]
 ====

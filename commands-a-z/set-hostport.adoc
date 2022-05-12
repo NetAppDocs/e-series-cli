@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-hostport.html
 sidebar: sidebar
-keywords: 
-summary: 'The set hostPort command changes the properties for a host port.'
+keywords: set, host, port
+summary: "The set hostPort command changes the properties for a host port."
 ---
 = Set host port
 :icons: font
@@ -23,18 +23,20 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-This command does not work in an iSCSI environment, where the host ports are considered initiators. Instead, use the `set iscsiInitiator` command. See xref:wombat-set-iscsiinitiator.adoc[Set iSCSI initiator].
+This command does not work in an iSCSI environment, where the host ports are considered initiators. Instead, use the `set iscsiInitiator` command. See xref:set-iscsiinitiator.adoc[Set iSCSI initiator].
 ====
 
 == Syntax
 
+[subs=+macros]
 ----
-set hostPort [portLabel] userLabel=newPortLabel
-[host=hostName]
+set hostPort pass:quotes[[_portLabel_]] userLabel=pass:quotes[_newPortLabel_]
+[host=pass:quotes[_hostName_]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

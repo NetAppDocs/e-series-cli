@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-externalkeymanagement.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray externalKeyManagement command configures the external key management server address and port number.'
+keywords: set, external, key, management, set
+summary: "The set storageArray externalKeyManagement command configures the external key management server address and port number."
 ---
 = Set external key management settings
 :icons: font
@@ -28,14 +28,16 @@ This command applies only to external key management.
 
 == Syntax
 
+[subs=+macros]
 ----
 
-set storageArray externalKeyManagement serverAddress=serverAddress
-serverPort=portNumber
+set storageArray externalKeyManagement serverAddress=pass:quotes[_serverAddress_]
+serverPort=pass:quotes[_portNumber_]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

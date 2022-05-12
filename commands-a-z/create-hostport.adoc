@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-hostport.html
 sidebar: sidebar
-keywords: 
-summary: 'The create hostPort command creates a new host port identification on a host bus adapter \(HBA\) or on a host channel adapter \(HCA\).'
+keywords: create, host, port
+summary: "The create hostPort command creates a new host port identification on a host bus adapter (HBA) or on a host channel adapter (HCA)."
 ---
 = Create host port
 :icons: font
@@ -24,16 +24,16 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 The host port identification is a software value that represents the physical HBA or HCA host port to the controller. Without the correct host port identification, the controller cannot receive instructions or data from the host port.
 
 == Syntax
-
+[subs=+macros]
 ----
-create hostPort identifier=("wwID" | "gid")
-userLabel="portLabel"
-[host="hostName"]
+create hostPort identifier=pass:quotes[_("wwID"_ | "_gid"_)
+userLabel="_portLabel"_]
+[host=pass:quotes[_"hostName"_]]
 [interfaceType=(FC | SAS | IB)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -57,7 +57,7 @@ The choices for the types of host port interfaces are:
 
 * `FC` -- Fibre Channel
 * `SAS` -- Serial-Attached SCSI
-* `IB` -- Infiniband
+* `IB` -- InfiniBand
 
 An FC or a SAS selection requires an 8-byte WWID. An IB selection requires a 16-byte group identifier (GID).
 

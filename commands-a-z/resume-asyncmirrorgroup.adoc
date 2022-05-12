@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/resume-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The resume asyncMirrorGroup command resumes data transfer between all mirrored pairs in an asynchronous mirror group.'
+keywords: resume, asynchronous, mirror, group
+summary: "The resume asyncMirrorGroup command resumes data transfer between all mirrored pairs in an asynchronous mirror group."
 ---
 = Resume asynchronous mirror group
 :icons: font
@@ -24,14 +24,14 @@ To execute this command on an E2800, or E5700 storage array, you must have the S
 Data written to the primary volumes while the asynchronous mirror group was suspended is written to the secondary volumes immediately. Periodic synchronization resumes if an automatic synchronization interval has been set.
 
 == Syntax
-
+[subs=+macros]
 ----
-resume asyncMirrorGroup ["asyncMirrorGroupName"]
+resume asyncMirrorGroup pass:quotes[[_"asyncMirrorGroupName"_]]
 [deleteRecoveryPointIfNecessary]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

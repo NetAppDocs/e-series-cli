@@ -1,10 +1,10 @@
 ---
 permalink: commands-a-z/set-storagearray-autosupportremotediag.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray autoSupportRemoteDiag command turns on or turns off the AutoSupport OnDemand Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely.'
+keywords: enable, disable, autosupport, remote, diagnostics, feature, individual, E2800, E5700, arrays
+summary: "The set storageArray autoSupportRemoteDiag command turns on or turns off the AutoSupport OnDemand Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely."
 ---
-= Enable or disable the AutoSupport Remote Diagnostics feature (for individual E2800 or E5700 arrays)
+= Enable or disable the AutoSupport Remote Diagnostics feature
 :icons: font
 :imagesdir: ./media/
 
@@ -21,9 +21,13 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Context
 
-Before enabling this feature, first enable the AutoSupport feature and then the AutoSupport OnDemand feature on the storage array. You must enable the three features in this order:
+Before enabling this feature, first enable the AutoSupport feature and then the AutoSupport OnDemand feature on the storage array.
 
-image::../media/baseasup_w_third_enable.gif[]
+You must enable the three features in the following order:
+
+. Enable AutoSupport
+. Enable AutoSupport OnDemand
+. Enable AutoSupport Remote Diagnostics
 
 == Syntax
 
@@ -33,10 +37,11 @@ set storageArray autoSupportRemoteDiag (enable | disable)
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`enable | disable`
+`enable \| disable`
 a|
 Allows the user to enable or disable AutoSupport Remote Diagnostics feature. If AutoSupport and AutoSupport OnDemand are disabled, then the enable action will error and asks the user to enable them first.
 |===
@@ -45,9 +50,9 @@ Allows the user to enable or disable AutoSupport Remote Diagnostics feature. If 
 
 ----
 
-   SMcli -n Array1 -c "set storageArray autoSupportRemoteDiag enable;"
+SMcli -n Array1 -c "set storageArray autoSupportRemoteDiag enable;"
 
-   SMcli completed successfully.
+SMcli completed successfully.
 ----
 
 == Verification
@@ -55,9 +60,9 @@ Allows the user to enable or disable AutoSupport Remote Diagnostics feature. If 
 Use the `show storageArray autoSupport` command to see if you have enabled the feature. The initial three lines of the displayed output show the enable status of the AutoSupport feature, followed by the AutoSupport OnDemand feature and the AutoSupport Remote Diagnostics feature:
 
 ----
-   The AutoSupport feature is enabled on this storage array.
-   The AutoSupport OnDemand feature is enabled on this storage array.
-   The AutoSupport Remote Diagnostics feature is enabled on this storage array.
+The AutoSupport feature is enabled on this storage array.
+The AutoSupport OnDemand feature is enabled on this storage array.
+The AutoSupport Remote Diagnostics feature is enabled on this storage array.
 ----
 
 == Minimum Firmware Level

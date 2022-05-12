@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-syncmirror.html
 sidebar: sidebar
-keywords: 
-summary: 'The set syncMirror command defines the properties for a remote-mirrored pair.'
+keywords: set, synchronous, mirror
+summary: "The set syncMirror command defines the properties for a remote-mirrored pair."
 ---
 = Set synchronous mirroring
 :icons: font
@@ -28,9 +28,10 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 
 == Syntax
 
+[subs=+macros]
 ----
-set syncMirror (localVolume [volumeName] |
-localVolumes [volumeName1 ... volumeNameN])
+set syncMirror (localVolume pass:quotes[[_volumeName_]] |
+localVolumes pass:quotes[[_volumeName1 ... volumeNameN_]])
 [role=(primary | secondary)]
 [syncPriority=(highest | high | medium | low | lowest)]
 [autoResync=(enabled | disabled)]
@@ -41,6 +42,7 @@ localVolumes [volumeName1 ... volumeNameN])
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

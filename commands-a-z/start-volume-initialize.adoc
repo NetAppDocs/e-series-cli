@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-volume-initialize.html
 sidebar: sidebar
-keywords: 
-summary: 'The start volume initialize command initializes or re-initializes a thin volume.'
+keywords: initialize, thin volume
+summary: "The start volume initialize command initializes or re-initializes a thin volume."
 ---
 = Initialize thin volume
 :icons: font
@@ -32,16 +32,17 @@ Initializing a thin volume starts a long-running operation that you cannot stop.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start volume [volumeName] initialize
-[existingRepositoryLabel=existingRepositoryName]
-[diskPool=diskPoolName capacity=capacityValue]
+pass:quotes[start volume [_volumeName_]] initialize
+pass:quotes[[existingRepositoryLabel=_existingRepositoryName_]]
+pass:quotes[[diskPool=_diskPoolName_ capacity=_capacityValue_]]
 [retainRepositoryMembers=(TRUE|FALSE)]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -85,7 +86,7 @@ If this parameter is set to `TRUE`, the old repository is retained. By default, 
 
 == Notes
 
-If you do not specify a volume with the `volume` parameter, this command resets the metadata in the repository and, in effect, causes the thin volume to appear empty to the host. If you specify a volume with the `volume` parameter, that volume is either replaced by a newly created volume or by an existing volume if you specify one with the `existingRepositoryLabel` parameter. If you specify an existing volume with the `existingRepositoryLabel` parameter that is in a different disk pool, the thin volume will change ownership to the new disk pool.
+If you do not specify a volume with the `volume` parameter, this command resets the metadata in the repository and, in effect, causes the thin volume to appear empty to the host. If you specify a volume with the `*volume*` parameter, that volume is either replaced by a newly created volume or by an existing volume if you specify one with the `existingRepositoryLabel` parameter. If you specify an existing volume with the `existingRepositoryLabel` parameter that is in a different disk pool, the thin volume will change ownership to the new disk pool.
 
 The volume parameters of the thin volume, such as virtual capacity, quota and warning threshold, retain their previous values after you reinitialize the thin volume.
 
@@ -96,6 +97,7 @@ Immediate Availability Format (IAF) does not apply to volumes greater than 64 TB
 
 The following table lists the capacity limits for a thin volume.
 
+[cols="2*",options="header"]
 |===
 | Type of Capacity| Size
 a|

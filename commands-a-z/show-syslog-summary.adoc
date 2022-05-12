@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-syslog-summary.html
 sidebar: sidebar
-keywords: 
-summary: 'The show syslog summary command displays the syslog alert configuration information.'
+keywords: show, syslog, configuration
+summary: "The show syslog summary command displays the syslog alert configuration information."
 ---
 = Show syslog configuration
 :icons: font

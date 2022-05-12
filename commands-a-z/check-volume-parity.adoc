@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/check-volume-parity.html
 sidebar: sidebar
-keywords: 
-summary: 'The check volume parity command checks a volume for parity and media errors, and then writes the results of the check to a file.'
+keywords: check, volume, parity
+summary: "The check volume parity command checks a volume for parity and media errors, and then writes the results of the check to a file."
 ---
 = Check volume parity
 :icons: font
@@ -20,19 +20,19 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-check volume [volumeName] parity
-[parityErrorFile=filename]
-[mediaErrorFile=filename]
+check volume pass:quotes[[_volumeName_]] parity
+[parityErrorFile=pass:quotes[_filename_]]
+[mediaErrorFile=pass:quotes[_filename_]]
 [priority=(highest | high | medium | low | lowest)]
-[startingLBA=LBAvalue]
-[endingLBA=LBAvalue]
+[startingLBA=pass:quotes[_LBAvalue_]]
+[endingLBA=pass:quotes[_LBAvalue_]]
 [verbose=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

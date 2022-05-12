@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-controllerhealthimage-controller.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray controllerHealthImage controller command produces a storage array controller health image on storage arrays that support the controller health image feature.'
+keywords: start, storage, array, controller, health, image
+summary: "The start storageArray controllerHealthImage controller command produces a storage array controller health image on storage arrays that support the controller health image feature."
 ---
 = Start storage array controller health image
 :icons: font
@@ -41,6 +41,7 @@ start storageArray controllerHealthImage controller [(a|b)]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

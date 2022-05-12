@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-controller-arraymanagementsignedcertificate.html
 sidebar: sidebar
-keywords: 
-summary: 'The save controller arrayManagementSignedCertificate command retrieves the installed server certificate for the controller so you can view certificate details.'
+keywords: retrieve, installed, server, certificate
+summary: "The save controller arrayManagementSignedCertificate command retrieves the installed server certificate for the controller so you can view certificate details."
 ---
 = Retrieve installed server certificate
 :icons: font
@@ -21,14 +21,16 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
 
 save controller [(a|b)] arrayManagementSignedCertificate
-     file="filename"
+     file=pass:quotes["_filename_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

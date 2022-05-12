@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/repair-data-parity.html
 sidebar: sidebar
-keywords: 
-summary: 'The Repair Data Parity command repairs data parity errors.'
+keywords: repair, data, parity
+summary: "The Repair Data Parity command repairs data parity errors."
 ---
 = Repair Data Parity
 :icons: font
@@ -37,7 +37,7 @@ repair volume[volumeName] parity
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

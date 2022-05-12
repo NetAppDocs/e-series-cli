@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-emailalert-summary.html
 sidebar: sidebar
-keywords: 
-summary: 'The show emailAlert summary command displays the email alert configuration information.'
+keywords: show, email, alert, configuration
+summary: "The show emailAlert summary command displays the email alert configuration information."
 ---
 = Show email alert configuration
 :icons: font

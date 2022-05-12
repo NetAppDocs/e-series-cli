@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-controller-nvsram-file.html
 sidebar: sidebar
-keywords: 
-summary: 'The save controller NVSRAM file command saves a selected set of controller NVSRAM regions to a file.'
+keywords: save, controller, nvsram
+summary: "The save controller NVSRAM file command saves a selected set of controller NVSRAM regions to a file."
 ---
 = Save controller NVSRAM
 :icons: font
@@ -21,12 +21,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-save controller [(a|b)] NVSRAM file="filename"
+save controller [(a|b)] NVSRAM file=pass:quotes["_filename_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

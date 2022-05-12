@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volumecopy-source-targetcandidates.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volumeCopy source targetCandidates command returns information about the candidate volumes that you can use as the target for a volume copy operation. This command is valid for snapshot volume copy pairs.'
+keywords: show, volume, copy, target, candidates
+summary: "The show volumeCopy source targetCandidates command returns information about the candidate volumes that you can use as the target for a volume copy operation. This command is valid for snapshot volume copy pairs."
 ---
 = Show volume copy target candidates
 :icons: font
@@ -20,13 +20,14 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Syntax
-
+[subs=+macros]
 ----
-show volumeCopy source ["sourceName"] targetCandidates
+show volumeCopy source pass:quotes[["_sourceName_"]] targetCandidates
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

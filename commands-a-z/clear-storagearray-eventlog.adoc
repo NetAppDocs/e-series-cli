@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/clear-storagearray-eventlog.html
 sidebar: sidebar
-keywords: 
-summary: 'The clear storageArray eventLog command clears the event log in the storage array by deleting the data in the Event Log buffer.'
+keywords: clear, storage array, event log
+summary: "The clear storageArray eventLog command clears the event log in the storage array by deleting the data in the Event Log buffer."
 ---
 = Clear storage array event log
 :icons: font

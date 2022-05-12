@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volume-summary.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volume summary command returns information about a volume.'
+keywords: show, volume
+summary: "The show volume summary command returns information about a volume."
 ---
 = Show volume
 :icons: font
@@ -49,14 +49,15 @@ For the volumes in a storage array, this command returns the following informati
 * The mirror repository volumes
 
 == Syntax
-
+[subs=+macros]
 ----
-show (allVolumes | volume [volumeName] |
-volumes [volumeName1 ... volumeNameN]) summary
+show (allVolumes | volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]]) summary
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

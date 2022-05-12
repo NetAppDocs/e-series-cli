@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/resume-snapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The resume snapVolume command resumes a snapshot volume operation that was stopped.'
+keywords: resume, snapshot, volume
+summary: "The resume snapVolume command resumes a snapshot volume operation that was stopped."
 ---
 = Resume snapshot volume
 :icons: font
@@ -20,13 +20,13 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-resume snapVolume ["snapVolumeName"] snapImage="snapCGID:imageID"
+resume snapVolume pass:quotes[[_"snapVolumeName"_]] snapImage=pass:quotes[_"snapCGID:imageID"_]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

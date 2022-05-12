@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-tray-attribute.html
 sidebar: sidebar
-keywords: 
-summary: 'The set tray command sets user-defined attributes for an tray.'
+keywords: set, tray, attribute
+summary: "The set tray command sets user-defined attributes for an tray."
 ---
 = Set tray attribute
 :icons: font
@@ -13,12 +13,14 @@ The `set tray` command sets user-defined attributes for an tray.
 
 == Syntax
 
+[subs=+macros]
 ----
-set tray [trayID] (chassisName | assetTag)="userID"
+set tray pass:quotes[[_trayID_]] (chassisName | assetTag)=pass:quotes["_userID_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

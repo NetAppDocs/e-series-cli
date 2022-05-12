@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-textstring.html
 sidebar: sidebar
-keywords: 
-summary: 'The show textstring command shows a string of text from a script file. This command is similar to the echo command in MS-DOS and UNIX.'
+keywords: show, str
+summary: "The show textstring command shows a string of text from a script file. This command is similar to the echo command in MS-DOS and UNIX."
 ---
 = Show string
 :icons: font
@@ -20,9 +20,9 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Syntax
-
+[subs=+macros]
 ----
-show "textString"
+pass:quotes[show "_textString_"]
 ----
 
 == Parameters

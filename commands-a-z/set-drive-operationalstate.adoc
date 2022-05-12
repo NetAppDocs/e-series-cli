@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-drive-operationalstate.html
 sidebar: sidebar
-keywords: 
-summary: 'The set drive operationalState command sets a drive to the Failed state.'
+keywords: set, drive, state
+summary: "The set drive operationalState command sets a drive to the Failed state."
 ---
 = Set drive state
 :icons: font
@@ -25,12 +25,14 @@ To return a drive to the Optimal state, use the `revive drive` command.
 
 == Syntax
 
+[subs=+macros]
 ----
-set drive \[trayID,[drawerID,]slotID\] operationalState=failed [copyDrive]
+set drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] operationalState=failed [copyDrive]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -52,4 +54,4 @@ The `drive` parameter supports both high-capacity drive trays and low-capacity d
 
 5.20
 
-7.60 adds the `drawerID` user input.
+7.60 adds the `_drawerID_` user input.

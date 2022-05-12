@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-directoryservices-summary.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray directoryServices summary command displays the directory services configuration summary.'
+keywords: show, storage, array, directory, services, summary
+summary: "The show storageArray directoryServices summary command displays the directory services configuration summary."
 ---
 = Show storage array directory services summary
 :icons: font

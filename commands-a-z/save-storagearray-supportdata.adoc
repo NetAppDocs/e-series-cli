@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-supportdata.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray supportData command saves the support-related information of the storage array to a file.'
+keywords: save, storage, array, support, data
+summary: "The save storageArray supportData command saves the support-related information of the storage array to a file."
 ---
 = Save storage array support data
 :icons: font
@@ -23,6 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 The following table lists the type of support data that you can collect.
 
+[cols="2*",options="header"]
 |===
 | Type of data| File name and description
 a|
@@ -68,11 +69,16 @@ a|
 This file contains all the transmitted AutoSupport messages.
 
 a|
-Web Server Client Info (E2800 or E5700 only)
+Web Server Client Info
 a|
 `client-info.txt`
 
 This file specifies various Web Services client information.
+
+[NOTE]
+====
+This parameter is not applicable for E2700 and E5600 arrays.
+====
 
 a|
 Drive cabling topology
@@ -362,19 +368,22 @@ a|
 
 == Syntax
 
+[subs=+macros]
 ----
-save storageArray supportData file="filename" [force=(TRUE | FALSE)]
+save storageArray supportData file=pass:quotes["_filename_"] [force=(TRUE | FALSE)]
 ----
 
+[subs=+macros]
 ----
-save storageArray supportData file="filename"
+save storageArray supportData file=pass:quotes["_filename_"]
 [force=(TRUE | FALSE) |
 csbSubsetid=(basic | weekly | event | daily | complete) |
-csbTimeStamp=hh:mm]
+csbTimeStamp=pass:quotes[_hh:mm_]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

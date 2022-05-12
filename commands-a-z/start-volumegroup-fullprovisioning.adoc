@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-volumegroup-fullprovisioning.html
 sidebar: sidebar
-keywords: 
-summary: 'The start volumeGroup fullProvisioning command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the volume group.'
+keywords: start, volume, group, full provision
+summary: "The start volumeGroup fullProvisioning command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the volume group."
 ---
 = Start Volume Group Full Provisioning
 :icons: font
@@ -35,6 +35,7 @@ start volumeGroup[volumeGroupName] fullProvisioning [disableResourceProvisioning
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

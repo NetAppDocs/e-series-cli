@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-volume-ssdcacheenabled.html
 sidebar: sidebar
-keywords: 
-summary: 'The set volume ssdCacheEnabled command turns on or off caching using the SSD cache feature for a specific volume.'
+keywords: set, ssd, cache, volume
+summary: "The set volume ssdCacheEnabled command turns on or off caching using the SSD cache feature for a specific volume."
 ---
 = Set SSD cache for a volume
 :icons: font
@@ -29,24 +29,28 @@ The volume can be one of these:
 
 == Syntax applicable to a standard volume
 
+[subs=+macros]
 ----
-set volume ([volumeName] | <"WWID">) ssdCacheEnabled=(TRUE | FALSE)
+set volume (pass:quotes[[_volumeName_]] | <"WWID">) ssdCacheEnabled=(TRUE | FALSE)
 ----
 
 == Syntax applicable to a snapshot volume
 
+[subs=+macros]
 ----
-set snapVolume ["snapVolumeName"] ssdCacheEnabled=(TRUE | FALSE)
+set snapVolume pass:quotes[["_snapVolumeName_"]] ssdCacheEnabled=(TRUE | FALSE)
 ----
 
 == Syntax applicable to a consistency group snapshot volume
 
+[subs=+macros]
 ----
-set cgSnapVolume ["cgSnapVolumeName"] ssdCacheEnabled=(TRUE | FALSE)
+set cgSnapVolume pass:quotes[["_cgSnapVolumeName_"]] ssdCacheEnabled=(TRUE | FALSE)
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-snapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete snapVolume command deletes a snapshot volume and optionally the associated snapshot repository members.'
+keywords: delete, snapvolume, command, snapshot, volume, optionally, associate, repository, members
+summary: "The delete snapVolume command deletes a snapshot volume and optionally the associated snapshot repository members."
 ---
 = Delete snapshot volume
 :icons: font
@@ -27,14 +27,14 @@ You cannot use this command for snapshot images involved in online volume copy.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-delete snapVolume ["snapVolumeName"]
+pass:quotes[delete snapVolume ["_snapVolumeName_"]]
 [deleteRepositoryMembers=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

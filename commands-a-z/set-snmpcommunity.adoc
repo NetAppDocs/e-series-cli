@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-snmpcommunity.html
 sidebar: sidebar
-keywords: 
-summary: 'The set snmpCommunity command creates a new name for an existing Simple Network Management Protocol \(SNMP\) community.'
+keywords: update, snmp, community
+summary: "The set snmpCommunity command creates a new name for an existing Simple Network Management Protocol (SNMP) community."
 ---
 = Update SNMP community
 :icons: font
@@ -21,13 +21,15 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set snmpCommunity communityName="snmpCommunityName"
-newCommunityName="newSnmpCommunityName"
+set snmpCommunity communityName=pass:quotes["_snmpCommunityName_"]
+newCommunityName=pass:quotes["_newSnmpCommunityName_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

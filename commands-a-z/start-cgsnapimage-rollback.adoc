@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-cgsnapimage-rollback.html
 sidebar: sidebar
-keywords: 
-summary: 'The start cgSnapImage rollback command starts a rollback operation to the member base volumes in a snapshot consistency group.'
+keywords: start, consistency, group, snapshot, rollback
+summary: "The start cgSnapImage rollback command starts a rollback operation to the member base volumes in a snapshot consistency group."
 ---
 = Start consistency group snapshot rollback
 :icons: font
@@ -28,14 +28,15 @@ The repository volume that is associated with the consistency group snapshot vol
 To stop a rollback operation to the member base volumes use the `stop cgSnapImage rollback` command.
 
 == Syntax
-
+[subs=+macros]
 ----
-start cgSnapImage ["snapCGID:imageID"] rollback
-memberVolumeSet ("memberVolumeName1" ... "memberVolumeNameN")
+start cgSnapImage pass:quotes[["_snapCGID:imageID_"]] rollback
+memberVolumeSet pass:quotes[("_memberVolumeName1_" ... "_memberVolumeNameN_")]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

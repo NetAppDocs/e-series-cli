@@ -233,12 +233,10 @@ entries:
       url: /commands-a-z/establish-asyncmirror-volume.html
     - title: export storagearray securitykey
       url: /commands-a-z/export-storagearray-securitykey.html
-    - title: external key management commands related to certificates
-      url: /commands-a-z/external-key-management-commands-related-to-certificates.html
   - title: G
     entries:
-    - title: getting started with aurthentication
-      url: /commands-a-z/getting-started-with-aurthentication.html
+    - title: getting started with authentication
+      url: /commands-a-z/getting-started-with-authentication.html
     - title: getting started with external key management
       url: /commands-a-z/getting-started-with-external-key-management.html
     - title: getting started with internal key management
@@ -303,6 +301,8 @@ entries:
       url: /commands-a-z/reset-iscsiipaddress.html
     - title: reset storagearray arvmstats asyncmirrorgroup
       url: /commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.html
+    - title: reset storagearray autosupport schedule
+      url: /commands-a-z/reset-storagearray-autosupport-schedule.html
     - title: reset storagearray diagnosticdata
       url: /commands-a-z/reset-storagearray-diagnosticdata.html
     - title: reset storagearray hostportstatisticsbaseline
@@ -407,8 +407,6 @@ entries:
         url: /commands-a-z/save-storagearray-statecapture.html
       - title: save storagearray supportdata
         url: /commands-a-z/save-storagearray-supportdata.html
-      - title: save storagearray supportdata
-        url: /commands-a-z/save-storagearray-supportdata.html
       - title: save storagearray trustedcertificate
         url: /commands-a-z/save-storagearray-trustedcertificate.html
       - title: save storagearray warningevents
@@ -419,6 +417,8 @@ entries:
         url: /commands-a-z/set-asyncmirrorgroup.html
       - title: set auditlog
         url: /commands-a-z/set-auditlog.html
+      - title: set autosupport https delivery method e2800 or e5700
+        url: /commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html
       - title: set cgsnapvolume
         url: /commands-a-z/set-cgsnapvolume.html
       - title: set consistency group attributes
@@ -453,6 +453,8 @@ entries:
         url: /commands-a-z/set-drive-serviceallowedindicator.html
       - title: set drivechannel
         url: /commands-a-z/set-drivechannel.html
+      - title: set email smtp delivery method e2800 or e5700
+        url: /commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html
       - title: set emailalert
         url: /commands-a-z/set-emailalert.html
       - title: set event alert
@@ -501,6 +503,14 @@ entries:
         url: /commands-a-z/set-snmpuser-username.html
       - title: set storagearray autoloadbalancingenable
         url: /commands-a-z/set-storagearray-autoloadbalancingenable.html
+      - title: set storagearray autosupport schedule
+        url: /commands-a-z/set-storagearray-autosupport-schedule.html
+      - title: set storagearray autosupportmaintenancewindow
+        url: /commands-a-z/set-storagearray-autosupportmaintenancewindow.html
+      - title: set storagearray autosupportondemand
+        url: /commands-a-z/set-storagearray-autosupportondemand.html
+      - title: set storagearray autosupportremotediag
+        url: /commands-a-z/set-storagearray-autosupportremotediag.html
       - title: set storagearray cachemirrordataassurancecheckenable
         url: /commands-a-z/set-storagearray-cachemirrordataassurancecheckenable.html
       - title: set storagearray controllerhealthimageallowoverwrite
@@ -741,6 +751,12 @@ entries:
         url: /commands-a-z/smcli-autosupportschedule-reset.html
       - title: smcli autosupportschedule show
         url: /commands-a-z/smcli-autosupportschedule-show.html
+      - title: smcli enable autosupportfeature
+        url: /commands-a-z/smcli-enable-autosupportfeature.html
+      - title: smcli enable disable autosupportondemand
+        url: /commands-a-z/smcli-enable-disable-autosupportondemand.html
+      - title: smcli enable disable autosupportremotediag
+        url: /commands-a-z/smcli-enable-disable-autosupportremotediag.html
       - title: smcli supportbundle schedule
         url: /commands-a-z/smcli-supportbundle-schedule.html
     - title: "start ..."

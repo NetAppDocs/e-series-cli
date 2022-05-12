@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/recopy-volumecopy-target.html
 sidebar: sidebar
-keywords: 
-summary: 'The recopy volumeCopy target command reinitiates a volume copy operation using an existing volume copy pair.'
+keywords: volumecopy, target, command, operation, volume, copy, pair, reinitiate, array, role, context
+summary: "The recopy volumeCopy target command reinitiates a volume copy operation using an existing volume copy pair."
 ---
 = Recopy volume copy
 :icons: font
@@ -45,7 +45,7 @@ recopy volumeCopy target [targetName]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

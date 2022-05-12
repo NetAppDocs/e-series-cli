@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storage-array-diagnostic-data.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray diagnosticData command saves the storage array diagnostic data from either the controllers or the environmental services modules \(ESMs\) to a file.'
+keywords: save, storage, array, diagnostic, data
+summary: "The save storageArray diagnosticData command saves the storage array diagnostic data from either the controllers or the environmental services modules (ESMs) to a file."
 ---
 = Save storage array diagnostic data
 :icons: font
@@ -32,13 +32,15 @@ Run this command only with the assistance of technical support.
 
 == Syntax
 
+[subs=+macros]
 ----
 save storageArray diagnosticData [(controller | tray)]
-file="filename"
+file=pass:quotes["_filename_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

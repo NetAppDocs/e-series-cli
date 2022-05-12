@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-volume-from-disk-pool.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete volume command deletes either normal or thin volumes from a disk pool.'
+keywords: delete, volume, command, normal, thin, disk pool, roles, support
+summary: "The delete volume command deletes either normal or thin volumes from a disk pool."
 ---
 = Delete volume from disk pool
 :icons: font
@@ -23,24 +23,24 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 You also can use this command to delete any schedules related to the volume. When you delete the schedule the volume is not deleted.
 
-[NOTE]
+[ATTENTION]
 ====
 *Possible damage to the storage array configuration* -- All of the data in the volume is lost as soon as you run this command.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 delete (allVolumes |
 volume [volumeName] |
-volumes ["volumeName1" ... "volumeNameN"]
+pass:quotes[volumes ["_volumeName1_" ... "_volumeNameN_"]]
 [force=(TRUE | FALSE)]
 [schedule]
 [retainRepositoryMembers=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

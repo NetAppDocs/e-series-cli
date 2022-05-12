@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/import-storagearray-securitykey-file.html
 sidebar: sidebar
-keywords: 
-summary: 'The import storageArray securityKey file command unlocks one or more full disk encryption \(FDE\) drives that you have moved from one storage array to another storage array.'
+keywords: import, storage, array, security, file, command, unlock, disk, encryption, context, syntax, firmware level, role, context
+summary: "The import storageArray securityKey file command unlocks one or more full disk encryption (FDE) drives that you have moved from one storage array to another storage array."
 ---
 = Import storage array security key
 :icons: font
@@ -33,11 +33,11 @@ This command applies to both internal and external key management.
 ----
 import storageArray securityKey file="fileName"
 passPhrase="passPhraseString"
-[forceOverwrite=(TRUE|FALSE)
+[forceOverwrite=(TRUE|FALSE)]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -74,7 +74,7 @@ Your pass phrase must meet these criteria:
 * Must contain at least one uppercase letter.
 * Must contain at least one lowercase letter.
 * Must contain at least one number.
-* Must contain at least one non-alphanumeric character, for example, < > @ +.
+* Must contain at least one non-alphanumeric character, for example < > @ +.
 
 [NOTE]
 ====

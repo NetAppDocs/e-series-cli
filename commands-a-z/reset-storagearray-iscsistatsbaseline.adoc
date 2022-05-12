@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reset-storagearray-iscsistatsbaseline.html
 sidebar: sidebar
-keywords: 
-summary: 'The reset storageArray iscsiStatsBaseline command resets the iSCSI baseline to 0 for the storage array.'
+keywords: reset, storage array, iscsi, baseline
+summary: "The reset storageArray iscsiStatsBaseline command resets the iSCSI baseline to 0 for the storage array."
 ---
 = Reset storage array iSCSI baseline
 :icons: font
@@ -13,15 +13,15 @@ The `reset storageArray iscsiStatsBaseline` command resets the iSCSI baseline to
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E2800, or E5700 storage array, you must have the Storage Admin role.
 
 [NOTE]
 ====
-This command is deprecated and is replaced by the xref:wombat-reset-storagearray-hostportstatisticsbaseline.adoc[Reset storage array host port statistics baseline] command.
+This command is deprecated and is replaced by the xref:reset-storagearray-hostportstatisticsbaseline.adoc[Reset storage array host port statistics baseline] command.
 ====
 
 == Syntax

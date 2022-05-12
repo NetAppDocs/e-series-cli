@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-drive-serviceallowedindicator.html
 sidebar: sidebar
-keywords: 
-summary: 'The set drive serviceAllowedIndicator command turns on or turns off the Service Action Allowed indicator light on a drive or drives in drive trays that support the Service Action Allowed indicator light feature.'
+keywords: set, drive, service, action, allowed, indicator
+summary: "The set drive serviceAllowedIndicator command turns on or turns off the Service Action Allowed indicator light on a drive or drives in drive trays that support the Service Action Allowed indicator light feature."
 ---
 = Set drive service action allowed indicator
 :icons: font
@@ -25,13 +25,15 @@ If the storage array does not support the Service Action Allowed indicator light
 
 == Syntax
 
+[subs=+macros]
 ----
-set (drive \[trayID,[drawerID,]slotID\] \| drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\])
+set (drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] | drivespass:quotes[[_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1_] ... pass:quotes[_trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_]])
 serviceAllowedIndicator=(on | off)
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

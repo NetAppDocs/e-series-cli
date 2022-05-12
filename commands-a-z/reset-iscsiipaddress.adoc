@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reset-iscsiipaddress.html
 sidebar: sidebar
-keywords: 
-summary: 'The reset iscsiIpAddress command resets the IP address of the remote storage array to re-establish connection with the local storage array.'
+keywords: reset, iscsi, ip address
+summary: "The reset iscsiIpAddress command resets the IP address of the remote storage array to re-establish connection with the local storage array."
 ---
 = Reset iSCSI IP address
 :icons: font
@@ -42,7 +42,7 @@ iscsiIpAddress
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-controller.html
 sidebar: sidebar
-keywords: 
-summary: 'The set controller command defines the attributes for the controllers.'
+keywords: set, controller
+summary: "The set controller command defines the attributes for the controllers."
 ---
 = Set controller
 :icons: font
@@ -26,7 +26,7 @@ set controller [(a|b)]
 [availability=(online | offline | serviceMode)]
 [ethernetPort [(1| 2)] ethernetPortOptions]
 [globalNVSRAMByte [nvsramOffset]=(nvsramByteSetting | nvsramBitSetting)]
-[hostNVSRAMByte [hostType, nvsramOffset]=(nvsramByteSetting |nvsramBitSetting)]
+[hostNVSRAMByte [hostType, nvsramOffset]=(nvsramByteSetting | nvsramBitSetting)]
 [IPv4GatewayIP=ipAddress]
 [IPv6RouterAddress=ipv6Address]
 [iscsiHostPort [portLabel] iscsiHostPortOptions]
@@ -36,6 +36,7 @@ set controller [(a|b)]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -71,9 +72,8 @@ a|
 a|
 This parameter enables you to set options for the iSCSI ports on the controller. Enter the iSCSI port label or number and then select the options for that port.
 
-See the following for more information:
+For more information, see the _Identifying an iSCSI host port label_ section below.
 
-<<ESERIES-SECTION_ID_ON_CONREFFED_SECTION,"Identifying an iSCSI host port label">>
 
 a|
 `rloginEnabled`
@@ -97,7 +97,7 @@ You must specify a label for the host port. Follow these steps to specify the ho
 The port label is the complete value returned for the `Port` field.
 ====
 
-. Enclose the entire value of the port label in both quotes and square brackets: ["[.code]``portLabel``"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
+. Enclose the entire value of the port label in both quotes and square brackets: ["portLabel"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
 +
 ----
 iscsiHostPort[\"ch 2\"]

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-drive-initialize.html
 sidebar: sidebar
-keywords: 
-summary: 'The start drive initialize command starts a drive initialization.'
+keywords: start, drive, initialize
+summary: "The start drive initialize command starts a drive initialization."
 ---
 = Start drive initialize
 :icons: font
@@ -27,13 +27,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start drive [trayID,[drawerID,]slotID] initialize
+start drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] initialize
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

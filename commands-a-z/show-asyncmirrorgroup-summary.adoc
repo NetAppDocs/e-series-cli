@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-asyncmirrorgroup-summary.html
 sidebar: sidebar
-keywords: 
-summary: 'The show asyncMirrorGroup summary command displays configuration information for one or more asynchronous mirror groups.'
+keywords: show, asynchronous, mirror, groups
+summary: "The show asyncMirrorGroup summary command displays configuration information for one or more asynchronous mirror groups."
 ---
 = Show asynchronous mirror groups
 :icons: font
@@ -27,15 +27,17 @@ You also can use this command to show the progress of periodic data synchronizat
 
 == Syntax
 
+[subs=+macros]
 ----
 show (allAsyncMirrorGroups |
-asyncMirrorGroup [asyncMirrorGroupName] |
-asyncMirrorGroups [asyncMirrorGroupName1 ... asyncMirrorGroupNameN])
+asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]] |
+asyncMirrorGroups pass:quotes[[_asyncMirrorGroupName1_ ... _asyncMirrorGroupNameN_]])
 [summary]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

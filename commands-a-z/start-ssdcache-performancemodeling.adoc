@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-ssdcache-performancemodeling.html
 sidebar: sidebar
-keywords: 
-summary: 'The start ssdCache performanceModeling command starts performance modeling for the SSD cache.'
+keywords: start, ssd, cache, performance, model
+summary: "The start ssdCache performanceModeling command starts performance modeling for the SSD cache."
 ---
 = Start SSD cache performance modeling
 :icons: font
@@ -24,13 +24,14 @@ To execute this command on an E2800 or E5700 storage array, you must have the Su
 Performance modeling monitors and measures I/O activity for a period of time and estimates performance for various SSD cache sizes. Performance is estimated using two metrics: cache hit percentage and average response time. The performance modeling data is not available until you stop the operation using the `stop ssdCache performanceModeling` command.
 
 == Syntax
-
+[subs=+macros]
 ----
-start ssdCache [ssdCacheName] performanceModeling
+start ssdCache pass:quotes[[_ssdCacheName_]] performanceModeling
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

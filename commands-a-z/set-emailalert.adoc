@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-emailalert.html
 sidebar: sidebar
-keywords: 
-summary: 'The set emailAlert command configures the email to send an email to a specified technical support or organization. The email alert contains a summary of the event, detailed information about the affected storage, and customer contact information.'
+keywords: configure, email, alert, set
+summary: "The set emailAlert command configures the email to send an email to a specified technical support or organization. The email alert contains a summary of the event, detailed information about the affected storage, and customer contact information."
 ---
 = Configure email alert settings
 :icons: font
@@ -13,26 +13,28 @@ The `set emailAlert` command configures the email to send an email to a specifie
 
 == Supported Arrays
 
-This command applies to theE2800, E5700, EF600, and EF300 storage arrays. However, you can use the command as an SMcli command, not a script command, for E2700 or E5600 arrays. In this case, the command applies to all of the arrays in the management domain.
+This command applies to the E2800, E5700, EF600, and EF300 storage arrays. However, you can use the command as an SMcli command, not a script command, for E2700 or E5600 arrays. In this case, the command applies to all of the arrays in the management domain.
 
 == Syntax
 
+[subs=+macros]
 ----
 
 set emailAlert
-    serverAddress="serverAddress" |
-    serverEncryption=none | smtps | starttls |
-    serverPort=port value |
-    serverUsername="username" |
-    serverPassword="password" |
-    senderAddress="emailAddress" |
-    additionalContactInfo="filename"  |
-    (recipientAddresses=("emailAddress1" ... "emailAddressN") |
- addRecipientAddresses=("emailAddress1" ... "emailAddressN"))
+    serverAddress=pass:quotes["_serverAddress_"] |
+    serverEncryption=pass:quotes[_none_ | _smtps_ | _starttls_ |]
+    serverPort=pass:quotes[_port value_] |
+    serverUsername=pass:quotes["_username_"] |
+    serverPassword=pass:quotes["_password_"] |
+    senderAddress=pass:quotes["_emailAddress_"] |
+    additionalContactInfo=pass:quotes["_filename_"]  |
+    (recipientAddresses=pass:quotes[("_emailAddress1_" ... "_emailAddressN_")] |
+ addRecipientAddresses=pass:quotes[("_emailAddress1_" ... "_emailAddressN_"))]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -44,18 +46,18 @@ a|
 a|
 The encryption to be used to communicate with the server. The value may be one of the following:
 
-* `none` - No encryption
-* `smtps` - Create an SSL/TLS connection (implicit TLS)
-* `starttls` - Create an unencrypted connection and then establish an SSL/TLS session (explicit TLS)
+* `_none_` - No encryption
+* `_smtps_` - Create an SSL/TLS connection (implicit TLS)
+* `_starttls_` - Create an unencrypted connection and then establish an SSL/TLS session (explicit TLS)
 
 a|
 `serverPort`
 a|
 The TCP port to be used to connect to the server. The default value will depend on the encryption type.
 
-* `none` - Defaults to port 25
-* `smtps` - Defaults to port 465
-* `starttls` - Defaults to port 587
+* `_none_` - Defaults to port 25
+* `_smtps_` - Defaults to port 465
+* `_starttls_` - Defaults to port 587
 
 a|
 `serverUsername`
@@ -85,19 +87,20 @@ Allows you to add one or more recipient email addresses to the existing list. En
 
 == Examples
 
+[subs=+macros]
 ----
 
 SMcli -n Array1 -c "set emailAlert
    serverAddress="email.server.domain.com"
-    serverEncryption=("smtps") |
-    serverPort="smtps" |
-    serverUsername="username" |
-    serverPassword="password" |
-   senderAddress="no-reply@server.domain.com"
+    serverEncryption=pass:quotes[("_smtps_")] |
+    serverPort=pass:quotes["_smtps_"] |
+    serverUsername=pass:quotes["_username_"] |
+    serverPassword=pass:quotes["_password_"] |
+   senderAddress=\no-reply@server.domain.com
    additionalContactInfo="C:\additionalInfo.txt"
-   recipientAddresses=("person1@email.domain.com" "person2@email.domain.com");"
+   recipientAddresses=("\person1@email.domain.com" "\person2@email.domain.com");"
 
-SMcli -n Array1 -c "set emailAlert addRecipientAddresses=("person3@netapp.com");"
+SMcli -n Array1 -c "set emailAlert addRecipientAddresses=("\person3@netapp.com");"
 
 SMcli completed successfully.
 ----

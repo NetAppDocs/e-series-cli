@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-unreadablesectors.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray unreadableSectors command returns a table of the addresses of all of the sectors in the storage array that cannot be read.'
+keywords: show, storage, array, unreadable, sectors
+summary: "The show storageArray unreadableSectors command returns a table of the addresses of all of the sectors in the storage array that cannot be read."
 ---
 = Show storage array unreadable sectors
 :icons: font

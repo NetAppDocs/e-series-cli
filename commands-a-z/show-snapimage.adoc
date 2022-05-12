@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-snapimage.html
 sidebar: sidebar
-keywords: 
-summary: 'The show snapImage command returns information about the snapshot images that a user had previously created.'
+keywords: show, snapshot, image
+summary: "The show snapImage command returns information about the snapshot images that a user had previously created."
 ---
 = Show snapshot image
 :icons: font
@@ -21,14 +21,16 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax for showing a specific snapshot image
 
+[subs=+macros]
 ----
-show (allSnapImages | snapImage ["snapImageName"] |
-snapImages ["snapImageName1" ... "snapImageNamen"]])
+show (allSnapImages | snapImage pass:quotes[["_snapImageName_"]] |
+snapImages pass:quotes[["_snapImageName1_" ... "_snapImageNamen_"]])
 [summary]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

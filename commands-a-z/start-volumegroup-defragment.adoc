@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-volumegroup-defragment.html
 sidebar: sidebar
-keywords: 
-summary: 'The start volumeGroup defragment command starts a defragment operation on the specified volume group.'
+keywords: start, volume, group, defragment
+summary: "The start volumeGroup defragment command starts a defragment operation on the specified volume group."
 ---
 = Start volume group defragment
 :icons: font
@@ -27,13 +27,14 @@ Defragmenting a volume group starts a long-running operation that you cannot sto
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start volumeGroup [volumeGroupName] defragment
+pass:quotes[start volumeGroup [_volumeGroupName_]] defragment
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

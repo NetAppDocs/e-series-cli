@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/remove-member-volume-from-consistency-group.html
 sidebar: sidebar
-keywords: 
-summary: 'The set consistencyGroup command removes a member volume from an existing snapshot consistency group.'
+keywords: remove, member, volume, consistency group
+summary: "The set consistencyGroup command removes a member volume from an existing snapshot consistency group."
 ---
 = Remove member volume from consistency group
 :icons: font
@@ -24,15 +24,15 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 Optionally, you can delete the repository volume members from the consistency group.
 
 == Syntax
-
+[subs=+macros]
 ----
-set consistencyGroup ["consistencyGroupName"]
-removeCGMemberVolume="memberVolumeName"
+set consistencyGroup pass:quotes[[_"consistencyGroupName"_]]
+removeCGMemberVolume=pass:quotes["_memberVolumeName_"]
 [deleteRepositoryMembers=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-warningevents.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray warningEvents command saves events from the Major Event Log to a file.'
+keywords: save, storage, array, events
+summary: "The save storageArray warningEvents command saves events from the Major Event Log to a file."
 ---
 = Save storage array events
 :icons: font
@@ -35,16 +35,18 @@ Some storage arrays might not be able to support all four types of events.
 
 == Syntax
 
+[subs=+macros]
 ----
 save storageArray (allEvents | criticalEvents |
 warningEvents | infoEvents | debugEvents)
-file="filename"
-[count=numberOfEvents]
+file=pass:quotes["_filename_"]
+[count=pass:quotes[_numberOfEvents_]]
 [forceSave=(TRUE | FALSE)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

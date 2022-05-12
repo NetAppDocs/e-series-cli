@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-volume-group-attributes-for-volume-in-a-volume-group.html
 sidebar: sidebar
-keywords: 
-summary: 'The set volume command defines the properties for volumes in a volume group.'
+keywords: set, volume, attributes, group
+summary: "The set volume command defines the properties for volumes in a volume group."
 ---
 = Set volume attributes for a volume in a volume group
 :icons: font
@@ -30,10 +30,11 @@ In configurations where volume groups consist of more than 32 volumes, the opera
 
 == Syntax applicable to one or more volumes
 
+[subs=+macros]
 ----
-set (allVolumes | volume [volumeName] |
-volumes [volumeName1 ... volumeNameN] | volume <"wwID">)
-cacheFlushModifier=cacheFlushModifierValue
+set (allVolumes | volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]] | volume <"wwID">)
+pass:quotes[cacheFlushModifier=_cacheFlushModifierValue_]
 cacheWithoutBatteryEnabled=(TRUE | FALSE)
 mediaScanEnabled=(TRUE | FALSE)
 mirrorCacheEnabled=(TRUE | FALSE)
@@ -46,10 +47,11 @@ cacheReadPrefetch=(TRUE | FALSE)
 dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
+[subs=+macros]
 ----
-set (allVolumes | volume [volumeName] |
-volumes [volumeName1 ... volumeNameN] | volume <"wwID">)
-cacheFlushModifier=cacheFlushModifierValue
+set (allVolumes | volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]] | volume <"wwID">)
+pass:quotes[cacheFlushModifier=_cacheFlushModifierValue_]
 cacheWithoutBatteryEnabled=(TRUE | FALSE)
 mediaScanEnabled=(TRUE | FALSE)
 mirrorCacheEnabled=(TRUE | FALSE)
@@ -62,10 +64,11 @@ cacheReadPrefetch=(TRUE | FALSE)
 dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
+[subs=+macros]
 ----
-set (allVolumes | volume ["volumeName"] |
-volumes ["volumeName1" ... "volumeNameN"] | volume <"wwID">)
-cacheFlushModifier=cacheFlushModifierValue
+set (allVolumes | volume pass:quotes[["_volumeName_"]] |
+volumes pass:quotes[["_volumeName1_" ... "_volumeNameN_"]] | volume <"wwID">)
+pass:quotes[cacheFlushModifier=_cacheFlushModifierValue_]
 cacheWithoutBatteryEnabled=(TRUE | FALSE)
 mediaScanEnabled=(TRUE | FALSE)
 mirrorCacheEnabled=(TRUE | FALSE)
@@ -78,10 +81,11 @@ cacheReadPrefetch=(TRUE | FALSE)
 dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
+[subs=+macros]
 ----
-set (allVolumes | volume [volumeName] |
-volumes [volumeName1 ... volumeNameN] | volume <"wwID">)
-cacheFlushModifier=cacheFlushModifierValue
+set (allVolumes | volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]] | volume <"wwID">)
+pass:quotes[cacheFlushModifier=_cacheFlushModifierValue_]
 cacheWithoutBatteryEnabled=(TRUE | FALSE)
 mediaScanEnabled=(TRUE | FALSE)
 mirrorCacheEnabled=(TRUE | FALSE)
@@ -93,10 +97,11 @@ cacheReadPrefetch=(TRUE | FALSE)
 dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
+[subs=+macros]
 ----
-set (allVolumes | volume ["volumeName"] |
-volumes ["volumeName1" ... "volumeNameN"] | volume <"wwID">)
-cacheFlushModifier=cacheFlushModifierValue
+set (allVolumes | volume pass:quotes[["_volumeName_"]] |
+volumes pass:quotes[["_volumeName1_" ... "_volumeNameN_"]] | volume <"wwID">)
+pass:quotes[cacheFlushModifier=_cacheFlushModifierValue_]
 cacheWithoutBatteryEnabled=(TRUE | FALSE)
 mediaScanEnabled=(TRUE | FALSE)
 mirrorCacheEnabled=(TRUE | FALSE)
@@ -108,10 +113,11 @@ cacheReadPrefetch=(TRUE | FALSE)
 dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
+[subs=+macros]
 ----
-set (allVolumes | volume [volumeName] |
-volumes [volumeName1 ... volumeNameN] | volume <"wwID">)
-cacheFlushModifier=cacheFlushModifierValue
+set (allVolumes | volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]] | volume <"wwID">)
+pass:quotes[cacheFlushModifier=_cacheFlushModifierValue_]
 cacheWithoutBatteryEnabled=(TRUE | FALSE)
 mediaScanEnabled=(TRUE | FALSE)
 mirrorCacheEnabled=(TRUE | FALSE)
@@ -125,39 +131,43 @@ reservedFutureOption1=(TRUE | FALSE)
 
 == Syntax applicable to only one volume
 
+[subs=+macros]
 ----
-set (volume [volumeName] | volume <wwID>)
-addCapacity=volumeCapacity
-[addDrives=(trayID1,drawerID1,slotID1 ... trayIDn,drawerIDn,slotIDn)]
+set (volume pass:quotes[[_volumeName_]] | volume <wwID>)
+pass:quotes[addCapacity=_volumeCapacity_]
+[addDrives=pass:quotes[(_trayID1_,_drawerID1_,_slotID1_ ... _trayIDn_,_drawerIDn_,_slotIDn_)]]
 redundancyCheckEnabled=(TRUE | FALSE)
-segmentSize=segmentSizeValue
-userLabel=volumeName
+pass:quotes[segmentSize=_segmentSizeValue_]
+pass:quotes[userLabel=_volumeName_]
 preReadRedundancyCheck=(TRUE | FALSE)
 ----
 
+[subs=+macros]
 ----
-set (volume ["volumeName"] | volume <wwID>)
-addCapacity=volumeCapacity
-[addDrives=(trayID1,drawerID1,slotID1
-... trayIDn,drawerIDn,slotIDn)]
+set (volume pass:quotes[["_volumeName_"]] | volume <wwID>)
+pass:quotes[addCapacity=_volumeCapacity_]
+[addDrives=pass:quotes[(_trayID1_,_drawerID1_,_slotID1_
+... _trayIDn_,_drawerIDn_,_slotIDn_)]]
 redundancyCheckEnabled=(TRUE | FALSE)
-segmentSize=segmentSizeValue
-userLabel=volumeName
+pass:quotes[segmentSize=_segmentSizeValue_]
+pass:quotes[userLabel=_volumeName_]
 preReadRedundancyCheck=(TRUE | FALSE)
 ----
 
+[subs=+macros]
 ----
-set (volume [volumeName] | volume <wwID>)
-addCapacity=volumeCapacity
-[addDrives=(trayID1,slotID1 ... trayIDn,slotIDn)]
+set (volume pass:quotes[[_volumeName_]] | volume <wwID>)
+pass:quotes[addCapacity=_volumeCapacity_]
+[addDrives=pass:quotes[(_trayID1_,_slotID1_ ... _trayIDn_,_slotIDn_)]]
 redundancyCheckEnabled=(TRUE | FALSE)
-segmentSize=segmentSizeValue
-userLabel=volumeName
+pass:quotes[segmentSize=_segmentSizeValue_]
+pass:quotes[userLabel=_volumeName_]
 preReadRedundancyCheck=(TRUE | FALSE)
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -319,6 +329,7 @@ Setting the `addCapacity` parameter, the `addDrives` parameter, or the `segmentS
 
 Valid values for the cache flush modifier are listed in this table.
 
+[cols="2*",options="header"]
 |===
 | Value| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-controller-hostport.html
 sidebar: sidebar
-keywords: 
-summary: 'The set controller hostPort command changes the network properties for the following types of host ports: iSCSI, iSER, NVMe over InfiniBand, and NVMe over RoCE. Property changes include IPv4 and IPv6 properties, port speed, and maximum frame payload.'
+keywords: set, controller, host, port, properties
+summary: "The set controller hostPort command changes the network properties for the following types of host ports: iSCSI, iSER, NVMe over InfiniBand, and NVMe over RoCE. Property changes include IPv4 and IPv6 properties, port speed, and maximum frame payload."
 ---
 = Set controller host port properties
 :icons: font
@@ -23,7 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-This command replaces the deprecated xref:wombat-set-controller-iscsihostport.adoc[Set iSCSI host port networking properties] command.
+This command replaces the deprecated xref:set-controller-iscsihostport.adoc[Set iSCSI host port networking properties] command.
 ====
 
 == Syntax
@@ -32,7 +32,7 @@ This command replaces the deprecated xref:wombat-set-controller-iscsihostport.ad
 
 set controller [(a|b)] hostPort ["portLabel"[, "physical"|"virtual"]]
     (IPV4Address=(0-255).(0-255).(0-255).(0-255) |
-    IPv6LocalAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
+    IPv6LocalAddress=(FE80):(0000):(0000):(0000):(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
     IPv6RoutableAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
     IPv6RouterAddress=(0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF) |
     enableIPv4=(TRUE | FALSE) |
@@ -62,6 +62,7 @@ set controller [(a|b)] hostPort ["portLabel"[, "physical"|"virtual"]]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -84,7 +85,7 @@ Allows you to enter the address in this format: (0-255).(0-255).(0-255).(0-255).
 a|
 `IPV6LocalAddress`
 a|
-Allows you to enter the address in this format: (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF).
+Allows you to enter the address in this format: (FE80):(0000):(0000):(0000): (0-FFFF):(0-FFFF):(0-FFFF):(0-FFFF).
 a|
 `IPv6RoutableAddress`
 a|
@@ -207,6 +208,7 @@ This parameter is only supported with a 25 Gbps iSCSI host interface card and a 
 
 Parameter support varies by host port type (iSCSI, iSER, NVMe over InfiniBand, or NVMe over RoCE), as described in the following table:
 
+[cols="5*",options="header"]
 |===
 | Parameter| iSCSI| iSER| NVMe over InfiniBand| NVMe over RoCE
 a|
@@ -224,9 +226,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 a|
@@ -234,9 +236,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 a|
@@ -244,9 +246,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 a|
@@ -254,9 +256,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 a|
@@ -264,9 +266,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 a|
@@ -274,9 +276,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 No
 a|
@@ -284,9 +286,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 No
 a|
@@ -294,9 +296,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 No
 a|
@@ -304,9 +306,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 No
 a|
@@ -314,9 +316,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 a|
@@ -324,9 +326,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 a|
@@ -334,9 +336,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 a|
@@ -344,59 +346,59 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
- 
+
 a|
 `IPv6NdDetectDuplicateAddress`
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
- 
+
 a|
 `IPv6NdReachableTime`
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
- 
+
 a|
 `IPv6NdRetransmitTime`
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
- 
+
 a|
 `IPv6NdTimeOut`
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
- 
+
 a|
 `IPv4Priority`
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 No
 a|
@@ -404,9 +406,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 No
 a|
@@ -414,9 +416,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 a|
@@ -424,9 +426,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 No
 a|
@@ -434,9 +436,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 No
 a|
@@ -444,9 +446,9 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 a|
@@ -454,19 +456,19 @@ a|
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
- 
+
 a|
 `portSpeed`
 a|
 Yes
 a|
- 
+
 a|
- 
+
 a|
 Yes
 |===

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-volumes.html
 sidebar: sidebar
-keywords: 
-summary: 'The set volumes command defines the properties for a volume in a disk pool.'
+keywords: set, volume, attributes, disk pool
+summary: "The set volumes command defines the properties for a volume in a disk pool."
 ---
 = Set volume attributes for a volume in a disk pool
 :icons: font
@@ -28,11 +28,12 @@ In configurations where disk pools consist of more than 32 volumes, the operatio
 
 == Syntax
 
+[subs=+macros]
 ----
-set (allVolumes | volume [volumeName] |
-volumes [volumeName1 ... volumeNameN] | volume <"wwID">)
-addCapacity = capacityValue[KB|MB|GB|TB|Bytes] |
-cacheFlushModifier=cacheFlushModifierValue |
+set (allVolumes | volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]] | volume <"wwID">)
+pass:quotes[addCapacity = _capacityValue_][KB|MB|GB|TB|Bytes] |
+pass:quotes[cacheFlushModifier=_cacheFlushModifierValue_] |
 cacheReadPrefetch = (TRUE | FALSE) |
 cacheWithoutBatteryEnabled=(TRUE | FALSE) |
 mediaScanEnabled=(TRUE | FALSE) |
@@ -40,14 +41,15 @@ mirrorCacheEnabled=(TRUE | FALSE) |
 preReadRedundancyCheck = (TRUE | FALSE) |
 readCacheEnabled=(TRUE | FALSE) |
 redundancyCheckEnabled = (TRUE | FALSE) |
-segmentSize = segmentSizeValue
-userLabel = userlabelValue
+pass:quotes[segmentSize = _segmentSizeValue_]
+pass:quotes[userLabel = _userlabelValue_]
 writeCacheEnabled=(TRUE | FALSE) |
 dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -160,6 +162,7 @@ Setting the `addCapacity` parameter or the `segmentSize` parameter starts a long
 
 Valid values for the cache flush modifier are listed in this table.
 
+[cols="2*",options="header"]
 |===
 | Value| Description
 a|

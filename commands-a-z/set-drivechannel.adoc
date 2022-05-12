@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-drivechannel.html
 sidebar: sidebar
-keywords: 
-summary: 'The set driveChannel command defines how the drive channel performs.'
+keywords: set, drive, channel, status
+summary: "The set driveChannel command defines how the drive channel performs."
 ---
 = Set drive channel status
 :icons: font
@@ -28,6 +28,7 @@ status=(optimal | degraded)
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

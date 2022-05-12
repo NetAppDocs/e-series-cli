@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/export-storagearray-securitykey.html
 sidebar: sidebar
-keywords: 
-summary: 'The export storageArray securityKey command saves a drive security key to a file.'
+keywords: export, storage, array, security, key, command, save, drive, securitykey, file, context, role
+summary: "The export storageArray securityKey command saves a drive security key to a file."
 ---
 = Export storage array security key
 :icons: font
@@ -29,15 +29,15 @@ This command applies to both internal and external key management.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 export storageArray securityKey
-passPhrase="passPhraseString"
-file="fileName"
+pass:quotes[passPhrase="_passPhraseString_"]
+pass:quotes[file="_fileName_"]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

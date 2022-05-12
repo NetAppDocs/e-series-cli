@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/activate-storagearray-firmware.html
 sidebar: sidebar
-keywords: 
-summary: 'The activate storageArray firmware command activates firmware that you have previously downloaded to the pending configuration area on the controllers in the storage array.'
+keywords: activate, storage array, firmware, syntax, parameter, minimum, level
+summary: "The activate storageArray firmware command activates firmware that you have previously downloaded to the pending configuration area on the controllers in the storage array."
 ---
 = Activate storage array firmware
 :icons: font
@@ -19,7 +19,7 @@ activate storageArray firmware
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,10 +1,10 @@
 ---
 permalink: get-started/changes-in-the-cli-and-script-commands-in-this-release.html
 sidebar: sidebar
-keywords: 
-summary: 'This topic lists changes in the latest SANtricity System Manager releases of the CLI command and Script commands.'
+keywords: what's new
+summary: "This topic lists changes in the latest SANtricity System Manager releases of the CLI command and Script commands."
 ---
-= Changes in the CLI and script commands in this release
+= What's New
 :icons: font
 :imagesdir: ./media/
 
@@ -25,6 +25,7 @@ If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to th
 
 The following tables list changes to the CLI and Script Commands for release 11.70.3.
 
+[cols="2*",options="header"]
 |===
 | Command| Description of Change
 a|
@@ -43,12 +44,21 @@ a|
 xref:../commands-a-z/start-diskpool-resourceprovisioning.adoc[Start Disk Pool Resource Provisioning]
 a|
 Updated `disableResourceProvisioning` parameter description.
+a|
+xref:../commands-a-z/recreate-storagearray-securitykey.html[Re-create external security key]
+a|
+Added `deleteOldKey` parameter.
+a|
+xref:../commands-a-z/create-diskpool.html[Create disk pool]
+a|
+Updated `driveCount` parameter description.
 |===
 
 == SANtricity 11.70.2
 
 The following tables list changes to the CLI and Script Commands for release 11.70.2.
 
+[cols="2*",options="header"]
 |===
 | Command| Description of Change
 a|
@@ -85,6 +95,7 @@ Added `userName` and `engineid` parameters.
 
 The following tables list changes to the CLI and Script Commands for release 11.70.1.
 
+[cols="2*",options="header"]
 |===
 | Command| Description of Change
 a|
@@ -125,6 +136,7 @@ Added `blockSize` parameter.
 
 The following tables list changes to the CLI and Script Commands for release 11.70.
 
+[cols="2*",options="header"]
 |===
 | Command| Description of Change
 a|
@@ -153,6 +165,7 @@ Added `hostUnmapEnabled` parameter.
 
 The following tables list changes to the CLI and Script Commands for release 11.63.
 
+[cols="2*",options="header"]
 |===
 | Command| Description of Change
 a|
@@ -213,18 +226,20 @@ Added `resource-provisioned` information in the command results.
 
 The following tables list changes to the CLI and Script Commands for release 11.62.
 
+[cols="2*",options="header"]
 |===
 | Command| Description of Change
 a|
 xref:../commands-a-z/set-controller-hostport.adoc[Set controller host port properties]
 a|
-Added `Physical` and ``Virtual``values for `host Port` parameter.
+Added `Physical` and `Virtual` values for `host Port` parameter.
 |===
 
 == SANtricity 11.61 and below
 
 * Added EF600 platform as supported array for applicable commands.
 
+[cols="2*",options="header"]
 |===
 | Command| Description of Change
 a|

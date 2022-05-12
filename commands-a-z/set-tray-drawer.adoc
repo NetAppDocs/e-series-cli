@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-tray-drawer.html
 sidebar: sidebar
-keywords: 
-summary: 'The set tray drawer command turns on or turns off the Service Action Allowed indicator light on a drawer that holds drives.'
+keywords: set, drawer, service, action, allowed, indicator
+summary: "The set tray drawer command turns on or turns off the Service Action Allowed indicator light on a drawer that holds drives."
 ---
 = Set drawer service action allowed indicator
 :icons: font
@@ -25,13 +25,15 @@ Drawers are used in high-capacity drive trays. The drawers slide out of the driv
 
 == Syntax
 
+[subs=+macros]
 ----
-set tray [trayID] drawer [drawerID]
+set tray pass:quotes[[_trayID_]] drawer pass:quotes[[_drawerID_]]
 serviceAllowedIndicator=(on | off | forceOnWarning)
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

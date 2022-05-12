@@ -1,15 +1,15 @@
 ---
 permalink: get-started/new-https-mode.html
 sidebar: sidebar
-keywords: 
-summary: 'The new SMcli can operate in an https mode that offers additional security features.'
+keywords: new, smcli, https mode
+summary: "The new SMcli can operate in an https mode that offers additional security features."
 ---
-= New SMcli https mode
+= SMcli https mode
 :icons: font
 :imagesdir: ./media/
 
 [.lead]
-The new SMcli can operate in an `https` mode that offers additional security features.
+The SMcli can operate in an `*https*` mode that offers additional security features.
 
 [NOTE]
 ====
@@ -18,14 +18,14 @@ If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to th
 
 When you use the 11.42 version of the CLI, the script engine is created in one of the following modes:
 
-* `https` -- a REST-based script engine is created, with additional security features.
-* `symbol` -- a SYMbol-based script engine is created.
+* `*https*` -- a REST-based script engine is created, with additional security features.
+* `*symbol*` -- a SYMbol-based script engine is created.
 
-New security features available in `https` client:
+New security features available in `*https*` client:
 
 * Certificate authentication using trusted certificates is required for advanced security. You can use the `-k` option to use a self-signed certificate and run commands in insecure mode.
 * You can use role-based access management, with different security permissions assigned to different roles. Use the `-u` option to run commands with a user name argument.
-* Password arguments previously available in `symbol` mode can also be used in `https` mode to specify a password for a particular user role. The `-p` option is used to specify the password on the command line, or the `-P` option can read in a password from a file or from `stdin`.
+* Password arguments previously available in `*symbol*` mode can also be used in `*https*` mode to specify a password for a particular user role. The `-p` option is used to specify the password on the command line, or the `-P` option can read in a password from a file or from `stdin`.
 
 There are several examples in this topic that help illustrate the new command line parameters:
 
@@ -73,7 +73,7 @@ Executing script...
 Script execution complete.
 ----
 
-In this example using the `symbol` client mode, only the password option is required for successful completion of the command.
+In this example using the `*symbol*` client mode, only the password option is required for successful completion of the command.
 
 ----
 C:\Program Files\StorageManager\client>SMcli -n Array1 -p adminPassword -c "set storageArray cacheBlockSize=4;"
@@ -90,7 +90,7 @@ SMcli completed successfully.
 
 == Read only operations, `symbol` client mode
 
-In this example in `symbol` client mode, neither username or password is provided. This only successfully completes for read-only operations.
+In this example in `*symbol*` client mode, neither username or password is provided. This only successfully completes for read-only operations.
 
 ----
 C:\Program Files\StorageManager\client>SMcli -n Array1  -c "show allVolumes;"
@@ -115,7 +115,7 @@ SMcli completed successfully.
 
 == Read only operations, http client mode
 
-In the following example, also using a read-only operation but in `https` client mode, both username and password are required, and provided, along with `-k` to accept a self-signed certificate. The `https` client mode requires a password even for read-only operations.
+In the following example, also using a read-only operation but in `*https*` client mode, both username and password are required, and provided, along with `-k` to accept a self-signed certificate. The `*https*` client mode requires a password even for read-only operations.
 
 ----
 C:\Program Files\StorageManager\client>SMcli -n Array1 -u admin@local -p adminPassword -c "show allVolumes;" -k

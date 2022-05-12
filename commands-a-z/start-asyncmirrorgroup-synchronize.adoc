@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-asyncmirrorgroup-synchronize.html
 sidebar: sidebar
-keywords: 
-summary: 'The start asyncMirrorGroup synchronize command starts Asynchronous Mirroring synchronization.'
+keywords: start, asynchronous, mirror, synchronization
+summary: "The start asyncMirrorGroup synchronize command starts Asynchronous Mirroring synchronization."
 ---
 = Start asynchronous mirroring synchronization
 :icons: font
@@ -20,14 +20,14 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, or E5700 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-start asyncMirrorGroup ["asyncMirrorGroupName"] synchronize
-[deleteRecoveryPointIfNecessary]
+start asyncMirrorGroup pass:quotes[["_asyncMirrorGroupName_"]] synchronize [deleteRecoveryPointIfNecessary]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

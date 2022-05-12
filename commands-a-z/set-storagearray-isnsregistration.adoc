@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-isnsregistration.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray isnsRegistration command enables you to list a storage array on either an IPv4 or an IPv6 Internet Storage Name Service \(iSNS\) server.'
+keywords: set, storage, array, isns, registration
+summary: "The set storageArray isnsRegistration command enables you to list a storage array on either an IPv4 or an IPv6 Internet Storage Name Service (iSNS) server."
 ---
 = Set storage array iSNS registration
 :icons: font
@@ -21,23 +21,26 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax for IPv4
 
+[subs=+macros]
 ----
 set storageArray isnsRegistration=(TRUE | FALSE)
 isnsIPv4ConfigurationMethod=[static | dhcp]
-isnsIPv4Address=ipAddress
+isnsIPv4Address=pass:quotes[_ipAddress_]
 [isnsListeningPort]
 ----
 
 == Syntax for IPv6
 
+[subs=+macros]
 ----
 set storageArray isnsRegistration=(TRUE | FALSE)
-isnsIPv6Address=ipAddress
+isnsIPv6Address=pass:quotes[_ipAddress_]
 [isnsListeningPort]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameters| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-firmwareinventory.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray firmwareInventory command saves a report to a file of all of the firmware currently running on the storage array.'
+keywords: save, storage, array, firmware, inventory
+summary: "The save storageArray firmwareInventory command saves a report to a file of all of the firmware currently running on the storage array."
 ---
 = Save storage array firmware inventory
 :icons: font
@@ -33,12 +33,14 @@ You can use the information to help identify out-of-date firmware or firmware th
 
 == Syntax
 
+[subs=+macros]
 ----
-save storageArray firmwareInventory file="filename"
+save storageArray firmwareInventory file=pass:quotes["_filename_"]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

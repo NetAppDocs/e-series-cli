@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/resume-snapimage-rollback.html
 sidebar: sidebar
-keywords: 
-summary: 'The resume snapImage rollback command resumes a rollback operation that has entered a paused state.'
+keywords: resume, snapshot, image, rollback
+summary: "The resume snapImage rollback command resumes a rollback operation that has entered a paused state."
 ---
 = Resume snapshot image rollback
 :icons: font
@@ -31,13 +31,13 @@ You cannot use this command for snapshot images involved in online volume copy.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-resume snapImage [snapImageName] rollback
+resume snapImage pass:quotes[[_snapImageName_]] rollback
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|

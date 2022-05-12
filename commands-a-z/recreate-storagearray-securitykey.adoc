@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/recreate-storagearray-securitykey.html
 sidebar: sidebar
-keywords: 
-summary: 'The recreate storageArray securityKey command regenerates a storage array security key for use with the external security key management feature.'
+keywords: recreate, external, security key
+summary: "The recreate storageArray securityKey command regenerates a storage array security key for use with the external security key management feature."
 ---
 = Re-create external security key
 :icons: font
@@ -27,15 +27,16 @@ This command applies only to external key management.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
 recreate storageArray securityKey
-passPhrase="passPhraseString"
-file="fileName"
+passPhrase=pass:quotes[_"passPhraseString"_
+file="_fileName"_]
+[deleteOldKey=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -55,6 +56,11 @@ file="C:\Program Files\CLI\sup\drivesecurity.slk"
 ====
 The file name must have an extension of `.slk`.
 ====
+
+a|
+`deleteOldKey`
+a|
+Set this parameter to `TRUE` to delete the old security key from the external key management server after the new security key is created. The default is `FALSE`.
 
 |===
 
@@ -76,3 +82,5 @@ If your pass phrase does not meet these criteria, you will receive an error mess
 == Minimum firmware level
 
 7.70
+
+11.73 adds the `deleteOldKey` parameter.

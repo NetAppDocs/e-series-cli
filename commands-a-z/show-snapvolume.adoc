@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-snapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The show snapVolume command returns information about one or more snapshot volumes.'
+keywords: show, snapshot, volumes
+summary: "The show snapVolume command returns information about one or more snapshot volumes."
 ---
 = Show snapshot volumes
 :icons: font
@@ -21,14 +21,16 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-show (allSnapVolumes | snapVolume ["snapVolumeName"] |
-snapVolumes ["snapVolumeName1" ... "snapVolumeNamen"])
+show (allSnapVolumes | snapVolume pass:quotes[["_snapVolumeName_"]] |
+snapVolumes pass:quotes[["_snapVolumeName1_" ... "_snapVolumeNamen_"]])
 [summary]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

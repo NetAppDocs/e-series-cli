@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-snapimage-rollback.html
 sidebar: sidebar
-keywords: 
-summary: 'The start snapImage rollback command starts a rollback operation for a set of snapshot images.'
+keywords: start, snapshot, image, rollback
+summary: "The start snapImage rollback command starts a rollback operation for a set of snapshot images."
 ---
 = Start snapshot image rollback
 :icons: font
@@ -31,13 +31,14 @@ You cannot use this command for snapshot images involved in online volume copy.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start snapImage ["snapImageName"] rollback
+pass:quotes[start snapImage ["_snapImageName_"]] rollback
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

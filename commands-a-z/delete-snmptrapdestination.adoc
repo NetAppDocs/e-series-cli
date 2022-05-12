@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-snmptrapdestination.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete snmpTrapDestination command deletes an existing Simple Network Management Protocol \(SNMP\) trap destination that you previously created and registered using the create snmpTrapDestination command.'
+keywords: delete, command, snmptrapdestination, existing, simple, network, management, protocol, trap, destination, previous, create, registered
+summary: "The delete snmpTrapDestination command deletes an existing Simple Network Management Protocol (SNMP) trap destination that you previously created and registered using the create snmpTrapDestination command."
 ---
 = Unregister SNMP trap destination
 :icons: font
@@ -20,13 +20,13 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-delete snmpTrapDestination trapReceiverIP=ipAddress
+pass:quotes[delete snmpTrapDestination trapReceiverIP=_ipAddress_]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

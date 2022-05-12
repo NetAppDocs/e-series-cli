@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-autoconfiguration.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray autoConfiguration command shows the default auto-configuration that the storage array creates if you run the autoConfigure storageArray command.'
+keywords: show, storage, array, auto, configuration
+summary: "The show storageArray autoConfiguration command shows the default auto-configuration that the storage array creates if you run the autoConfigure storageArray command."
 ---
 = Show storage array auto configuration
 :icons: font
@@ -25,16 +25,17 @@ If you want to determine whether the storage array can support specific properti
 
 == Syntax
 
+[subs=+macros]
 ----
 show storageArray autoConfiguration
 [driveType=(SAS | NVMe4K)
 driveMediaType=(HDD | SSD | unknown | allMedia)
 raidLevel=(0 | 1 | 3 | 5 | 6)
-volumeGroupWidth=numberOfDrives
-volumeGroupCount=numberOfVolumeGroups
-volumesPerGroupCount=numberOfVolumesPerGroup
-hotSpareCount=numberOfHotspares
-segmentSize=segmentSizeValue
+pass:quotes[volumeGroupWidth=_numberOfDrives_]
+pass:quotes[volumeGroupCount=_numberOfVolumeGroups_]
+pass:quotes[volumesPerGroupCount=_numberOfVolumesPerGroup_]
+pass:quotes[hotSpareCount=_numberOfHotspares_]
+pass:quotes[segmentSize=_segmentSizeValue_]
 cacheReadPrefetch=(TRUE | FALSE)
 securityType=(none | capable | enabled)
 secureDrives=(fips | fde)]
@@ -42,6 +43,7 @@ secureDrives=(fips | fde)]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -145,67 +147,70 @@ A volume group is a set of drives that are logically grouped together by the con
 * If a volume group contains drives that have different capacities, the overall capacity of the volume group is based on the smallest capacity drive.
 * To enable tray/drawer loss protection, refer to the following tables for additional criteria:
 
+[cols="3*",options="header"]
 |===
 | Level| Criteria for Tray Loss Protection| Minimum number of trays required
 a|
-Disk Pool
+`Disk Pool`
 a|
 The disk pool contains no more than two drives in a single tray.
 a|
 6
 a|
-RAID 6
+`RAID 6`
 a|
 The volume group contains no more than two drives in a single tray.
 a|
 3
 a|
-RAID 3 or RAID 5
+`RAID 3` or `RAID 5`
 a|
 Each drive in the volume group is located in a separate tray.
 a|
 3
 a|
-RAID 1
+`RAID 1`
 a|
 Each drive in a RAID 1 pair must be located in a separate tray.
 a|
 2
 a|
-RAID 0
+`RAID 0`
 a|
 Cannot achieve Tray Loss Protection.
 a|
 Not applicable
 |===
+
+[cols="3*",options="header"]
 |===
 | Level| Criteria for drawer loss protection| Minimum number of drawers required
 a|
-Disk Pool
+`Disk Pool`
 a|
 The pool includes drives from all five drawers and there are an equal number of drives in each drawer. A 60-drive tray can achieve Drawer Loss Protection when the disk pool contains 15, 20, 25, 30, 35, 40, 45, 50, 55, or 60 drives.
 a|
 5
 a|
-RAID 6
+`RAID 6`
 a|
 The volume group contains no more than two drives in a single drawer.
 a|
 3
 a|
-RAID 3 or RAID 5
+`RAID 3` or `RAID 5`
 a|
 Each drive in the volume group is located in a separate drawer.
 a|
 3
 a|
-RAID 1
+`RAID 1`
 a|
 Each drive in a mirrored pair must be located in a separate drawer.
 a|
 2
 a|
-RAID 0
+`RAID 0`
 a|
 Cannot achieve Drawer Loss Protection.
 a|

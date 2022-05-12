@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-controller-iscsihostport.html
 sidebar: sidebar
-keywords: 
-summary: 'The set controller iscsiHostPort command changes the network properties for a host port, including IPv4 and IPv6 properties, port speed, and maximum frame payload.'
+keywords: set, iscsi, host, port, network, properties
+summary: "The set controller iscsiHostPort command changes the network properties for a host port, including IPv4 and IPv6 properties, port speed, and maximum frame payload."
 ---
 = Set iSCSI host port networking properties
 :icons: font
@@ -21,14 +21,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-This command is deprecated and is replaced by the xref:wombat-set-controller-hostport.adoc[Set controller host port properties] command.
+This command is deprecated and is replaced by the xref:set-controller-hostport.adoc[Set controller host port properties] command.
 ====
 
 == Syntax
 
 ----
 set controller [(a|b)]
- iscsiHostPort [portLabel]
+iscsiHostPort [portLabel]
 ----
 
 ----
@@ -117,6 +117,7 @@ set controller [(a|b)]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -147,7 +148,7 @@ This parameter is not supported in an NVMe over RoCE environment.
 a|
 `enableIPV4Vlan`
 a|
-A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both.Available options are:
+A VLAN is a logical network that behaves like it is physically separate from other physical and virtual local area networks (LANs) supported by the same switches, the same routers, or both. Available options are:
 
 * TRUE
 * FALSE
@@ -365,7 +366,7 @@ You must specify a label for the host port. Follow these steps to specify the ho
 The port label is the complete value returned for the `Port` field.
 ====
 
-. Enclose the entire value of the port label in both quotes and square brackets: ["[.code]``portLabel``"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
+. Enclose the entire value of the port label in both quotes and square brackets: ["portLabel"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
 +
 ----
 iscsiHostPort[\"ch 2\"]

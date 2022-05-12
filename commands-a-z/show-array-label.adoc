@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-array-label.html
 sidebar: sidebar
-keywords: 
-summary: 'The Show array label command returns information about whether a storage array label has been defined or all existing storage array labels.'
+keywords: show, array, label
+summary: "The Show array label command returns information about whether a storage array label has been defined or all existing storage array labels."
 ---
 = Show array label
 :icons: font
@@ -17,13 +17,15 @@ This command applies to the EF600 storage arrays.
 
 == Syntax
 
+[subs=+macros]
 ----
-show storageArrayLabel label userDefinedString
+pass:quotes[show storageArrayLabel label _userDefinedString_]
 show storageArrayLabel all
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

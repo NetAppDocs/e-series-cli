@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-cgsnapimage-consistencygroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete cgSnapImage consistencyGroup command deletes the snapshot images in a consistency group.'
+keywords: delete, consistency, group, snapshot, image
+summary: "The delete cgSnapImage consistencyGroup command deletes the snapshot images in a consistency group."
 ---
 = Delete consistency group snapshot image
 :icons: font
@@ -20,16 +20,16 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-delete cgSnapImage consistencyGroup="consistencyGroupName"
-[deleteCount=numberOfSnapImages]
-[retainCount=numberOfSnapImages]
+delete cgSnapImage consistencyGroup=pass:quotes[_"consistencyGroupName"_]
+pass:quotes[[deleteCount=_numberOfSnapImages_]
+[retainCount=pass:quotes[_numberOfSnapImages_]
 [ignoreSnapVolume=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

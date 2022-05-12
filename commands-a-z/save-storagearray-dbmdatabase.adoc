@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-dbmdatabase.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray dbmDatabase command backs up RAID configuration data or all data to a file on the host. You can specify multiple data locations and controllers.'
+keywords: save, storage, array, dbm, database
+summary: "The save storageArray dbmDatabase command backs up RAID configuration data or all data to a file on the host. You can specify multiple data locations and controllers."
 ---
 = Save storage array DBM database
 :icons: font
@@ -31,6 +31,7 @@ save storageArray dbmDatabase
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -79,6 +80,6 @@ The data that you save to the host using this command can, if needed, be restore
 
 7.83 adds these parameters:
 
-* sourceLocation
-* controller
-* contentType
+* `sourceLocation`
+* `controller`
+* `contentType`

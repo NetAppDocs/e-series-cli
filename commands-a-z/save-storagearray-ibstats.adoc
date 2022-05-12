@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-ibstats.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray ibStats command saves the InfiniBand performance statistics of the storage array to a file.'
+keywords: save, storage, array, infiniband, statistics
+summary: "The save storageArray ibStats command saves the InfiniBand performance statistics of the storage array to a file."
 ---
 = Save storage array InfiniBand statistics
 :icons: font
@@ -21,18 +21,20 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-This command is deprecated and is replaced by the xref:wombat-save-storagearray-hostportstatistics.adoc[Save storage array host port statistics] command.
+This command is deprecated and is replaced by the xref:save-storagearray-hostportstatistics.adoc[Save storage array host port statistics] command.
 ====
 
 == Syntax
 
+[subs=+macros]
 ----
 save storageArray ibStats [raw | baseline]
-file=*"filename"*
+file=pass:quotes["_filename_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

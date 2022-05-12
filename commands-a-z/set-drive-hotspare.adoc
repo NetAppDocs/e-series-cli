@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-drive-hotspare.html
 sidebar: sidebar
-keywords: 
-summary: 'The set drive hotSpare command assigns or de-assigns one or more drives as a hot spare.'
+keywords: set, drive, hot spare
+summary: "The set drive hotSpare command assigns or de-assigns one or more drives as a hot spare."
 ---
 = Set drive hot spare
 :icons: font
@@ -21,13 +21,15 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set (drive \[trayID,[drawerID,]slotID\] \| drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\])
+set (drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] | drivespass:quotes[[_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1_] ... pass:quotes[_trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_]])
 hotSpare=(TRUE | FALSE)
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

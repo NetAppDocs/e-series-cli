@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/remove-volumecopy-target.html
 sidebar: sidebar
-keywords: 
-summary: 'The remove volumeCopy target command removes a volume copy pair.'
+keywords: remove, volume, copy
+summary: "The remove volumeCopy target command removes a volume copy pair."
 ---
 = Remove volume copy
 :icons: font
@@ -29,13 +29,13 @@ With firmware version 7.83 the `copyType=(online | offline)` parameter is no lon
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-remove volumeCopy target [targetName] [source [sourceName]]
+remove volumeCopy target pass:quotes[[_targetName_]] [source pass:quotes[[_sourceName_]]]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

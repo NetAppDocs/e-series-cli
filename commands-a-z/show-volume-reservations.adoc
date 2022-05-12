@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volume-reservations.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volume reservations command returns information about the volumes that have persistent reservations.'
+keywords: show, volume, reservations
+summary: "The show volume reservations command returns information about the volumes that have persistent reservations."
 ---
 = Show volume reservations
 :icons: font
@@ -20,14 +20,15 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Syntax
-
+[subs=+macros]
 ----
-show (allVolumes | volume [volumeName] |
-volumes [volumeName1 ... volumeNameN]) reservations
+show (allVolumes | volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]]) reservations
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

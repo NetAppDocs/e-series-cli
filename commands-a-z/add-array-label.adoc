@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/add-array-label.html
 sidebar: sidebar
-keywords: 
-summary: 'The Add array label command allows you to add a storage array to the configuration with a user-defined label. This allows later commands to address the storage array by the user-defined label rather than by IP address or host name.'
+keywords: add array label, supported, syntax, parameters, minimum firmware level
+summary: "The Add array label command allows you to add a storage array to the configuration with a user-defined label. This allows later commands to address the storage array by the user-defined label rather than by IP address or host name."
 ---
 = Add array label
 :icons: font
@@ -21,14 +21,14 @@ The user-defined label provided does not need to match the storage array's name 
 This command applies to the EF600 and EF300 storage arrays.
 
 == Syntax
-
+[subs=+macros]
 ----
 
-        Address1 Address2 add storageArrayLabel label userDefinedString
+pass:quotes[ _Address1 Address2_ add storageArrayLabel label _userDefinedString_]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

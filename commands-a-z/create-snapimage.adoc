@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-snapimage.html
 sidebar: sidebar
-keywords: 
-summary: 'The create snapImage command creates a new snapshot image in one or more existing snapshot groups.'
+keywords: create, snapshot, image
+summary: "The create snapImage command creates a new snapshot image in one or more existing snapshot groups."
 ---
 = Create snapshot image
 :icons: font
@@ -24,14 +24,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 Before you can create a snapshot image, you must first have at least one snapshot group into which you can place the snapshot image. To create a snapshot group use the `create snapGroup` command.
 
 == Syntax
-
+[subs=+macros]
 ----
-create snapImage (snapGroup="snapGroupName" |
-snapGroups=("snapGroupName1"... "snapGroupNamen"))
+create snapImage (snapGroup=pass:quotes[_"snapGroupName" |
+snapGroups=("_snapGroupName1"... "snapGroupNamen_"))]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

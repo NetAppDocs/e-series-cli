@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volumegroup-importdependencies.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volumeGroup importDependencies command shows a list of dependencies for the drives in a volume group that you want to move from one storage array to a second storage array.'
+keywords: show, volume, group, import, dependencies
+summary: "The show volumeGroup importDependencies command shows a list of dependencies for the drives in a volume group that you want to move from one storage array to a second storage array."
 ---
 = Show volume group import dependencies
 :icons: font
@@ -20,14 +20,15 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Syntax
-
+[subs=+macros]
 ----
-show volumeGroup [volumeGroupName] importDependencies
+pass:quotes[show volumeGroup [_volumeGroupName_]] importDependencies
 [cancelImport=(TRUE | FALSE)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

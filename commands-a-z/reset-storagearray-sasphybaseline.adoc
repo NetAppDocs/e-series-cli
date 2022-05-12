@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reset-storagearray-sasphybaseline.html
 sidebar: sidebar
-keywords: 
-summary: 'The reset storageArray SASPHYBaseline command resets the SAS physical layer \(SAS PHY\) baseline for all devices, and removes the list of errors from the .csv file.'
+keywords: reset, storage array, sas, phy, baseline
+summary: "The reset storageArray SASPHYBaseline command resets the SAS physical layer (SAS PHY) baseline for all devices, and removes the list of errors from the .csv file."
 ---
 = Reset storage array SAS PHY baseline
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-snapvolume-increase-decreaserepositorycapacity.html
 sidebar: sidebar
-keywords: 
-summary: 'The set snapVolume increase/decreaseRepositoryCapacity command increases or decreases the capacity of a snapshot volume repository volume.'
+keywords: set, snapshot, volume, repository, capacity
+summary: "The set snapVolume increase/decreaseRepositoryCapacity command increases or decreases the capacity of a snapshot volume repository volume."
 ---
 = Set snapshot volume repository volume capacity
 :icons: font
@@ -21,22 +21,25 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax for increasing capacity
 
+[subs=+macros]
 ----
 set snapVolume[“snapVolumeName”] increaseRepositoryCapacity
 (repositoryVolumes="repos_xxxx" |
-repositoryVolumes=(volumeGroupName [capacity=capacityValue] |
-repositoryVolumes=(diskPoolName [capacity=capacityValue])
+repositoryVolumes=pass:quotes[(_volumeGroupName_] [capacity=pass:quotes[_capacityValue_]] |
+repositoryVolumes=pass:quotes[(_diskPoolName_] [capacity=pass:quotes[_capacityValue_]])
 ----
 
 == Syntax for decreasing capacity
 
+[subs=+macros]
 ----
-set snapVolume ["snapVolumeName"] decreaseRepositoryCapacity
-count=numberOfVolumes
+set snapVolume pass:quotes[["_snapVolumeName_"]] decreaseRepositoryCapacity
+count=pass:quotes[_numberOfVolumes_]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

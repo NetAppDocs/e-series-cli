@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-disk-pool-modify-disk-pool.html
 sidebar: sidebar
-keywords: 
-summary: 'The set diskPool command adds capacity to a disk pool \(Dynamic Capacity Expansion or DCE\) or changes the controller ownership for the entire disk pool.'
+keywords: set, disk pool, modify
+summary: "The set diskPool command adds capacity to a disk pool (Dynamic Capacity Expansion or DCE) or changes the controller ownership for the entire disk pool."
 ---
 = Set disk pool (modify disk pool)
 :icons: font
@@ -25,15 +25,17 @@ These two operations are mutually exclusive.
 
 == Syntax
 
+[subs=+macros]
 ----
-set diskPool [diskPoolName]
-(addDrives=[trayID1,drawerID1,slotID1 ... trayIDn,drawerIDn,slotIDn] |
-addCapacity=(diskPoolCapacity))
+set diskPool pass:quotes[[_diskPoolName_]]
+(addDrives=pass:quotes[[_trayID1_,_drawerID1_,_slotID1_ ... _trayIDn_,_drawerIDn_,_slotIDn_]] |
+addCapacity=pass:quotes[(_diskPoolCapacity_))]
 [owner=(a| b)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

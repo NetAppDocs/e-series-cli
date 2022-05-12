@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-controllerhealthimage.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray controllerHealthImage command saves a controller health image to a specified file on a host, for storage arrays that support the controller health image feature.'
+keywords: save, storage, array, controller, health, image
+summary: "The save storageArray controllerHealthImage command saves a controller health image to a specified file on a host, for storage arrays that support the controller health image feature."
 ---
 = Save storage array controller health image
 :icons: font
@@ -30,12 +30,14 @@ If the storage array does not support the controller health image feature, the c
 
 == Syntax
 
+[subs=+macros]
 ----
-save storageArray controllerHealthImage file="filename"
+save storageArray controllerHealthImage file=pass:quotes["_filename_"]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

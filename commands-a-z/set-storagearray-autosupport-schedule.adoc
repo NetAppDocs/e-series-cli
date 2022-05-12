@@ -1,10 +1,10 @@
 ---
 permalink: commands-a-z/set-storagearray-autosupport-schedule.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray autoSupport schedule command sets the daily and weekly times and days of the week that AutoSupport messages are sent.'
+keywords: set, autosupport, message, collection, schedule, individual, E2800, E5700, arrays
+summary: "The set storageArray autoSupport schedule command sets the daily and weekly times and days of the week that AutoSupport messages are sent."
 ---
-= Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)
+= Set AutoSupport message collection schedule
 :icons: font
 :imagesdir: ./media/
 
@@ -27,14 +27,16 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set storageArray autoSupport schedule dailyTime=startTime-endTime
+set storageArray autoSupport schedule dailyTime=pass:quotes[_startTime-endTime_]
  [dayOfWeek=(Sunday Monday Tuesday Wednesday Thursday Friday Saturday)]
-weeklyTime=startTime-endTime
+weeklyTime=pass:quotes[_startTime-endTime_]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -54,11 +56,7 @@ a|
 
 |===
 
-== Minimum Firmware Level
-
-8.40
-
-== Examples
+=== Examples
 
 ----
 
@@ -69,6 +67,10 @@ SMcli -n Array1 -c "set storageArray autoSupport schedule dailyTime=14:00-15:00 
 SMcli completed successfully.
 ----
 
-== Verification
+=== Verification
 
 Use the `show storageArray autoSupport` command to see the resulting change to the schedule.
+
+== Minimum Firmware Level
+
+8.40

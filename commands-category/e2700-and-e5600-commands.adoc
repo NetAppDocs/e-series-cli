@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/e2700-and-e5600-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: commands, mirroring, consistency, storage, autosupport, application, channel
+summary: "E2700 and E5600 commands"
 ---
 = E2700 and E5600 commands
 :icons: font

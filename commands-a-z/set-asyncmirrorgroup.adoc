@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The set asyncMirrorGroup command changes the synchronization settings and warning thresholds that the controller owner of the primary side of the asynchronous mirror group uses when it performs an initial synchronization or resynchronization.'
+keywords: set, asynchronous, mirror, group
+summary: "The set asyncMirrorGroup command changes the synchronization settings and warning thresholds that the controller owner of the primary side of the asynchronous mirror group uses when it performs an initial synchronization or resynchronization."
 ---
 = Set asynchronous mirror group
 :icons: font
@@ -25,20 +25,22 @@ Changing the synchronization settings affects the synchronization operations of 
 
 == Syntax
 
+[subs=+macros]
 ----
-set asyncMirrorGroup [asyncMirrorGroupName]
+set asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]]
 [volume="repos_xxxx" increaseRepositoryCapacity (repositoryVolume=("repos_xxxx")]
-[syncInterval=integer (minutes | hours | days)]
-[warningSyncThreshold=integer (minutes | hours | days)]
+[syncInterval=pass:quotes[_integer_] (minutes | hours | days)]
+[warningSyncThreshold=pass:quotes[_integer_] (minutes | hours | days)]
 [warningRecoveryThreshold=integer (minutes | hours | days)]
-[userLabel="New_asyncMirrorGroupName"]
-[warningThresholdPercent=percentValue]
+[userLabel=pass:quotes["_New_asyncMirrorGroupName_"]]
+[warningThresholdPercent=pass:quotes[_percentValue_]]
 [role=(primary | secondary)]
 [autoResync=(TRUE | FALSE)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

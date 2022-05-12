@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-controller-cacertificate.html
 sidebar: sidebar
-keywords: 
-summary: 'The show controller caCertificate command displays the installed CA certificates summary from the specified controller. This command is useful to use before performing the delete controller caCertificate command so that you know the alias names of the certificates to delete.'
+keywords: show, installed, root, intermediate, ca, certificates, summary
+summary: "The show controller caCertificate command displays the installed CA certificates summary from the specified controller. This command is useful to use before performing the delete controller caCertificate command so that you know the alias names of the certificates to delete."
 ---
 = Show installed root/intermediate CA certificates summary
 :icons: font
@@ -21,13 +21,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-
-show controller [(a|b)] caCertificate [all | aliases=("alias1" ... "aliasN")] summary
+show controller [(a|b)] caCertificate [all | aliases=pass:quotes[("_alias1_" ... "_aliasN_")]] summary
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -46,6 +47,7 @@ Allows the user to specify which root/intermediate certificate to retrieve by al
 
 == Examples
 
+[subs=+macros]
 ----
 
 SMcli -n Array1 -c "show controller[a] caCertificate all summary;"
@@ -57,14 +59,14 @@ Controller A Authority Certificates
 Alias:        19527b38-8d26-44e5-8c7f-5bf2ca9db7cf
 Subject DN:   CN=My Corp Issuing CA 1
 Issuer DN:    CN=My Corp Root CA
-Start:        date
-Expire:       date
+pass:quotes[Start:        _date_]
+pass:quotes[Expire:       _date_]
 ---------------------
 Alias:        myAliasName
 Subject DN:   CN=My Corp Issuing CA 1
 Issuer DN:    CN=My Corp Root CA
-Start:        date
-Expire:       date
+pass:quotes[Start:        _date_]
+pass:quotes[Expire:       _date_]
 
 SMcli completed successfully.
 ----

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-snapgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The set snapGroup command defines the properties for a snapshot group.'
+keywords: set, snapshot, group, attributes
+summary: "The set snapGroup command defines the properties for a snapshot group."
 ---
 = Set snapshot group attributes
 :icons: font
@@ -21,17 +21,19 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set snapGroup ["snapGroupName"]
-[userLabel="snapGroupName"] |
+set snapGroup pass:quotes[["_snapGroupName_"]]
+[userLabel=pass:quotes["_snapGroupName_"]] |
 [repositoryFullPolicy=(failBaseWrites | purgeSnapImages) |
-[repositoryFullLimit=percentValue |
-[autoDeleteLimit=numberOfSnapImages] |
+[repositoryFullLimit=pass:quotes[_percentValue_] |
+[autoDeleteLimit=pass:quotes[_numberOfSnapImages_]] |
 [rollbackPriority=(lowest | low | medium | high | highest)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

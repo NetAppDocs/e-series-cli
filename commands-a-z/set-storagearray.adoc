@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray command defines the properties of the storage array.'
+keywords: set, storage, array
+summary: "The set storageArray command defines the properties of the storage array."
 ---
 = Set storage array
 :icons: font
@@ -75,6 +75,7 @@ set storageArray
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -262,7 +263,7 @@ a|
 Sets the internal security key that is used throughout the storage array to implement the Drive Security feature.
 [NOTE]
 ====
-Used for an internal security key. When an external key management server is used, use the``create storageArray securityKey`` command.
+Used for an internal security key. When an external key management server is used, use the `create storageArray securityKey` command.
 ====
 
 a|

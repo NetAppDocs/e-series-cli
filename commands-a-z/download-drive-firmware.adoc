@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/download-drive-firmware.html
 sidebar: sidebar
-keywords: 
-summary: 'The download drive firmware command downloads a firmware image to a drive.'
+keywords: download, drive, firmware, array, support, role, context, level
+summary: "The download drive firmware command downloads a firmware image to a drive."
 ---
 = Download drive firmware
 :icons: font
@@ -21,7 +21,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Context
 
-[NOTE]
+[CAUTION]
 ====
 *Possible damage to the storage array configuration* -- Downloading drive firmware incorrectly can result in damage to the drives or a loss of data access.
 ====
@@ -34,14 +34,14 @@ The `content` parameter is deprecated. Use the `firmware` parameter instead.
 This command is intended for downloading a firmware image to only one drive model at a time. If you use this command in a script, make sure that you use this command only once. If you use this command more than once, the operation can fail. You can download firmware images to all of the drives in a storage array at one time by using the `download storageArray driveFirmware` command.
 
 == Syntax
-
+[subs=+macros]
 ----
-download (drive \[trayID,[drawerID,]slotID\] \| drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\])
+pass:quotes[download (drive \[_trayID_,[_drawerID,_]pass:quotes[_slotID_] \| drives\ pass:quotes[[_trayID1_,[_drawerID1_,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\])
  [online|offline] firmware file="filename"
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

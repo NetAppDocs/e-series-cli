@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/suspend-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The suspend asyncMirrorGroup command suspends the synchronization of data on all mirrored pairs at the asynchronous mirror group level.'
+keywords: suspend, asynchronous, mirror, group
+summary: "The suspend asyncMirrorGroup command suspends the synchronization of data on all mirrored pairs at the asynchronous mirror group level."
 ---
 = Suspend asynchronous mirror group
 :icons: font
@@ -24,13 +24,14 @@ To execute this command on an E2800 or E5700 storage array, you must have the St
 This `suspend` command helps to reduce any performance impact to the host application that might occur while any changed data on the local storage array is copied to the remote storage array.
 
 == Syntax
-
+[subs=+macros]
 ----
-suspend asyncMirrorGroup [asyncMirrorGroupName]
+
+pass:quotes[suspend asyncMirrorGroup [_asyncMirrorGroupName_]]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-arvmstats-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray arvmStats asyncMirrorGroup command saves the synchronization statistics to a file for one or more member volumes in an asynchronous mirror group.'
+keywords: save, asynchronous, mirror, group, statistics
+summary: "The save storageArray arvmStats asyncMirrorGroup command saves the synchronization statistics to a file for one or more member volumes in an asynchronous mirror group."
 ---
 = Save asynchronous mirror group statistics
 :icons: font
@@ -25,21 +25,23 @@ The statistics collected are available only for asynchronous mirror group member
 
 A set of data is collected during the synchronization process that can be used to evaluate how well the mirror configuration is functioning. The data is collected as a set of _samples_. A sample is created at the beginning of a synchronization process and updated regularly while the synchronization process proceeds.
 
-A sample collects data until the synchronization process completes or until a disruption to the synchronization process occurs, such as a volume ownership transfer or a ``read-write``error. When a synchronization process disruption is resolved (for example, the volume is transferred to the alternate controller), a new sample is created and updated as the synchronization process continues.
+A sample collects data until the synchronization process completes or until a disruption to the synchronization process occurs, such as a volume ownership transfer or a `read-write` error. When a synchronization process disruption is resolved (for example, the volume is transferred to the alternate controller), a new sample is created and updated as the synchronization process continues.
 
 == Syntax
 
+[subs=+macros]
 ----
-save storageArray arvmStats asyncMirrorGroup [asyncMirrorGroupName]
-arvmStats file="*filename*
+save storageArray arvmStats asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]]
+arvmStats file=pass:quotes["_filename_"]
 "
-[volume="volumeName"]
+[volume=pass:quotes["_volumeName_"]]
 [sampleType=(all | mostRecent | longestSyncTime | errors)]
 [recordLimit=(1-90)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

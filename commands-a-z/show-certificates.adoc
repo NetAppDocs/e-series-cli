@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-certificates.html
 sidebar: sidebar
-keywords: 
-summary: 'The Show certificates command allows you to view the certificates installed on the CLI package trust store.'
+keywords: show, certificates
+summary: "The Show certificates command allows you to view the certificates installed on the CLI package trust store."
 ---
 = Show certificates
 :icons: font
@@ -23,6 +23,7 @@ show localCertificate all | alias alias
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

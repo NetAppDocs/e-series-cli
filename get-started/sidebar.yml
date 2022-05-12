@@ -1,45 +1,51 @@
 section: get-started
 title: Get started
 entries:
-  - title: Changes in the CLI and script commands in this release
+  - title: What's new
     url: /get-started/changes-in-the-cli-and-script-commands-in-this-release.html
-  - title: Formatting the commands
-    url: /get-started/formatting-the-commands.html
+  - title: Command formatting
     entries:
-    - title: Structure of a CLI command
-      url: /get-started/structure-of-a-cli-command.html
+    - title: Overview
+      url: /get-started/overview-format-commands.html
+    - title: CLI structure
       entries:
-      - title: Interactive mode
-        url: /get-started/interactive-mode.html
-      - title: CLI command wrapper syntax
-        url: /get-started/cli-command-wrapper-syntax.html
-      - title: Command line parameters
-        url: /get-started/command-line-parameters.html
-    - title: Structure of a script command
-      url: /get-started/structure-of-a-script-command.html
+        - title: Structure of CLI commands
+          url: /get-started/structure-of-a-cli-command.html
+        - title: Interactive mode
+          url: /get-started/interactive-mode.html
+        - title: CLI wrapper syntax
+          url: /get-started/cli-command-wrapper-syntax.html
+        - title: CLI parameters
+          url: /get-started/command-line-parameters.html
+    - title: Script command structure
       entries:
-      - title: Synopsis of the script commands
-        url: /get-started/synopsis-of-the-script-commands.html
-      - title: Recurring syntax elements
-        url: /get-started/recurring-syntax-elements.html
+        - title: Structure of a script command
+          url: /get-started/structure-of-a-script-command.html
+        - title: Synopsis of script commands
+          url: /get-started/synopsis-of-the-script-commands.html
+        - title: Recurring syntax elements
+          url: /get-started/recurring-syntax-elements.html
     - title: Naming conventions
       url: /get-started/naming-conventions.html
-    - title: Formatting CLI commands
-      url: /get-started/formatting-cli-commands.html
-    - title: Formatting rules for script commands
-      url: /get-started/formatting-rules-for-script-commands.html
-    - title: Formatting CLI commands in Windows PowerShell
-      url: /get-started/formatting-cli-commands-in-windows-powershell.html
+    - title: Format rules
+      entries:
+        - title: CLI commands
+          url: /get-started/formatting-cli-commands.html
+        - title: Script commands
+          url: /get-started/formatting-rules-for-script-commands.html
+        - title: Windows PowerShell
+          url: /get-started/formatting-cli-commands-in-windows-powershell.html
     - title: Detailed error reporting
       url: /get-started/detailed-error-reporting.html
     - title: Exit status
       url: /get-started/exit-status.html
-    - title: Adding comments to a script file
+    - title: Add comments to a script file
       url: /get-started/adding-comments-to-a-script-file.html
-      entries:
-      - title: Usage guidelines
-        url: /get-started/usage-guidelines.html
+    - title: Script command guidelines
+      url: /get-started/usage-guidelines.html
     - title: Firmware compatibility levels
       url: /get-started/firmware-compatibility-levels.html
-  - title: New SMcli https mode
+  - title: SMcli https mode
     url: /get-started/new-https-mode.html
+  - title: Volume group migration
+    url: /get-started/learn-about-volume-group-migration.html

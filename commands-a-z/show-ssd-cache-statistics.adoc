@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-ssd-cache-statistics.html
 sidebar: sidebar
-keywords: 
-summary: 'The show ssdCache command displays data about the SSD cache usage.'
+keywords: show, ssd, cache, statistics
+summary: "The show ssdCache command displays data about the SSD cache usage."
 ---
 = Show SSD cache statistics
 :icons: font
@@ -21,14 +21,16 @@ To execute this command on an E2800 or E5700 storage array, you must have the Su
 
 == Syntax
 
+[subs=+macros]
 ----
-show ssdCache [ssdCacheName] [ssdCacheStatistics]
+show ssdCache pass:quotes[[_ssdCacheName_]] [ssdCacheStatistics]
 [controller=(a|b|both)]
-[file="filename"]
+pass:quotes[[file="_filename_"]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

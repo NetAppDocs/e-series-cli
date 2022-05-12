@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray command returns configuration information about the storage array.'
+keywords: show, storage, array
+summary: "The show storageArray command returns configuration information about the storage array."
 ---
 = Show storage array
 :icons: font
@@ -21,7 +21,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Context
 
-The parameters return lists of values for the components and features in the storage array. You can enter the command with a single parameter or more than one parameter. If you enter the command without any parameters, the entire storage array profile is shown (which is the same information as if you entered the `profile` parameter).
+The parameters return lists of values for the components and features in the storage array. You can enter the command with a single parameter or more than one parameter. If you enter the command without any parameters, the entire storage array profile is shown (which is the same information as if you entered the `*profile*` parameter).
 
 == Syntax
 
@@ -37,6 +37,7 @@ cacheMirrorDataAssuranceCheckEnable | hostConnectivityReporting]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -67,7 +68,7 @@ The parameter to return information about the current state of the operation to 
 
 [NOTE]
 ====
-This parameter is only valid for E2800 or E5700 storage arrays running with a `symbol` client type. For E2800 or E5700 storage arrays running with an `https` client type, use the `autoSupport` parameter.
+This parameter is only valid for E2800 or E5700 storage arrays running with a `symbol` client type. For E2800 or E5700 storage arrays running with an `https` client type, use the `*autoSupport*` parameter.
 ====
 
 a|
@@ -276,7 +277,7 @@ The information fields returned by the `longRunningOperations` parameter have th
 
 * `NAME` is the name of a volume that is currently in a long running operation. The volume name must have the "Volume" as a prefix.
 * `OPERATION` lists the operation being performed on the volume group or volume.
-* `% COMPLETE` shows how much of the long running operation has been performed.
+* `*% COMPLETE*` shows how much of the long running operation has been performed.
 * `STATUS` can have one of these meanings:
  ** Pending -- The long running operation has not started but will start after the current operation is completed.
  ** In Progress -- The long running operation has started and will run until completed or stopped by user request.

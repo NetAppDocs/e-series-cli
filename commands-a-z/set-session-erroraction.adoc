@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-session-erroraction.html
 sidebar: sidebar
-keywords: 
-summary: 'The set session errorAction command defines how you want the current script engine session to run.'
+keywords: set, session
+summary: "The set session errorAction command defines how you want the current script engine session to run."
 ---
 = Set session
 :icons: font
@@ -42,6 +42,7 @@ performanceMonitorIterations=iterationValue
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-hostconnectivityreporting.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray hostConnectivityReporting command returns the enablement status of the host connectivity reporting feature.'
+keywords: show, storage, array, host, connectivity, report
+summary: "The show storageArray hostConnectivityReporting command returns the enablement status of the host connectivity reporting feature."
 ---
 = Show storage array host connectivity reporting
 :icons: font
@@ -17,7 +17,7 @@ This command applies to any individual storage array, including the E2700, E5600
 
 == Roles
 
-To execute this command on an E2800, E5700, or EF600 storage array, you must have the Storage Admin or Storage Monitor role.
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Syntax
 

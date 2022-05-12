@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-isnsipv4configurationmethod.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray isnsIPv4ConfigurationMethod command sets the configuration method and address for an IPv4 Internet Storage Name Service \(iSNS\).'
+keywords: set, storage, array, isns, server, ipv4, address
+summary: "The set storageArray isnsIPv4ConfigurationMethod command sets the configuration method and address for an IPv4 Internet Storage Name Service (iSNS)."
 ---
 = Set storage array iSNS server IPv4 address
 :icons: font
@@ -21,13 +21,15 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
 set storageArray isnsIPv4ConfigurationMethod=(static | dhcp)
-isnsIPv4Address=ipAddress
+isnsIPv4Address=pass:quotes[_ipAddress_]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameters| Description
 a|
@@ -37,7 +39,7 @@ The method that you want to use to define the iSNS server configuration. You can
 a|
 `isnsIPv4Address`
 a|
-The IP address that you want to use for the iSNS server. Use this parameter with the `static` value for IPv4 configurations. If you choose to have a DHCP server set the IP address for an IPv4 Internet iSNS server, you must set the `isnsIPv4Address` parameter to `0.0.0.0`.
+The IP address that you want to use for the iSNS server. Use this parameter with the `static` value for IPv4 configurations. If you choose to have a DHCP server set the IP address for an IPv4 Internet iSNS server, you must set the `*isnsIPv4Address*` parameter to `0.0.0.0`.
 |===
 
 == Notes

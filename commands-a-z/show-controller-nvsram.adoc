@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-controller-nvsram.html
 sidebar: sidebar
-keywords: 
-summary: 'The show controller NVSRAM command returns information about NVSRAM byte values.'
+keywords: show, controller, nvsram
+summary: "The show controller NVSRAM command returns information about NVSRAM byte values."
 ---
 = Show controller NVSRAM
 :icons: font
@@ -29,13 +29,15 @@ This command returns a list of the NVSRAM byte values for the specified host typ
 
 == Syntax
 
+[subs=+macros]
 ----
 show (allControllers | controller [(a|b)])
-NVSRAM [hostType=hostTypeIndexLabel | host="hostName"]
+NVSRAM pass:quotes[[hostType=_hostTypeIndexLabel_ | host="_hostName_"]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

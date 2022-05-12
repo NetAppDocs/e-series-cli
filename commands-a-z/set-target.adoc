@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-target.html
 sidebar: sidebar
-keywords: 
-summary: 'The set target command changes the properties for an iSCSI/iSER target, including authentication method and alias name.'
+keywords: set, target, properties
+summary: "The set target command changes the properties for an iSCSI/iSER target, including authentication method and alias name."
 ---
 = Set target properties
 :icons: font
@@ -23,7 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-This command replaces the deprecated xref:wombat-set-isertarget.adoc[Set iSER target] and xref:wombat-set-iscsitarget.adoc[Set iSCSI target properties] commands.
+This command replaces the deprecated xref:set-isertarget.adoc[Set iSER target] and xref:set-iscsitarget.adoc[Set iSCSI target properties] commands.
 ====
 
 == Syntax
@@ -35,6 +35,7 @@ set target (["targetAliasName"] | <"targetQualifiedName">) (authenticationMethod
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

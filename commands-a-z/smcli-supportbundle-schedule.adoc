@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/smcli-supportbundle-schedule.html
 sidebar: sidebar
-keywords: 
-summary: 'The SMcli -supportBundle schedule command creates or removes a schedule for saving a support bundle on one or more storage arrays. You collect system and configuration information in support bundles to transmit the information to technical support for analysis and diagnostics.'
+keywords: schedule, automatic, support, bundle, collection, configuration
+summary: "The SMcli -supportBundle schedule command creates or removes a schedule for saving a support bundle on one or more storage arrays. You collect system and configuration information in support bundles to transmit the information to technical support for analysis and diagnostics."
 ---
 = Schedule automatic support bundle collection configuration
 :icons: font
@@ -22,31 +22,31 @@ You can create two types of schedules:
 * Monthly/Yearly -- Use this schedule when you are collecting data for evaluating the long term operation of your storage array.
 
 == Syntax for creating a daily/weekly schedule
-
+[subs=+macros]
 ----
 SMcli -supportBundle schedule enable
-(all | storageArrayName)
-startTime=HH:MM
-startDate=MM:DD:YYYY
-endDate=MM:DD:YYYY
+pass:quotes[(all | _storageArrayName_)]
+pass:quotes[startTime=_HH:MM_]
+pass:quotes[startDate=_MM:DD:YYYY_]
+pass:quotes[endDate=_MM:DD:YYYY_]
 daysOfWeek=[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]
-data=pathName
+pass:quotes[data=_pathName_]
 ----
 
 == Syntax for creating a monthly/yearly schedule
-
+[subs=+macros]
 ----
 SMcli -supportBundle schedule enable
-(all | storageArrayName)
-startTime=HH:MM
-startDate=MM:DD:YYYY
-endDate=MM:DD:YYYY
+pass:quotes[(all | _storageArrayName_)]
+pass:quotes[startTime=_HH:MM_]
+pass:quotes[startDate=_MM:DD:YYYY_]
+pass:quotes[endDate=_MM:DD:YYYY_]
 months=[January February March April May June July August September October
 November December]
 weekNumber=(First|Second|Third|Fourth|Last)
 dayOfWeek=(Sunday|Monday|Tuesday|Wednesday|Thursday|Friday|Saturday)|
 onDays=[1-31] |
-data=pathName
+pass:quotes[data=_pathName_]
 ----
 
 == Syntax for removing a schedule
@@ -56,15 +56,17 @@ data=pathName
 This command completely removes the schedule for the storage array. To start saving support bundle information again, you need to create a new schedule.
 ====
 
+[subs=+macros]
 ----
 SMcli -supportBundle schedule disable
-(all|storageArrayName)
+pass:quotes[(all|_storageArrayName_)]
 ----
 
 == Parameters
 
 The following table lists the parameters for a daily/weekly schedule.
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -76,7 +78,7 @@ a|
 a|
 Use this parameter if you want to set a collection schedule for all of the storage arrays detected from the host.
 a|
-`storageArrayName`
+`_storageArrayName_`
 a|
 The name of a specific storage array for which you want to set a schedule.
 a|
@@ -136,6 +138,7 @@ Enclose the file path and name in double quotation marks (" ").
 |===
 The following table lists the parameters for a monthly/yearly schedule.
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -221,7 +224,7 @@ Enclose the day in square brackets ([ ]). If you enter more than one day, separa
 
 [NOTE]
 ====
-You cannot use the `onDays` parameter with either the `weekNumber` parameter or the `dayOfWeek` parameter.
+You cannot use the `*onDays*` parameter with either the `*weekNumber*` parameter or the `*dayOfWeek*` parameter.
 ====
 
 a|
@@ -243,6 +246,7 @@ Enclose the file path and name in double quotation marks (" ").
 |===
 The following table lists the parameters for removing a schedule.
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

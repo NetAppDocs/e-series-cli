@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-volumegroup-locate.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop volumeGroup locate command turns off the indicator lights on the drives that were turned on by the start volumeGroup locate command.'
+keywords: stop, volume, group, locate 
+summary: "The stop volumeGroup locate command turns off the indicator lights on the drives that were turned on by the start volumeGroup locate command."
 ---
 = Stop volume group locate
 :icons: font

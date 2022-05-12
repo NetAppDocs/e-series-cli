@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-controller-ntpservers.html
 sidebar: sidebar
-keywords: 
-summary: 'The set controller NTPServers command sets the NTP settings for the controller so the controller can automatically synchronize the clocks with an external host using SNTP \(Simple Network Time Protocol\).'
+keywords: set, controller, ntp
+summary: "The set controller NTPServers command sets the NTP settings for the controller so the controller can automatically synchronize the clocks with an external host using SNTP (Simple Network Time Protocol)."
 ---
 = Set controller NTP settings
 :icons: font
@@ -30,7 +30,7 @@ This command is controller-specific. It is not necessary to configure NTP on bot
 
 [NOTE]
 ====
-If you configure NTP using a fully qualified domain name, you must also configure DNS on those controller(s) for the operation to succeed.See xref:wombat-set-controller-dnsservers.adoc[Set controller DNS Settings] for more information.
+If you configure NTP using a fully qualified domain name, you must also configure DNS on those controller(s) for the operation to succeed.See xref:set-controller-dnsservers.adoc[Set controller DNS Settings] for more information.
 
 ====
 
@@ -43,6 +43,7 @@ set controller(a|b) NTPServers=(disabled|auto|(Address1 [keyIdentifier=integerLi
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -51,12 +52,12 @@ a|
 The controller for which you want to change the NTP settings. Valid controller identifiers are a or b.
 
 a|
-`NTPServers `
+`NTPServers`
 a|
 This parameter configures the NTP servers for the controller.
 
-* Specify``disabled`` to turn off NTP support.
-* Specify``auto`` to use the NTP server addresses provided by a DHCP server.
+* Specify `disabled` to turn off NTP support.
+* Specify `auto` to use the NTP server addresses provided by a DHCP server.
 +
 [NOTE]
 ====
@@ -71,7 +72,7 @@ Surround the NTP server name with quotes, as shown in the Examples section.
 ====
 
 a|
-`Address `
+`Address`
 a|
 "DomainName"\|IPv4Address\|IPv6Address
 [NOTE]

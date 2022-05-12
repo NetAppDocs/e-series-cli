@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/validate-storagearray-securitykey.html
 sidebar: sidebar
-keywords: 
-summary: 'The validate storageArray securityKey command validates the security key for a storage array that has security-capable drives to make sure that the back-up security key file is not corrupt.'
+keywords: validate, storage array, security key
+summary: "The validate storageArray securityKey command validates the security key for a storage array that has security-capable drives to make sure that the back-up security key file is not corrupt."
 ---
 = Validate storage array security key
 :icons: font
@@ -29,13 +29,14 @@ This command applies to both internal and external key management.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-validate storageArray securityKey file="fileName" passPhrase="passPhraseString"
+
+pass:quotes[validate storageArray securityKey file="_fileName_" passPhrase="_passPhraseString_"]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

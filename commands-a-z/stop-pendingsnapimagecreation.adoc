@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-pendingsnapimagecreation.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop pendingSnapImageCreation command cancels all of the pending snapshot images that are to be created on a snapshot or snapshot consistency group.'
+keywords: stop, snapshot, group, snapshot, images
+summary: "The stop pendingSnapImageCreation command cancels all of the pending snapshot images that are to be created on a snapshot or snapshot consistency group."
 ---
 = Stop snapshot group pending snapshot images
 :icons: font
@@ -24,15 +24,16 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 If the snapshot group does not have any pending snapshot images, the firmware displays an error message and does not run the command. You can run this command on a snapshot group or a snapshot consistency group.
 
 == Syntax
-
+[subs=+macros]
 ----
-stop (snapGroup [snapGroupName] |
-consistencyGroup [snapConsistencyGroupName])
+stop (snapGroup pass:quotes[[_snapGroupName_]] |
+consistencyGroup pass:quotes[[_snapConsistencyGroupName_]])
 pendingSnapImageCreation
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

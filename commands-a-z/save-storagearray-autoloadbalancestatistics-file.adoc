@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-autoloadbalancestatistics-file.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray autoLoadBalanceStatistics file command provides automated I/O workload balancing and ensures that incoming I/O traffic from the hosts is dynamically managed and balanced across both controllers.'
+keywords: save, auto-load, balance, statistics
+summary: "The save storageArray autoLoadBalanceStatistics file command provides automated I/O workload balancing and ensures that incoming I/O traffic from the hosts is dynamically managed and balanced across both controllers."
 ---
 = Save auto-load balancing statistics
 :icons: font
@@ -30,13 +30,15 @@ Send this file to technical support for interpretation.
 
 == Syntax
 
+[subs=+macros]
 ----
- save storageArray autoLoadBalanceStatistics file=*"filename"*
-(numberOfDays=numberOfDays);
+ save storageArray autoLoadBalanceStatistics file=pass:quotes["_filename_"]
+(numberOfDays=pass:quotes[_numberOfDays_]);
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-ioclog.html
 sidebar: sidebar
-keywords: 
-summary: 'The start IOCLog command produces a dump of the IOC log of data transmissions between a host and a controller.'
+keywords: start, input, output, controller, ioc, dump
+summary: "The start IOCLog command produces a dump of the IOC log of data transmissions between a host and a controller."
 ---
 = Start input output controller (IOC) dump
 :icons: font
@@ -32,6 +32,7 @@ start IOCLog [(a1 | a2 | a3 | a4 | b1 | b2 | b3 | b4)]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

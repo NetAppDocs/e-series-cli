@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-snapgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete snapGroup command an entire snapshot group and optionally the associated repository volumes.'
+keywords: delete, snapgroup, command, entire, snapshot, group, option, associate, repository, volume
+summary: "The delete snapGroup command an entire snapshot group and optionally the associated repository volumes."
 ---
 = Delete snapshot group
 :icons: font
@@ -27,14 +27,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-delete snapGroup ["snapGroupName"]
+pass:quotes[delete snapGroup ["_snapGroupName_"]]
 [deleteRepositoryMembers=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

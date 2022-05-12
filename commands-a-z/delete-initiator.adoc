@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-initiator.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete initiator command deletes the initiator object.'
+keywords: delete, initiator, command, object, supported, array, role
+summary: "The delete initiator command deletes the initiator object."
 ---
 = Delete initiator
 :icons: font
@@ -21,9 +21,9 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Context
 
-[NOTE]
+[IMPORTANT]
 ====
-This command replaces the deprecated xref:wombat-delete-iscsiinitiator.adoc[Delete iSCSI initiator] command.
+This command replaces the deprecated xref:delete-iscsiinitiator.adoc[Delete iSCSI initiator] command.
 ====
 
 [NOTE]
@@ -39,7 +39,7 @@ delete initiator (["initiatorName"] | <"initiatorQualifiedName">)
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

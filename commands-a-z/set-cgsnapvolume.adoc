@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-cgsnapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The set cgSnapVolume command creates a unique name for a snapshot volume of a consistency group.'
+keywords: set, consistency, group, snapshot, volume
+summary: "The set cgSnapVolume command creates a unique name for a snapshot volume of a consistency group."
 ---
 = Set consistency group snapshot volume
 :icons: font
@@ -21,13 +21,15 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set cgSnapVolume [cgSnapVolumeName]
-userLabel="cgSnapVolumeName"
+set cgSnapVolume pass:quotes[[_cgSnapVolumeName_]]
+userLabel=pass:quotes["_cgSnapVolumeName_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

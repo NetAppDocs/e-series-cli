@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-hostport.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete hostPort command deletes a host port identification.'
+keywords: delete, hostport, command, host, port, identification
+summary: "The delete hostPort command deletes a host port identification."
 ---
 = Delete host port
 :icons: font
@@ -23,9 +23,9 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 The identification is a software value that represents the physical host port to the controller. By deleting the identification, the controller no longer recognizes instructions and data from the host port.
 
-[NOTE]
+[IMPORTANT]
 ====
-This command does not work in an iSCSI environment, where the host ports are considered initiators. Instead, use the `delete iscsiInitiator` command. See xref:wombat-delete-iscsiinitiator.adoc[Delete iSCSI initiator].
+This command does not work in an iSCSI environment, where the host ports are considered initiators. Instead, use the `delete iscsiInitiator` command. See xref:delete-iscsiinitiator.adoc[Delete iSCSI initiator].
 ====
 
 == Syntax
@@ -35,7 +35,7 @@ delete hostPort [hostPortName]
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

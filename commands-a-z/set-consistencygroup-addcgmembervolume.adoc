@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-consistencygroup-addcgmembervolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The set consistencyGroup addCGMemberVolume command adds a new base volume as a member to an existing consistency group.'
+keywords: add, member, consistency, group
+summary: "The set consistencyGroup addCGMemberVolume command adds a new base volume as a member to an existing consistency group."
 ---
 = Add member to consistency group
 :icons: font
@@ -25,34 +25,37 @@ You can specify an existing repository volume for the new consistency group memb
 
 == Syntax for use with an existing repository volume
 
-[source,monospace]
+[subs=+macros]
 ----
 
 set consistencyGroup ["consistencyGroupName"]
-addCGMemberVolume="baseVolumeName"
-repositoryVolume="volumeGroupName"
+addCGMemberVolume=pass:quotes["_baseVolumeName_"]
+repositoryVolume=pass:quotes["_volumeGroupName_"]
 ----
 
 == Syntax for use when creating a new repository volume in a volume group
 
+[subs=+macros]
 ----
 
-set consistencyGroup ["consistencyGroupName"]
-addCGMemberVolume="baseVolumeName"
-repositoryVolume=("volumeGroupName" capacity=capacityValue(KB|MB|GB|TB|bytes))
+set consistencyGroup pass:quotes[["_consistencyGroupName_"]]
+addCGMemberVolume=pass:quotes["_baseVolumeName_"]
+repositoryVolume=pass:quotes[("_volumeGroupName_"] capacity=pass:quotes[_capacityValue_](KB|MB|GB|TB|bytes))
 ----
 
 == Syntax for use when creating a new repository volume in a disk pool
 
+[subs=+macros]
 ----
 
-set consistencyGroup ["consistencyGroupName"]
-addCGMemberVolume="baseVolumeName"
-repositoryVolume=("diskPoolName" capacity=capacityValue(KB|MB|GB|TB|bytes))
+set consistencyGroup pass:quotes[["_consistencyGroupName_"]]
+addCGMemberVolume=pass:quotes["_baseVolumeName_"]
+repositoryVolume=pass:quotes[("_diskPoolName_"] capacity=pass:quotes[_capacityValue_](KB|MB|GB|TB|bytes))
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

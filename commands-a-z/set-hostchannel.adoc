@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-hostchannel.html
 sidebar: sidebar
-keywords: 
-summary: 'The set hostChannel command defines the loop ID for the host channel.'
+keywords: set, host, channel
+summary: "The set hostChannel command defines the loop ID for the host channel."
 ---
 = Set host channel
 :icons: font
@@ -21,13 +21,15 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set hostChannel [hostChannelNumber]
-preferredID=portID
+set hostChannel pass:quotes[[_hostChannelNumber_]]
+preferredID=pass:quotes[_portID_]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

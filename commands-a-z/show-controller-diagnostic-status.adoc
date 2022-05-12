@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-controller-diagnostic-status.html
 sidebar: sidebar
-keywords: 
-summary: 'The show controller command returns the status of controller diagnostics started by the start controller diagnostic command.'
+keywords: show, controller, diagnostic, status
+summary: "The show controller command returns the status of controller diagnostics started by the start controller diagnostic command."
 ---
 = Show controller diagnostic status
 :icons: font
@@ -15,12 +15,14 @@ If the diagnostics have finished, the entire results of the diagnostic tests are
 
 == Syntax
 
+[subs=+macros]
 ----
-show controller [(a| b)] diagnosticStatus [file=filename]
+show controller [(a| b)] diagnosticStatus pass:quotes[[file=_filename_]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

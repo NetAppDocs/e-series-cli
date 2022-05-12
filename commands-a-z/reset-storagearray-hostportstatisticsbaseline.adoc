@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/reset-storagearray-hostportstatisticsbaseline.html
 sidebar: sidebar
-keywords: 
-summary: 'The reset storageArray hostPortStatisticsBaseline command resets the storage array host port statistics baseline.'
+keywords: reset, storage array, host, port, statistics, baseline
+summary: "The reset storageArray hostPortStatisticsBaseline command resets the storage array host port statistics baseline."
 ---
 = Reset storage array host port statistics baseline
 :icons: font
@@ -23,7 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 [NOTE]
 ====
-This command replaces the deprecated xref:wombat-reset-storagearray-ibstatsbaseline.adoc[Reset storage array Infiniband statistics baseline], xref:wombat-reset-storagearray-iscsistatsbaseline.adoc[Reset storage array iSCSI baseline], and xref:wombat-reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline] commands.
+This command replaces the deprecated xref:reset-storagearray-ibstatsbaseline.adoc[Reset storage array InfiniBand statistics baseline], xref:reset-storagearray-iscsistatsbaseline.adoc[Reset storage array iSCSI baseline], and xref:reset-storagearray-iserstatsbaseline.adoc[Reset storage array iSER baseline] commands.
 ====
 
 == Syntax
@@ -34,13 +34,13 @@ reset storageArray hostPortStatisticsBaseline type=(ISCSI| ISER | SRP | NVMEOF)
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
 `type`
 a|
-Allows you to indicate which statistics type to collect. Valid choices are:``ISCSI``, `ISER`, `SRP`, and `NVMEOF`.
+Allows you to indicate which statistics type to collect. Valid choices are: `ISCSI`, `ISER`, `SRP`, and `NVMEOF`.
 |===
 
 == Minimum firmware level

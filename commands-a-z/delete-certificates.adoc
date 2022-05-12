@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-certificates.html
 sidebar: sidebar
-keywords: 
-summary: 'The Delete certificates command allows you to delete a certificate from the CLI package trust store.'
+keywords: delete, certificates
+summary: "The Delete certificates command allows you to delete a certificate from the CLI package trust store."
 ---
 = Delete certificates
 :icons: font
@@ -16,13 +16,13 @@ The `Delete certificates` command allows you to delete a certificate from the CL
 This command applies to the EF600 and EF300 storage arrays.
 
 == Syntax
-
+[subs=+macros]
 ----
-delete localCertificate all | alias alias
+delete localCertificate all | alias pass:quotes[_alias_]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

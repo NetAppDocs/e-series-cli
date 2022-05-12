@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-increasevolumecapacity-volume.html
 sidebar: sidebar
-keywords: 
-summary: 'The start increaseVolumeCapacity volume command increases the capacity of either a standard volume or a repository volume in a disk pool or volume group.'
+keywords: increase, capacity, volume, disk pool, volume, group
+summary: "The start increaseVolumeCapacity volume command increases the capacity of either a standard volume or a repository volume in a disk pool or volume group."
 ---
 = Increase capacity of volume in disk pool or volume group
 :icons: font
@@ -29,15 +29,16 @@ You cannot use this command to increase the capacity of a thin volume.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start increaseVolumeCapacity volume="volumeName"
-incrementalCapacity=volumeCapacity
-[addDrives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn)]
+pass:quotes[start increaseVolumeCapacity volume="_volumeName_"
+incrementalCapacity=_volumeCapacity_]
+[addDrives=pass:quotes[(_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1_] ... pass:quotes[_trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_)]]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

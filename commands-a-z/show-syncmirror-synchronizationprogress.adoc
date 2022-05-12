@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-syncmirror-synchronizationprogress.html
 sidebar: sidebar
-keywords: 
-summary: 'The show syncMirror synchronizationProgress command returns the progress of data synchronization between the primary volume and the secondary volume in a Synchronous Mirroring configuration.'
+keywords: show, synchronous, mirror, volume, synchronization, progress
+summary: "The show syncMirror synchronizationProgress command returns the progress of data synchronization between the primary volume and the secondary volume in a Synchronous Mirroring configuration."
 ---
 = Show synchronous mirroring volume synchronization progress
 :icons: font
@@ -25,18 +25,19 @@ This command shows the progress as a percentage of data synchronization that has
 
 [NOTE]
 ====
-In previous versions of this command the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `syncMirror`.
+In previous versions of this command the feature identifier was `remoteMirror`. This feature identifier is no longer valid and is replaced by `*syncMirror*`.
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-show syncMirror (localVolume [volumeName] |
-localVolumes [volumeName1... volumeNameN]) synchronizationProgress
+show syncMirror (localVolume pass:quotes[[_volumeName_]] |
+localVolumes pass:quotes[[_volumeName1_... _volumeNameN_]]) synchronizationProgress
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

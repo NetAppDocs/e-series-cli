@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-drivechannel-faultdiagnostics-file.html
 sidebar: sidebar
-keywords: 
-summary: 'The save driveChannel faultDiagnostics file command saves the drive channel fault isolation diagnostic data that is returned from the start driveChannel faultDiagnostics command.'
+keywords: save, drive, channel, fault, isolation, diagnostic, status
+summary: "The save driveChannel faultDiagnostics file command saves the drive channel fault isolation diagnostic data that is returned from the start driveChannel faultDiagnostics command."
 ---
 = Save drive channel fault isolation diagnostic status
 :icons: font
@@ -30,12 +30,14 @@ You can save the diagnostic data to a file as standard text or as XML.
 
 == Syntax
 
+[subs=+macros]
 ----
-save driveChannel faultDiagnostics file="filename"
+save driveChannel faultDiagnostics file=pass:quotes["_filename_"]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

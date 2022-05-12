@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-storagearray-drivefirmwaredownload.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop storageArray driveFirmwareDownload command stops a firmware download to the drives in a storage array that was started with the download storageArray driveFirmware command.'
+keywords: stop, storage, array, drive, firmware, download
+summary: "The stop storageArray driveFirmwareDownload command stops a firmware download to the drives in a storage array that was started with the download storageArray driveFirmware command."
 ---
 = Stop storage array drive firmware download
 :icons: font

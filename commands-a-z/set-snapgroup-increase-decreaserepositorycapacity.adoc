@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-snapgroup-increase-decreaserepositorycapacity.html
 sidebar: sidebar
-keywords: 
-summary: 'The set snapGroup increase/decreaseRepositoryCapacity command increases or decreases the capacity of a snapshot group repository volume.'
+keywords: set, snapshot, group, repository, volume, capacity
+summary: "The set snapGroup increase/decreaseRepositoryCapacity command increases or decreases the capacity of a snapshot group repository volume."
 ---
 = Set snapshot group repository volume capacity
 :icons: font
@@ -21,23 +21,26 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax for increasing capacity
 
+[subs=+macros]
 ----
-set snapGroup ["snapGroupName"] increaseRepositoryCapacity
-(repositoryVolumes="repos_xxxx" | repositoryVolumes=((volumeGroupName
-[capacity=capacityValue])) | repositoryVolumes=((diskPoolName
-[capacity=capacityValue])))
+set snapGroup pass:quotes[["_snapGroupName_"]] increaseRepositoryCapacity
+(repositoryVolumes="repos_xxxx" | repositoryVolumes=pass:quotes[((_volumeGroupName_]
+pass:quotes[[capacity=_capacityValue_]])) | repositoryVolumes=pass:quotes[((_diskPoolName_]
+pass:quotes[[capacity=_capacityValue_]])))
 ----
 
 == Syntax for decreasing capacity
 
+[subs=+macros]
 ----
-set snapGroup ["snapGroupName"]
+set snapGroup pass:quotes[["_snapGroupName_"]]
 decreaseRepositoryCapacity
-count=numberOfVolumes
+count=pass:quotes[_numberOfVolumes_]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

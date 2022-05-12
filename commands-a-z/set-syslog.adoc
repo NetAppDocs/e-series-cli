@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-syslog.html
 sidebar: sidebar
-keywords: 
-summary: 'The set syslog command configures the syslog alert information. You can configure the event monitor to send alerts to the syslog server whenever an alertable event occurs.'
+keywords: configure, syslog, set
+summary: "The set syslog command configures the syslog alert information. You can configure the event monitor to send alerts to the syslog server whenever an alertable event occurs."
 ---
 = Configure syslog settings
 :icons: font
@@ -26,17 +26,19 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
 
-set syslog [defaultFacility=facilityNumber]
-| [defaultTag=defaultTag]
-| [syslogFormat=rfc3164|rfc5424]
-| (serverAddresses=(serverAddress:portNumber ... serverAddress:portNumber)
-| addServerAddresses=(serverAddress:portNumber ... serverAddress:portNumber))
+set syslog [defaultFacility=pass:quotes[_facilityNumber_]]
+| [defaultTag=pass:quotes[_defaultTag_]]
+| [syslogFormat=pass:quotes[_rfc3164_|_rfc5424_]]
+| (serverAddresses=pass:quotes[(_serverAddress:portNumber ... serverAddress:portNumber_)]
+| addServerAddresses=pass:quotes[(_serverAddress:portNumber ... serverAddress:portNumber_))]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

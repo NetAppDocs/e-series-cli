@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-read-only-snapshot-volume.html
 sidebar: sidebar
-keywords: 
-summary: 'The create snapVolume command creates a read-only snapshot volume for the snapshot images of a base volume. To change a read-only snapshot volume to a read/write volume, use the set snapVolume convertToReadWrite command.'
+keywords: create, read only, snapshot, volume
+summary: "The create snapVolume command creates a read-only snapshot volume for the snapshot images of a base volume. To change a read-only snapshot volume to a read/write volume, use the set snapVolume convertToReadWrite command."
 ---
 = Create read-only snapshot volume
 :icons: font
@@ -27,15 +27,15 @@ You cannot use this command for a snapshot image that is used in online volume c
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-create snapVolume userLabel="snapVolumeName"
-snapImageID="snapCGID:imageID"
+create snapVolume userLabel=pass:quotes[_"snapVolumeName"_
+snapImageID="_snapCGID:imageID"_]
 readOnly
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

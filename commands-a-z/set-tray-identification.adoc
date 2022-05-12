@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-tray-identification.html
 sidebar: sidebar
-keywords: 
-summary: 'The set tray command sets the tray ID of a controller tray, a controller-drive tray, or a drive tray in a storage array.'
+keywords: set, tray, identification
+summary: "The set tray command sets the tray ID of a controller tray, a controller-drive tray, or a drive tray in a storage array."
 ---
 = Set tray identification
 :icons: font
@@ -25,12 +25,14 @@ This command is valid only for controller trays, controller-drive trays, or driv
 
 == Syntax
 
+[subs=+macros]
 ----
-set tray ["serialNumber"] id=trayID
+set tray pass:quotes[["_serialNumber_"]] pass:quotes[id=_trayID_]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-snapgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The create snapGroup command creates a new snapshot group and the associated repository volume.'
+keywords: create, snapshot, group
+summary: "The create snapGroup command creates a new snapshot group and the associated repository volume."
 ---
 = Create snapshot group
 :icons: font
@@ -29,22 +29,22 @@ Before you create a snapshot group, make sure a volume group with free capacity 
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-create snapGroup userLabel="snapGroupName" sourceVolume="volumeName"
+create snapGroup userLabel=pass:quotes[_"snapGroupName_" sourceVolume=_"volumeName"_]
 [(repositoryVolume="repos_xxxx" |
-repositoryVolume=(volumeGroupName [capacity=capacityValue]) |
-repositoryVolume=(diskPoolName [capacity=capacityValue]))]
+repositoryVolume=(pass:quotes[_volumeGroupName_] [capacity=capacityValue]) |
+repositoryVolume=(pass:quotes[_diskPoolName_] [capacity=capacityValue]))]
 [repositoryFullPolicy=(failBaseWrites | purgeSnapImages)]
 [rollbackPriority=(highest | high | medium | low | lowest)]
-[repositoryFullLimit=percentValue]
-[autoDeleteLimit=numberOfSnapImages]|
+[repositoryFullLimit=pass:quotes[_percentValue_]]
+[autoDeleteLimit=pass:quotes[_numberOfSnapImages_]]|
 [enableSchedule=(TRUE | FALSE)]
-[schedule (immediate | snapshotSchedule)]
+[schedule (immediate | pass:quotes[_snapshotSchedule_)]]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -127,7 +127,7 @@ When you first create a snapshot group, it does not contains any snapshot images
 A snapshot group can have one of these states:
 
 * *Optimal* -- The snapshot group is operating normally.
-* *Full* -- The snapshot group repository is full. Additional copy-on-write operations can not be performed. This state is possible only for snapshot groups that have the Repository Full policy set to Fail Base Writes. Any snapshot group in a Full state causes a Needs-Attention condition to be posted for the storage array.
+* *Full* -- The snapshot group repository is full. Additional copy-on-write operations cannot be performed. This state is possible only for snapshot groups that have the Repository Full policy set to Fail Base Writes. Any snapshot group in a Full state causes a Needs-Attention condition to be posted for the storage array.
 * *Over Threshold* -- The snapshot group repository volume usage is at or beyond its alert threshold. Any snapshot group in this state causes a Needs-Attention condition to be posted for the storage array.
 * *Failed* -- The snapshot group has encountered a problem that has made all snapshot images in the snapshot group unusable. For example, certain types of repository volume failures can cause a Failed state. To recover from a Failed state use the `revive snapGroup` command.
 
@@ -136,7 +136,7 @@ You can configure each snapshot group to automatically delete the snapshot image
 The `enableSchedule` parameter and the `schedule` parameter provide a way for you to schedule creating snapshot images for a snapshot group. Using these parameters, you can schedule snapshots daily, weekly, or monthly (by day or by date). The `enableSchedule` parameter turns on or turns off the ability to schedule snapshots. When you enable scheduling, you use the `schedule` parameter to define when you want the snapshots to occur.
 
 This table explains how to use the options for the `schedule` parameter:
-
+[options="header"]
 |===
 | Parameter| Description
 a|
@@ -195,7 +195,7 @@ a|
 a|
 An amount of time, in minutes, to have as a minimum between operations.Schedule interval should not be more than 1440 (24 hours) and it should be a multiple of 30.
 
-An example of this option is``scheduleInterval=180``.
+An example of this option is `scheduleInterval=180`.
 a|
 `endDate`
 a|
@@ -261,7 +261,7 @@ This parameter is not compatible with a weekly schedule.
 
 |===
 This table explains how to use the `timeZone` parameter:
-
+[options="header"]
 |===
 | Timezone Name| GMT offset
 a|

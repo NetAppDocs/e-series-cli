@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/remove-asyncmirrorgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The remove asyncMirrorGroup command removes an orphaned mirrored pair volume on the storage array.'
+keywords: remove, incomplete, asynchronous, mirror, pair, group
+summary: "The remove asyncMirrorGroup command removes an orphaned mirrored pair volume on the storage array."
 ---
 = Remove incomplete asynchronous mirrored pair from asynchronous mirror group
 :icons: font
@@ -28,14 +28,14 @@ Orphan mirrored pair volumes are detected when inter-controller communication is
 Use this command when the mirror relationship is successfully removed on the local or remote storage array, but cannot be removed on the corresponding storage array because of a communication problem.
 
 == Syntax
-
+[subs=+macros]
 ----
-remove asyncMirrorGroup ["asyncMirrorGroupName"]
-incompleteMirror volume="volumeName"
+remove asyncMirrorGroup pass:quotes[[_"asyncMirrorGroupName"_]]
+incompleteMirror volume=pass:quotes[_"volumeName"_]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

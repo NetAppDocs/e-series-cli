@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-snapgroup-mediascanenabled.html
 sidebar: sidebar
-keywords: 
-summary: 'The set snapGroup mediaScanEnabled command runs a media scan on a snapshot group.'
+keywords: set, snapshot, group, media, scan
+summary: "The set snapGroup mediaScanEnabled command runs a media scan on a snapshot group."
 ---
 = Set snapshot group media scan
 :icons: font
@@ -21,14 +21,16 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set snapGroup ["snapGroupName"]
+set snapGroup pass:quotes[["_snapGroupName_"]]
 mediaScanEnabled=(TRUE | FALSE)
 redundancyCheckEnabled=(TRUE | FALSE)
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

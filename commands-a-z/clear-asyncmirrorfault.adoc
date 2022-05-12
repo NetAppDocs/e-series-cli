@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/clear-asyncmirrorfault.html
 sidebar: sidebar
-keywords: 
-summary: 'The clear asyncMirrorFault command clears an asynchronous mirroring "sticky" fault from one or more asynchronous mirror groups and from one or more asynchronous mirror group member volumes.'
+keywords: clear, asynchronous mirroring, fault
+summary: "The clear asyncMirrorFault command clears an asynchronous mirroring 'sticky' fault from one or more asynchronous mirror groups and from one or more asynchronous mirror group member volumes."
 ---
 = Clear asynchronous mirroring fault
 :icons: font
@@ -26,18 +26,18 @@ An asynchronous mirror group and its member volumes can encounter asynchronous m
 An asynchronous mirror group and its member volumes might or can have more than one associated sticky fault. This command clears all of the faults associated with the asynchronous mirror group and its member volume. However, if an asynchronous mirror group has a fault and one of its member volumes has a fault, clearing the fault on the asynchronous mirror group does not clear the fault on its member volume.
 
 == Syntax
-
+[subs=+macros]
 ----
 clear asyncMirrorFault(all |
-asyncMirrorGroup [asyncMirrorGroupName] |
-asyncMirrorGroups ["asyncMirrorGroupName1"
-... "asyncMirrorGroupNameN"] |
-volume [volumeName] |
-volumes ["volumeName1" ... "volumeNameN"])
+asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]] |
+asyncMirrorGroups pass:quotes[[_"asyncMirrorGroupName1"
+... "asyncMirrorGroupNameN"_]] |
+volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_"volumeName1" ... "volumeNameN"_]])
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|

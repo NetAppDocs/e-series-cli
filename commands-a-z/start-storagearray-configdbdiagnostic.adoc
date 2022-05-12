@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-configdbdiagnostic.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray configDbDiagnostic command runs a consistency check against a configuration database.'
+keywords: start, storage, array, configuration, database, diagnostic
+summary: "The start storageArray configDbDiagnostic command runs a consistency check against a configuration database."
 ---
 = Start storage array configuration database diagnostic
 :icons: font
@@ -30,6 +30,7 @@ controller[(a|b)]]
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -50,8 +51,8 @@ The level of diagnostic testing that you want to run on the database. You can ru
 
 `mirror` -- The tests run using this option vary according to the value of the `sourceLocation` parameter:
 
-* When the `sourceLocation` parameter is set to `disk`, the peer controller initiates a block check.
-* When the `sourceLocation` parameter is set to `onboard` , the peer controller initiates a record check.
+* When the `*sourceLocation*` parameter is set to `disk`, the peer controller initiates a block check.
+* When the `*sourceLocation*` parameter is set to `onboard` , the peer controller initiates a record check.
 
 [NOTE]
 ====

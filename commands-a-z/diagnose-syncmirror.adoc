@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/diagnose-syncmirror.html
 sidebar: sidebar
-keywords: 
-summary: 'The diagnose syncMirror command tests the connection between the specified primary volumes and the mirror volumes on a storage array with the synchronous mirroring feature enabled.'
+keywords: diagnose, syncmirror, command, test, connection, specified, primary, volumes, mirror, storage, array, synchronous, feature, enabled
+summary: "The diagnose syncMirror command tests the connection between the specified primary volumes and the mirror volumes on a storage array with the synchronous mirroring feature enabled."
 ---
 = Diagnose synchronous mirroring
 :icons: font
@@ -27,15 +27,14 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-diagnose syncMirror (primary [primaryVolumeName] |
-primaries ["primaryVolumeName1" ... "primaryVolumeNameN"])
+pass:quotes[diagnose syncMirror (_primary [primaryVolumeName_]] |pass:quotes[primaries ["_primaryVolumeName1_]" ... pass:quotes[_"primaryVolumeNameN"_]])
 testID=connectivity
 ----
 
 == Parameter
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

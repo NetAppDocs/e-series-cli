@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-snapimage.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete snapImage command deletes one or more snapshot images from a snapshot group.'
+keywords: delete, snapimage, command, snapshot, images, group, support, array, roles
+summary: "The delete snapImage command deletes one or more snapshot images from a snapshot group."
 ---
 = Delete snapshot image
 :icons: font
@@ -20,11 +20,11 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-delete snapImage (snapGroup="snapGroupName" |
-snapGroups=("snapGroupName1"
-... "snapGroupNamen"))
+pass:quotes[delete snapImage (snapGroup="snapGroupName" |
+snapGroups=("_snapGroupName1"
+... "snapGroupNamen_"))]
 [deleteCount=numberOfSnapImages]
 [retainCount=numberOfSnapImages]
 [ignoreSnapVolume=(TRUE | FALSE)]
@@ -32,7 +32,7 @@ snapGroups=("snapGroupName1"
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-storagearray-trustedcertificate.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete storageArray trustedCertificate command removes the specified user installed CA certificates from the array’s web servers.'
+keywords: delete, storage, array, trusted, certificate, command, remove, specified, installed, web, servers
+summary: "The delete storageArray trustedCertificate command removes the specified user installed CA certificates from the array’s web servers."
 ---
 = Remove installed trusted CA certificates
 :icons: font
@@ -20,15 +20,15 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
 
-delete storageArray trustedCertificate [(allUserInstalled |
-aliases=("alias1" ... "aliasN"))]
+pass:quotes[delete storageArray trustedCertificate [(allUserInstalled |
+aliases=("_alias1_" ... "_aliasN_]"))]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

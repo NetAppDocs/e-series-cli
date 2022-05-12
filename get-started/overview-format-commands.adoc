@@ -1,10 +1,10 @@
 ---
-permalink: get-started/formatting-the-commands.html
+permalink: get-started/overview-format-commands.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: overview, cli
+summary: "The command line interface (CLI) is a software application that provides a way to configure and monitor storage arrays."
 ---
-= Formatting the commands
+= Overview of CLI
 :icons: font
 :imagesdir: ./media/
 

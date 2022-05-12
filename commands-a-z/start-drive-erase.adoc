@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-drive-erase.html
 sidebar: sidebar
-keywords: 
-summary: 'The start drive erase command erases all of the data from one or more drives.'
+keywords: start, drive, erase
+summary: "The start drive erase command erases all of the data from one or more drives."
 ---
 = Start drive erase
 :icons: font
@@ -29,13 +29,14 @@ The erase operation cannot be undone. Make sure you select the correct drive whe
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start drive \[trayID,[drawerID,]slotID\] \| drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\] erase
+start drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] | drivespass:quotes[[_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1_] ... pass:quotes[_trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_]] erase
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

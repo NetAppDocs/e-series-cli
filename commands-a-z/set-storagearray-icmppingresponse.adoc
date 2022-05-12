@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-icmppingresponse.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray icmpPingResponse command returns the default values for negotiable settings for sessions and connections, which represent the starting point for the storage array for negotiations.'
+keywords: set, storage, array, icmp, response
+summary: "The set storageArray icmpPingResponse command returns the default values for negotiable settings for sessions and connections, which represent the starting point for the storage array for negotiations."
 ---
 = Set storage array ICMP response
 :icons: font
@@ -27,6 +27,7 @@ set storageArray icmpPingResponse=(TRUE | FALSE)
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

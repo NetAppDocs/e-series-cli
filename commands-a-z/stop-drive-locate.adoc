@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/stop-drive-locate.html
 sidebar: sidebar
-keywords: 
-summary: 'The stop drive locate command turns off the indicator light on the drive that was turned on by the start drive locate command.'
+keywords: stop, drive, locate
+summary: "The stop drive locate command turns off the indicator light on the drive that was turned on by the start drive locate command."
 ---
 = Stop drive locate
 :icons: font

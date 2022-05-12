@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-keymanagementcertificate.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray keyManagementCertificate command retrieves the installed certificate.'
+keywords: retrieve, installed, external, key management, certificate
+summary: "The save storageArray keyManagementCertificate command retrieves the installed certificate."
 ---
 = Retrieve installed external key management certificate
 :icons: font
@@ -28,14 +28,16 @@ This command applies only to external key management.
 
 == Syntax
 
+[subs=+macros]
 ----
 
-save storageArray keyManagementCertificate certificateType=" certificateType
-file="filename"
+save storageArray keyManagementCertificate certificateType=pass:quotes["_certificateType_"]
+file=pass:quotes["_filename_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

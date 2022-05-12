@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/resume-ssdcache.html
 sidebar: sidebar
-keywords: 
-summary: 'The resume ssdCache command restarts the caching for all of the volumes using the SSD cache that was temporarily stopped with the suspend ssdCache command.'
+keywords: resume, ssd, cache
+summary: "The resume ssdCache command restarts the caching for all of the volumes using the SSD cache that was temporarily stopped with the suspend ssdCache command."
 ---
 = Resume SSD cache
 :icons: font
@@ -20,13 +20,13 @@ This command applies to any individual storage array, including the E2700, E5600
 To execute this command on an E2800 or E5700 storage array, you must have the Support Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
-resume ssdCache [ssdCacheName]
+resume ssdCache pass:quotes[[_ssdCacheName_]]
 ----
 
 == Parameter
-
+[options="header"]
 |===
 | Parameter| Description
 a|

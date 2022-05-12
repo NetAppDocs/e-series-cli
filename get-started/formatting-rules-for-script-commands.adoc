@@ -1,10 +1,10 @@
 ---
 permalink: get-started/formatting-rules-for-script-commands.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: format, rules, script, commands
+summary: "Syntax unique to a specific script command is explained in the Notes section at the end of each script command description."
 ---
-= Formatting rules for script commands
+= Format rules for script commands
 :icons: font
 :imagesdir: ./media/
 
@@ -70,7 +70,7 @@ or, for a high-capacity drive tray, this example:
 
 Replace the italicized term with a value for the number of drives that you want to include with the script command.
 
-*Semicolon* -- Script commands must end with a semicolon (`;` ). You can enter more than one script command on the command line or in a script file. For example, a semicolon is used to separate each script command in the following script file.
+*Semicolon* -- Script commands must end with a semicolon (`;`). You can enter more than one script command on the command line or in a script file. For example, a semicolon is used to separate each script command in the following script file.
 
 ----
 create volume drives=(0,2 0,3 1,4 1,5 2,6 2,7) raidLevel=5 userLabel=”v1” capacity=2gb owner=a;

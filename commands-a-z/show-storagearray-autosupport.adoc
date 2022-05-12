@@ -1,10 +1,10 @@
 ---
 permalink: commands-a-z/show-storagearray-autosupport.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray autoSupport command displays the AutoSupport bundle collection settings for the storage array.'
+keywords: show, autosupport, configuration, e2800, e5700, storage, arrays
+summary: "The show storageArray autoSupport command displays the AutoSupport bundle collection settings for the storage array."
 ---
-= Show AutoSupport configuration (for E2800 or E5700 storage arrays)
+= Show AutoSupport configuration
 :icons: font
 :imagesdir: ./media/
 
@@ -13,7 +13,7 @@ The `show storageArray autoSupport` command displays the AutoSupport bundle coll
 
 == Supported Arrays
 
-This command is operational for either the E2800, E5700, or EF600 storage arrays.
+This command is operational for either the E2800, E5700, EF600, and EF300 storage arrays.
 
 == Roles
 
@@ -43,11 +43,7 @@ show storageArray autoSupport
 
 None.
 
-== Minimum Firmware Level
-
-8.40
-
-== Examples
+=== Examples
 
 ----
 

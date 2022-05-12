@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-secureerase-drive.html
 sidebar: sidebar
-keywords: 
-summary: 'The start secureErase drive command erases all of the data from one or more full disk encryption \(FDE\) drives so that they can be reused as FDE drives.'
+keywords: start, fde, secure, drive, erase
+summary: "The start secureErase drive command erases all of the data from one or more full disk encryption (FDE) drives so that they can be reused as FDE drives."
 ---
 = Start FDE secure drive erase
 :icons: font
@@ -29,13 +29,14 @@ To erase a FIPS drive when the drive is locked and the security key to unlock it
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-start secureErase (drive \[trayID,[drawerID,]slotID\] \| drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\])
+[start secureErase (drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] | drives pass:quotes[[_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1_] ... pass:quotes[_trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_]])
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

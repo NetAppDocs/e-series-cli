@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-snapvolume.html
 sidebar: sidebar
-keywords: 
-summary: 'The set snapVolume command renames an existing snapshot volume.'
+keywords: rename, snapshot, volume
+summary: "The set snapVolume command renames an existing snapshot volume."
 ---
 = Rename snapshot volume
 :icons: font
@@ -21,12 +21,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set snapVolume ["snapVolumeName"] userLabel="snapImageVolumeName"
+set snapVolume pass:quotes[["_snapVolumeName_"]] userLabel=pass:quotes["_snapImageVolumeName_"]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/download-storagearray-firmware.html
 sidebar: sidebar
-keywords: 
-summary: 'The download storageArray firmware command downloads firmware and, optionally, NVSRAM values for the storage array controller.'
+keywords: download, storage, array, firmware, command, downloads, optionally, values, controllers, role, context, parameter
+summary: "The download storageArray firmware command downloads firmware and, optionally, NVSRAM values for the storage array controller."
 ---
 = Download storage array firmware/NVSRAM
 :icons: font
@@ -24,10 +24,10 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 If you want to download only NVSRAM values, use the `downLoad storageArray NVSRAM` command.
 
 == Syntax
-
+[subs=+macros]
 ----
 download storageArray firmware [, NVSRAM ]
-file="filename" [, "NVSRAM-filename"]
+pass:quotes[file="_filename_" [, "_NVSRAM-filename_"]]
 [downgrade=(TRUE | FALSE)
 activateNow=(TRUE | FALSE)
 healthCheckMelOverride=(TRUE | FALSE)
@@ -35,7 +35,7 @@ healthCheckNeedsAttnOverride=(TRUE | FALSE)
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -64,7 +64,7 @@ a|
 `downgrade`
 a|
 
-[NOTE]
+[CAUTION]
 ====
 *Possible damage to the storage array configuration* -- Downloading a previous version of the controller firmware or NVSRAM incorrectly can result in damage to the controllers or a loss of data access. Contact technical support before using this parameter.
 ====
@@ -109,6 +109,6 @@ This parameter forces the controller to download new firmware. The default value
 
 5.00
 
-8.10 adds the `healthCheckMelOverride` parameter.
+8.10 adds the `*healthCheckMelOverride*` parameter.
 
-8.70 adds `healthCheckNeedsAttnOverride` parameter.
+8.70 adds `*healthCheckNeedsAttnOverride*` parameter.

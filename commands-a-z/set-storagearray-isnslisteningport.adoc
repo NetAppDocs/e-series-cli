@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-isnslisteningport.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray isnsListeningPort command sets the iSNS server listening port.'
+keywords: set, storage, array, isns, server, listen, port
+summary: "The set storageArray isnsListeningPort command sets the iSNS server listening port."
 ---
 = Set storage array iSNS server listening port
 :icons: font
@@ -21,12 +21,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set storageArray isnsListeningPort=listeningPortIPAddress
+set storageArray isnsListeningPort=pass:quotes[_listeningPortIPAddress_]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

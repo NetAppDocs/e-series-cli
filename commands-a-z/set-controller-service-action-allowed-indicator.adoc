@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-controller-service-action-allowed-indicator.html
 sidebar: sidebar
-keywords: 
-summary: 'The set controller command turns on or turns off the Service Action Allowed indicator light on a controller in a controller tray or a controller-drive tray.'
+keywords: set, controller, service, action, allowed, indicator
+summary: "The set controller command turns on or turns off the Service Action Allowed indicator light on a controller in a controller tray or a controller-drive tray."
 ---
 = Set controller service action allowed indicator
 :icons: font
@@ -33,6 +33,7 @@ serviceAllowedIndicator=(on | off)
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

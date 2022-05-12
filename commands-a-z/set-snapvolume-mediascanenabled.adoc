@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-snapvolume-mediascanenabled.html
 sidebar: sidebar
-keywords: 
-summary: 'The set snapVolume mediaScanEnabled command runs a media scan on the drives used for a snapshot volume.'
+keywords: set, snapshot, volume, media, scan
+summary: "The set snapVolume mediaScanEnabled command runs a media scan on the drives used for a snapshot volume."
 ---
 = Set snapshot volume media scan
 :icons: font
@@ -25,14 +25,15 @@ Optionally, you also can perform a redundancy check on the data.
 
 == Syntax
 
+[subs=+macros]
 ----
-set snapVolume ["snapVolumeName"]
-mediaScanEnabled=(TRUE | FALSE)
-[redundancyCheckEnabled=(TRUE | FALSE)]
+set snapVolume pass:quotes[["_snapVolumeName_"]]
+mediaScanEnabled=(TRUE | FALSE) [redundancyCheckEnabled=(TRUE | FALSE)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

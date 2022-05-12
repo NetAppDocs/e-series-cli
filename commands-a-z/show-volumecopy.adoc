@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volumecopy.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volumeCopy command returns information about volume copy operations.'
+keywords: show, volume, copy
+summary: "The show volumeCopy command returns information about volume copy operations."
 ---
 = Show volume copy
 :icons: font
@@ -33,14 +33,15 @@ This command returns this information about volume copy operations:
 You can retrieve information about a specific volume copy pair or all of the volume copy pairs in the storage array. This command is valid for snapshot volume copy pairs.
 
 == Syntax
-
+[subs=+macros]
 ----
-show volumeCopy (allVolumes | source ["sourceName"] |
-target ["targetName"])
+show volumeCopy (allVolumes | source pass:quotes[["_sourceName_"]] |
+target pass:quotes[["_targetName_"]])
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/suspend-syncmirror-primaries.html
 sidebar: sidebar
-keywords: 
-summary: 'The suspend syncMirror primaries command suspends a synchronous mirroring operation.'
+keywords: suspend, synchronous, mirror
+summary: "The suspend syncMirror primaries command suspends a synchronous mirroring operation."
 ---
 = Suspend synchronous mirroring
 :icons: font
@@ -27,15 +27,16 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-suspend syncMirror (primary [primaryVolumeName]
-primaries [primaryVolumeName1 ... primaryVolumeNameN])
+
+suspend syncMirror (primary pass:quotes[[_primaryVolumeName_]]
+primaries pass:quotes[[_primaryVolumeName1_ ... _primaryVolumeNameN_])]
 [writeConsistency=(TRUE | FALSE)]
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

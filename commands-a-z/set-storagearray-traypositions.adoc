@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-traypositions.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray trayPositions command defines the position of the trays in a storage array. You must include all of the trays in the storage array when you enter this command.'
+keywords: set, storage, array, tray, positions
+summary: "The set storageArray trayPositions command defines the position of the trays in a storage array. You must include all of the trays in the storage array when you enter this command."
 ---
 = Set storage array tray positions
 :icons: font
@@ -21,12 +21,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-set storageArray trayPositions=(controller | trayID ... trayIDn)
+set storageArray trayPositions=pass:quotes[(controller | _trayID_ ... _trayIDn_)]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-locate.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray locate command locates a storage array by turning on the indicator lights for the storage array.'
+keywords: start, storage, array, locate
+summary: "The start storageArray locate command locates a storage array by turning on the indicator lights for the storage array."
 ---
 = Start storage array locate
 :icons: font

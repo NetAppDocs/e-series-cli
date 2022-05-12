@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-storagearray-isnsserverrefresh.html
 sidebar: sidebar
-keywords: 
-summary: 'The start storageArray isnsServerRefresh command initiates a refresh of the network address information for the iSNS server.'
+keywords: start, storage, array, isns, server, refresh
+summary: "The start storageArray isnsServerRefresh command initiates a refresh of the network address information for the iSNS server."
 ---
 = Start storage array iSNS server refresh
 :icons: font

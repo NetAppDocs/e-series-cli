@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-controller.html
 sidebar: sidebar
-keywords: 
-summary: 'The show controller command returns information about a controller.'
+keywords: show, controller
+summary: "The show controller command returns information about a controller."
 ---
 = Show controller
 :icons: font
@@ -47,6 +47,7 @@ show (allControllers | controller [(a|b)])
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

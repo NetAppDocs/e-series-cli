@@ -1,8 +1,8 @@
 ---
 permalink: commands-category/auto-support-commands.html
 sidebar: sidebar
-keywords:
-summary: ''
+keywords: support, commands, bundle, collection, autosupport
+summary: "Auto support commands"
 ---
 = Auto support commands
 :icons: font

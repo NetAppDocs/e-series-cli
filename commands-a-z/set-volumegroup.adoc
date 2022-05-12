@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-volumegroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The set volumeGroup command defines the properties for a volume group.'
+keywords: set, volume, group
+summary: "The set volumeGroup command defines the properties for a volume group."
 ---
 = Set volume group
 :icons: font
@@ -28,15 +28,17 @@ You must perform only one operation (add drives, change the RAID level, or chang
 
 == Syntax
 
+[subs=+macros]
 ----
-set volumeGroup [volumeGroupName]
-[addDrives=(trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn) ]|
+set volumeGroup pass:quotes[[_volumeGroupName_]]
+[addDrives=pass:quotes[(_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1_] ... pass:quotes[_trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_]) ]|
 [raidLevel=(0 | 1 | 3 | 5 | 6) ]|
 [owner=(a|b)]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

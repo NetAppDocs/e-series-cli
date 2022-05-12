@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-volumegroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The show volumeGroup command returns information about a volume group.'
+keywords: show, volume, group
+summary: "The show volumeGroup command returns information about a volume group."
 ---
 = Show volume group
 :icons: font
@@ -28,7 +28,7 @@ This command returns this information about a volume group:
 * The current owner (the controller in slot A or the controller in slot B )
 * The RAID level
 * The drive media type (HDD or SSD)
-* The drive interface type (Fibre Channel, iSCSI, Infiniband, SAS)
+* The drive interface type (Fibre Channel, iSCSI, InfiniBand, SAS)
 * Tray loss protection (yes or no)
 * Secure capable - indicates whether the volume group is composed of all secure-capable drives. Secure-capable drives can be either FDE drives or FIPS drives.
 * Secure - Indicates whether the volume group has drive security turned on (this is called secure enabled).
@@ -38,13 +38,14 @@ This command returns this information about a volume group:
 * Resource provisioning capabilities
 
 == Syntax
-
+[subs=+macros]
 ----
-show volumeGroup [volumeGroupName]
+pass:quotes[show volumeGroup [_volumeGroupName_]]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

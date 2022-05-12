@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-pqvalidateonreconstruct.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray pqValidateOnReconstruct command sets the storage array P/Q validation state on reconstruction. When this capability is enabled, data is reconstructed using both data+P and data+Q, and the results checked for consistency before determining how to proceed.'
+keywords: set, storage, array, pq validation, reconstruct
+summary: "The set storageArray pqValidateOnReconstruct command sets the storage array P/Q validation state on reconstruction. When this capability is enabled, data is reconstructed using both data+P and data+Q, and the results checked for consistency before determining how to proceed."
 ---
 = Set storage array PQ validation on reconstruct
 :icons: font
@@ -33,6 +33,7 @@ set storageArray pqValidateOnReconstruct (enable | disable) driveMediaType=(hdd 
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

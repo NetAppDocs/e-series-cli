@@ -1,7 +1,7 @@
 ---
 permalink: commands-a-z/clear-alldrivechannels-stats.html
 sidebar: sidebar
-keywords: 
+keywords: clear, drive channel, statistics
 summary: 'The clear allDriveChannels stats command resets the statistics for all of the drive channels.'
 ---
 = Clear drive channel statistics

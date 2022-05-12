@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/start-drive-locate.html
 sidebar: sidebar
-keywords: 
-summary: 'The start drive locate command locates a drive by turning on an indicator light on the drive.'
+keywords: start, drive, locate
+summary: "The start drive locate command locates a drive by turning on an indicator light on the drive."
 ---
 = Start drive locate
 :icons: font
@@ -24,13 +24,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 Run the `stop drive locate` command to turn off the indicator light on the drive.
 
 == Syntax
-
+[subs=+macros]
 ----
-start drive [trayID,[drawerID,]slotID] locate
+start drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] locate
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

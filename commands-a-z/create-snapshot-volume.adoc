@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-snapshot-volume.html
 sidebar: sidebar
-keywords: 
-summary: 'The create snapVolume command creates a snapshot volume with read-write capabilities for snapshot images of a base volume.'
+keywords: create, snapshot, volume
+summary: "The create snapVolume command creates a snapshot volume with read-write capabilities for snapshot images of a base volume."
 ---
 = Create snapshot volume
 :icons: font
@@ -29,17 +29,17 @@ You cannot use this command for a snapshot image that is used in online volume c
 ====
 
 == Syntax
-
+[subs=+macros]
 ----
-create snapVolume userLabel="snapVolumeName" snapImageID="snapCGID:imageID"
+create snapVolume userLabel=pass:quotes[_"snapVolumeName_" snapImageID="_snapCGID:imageID_"]
 [(repositoryVolume="repos_xxxx"]
-[repositoryVolume=(volumeGroupName [capacity=capacityValue]]
-[repositoryVolume=(diskPoolName [capacity=capacityValue])]
-[repositoryFullLimit=percentValue]
+[repositoryVolume=pass:quotes[_(volumeGroupName_]pass:quotes[[capacity=_capacityValue_]]]
+[repositoryVolume=pass:quotes[(_diskPoolName_]pass:quotes[[capacity=_capacityValue_])]]
+[repositoryFullLimit=pass:quotes[_percentValue_]]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

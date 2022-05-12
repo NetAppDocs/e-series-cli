@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-odxenabled.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray odxEnabled command turns on or turns off Offloaded Data Transfer \(ODX\) for a storage array.'
+keywords: enable, disable, odx
+summary: "The set storageArray odxEnabled command turns on or turns off Offloaded Data Transfer (ODX) for a storage array."
 ---
 = Enable or disable ODX
 :icons: font
@@ -31,6 +31,7 @@ set storageArray odxEnabled=(TRUE | FALSE)
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

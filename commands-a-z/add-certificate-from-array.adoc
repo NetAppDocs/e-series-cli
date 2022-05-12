@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/add-certificate-from-array.html
 sidebar: sidebar
-keywords: 
-summary: 'The Add certificate from array command allows you to take a certificate from the array and add it to the CLI package’s trust store. The certificate added will only be used by the CLI package.'
+keywords: add certificate array, supported, syntax, parameters, minimum firmware level
+summary: "The Add certificate from array command allows you to take a certificate from the array and add it to the CLI package’s trust store. The certificate added will only be used by the CLI package."
 ---
 = Add certificate from array
 :icons: font
@@ -16,14 +16,14 @@ The `Add certificate from array` command allows you to take a certificate from t
 This command applies to the EF600 and EF300 storage arrays.
 
 == Syntax
-
+[subs=+macros]
 ----
 
-        ipAddress1 ipAddress2  trust localCertificate
+pass:quotes[_ipAddress1 ipAddress2_  trust localCertificate]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

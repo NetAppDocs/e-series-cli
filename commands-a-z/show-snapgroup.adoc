@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-snapgroup.html
 sidebar: sidebar
-keywords: 
-summary: 'The show snapGroup command returns information about one or more snapshot image groups.'
+keywords: show, snapshot, group
+summary: "The show snapGroup command returns information about one or more snapshot image groups."
 ---
 = Show snapshot group
 :icons: font
@@ -21,14 +21,16 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-show (allSnapGroups | snapGroup [snapGroupName] |
-snapGroups ["snapGroupName1" ... "snapGroupNamen"])
+show (allSnapGroups | snapGroup pass:quotes[[_snapGroupName_]] |
+snapGroups pass:quotes[["_snapGroupName1_" ... "_snapGroupNamen_"]])
 [summary | schedule]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

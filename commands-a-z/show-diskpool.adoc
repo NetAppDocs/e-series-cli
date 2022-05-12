@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-diskpool.html
 sidebar: sidebar
-keywords: 
-summary: 'The show diskPool command returns information about a disk pool.'
+keywords: show, disk pool
+summary: "The show diskPool command returns information about a disk pool."
 ---
 = Show disk pool
 :icons: font
@@ -30,7 +30,7 @@ This command returns this information about a disk pool:
 * The current owner (the controller in slot A or the controller in slot B )
 * The drive media (SAS)
 * The drive media type (HDD or SSD)
-* The drive interface type (Fibre Channel, iSCSI, Infiniband, SAS)
+* The drive interface type (Fibre Channel, iSCSI, InfiniBand, SAS)
 * Tray loss protection (yes or no)
 * Secure capable - indicates whether the disk pool is composed of all secure-capable drives. Secure-capable drives can be either FDE drives or FIPS drives.
 * Secure - Indicates whether the disk pool has drive security turned on (this is called secure enabled).
@@ -43,12 +43,14 @@ This command returns this information about a disk pool:
 
 == Syntax
 
+[subs=+macros]
 ----
-show diskPool [diskPoolName]
+pass:quotes[show diskPool [_diskPoolName_]]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

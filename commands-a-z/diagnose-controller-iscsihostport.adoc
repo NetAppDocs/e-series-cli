@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/diagnose-controller-iscsihostport.html
 sidebar: sidebar
-keywords: 
-summary: 'The diagnose controller iscsiHostPort command runs diagnostic tests on the copper cables between iSCSI host interface cards and a controller.'
+keywords: diagnose, controller, hostport, command, diagnostic, tests, copper, cable, host, interface, cards, support, roles
+summary: "The diagnose controller iscsiHostPort command runs diagnostic tests on the copper cables between iSCSI host interface cards and a controller."
 ---
 = Diagnose controller iSCSI host cable
 :icons: font
@@ -32,7 +32,7 @@ testID=cableDiagnostics
 ----
 
 == Parameters
-
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -46,7 +46,7 @@ The iSCSI host port on which you want to run the diagnostic tests. You can run t
 
 See the following for more information:
 
-<<ESERIES-SECTION_ID_ON_CONREFFED_SECTION,"Identifying an iSCSI host port label">>
+<<Identifying an iSCSI host port label,"Identifying an iSCSI host port label">>
 a|
 `testID`
 a|
@@ -65,7 +65,7 @@ You must specify a label for the host port. Follow these steps to specify the ho
 The port label is the complete value returned for the `Port` field.
 ====
 
-. Enclose the entire value of the port label in both quotes and square brackets: ["[.code]``portLabel``"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
+. Enclose the entire value of the port label in both quotes and square brackets: ["portLabel"]. For example, if the port label is `Ch 2`, specify the iSCSI host port as follows:
 +
 ----
 iscsiHostPort[\"ch 2\"]
@@ -99,15 +99,15 @@ iscsiHostPort[3]
 
 When you run the cable diagnostic test, the firmware returns the following information:
 
-* Host Port: The port on which the diagnostic test was run.
-* HIC: The host interface card associated with this port.
+* *Host Port*: The port on which the diagnostic test was run.
+* *HIC*: The host interface card associated with this port.
 * The date and time the test was run.
-* Status:
- ** OK: All of the pairs of cables are good and do not have any faults.
- ** Open: One or more of the four pairs of cables are open.
- ** Short: One or more of the four pairs of cables are shorted.
- ** Incomplete: One or more of the four pairs returned incomplete or invalid test results.
-* Length -- The length of the cables are listed in meters and the following information about the cables is returned:
+* *Status*:
+ ** *OK*: All of the pairs of cables are good and do not have any faults.
+ ** *Open*: One or more of the four pairs of cables are open.
+ ** *Short*: One or more of the four pairs of cables are shorted.
+ ** *Incomplete*: One or more of the four pairs returned incomplete or invalid test results.
+* *Length*: The length of the cables are listed in meters and the following information about the cables is returned:
  ** When the cable status is OK, the approximate lengths of the cable pairs are returned. The lengths of the cable pairs are shown as a range (L1-L2), which are the shortest and the longest lengths of the cable pairs.
  ** If the cable status is Open or Short, the approximate distance to the failure in the cable pairs. If there is one failure, the length is reported for that cable pair. If there is more than one failure, the information returned is both the shortest and longest lengths to the failures. The lengths are listed as a range (L1-L2) where L1<L2.
  ** If the cable status is Incomplete, the information returned are the lengths for the shortest and longest cable pairs that the firmware can successfully test. The lengths are listed for the valid cable pairs as a range (L1-L2) where L1<L2.

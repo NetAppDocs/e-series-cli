@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-allsnmpusers.html
 sidebar: sidebar
-keywords: 
-summary: 'The show allsnmpUsers command returns information about the Simple Network Management \(SNMP\) USM users defined for the storage array.'
+keywords: show, snmpv3, usm, user
+summary: "The show allsnmpUsers command returns information about the Simple Network Management (SNMP) USM users defined for the storage array."
 ---
 = Show SNMPv3 USM user
 :icons: font
@@ -66,6 +66,7 @@ DETAILS
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|

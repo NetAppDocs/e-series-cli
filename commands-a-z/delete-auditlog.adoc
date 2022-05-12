@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/delete-auditlog.html
 sidebar: sidebar
-keywords: 
-summary: 'The delete auditLog command deletes some or all of the records in the audit log.'
+keywords: delete, audit, log, records
+summary: "The delete auditLog command deletes some or all of the records in the audit log."
 ---
 = Delete audit log records
 :icons: font
@@ -20,15 +20,15 @@ This command applies to an individual E2800, E5700, EF600 or EF300 storage array
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
 == Syntax
-
+[subs=+macros]
 ----
 
-delete auditLog (all | (endRecord=timestamp | endDate=date) |
- (retentionCount=integer))
+delete auditLog (all | (endRecord=pass:quotes[_timestamp_ | endDate=_date_) |
+ (retentionCount=_integer_))]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

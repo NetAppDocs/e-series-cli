@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/set-storagearray-learncycledate-controller.html
 sidebar: sidebar
-keywords: 
-summary: 'The set storageArray learnCycleDate controller command sets controller battery learn cycles.'
+keywords: set, storage, array, controller, battery, learn, cycle
+summary: "The set storageArray learnCycleDate controller command sets controller battery learn cycles."
 ---
 = Set storage array controller battery learn cycle
 :icons: font
@@ -38,18 +38,20 @@ A learn cycle might take several hours to complete.
 
 == Syntax
 
+[subs=+macros]
 ----
 set storageArray learnCycleDate (controller[(a| b)] )
-(daysToNextLearnCycle=numberOfDays |
-day=dayOfTheWeek) time=HH:MM
+pass:quotes[(daysToNextLearnCycle=_numberOfDays_ |
+day=_dayOfTheWeek_)] pass:quotes[time=_HH:MM_]
 ----
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
-`controller`
+`*controller*`
 a|
 The controller for which you want to specify a battery learn cycle. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the controller firmware returns a syntax error.
 [NOTE]

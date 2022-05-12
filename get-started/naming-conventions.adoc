@@ -1,8 +1,8 @@
 ---
 permalink: get-started/naming-conventions.html
 sidebar: sidebar
-keywords: 
-summary: ''
+keywords: name, conventions
+summary: "Names can have a maximum of 30 characters."
 ---
 = Naming conventions
 :icons: font

@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/save-storagearray-rlscounts.html
 sidebar: sidebar
-keywords: 
-summary: 'The save storageArray RLSCounts command saves the read link status \(RLS\) counters to a file.'
+keywords: save, storage, array, rls, counts
+summary: "The save storageArray RLSCounts command saves the read link status (RLS) counters to a file."
 ---
 = Save storage array RLS counts
 :icons: font
@@ -21,12 +21,14 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Syntax
 
+[subs=+macros]
 ----
-save storageArray RLSCounts file="filename"
+save storageArray RLSCounts file=pass:quotes["_filename_"]
 ----
 
 == Parameter
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -46,7 +48,7 @@ To more effectively save RLS counters to a file, perform these steps:
 
 . Run the `reset storageArray RLSBaseline` command to set all of the RLS counters to 0.
 . Run the storage array for a predetermined amount of time (for instance, two hours).
-. Run the `save storageArray RLSCounts file="``filename``"` command.
+. Run the `save storageArray RLSCounts file`="[.code]``_filename_``" command.
 
 == Minimum firmware level
 

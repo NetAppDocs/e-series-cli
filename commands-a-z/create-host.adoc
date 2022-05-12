@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/create-host.html
 sidebar: sidebar
-keywords: 
-summary: 'The create host command creates a new host.'
+keywords: create, host
+summary: "The create host command creates a new host."
 ---
 = Create host
 :icons: font
@@ -24,15 +24,15 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 For E2700 and E5600 storage arrays, if you do not specify a host group in which to create the new host, the new host is created in the Default Group.
 
 == Syntax
-
+[subs=+macros]
 ----
-create host userLabel="hostName"
-[hostGroup=("hostGroupName" | defaultGroup)]
+create host userLabel=pass:quotes[_"hostName"_]
+[hostGroup=pass:quotes[(_"hostGroupName"_] | defaultGroup)]
 [hostType=(hostTypeIndexLabel | hostTypeIndexNumber)]
 ----
 
 == Parameters
-
+[options="header"]
 |===
 | Parameter| Description
 a|

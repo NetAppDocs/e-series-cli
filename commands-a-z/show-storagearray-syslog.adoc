@@ -1,8 +1,8 @@
 ---
 permalink: commands-a-z/show-storagearray-syslog.html
 sidebar: sidebar
-keywords: 
-summary: 'The show storageArray syslog command allows you to view the configuration of a syslog server used for storing audit logs. Configuration information includes a server ID, along with its address, protocol, and port number.'
+keywords: display, storage, array, syslog, configuration
+summary: "The show storageArray syslog command allows you to view the configuration of a syslog server used for storing audit logs. Configuration information includes a server ID, along with its address, protocol, and port number."
 ---
 = Display storage array syslog configuration
 :icons: font
@@ -28,6 +28,7 @@ show storageArray syslog (allServers | id="<id>")
 
 == Parameters
 
+[cols="2*",options="header"]
 |===
 | Parameter| Description
 a|
@@ -40,11 +41,7 @@ a|
 Displays the syslog configuration with the matching ID.
 |===
 
-== Minimum firmware level
-
-8.42
-
-== Examples
+=== Examples
 
 ----
 SMcli -n Array1 -c "show storageArray syslog allServers;"
@@ -59,3 +56,7 @@ Components
 
 SMcli completed successfully.
 ----
+
+== Minimum firmware level
+
+8.42
