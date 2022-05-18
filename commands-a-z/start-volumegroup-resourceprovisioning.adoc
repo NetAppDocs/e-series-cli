@@ -42,4 +42,4 @@ The volume group you want to enable the resource provisioning feature. Enclose t
 
 == Minimum firmware level
 
-11.72
+11.73
