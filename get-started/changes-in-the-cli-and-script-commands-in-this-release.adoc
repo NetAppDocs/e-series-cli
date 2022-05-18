@@ -41,7 +41,7 @@ xref:../commands-a-z/start-diskpool-fullprovisioning.adoc[Start Disk Pool Full P
 a|
 Updated `disableResourceProvisioning` parameter description.
 a|
-xref:../commands-a-z/start-diskpool-resourceprovisioning.adoc[Start Disk Pool Resource Provisioning]
+xref:../commands-a-z/start-volumegroup-fullprovisioning.adoc[Start Volume Group Full Provisioning]
 a|
 Updated `disableResourceProvisioning` parameter description.
 a|
