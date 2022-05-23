@@ -1,0 +1,82 @@
+---
+permalink: commands-a-z/set-storagearray-autoloadbalancingenable.html
+sidebar: sidebar
+keywords: set, storage, array, enable, disable, automatic, load, balance
+summary: "The set storageArray autoLoadBalancingEnable command enables or disables the Automatic Load Balancing feature."
+---
+= Set storage array to enable or disable automatic load balancing
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray autoLoadBalancingEnable` command enables or disables the Automatic Load Balancing feature.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set storageArray autoLoadBalancingEnable=(TRUE | FALSE)
+----
+
+== Parameter
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`storageArray`
+a|
+Indicates that this parameter works on a storage array.
+a|
+`autoLoadBalancingEnable`
+a|
+This parameter turns on or turns off Automatic Load Balancing on the controller. Set the parameter to `TRUE` to turn on Automatic Load Balancing. Set the parameter to `FALSE` to turn off Automatic Load Balancing.
+|===
+
+== What is Automatic Load Balancing?
+
+The Automatic Load Balancing feature provides improved I/O resource management by reacting dynamically to load changes over time and automatically adjusting volume controller ownership to correct any load imbalance issues when workloads shift across the controllers.
+
+The workload of each controller is continually monitored and, with cooperation from the multipath drivers installed on the hosts, can be automatically brought into balance whenever necessary. When workload is automatically re-balanced across the controllers, the storage administrator is relieved of the burden of manually adjusting volume controller ownership to accommodate load changes on the storage array.
+
+When Automatic Load Balancing is enabled, it performs the following functions:
+
+* Automatically monitors and balances controller resource utilization.
+* Automatically adjusts volume controller ownership when needed, thereby optimizing I/O bandwidth between the hosts and the storage array.
+
+== Enabling and disabling Automatic Load Balancing
+
+Automatic Load Balancing is enabled by default on all storage arrays that ship with SANtricity OS (controller software) 8.30 or later. Linux, Windows, and VMware multipath drivers can use the Automatic Load Balancing feature. If you upgrade your controller from SANtricity OS (controller software) 8.25 or earlier to 8.30 or later, Automatic Load Balancing is disabled by default on the storage array.
+
+You might want to disable Automatic Load Balancing on your storage array for the following reasons:
+
+* You do not want to automatically change a particular volume's controller ownership to balance workload.
+* You are operating in a highly tuned environment where load distribution is purposefully set up to achieve a specific distribution between the controllers.
+
+In SANtricity Storage Manager, select the *Storage Array* > *Configuration* > *Automatic Load Balancing* menu option to enable or disable the Automatic Load Balancing feature for an individual storage array.
+
+In SANtricity System Manager, select *Settings* > *System*, scroll down to the *Additional Settings* section, click the E**nable/Disable Automatic Load Balancing** link, and select the**Enable/Disable automatic load balancing** checkbox to enable or disable the feature for an individual storage array.
+
+== Examples
+
+----
+SMcli -n Array1 -c "set storageArray autoLoadBalancingEnable=true;"
+
+SMcli completed successfully.
+----
+
+[NOTE]
+====
+An active "Drive Lost Primary Path" condition will result in the Automatic Load Balancing incapable of balancing workloads. This condition must be inactive to ensure workloads are balanced through the Automatic Load Balancing feature.
+====
+
+== Minimum firmware level
+
+8.30

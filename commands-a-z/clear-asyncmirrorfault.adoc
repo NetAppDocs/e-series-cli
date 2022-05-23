@@ -1,0 +1,78 @@
+---
+permalink: commands-a-z/clear-asyncmirrorfault.html
+sidebar: sidebar
+keywords: clear, asynchronous mirroring, fault
+summary: "The clear asyncMirrorFault command clears an asynchronous mirroring 'sticky' fault from one or more asynchronous mirror groups and from one or more asynchronous mirror group member volumes."
+---
+= Clear asynchronous mirroring fault
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `clear asyncMirrorFault` command clears an asynchronous mirroring "sticky" fault from one or more asynchronous mirror groups and from one or more asynchronous mirror group member volumes.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+An asynchronous mirror group and its member volumes can encounter asynchronous mirroring "sticky" faults, which occur at a single point-in-time but do not impact the functionality of the mirrors. These type of faults must be reviewed, but might not require any changes to the configuration.
+
+An asynchronous mirror group and its member volumes might or can have more than one associated sticky fault. This command clears all of the faults associated with the asynchronous mirror group and its member volume. However, if an asynchronous mirror group has a fault and one of its member volumes has a fault, clearing the fault on the asynchronous mirror group does not clear the fault on its member volume.
+
+== Syntax
+[subs=+macros]
+----
+clear asyncMirrorFault(all |
+asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]] |
+asyncMirrorGroups pass:quotes[[_"asyncMirrorGroupName1"
+... "asyncMirrorGroupNameN"_]] |
+volume pass:quotes[[_volumeName_]] |
+volumes pass:quotes[[_"volumeName1" ... "volumeNameN"_]])
+----
+
+== Parameter
+[options="header"]
+|===
+| Parameter| Description
+a|
+`all`
+a|
+Use this parameter if you want to clear all asynchronous mirroring faults from all asynchronous mirror groups and on all asynchronous mirror group member volumes.
+a|
+`asyncMirrorGroup`
+a|
+The name of the asynchronous mirror group from which you want to clear the asynchronous mirroring fault. Enclose the asynchronous mirror group name in square brackets ([ ]). If the asynchronous mirror group name contains special characters or consists only of numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
+a|
+`asyncMirrorGroups`
+a|
+The names of several asynchronous mirror groups from which you want to clear the asynchronous mirroring fault. Enter the names of the asynchronous mirror groups using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+a|
+`volume`
+a|
+The name of the specific member volume (in an asynchronous mirror group) from which you want to clear the asynchronous mirroring fault. Enclose the member volume name in square brackets ([ ]). If the volume name contains special characters or consists only of numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
+
+a|
+`volumes`
+a|
+The names of several member volumes (in an asynchronous mirror group) from which you want to clear the asynchronous mirroring fault. Enter the names of the member volumes using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+|===
+
+== Minimum firmware level
+
+7.84

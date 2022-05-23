@@ -1,0 +1,116 @@
+---
+permalink: get-started/cli-command-wrapper-syntax.html
+sidebar: sidebar
+keywords: cli, command, wrapper, syntax
+summary: "General syntax forms of the CLI command wrappers are listed in this section."
+---
+= CLI command wrapper syntax
+:icons: font
+:imagesdir: ./media/
+
+General syntax forms of the CLI command wrappers are listed in this section. The conventions used in the CLI command wrapper syntax are listed in the following table.
+
+[cols="2*",options="header"]
+|===
+| Convention| Definition
+a|
+`a \| b`
+a|
+Alternative ("a" or "b")
+a|
+`_italicized-words_`
+
+a|
+Needs user input to fulfill a parameter (a response to a variable)
+a|
+`+[ ... ]+` (square brackets)
+a|
+Zero or one occurrence (square brackets are also used as a delimiter for some command parameters)
+a|
+`+{ ... }+` (curly braces)
+a|
+Zero or more occurrences
+a|
+`(a \| b \| c)`
+a|
+Choose only one of the alternatives
+a|
+`a &\| b`
+a|
+And/or. This is used for https client mode, when you can use with one or both controller IP addresses. This way, if one controller is not responding, SMcli will use the alternative IP address. This also covers the case when both IP addresses are required, such as for firmware download.
+|===
+
+[NOTE]
+====
+To run all of the CLI commands you must have administrator privileges. Some CLI commands will run without administrator privileges. Many commands, however, will not run. If the CLI command does not run because you do not have correct privileges, the CLI returns an exit code of 12.
+====
+
+== Example in https client mode
+
+The following examples demonstrate the `https` client mode command line parameters described in xref:command-line-parameters.adoc[Command line parameters].
+
+----
+SMcli (Controller A host-name-or-IP-address&|
+Controller B host-name-or-IP-address)  -u username -p password -c "commands;" [-clientType (auto | https | symbol)]
+----
+
+[NOTE]
+====
+If you do not specify a `clientType`, but do include the `-u` option and the `username` variable, the system will use either `https` or `symbol` client mode, whichever is available.
+====
+
+== Examples in symbol client mode
+
+The following examples demonstrate the `symbol` client mode command line parameters described in xref:command-line-parameters.adoc[Command line parameters].
+
+----
+SMcli **-a** **email:** email-address [host-name-or-IP-address1 [host-name-or-IP-address2]] [**-n** storage-system-name | **-w** wwID | **-h** host-name] [**-I** information-to-include] [**-q** frequency] [**-S**]
+----
+
+[NOTE]
+====
+The `-a` command line option is not supported for the E2800 or E5700 storage array.
+====
+
+----
+SMcli **-x** **email:** email-address [host-name-or-IP-address1 [host-name-or-IP-address2]] [**-n** storage-system-name | **-w** wwID | **-h** host-name] [**-S**]
+----
+
+[NOTE]
+====
+The `-x` command line option is not supported for the E2800 or E5700 storage array.
+====
+
+----
+SMcli (**-a** | **-x**) **trap:** community, host-name-or-IP-address [host-name-or-IP-address1 [host-name-or-IP-address2]] [**-n** storage-system-name | **-w** wwID | **-h** host-name] [**-S**]
+----
+
+[NOTE]
+====
+The `-a` and `-x` command line options are not supported for the E2800 or E5700 storage array.
+====
+
+----
+SMcli **-d** [**-w**] [**-i**] [**-s**] [**-v**] [**-S**]
+----
+
+[NOTE]
+====
+The `-s` command line option is not supported for the E2800 or E5700 storage array.
+====
+
+----
+SMcli host-name-or-IP-address **-F** email-address [**-g** contactInfoFile] [**-S**]
+----
+
+----
+SMcli **-A** [host-name-or-IP-address [host-name-or-IP-address]] [**-S**]
+----
+
+----
+SMcli **-X **(**-n** storage-system-name | **-w** wwID | **-h** host-name)
+----
+
+----
+SMcli **-?**
+----

@@ -1,0 +1,47 @@
+---
+permalink: commands-a-z/set-storagearray-unnameddiscoverysession.html
+sidebar: sidebar
+keywords: set, storage, array, unnamed, discovery, session
+summary: "The set storageArray unnamedDiscoverySession command enables the storage array to participate in unnamed discovery sessions."
+---
+= Set storage array unnamed discovery session
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray unnamedDiscoverySession` command enables the storage array to participate in unnamed discovery sessions.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+set storageArray unnamedDiscoverySession=(TRUE | FALSE)
+----
+
+== Parameter
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`unnamedDiscoverySession`
+a|
+This parameter turns on or turns off unnamed discovery sessions. Set the parameter to `TRUE` to turn on unnamed discovery sessions. Set the parameter to `FALSE` to turn off unnamed discovery sessions.
+|===
+
+== Notes
+
+Discovery is the process where initiators determine the targets that are available. Discovery occurs at power-on/initialization and also if the bus topology changes, for example, if an extra device is added.
+
+An unnamed discovery session is a discovery session that is established without specifying a target ID in the login request. For unnamed discovery sessions, neither the target ID nor the target portal group ID are available to the targets.
+
+== Minimum firmware level
+
+7.10

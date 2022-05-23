@@ -1,0 +1,53 @@
+---
+permalink: commands-a-z/resume-asyncmirrorgroup.html
+sidebar: sidebar
+keywords: resume, asynchronous, mirror, group
+summary: "The resume asyncMirrorGroup command resumes data transfer between all mirrored pairs in an asynchronous mirror group."
+---
+= Resume asynchronous mirror group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `resume asyncMirrorGroup` command resumes data transfer between all mirrored pairs in an asynchronous mirror group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+Data written to the primary volumes while the asynchronous mirror group was suspended is written to the secondary volumes immediately. Periodic synchronization resumes if an automatic synchronization interval has been set.
+
+== Syntax
+[subs=+macros]
+----
+resume asyncMirrorGroup pass:quotes[[_"asyncMirrorGroupName"_]]
+[deleteRecoveryPointIfNecessary]
+----
+
+== Parameters
+[options="header"]
+|===
+| Parameter| Description
+a|
+`asyncMirrorGroup`
+a|
+The name of the asynchronous mirror group for which you want to start synchronization. Enclose the asynchronous mirror group name in double quotation marks (" ") inside square brackets ([ ]").
+
+a|
+`deleteRecoveryPointIfNecessary`
+a|
+The parameter to delete the recovery point if the recoverable synchronization data has exceeded time threshold for recovery. Recovery point age is measured from the time the data was frozen on the primary storage array.
+
+|===
+
+== Minimum firmware level
+
+7.84
+
+8.10 adds the `deleteRecoveryPointIfNecessary` parameter.

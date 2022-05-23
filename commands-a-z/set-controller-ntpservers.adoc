@@ -1,0 +1,111 @@
+---
+permalink: commands-a-z/set-controller-ntpservers.html
+sidebar: sidebar
+keywords: set, controller, ntp
+summary: "The set controller NTPServers command sets the NTP settings for the controller so the controller can automatically synchronize the clocks with an external host using SNTP (Simple Network Time Protocol)."
+---
+= Set controller NTP settings
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set controller NTPServers` command sets the NTP settings for the controller so the controller can automatically synchronize the clocks with an external host using SNTP (Simple Network Time Protocol).
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Context
+
+When this feature is enabled, the controller periodically queries the configured NTP server, and then uses the results to update its internal time-of-day clock. If only one controller has NTP enabled, the alternate controller periodically synchronizes its clock with the controller that has NTP enabled. If neither controller has NTP enabled, the controllers periodically synchronize their clocks with each other.
+
+[NOTE]
+====
+This command is controller-specific. It is not necessary to configure NTP on both controllers; however, doing so improves the array's ability to stay synchronized during hardware or communication failures.
+====
+
+[NOTE]
+====
+If you configure NTP using a fully qualified domain name, you must also configure DNS on those controller(s) for the operation to succeed.See xref:set-controller-dnsservers.adoc[Set controller DNS Settings] for more information.
+
+====
+
+== Syntax
+
+----
+
+set controller(a|b) NTPServers=(disabled|auto|(Address1 [keyIdentifier=integerLiteral() keyType=stringLiteral() passPhrase=stringLiteral()] [Address2 [keyIdentifier=integerLiteral() keyType=stringLiteral() passPhrase=stringLiteral()]]))
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+The controller for which you want to change the NTP settings. Valid controller identifiers are a or b.
+
+a|
+`NTPServers`
+a|
+This parameter configures the NTP servers for the controller.
+
+* Specify `disabled` to turn off NTP support.
+* Specify `auto` to use the NTP server addresses provided by a DHCP server.
++
+[NOTE]
+====
+This option should be used only if at least one management port on the controller is set to get interface parameters via DHCP, and at least one NTP server is configured on the DHCP server.
+====
+
+* Otherwise, specify a whitespace separated list of one or two NTP servers. The addresses may be a domain name, IPv4 address, or IPv6 address. If specifying more than one address, the address types do not need to match. If more than one address is specified, they will be used in the order they are specified (first is primary, second is backup).
+
+[NOTE]
+====
+Surround the NTP server name with quotes, as shown in the Examples section.
+====
+
+a|
+`Address`
+a|
+"DomainName"\|IPv4Address\|IPv6Address
+[NOTE]
+====
+If a domain name is specified, a DNS server must also be configured to allow the controller to resolve the server IP address.
+====
+
+a|
+`keyIdentifier` `keyType`
+
+`passPhrase`
+
+a|
+Optionally, these parameters provide the key credentials for enabling NTP authentication:
+
+* `key Identifier` is an integer from 0 to 65535.
+* `keyType` is one of the following: none, sha1, sha224, sha256, sha384 or sha512.
+* `passPhrase` is either a hex digit (0-9, with a-f allowed), which is exactly 40 digits long entered as a stringLiteral, or an alphanumeric character string up to 20 bytes long.
+
+|===
+
+== Examples
+
+----
+set controller[a] NTPServers=disabled;
+set controller[a] NTPServers=auto;
+set controller[a] NTPServers=("0.pool.ntp.org" keyIdentifier=3 keyType="sha1" passPhrase="SomePassword1" "1.us.pool.ntp.org" keyIdentifier=3 keyType="sha1" passPhrase=" SomePassword1");
+set controller[b] NTPServers=(192.168.1.105 keyIdentifier=3 keyType="sha1" passPhrase=" SomePassword1" "1.us.pool.ntp.org");
+set controller[b] NTPServers=(set controller[b] NTPServers=(2001:0db8:85a3:0000:0000:8a2e:0370:7334 keyIdentifier=3 keyType="sha1" passPhrase=" SomePassword1");
+----
+
+== Minimum firmware level
+
+8.25
+
+8.42 adds the key credential parameters for NTP authentication.

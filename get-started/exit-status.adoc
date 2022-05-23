@@ -1,0 +1,431 @@
+---
+permalink: get-started/exit-status.html
+sidebar: sidebar
+keywords: exit, status
+summary: "This table lists the exit statuses that might be returned and the meaning of each status."
+---
+= Exit status
+:icons: font
+:imagesdir: ./media/
+
+This table lists the exit statuses that might be returned and the meaning of each status.
+
+[cols="3*",options="header"]
+|===
+| Status Value| Error Name| Meaning
+a|
+0
+a|
+SUCCESSFUL
+a|
+The command terminated without an error.
+a|
+1
+a|
+INVALID_USAGE
+a|
+The command terminated with an error. Information about the error also appears.
+a|
+2
+a|
+SCRIPT_FILE_DOES_NOT_EXIST
+a|
+The script file does not exist.
+a|
+3
+a|
+ERROR_OPENING_OUTPUT_FILE
+a|
+An error occurred while opening an output file.
+a|
+4
+a|
+NO_STORAGE_ARRAY_AT_ADDRESS
+a|
+A storage array was not at the specified address.
+a|
+5
+a|
+ADDRESSES_SPECIFY_DIFFERENT_ARRAYS
+a|
+Addresses specify different storage arrays.
+a|
+6
+a|
+NO_SANAME_FOR_HOST_AGENT_CONNECT
+a|
+A storage array name does not exist for the host agent that is connected.
+a|
+7
+a|
+SANAME_NOT_AT_ADDRESS
+a|
+The storage array name was not at the specified address.
+a|
+8
+a|
+SANAME_NOT_UNIQUE
+a|
+The storage array name was not unique.
+a|
+9
+a|
+SANAME_NOT_IN_CONFIG_FILES
+a|
+The storage array name was not in the configuration file.
+a|
+10
+a|
+NO_MANAGEMENT_CLASS_FOR_SA
+a|
+A management class does not exist for the storage array.
+a|
+11
+a|
+NO_SA_IN_CONFIG_FILE_FOUND
+a|
+A storage array was not found in the configuration file.
+a|
+12
+a|
+INTERNAL_ERROR
+a|
+An internal error occurred. This exit status indicates that you do not have privileges for running a CLI command from the command line. You must have administrator privileges to run all of the CLI commands from a command line.
+
+a|
+13
+a|
+INVALID_SCRIPT_SYNTAX
+a|
+Invalid script syntax was found.
+a|
+14
+a|
+UNABLE_TO_COMMUNICATE
+a|
+The controller was unable to communicate with the storage array.
+a|
+15
+a|
+DUPLICATE_ARGUMENT
+a|
+A duplicate argument was entered.
+a|
+16
+a|
+EXECUTION_ERROR
+a|
+An execution error occurred.
+a|
+17
+a|
+NO_HOST_AT_ADDRESS
+a|
+A host was not at the specified address.
+a|
+18
+a|
+WWNAME_NOT_IN_CONFIG_FILES
+a|
+The WWID was not in the configuration file.
+a|
+19
+a|
+WWNAME_NOT_AT_ADDRESS
+a|
+The WWID was not at the address.
+a|
+20
+a|
+UNKNOWN_IP
+a|
+An unknown IP address was specified.
+a|
+21
+a|
+PM_CONFIG_FILE_CORRUPTED
+a|
+The Event Monitor configuration file was corrupted.
+a|
+22
+a|
+UNABLE_TO_COMMUNICATE_TO_PM
+a|
+The storage array was unable to communicate with the Event Monitor.
+a|
+23
+a|
+UNEXIST_ALERT
+a|
+The controller was unable to write alert settings.
+a|
+24
+a|
+WRONG_ORGANIZER_NODE
+a|
+The wrong organizer node was specified.
+a|
+25
+a|
+CMD_NOT_AVAILABLE
+a|
+The command was not available.
+a|
+26
+a|
+DEVICE_NOT_IN_CONFIG_FILE
+a|
+The device was not in the configuration file.
+a|
+27
+a|
+ERROR_UPDATING_CONFIG_FILE
+a|
+An error occurred while updating the configuration file.
+a|
+28
+a|
+UNKNOWN_HOST_ERROR
+a|
+An unknown host error occurred.
+a|
+29
+a|
+SENDER_CONTACT_FILE_NOT_FOUND
+a|
+The sender contact information file was not found.
+a|
+30
+a|
+READ_SENDER_CONTACT_FILE_FAILED
+a|
+The sender contact information file could not be read.
+a|
+31
+a|
+USERDATA_FILE_EXISTS
+a|
+The `userdata.txt` file exists.
+a|
+32
+a|
+BAD_EMAIL_INFORMATION_TO_INCLUDE
+a|
+An invalid `-I` value in the email alert notification was specified.
+a|
+33
+a|
+BAD_EMAIL_FREQUENCY
+a|
+An invalid `-f` value in the email alert notification was specified.
+a|
+34
+a|
+OPTION_REMOVED
+a|
+The `-r` option is not supported anymore.
+a|
+35
+a|
+UNKNOWN_ALERT_PRIORITY
+a|
+Invalid alert severity specified.
+a|
+36
+a|
+PASSWORD_REQUIRED
+a|
+The operation needs either the Administrator or Monitor password to be set.
+a|
+37
+a|
+INVALID_MONITOR_PASSWORD
+a|
+The operation cannot be completed because an invalid Monitor password was entered.
+a|
+38
+a|
+INVALID_ADMIN_PASSWORD
+a|
+The operation cannot be completed because an invalid Administrator password was entered.
+a|
+39
+a|
+EXCEEDED_MAX_CHARS_FOR_PASSWORD
+a|
+The password provided is exceeding the character limit.
+a|
+40
+a|
+INVALID_MONITOR_TOKEN
+a|
+The `-R` monitor is not supported for this array. Use a valid role and retry the operation.
+a|
+41
+a|
+ASUP_CONFIG_ERROR
+a|
+An error occurred while writing to or reading from the AutoSupport configuration file. Please retry this operation again.
+a|
+42
+a|
+MAIL_SERVER_UNKNOWN
+a|
+Host address or mail server address is incorrect.
+a|
+43
+a|
+ASUP_SMTP_REPLY_ADDRESS_REQUIRED
+a|
+No healthy ASUP enabled arrays detected while attempting ASUP configuration test.
+a|
+44
+a|
+NO_ASUP_ARRAYS_DETECTED
+a|
+Reply email request required if ASUP delivery type is SMTP.
+a|
+45
+a|
+ASUP_INVALID_MAIL_RELAY_SERVER
+a|
+Unable to validate ASUP mail relay server.
+a|
+46
+a|
+ASUP_INVALID_SENDER_EMAIL
+a|
+Sender email address you specified is not a valid format.
+a|
+47
+a|
+ASUP_INVALID_PAC_SCRIPT
+a|
+Proxy Auto-Configuration (PAC) script file is a not a valid URL.
+a|
+48
+a|
+ASUP_INVALID_PROXY_SERVER_HOST_ADDRESS
+a|
+The Host address specified cannot be found or is in an incorrect format.
+a|
+49
+a|
+ASUP_INVALID_PROXY_SERVER_PORT_NUMBER
+a|
+The port number you specified is an invalid format.
+a|
+50
+a|
+ASUP_INVALID_AUTHENTICATION_PARAMETER
+a|
+The username or password you specified is invalid.
+a|
+51
+a|
+ASUP_INVALID_DAILY_TIME_PARAMETER
+a|
+The daily time parameter specified is invalid.
+a|
+52
+a|
+ASUP_INVALID_DAY_OF_WEEK_PARAMETER
+a|
+The `-dayOfWeek` parameter(s) that have been entered are invalid.
+a|
+53
+a|
+ASUP_INVALID_WEEKLY_TIME_PARAMETER
+a|
+The weekly time parameter is not valid.
+a|
+54
+a|
+ASUP_INVALID_SCHEDULE_PARSING
+a|
+Unable to successfully parse the schedule information provided.
+a|
+55
+a|
+ASUP_INVALID_SA_SPECIFIED
+a|
+Invalid storage array specifier provided.
+a|
+56
+a|
+ASUP_INVALID_INPUT_ARCHIVE
+a|
+The input archive entered is invalid. The input archive parameter must be in the form of ``-inputArchive=<n>``where `-n` is an integer from 0 to 5.
+a|
+57
+a|
+ASUP_INVALID_OUTPUT_LOG
+a|
+A valid output log was not specified.
+a|
+58
+a|
+ASUP_TRANSMISSION_FILE_COPY_ERROR
+a|
+There was an error trying to copy the AutoSupport transmission log file. The transmission log either does not exist or there was an IO error trying to copy its data.
+a|
+59
+a|
+ASUP_DUPLICATE_NAMED_ARRAYS
+a|
+More than one storage array with the same name was found. Please retry the command using the world-wide-name parameter, `-w <WWID>`.
+a|
+60
+a|
+ASUP_NO_SPECIFIED_ARRAY_FOUND
+a|
+The specified storage array with the -n <storage-system-name> parameter is not present or is not supported for this command.
+a|
+61
+a|
+ASUP_NO_SPECIFIED_WWID_FOUND
+a|
+The specified storage array with the `-w <WWID>` parameter is not present or is not supported for this command.
+a|
+62
+a|
+ASUP_FILTERED_TRANSMISSION_LOG_ERROR
+a|
+There was an unknown error trying to obtain the filtered transmission log.
+a|
+63
+a|
+ASUP_TRANSMISSION_ARCHIVE_DOES_NOT_EXIST
+a|
+The AutoSupport input archive transmission log specified with the``-inputArchive=<n>`` parameter does not exist.
+a|
+64
+a|
+NO_VALID_REST_CLIENT_DISCOVERED
+a|
+Unable to communicate with the storage array via https.
+a|
+65
+a|
+INVALID_CLI_VERSION
+a|
+The client CLI version is not compatible with the CLI version running on the storage array.
+a|
+66
+a|
+INVALID_USERNAME_OR_PASSWORD
+a|
+The username or password entered is invalid.
+a|
+67
+a|
+UNTRUSTED_CONNECTION
+a|
+Unable to establish a secure connection to the storage array.
+a|
+68
+a|
+INVALID_PASSWORD_FILE
+a|
+The password file cannot be found or is not readable.
+|===

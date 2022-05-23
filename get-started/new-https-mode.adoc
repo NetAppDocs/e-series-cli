@@ -1,0 +1,139 @@
+---
+permalink: get-started/new-https-mode.html
+sidebar: sidebar
+keywords: new, smcli, https mode
+summary: "The new SMcli can operate in an https mode that offers additional security features."
+---
+= SMcli https mode
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The SMcli can operate in an `*https*` mode that offers additional security features.
+
+[NOTE]
+====
+If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to the latest version of SANtricity through the legacy CLI. Upgrades from SANtricity 11.52 to later versions can only be performed through the SMcli.
+====
+
+When you use the 11.42 version of the CLI, the script engine is created in one of the following modes:
+
+* `*https*` -- a REST-based script engine is created, with additional security features.
+* `*symbol*` -- a SYMbol-based script engine is created.
+
+New security features available in `*https*` client:
+
+* Certificate authentication using trusted certificates is required for advanced security. You can use the `-k` option to use a self-signed certificate and run commands in insecure mode.
+* You can use role-based access management, with different security permissions assigned to different roles. Use the `-u` option to run commands with a user name argument.
+* Password arguments previously available in `*symbol*` mode can also be used in `*https*` mode to specify a password for a particular user role. The `-p` option is used to specify the password on the command line, or the `-P` option can read in a password from a file or from `stdin`.
+
+There are several examples in this topic that help illustrate the new command line parameters:
+
+== Operations requiring a password, `https` client mode, trusted certificate is installed on the array
+
+In the following example, both the username and password options are provided, and a trusted certificate is installed on the array.
+
+----
+C:\Program Files\StorageManager\client>SMcli -n Array1 -u admin@local -p adminPassword -c "set storageArray cacheBlockSize=4;"
+
+Syntax check complete.
+
+Executing script...
+
+Script execution complete.
+
+SMcli completed successfully.
+----
+
+== Operations requiring a password, `https` client mode, no trusted certificate is installed on the array
+
+In the following example, both the user name and password options are provided, but no trusted certificate is installed on the array, and the `-k` option was not used. The example shows the output that is returned.
+
+----
+C:\Program Files\StorageManager\client>SMcli -n Array1 -u admin@local -p adminPassword -c "set storageArray cacheBlockSize=4;"
+
+Unable to establish a secure connection to the storage array as we were unable to confirm the connection is secure.
+Please configure the storage array to use a trusted security certificate. If the problem persists, contact Technical Support.
+
+SMcli failed.
+----
+
+== Operations requiring a password, `https` client mode, no trusted certificate installed, but using -k for self-signed certificate
+
+In the following example, like the preceding example, both username and password options are provided, but no trusted certificate is installed on the array. However, in this case the `-k` option was used in order to use a self-signed certificate.
+
+----
+C:\Program Files\StorageManager\client>SMcli -n Array1 -u admin@local -p adminPassword -c "set storageArray cacheBlockSize=4;" -k
+Performing syntax check...
+
+Syntax check complete.
+
+Executing script...
+
+Script execution complete.
+----
+
+In this example using the `*symbol*` client mode, only the password option is required for successful completion of the command.
+
+----
+C:\Program Files\StorageManager\client>SMcli -n Array1 -p adminPassword -c "set storageArray cacheBlockSize=4;"
+Performing syntax check...
+
+Syntax check complete.
+
+Executing script...
+
+Script execution complete.
+
+SMcli completed successfully.
+----
+
+== Read only operations, `symbol` client mode
+
+In this example in `*symbol*` client mode, neither username or password is provided. This only successfully completes for read-only operations.
+
+----
+C:\Program Files\StorageManager\client>SMcli -n Array1  -c "show allVolumes;"
+Performing syntax check...
+
+Syntax check complete.
+
+Executing script...
+
+STANDARD/THIN VOLUMES------------------------------
+
+   Number of volumes: 0
+Missing Volumes
+
+   Number of missing volumes: 0
+
+
+Script execution complete.
+
+SMcli completed successfully.
+----
+
+== Read only operations, http client mode
+
+In the following example, also using a read-only operation but in `*https*` client mode, both username and password are required, and provided, along with `-k` to accept a self-signed certificate. The `*https*` client mode requires a password even for read-only operations.
+
+----
+C:\Program Files\StorageManager\client>SMcli -n Array1 -u admin@local -p adminPassword -c "show allVolumes;" -k
+Performing syntax check...
+
+Syntax check complete.
+
+Executing script...
+
+THICK/THIN VOLUMES------------------------------
+
+   Number of volumes: 0
+Missing Volumes
+
+   Number of missing volumes: 0
+
+
+Script execution complete.
+
+SMcli completed successfully.
+----

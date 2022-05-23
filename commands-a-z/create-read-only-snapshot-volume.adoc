@@ -1,0 +1,90 @@
+---
+permalink: commands-a-z/create-read-only-snapshot-volume.html
+sidebar: sidebar
+keywords: create, read only, snapshot, volume
+summary: "The create snapVolume command creates a read-only snapshot volume for the snapshot images of a base volume. To change a read-only snapshot volume to a read/write volume, use the set snapVolume convertToReadWrite command."
+---
+= Create read-only snapshot volume
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create snapVolume` command creates a read-only snapshot volume for the snapshot images of a base volume. To change a read-only snapshot volume to a read/write volume, use the `set snapVolume convertToReadWrite` command.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+You cannot use this command for a snapshot image that is used in online volume copy.
+====
+
+== Syntax
+[subs=+macros]
+----
+create snapVolume userLabel=pass:quotes[_"snapVolumeName"_
+snapImageID="_snapCGID:imageID"_]
+readOnly
+----
+
+== Parameters
+[options="header"]
+|===
+| Parameter| Description
+a|
+`userLabel`
+a|
+The name that you want to give to a snapshot volume. Enclose the snapshot volume name in double quotation marks (" ").
+a|
+`snapImageID`
+a|
+The name of a snapshot image that you want to add to the new read-only snapshot volume. The name of a snapshot image is comprised of two parts:
+
+* The name of the snapshot group
+* An identifier for the snapshot image in the snapshot group
+
+The identifier for the snapshot image can be one of these:
+
+* An integer value that is the sequence number of the snapshot in the snapshot group.
+* `NEWEST` - Use this option when you want to show the latest snapshot image created in the snapshot group.
+* `OLDEST` - Use this option when you want to show the earliest snapshot image created in the snapshot group.
+
+Enclose the snapshot image name in double quotation marks (" ").
+
+a|
+`readOnly`
+a|
+This parameter sets the snapshot volume to read-only. This parameter is actually a Boolean; however, in the context of this command, the Boolean value is always `TRUE`.
+
+[NOTE]
+====
+With the `readOnly` parameter, snapshot volumes are not created.
+====
+
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+The identifier of a snapshot image has two parts separated by a colon (:):
+
+* The name of the snapshot group
+* The identifier of the snapshot image
+
+For example, if you want to create a read-only volume named engData1 using the most recent snapshot image in a snapshot group that has the name snapGroup1, you would use this command:
+
+----
+create snapVolume userLabel="engData1" snapImageID="snapGroup1:newest" readOnly;
+----
+
+== Minimum firmware level
+
+7.83

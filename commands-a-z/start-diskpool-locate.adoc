@@ -1,0 +1,46 @@
+---
+permalink: commands-a-z/start-diskpool-locate.html
+sidebar: sidebar
+keywords: start, disk pool, locate
+summary: "The start diskPool locate command identifies the drives that are logically grouped together to form the specified disk pool by blinking the indicator lights on the drives."
+---
+= Start disk pool locate
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start diskPool locate` command identifies the drives that are logically grouped together to form the specified disk pool by blinking the indicator lights on the drives.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+(Use the `stop diskPool locate` command to turn off the indicator lights on the drives.)
+
+== Syntax
+[subs=+macros]
+----
+start diskPool pass:quotes[[_diskPoolName_]] locate
+----
+
+== Parameter
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`diskPool`
+a|
+The name of the disk pool for which you want to locate. Enclose the disk pool name in square brackets ([ ]). If the disk pool name has special characters or numbers, you must enclose the disk pool name in double quotation marks (" ") inside square brackets.
+
+|===
+
+== Minimum firmware level
+
+7.83

@@ -1,0 +1,95 @@
+---
+permalink: commands-a-z/show-snapvolume.html
+sidebar: sidebar
+keywords: show, snapshot, volumes
+summary: "The show snapVolume command returns information about one or more snapshot volumes."
+---
+= Show snapshot volumes
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show snapVolume` command returns information about one or more snapshot volumes.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+[subs=+macros]
+----
+show (allSnapVolumes | snapVolume pass:quotes[["_snapVolumeName_"]] |
+snapVolumes pass:quotes[["_snapVolumeName1_" ... "_snapVolumeNamen_"]])
+[summary]
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`allSnapVolumes`
+a|
+The parameter to return information about all of the snapshot volumes in the storage array.
+a|
+`snapVolume`
+a|
+The name of a snapshot volume about which you want to retrieve information. Enclose the snapshot volume name in double quotation marks (" ") inside of square brackets ([ ]).
+
+a|
+`snapVolumes`
+a|
+The names of several snapshot volumes for which you want to retrieve information. Enter the names of the snapshot volumes using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+a|
+`summary`
+a|
+The parameter to return a concise list of information about the snapshot volumes.
+|===
+
+== Notes
+
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+
+This command returns snapshot volume information as shown in this example:
+
+----
+SNAPSHOT VOLUME (SNAPSHOT-IMAGE BASED) SUMMARY
+----
+
+----
+SUMMARY
+
+ Total Snapshot Volumes: 1
+   Most Recent Snapshot Volume: Day month date hh:mm:ss yyyy
+   Status: 1 Optimal, 0 Non Optimal
+
+   Name        Type       Status     Capacity    Associated Base Volume
+   2_SV_0001   Standard   Optimal    3.000 GB    2
+----
+
+----
+   Snapshot Volume Timestamp   Snapshot Image Timestamp    Mode
+   1/23/12 6:44:31 PM IST      1/23/12 6:27:36 PM IST      Read Write
+----
+
+----
+   Total Repository Capacity   Available Repository Capacity
+   1.199 GB                    0.125 MB (0%)
+----
+
+The size of your monitor determines how the information wraps and will affect how the information appears.
+
+== Minimum firmware level
+
+7.83

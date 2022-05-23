@@ -1,0 +1,40 @@
+---
+permalink: commands-a-z/enable-controller-datatransfer.html
+sidebar: sidebar
+keywords: enable, controller, datatransfer, command, revive, quiesced, running, diagnostics, role, syntax, parameter, firmware level
+summary: "The enable controller dataTransfer command revives a controller that has become quiesced while running diagnostics."
+---
+= Enable controller data transfer
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `enable controller dataTransfer` command revives a controller that has become quiesced while running diagnostics.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+
+----
+enable controller [(a|b)] dataTransfer
+----
+
+== Parameter
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+The controller that you want to revive. Valid controller identifiers are `a` or `b`, where `a` is the controller in slot A, and `b` is the controller in slot B. Enclose the controller identifier in square brackets ([ ]). If you do not specify a controller, the storage management software returns a syntax error.
+|===
+
+== Minimum firmware level
+
+6.10

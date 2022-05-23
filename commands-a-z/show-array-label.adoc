@@ -1,0 +1,39 @@
+---
+permalink: commands-a-z/show-array-label.html
+sidebar: sidebar
+keywords: show, array, label
+summary: "The Show array label command returns information about whether a storage array label has been defined or all existing storage array labels."
+---
+= Show array label
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `Show array label` command returns information about whether a storage array label has been defined or all existing storage array labels.
+
+== Supported Arrays
+
+This command applies to the EF600 storage arrays.
+
+== Syntax
+
+[subs=+macros]
+----
+pass:quotes[show storageArrayLabel label _userDefinedString_]
+show storageArrayLabel all
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`userDefinedString`
+a|
+Allows you to specify a user-defined label for the storage array.
+|===
+
+== Minimum firmware level
+
+8.60

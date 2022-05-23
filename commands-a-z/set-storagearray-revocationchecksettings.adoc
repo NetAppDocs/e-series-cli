@@ -1,0 +1,61 @@
+---
+permalink: commands-a-z/set-storagearray-revocationchecksettings.html
+sidebar: sidebar
+keywords: set, certificate, revocation, check, set
+summary: "The set storageArray revocationCheckSettings command allows you to enable or disable revocation checking, and configure an Online Certificate Status Protocol (OCSP) server."
+---
+= Set certificate revocation check settings
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set storageArray revocationCheckSettings` command allows you to enable or disable revocation checking, and configure an Online Certificate Status Protocol (OCSP) server.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+The OCSP server checks for any certificates that the Certificate Authority (CA) has revoked before their scheduled expiration date. You might want to enable revocation checking in cases where the CA improperly issued a certificate or if a private key is compromised.
+
+[NOTE]
+====
+Make sure a DNS server is configured on both controllers, which allows you to use a fully qualified domain name for the OCSP server.
+====
+
+After you enable revocation checking, the storage array denies an attempted connection to a server with a revoked certificate.
+
+== Syntax
+
+----
+set storageArray revocationCheckSettings ([revocationCheckEnable = boolean] &| [ocspResponderUrl=stringLiteral])
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`revocationCheckEnable`
+a|
+Set to `true` to enable certificate revocation checking.
+a|
+`ocspResponderUrl`
+a|
+The URL of the OCSP responder server to be used for the certificate revocation check.
+[NOTE]
+====
+Specifying an OCSP responder address overrides the OCSP address found in the certificate file.
+====
+
+|===
+
+== Minimum firmware level
+
+8.42

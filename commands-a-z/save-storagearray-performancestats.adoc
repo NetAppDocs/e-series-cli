@@ -1,0 +1,51 @@
+---
+permalink: commands-a-z/save-storagearray-performancestats.html
+sidebar: sidebar
+keywords: save, storage, array, performance, statistics
+summary: "The save storageArray performanceStats command saves the performance statistics to a file."
+---
+= Save storage array performance statistics
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray performanceStats` command saves the performance statistics to a file.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+Before you use this command, run the `set session performanceMonitorInterval` command and the `set session performanceMonitorIterations` command to specify how often statistics are collected.
+
+== Syntax
+
+[subs=+macros]
+----
+save storageArray performanceStats file=pass:quotes["_filename_"]
+----
+
+== Parameter
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name to which you want to save the performance statistics. Enclose the file name in double quotation marks (" "). For example:
+
+`file="C:\Program Files\CLI\logs\sastat.csv"`
+
+The default name of the file that contains the performance statistics is `performanceStatistics.csv`. You can use any file name, but you must use the `.csv` extension.
+
+|===
+
+== Minimum firmware level
+
+6.10

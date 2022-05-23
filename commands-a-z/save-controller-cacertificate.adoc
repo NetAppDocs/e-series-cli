@@ -1,0 +1,67 @@
+---
+permalink: commands-a-z/save-controller-cacertificate.html
+sidebar: sidebar
+keywords: retrieve, installed, ca, certificates
+summary: "The save controller caCertificate command retrieves the installed CA certificates from the specified controller. Included in the retrieved certificates are any requested CA certificates from the controller’s web server."
+---
+= Retrieve installed CA certificates
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save controller caCertificate` command retrieves the installed CA certificates from the specified controller. Included in the retrieved certificates are any requested CA certificates from the controller's web server.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Syntax
+
+[subs=+macros]
+----
+
+save controller[(a|b)] caCertificate [all | aliases=pass:quotes[("_alias1_" ... "_aliasN_")]]
+ path="fileLocation"
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+Allows you to specify the controller on which you want to retrieve the root/intermediate certificates. Valid controller identifiers are a or b, where a is the controller in slot A, and b is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
+a|
+`all`
+a|
+Allows you to specify the retrieval of all certificates that were imported to resolve the signed certificate chain. User-installed certificates include key management certificates.
+a|
+`aliases`
+a|
+Allows you to specify which user installed root/intermediate certificate to retrieve by alias. Enclose all the aliases in parentheses. If you enter more than one alias, separate them with a space.
+a|
+`path`
+a|
+Allows you to specify the local location to save the controllers`' root/intermediate certificates.
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "save controller[a] caCertificate all path="C:\";"
+
+SMcli -n Array1 -c "save controller[b] caCertificate aliases=("myAlias" "anotherAlias") path="C:\";"
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

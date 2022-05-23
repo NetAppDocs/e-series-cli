@@ -1,0 +1,132 @@
+---
+permalink: commands-category/replication-commands.html
+sidebar: sidebar
+keywords: replication, commands, consistency group, command, repository volume,
+summary: "Replication commands"
+---
+= Replication commands
+:icons: font
+:imagesdir: ./media/
+
+
+== Consistency group commands
+
+link:../commands-a-z/set-consistencygroup-addcgmembervolume.html[Add member to consistency group]
+
+link:../commands-a-z/create-consistencygroup.html[Create consistency group]
+
+link:../commands-a-z/create-cgsnapimage-consistencygroup.html[Create consistency group snapshot image]
+
+link:../commands-a-z/create-cgsnapvolume.html[Create consistency group snapshot volume]
+
+link:../commands-a-z/create-mapping-cgsnapvolume.html[Create consistency group snapshot volume mapping]
+
+link:../commands-a-z/delete-consistencygroup.html[Delete consistency group]
+
+link:../commands-a-z/delete-cgsnapimage-consistencygroup.html[Delete consistency group snapshot image]
+
+link:../commands-a-z/delete-sgsnapvolume.html[Delete consistency group snapshot volume]
+
+link:../commands-a-z/remove-member-volume-from-consistency-group.html[Remove member volume from consistency group]
+
+link:../commands-a-z/resume-cgsnapvolume.html[Resume consistency group snapshot volume]
+
+link:../commands-a-z/set-consistency-group-attributes.html[Set consistency group attributes]
+
+link:../commands-a-z/set-cgsnapvolume.html[Set consistency group snapshot volume]
+
+link:../commands-a-z/show-consistencygroup.html[Show consistency group]
+
+link:../commands-a-z/show-cgsnapimage.html[Show consistency group snapshot image]
+
+link:../commands-a-z/start-cgsnapimage-rollback.html[Start consistency group snapshot rollback]
+
+link:../commands-a-z/stop-cgsnapimage-rollback.html[Stop consistency group snapshot rollback]
+
+link:../commands-a-z/stop-cgsnapvolume.html[Stop consistency group snapshot volume]
+
+link:../commands-a-z/stop-consistencygroup-pendingsnapimagecreation.html[Stop pending snapshot images on consistency group]
+
+== Repository volume analysis commands
+
+link:../commands-a-z/check-repositoryconsistency.html[Check repository consistency]
+
+== Snapshot group commands
+
+link:../commands-a-z/create-snapgroup.html[Create snapshot group]
+
+link:../commands-a-z/delete-snapvolume.html[Delete snapshot volume]
+
+link:../commands-a-z/revive-snapgroup.html[Revive snapshot group]
+
+link:../commands-a-z/set-snapgroup.html[Set snapshot group attributes]
+
+link:../commands-a-z/set-snapgroup-mediascanenabled.html[Set snapshot group media scan]
+
+link:../commands-a-z/set-snapgroup-increase-decreaserepositorycapacity.html[Set snapshot group repository volume capacity]
+
+link:../commands-a-z/set-snapgroup-enableschedule.html[Set snapshot group schedule]
+
+link:../commands-a-z/set-volume-ssdcacheenabled.html[Set SSD cache for a volume]
+
+link:../commands-a-z/show-snapgroup.html[Show snapshot group]
+
+link:../commands-a-z/stop-pendingsnapimagecreation.html[Stop snapshot group pending snapshot images]
+
+== Snapshot image commands
+
+link:../commands-a-z/create-snapimage.html[Create snapshot image]
+
+link:../commands-a-z/delete-snapimage.html[Delete snapshot image]
+
+link:../commands-a-z/resume-snapimage-rollback.html[Resume snapshot image rollback]
+
+link:../commands-a-z/show-snapimage.html[Show snapshot image]
+
+link:../commands-a-z/start-snapimage-rollback.html[Start snapshot image rollback]
+
+link:../commands-a-z/stop-snapimage-rollback.html[Stop snapshot image rollback]
+
+== Snapshot volume commands
+
+link:../commands-a-z/create-read-only-snapshot-volume.html[Create read-only snapshot volume]
+
+link:../commands-a-z/create-snapshot-volume.html[Create snapshot volume]
+
+link:../commands-a-z/delete-snapgroup.html[Delete snapshot group]
+
+link:../commands-a-z/set-snapvolume.html[Rename snapshot volume]
+
+link:../commands-a-z/resume-snapvolume.html[Resume snapshot volume]
+
+link:../commands-a-z/revive-snapvolume.html[Revive snapshot volume]
+
+link:../commands-a-z/set-snapvolume-converttoreadwrite.html[Set read-only snapshot volume to read/write volume]
+
+link:../commands-a-z/set-snapvolume-mediascanenabled.html[Set snapshot volume media scan]
+
+link:../commands-a-z/set-snapvolume-increase-decreaserepositorycapacity.html[Set snapshot volume repository volume capacity]
+
+link:../commands-a-z/set-volume-ssdcacheenabled.html[Set SSD cache for a volume]
+
+link:../commands-a-z/show-snapvolume.html[Show snapshot volumes]
+
+link:../commands-a-z/stop-snapvolume.html[Stop snapshot volume]
+
+== Volume copy commands
+
+link:../commands-a-z/create-volumecopy.html[Create volume copy]
+
+link:../commands-a-z/recopy-volumecopy-target.html[Recopy volume copy]
+
+link:../commands-a-z/remove-volumecopy-target.html[Remove volume copy]
+
+link:../commands-a-z/set-volumecopy-target.html[Set volume copy]
+
+link:../commands-a-z/show-volumecopy.html[Show volume copy]
+
+link:../commands-a-z/show-volumecopy-sourcecandidates.html[Show volume copy source candidates]
+
+link:../commands-a-z/show-volumecopy-source-targetcandidates.html[Show volume copy target candidates]
+
+link:../commands-a-z/stop-volumecopy-target-source.html[Stop volume copy]

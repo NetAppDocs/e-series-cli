@@ -1,0 +1,67 @@
+---
+permalink: commands-a-z/set-initiator.html
+sidebar: sidebar
+keywords: set, initiator
+summary: "The set initiator command updates the initiator object."
+---
+= Set initiator
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set initiator` command updates the initiator object.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+This command replaces the deprecated xref:set-iscsiinitiator.adoc[Set iSCSI initiator] command.
+====
+
+[NOTE]
+====
+This command is applicable only to iSCSI, iSER, NVMe over RoCE, NVMe over InfiniBand, and NVMe over Fibre Channel.
+====
+
+== Syntax
+
+----
+
+set initiator (["initiatorName"] | <"initiatorQualifiedName">) ([userLabel="newInitiatorName"] |
+[host="newHostName"] | [chapSecret="newSecurityKey"])
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`initiator`
+a|
+Allows you to specify the initiator identifier for which you want to set properties. Enclose the name in double quotation marks ("` "`). You also must enclose the name in square brackets ([ ]) if the value is a user label or angle brackets (< >) if the value is a qualified name (e.g., iqn or nqn).
+a|
+`userLabel`
+a|
+Allows you to enter a new user label for the initiator object. Enclose the new user label in double quotation marks (" ").
+a|
+`host`
+a|
+Allows you to enter a new host to which the host port is connected. Enclose the host name in double quotation marks (" ").
+a|
+`chapSecret`
+a|
+Allows you to enter a new security key that you want to use to authenticate a peer connection. Enclose the security key in double quotation marks (" "). This parameter is only applicable to `iSCSI` and `iSER` host interface types.
+|===
+
+== Minimum firmware level
+
+8.41

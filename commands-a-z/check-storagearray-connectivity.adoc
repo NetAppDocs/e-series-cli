@@ -1,0 +1,69 @@
+---
+permalink: commands-a-z/check-storagearray-connectivity.html
+sidebar: sidebar
+keywords: check, storage array, connectivity
+summary: "The check storageArray connectivity command verifies that the local storage array and the remote storage array have a communication path and displays the connection details between the local and remote storage array."
+---
+= Check storage array connectivity
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `check storageArray connectivity` command verifies that the local storage array and the remote storage array have a communication path and displays the connection details between the local and remote storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, with some restrictions. If you are running the command on the E2700 or E5600 array, there are no restrictions.
+
+[NOTE]
+====
+If you are running the command on the E2800 or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+====
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+Before creating an asynchronous mirror group, you should check whether the local storage array and the remote storage array can communicate with each other. When you execute this command, the system queries for the remote storage array on all eligible host ports to determine what ports are connected to the remote storage array. The result of the test is a list of all ports on the local storage array along with a list of the remote storage array port addresses accessible through that port.
+
+[NOTE]
+====
+Connectivity is tested using all possible channels, and if it is a dual controller configuration, connectivity is checked from each controller. It might take up to 20 minutes to check connectivity between two storage arrays.
+====
+
+== Syntax
+[subs=+macros]
+----
+check storageArray connectivity
+(remoteStorageArrayName=pass:quotes[_"storageArrayName"_]|
+remoteStorageArrayWwid=<pass:quotes[_wwID_]>)
+----
+
+== Parameters
+[options="header"]
+|===
+| Parameter| Description
+a|
+`remoteStorageArrayName`
+a|
+The name for the remote storage array for which you are checking connectivity. Enclose the storage array name in double quotation marks (" ").
+
+a|
+`remoteStorageArrayWwid`
+a|
+The World Wide Identifier (WWID) of the storage array for which you are checking connectivity. You can use the WWID instead of the storage array name to identify the storage array. Enclose the WWID in angle brackets (< >).
+|===
+
+== Notes
+
+Before a mirror can be established between two storage arrays, they must be connected through a Fibre Channel connection or an iSCSI connection.
+
+Fibre Channel asynchronous mirroring must be activated on both storage arrays before they can communicate with each other for mirroring or connectivity checking.
+
+If the local storage array supports iSCSI, connectivity over iSCSI is checked. If the local storage array supports Fibre Channel and mirroring over Fibre Channel has been activated, connectivity over Fibre Channel is checked. If the local storage array does not support iSCSI or Fibre Channel, an error message is displayed and the operation aborted.
+
+== Minimum firmware level
+
+7.84

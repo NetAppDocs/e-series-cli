@@ -1,0 +1,96 @@
+---
+permalink: commands-a-z/save-storagearray-keymanagementclientcsr.html
+sidebar: sidebar
+keywords: generate, key, management, certificate, sign, request, csr
+summary: "The save storageArray keyManagementClientCSR command requests a generated CSR for the storage array that you can save to a file."
+---
+= Generate Key Management Certificate Signing Request (CSR)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save storageArray keyManagementClientCSR` command requests a generated CSR for the storage array that you can save to a file.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+[NOTE]
+====
+This command applies only to external key management.
+====
+
+== Syntax
+
+[subs=+macros]
+----
+
+save storageArray keyManagementClientCSR commonName=pass:quotes["_common_name_"]
+organization=pass:quotes["_organization_"]
+locality=pass:quotes["_locality_"]
+country=pass:quotes["_country_"]
+file=pass:quotes["_file_"]
+[organizationalUnit=pass:quotes["_organizational unit_"]]
+[stateProvince=pass:quotes["_state_province_"]]
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`commonName`
+a|
+The value entered for this parameter must match one of the user names defined on the KMIP server.
+a|
+`organization`
+a|
+Allows you to specify the organization's full legal name that the storage array belongs to. Do not abbreviate it and include any suffixes such as Inc, Corp, or LLC.
+a|
+`locality`
+a|
+Allows you to specify the city or locality where the storage array is located,
+a|
+`country`
+a|
+Allows you to specify your country's two-digit ISO (International Organization for Standardization) 3166-1 alpha-2 code, such as US.
+a|
+`file`
+a|
+Allows you to specify the file and file location where you will save the controller's signed certificate file.
+a|
+`organizationalUnit`
+a|
+Allows you to specify the organization's division that handles the certificate.
+a|
+`stateProvince`
+a|
+Allows you to specify the state or region where the storage array is located. This should not be abbreviated.
+|===
+
+== Example
+
+[subs=+macros]
+----
+
+SMcli -n Array1 -c "save storageArray keyManagementClientCSR commonName=pass:quotes["_192.0.2.1_"]
+organization=pass:quotes["_Widgets Are Us_, _Inc_."]
+locality=pass:quotes["_sedgwick_"]
+country=pass:quotes["_US_"]
+file=pass:quotes["_latestCertificate_"]
+organizationalUnit=pass:quotes["_Products Unit_"]
+stateProvince=pass:quotes["_Kansas_"];"
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

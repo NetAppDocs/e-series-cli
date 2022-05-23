@@ -1,0 +1,91 @@
+---
+permalink: commands-a-z/delete-volume.html
+sidebar: sidebar
+keywords: delete, volume, command, one, standard, volume, supported, array, role
+summary: "The delete volume command deletes one or more standard volumes."
+---
+= Delete volume
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete volume` command deletes one or more standard volumes.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+*Possible damage to the storage array configuration* -- All of the data in the volume is lost as soon as you run this command.
+====
+
+[NOTE]
+====
+When a volume exceeds a given size (currently 128 TB) the delete is being performed in background and the freed space may not be immediately available.
+====
+
+== Syntax
+
+----
+delete (allVolumes) |
+volume [volumeName] |
+volumes [volumeName1 ... volumeNameN]
+[removeVolumeGroup=(TRUE | FALSE)]
+[force=(TRUE | FALSE)]
+----
+
+== Parameters
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`allVolumes`
+a|
+This parameter deletes all of the volumes in a storage array.
+a|
+`volume`
+a|
+The name of a volume that you want to delete. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or consists only of numbers, you must enclose the volume name in double quotation marks (" ") inside square brackets.
+
+a|
+`volumes`
+a|
+The names of several volumes that you want to delete. Enter the names of the volumes using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Separate each of the names with a space.
+
+If the volume names have special characters or consist only of numbers, enter the names using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+a|
+`removeVolumeGroup`
+a|
+Deleting the last volume in a volume group does not delete the volume group. You can have a standalone volume group (minus any volumes). To remove the standalone volume group, set this parameter to `TRUE`. To keep standalone volume groups intact, set this parameter to `FALSE`.
+a|
+`force`
+a|
+Use this parameter to force the immediate deletion of a volume even if the controllers are performing other operations. To immediately force the deletion of a volume, set this parameter to `TRUE`. To wait until the controllers have finished performing other operations, do not use this parameter or set this parameter to `FALSE`.
+|===
+
+== Notes
+
+When you use the `allVolumes` parameter, this command deletes volumes until all of the volumes are removed or until an error is encountered. If an error is encountered, this command does not try to delete the remaining volumes. Deleting volumes from different volume groups is possible. All of the volume groups that become empty are deleted if you set the `removeVolumeGroup` parameter to `TRUE`.
+
+If you want to delete an entire volume group, you can also use the `delete volumeGroup` command.
+
+== Minimum firmware level
+
+6.10
+
+7.10 adds the `removeVolumeGroup` parameter.

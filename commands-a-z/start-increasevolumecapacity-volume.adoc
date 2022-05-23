@@ -1,0 +1,78 @@
+---
+permalink: commands-a-z/start-increasevolumecapacity-volume.html
+sidebar: sidebar
+keywords: increase, capacity, volume, disk pool, volume, group
+summary: "The start increaseVolumeCapacity volume command increases the capacity of either a standard volume or a repository volume in a disk pool or volume group."
+---
+= Increase capacity of volume in disk pool or volume group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start increaseVolumeCapacity volume` command increases the capacity of either a standard volume or a repository volume in a disk pool or volume group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+In this command, a standard volume is also called a thick volume.
+
+[NOTE]
+====
+You cannot use this command to increase the capacity of a thin volume.
+====
+
+== Syntax
+[subs=+macros]
+----
+pass:quotes[start increaseVolumeCapacity volume="_volumeName_"
+incrementalCapacity=_volumeCapacity_]
+[addDrives=pass:quotes[(_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1_] ... pass:quotes[_trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_)]]
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`volume`
+a|
+The name of the volume in a disk pool or volume group for which you want to increase capacity. Enclose the volume name in double quotation marks (" ").
+a|
+`incrementalCapacity`
+a|
+The setting to increase the storage size (capacity) for the volume. Size is defined in units of `bytes`, `KB`, `MB`, `GB`, or `TB`. The default value is `bytes`.
+a|
+`addDrives`
+a|
+The setting to add new drives to the volume. For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+[NOTE]
+====
+The `addDrives` parameter can only be used to increase the capacity of a volume group. The parameter cannot be used to increase the capacity of a disk pool.
+====
+
+|===
+
+== Notes
+
+In some cases a `drive` parameter might appear as valid input for the command syntax. However, you cannot use the `drive` parameter with this command.
+
+Setting the `incrementalCapacity` parameter, starts a long-running operation that you cannot stop. Long-running operations are performed in the background and do not prevent you from running other commands. To show the progress of long-running operations, use the `show volume actionProgress` command.
+
+The `addDrives` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+
+== Minimum firmware level
+
+7.83

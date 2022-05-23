@@ -1,0 +1,40 @@
+---
+permalink: commands-a-z/add-certificate-from-file.html
+sidebar: sidebar
+keywords: add certificate file, supported arrays, syntax, parameters, minimum firmware level
+summary: "The Add certificate from file command allows you to take a certificate from the file and add it to the CLI package’s trust store. The certificate added will only be used by the CLI package."
+---
+= Add certificate from file
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `Add certificate from file` command allows you to take a certificate from the file and add it to the CLI package's trust store. The certificate added will only be used by the CLI package.
+
+== Supported Arrays
+
+This command applies to the EF600 and EF300 storage arrays.
+
+== Syntax
+[subs=+macros]
+----
+pass:quotes[trust localCertificate file _filename_ alias user _specified alias_]
+----
+
+== Parameters
+[options="header"]
+|===
+| Parameter| Description
+a|
+`filename`
+a|
+Allows you to specify the filename that contains the certificate.
+a|
+`user specified alias`
+a|
+Allows you to specify a certificate through the user-defined alias.
+|===
+
+== Minimum firmware level
+
+8.60

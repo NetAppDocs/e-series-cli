@@ -1,0 +1,63 @@
+---
+permalink: commands-a-z/show-storagearray-lunmappings.html
+sidebar: sidebar
+keywords: show, storage, array, lun, map
+summary: "The show storageArray lunMappings command returns information from the storage array profile about the logical unit number (LUN) or namespace ID (NSID) mappings in the storage array."
+---
+= Show storage array LUN mappings
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show storageArray lunMappings` command returns information from the storage array profile about the logical unit number (LUN) or namespace ID (NSID) mappings in the storage array.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Context
+
+Default group LUN or NSID mappings are always shown. If you run this command without any parameters, this command returns all of the LUN or NSID mappings.
+
+== Syntax
+
+[subs=+macros]
+----
+show storageArray lunMappings (host pass:quotes[["_hostName_"]] |
+hostgroup pass:quotes[["_hostGroupName_"]])
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`host`
+a|
+The name of a specific host for which you want to see the LUN or NSID mappings. Enclose the host name in double quotation marks (" ") inside of square brackets ([ ]).
+a|
+`hostGroup`
+a|
+The name of a specific host group for which you want to see the LUN or NSID mappings. Enclose the host group name in double quotation marks (" ") inside of square brackets ([ ]).
+|===
+
+== Notes
+
+This command returns host topology information similar to this example.
+
+----
+MAPPINGS (Storage Partitioning - Enabled (0 of 16 used))
+VOLUME NAME  LUN  CONTROLLER  ACCESSIBLE BY  VOLUME STATUS
+Access Volume 7   A,B         Default Group  Optimal
+21           21   B           Default Group  Optimal
+22           22   B           Default Group  Optimal
+----
+
+== Minimum firmware level
+
+6.10

@@ -1,0 +1,64 @@
+---
+permalink: commands-a-z/validate-storagearray-securitykey.html
+sidebar: sidebar
+keywords: validate, storage array, security key
+summary: "The validate storageArray securityKey command validates the security key for a storage array that has security-capable drives to make sure that the back-up security key file is not corrupt."
+---
+= Validate storage array security key
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `validate storageArray securityKey` command validates the security key for a storage array that has security-capable drives to make sure that the back-up security key file is not corrupt.
+
+== Supported Arrays
+
+If external key management is enabled, then this command applies only to the E2800 and E5700 arrays. If internal key management is enabled, then the command applies to any individual storage array, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+Security key validation uses the pass phrase used to generate the file to decrypt the key and match it with the value maintained in controller memory (for internal keys) or on the external server (for external keys).
+
+[NOTE]
+====
+This command applies to both internal and external key management.
+====
+
+== Syntax
+[subs=+macros]
+----
+
+pass:quotes[validate storageArray securityKey file="_fileName_" passPhrase="_passPhraseString_"]
+----
+
+== Parameters
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`file`
+a|
+The file path and the file name that has the security key. Enclose file path and the file name in double quotation marks (" "). For example:
+
+----
+file="C:\Program Files\CLI\sup\drivesecurity.slk"
+----
+
+[NOTE]
+====
+The file name must have an extension of `.slk`.
+====
+
+a|
+`passPhrase`
+a|
+A character string that encrypts the security key so that you can store the security key in an external file. Enclose the pass phrase in double quotation marks (" ").
+|===
+
+== Minimum firmware level
+
+7.70

@@ -1,0 +1,109 @@
+---
+permalink: commands-a-z/save-controller-arraymanagementcsr.html
+sidebar: sidebar
+keywords: generate, web server, certificate, sign, request, csr
+summary: "The save controller arrayManagementCSR command generates a Certificate Signing Request (CSR) for the controller."
+---
+= Generate web server Certificate Signing Request (CSR)
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save controller arrayManagementCSR` command generates a Certificate Signing Request (CSR) for the controller.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+The CSR must be signed by a Certificate Authority (CA). The resulting signed certificate is installed on the controller's web server so that browsers can automatically trust the controller's web server when trying to manage the array. Perform this action for each controller.
+
+== Syntax
+
+[subs=+macros]
+----
+
+save controller [(a|b)] arrayManagementCSR
+     commonName=pass:quotes["_ipOrDnsName_"]
+     [alternateIPAddresses=pass:quotes[(_ipvX1_..._ipvXN_)]]
+     [alternateDnsNames=pass:quotes[("_dnsName1_"..."_dnsNameN_")]]
+     organization=pass:quotes["_organizationName_"]
+     [organizationalUnit=pass:quotes["_organizationalUnitName_"]]
+     locality=pass:quotes["_cityOrLocality_"]
+     [stateProvince=pass:quotes["_stateOrRegion_"]]
+     country=pass:quotes["_string_"]
+     file=pass:quotes["_filename_"]
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`controller`
+a|
+Allows you to specify the controller on which you want to create the CSR for. Valid controller identifiers are a or b, where a is the controller in slot A, and b is the controller in slot B. Enclose the controller identifier in square brackets ([ ]).
+a|
+`commonName`
+a|
+Allows you to specify the IP address or DNS name of the controller. This must match exactly what will be typed in the browser to access System Manager (do not include http:// nor https://) or there will be a name mismatch error.
+a|
+`alternateIPAddresses`
+a|
+Allows you to specify additional IP addresses or aliases for the controller. Enclose all the IP addresses in parentheses. If you enter more than one IP address, separate them with a space.
+a|
+`alternateDnsNames`
+a|
+Allows you to specify additional DNS names for the controller. Enclose all the DNS names in parentheses. If you enter more than one name, separate them with a space.
+a|
+`organization`
+a|
+Allows you to specify the organization's full legal name that the storage array belongs to. Do not abbreviate it and include any suffixes such as Inc, Corp, or LLC.
+a|
+`organizationalUnit`
+a|
+Allows the user to specify the organization's division that handles the certificate.
+a|
+`locality`
+a|
+Allows you to specify the city or locality where the storage array is located.
+a|
+`stateProvince`
+a|
+Allows you to specify the state or region where the storage array is located. This should not be abbreviated.
+a|
+`country`
+a|
+Allows you to specify your country's two-digit ISO (International Organization for Standardization) code, such as US.
+a|
+`file`
+a|
+Allows you to specify the file for which to save the controller's CSR file.
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "save controller [a] arrayManagementCSR
+   commonName="ictd0702s05c01-a.ict.englab.xyz.com"
+   alternateIPAddresses=(10.113.174.190 10.113.174.191)
+   alternateDnsNames=("ictd0702s05c01-b.ict.englab.xyz.com")
+   organization="Company"
+   locality="Wichita"
+   stateProvince="Kansas"
+   country="US"
+   file="C:\storage_array_csr.csr";"
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

@@ -1,0 +1,51 @@
+---
+permalink: commands-a-z/delete-hostgroup.html
+sidebar: sidebar
+keywords: delete, hostgroup, command, support, role
+summary: "The delete hostGroup command deletes a host group."
+---
+= Delete host group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete hostGroup` command deletes a host group.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+*Possible damage to the storage array configuration* -- This command deletes all of the host definitions in the host group.
+====
+
+== Syntax
+[subs=+macros]
+----
+pass:quotes[delete hostGroup [_hostGroupName_]]
+----
+
+== Parameter
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`hostGroup`
+a|
+The name of the host group that you want to delete. Enclose the host group name in square brackets ([ ]). If the host group name contains special characters or consists only of numbers, you must enclose the host group name in double quotation marks (" ") inside square brackets.
+|===
+
+== Notes
+
+A host group is an optional topological element that is a collection of hosts that share access to the same volumes. The host group is a logical entity.
+
+== Minimum firmware level
+
+5.20

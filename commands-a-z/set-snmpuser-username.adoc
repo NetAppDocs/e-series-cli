@@ -1,0 +1,86 @@
+---
+permalink: commands-a-z/set-snmpuser-username.html
+sidebar: sidebar
+keywords: update, snmpv3, usm, user
+summary: "The set snmpUser userName command updates an existing Simple Network Management Protocol (SNMP) USM user. The USM user to be changed is identified using the user name if there is only one user with the user name. The user is identified using the user name and engine ID if there is more than one user with the same user name and different engine ID."
+---
+= Update SNMPv3 USM user
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `set snmpUser userName` command updates an existing Simple Network Management Protocol (SNMP) USM user. The USM user to be changed is identified using the user name if there is only one user with the user name. The user is identified using the user name and engine ID if there is more than one user with the same user name and different engine ID.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Syntax
+
+----
+set snmpUser userName="snmpUserName" [engineId=(local | engineId)]
+[newUserName="newSnmpUserName"] [newEngineId=(local | engineId)]
+[authProtocol=(none | sha | sha256 | sha512) authPassword="authPassword"]
+[privProtocol=(none | aes128) privPassword="privPassword"]
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`userName`
+a|
+The name of the SNMP USM user that you want to update. Enclose the SNMP USM user name in double quotation marks (" ")
+a|
+`engineId`
+a|
+The engine ID of the SNMP USM user that you want to update. The engine ID is required if there is more than one USM user with the same user name. The value may be `local` to specify the local SNMP agent is the authoritative agent or a hexidecimal digit string to specify a remote SNMP agent engine ID.
+a|
+`newSnmpUserName`
+a|
+The new name that you want to give to the SNMP user. Enclose the SNMP user name in double quotation marks (" "). The default value is the previously defined user name for the user.
+a|
+`newEngineId`
+a|
+The new engineID to use as the identifier of the authoritative SNMP engine ID for the user. The value may be "[.code]local" to specify the local SNMP agent to be the authoritative agent or a hexadecimal digit string to specify a remote SNMP agent engine ID. The default value is the previously defined engine ID for the user.
+a|
+`authProtocol`
+a|
+The authentication protocol (HMAC) to be used for the user. The value may be one of the following:
+
+* `none` - No authentication of SNMP messages (default)
+* `sha` - SHA-1 authentication
+* `sha256` - SHA-256 authentication
+* `sha512` - SHA-512 authentication
+
+The default value is the previously defined authentication protocol for the user.
+
+a|
+`authPassword`
+a|
+The password to be used for authentication for the user. Must be specified if the authentication protocol is `sha`, `sha256` or `sha512`
+a|
+`privProtocol`
+a|
+The privacy protocol (encryption) to be used for the user. The value may be one of the following:
+
+* `none` - No encryption of SNMP messages (default)
+* `aes128` - AES-18 encryption
+
+The default value is the previously defined privacy protocol for the user.
+
+a|
+`privPassword`
+a|
+The password to be used for privacy/encryption for the user. Must be specified if the privacy protocol is "[.code]`aes128`".
+|===
+
+== Minimum firmware level
+
+8.72

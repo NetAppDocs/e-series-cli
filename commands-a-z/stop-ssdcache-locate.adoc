@@ -1,0 +1,34 @@
+---
+permalink: commands-a-z/stop-ssdcache-locate.html
+sidebar: sidebar
+keywords: stop, ssd, cache, locate
+summary: "The stop ssdCache locate command turns off the indicator lights on the Solid State Disks (SSDs) that were turned on by the start ssdCache locate command."
+---
+= Stop SSD cache locate
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `stop ssdCache locate` command turns off the indicator lights on the Solid State Disks (SSDs) that were turned on by the `start ssdCache locate` command.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Support Admin role.
+
+== Syntax
+
+----
+stop ssdCache locate
+----
+
+== Parameters
+
+None.
+
+== Minimum firmware level
+
+7.84

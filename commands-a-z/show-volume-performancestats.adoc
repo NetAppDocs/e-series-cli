@@ -1,0 +1,107 @@
+---
+permalink: commands-a-z/show-volume-performancestats.html
+sidebar: sidebar
+keywords: show, volume, performance, statistics
+summary: "The show volume performanceStats command returns information about volume performance."
+---
+= Show volume performance statistics
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show volume performanceStats` command returns information about volume performance.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+
+== Context
+
+For each volume in the storage array, this command returns the following information:
+
+* Storage Arrays
+* Total IOs/s
+* Read %
+* Primary Read Cache Hit %
+* Primary Write Cache Hit %
+* SSD Cache Hit %
+* Current MBs/s
+* Maximum MBs/s
+* Current IOs/s
+* Maximum IOs/s
+* Minimum IOs/s
+* Average IOs/s
+* Minimum MBs/s
+* Average MBs/s
+* Current IO Latency
+* Maximum IO Latency
+* Minimum IO Latency
+* Average IO Latency
+
+== Syntax
+[subs=+macros]
+----
+show (allVolumes | volume pass:quotes[["_volumeName_"]]
+volumes pass:quotes[["_volumeName1_" ... "_volumeNameN_"]]) performanceStats
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`allVolumes`
+a|
+The parameter to return performance statistics about all of the volumes in the storage array.
+a|
+`volume`
+a|
+The name of a volume for which you want to retrieve information. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
+
+a|
+`volumes`
+a|
+The names of several volumes for which you want to retrieve information. Enter the names of the volumes using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Separate each of the names with a space.
+
+If the volume names have special characters or numbers, enter the names using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+|===
+
+== Notes
+
+Before you run the `show volume performanceStat` command, run the `set session performanceMonitorInterval` command and the `set session performanceMonitorIterations` command to define how often you collect the statistics.
+
+The `show volume performanceStat` command returns volume performance statistics as shown in this example:
+
+----
+Performance Monitor Statistics for Storage Array: Tyler -
+Date/Time: 11/6/12 10:00: 34 AM - Polling interval in seconds: 5
+
+
+"Storage Arrays","Total IOs","Read %","Primary Read Cache Hit %",
+"Primary Write Cache Hit %","SSD Read Cache Hit %","Current MBs/sec",
+"Maximum MBs/sec","Current IOs/sec","Maximum IOs/sec","Minimum IOs/sec",
+"Average IOs/sec","Minimum MBs/sec","Average MBs/sec","Current IO Latency",
+"Maximum IO Latency","Minimum IO Latency","Average IO Latency"
+
+"Capture Iteration: 1","","","","","","","","","","","","","","","","",""
+"Date/Time: 11/6/12 10:00:34 AM","","","","","","","","","","","","","","",
+   "","","""Volume Unnamed","0.0","","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0",
+   "0.0","0.0","0.0","0.0","0.0","0.0","0.0"
+----
+
+== Minimum firmware level
+
+6.10

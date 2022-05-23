@@ -1,0 +1,301 @@
+---
+permalink: commands-a-z/create-volumegroup.html
+sidebar: sidebar
+keywords: create, volume, group
+summary: "The create volumeGroup command creates either a free-capacity volume group or a volume group with one volume when you enter a set of unassigned drives."
+---
+= Create volume group
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `create volumeGroup` command creates either a free-capacity volume group or a volume group with one volume when you enter a set of unassigned drives.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+[subs=+macros]
+----
+create volumeGroup
+drives=pass:quotes[(_trayID1_,]pass:quotes[[_drawerID1,_]]pass:quotes[_slotID1 ... trayIDn_],pass:quotes[[_drawerIDn,_]pass:quotes[_slotIDn)_]
+raidLevel=(0 | 1 | 3 | 5 | 6)
+userLabel=pass:quotes[_"volumeGroupName"_]
+[driveMediaType=(HDD | SSD | unknown | allMedia)]
+[driveType=(SAS | NVMe4K)]
+[trayLossProtect=(TRUE | FALSE)]
+[drawerLossProtect=(TRUE | FALSE)]
+[securityType=(none | capable | enabled )]
+[dataAssurance=(none | enabled)]
+[resourceProvisioningCapable=(TRUE | FALSE)]
+----
+
+== Parameters
+[options="header"]
+|===
+| Parameter| Description
+a|
+`drives`
+a|
+The drives that you want to assign to the volume group that you want to create. For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+a|
+`raidLevel`
+a|
+The RAID level of the volume group that contains the volume. Valid values are `0`, `1`, `3`, `5`, or `6`.
+a|
+`userLabel`
+a|
+The name that you want to give the new volume group. Enclose the volume group name in double quotation marks (" ").
+a|
+`driveMediaType`
+a|
+The type of drive media that you want to use for the volume group
+
+You must use this parameter when you have more than one type of drive media in your storage array.
+
+These drive media are valid:
+
+* `HDD` -- Use this option when you have hard drives in the drive tray.
+* `SSD` -- Use this option when you have solid state drives in the drive tray.
+* `unknown` -- Use this option if you are not sure what types of drive media are in the drive tray.
+* `allMedia` -- Use this option when you want to use all types of drive media that are in the drive tray.
+
+a|
+`driveType`
+a|
+The type of drive that you want to use in the volume group. You cannot mix drive types.
+
+You must use this parameter when you have more than one type of drive in your storage array.
+
+These drive types are valid:
+
+* `SAS`
+* `NVMe4K`
+
+If you do not specify a drive type, the code does not verify that the specified drives are of this drive type.
+
+a|
+`trayLossProtect`
+a|
+The setting to enforce Tray Loss Protection when you create the volume group. To enforce Tray Loss Protection, set this parameter to `TRUE`. The default value is `FALSE`.
+a|
+`drawerLossProtect`
+a|
+The setting to enforce Drawer Loss Protection when you create the volume group. To enforce Drawer Loss Protection, set this parameter to `TRUE`. The default value is `FALSE`.
+a|
+`securityType`
+a|
+The setting to specify the security level when creating the volume groups and all associated volumes. These settings are valid:
+
+* `none` -- The volume group and volumes are not secure.
+* `capable` -- The volume group and volumes are capable of having security set, but security has not been enabled.
+* `enabled` -- The volume group and volumes have security enabled.
+
+a|
+`resourceProvisioningCapable`
+a|
+The setting to specify if resource provisioning capabilities are enabled. To disable resource provisioning, set this parameter to `FALSE`. The default value is `TRUE`.
+
+|===
+
+== Drives and volume groups
+
+A volume group is a set of drives that are logically grouped together by the controllers in the storage array. The number of drives in a volume group is a limitation of the RAID level and the controller firmware. When you create a volume group, follow these guidelines:
+
+* Beginning with firmware version 7.10, you can create an empty volume group so that you can reserve the capacity for later use.
+* You cannot mix drive types within a single volume group.
+* You cannot mix HDD and SSD drives within a single volume group.
+* The maximum number of drives in a volume group depends on these conditions:
+ ** The type of controller
+ ** The RAID level
+* RAID levels include: 0, 1, 3, 5, and 6 .
+ ** A volume group with RAID level 3, RAID level 5, or RAID level 6 cannot have more than 30 drives.
+ ** A volume group with RAID level 6 must have a minimum of five drives.
+ ** If a volume group with RAID level 1 has four or more drives, the storage management software automatically converts the volume group to a RAID level 10, which is RAID level 1 + RAID level 0.
+* To enable tray/drawer loss protection, refer to the following tables for additional criteria:
+
+[options="header"]
+|===
+| Level| Criteria for Tray Loss Protection| Minimum number of trays required
+a|
+`Disk Pool`
+a|
+The disk pool contains no more than two drives in a single tray.
+a|
+6
+a|
+`RAID 6`
+a|
+The volume group contains no more than two drives in a single tray.
+a|
+3
+a|
+`RAID 3` or `RAID 5`
+a|
+Each drive in the volume group is located in a separate tray.
+a|
+3
+a|
+`RAID 1`
+a|
+Each drive in a RAID 1 pair must be located in a separate tray.
+a|
+2
+a|
+`RAID 0`
+a|
+Cannot achieve Tray Loss Protection.
+a|
+Not applicable
+|===
+[options="header"]
+|===
+| Level| Criteria for drawer loss protection| Minimum number of drawers required
+a|
+`Disk Pool`
+a|
+The pool includes drives from all five drawers and there are an equal number of drives in each drawer. A 60-drive tray can achieve Drawer Loss Protection when the disk pool contains 15, 20, 25, 30, 35, 40, 45, 50, 55, or 60 drives.
+a|
+5
+a|
+`RAID 6`
+a|
+The volume group contains no more than two drives in a single drawer.
+a|
+3
+a|
+`RAID 3` or `RAID 5`
+a|
+Each drive in the volume group is located in a separate drawer.
+a|
+3
+a|
+`RAID 1`
+a|
+Each drive in a mirrored pair must be located in a separate drawer.
+a|
+2
+a|
+`RAID 0`
+a|
+Cannot achieve Drawer Loss Protection.
+a|
+Not applicable
+|===
+
+== Hot spares
+
+With volume groups, a valuable strategy to protect data is to assign available drives in the storage array as hot spare drives. A hot spare is a drive, containing no data, that acts as a standby in the storage array in case a drive fails in a RAID 1, RAID 3, RAID 5, or RAID 6 volume group. The hot spare adds another level of redundancy to the storage array.
+
+Generally, hot spare drives must have capacities that are equal to or greater than the used capacity on the drives that they are protecting. Hot spare drives must be of the same media type, the same interface type, and the same capacity as the drives that they are protecting.
+
+If a drive fails in the storage array, the hot spare is normally substituted automatically for the failed drive without requiring your intervention. If a hot spare is available when a drive fails, the controller uses redundancy data parity to reconstruct the data onto the hot spare. Data evacuation support also allows data to be copied to a hot spare before the software marks the drive "failed."
+
+After the failed drive is physically replaced, you can use either of the following options to restore the data:
+
+When you have replaced the failed drive, the data from the hot spare is copied back to the replacement drive. This action is called copyback.
+
+If you designate the hot spare drive as a permanent member of a volume group, the copyback operation is not needed.
+
+The availability of tray loss protection and drawer loss protection for a volume group depends on the location of the drives that comprise the volume group. Tray loss protection and drawer loss protection might be lost because of a failed drive and the location of the hot spare drive. To make sure that tray loss protection and drawer loss protection are not affected, you must replace a failed drive to initiate the copyback process.
+
+The storage array automatically selects Data Assurance (DA)-capable drives for hot spare coverage of DA-enabled volumes.
+
+Make sure you have DA-capable drives in the storage array for hot spare coverage of DA-enabled volumes. For more information about DA-capable drives, refer to Data Assurance feature.
+
+Secure-capable (FIPS and FDE) drives can be used as a hot spare for both secure-capable and non-secure-capable drives. Non-secure-capable drives can provide coverage for other non-secure-capable drives, and for secure-capable drives if the volume group does not have the security enabled. A FIPS volume group can only use a FIPS drive as a hot spare; however, you can use a FIPS hot spare for non-secure-capable, secure-capable, and secure-enabled volume groups.
+
+If you do not have a hot spare, you can still replace a failed drive while the storage array is operating. If the drive is part of a RAID 1, RAID 3, RAID 5, or RAID 6 volume group, the controller uses redundancy data parity to automatically reconstruct the data onto the replacement drive. This action is called reconstruction.
+
+== Segment size
+
+The size of a segment determines how many data blocks that the controller writes on a single drive in a volume before writing data on the next drive. Each data block stores 512 bytes of data. A data block is the smallest unit of storage. The size of a segment determines how many data blocks that it contains. For example, an 8-KB segment holds 16 data blocks. A 64-KB segment holds 128 data blocks.
+
+When you enter a value for the segment size, the value is checked against the supported values that are provided by the controller at run time. If the value that you entered is not valid, the controller returns a list of valid values. Using a single drive for a single request leaves other drives available to simultaneously service other requests. If the volume is in an environment where a single user is transferring large units of data (such as multimedia), performance is maximized when a single data transfer request is serviced with a single data stripe. (A data stripe is the segment size that is multiplied by the number of drives in the volume group that are used for data transfers.) In this case, multiple drives are used for the same request, but each drive is accessed only once.
+
+For optimal performance in a multiuser database or file system storage environment, set your segment size to minimize the number of drives that are required to satisfy a data transfer request.
+
+== Usage Hint
+
+[NOTE]
+====
+You do not need to enter a value for the `cacheReadPrefetch` parameter or the `segmentSize` parameter. If you do not enter a value, the controller firmware uses the `usageHint` parameter with `fileSystem` as the default value. Entering a value for the `usageHint` parameter and a value for the `cacheReadPrefetch` parameter or a value for the `segmentSize` parameter does not cause an error. The value that you enter for the `cacheReadPrefetch` parameter or the `segmentSize` parameter takes priority over the value for the `usageHint` parameter. The segment size and cache read prefetch settings for various usage hints are shown in the following table:
+====
+[options="header"]
+|===
+| Usage hint| Segment size setting| Dynamic cache read prefetch setting
+a|
+File system
+a|
+128 KB
+a|
+Enabled
+a|
+Database
+a|
+128 KB
+a|
+Enabled
+a|
+Multimedia
+a|
+256 KB
+a|
+Enabled
+|===
+
+== Cache read prefetch
+
+Cache read prefetch lets the controller copy additional data blocks into cache while the controller reads and copies data blocks that are requested by the host from the drive into cache. This action increases the chance that a future request for data can be fulfilled from cache. Cache read prefetch is important for multimedia applications that use sequential data transfers. Valid values for the `cacheReadPrefetch` parameter are `TRUE` or `FALSE`. The default is `TRUE`.
+
+== Security type
+
+Use the `securityType` parameter to specify the security settings for the storage array.
+
+Before you can set the `securityType` parameter to `enabled`, you must create a storage array security key. Use the `create storageArray securityKey` command to create a storage array security key. These commands are related to the security key:
+
+* `create storageArray securityKey`
+* `export storageArray securityKey`
+* `import storageArray securityKey`
+* `set storageArray securityKey`
+* `enable volumeGroup [volumeGroupName] security`
+* `enable diskPool [diskPoolName] security`
+
+== Secure drives
+
+Secure-capable drives can be either Full Disk Encryption (FDE) drives or Federal Information Processing Standard (FIPS) drives. Use the `secureDrives` parameter to specify the type of secure drives to use. The values you can use are `fips` and `fde`.
+
+== Data assurance management
+
+The Data Assurance (DA) feature increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur when data is moved between the hosts and the drives. When this feature is enabled, the storage array appends error-checking codes (also known as cyclic redundancy checks or CRCs) to each block of data in the volume. After a data block is moved, the storage array uses these CRC codes to determine if any errors occurred during transmission. Potentially corrupted data is neither written to disk nor returned to the host.
+
+If you want to use the DA feature, start with a pool or volume group that includes only drives that support DA. Then, create DA-capable volumes. Finally, map these DA-capable volumes to the host using an I/O interface that is capable of DA. I/O interfaces that are capable of DA include Fibre Channel, SAS, and iSER over InfiniBand (iSCSI Extensions for RDMA/IB). DA is not supported by iSCSI over Ethernet, or by the SRP over InfiniBand.
+
+[NOTE]
+====
+When all the drives are DA-capable, you can set the `dataAssurance` parameter to `enabled` and then use DA with certain operations. For example, you can create a volume group that includes DA-capable drives, and then create a volume within that volume group that is DA-enabled. Other operations that use a DA-enabled volume have options to support the DA feature.
+====
+
+If the `dataAssurance` parameter is set to `enabled`, only data assurance capable drives will be considered for volume candidates; otherwise, both data assurance capable and non-data assurance capable drives will be considered. If only data assurance drives are available the new volume group will be created using the enabled data assurance drives.
+
+== Minimum firmware level
+
+7.10
+
+7.50 adds the `securityType` parameter.
+
+7.60 adds the `drawerID` user input, the `driveMediaType` parameter, and the `drawerLossProtect` parameter.
+
+7.75 adds the `dataAssurance` parameter.
+
+8.63 adds the `resourceProvisioningCapable` parameter.

@@ -1,0 +1,51 @@
+---
+permalink: commands-a-z/stop-cgsnapvolume.html
+sidebar: sidebar
+keywords: stop, consistency, group, snapshot, volume
+summary: "The stop cgSnapVolume command stops the copy-on-write operation for creating a consistency group snapshot volume."
+---
+= Stop consistency group snapshot volume
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `stop cgSnapVolume` command stops the copy-on-write operation for creating a consistency group snapshot volume.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+To restart the copy-on-write operation use the `resume cgSnapVolume` command.
+
+[NOTE]
+====
+This command does not delete a consistency group snapshot volume. To delete a consistency group snapshot volume use the `delete cgSnapVolume` command.
+====
+
+== Syntax
+[subs=+macros]
+----
+pass:quotes[stop cgSnapVolume [_snapVolumeName_]]
+----
+
+== Parameter
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`cgSnapVolume`
+a|
+The name of the consistency group snapshot volume that you want to stop creating. Enclose the volume name in square brackets ([ ]). If the volume name has special characters or numbers, you must enclose the name in double quotation marks (" ") inside square brackets.
+
+|===
+
+== Minimum firmware level
+
+7.83

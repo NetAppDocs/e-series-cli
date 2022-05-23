@@ -1,0 +1,100 @@
+---
+permalink: commands-a-z/show-snapimage.html
+sidebar: sidebar
+keywords: show, snapshot, image
+summary: "The show snapImage command returns information about the snapshot images that a user had previously created."
+---
+= Show snapshot image
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show snapImage` command returns information about the snapshot images that a user had previously created.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax for showing a specific snapshot image
+
+[subs=+macros]
+----
+show (allSnapImages | snapImage pass:quotes[["_snapImageName_"]] |
+snapImages pass:quotes[["_snapImageName1_" ... "_snapImageNamen_"]])
+[summary]
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`allSnapImages`
+a|
+The parameter to return information about all of the snapshot images in the storage array.
+
+a|
+`snapImage`
+a|
+The name of a snapshot image for which you want to retrieve information. The name of a snapshot image is comprised of two parts:
+
+* The name of the snapshot group
+* An identifier for the snapshot image in the snapshot group
+
+The identifier for the snapshot image can be one of these:
+
+* An integer value that is the sequence number of the snapshot in the snapshot group.
+* `NEWEST` -- Use this option when you want to show the latest snapshot image created in the snapshot group.
+* `OLDEST` -- Use this option when you want to show the earliest snapshot image created in the snapshot group.
+
+Enclose the snapshot image name in double quotation marks (" ") inside square brackets ([ ]).
+
+a|
+`snapImages`
+a|
+The names of several snapshot images for which you want to retrieve information. Enter the names of the snapshot images using these rules:
+
+* Enclose all of the names in square brackets ([ ]).
+* Enclose each of the names in double quotation marks (" ").
+* Separate each of the names with a space.
+
+a|
+`summary`
+a|
+This parameter returns a concise list of information about the snapshot images.
+
+|===
+
+== Notes
+
+The name of a snapshot image has two parts separated by a colon (:):
+
+* The identifier of the snapshot group
+* The identifier of the snapshot image
+
+For example, if you want to show snapshot image 12345 in a snapshot group that has the name snapGroup1, you would use this command:
+
+----
+show snapImage ["snapGroup1:12345"];
+----
+
+To show the most recent snapshot image in a snapshot group that has the name snapGroup1, you would use this command:
+
+----
+show snapImage ["snapGroup1:newest"];
+----
+
+To show the snapshot images in several snapshot consistency groups that has the names snapGroup1, snapGroup2, and snapGroup3, you would use this command:
+
+----
+show snapImages ["snapGroup1:12345 snapGroup2:newest snapGroup3:oldest"];
+----
+
+== Minimum firmware level
+
+7.83

@@ -1,0 +1,23 @@
+section: commands-category
+title: Commands by category
+entries:
+  - title: Administrators commands
+    url: /commands-category/administrator-commands.html
+  - title: Alert configuration commands
+    url: /commands-category/alert-configuration-commands.html
+  - title: Array configuration commands
+    url: /commands-category/array-configuration-commands.html
+  - title: Auto support commands
+    url: /commands-category/auto-support-commands.html
+  - title: Mirroring commands
+    url: /commands-category/mirroring-commands.html
+  - title: Performance tuning commands
+    url: /commands-category/performance-tuning-commands.html
+  - title: Replication commands
+    url: /commands-category/replication-commands.html
+  - title: Security commands
+    url: /commands-category/security-commands.html
+  - title: Storage monitor personnel commands
+    url: /commands-category/storage-monitor-personal-commands.html
+  - title: Volume configuration commands
+    url: /commands-category/volume-configuration-commands.html

@@ -1,0 +1,45 @@
+---
+permalink: commands-a-z/start-volumegroup-resourceprovisioning.html
+sidebar: sidebar
+keywords: start, volume, group, resource, provision
+summary: "The start volumeGroup resourceProvisioning command enables resource provisioning on a given volume group and starts a resource provisioning enablement asynchronous operation on each volume in the volume group. Resource provisioning requires that all the drives in the volume group support NVMe’s DULBE feature."
+---
+= Start Volume Group Resource Provisioning
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `start volumeGroup resourceProvisioning` command enables resource provisioning on a given volume group and starts a resource provisioning enablement asynchronous operation on each volume in the volume group. Resource provisioning requires that all the drives in the volume group support NVMe's DULBE feature.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the EF600 and EF300 arrays; as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an EF600 and EF300 storage array, you must have the Storage Admin or Support Admin roles.
+
+== Context
+
+To disable resource provisioning on a volume group, use the full provisioning command with the option to disable resource provisioning. A volume group will be resource provisioned when created if all the drives are DULBE capable and the storage array's `resourceProvisionedVolumes` setting is `true`.
+
+== Syntax
+[subs=+macros]
+----
+pass:quotes[start volumeGroup[_volumeGroupName_]] resourceProvisioning
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`volumeGroupName`
+a|
+The volume group you want to enable the resource provisioning feature. Enclose the volume group name in square brackets ([ ]).
+|===
+
+== Minimum firmware level
+
+11.73

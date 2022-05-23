@@ -1,0 +1,56 @@
+---
+permalink: commands-a-z/delete-storagearray-keymanagementcertificate.html
+sidebar: sidebar
+keywords: delete, storage, array, key, management, certificate, command, remove, install, external
+summary: "The delete storageArray keyManagementCertificate command removes the installed external key management certificate from the storage array."
+---
+= Remove installed external key management certificate
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `delete storageArray keyManagementCertificate` command removes the installed external key management certificate from the storage array.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+[NOTE]
+====
+This command applies only to external key management.
+====
+
+== Syntax
+[subs=+macros]
+----
+
+pass:quotes[delete storageArray keyManagementCertificate certificateType=_certificate_type_]
+----
+
+== Parameters
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`certificateType`
+a|
+Allows you to specify the certificate type to delete. Valid choices are: `client` or `server`.
+|===
+
+== Example
+
+----
+ SMcli -n Array1 -c "delete storageArray keyManagementCertificate certificateType="client";"
+
+   SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

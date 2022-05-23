@@ -1,0 +1,61 @@
+---
+permalink: commands-a-z/download-controller-trustedcertificate.html
+sidebar: sidebar
+keywords: download, controller, trusted, certificate, command, install, web, servers, validate, array, roles, context
+summary: "The download controller trustedCertificate command installs the trusted CA certificates on the controllers’ web servers to validate the LDAP server signed certificate."
+---
+= Install trusted CA certificates
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `download controller trustedCertificate` command installs the trusted CA certificates on the controllers' web servers to validate the LDAP server signed certificate.
+
+== Supported Arrays
+
+This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+
+== Context
+
+Perform this action only if the CA who signed the certificates is not well known or commonly trusted. The command installs the CA certificate on both controllers.
+
+== Syntax
+[subs=+macros]
+----
+
+pass:quotes[download storageArray trustedCertificate [alias=_string_]] pass:quotes[file="_filename_"]
+----
+
+== Parameters
+[options="header"]
+|===
+| Parameter| Description
+a|
+`alias`
+a|
+Allows you to specify an alias to represent the trusted CA certificate. This alias is used to look up information about the trusted CA certificates or to delete them. An alias is associated to a trusted certificate and must be unique.
+a|
+`file`
+a|
+Allows you to specify the file that contains the trusted CA certificate. The acceptable extensions are .pem, .cer, .crt, and .der.
+|===
+
+== Examples
+
+----
+
+SMcli -n Array1 -c "download storageArray trustedCertificate alias="myAlias"
+   file="C:\rootCA1.cer";"
+SMcli -n Array1 -c "download storageArray trustedCertificate
+   file="C:\rootCA1.cer";"
+
+SMcli completed successfully.
+----
+
+== Minimum firmware level
+
+8.40

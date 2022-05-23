@@ -1,0 +1,70 @@
+---
+permalink: commands-a-z/resume-cgsnapvolume.html
+sidebar: sidebar
+keywords: resume, consistency, group, snapshot, volume
+summary: "The resume cgSnapVolume command restarts a copy-on-write operation for creating a consistency group snapshot volume that you stopped using the stop cgSnapVolume command."
+---
+= Resume consistency group snapshot volume
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `resume cgSnapVolume` command restarts a copy-on-write operation for creating a consistency group snapshot volume that you stopped using the `stop cgSnapVolume` command.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+[subs=+macros]
+----
+resume cgSnapVolume pass:quotes[[_"snapVolumeName"_]]
+cgSnapImage=pass:quotes[_"snapImageName"_]
+----
+
+== Parameters
+[options="header"]
+|===
+| Parameter| Description
+a|
+`cgSnapVolume`
+a|
+The name of the consistency group snapshot volume that you want to resume. Enclose the name of the consistency group snapshot volume in double quotation marks (" ") inside square brackets ([ ]).
+a|
+`cgSnapImage`
+a|
+The name of the snapshot image in a consistency group that you are restarting. The name of a snapshot image is comprised of two parts:
+
+* The name of the consistency group
+* An identifier for the snapshot image in the consistency group
+
+The identifier for the snapshot image can be one of these:
+
+* An integer value that is the sequence number of the snapshot in the consistency group.
+* `NEWEST` - Use this option when you want to show the latest snapshot image created in the consistency group.
+* `OLDEST` - Use this option when you want to show the earliest snapshot image created in the consistency group.
+
+Enclose the snapshot image name in double quotation marks (" ").
+
+|===
+
+== Notes
+
+The name of a snapshot image has two parts separated by a colon (:):
+
+* The identifier of the consistency group
+* The identifier of the snapshot image
+
+For example, if you want to restart a copy-on-write operation for snapshot image 12345, which is in snapshot consistency group snapgroup1 in a consistency group snapshot volume that has the name snapVol1, you would use this command:
+
+----
+resume cgSnapVolume ["snapVol1"] cgSnapImage=["snapgroup1:12345"]
+----
+
+== Minimum firmware level
+
+7.83

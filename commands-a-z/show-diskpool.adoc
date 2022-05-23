@@ -1,0 +1,69 @@
+---
+permalink: commands-a-z/show-diskpool.html
+sidebar: sidebar
+keywords: show, disk pool
+summary: "The show diskPool command returns information about a disk pool."
+---
+= Show disk pool
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show diskPool` command returns information about a disk pool.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+
+== Context
+
+This command returns this information about a disk pool:
+
+* The status (such as optimal, online, offline)
+* The total capacity
+* The preservation capacity, usable capacity and unusable capacity
+* The used capacity, free capacity, and percentage full
+* The current owner (the controller in slot A or the controller in slot B )
+* The drive media (SAS)
+* The drive media type (HDD or SSD)
+* The drive interface type (Fibre Channel, iSCSI, InfiniBand, SAS)
+* Tray loss protection (yes or no)
+* Secure capable - indicates whether the disk pool is composed of all secure-capable drives. Secure-capable drives can be either FDE drives or FIPS drives.
+* Secure - Indicates whether the disk pool has drive security turned on (this is called secure enabled).
+* The remaining capacity notification settings (critical and early warning)
+* The priority settings
+* The associated volumes and free capacity
+* The associated drives
+* Data Assurance capabilities and presence of Data Assurance enabled volumes
+* Resource provisioning capabilities
+
+== Syntax
+
+[subs=+macros]
+----
+pass:quotes[show diskPool [_diskPoolName_]]
+----
+
+== Parameter
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`diskPool`
+a|
+The name of the disk pool for which you are retrieving information. Enclose the disk pool name in square brackets ([ ]). If the disk pool name has special characters or numbers, you must enclose the disk pool name in double quotation marks (" ") inside square brackets.
+
+|===
+
+== Notes
+
+Use this command to show the disk pool content of the storage array profile.
+
+== Minimum firmware level
+
+7.83

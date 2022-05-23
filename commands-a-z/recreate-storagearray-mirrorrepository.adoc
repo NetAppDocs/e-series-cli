@@ -1,0 +1,179 @@
+---
+permalink: commands-a-z/recreate-storagearray-mirrorrepository.html
+sidebar: sidebar
+keywords: recreate, synchronous, mirror, repository, volume
+summary: "The recreate storageArray mirrorRepository command creates a new Synchronous Mirroring repository volume (also called a mirror repository volume) by using the parameters defined for a previous mirror repository volume."
+---
+= Re-create synchronous mirroring repository volume
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `recreate storageArray mirrorRepository` command creates a new Synchronous Mirroring repository volume (also called a mirror repository volume) by using the parameters defined for a previous mirror repository volume.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+
+== Context
+
+[NOTE]
+====
+With firmware version 7.80, the `recreate storageArray mirrorRepository` command is deprecated. This command is no longer supported in either the GUI or the CLI. If you attempt to run this command, an error message returns indicating that this functionality is no longer supported and that no changes will be made to the specified remote mirror repositories.
+====
+
+The underlying requirement is that you have previously created a mirror repository volume. When you use this command, you can define the mirror repository volume in one of three ways: user-defined drives, user-defined volume group, or user-defined number of drives for the mirror repository volume. If you choose to define a number of drives, the controller firmware chooses which drives to use for the mirror repository volume.
+
+== Syntax (user-defined drives)
+[subs=+macros]
+----
+recreate storageArray mirrorRepository
+repositoryRAIDLevel=(1 | 3 | 5 | 6)
+repositoryDrives=pass:quotes[(_trayID1_,pass:quotes[[_drawerID1,_]]pass:quotes[_slotID1
+... trayIDN_],pass:quotes[[_drawerIDN,_]]pass:quotes[_slotIDN_])
+[trayLossProtect=(TRUE | FALSE)]
+[dataAssurance=(none | enabled)]
+----
+
+== Syntax (user-defined volume group)
+[subs=+macros]
+----
+recreate storageArray mirrorRepository
+repositoryVolumeGroup=pass:quotes[_volumeGroupName_
+[freeCapacityArea=pass:quotes[_freeCapacityIndexNumber_]]
+----
+
+== Syntax (user-defined number of drives)
+[subs=+macros]
+----
+recreate storageArray mirrorRepository
+repositoryRAIDLevel=(1 | 3 | 5 | 6)
+repositoryDriveCount=pass:quotes[_numberOfDrives_]
+(
+  [driveMediaType=(HDD | SSD | unknown | allMedia)] |
+  [driveType=(SAS | NVMe4K)]
+)
+[repositoryVolumeGroupUserLabel="userLabel"] |
+[trayLossProtect=(TRUE | FALSE)] |
+[drawerLossProtect=(true|false)] |
+[dataAssurance=(none | enabled)]
+----
+
+== Parameters
+[options="header"]
+|===
+| Parameter| Description
+a|
+`repositoryRAIDLevel`
+a|
+The RAID level for the mirror repository volume. Valid values are `1`, `3`, `5`, or `6`.
+a|
+`repositoryDrives`
+a|
+The drives that you want to use for the mirror repository volume. Drawer ID values are `1` to `5`. Slot ID values are `1` to `24`. Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]). Enter the names of the repository volumes using these rules:
+
+For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
+
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+
+Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+
+* Enclose all of the tray ID values, the drawer ID values, and the slot ID value sin square brackets ([ ]).
+* Separate the tray ID value, the drawer ID value, and the slot ID value with commas.
+* Separate each of the drive positions with a space.
+
+a|
+`repositoryVolumeGroup`
+a|
+The name of the volume group where the mirror repository volume is located.
+a|
+`repositoryVolumeGroupUserLabel`
+a|
+The name that you want to give the new volume group in which the mirror repository volume will be located. Enclose the volume group name in double quotation marks (" ").
+
+a|
+`freeCapacityArea`
+a|
+The index number of the free space in an existing volume group that you want to use to re-create the mirror repository volume. Free capacity is defined as the free capacity between existing volumes in a volume group. For example, a volume group might have the following areas: volume 1, free capacity, volume 2, free capacity, volume 3, free capacity. To use the free capacity following volume 2, you would specify:
+
+----
+freeCapacityArea=2
+----
+
+Run the `show volumeGroup` command to determine if a free capacity area exists.
+
+a|
+`repositoryDriveCount`
+a|
+The number of unassigned drives that you want to use for the mirror repository volume.
+a|
+`driveMediaType`
+a|
+The type of drive media for which you want to retrieve information. The following values are valid types of drive media:
+
+* `HDD` indicates that you have hard disk drives in the drive tray
+* `SSD` indicates that have solid state disks in the drive tray
+* `unknown` indicates you are note sure of the type of drive media in the drive tray
+* `allMedia` indicates that you have all types of media in the drive tray
+
+a|
+`driveType`
+a|
+The type of drive that you want to use for the mirror repository volume. You cannot mix drive types.
+
+You must use this parameter when you have more than one type of drive in your storage array.
+
+Valid drive types are:
+
+* `SAS`
+* `NVMe4K`
+
+If you do not specify a drive type, the command defaults to any type.
+
+a|
+`trayLossProtect`
+a|
+The setting to enforce tray loss protection when you create the mirror repository volume. To enforce tray loss protection, set this parameter to `TRUE`. The default value is `FALSE`.
+a|
+`drawerLossProtect`
+a|
+The setting to enforce drawer loss protection when you create the mirror repository volume. To enforce drawer loss protection, set this parameter to `TRUE`. The default value is `FALSE`.
+
+|===
+
+== Notes
+
+If you enter a value for the storage space of the mirror repository volume that is too small, the controller firmware returns an error message, which states the amount of space that is needed for the mirror repository volume. The command does not try to change the mirror repository volume. You can re-enter the command by using the value from the error message for the storage space value of the mirror repository volume.
+
+The `repositoryDrives` parameter supports both high-capacity drive trays and low-capacity drive trays. A high-capacity drive tray has drawers that hold the drives. The drawers slide out of the drive tray to provide access to the drives. A low-capacity drive tray does not have drawers. For a high-capacity drive tray, you must specify the identifier (ID) of the drive tray, the ID of the drawer, and the ID of the slot in which a drive resides. For a low-capacity drive tray, you need only specify the ID of the drive tray and the ID of the slot in which a drive resides. For a low-capacity drive tray, an alternative method for identifying a location for a drive is to specify the ID of the drive tray, set the ID of the drawer to `0`, and specify the ID of the slot in which a drive resides.
+
+When you assign the drives, if you set the `trayLossProtect` parameter to `TRUE` and have selected more than one drive from any one tray, the storage array returns an error. If you set the `trayLossProtect` parameter to `FALSE`, the storage array performs operations, but the mirror repository volume that you create might not have tray loss protection.
+
+When the controller firmware assigns the drives, if you set the `trayLossProtect` parameter to `TRUE`, the storage array returns an error if the controller firmware cannot provide drives that result in the new mirror repository volume having tray loss protection. If you set the `trayLossProtect` parameter to `FALSE`, the storage array performs the operation even if it means that the mirror repository volume might not have tray loss protection.
+
+== Data assurance management
+
+The Data Assurance (DA) feature increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur when data is moved between the hosts and the drives. When this feature is enabled, the storage array appends error-checking codes (also known as cyclic redundancy checks or CRCs) to each block of data in the volume. After a data block is moved, the storage array uses these CRC codes to determine if any errors occurred during transmission. Potentially corrupted data is neither written to disk nor returned to the host.
+
+If you want to use the DA feature, start with a pool or volume group that includes only drives that support DA. Then, create DA-capable volumes. Finally, map these DA-capable volumes to the host using an I/O interface that is capable of DA. I/O interfaces that are capable of DA include Fibre Channel, SAS, and iSER over InfiniBand (iSCSI Extensions for RDMA/IB). DA is not supported by iSCSI over Ethernet, or by the SRP over InfiniBand.
+
+[NOTE]
+====
+When all the drives are DA-capable, you can set the `dataAssurance` parameter to `enabled` and then use DA with certain operations. For example, you can create a volume group that includes DA-capable drives, and then create a volume within that volume group that is DA-enabled. Other operations that use a DA-enabled volume have options to support the DA feature.
+====
+
+If the `dataAssurance` parameter is set to `enabled`, only data assurance capable drives will be considered for volume candidates; otherwise, both data assurance capable and non-data assurance capable drives will be considered. If only data assurance drives are available the new volume group will be created using the enabled data assurance drives.
+
+== Minimum firmware level
+
+6.10
+
+7.10 adds RAID Level 6 capability
+
+7.75 adds the `dataAssurance` parameter.
+
+8.60 adds the `driveMediaType`, `repositoryVolumeGroupUserLabel`, and `drawerLossProtect` parameters.
