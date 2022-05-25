@@ -187,7 +187,7 @@ link:../commands-a-z/start-volumegroup-export.html[Start volume group export]
 
 link:../commands-a-z/start-volumegroup-fullprovisioning.html[Start Volume Group Full Provisioning]
 
-link:learn-about-volume-group-migration.html[Learn about volume group migration (CLI only)]
+link:../get-started/learn-about-volume-group-migration.html[Learn about volume group migration (CLI only)]
 
 link:../commands-a-z/start-volumegroup-import.html[Start volume group import]
 
