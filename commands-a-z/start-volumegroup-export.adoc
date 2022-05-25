@@ -25,7 +25,7 @@ Then you can remove the drives that comprise the volume group and reinstall the 
 
 [CAUTION]
 ====
-Do not perform these steps without first performing the steps listed in xref:../commands-category/learn-about-volume-group-migration.adoc[Learn about volume group migration.]
+Do not perform these steps without first performing the steps listed in xref:../get-started/learn-about-volume-group-migration.html[Learn about volume group migration.]
 ====
 
 [NOTE]
