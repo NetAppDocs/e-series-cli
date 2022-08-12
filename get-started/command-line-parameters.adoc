@@ -8,14 +8,49 @@ summary: "The SANtricity OS 11.40 release introduces, for the E2800 and E5700 co
 :icons: font
 :imagesdir: ./media/
 
-== New command line parameters in the 11.40 release
+== Downloadble SMcli command line parameters
+The SANtricity OS 11.60 release included the ability to download and install the http-based version of CLI (also refered to as "Secure CLI" or SMcli) directly through the SANtricity System Manager. This downloadable version of the SMcli is available on EF600, EF300, E5700, EF570, E2800, and EF280 controllers. To download the SMcli within the SANtricity System Manager, select *Settings* > *Systems* and *Add-ons* > *Command Line Interface* .
 
-The SANtricity OS 11.40 release introduces, for the E2800 and E5700 controllers with embedded web services, the ability to interact on the Command Line using a secure HTTPS protocol. These controllers can optionally use the SYMbol protocol for Command Line interactions instead. The SYMbol protocol is the only supported protocol for the E2700 and E5600 controllers. To preserve existing scripts and minimize transition time, the CLI options and grammar are preserved as much as possible. However, there are some differences in the capabilities of the E2800 and E5700 controllers with regards to security, authentication, AutoSupport, and alert messaging that render some of the CLI grammar for those controllers obsolete. However, in some cases the grammar is only obsolete on the E2800 or E5700 when the new https protocol is used.
+NOTE: A Java Runtime Environment (JRE), version 8 and above, must be available on the management system where you plan to run the CLI commands.
+
+As with previous versions of the SMcli, the SMcli downloadable through the SANtricity System Manager has a unique set of parameters.
+
+.Access token parameters for multifactor authentication
+[cols="2*",options="header"]
+|===
+| Parameter| Definition
+a|
+`-t`
+a|
+Defines the access token to be used for authentication with a storage array. An access token is a replacement for supplying the username and password.
+
+a|
+`-T`
+a|
+This argument requires one of two arugments:
+
+* `access_token-file` - Contains the access toekn to use for authentication
+* `-(dash)` - Read the access token from stdin
+|===
+
+.Downloadable SMcli parameters
+[cols="2*",options="header"]
+|===
+| Parameter| Definition
+a|
+`INSERT`
+a|
+`INSERT`
+
+|===
+
+== 11.53 and older Command line parameters
+
+The SANtricity OS 11.40 release introduced, for the E2800 and E5700 controllers with embedded web services, the ability to interact on the Command Line using a secure HTTPS protocol. These controllers can optionally use the SYMbol protocol for Command Line interactions instead. The SYMbol protocol is the only supported protocol for the E2700 and E5600 controllers. To preserve existing scripts and minimize transition time, the CLI options and grammar are preserved as much as possible. However, there are some differences in the capabilities of the E2800 and E5700 controllers with regards to security, authentication, AutoSupport, and alert messaging that render some of the CLI grammar for those controllers obsolete. However, in some cases the grammar is only obsolete on the E2800 or E5700 when the new https protocol is used.
 
 For the new parameters that only apply to the `*https*` client type, it follows that they also apply only to the E2800 or E5700 controllers.
 
-For a list of new, deprecated, and obsolete commands with this release, see xref:changes-in-the-cli-and-script-commands-in-this-release.adoc[Changes in the CLI and Script commands in this release].
-
+.`*https*` command line parameters
 [cols="2*",options="header"]
 |===
 | Parameter| Definition
@@ -55,6 +90,7 @@ This optional argument allows an `*https*` client to operate in insecure mode. T
 
 Because the E2700 and E5600 controllers do not have embedded alert management capabilities, these command line parameters are applicable. These parameters are not applicable to the E2800 or E5700 controllers.
 
+.E2700 and E5600 command line parameters
 [cols="2*",options="header"]
 |===
 | Parameter| Definition
@@ -102,6 +138,7 @@ This command line option is obsolete for the E2800 and E5700 storage arrays. Use
 
 == Command line parameters that apply to all controllers running with a symbol client type
 
+.Symbol client command line parameters
 [cols="2*",options="header"]
 |===
 | Parameter| Definition

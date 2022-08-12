@@ -21,6 +21,19 @@ When issuing SMcli commands at the command prompt, an additional backslash (`\`)
 If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to the latest version of SANtricity through the legacy CLI. Upgrades from SANtricity 11.52 to later versions can only be performed through the SMcli.
 ====
 
+== SANtricity 11.70.4
+
+The following tables list changes to the CLI and Script Commands for release 11.70.4.
+
+[cols="2*",options="header"]
+|===
+| Command| Description of Change
+a|
+xref:../get-started/command-line-parameters.adoc[Command Line parameters]
+a|
+Added `-t` and `-T` access token parameter descriptions for multifactor authentication 
+|===
+
 == SANtricity 11.70.3
 
 The following tables list changes to the CLI and Script Commands for release 11.70.3.
