@@ -16,7 +16,7 @@ entries:
         - title: CLI wrapper syntax
           url: /get-started/cli-command-wrapper-syntax.html
         - title: Downloadble SMcli parameters
-          url: /downloadable-smcli-command-line-parameters.html
+          url: /get-started/downloadable-smcli-command-line-parameters.html
         - title: Legacy CLI parameters
           url: /get-started/command-line-parameters.html
     - title: Script command structure

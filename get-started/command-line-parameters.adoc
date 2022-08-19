@@ -8,7 +8,7 @@ summary: "The SANtricity OS 11.40 release introduced, for the E2800 and E5700 co
 :icons: font
 :imagesdir: ./media/
 
-== 11.53 and older Command line parameters
+== 11.53 and older command line parameters
 
 The SANtricity OS 11.40 release introduced, for the E2800 and E5700 controllers with embedded web services, the ability to interact on the Command Line using a secure HTTPS protocol. These controllers can optionally use the SYMbol protocol for Command Line interactions instead. The SYMbol protocol is the only supported protocol for the E2700 and E5600 controllers. To preserve existing scripts and minimize transition time, the CLI options and grammar are preserved as much as possible. However, there are some differences in the capabilities of the E2800 and E5700 controllers with regards to security, authentication, AutoSupport, and alert messaging that render some of the CLI grammar for those controllers obsolete. However, in some cases the grammar is only obsolete on the E2800 or E5700 when the new https protocol is used.
 
