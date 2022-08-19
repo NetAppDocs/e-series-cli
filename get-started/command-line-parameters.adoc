@@ -1,48 +1,12 @@
 ---
 permalink: get-started/command-line-parameters.html
 sidebar: sidebar
-keywords: command line, parameters
-summary: "The SANtricity OS 11.40 release introduces, for the E2800 and E5700 controllers with embedded web services, the ability to interact on the Command Line using a secure HTTPS protocol. These controllers can optionally use the SYMbol protocol for Command Line interactions instead."
+keywords: legacy, command line, parameters
+summary: "The SANtricity OS 11.40 release introduced, for the E2800 and E5700 controllers with embedded web services, the ability to interact on the Command Line using a secure HTTPS protocol. These controllers can optionally use the SYMbol protocol for Command Line interactions instead."
 ---
-= Command line parameters
+= Legacy command line parameters
 :icons: font
 :imagesdir: ./media/
-
-== Downloadble SMcli command line parameters
-The SANtricity OS 11.60 release included the ability to download and install the http-based version of CLI (also refered to as "Secure CLI" or SMcli) directly through the SANtricity System Manager. This downloadable version of the SMcli is available on EF600, EF300, E5700, EF570, E2800, and EF280 controllers. To download the SMcli within the SANtricity System Manager, select *Settings* > *Systems* and *Add-ons* > *Command Line Interface* .
-
-NOTE: A Java Runtime Environment (JRE), version 8 and above, must be available on the management system where you plan to run the CLI commands.
-
-As with previous versions of the SMcli, the SMcli downloadable through the SANtricity System Manager has a unique set of parameters.
-
-.Access token parameters for multifactor authentication
-[cols="2*",options="header"]
-|===
-| Parameter| Definition
-a|
-`-t`
-a|
-Defines the access token to be used for authentication with a storage array. An access token is a replacement for supplying the username and password.
-
-a|
-`-T`
-a|
-This argument requires one of two arugments:
-
-* `access_token-file` - Contains the access toekn to use for authentication
-* `-(dash)` - Read the access token from stdin
-|===
-
-.Downloadable SMcli parameters
-[cols="2*",options="header"]
-|===
-| Parameter| Definition
-a|
-`INSERT`
-a|
-`INSERT`
-
-|===
 
 == 11.53 and older Command line parameters
 
@@ -161,6 +125,7 @@ The `*-R*` parameter is required only if the dual password feature is enabled on
 
 == Command line parameters applicable to all controllers and all client types
 
+.All controller and client type command line parameters
 [cols="2*",options="header"]
 |===
 | Parameter| Definition

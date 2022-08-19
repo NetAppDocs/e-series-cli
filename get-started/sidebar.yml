@@ -15,7 +15,9 @@ entries:
           url: /get-started/interactive-mode.html
         - title: CLI wrapper syntax
           url: /get-started/cli-command-wrapper-syntax.html
-        - title: CLI parameters
+        - title: Downloadble SMcli parameters
+          url: /downloadable-smcli-command-line-parameters.html
+        - title: Legacy CLI parameters
           url: /get-started/command-line-parameters.html
     - title: Script command structure
       entries:
