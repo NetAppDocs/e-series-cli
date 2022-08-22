@@ -4,11 +4,11 @@ sidebar: sidebar
 keywords: downloadable, smcli, command line, parameters
 summary: "The SANtricity OS 11.60 release included the ability to download and install the http-based version of CLI (also referred to as "Secure CLI" or SMcli) directly through the SANtricity System Manager. This downloadable version of the SMcli is available on EF600, EF300, E5700, EF570, E2800, and EF280 controllers."
 ---
-= Downloadble SMcli command line parameters
+= Downloadable SMcli command line parameters
 :icons: font
 :imagesdir: ./media/
 
-== 11.60 and newer downloadble SMcli command line parameters
+== 11.60 and newer downloadable SMcli command line parameters
 The SANtricity OS 11.60 release included the ability to download and install the http-based version of CLI (also referred to as "Secure CLI" or SMcli) directly through the SANtricity System Manager. This downloadable version of the SMcli is available on EF600, EF300, E5700, EF570, E2800, and EF280 controllers. To download the SMcli within the SANtricity System Manager, select *Settings* > *Systems* and *Add-ons* > *Command Line Interface* .
 
 NOTE: A Java Runtime Environment (JRE), version 8 and above, must be available on the management system where you plan to run the CLI commands.
@@ -81,7 +81,7 @@ Runs the commands without performing a syntax check first.
 a|
 `-L` (uppercase)
 a|
-Displays the legal notices for Downloadble SMcli
+Displays the legal notices for Downloadable SMcli
 
 a|
 `-n`
@@ -98,7 +98,7 @@ Specifies a file name for all output text that is a result of running the script
 * `-c`
 * `-f`
 
-If you do not specify an output file, the output text goes to standard output (stdout). All output from commands that are not script commands is sent to stdout, regardless of whether this parameter is set.
+If you do not specify an output file, the output text goes to standard output (`stdout`). All output from commands that are not script commands is sent to `stdout`, regardless of whether this parameter is set.
 
 a|
 `-S` (uppercase)
