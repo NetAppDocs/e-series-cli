@@ -2,7 +2,7 @@
 permalink: get-started/downloadable-smcli-parameters.html
 sidebar: sidebar
 keywords: downloadable, smcli, command line, parameters
-summary: "The SANtricity OS 11.60 release included the ability to download and install the http-based version of CLI (also referred to as "Secure CLI" or SMcli) directly through the SANtricity System Manager. This downloadable version of the SMcli is available on EF600, EF300, E5700, EF570, E2800, and EF280 controllers."
+summary: "The SANtricity OS 11.60 release included the ability to download and install the http-based version of CLI (also referred to as Secure CLI or SMcli) directly through the SANtricity System Manager. This downloadable version of the SMcli is available on EF600, EF300, E5700, EF570, E2800, and EF280 controllers."
 ---
 = Downloadable SMcli command line parameters
 :icons: font
