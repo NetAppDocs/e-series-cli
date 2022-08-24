@@ -23,7 +23,7 @@ sidebar:
 homepage:
   tiles:
     - title: What's new
-      url: /what's-new.html
+      url: what's-new.html
     - title: Get started
       links:
         - title: CLI overview
