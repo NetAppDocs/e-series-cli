@@ -1,8 +1,6 @@
 section: get-started
 title: Get started
 entries:
-  - title: What's new
-    url: /get-started/changes-in-the-cli-and-script-commands-in-this-release.html
   - title: Command formatting
     entries:
     - title: Overview

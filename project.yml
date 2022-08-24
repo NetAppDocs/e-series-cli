@@ -22,10 +22,10 @@ sidebar:
     url: /legal-notices.html
 homepage:
   tiles:
+    - title: What's new
+      url: /what's-new.html
     - title: Get started
       links:
-        - title: What's new
-          url: get-started/changes-in-the-cli-and-script-commands-in-this-release.html
         - title: CLI overview
           url: get-started/overview-format-commands.html
         - title: CLI command structure
