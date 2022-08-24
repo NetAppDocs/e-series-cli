@@ -18,10 +18,10 @@ sidebar:
   - section: get-started
   - section: commands-category
   - section: commands-a-z
-  - section: What's new
-    url: /whats-new.html
   - title: Legal notices
     url: /legal-notices.html
+  - section: What's new
+    url: /whats-new.html
 homepage:
   tiles:
     - title: Get started
