@@ -1,5 +1,5 @@
 ---
-permalink: what's-new.html
+permalink:  what's-new.html
 sidebar: sidebar
 keywords: what's new
 summary: "This topic lists changes in the latest SANtricity System Manager releases of the CLI command and Script commands."
