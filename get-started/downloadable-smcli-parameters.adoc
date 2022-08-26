@@ -76,7 +76,7 @@ a|
 a|
 This optional argument allows an `*https*` client to operate in insecure mode. This means that the storage array's certificate will not be validated. By default, if omitted, the proper validation will be performed.
 
-NOTE: For additional information on using locally stored labels to manage storage arrays, see <<Managing stored certificates command line parameters>>.
+NOTE: For additional information on managing storage arrays certificates, see <<storedcertificates,Managing stored certificates command line parameters>>.
 
 a|
 `-e`
@@ -93,7 +93,7 @@ a|
 a|
 Specifies the locally stored label on which you want to run the script commands. This is optional when you use `_host-name-or-IP-address_`. The locally stored label is required when the `_host-name-or-IP-address_` is not used.
 
-NOTE: For additional information on using locally stored labels to manage storage arrays, see <<Managing stored arrays command line parameters>>.
+NOTE: For additional information on using locally stored labels to manage storage arrays, see <<managearrays,Managing stored arrays command line parameters>>.
 
 a|
 `-o`
@@ -133,6 +133,7 @@ The following command line parameters allow you to manage stored arrays through 
 
 NOTE: The locally stored label may not match the actual storage array name displayed under the SANtricity System Manager.
 
+[#managearrays]
 .Managing stored arrays command line parameters
 [cols="2*",options="header"]
 |===
@@ -167,6 +168,7 @@ NOTE: The SMcli does not contact the storage array when adding a locally stored 
 
 |===
 
+[#storedcertificates]
 .Managing stored certificates command line parameters
 [cols="2*",options="header"]
 |===
