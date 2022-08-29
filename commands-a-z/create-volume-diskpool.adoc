@@ -115,6 +115,8 @@ a|
 a|
 This parameter enables thin provisioning for the new volume. To use thin provisioning, set this parameter to `TRUE`. If you do not want thin provisioning, set this parameter to `FALSE`.
 
+NOTE: Thin provisioning is not available for RAID1 level volumes.
+
 a|
 `owner`
 a|

@@ -47,7 +47,7 @@ clear storageArray configuration factoryReset
 |===
 | Parameter| Description
 a|
-None
+*None*
 a|
 If you do not enter a parameter, this command removes all configuration information for the storage array, except for information related to security and identification.
 a|

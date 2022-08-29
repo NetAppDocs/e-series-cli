@@ -27,12 +27,14 @@ userLabel="_volumeName"_]
 [freeCapacityArea=pass:quotes[_freeCapacityIndexNumber_]]
 [capacity=pass:quotes[_volumeCapacity_]]
 [owner=(a|b)]
+[mapping=(none | default)]
 [cacheReadPrefetch=(TRUE | FALSE)]
 [segmentSize=pass:quotes[_segmentSizeValue_]]
 [usageHint=(fileSystem | dataBase | multiMedia)]
 [dssPreAllocate=(TRUE | FALSE)]
 [securityType=(none | capable | enabled)]
 [dataAssurance=(none | enabled)]
+[blockSize=blockSizeValue]
 ----
 
 == Parameters
@@ -103,6 +105,16 @@ The setting to specify the security level when creating the volume groups and al
 `capable` -- The volume group and volumes are capable of having security set, but security has not been enabled.
 
 `enabled` -- The volume group and volumes have security enabled.
+
+a|
+`mapping`
+a|
+This parameter enables you to map the volume to a host. If you want to map later, set this parameter to `none`. If you want to map now, set this parameter to `default`. The volume is mapped to all hosts that have access to the storage pool. The default value is `none`.
+
+a|
+`blockSize`
+a|
+This setting is the volume block size in bytes.
 
 |===
 
@@ -175,3 +187,5 @@ Before you can set the `securityType` parameter to `enabled`, you must create a 
 7.50 adds the `securityType` parameter.
 
 7.75 adds the `dataAssurance` parameter.
+
+11.70 adds the `blockSize` parameter.
