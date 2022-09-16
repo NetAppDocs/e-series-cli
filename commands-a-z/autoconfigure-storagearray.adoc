@@ -30,6 +30,7 @@ autoConfigure storageArray
 [driveType=(SAS | NVMe4K)]
 [driveMediaType=(hdd | ssd | allMedia | unknown)]
 [raidLevel=(0 | 1 | 3 | 5 | 6)]
+[blockSize=requestedBlockSizeValue]
 pass:quotes[[volumeGroupWidth=_numberOfDrives_]]
 pass:quotes[[volumeGroupCount=_numberOfVolumeGroups_]]
 pass:quotes[[volumesPerGroupCount=_numberOfVolumesPerGroup_]]
@@ -75,6 +76,10 @@ a|
 `raidLevel`
 a|
 The RAID level of the volume group that contains the drives in the storage array. Valid RAID levels are `0`, `1`, `3`, `5`, or `6`.
+a|
+`blockSize`
+a|
+This parameter sets the block size of the volume being created. A value of 0 or the parameter not set uses the default block size.
 a|
 `volumeGroupWidth`
 a|
@@ -286,3 +291,5 @@ autoConfigure storageArray securityType=capable secureDrives=fips;
 7.75 adds the `dataAssurance` parameter.
 
 8.25 adds the `secureDrives` parameter.
+
+8.74 adds the `blocksize` parameter. 

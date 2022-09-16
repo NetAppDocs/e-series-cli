@@ -31,7 +31,11 @@ The following tables list changes to the CLI and Script Commands for release 11.
 a|
 xref:./get-started/downloadable-smcli-parameters.adoc[Downloadble SMcli command line parameters]
 a|
-Added `-t` and `-T` access token parameter descriptions for multifactor authentication
+Added `-t` and `-T` access token parameter descriptions for multifactor authentication.
+a|
+xref:./commands-a-z/autoconfigure-storagearray.adoc[Autoconfigure storage array]
+a|
+Added `blockSize` parameter. 
 |===
 
 == SANtricity 11.70.3
