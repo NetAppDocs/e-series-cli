@@ -169,7 +169,7 @@ Sets the raid level for the volume being created in the disk pool. To specify RA
 a|
 `blockSize`
 a|
-This parameter sets the block size of the volume being created. A value of 0 or the parameter not set uses the default block size.
+This parameter sets the block size of the volume being created. A value of `0` or the parameter not set uses the default block size.
 |===
 
 == Notes

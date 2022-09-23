@@ -32,10 +32,6 @@ a|
 xref:./get-started/downloadable-smcli-parameters.adoc[Downloadble SMcli command line parameters]
 a|
 Added `-t` and `-T` access token parameter descriptions for multifactor authentication.
-a|
-xref:./commands-a-z/autoconfigure-storagearray.adoc[Autoconfigure storage array]
-a|
-Added `blockSize` parameter. 
 |===
 
 == SANtricity 11.70.3
