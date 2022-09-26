@@ -183,7 +183,7 @@ This parameter enables you to map the volume to a host. If you want to map later
 a|
 `blockSize`
 a|
-This setting is the volume block size in bytes.
+This parameter sets the block size of the volume being created. A value of 0 or the parameter not set uses the default block size.
 
 |===
 

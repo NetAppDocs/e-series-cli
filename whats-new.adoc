@@ -31,7 +31,7 @@ The following tables list changes to the CLI and Script Commands for release 11.
 a|
 xref:./get-started/downloadable-smcli-parameters.adoc[Downloadble SMcli command line parameters]
 a|
-Added `-t` and `-T` access token parameter descriptions for multifactor authentication
+Added `-t` and `-T` access token parameter descriptions for multifactor authentication.
 |===
 
 == SANtricity 11.70.3

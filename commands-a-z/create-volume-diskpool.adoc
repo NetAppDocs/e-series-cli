@@ -38,17 +38,7 @@ capacity=_volumeCapacity_]
 [dataAssurance=(none|enabled)]
 [cacheReadPrefetch=(TRUE | FALSE)]
 [raidLevel=(1 | 6)]
-----
-[subs=+macros]
-----
-create volume diskPool=pass:quotes[_"diskPoolName"_
-userLabel="_volumeName_"
-capacity=_volumeCapacity_]
-[thinProvisioned=(TRUE | FALSE)]
-[owner=(a|b)]
-[mapping=(none|default)]
-[cacheReadPrefetch=(TRUE | FALSE)]
-[raidLevel=(1 | 6)]
+[blockSize=requestedBlockSizeValue]
 ----
 
 == Syntax for Creating a Thin Provisioned Volume
@@ -176,6 +166,10 @@ a|
 `raidLevel`
 a|
 Sets the raid level for the volume being created in the disk pool. To specify RAID1, set to `1`. To specify RAID6, set to `6`. If the raid level is not set, RAID6 is used for the disk pool by default.
+a|
+`blockSize`
+a|
+This parameter sets the block size of the volume being created. A value of `0` or the parameter not set uses the default block size.
 |===
 
 == Notes
@@ -205,4 +199,4 @@ If `dataAssurance` parameter is set to `enabled`, only data assurance capable dr
 
 7.83
 
-8.70 adds the `_raidLevel_` parameter.
+8.70 adds the `_raidLevel_` and `_blockSize` parameters.
