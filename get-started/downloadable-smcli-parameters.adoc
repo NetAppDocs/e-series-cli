@@ -9,11 +9,11 @@ summary: "The SANtricity OS 11.60 release included the ability to download and i
 :imagesdir: ./media/
 
 == 11.60 and newer downloadable SMcli command line parameters
-The SANtricity OS 11.60 release included the ability to download and install the http-based version of CLI (also referred to as "Secure CLI" or SMcli) directly through the SANtricity System Manager. This downloadable version of the SMcli is available on EF600, EF300, E5700, EF570, E2800, and EF280 controllers. To download the SMcli within the SANtricity System Manager, select *Settings* > *Systems* and *Add-ons* > *Command Line Interface* .
+The SANtricity OS 11.60 release includes the ability to download and install the http-based version of CLI (also referred to as "Secure CLI" or SMcli) directly through the SANtricity System Manager. This downloadable version of the SMcli is available on EF600, EF300, E5700, EF570, E2800, and EF280 controllers. To download the SMcli within the SANtricity System Manager, select *Settings* > *System* and *Add-ons* > *Command Line Interface* .
 
 NOTE: A Java Runtime Environment (JRE), version 8 and above, must be available on the management system where you plan to run the CLI commands.
 
-As with previous versions of the SMcli, the SMcli downloadable through the SANtricity System Manager has a unique set of parameters.
+As with previous versions of the SMcli, the SMcli downloadable through the SANtricity System Manager has a unique set of parameters. For information on using command line parameters for SANtricity OS 11.53 and older releases, see xref:./get-started/command-line-parameters.adoc[Legacy command line parameters]
 
 === Multifactor authentication
 If SAML (Security Assertion Markup Language) is enabled, only access tokens can be used with the CLI. If SAML is not enabled, the username/password or access tokens can be used. Access tokens can be generated through the SANtricity System Manager.
@@ -69,14 +69,15 @@ a|
 `_host-name-or-IP-address_`
 a|
 Specifies either the host name or the Internet Protocol (IP) address (`_xxx.xxx.xxx.xxx_`) of an out-of-band managed storage array.
-* When managing out-of-band storage management through the Ethernet connection on each controller, you must specify the `_host-name-or-IP-address_` of the controllers.
+
+When managing out-of-band storage management through the Ethernet connection on each controller, you must specify the `_host-name-or-IP-address_` of the controllers.
 
 a|
 `-k`
 a|
 This optional argument allows an `*https*` client to operate in insecure mode. This means that the storage array's certificate will not be validated. By default, if omitted, the proper validation will be performed.
 
-NOTE: For additional information on managing storage arrays certificates, see <<storedcertificates,Managing stored certificates command line parameters>>.
+NOTE: For additional information on managing storage array certificates, see <<storedcertificates,Managing stored certificates command line parameters>>.
 
 a|
 `-e`
@@ -86,7 +87,7 @@ Runs the commands without performing a syntax check first.
 a|
 `-L` (uppercase)
 a|
-Displays the legal notices for Downloadable SMcli
+Displays the legal notices for Downloadable SMcli.
 
 a|
 `-n`

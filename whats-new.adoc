@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: what's new
 summary: "This topic lists changes in the latest SANtricity System Manager releases of the CLI command and Script commands."
 ---
-= What's New
+= What's new
 :icons: font
 :imagesdir: ./media/
 
@@ -13,7 +13,7 @@ This topic lists changes in the latest SANtricity System Manager releases of the
 
 [NOTE]
 ====
-When issuing SMcli commands at the command prompt, an additional backslash (`\`) character is required as an escape character in the file path name of an input or output file when using the Windows OS. The additional backslash (`\`) must be included when using SMcli in secure, https mode, by providing the -u option to specify a role-based access management user. Example: `C:\\dir\\subdir\\filename`
+When issuing SMcli commands at the command prompt, you must enter an additional backslash (`\`) character as an escape character in the file path name of an input or output file when using the Windows OS. The additional backslash (`\`) must be included when using SMcli in secure, https mode, by providing the -u option to specify a role-based access management user. Example: `C:\\dir\\subdir\\filename`
 ====
 
 [NOTE]
@@ -23,7 +23,7 @@ If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to th
 
 == SANtricity 11.70.4
 
-The following tables list changes to the CLI and Script Commands for release 11.70.4.
+The following table list changes to the CLI and Script Commands for release 11.70.4.
 
 [cols="2*",options="header"]
 |===
@@ -36,7 +36,7 @@ Added `-t` and `-T` access token parameter descriptions for multifactor authenti
 
 == SANtricity 11.70.3
 
-The following tables list changes to the CLI and Script Commands for release 11.70.3.
+The following table list changes to the CLI and Script Commands for release 11.70.3.
 
 [cols="2*",options="header"]
 |===
@@ -69,7 +69,7 @@ Updated `driveCount` parameter description.
 
 == SANtricity 11.70.2
 
-The following tables list changes to the CLI and Script Commands for release 11.70.2.
+The following table list changes to the CLI and Script Commands for release 11.70.2.
 
 [cols="2*",options="header"]
 |===
@@ -106,7 +106,7 @@ Added `userName` and `engineid` parameters.
 
 == SANtricity 11.70.1
 
-The following tables list changes to the CLI and Script Commands for release 11.70.1.
+The following table list changes to the CLI and Script Commands for release 11.70.1.
 
 [cols="2*",options="header"]
 |===
@@ -147,7 +147,7 @@ Added `blockSize` parameter.
 
 == SANtricity 11.70
 
-The following tables list changes to the CLI and Script Commands for release 11.70.
+The following table list changes to the CLI and Script Commands for release 11.70.
 
 [cols="2*",options="header"]
 |===
@@ -237,7 +237,7 @@ Added `resource-provisioned` information in the command results.
 
 == SANtricity 11.62
 
-The following tables list changes to the CLI and Script Commands for release 11.62.
+The following table list changes to the CLI and Script Commands for release 11.62.
 
 [cols="2*",options="header"]
 |===
