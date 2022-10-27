@@ -23,10 +23,6 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 This command returns a list of the NVSRAM byte values for the specified host type. If you do not enter the optional parameters, this command returns a list of all of the NVSRAM byte values.
 
-This command returns a list of the NVSRAM byte values for the specified host type. If you do not enter the optional parameters, this command returns a list of all of the NVSRAM byte values.
-
-This command returns a list of the NVSRAM byte values for the specified host type. If you do not enter the optional parameters, this command returns a list of all of the NVSRAM byte values.
-
 == Syntax
 
 [subs=+macros]

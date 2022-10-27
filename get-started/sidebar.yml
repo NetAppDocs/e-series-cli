@@ -1,8 +1,6 @@
 section: get-started
 title: Get started
 entries:
-  - title: What's new
-    url: /get-started/changes-in-the-cli-and-script-commands-in-this-release.html
   - title: Command formatting
     entries:
     - title: Overview
@@ -15,7 +13,9 @@ entries:
           url: /get-started/interactive-mode.html
         - title: CLI wrapper syntax
           url: /get-started/cli-command-wrapper-syntax.html
-        - title: CLI parameters
+        - title: Downloadble SMcli parameters
+          url: /get-started/downloadable-smcli-parameters.html
+        - title: Legacy CLI parameters
           url: /get-started/command-line-parameters.html
     - title: Script command structure
       entries:
