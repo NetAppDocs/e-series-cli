@@ -37,6 +37,7 @@ driveMediaType=(HDD | SSD | unknown | allMedia)
 [driveType=(SAS | NVMe4K)]
 [capacity=pass:quotes[_volumeCapacity_]]
 [owner=(a|b)]
+[mapping=(none | default)]
 [cacheReadPrefetch=(TRUE | FALSE)]
 [segmentSize=pass:quotes[_segmentSizeValue_]]
 [usageHint=(fileSystem | dataBase | multiMedia)]
@@ -47,6 +48,7 @@ driveMediaType=(HDD | SSD | unknown | allMedia)
 [secureDrives=(fips | fde )]
 [dataAssurance=(none | enabled)]
 [resourceProvisioningCapable=(TRUE | FALSE)]
+[blockSize=blockSizeValue]
 ----
 [subs=+macros]
 ----
@@ -58,6 +60,7 @@ driveMediaType=(HDD | SSD | unknown | allMedia)
 [driveType=SAS]
 [capacity=pass:quotes[_volumeCapacity_]]
 [owner=(a|b)]
+[mapping=(none | default)]
 [cacheReadPrefetch=(TRUE | FALSE)]
 [segmentSize=pass:quotes[_segmentSizeValue_]]
 [usageHint=(fileSystem | dataBase | multiMedia)]
@@ -68,6 +71,7 @@ driveMediaType=(HDD | SSD | unknown | allMedia)
 [secureDrives=(fips | fde )]
 [dataAssurance=(none | enabled)]
 [resourceProvisioningCapable=(TRUE | FALSE)]
+[blockSize=blockSizeValue]
 ----
 
 == Parameters
@@ -170,6 +174,16 @@ a|
 `resourceProvisioningCapable`
 a|
 The setting to specify if resource provisioning capabilities are enabled. To disable resource provisioning, set this parameter to `FALSE`. The default value is `TRUE`.
+
+a|
+`mapping`
+a|
+This parameter enables you to map the volume to a host. If you want to map later, set this parameter to `none`. If you want to map now, set this parameter to `default`. The volume is mapped to all hosts that have access to the storage pool. The default value is `none`.
+
+a|
+`blockSize`
+a|
+This parameter sets the block size of the volume being created. A value of 0 or the parameter not set uses the default block size.
 
 |===
 
@@ -336,3 +350,5 @@ driveMediaType=HDD securityType=capable secureDrives=fips
 8.25 adds the `secureDrives` parameter.
 
 8.63 adds the `resourceProvisioningCapable` parameter.
+
+11.70 adds the `blockSize` parameter.

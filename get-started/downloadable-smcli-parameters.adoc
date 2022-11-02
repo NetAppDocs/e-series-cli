@@ -1,0 +1,211 @@
+---
+permalink: get-started/downloadable-smcli-parameters.html
+sidebar: sidebar
+keywords: downloadable, smcli, command line, parameters
+summary: "The SANtricity OS 11.60 release included the ability to download and install the http-based version of CLI (also referred to as Secure CLI or SMcli) directly through the SANtricity System Manager."
+---
+= Downloadable SMcli command line parameters
+:icons: font
+:imagesdir: ./media/
+
+== 11.60 and newer downloadable SMcli command line parameters
+The SANtricity OS 11.60 release includes the ability to download and install the http-based version of CLI (also referred to as "Secure CLI" or SMcli) directly through the SANtricity System Manager. This downloadable version of the SMcli is available on EF600, EF300, E5700, EF570, E2800, and EF280 controllers. To download the SMcli within the SANtricity System Manager, select *Settings* > *System* and *Add-ons* > *Command Line Interface* .
+
+NOTE: A Java Runtime Environment (JRE), version 8 and above, must be available on the management system where you plan to run the CLI commands.
+
+As with previous versions of the SMcli, the SMcli downloadable through the SANtricity System Manager has a unique set of parameters. For information on using command line parameters for SANtricity OS 11.53 and older releases, see xref:./get-started/command-line-parameters.adoc[Legacy command line parameters]
+
+=== Multifactor authentication
+If SAML (Security Assertion Markup Language) is enabled, only access tokens can be used with the CLI. If SAML is not enabled, the username/password or access tokens can be used. Access tokens can be generated through the SANtricity System Manager.
+
+.Access token, username, and password parameters
+[cols="2*",options="header"]
+|===
+| Parameter| Definition
+a|
+`-t`
+a|
+Defines the access token to be used for authentication with a storage array. An access token is a replacement for supplying the username and password.
+
+a|
+`-T` (uppercase)
+a|
+This argument requires one of two arguments:
+
+* `access_token-file` - Contains the access token to use for authentication
+* `-(dash)` - Read the access token from stdin
+
+a|
+`-u`
+a|
+Follow this parameter with the `_username_` variable. This parameter is required whenever an access token is not used.
+
+a|
+`-p`
+a|
+Defines the password for the storage array on which you want to run commands. A password is not necessary under these conditions:
+
+* A password has not been set on the storage array.
+* The password is specified in a script file that you are running.
+
+a|
+`-P` (uppercase)
+a|
+This argument requires one of two arguments:
+
+* `_password_file_` - Contains the password to use for authentication.
+* `-` (one dash) - Read the password from `stdin`.
+
+|===
+
+=== General https mode command line parameters
+The downloadable SMcli only supports https mode. The following are commonly used command line parameters for https mode.
+
+.https command line parameters
+[cols="2*",options="header"]
+|===
+| Parameter| Definition
+a|
+`_host-name-or-IP-address_`
+a|
+Specifies either the host name or the Internet Protocol (IP) address (`_xxx.xxx.xxx.xxx_`) of an out-of-band managed storage array.
+
+When managing out-of-band storage management through the Ethernet connection on each controller, you must specify the `_host-name-or-IP-address_` of the controllers.
+
+a|
+`-k`
+a|
+This optional argument allows an `*https*` client to operate in insecure mode. This means that the storage array's certificate will not be validated. By default, if omitted, the proper validation will be performed.
+
+NOTE: For additional information on managing storage array certificates, see <<storedcertificates,Managing stored certificates command line parameters>>.
+
+a|
+`-e`
+a|
+Runs the commands without performing a syntax check first.
+
+a|
+`-L` (uppercase)
+a|
+Displays the legal notices for Downloadable SMcli.
+
+a|
+`-n`
+a|
+Specifies the locally stored label on which you want to run the script commands. This is optional when you use `_host-name-or-IP-address_`. The locally stored label is required when the `_host-name-or-IP-address_` is not used.
+
+NOTE: For additional information on using locally stored labels to manage storage arrays, see <<managearrays,Managing stored arrays command line parameters>>.
+
+a|
+`-o`
+a|
+Specifies a file name for all output text that is a result of running the script commands. Use the `-o` parameter with these parameters:
+
+* `-c`
+* `-f`
+
+If you do not specify an output file, the output text goes to standard output (`stdout`). All output from commands that are not script commands is sent to `stdout`, regardless of whether this parameter is set.
+
+a|
+`-S` (uppercase)
+a|
+Suppresses informational messages describing the command progress that appear when you run script commands. (Suppressing informational messages is also called silent mode.) This parameter suppresses these messages:
+
+* `Performing syntax check`
+* `Syntax check complete`
+* `Executing script`
+* `Script execution complete`
+* `SMcli completed successfully`
+
+a|
+`-version`
+a|
+Displays the downloadable SMcli version
+
+a|
+`-?`
+a|
+Shows usage information about the CLI commands.
+
+|===
+
+=== Managing stored arrays
+The following command line parameters allow you to manage stored arrays through your locally stored label.
+
+NOTE: The locally stored label may not match the actual storage array name displayed under the SANtricity System Manager.
+
+[#managearrays]
+.Managing stored arrays command line parameters
+[cols="2*",options="header"]
+|===
+| Parameter| Definition
+a|
+`SMcli storageArrayLabel show all`
+a|
+Displays all locally stored labels and their associated addresses
+
+a|
+`SMcli storageArrayLabel show label <LABEL>`
+a|
+Displays the addresses associated with the locally stored label named `<LABEL>`
+
+a|
+`SMcli storageArrayLabel delete all`
+a|
+Deletes all locally stored labels
+
+a|
+`SMcli storageArrayLabel delete label <LABEL>`
+a|
+Deletes the locally stored label named `<LABEL>`
+
+a|
+`SMcli <host-name-or-IP-address> [host-name-or-IP-address] storageArrayLabel add label <LABEL>`
+a|
+* Adds a locally stored label with name `<LABEL>` containing the addresses provided
+* Updates are not directly supported. To update, delete label and then re-add.
+
+NOTE: The SMcli does not contact the storage array when adding a locally stored label.
+
+|===
+
+[#storedcertificates]
+.Managing stored certificates command line parameters
+[cols="2*",options="header"]
+|===
+| Parameter| Definition
+a|
+`SMcli localCertificate show all`
+a|
+Displays all trusted certificates stored locally
+
+a|
+`SMcli localCertificate show alias <ALIAS>`
+a|
+Displays a locally stored trusted certificate with the alias `<ALIAS>`
+
+a|
+`SMcli localCertificate delete all`
+a|
+Deletes all trusted certificates stored locally
+
+a|
+`SMcli localCertificate delete alias <ALIAS>`
+a|
+Deletes a locally stored trusted certificate with the alias `<ALIAS>`
+
+a|
+`SMcli localCertificate trust file <CERT_FILE> alias <ALIAS>`
+a|
+* Saves a certificate to be trusted with the alias `<ALIAS>`
+* The certificate to be trusted is downloaded from the controller in a separate operation, such as using a web browser
+
+a|
+`SMcli <host-name-or-IP-address> [host-name-or-IP-address] localCertificate trust`
+a|
+* Connects to each address and saves the certificate returned into the trusted certificate store
+* The hostname or IP address specified is used as the alias for each certificate saved this way
+* User should verify the certificate on the controller(s) is to be trusted before running this command
+* For highest security, the trust command that takes a file should be used to ensure the certificate did not change between user validation and running of this command
+
+|===

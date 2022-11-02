@@ -271,8 +271,6 @@ LOGICAL DEVICES  OPERATION         STATUS        TIME REMAINING
 Volume-2         Volume Disk Copy  10% COMPLETED  5 min
 ----
 
-Right.
-
 The information fields returned by the `longRunningOperations` parameter have these meanings:
 
 * `NAME` is the name of a volume that is currently in a long running operation. The volume name must have the "Volume" as a prefix.

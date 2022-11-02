@@ -6,6 +6,7 @@ settings:
   prod:
     pdf_enabled: true
     harmony_enabled: true
+  rss_page: "whats-new.html"
   pdf:
     zip-level: 1
     zip-filename: santricity-commands.zip
@@ -14,6 +15,8 @@ sidebar:
   entries:
   - title: SANtricity CLI docs
     url: /index.html
+  - title: What's new
+    url: /whats-new.html
   - section: get-started
   - section: commands-category
   - section: commands-a-z
@@ -23,8 +26,6 @@ homepage:
   tiles:
     - title: Get started
       links:
-        - title: What's new
-          url: get-started/changes-in-the-cli-and-script-commands-in-this-release.html
         - title: CLI overview
           url: get-started/overview-format-commands.html
         - title: CLI command structure
