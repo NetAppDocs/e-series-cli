@@ -22,7 +22,7 @@ To execute this command on an E2800 or E5700 storage array, you must have the Su
 == Syntax
 [subs=+macros]
 ----
-set ssdCache pass:quotes[[_old_ssdCacheName_] userLabel=pass:quotes[_"new_ssdCacheName_"]
+set ssdCache pass:quotes[[_old_ssdCacheName_]] userLabel=pass:quotes[_"new_ssdCacheName_"]
 ----
 
 == Parameter
