@@ -588,13 +588,11 @@ link:../commands-a-z/show-volume-reservations.html[Show volume reservations]
 
 link:../commands-a-z/smcli-autosupportconfig.html[Specify the AutoSupport delivery method]
 
-link:../commands-a-z/start-asyncmirrorgroup-synchronize.html[Start asynchronous mirroring synchronization]
-
-link:../commands-a-z/smcli-autosupportconfig.html[Specify the AutoSupport delivery method]
-
 link:../commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html[Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)]
 
 link:../commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html[Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)]
+
+link:../commands-a-z/start-asyncmirrorgroup-synchronize.html[Start asynchronous mirroring synchronization]
 
 link:../commands-a-z/start-cgsnapimage-rollback.html[Start consistency group snapshot rollback]
 

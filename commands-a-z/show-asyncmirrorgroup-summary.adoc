@@ -17,7 +17,7 @@ This command applies to any individual storage array, including the E2700, E5600
 
 == Roles
 
-To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+To execute this command on an E2800 or E5700 storage array, you must have the Storage Administrator, Support Administrator, Security Adminstrator, or Storage Monitor role.
 
 == Context
 
