@@ -78,3 +78,7 @@ The setting to capture progress details, such as percent complete, and to show t
 == Notes
 
 The starting logical block address and the ending logical block address are useful for very large single-volume LUNs or namespaces. Running a volume parity check on a very large single volume LUN or namespace can take a long time. By defining the beginning address and ending address of the data blocks, you can reduce the time that a volume parity check takes to complete.
+
+== Minimum firmware level
+
+11.80 - This command is deprecated. 

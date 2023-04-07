@@ -1,0 +1,41 @@
+---
+permalink: commands-a-z/show-check-vol-parity-job.html
+sidebar: sidebar
+keywords: show, check, volume, parity, job,
+summary: "The show check volume parity job command shows a specified check volume parity job and the job's status."
+---
+= Show Check Volume Parity Job
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `show check volume parity job` command shows a specified check volume parity job and the job's status.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the EF600 and EF300 arrays; as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an EF600 and EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+[subs=+macros]
+----
+show check volume parity job jobId=<job_id>;
+----
+
+== Parameters
+[options="header"]
+|===
+| Parameter| Description
+a|
+`jobId`
+a|
+The check volume parity job id. This value is required.
+
+|===
+
+== Minimum firmware level
+
+11.80
