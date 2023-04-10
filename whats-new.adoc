@@ -49,6 +49,10 @@ xref:./commands-a-z/stop-check-vol-parity-job.adoc[Stop Check Volume Parity Job]
 a|
 Added command
 a|
+xref:./commands-a-z/command-line-parameters.adoc[Legacy command line parameters]
+a|
+Added `-useLegacyTransferPort` parameter. 
+a|
 xref:./commands-a-z/autoconfigure-storagearray.adoc[Autoconfigure storage array]
 a|
 Added `blockSize` parameter.
