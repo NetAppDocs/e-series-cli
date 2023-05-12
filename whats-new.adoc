@@ -21,6 +21,49 @@ When issuing SMcli commands at the command prompt, you must enter an additional 
 If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to the latest version of SANtricity through the legacy CLI. Upgrades from SANtricity 11.52 to later versions can only be performed through the SMcli.
 ====
 
+== SANtricity 11.80
+
+The following table list changes to the CLI and Script Commands for release 11.80.
+
+[cols="2*",options="header"]
+|===
+| Command| Description of Change
+a|
+xref:./commands-a-z/save-check-vol-parity-job-errors.adoc[Save Check Volume Parity Job Parity Errors]
+a|
+Added command
+a|
+xref:./commands-a-z/start-check-vol-parity-job.adoc[Start check volume parity job]
+a|
+Added command
+a|
+xref:./commands-a-z/show-check-vol-parity-jobs.adoc[Show Check Volume Parity Jobs]
+a|
+Added command
+a|
+xref:./commands-a-z/stop-check-vol-parity-job.adoc[Stop Check Volume Parity Job]
+a|
+Added command
+a|
+xref:./commands-a-z/stop-check-vol-parity-job.adoc[Stop Check Volume Parity Job]
+a|
+Added command
+a|
+xref:./commands-a-z/command-line-parameters.adoc[Legacy command line parameters]
+a|
+Added `-useLegacyTransferPort` parameter. 
+a|
+xref:./commands-a-z/autoconfigure-storagearray.adoc[Autoconfigure storage array]
+a|
+Added `blockSize` parameter.
+a|
+xref:.commands-a-z/check-volume-parity.adoc[Check volume parity]
+a|
+Deprecated command. 
+
+|===
+
+
 == SANtricity 11.70.4
 
 The following table list changes to the CLI and Script Commands for release 11.70.4.

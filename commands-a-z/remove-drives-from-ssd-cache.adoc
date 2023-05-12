@@ -13,11 +13,11 @@ The `set ssdCache` command decreases the capacity of the SSD cache by removing S
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800 or E5700 storage array, you must have the Support Admin role.
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Support Admin role.
 
 == Syntax
 [subs=+macros]
@@ -52,3 +52,5 @@ You cannot remove all of the SSDs from the SSD cache using this command; at leas
 == Minimum firmware level
 
 7.84
+
+11.80 adds EF600 and EF300 array support

@@ -13,11 +13,11 @@ The `set asyncMirrorGroup` command changes the synchronization settings and warn
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin or Support Admin role.
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Context
 
@@ -114,3 +114,5 @@ An asynchronous mirror group repository volume is an expandable volume that is s
 == Minimum firmware level
 
 7.84
+
+11.80 adds EF600 and EF300 array support
