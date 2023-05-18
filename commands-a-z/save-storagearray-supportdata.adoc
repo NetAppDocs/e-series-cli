@@ -402,7 +402,7 @@ This parameter forces the collection of support data if there are any failures i
 
 == Notes
 
-Starting with firmware level 7.86, the file name extension must be `.7z` on systems running Windows. If you are running a firmware version earlier than 7.86 on a Windows system, the files extension must be `.zip`. On systems that are not running Windows, you can use any file extension that works for your system.
+Starting with firmware level 7.86, the file name extension must be `.7z`. If you are running a firmware version earlier than 7.86, the files extension must be `.zip`.
 
 == Minimum firmware level
 
