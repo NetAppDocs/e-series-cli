@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, check, volume, parity, job, errors
 summary: "The save check volume parity job parity errors command saves the parity errors logged by a check volume parity job to the specified file."
 ---
-= Save Check Volume Parity Job Parity Errors
+= Save check volume parity job parity errors
 :icons: font
 :imagesdir: ./media/
 

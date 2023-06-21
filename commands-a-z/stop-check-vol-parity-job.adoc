@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, check, volume, parity, job,
 summary: "The stop check volume parity job command stops an in-progress check volume parity job."
 ---
-= Stop Check Volume Parity Job
+= Stop check volume parity job
 :icons: font
 :imagesdir: ./media/
 
