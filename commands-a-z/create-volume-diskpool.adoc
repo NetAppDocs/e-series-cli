@@ -167,6 +167,8 @@ For best results when creating a thin volume, the repository volume must already
 
 Repository volumes for thin volumes cannot be created in volume groups.
 
+Thin provisioned volumes are not supported on EF300 or EF600.
+
 == Data assurance management
 
 The Data Assurance (DA) feature increases data integrity across the entire storage system. DA enables the storage array to check for errors that might occur when data is moved between the hosts and the drives. When this feature is enabled, the storage array appends error-checking codes (also known as cyclic redundancy checks or CRCs) to each block of data in the volume. After a data block is moved, the storage array uses these CRC codes to determine if any errors occurred during transmission. Potentially corrupted data is neither written to disk nor returned to the host.

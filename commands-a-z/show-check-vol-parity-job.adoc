@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, check, volume, parity, job,
 summary: "The show check volume parity job command shows a specified check volume parity job and the job's status."
 ---
-= Show Check Volume Parity Job
+= Show check volume parity job
 :icons: font
 :imagesdir: ./media/
 

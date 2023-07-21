@@ -351,6 +351,8 @@ entries:
         url: /commands-a-z/save-alltrays-logfile.html
       - title: save auditlog
         url: /commands-a-z/save-auditlog.html
+      - title: save check volume parity job parity errors
+        url: /commands-a-z/save-check-vol-parity-job-errors.html
       - title: save controller arraymanagementcsr
         url: /commands-a-z/save-controller-arraymanagementcsr.html
       - title: save controller arraymanagementsignedcertificate
@@ -631,6 +633,8 @@ entries:
         url: /commands-a-z/show-certificates.html
       - title: show cgsnapimage
         url: /commands-a-z/show-cgsnapimage.html
+      - title: show check volume parity jobs
+        url: /commands-a-z/show-check-vol-parity-jobs.html
       - title: show consistencygroup
         url: /commands-a-z/show-consistencygroup.html
       - title: show controller arraymanagementsignedcertificate summary
@@ -765,6 +769,8 @@ entries:
         url: /commands-a-z/start-asyncmirrorgroup-synchronize.html
       - title: start cgsnapimage rollback
         url: /commands-a-z/start-cgsnapimage-rollback.html
+      - title: start check volume parity job
+        url: /commands-a-z/start-check-vol-parity-job.html
       - title: start controller iscsihostport dhcprefresh
         url: /commands-a-z/start-controller-iscsihostport-dhcprefresh.html
       - title: start controller
@@ -853,6 +859,8 @@ entries:
         url: /commands-a-z/stop-cgsnapimage-rollback.html
       - title: stop cgsnapvolume
         url: /commands-a-z/stop-cgsnapvolume.html
+      - title: stop check volume parity job
+        url: /commands-a-z/stop-check-vol-parity-job.html
       - title: stop consistencygroup pendingsnapimagecreation
         url: /commands-a-z/stop-consistencygroup-pendingsnapimagecreation.html
       - title: stop diskpool locate
