@@ -56,6 +56,19 @@ If the iSCSI target uses an iSCSI qualified name (IQN), enclose the IQN in doubl
 
 |===
 
+== Example
+
+----
+User label:
+
+SMcli -n Array1 -u admin@local -p adminPassword -k -c "show iscsiInitiator [\"bbb000b00b0b0\"] iscsiSessions;"
+
+
+Iqn:
+
+SMcli -n Array1 -u admin@local -p adminPassword -k -c "show iscsiInitiator <\"iqn.0b0b-0b.com.redhat:b0b0b0b0b0b0\"> iscsiSessions;"
+----
+
 == Notes
 
 If you enter this command without defining any arguments, this command returns information about all of the iSCSI sessions that are currently running. The following command returns information about all of the current iSCSI sessions:
