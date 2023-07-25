@@ -23,7 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 [subs=+macros]
 ----
 
-pass:quotes[stop storageArray iscsiSession [_essionNumber_]]
+pass:quotes[stop storageArray iscsiSession [_SessionNumber_]]
 ----
 
 == Parameter
