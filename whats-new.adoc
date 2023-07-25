@@ -63,6 +63,10 @@ Deprecated command.
 
 |===
 
+=======
+== SANtricity 11.70.5
+
+There are no CLI or Script Command changes for release 11.70.5.
 
 == SANtricity 11.70.4
 
