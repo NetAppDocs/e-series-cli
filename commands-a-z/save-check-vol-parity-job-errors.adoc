@@ -1,0 +1,45 @@
+---
+permalink: commands-a-z/save-check-vol-parity-job-errors.html
+sidebar: sidebar
+keywords: save, check, volume, parity, job, errors
+summary: "The save check volume parity job parity errors command saves the parity errors logged by a check volume parity job to the specified file."
+---
+= Save check volume parity job parity errors
+:icons: font
+:imagesdir: ./media/
+
+[.lead]
+The `save check volume parity job parity errors` command saves the parity errors logged by a check volume parity job to the specified file. The output file is written in the same format as the deprecated check volume parity command, and therefore can be used as input to the existing repair volume parity command.
+
+== Supported Arrays
+
+This command applies to any individual storage array, including the EF600 and EF300 arrays; as long as all SMcli packages are installed.
+
+== Roles
+
+To execute this command on an EF600 and EF300 storage array, you must have the Storage Admin role.
+
+== Syntax
+[subs=+macros]
+----
+save check volume parity job parityErrors jobId=<job_id> parityErrorFile=<parity_error_file>;
+----
+
+== Parameters
+[options="header"]
+|===
+| Parameter| Description
+a|
+`jobId`
+a|
+The job id for which to retrieve and save logged parity errors. This value is required.
+a|
+`parityErrorFile`
+a|
+The file specified by the user to indicate where the logged parity errors should be saved. This value is required.
+
+|===
+
+== Minimum firmware level
+
+11.80

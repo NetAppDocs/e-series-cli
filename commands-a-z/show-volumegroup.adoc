@@ -23,7 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 This command returns this information about a volume group:
 
-* The status (Online or Offline)
+* The status (such as Optimal, Degraded, Failed, Missing)
 * The capacity
 * The current owner (the controller in slot A or the controller in slot B )
 * The RAID level

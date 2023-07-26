@@ -768,6 +768,8 @@ link:../commands-a-z/recover-sasport-miswire.html[Recover SAS port mis-wire]
 
 link:../commands-a-z/create-snmpcommunity.html[Register SNMP community]
 
+link:../commands-a-z/create-snmpuser-username.html[Register SNMPv3 USM user]
+
 link:../commands-a-z/create-snmptrapdestination.html[Register SNMP trap destination]
 
 link:../commands-a-z/reset-storagearray-autosupport-schedule.html[Reset AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
@@ -810,6 +812,8 @@ link:../commands-a-z/show-allsnmpcommunities.html[Show SNMP communities]
 
 link:../commands-a-z/show-snmpsystemvariables.html[Show SNMP MIB II system group variables]
 
+link:../commands-a-z/show-allsnmpusers.html[Show SNMPv3 USM user]
+
 link:../commands-a-z/show-syslog-summary.html[Show syslog configuration]
 
 link:../commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html[Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)]
@@ -824,7 +828,11 @@ link:../commands-a-z/start-snmptrapdestination.html[Test SNMP trap destination]
 
 link:../commands-a-z/start-syslog-test.html[Test syslog configuration]
 
+link:../commands-a-z/delete-snmpuser-username.html[Unregister SNMPv3 USM user]
+
 link:../commands-a-z/set-snmpcommunity.html[Update SNMP community]
+
+link:../commands-a-z/set-snmpuser-username.html[Update SNMPv3 USM user]
 
 link:../commands-a-z/set-snmpsystemvariables.html[Update SNMP MIB II system group variables]
 

@@ -59,9 +59,7 @@ a|
 a|
 The drives you want to assign to the disk pool that you want to create. For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
-All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800 and E5700 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
-
-Enclose the tray ID value, the drawer ID value, and the slot ID value in square brackets ([ ]).
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800, E5700, EF600, and EF300 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
 
 a|
 `userLabel`

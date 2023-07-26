@@ -262,6 +262,11 @@ Suppresses informational messages describing the command progress that appear wh
 * `SMcli completed successfully`
 
 a|
+`-useLegacyTransferPort`
+a|
+Used to set the transfer port to `8443` instead of the default `443`.
+
+a|
 `-v`
 a|
 Shows the current global status of the known devices in a configuration file when used with the `-d` parameter.
