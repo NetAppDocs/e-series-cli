@@ -23,7 +23,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 This command returns this information about a disk pool:
 
-* The status (such as optimal, online, offline)
+* The status (such as Optimal, Degraded, Failed, Missing)
 * The total capacity
 * The preservation capacity, usable capacity and unusable capacity
 * The used capacity, free capacity, and percentage full

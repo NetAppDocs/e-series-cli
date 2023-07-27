@@ -17,12 +17,12 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-If you are running the command on the E2800 or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+If you are running the command on the E2800, E5700, EF600, or EF300 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
 ====
 
 == Roles
 
-To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -150,3 +150,5 @@ The settings for automatic resynchronization between the primary volumes and the
 == Minimum firmware level
 
 7.84
+
+11.80 adds EF600 and EF300 array support

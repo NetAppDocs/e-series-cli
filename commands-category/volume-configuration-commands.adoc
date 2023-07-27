@@ -27,6 +27,8 @@ link:../commands-a-z/show-diskpool.html[Show disk pool]
 
 link:../commands-a-z/start-diskpool-fullprovisioning.html[Start Disk Pool Full Provisioning]
 
+link:../commands-a-z/start-diskpool-resourceprovisioning.html[Start Disk Pool Resource Provisioning]
+
 link:../commands-a-z/start-diskpool-locate.html[Start disk pool locate]
 
 link:../commands-a-z/stop-diskpool-locate.html[Stop disk pool locate]
@@ -141,6 +143,8 @@ link:../commands-a-z/repair-volume-parity.html[Repair volume parity]
 
 link:../commands-a-z/repair-data-parity.html[Repair Data Parity]
 
+link:../commands-a-z/save-check-vol-parity-job-errors.html[Save Check Volume Parity Job Parity Errors]
+
 link:../commands-a-z/set-thin-volume-attributes.html[Set thin volume attributes]
 
 link:../commands-a-z/set-volumes.html[Set volume attributes for a volume in a disk pool...]
@@ -148,6 +152,8 @@ link:../commands-a-z/set-volumes.html[Set volume attributes for a volume in a di
 link:../commands-a-z/set-volume-group-attributes-for-volume-in-a-volume-group.html[Set volume attributes for a volume in a volume group...]
 
 link:../commands-a-z/set-volume-logicalunitnumber.html[Set volume mapping]
+
+link:../commands-a-z/show-check-vol-parity-jobs.html[Show Check Volume Parity Jobs]
 
 link:../commands-a-z/show-volume.html[Show thin volume]
 
@@ -159,7 +165,11 @@ link:../commands-a-z/show-volume-performancestats.html[Show volume performance s
 
 link:../commands-a-z/show-volume-reservations.html[Show volume reservations]
 
+link:../commands-a-z/start-check-vol-parity-job.html[Start check volume parity job]
+
 link:../commands-a-z/start-volume-initialization.html[Start volume initialization]
+
+link:../commands-a-z/stop-check-vol-parity-job.html[Stop Check Volume Parity Job]
 
 == Volume group commands
 
@@ -186,6 +196,8 @@ link:../commands-a-z/start-volumegroup-defragment.html[Start volume group defrag
 link:../commands-a-z/start-volumegroup-export.html[Start volume group export]
 
 link:../commands-a-z/start-volumegroup-fullprovisioning.html[Start Volume Group Full Provisioning]
+
+link:../commands-a-z/start-volumegroup-resourceprovisioning.html[Start Volume Group Resource Provisioning]
 
 link:../get-started/learn-about-volume-group-migration.html[Learn about volume group migration (CLI only)]
 

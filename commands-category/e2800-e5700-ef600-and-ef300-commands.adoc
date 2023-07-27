@@ -368,6 +368,8 @@ link:../commands-a-z/save-storagearray-arvmstats-asyncmirrorgroup.html[Save asyn
 
 link:../commands-a-z/save-auditlog.html[Save Audit Log records]
 
+link:../commands-a-z/save-check-vol-parity-job-errors.html[Save Check Volume Parity Job Parity Errors]
+
 link:../commands-a-z/save-controller-nvsram-file.html[Save controller NVSRAM]
 
 link:../commands-a-z/save-drivechannel-faultdiagnostics-file.html[Save drive channel fault isolation diagnostic status]
@@ -582,6 +584,8 @@ link:../commands-a-z/show-storagearray-revocationchecksettings.html[Show certifi
 
 link:../commands-a-z/show-array-label.html[Show array label]
 
+link:../commands-a-z/show-check-vol-parity-jobs.html[Show Check Volume Parity Jobs]
+
 link:../commands-a-z/show-consistencygroup.html[Show consistency group]
 
 link:../commands-a-z/show-cgsnapimage.html[Show consistency group snapshot image]
@@ -698,6 +702,8 @@ link:../commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html[Spec
 
 link:../commands-a-z/start-storagearray-ocspresponderurl-test.html[Start OCSP server URL test]
 
+link:../commands-a-z/start-check-vol-parity-job.html[Start check volume parity job]
+
 link:../commands-a-z/start-cgsnapimage-rollback.html[Start consistency group snapshot rollback]
 
 link:../commands-a-z/start-controller.html[Start controller trace]
@@ -755,6 +761,8 @@ link:../commands-a-z/start-volumegroup-import.html[Start volume group import]
 link:../commands-a-z/start-volumegroup-locate.html[Start volume group locate]
 
 link:../commands-a-z/start-volume-initialization.html[Start volume initialization]
+
+link:../commands-a-z/stop-check-vol-parity-job.html[Stop Check Volume Parity Job]
 
 link:../commands-a-z/stop-cgsnapimage-rollback.html[Stop consistency group snapshot rollback]
 
