@@ -60,13 +60,11 @@ a|
 xref:./commands-a-z/check-volume-parity.adoc[Check volume parity]
 a|
 Deprecated command. 
-
 |===
 
-=======
 == SANtricity 11.70.5
 
-There are no CLI or Script Command changes for release 11.70.5.
+There are no CLI and Script Command changes for release 11.70.5.
 
 == SANtricity 11.70.4
 
