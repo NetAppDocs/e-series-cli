@@ -29,7 +29,7 @@ The following table list changes to the CLI and Script Commands for release 11.8
 |===
 | Command| Description of Change
 a|
-xref:./commands-a-z/save-check-vol-parity-job-errors.adoc[Save check volume carity job parity errors]
+xref:./commands-a-z/save-check-vol-parity-job-errors.adoc[Save check volume parity job parity errors]
 a|
 Added command
 a|
