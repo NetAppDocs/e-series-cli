@@ -13,7 +13,7 @@ The `start drive erase` command erases all of the data from one or more drives.
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 array. It does operate on E2700 and E5600storage arrays.
+This command applies to an individual E2800, E5700, EF600 or EF300 array. It does not operate on E2700 and E5600 storage arrays.
 
 == Roles
 
