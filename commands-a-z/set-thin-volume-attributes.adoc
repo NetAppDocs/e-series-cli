@@ -71,7 +71,7 @@ This parameter increases the virtual capacity of the thin volume. The virtual ca
 
 The minimum virtual capacity is 32 MB.
 
-The maximum virtual capacity is 63 TB.
+The maximum virtual capacity is 256 TB.
 
 a|
 `repositoryMaxCapacity*`
@@ -126,7 +126,7 @@ a|
 a|
 Maximum virtual capacity
 a|
-63 TB
+256 TB
 a|
 Minimum physical capacity
 a|
@@ -134,7 +134,7 @@ a|
 a|
 Maximum physical capacity
 a|
-64 TB
+257 TB
 |===
 Thin volumes support all of the operations that standard volumes do with the following exceptions:
 
