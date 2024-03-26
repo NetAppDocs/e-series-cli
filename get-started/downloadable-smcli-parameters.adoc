@@ -13,7 +13,7 @@ The SANtricity OS 11.60 release includes the ability to download and install the
 
 NOTE: A Java Runtime Environment (JRE), version 8 and above, must be available on the management system where you plan to run the CLI commands.
 
-As with previous versions of the SMcli, the SMcli downloadable through the SANtricity System Manager has a unique set of parameters. For information on using command line parameters for SANtricity OS 11.53 and older releases, see xref:./get-started/command-line-parameters.adoc[Legacy command line parameters]
+As with previous versions of the SMcli, the SMcli downloadable through the SANtricity System Manager has a unique set of parameters. For information on using command line parameters for SANtricity OS 11.53 and older releases, see link:https://docs.netapp.com/us-en/e-series-cli/get-started/command-line-parameters.html[Legacy command line parameters].
 
 === Multifactor authentication
 If SAML (Security Assertion Markup Language) is enabled, only access tokens can be used with the CLI. If SAML is not enabled, the username/password or access tokens can be used. Access tokens can be generated through the SANtricity System Manager.
