@@ -30,7 +30,7 @@ The following table list changes to the CLI and Script Commands for release 11.8
 |===
 | Command| Description of Change
 a|
-xref:./get-started/downloadable-smcli-parameters.adoc#identify-Devices[Identify devices]
+xref:./get-started/downloadable-smcli-parameters.adoc#identify-Devices[Identify devices^]
 a|
 Added `identifyDevices` parameter.
 |===
@@ -43,35 +43,35 @@ The following table list changes to the CLI and Script Commands for release 11.8
 |===
 | Command| Description of Change
 a|
-xref:./commands-a-z/save-check-vol-parity-job-errors.adoc[Save check volume parity job parity errors]
+xref:./commands-a-z/save-check-vol-parity-job-errors.adoc[Save check volume parity job parity errors^]
 a|
 Added command
 a|
-xref:./commands-a-z/start-check-vol-parity-job.adoc[Start check volume parity job]
+xref:./commands-a-z/start-check-vol-parity-job.adoc[Start check volume parity job^]
 a|
 Added command
 a|
-xref:./commands-a-z/show-check-vol-parity-jobs.adoc[Show check volume parity jobs]
+xref:./commands-a-z/show-check-vol-parity-jobs.adoc[Show check volume parity jobs^]
 a|
 Added command
 a|
-xref:./commands-a-z/show-check-vol-parity-job.adoc[Show check volume parity job]
+xref:./commands-a-z/show-check-vol-parity-job.adoc[Show check volume parity job^]
 a|
 Added command
 a|
-xref:./commands-a-z/stop-check-vol-parity-job.adoc[Stop check volume parity job]
+xref:./commands-a-z/stop-check-vol-parity-job.adoc[Stop check volume parity job^]
 a|
 Added command
 a|
-xref:./get-started/command-line-parameters.adoc[Legacy command line parameters]
+xref:./get-started/command-line-parameters.adoc[Legacy command line parameters^]
 a|
 Added `-useLegacyTransferPort` parameter. 
 a|
-xref:./commands-a-z/autoconfigure-storagearray.adoc[Autoconfigure storage array]
+xref:./commands-a-z/autoconfigure-storagearray.adoc[Autoconfigure storage array^]
 a|
 Added `blockSize` parameter.
 a|
-xref:./commands-a-z/check-volume-parity.adoc[Check volume parity]
+xref:./commands-a-z/check-volume-parity.adoc[Check volume parity^]
 a|
 Deprecated command. 
 |===
@@ -89,7 +89,7 @@ The following table list changes to the CLI and Script Commands for release 11.7
 |===
 | Command| Description of Change
 a|
-xref:./get-started/downloadable-smcli-parameters.adoc[Downloadble SMcli command line parameters]
+xref:./get-started/downloadable-smcli-parameters.adoc[Downloadble SMcli command line parameters^]
 a|
 Added `-t` and `-T` access token parameter descriptions for multifactor authentication.
 |===
@@ -102,27 +102,27 @@ The following table list changes to the CLI and Script Commands for release 11.7
 |===
 | Command| Description of Change
 a|
-xref:./commands-a-z/start-diskpool-resourceprovisioning.adoc[Start Disk Pool Resource Provisioning]
+xref:./commands-a-z/start-diskpool-resourceprovisioning.adoc[Start Disk Pool Resource Provisioning^]
 a|
 Added command
 a|
-xref:./commands-a-z/start-volumegroup-resourceprovisioning.adoc[Start Volume Group Resource Provisioning]
+xref:./commands-a-z/start-volumegroup-resourceprovisioning.adoc[Start Volume Group Resource Provisioning^]
 a|
 Added command
 a|
-xref:./commands-a-z/start-diskpool-fullprovisioning.adoc[Start Disk Pool Full Provisioning]
+xref:./commands-a-z/start-diskpool-fullprovisioning.adoc[Start Disk Pool Full Provisioning^]
 a|
 Updated `disableResourceProvisioning` parameter description.
 a|
-xref:./commands-a-z/start-volumegroup-fullprovisioning.adoc[Start Volume Group Full Provisioning]
+xref:./commands-a-z/start-volumegroup-fullprovisioning.adoc[Start Volume Group Full Provisioning^]
 a|
 Updated `disableResourceProvisioning` parameter description.
 a|
-xref:./commands-a-z/recreate-storagearray-securitykey.html[Re-create external security key]
+xref:./commands-a-z/recreate-storagearray-securitykey.html[Re-create external security key^]
 a|
 Added `deleteOldKey` parameter.
 a|
-xref:./commands-a-z/create-diskpool.html[Create disk pool]
+xref:./commands-a-z/create-diskpool.html[Create disk pool^]
 a|
 Updated `driveCount` parameter description.
 |===
@@ -135,31 +135,31 @@ The following table list changes to the CLI and Script Commands for release 11.7
 |===
 | Command| Description of Change
 a|
-xref:./commands-a-z/create-snmpuser-username.adoc[Register SNMPv3 USM user]
+xref:./commands-a-z/create-snmpuser-username.adoc[Register SNMPv3 USM user^]
 a|
 Added command
 a|
-xref:./commands-a-z/set-snmpuser-username.adoc[Update SNMPv3 USM user]
+xref:./commands-a-z/set-snmpuser-username.adoc[Update SNMPv3 USM user^]
 a|
 Added command
 a|
-xref:./commands-a-z/show-allsnmpusers.adoc[Show SNMPv3 USM user]
+xref:./commands-a-z/show-allsnmpusers.adoc[Show SNMPv3 USM user^]
 a|
 Added command
 a|
-xref:./commands-a-z/delete-snmpuser-username.adoc[Unregister SNMPv3 USM user]
+xref:./commands-a-z/delete-snmpuser-username.adoc[Unregister SNMPv3 USM user^]
 a|
 Added command
 a|
-xref:./commands-a-z/create-snmptrapdestination.adoc[Register SNMP trap destination]
+xref:./commands-a-z/create-snmptrapdestination.adoc[Register SNMP trap destination^]
 a|
 Added `userName` and `engineid` parameters.
 a|
-xref:./commands-a-z/set-snmptrapdestination-trapreceiverip.adoc[Update SNMP trap destination]
+xref:./commands-a-z/set-snmptrapdestination-trapreceiverip.adoc[Update SNMP trap destination^]
 a|
 Added `userName` and `engineid` parameters.
 a|
-xref:./commands-a-z/start-snmptrapdestination.adoc[Test SNMP trap destination]
+xref:./commands-a-z/start-snmptrapdestination.adoc[Test SNMP trap destination^]
 a|
 Added `userName` and `engineid` parameters.
 |===
@@ -172,35 +172,35 @@ The following table list changes to the CLI and Script Commands for release 11.7
 |===
 | Command| Description of Change
 a|
-xref:./commands-a-z/start-drive-erase.adoc[Start drive erase]
+xref:./commands-a-z/start-drive-erase.adoc[Start drive erase^]
 a|
 Added command
 a|
-xref:./commands-a-z/import-storagearray-securitykey-file.adoc[Import storage array security key]
+xref:./commands-a-z/import-storagearray-securitykey-file.adoc[Import storage array security key^]
 a|
 Added `forceOverwrite` parameter.
 a|
-xref:./commands-a-z/set-controller-hostport.adoc[Set controller host port properties]
+xref:./commands-a-z/set-controller-hostport.adoc[Set controller host port properties^]
 a|
 Added `fecMode` parameter.
 a|
-xref:./commands-a-z/show-syslog-summary.adoc[Show syslog configuration]
+xref:./commands-a-z/show-syslog-summary.adoc[Show syslog configuration^]
 a|
 Added `syslogFormat` parameter.
 a|
-xref:./commands-a-z/set-syslog.adoc[Configure syslog settings]
+xref:./commands-a-z/set-syslog.adoc[Configure syslog settings^]
 a|
 Added `syslogFormat` parameter.
 a|
-xref:./commands-a-z/set-emailalert.adoc[Configure email alert settings]
+xref:./commands-a-z/set-emailalert.adoc[Configure email alert settings^]
 a|
 Added `serverEncryption`, `serverPort`, `serverUsername`, and `serverPassword` parameters.
 a|
-xref:./commands-a-z/show-emailalert-summary.adoc[Show email alert configuration]
+xref:./commands-a-z/show-emailalert-summary.adoc[Show email alert configuration^]
 a|
 Added `SMTP` encryption, port, and credential parameter data.
 a|
-xref:./commands-a-z/recover-volume.adoc[Recover RAID volume]
+xref:./commands-a-z/recover-volume.adoc[Recover RAID volume^]
 a|
 Added `blockSize` parameter.
 |===
@@ -213,23 +213,23 @@ The following table list changes to the CLI and Script Commands for release 11.7
 |===
 | Command| Description of Change
 a|
-xref:./commands-a-z/download-storagearray-firmware.adoc[Download storage array firmware/NVSRAM]
+xref:./commands-a-z/download-storagearray-firmware.adoc[Download storage array firmware/NVSRAM^]
 a|
 Added `healthCheckNeedsAttnOverride` parameter.
 a|
-xref:./commands-a-z/create-volume-diskpool.adoc[Create volume in disk pool]
+xref:./commands-a-z/create-volume-diskpool.adoc[Create volume in disk pool^]
 a|
 Added `raidLevel` parameter.
 a|
-xref:./commands-a-z/enable-storagearray-externalkeymanagement-file.adoc[Enable external security key management]
+xref:./commands-a-z/enable-storagearray-externalkeymanagement-file.adoc[Enable external security key management^]
 a|
 Added `saveFile` parameter.
 a|
-xref:./commands-a-z/disable-storagearray-externalkeymanagement-file.adoc[Disable external security key management]
+xref:./commands-a-z/disable-storagearray-externalkeymanagement-file.adoc[Disable external security key management^]
 a|
 Added `saveFile` parameter.
 a|
-xref:./commands-a-z/recover-volume.adoc[Recover RAID volume]
+xref:./commands-a-z/recover-volume.adoc[Recover RAID volume^]
 a|
 Added `hostUnmapEnabled` parameter.
 |===
