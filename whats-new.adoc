@@ -21,7 +21,6 @@ When issuing SMcli commands at the command prompt, you must enter an additional 
 If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to the latest version of SANtricity through the legacy CLI. Upgrades from SANtricity 11.52 to later versions can only be performed through the SMcli.
 ====
 
-//tag::whats-new[]
 == SANtricity 11.81
 
 The following table list changes to the CLI and Script Commands for release 11.81.
@@ -75,7 +74,6 @@ xref:./commands-a-z/check-volume-parity.adoc[Check volume parity]
 a|
 Deprecated command. 
 |===
-//end::whats-new[]
 
 == SANtricity 11.70.5
 
