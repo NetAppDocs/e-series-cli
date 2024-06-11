@@ -38,7 +38,7 @@ If you configure NTP using a fully qualified domain name, you must also configur
 
 ----
 
-set controller(a|b) NTPServers=(disabled|auto|(Address1 [keyIdentifier=integerLiteral() keyType=stringLiteral() passPhrase=stringLiteral()] [Address2 [keyIdentifier=integerLiteral() keyType=stringLiteral() passPhrase=stringLiteral()]]))
+set controller(a|b) NTPServers=(disabled|auto|(Address1 [Address2]))
 ----
 
 == Parameters
@@ -80,18 +80,6 @@ a|
 If a domain name is specified, a DNS server must also be configured to allow the controller to resolve the server IP address.
 ====
 
-a|
-`keyIdentifier` `keyType`
-
-`passPhrase`
-
-a|
-Optionally, these parameters provide the key credentials for enabling NTP authentication:
-
-* `key Identifier` is an integer from 0 to 65535.
-* `keyType` is one of the following: none, sha1, sha224, sha256, sha384 or sha512.
-* `passPhrase` is either a hex digit (0-9, with a-f allowed), which is exactly 40 digits long entered as a stringLiteral, or an alphanumeric character string up to 20 bytes long.
-
 |===
 
 == Examples
@@ -99,9 +87,9 @@ Optionally, these parameters provide the key credentials for enabling NTP authen
 ----
 set controller[a] NTPServers=disabled;
 set controller[a] NTPServers=auto;
-set controller[a] NTPServers=("0.pool.ntp.org" keyIdentifier=3 keyType="sha1" passPhrase="SomePassword1" "1.us.pool.ntp.org" keyIdentifier=3 keyType="sha1" passPhrase=" SomePassword1");
-set controller[b] NTPServers=(192.168.1.105 keyIdentifier=3 keyType="sha1" passPhrase=" SomePassword1" "1.us.pool.ntp.org");
-set controller[b] NTPServers=(set controller[b] NTPServers=(2001:0db8:85a3:0000:0000:8a2e:0370:7334 keyIdentifier=3 keyType="sha1" passPhrase=" SomePassword1");
+set controller[a] NTPServers=("0.pool.ntp.org" "1.us.pool.ntp.org");
+set controller[b] NTPServers=(192.168.1.105 "1.us.pool.ntp.org");
+set controller[b] NTPServers=(2001:0db8:85a3:0000:0000:8a2e:0370:7334);
 ----
 
 == Minimum firmware level
