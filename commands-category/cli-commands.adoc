@@ -268,7 +268,7 @@ link:../commands-a-z/recover-volume.html[Recover RAID volume]
 
 link:../commands-a-z/recover-sasport-miswire.html[Recover SAS port mis-wire]
 
-link:../commands-a-z/recreate-storagearray-securitykey.adocV879933[Re-create external security key]
+link:../commands-a-z/recreate-storagearray-securitykey.html[Re-create external security key]
 
 link:../commands-a-z/recreate-storagearray-mirrorrepository.html[Re-create synchronous mirroring repository volume]
 
