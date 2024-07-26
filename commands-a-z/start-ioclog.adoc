@@ -21,7 +21,7 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 
 == Context
 
-Controllers are identified as "a " or "b". Each controller can have up to four host channels; each channel is uniquely identified by a number from 1 through 4.
+Controllers are identified as "a " or "b". Each controller can have up to four host channels; each channel is uniquely identified by a number from 1 through 8.
 
 == Syntax
 
