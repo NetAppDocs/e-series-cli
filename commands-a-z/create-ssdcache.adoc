@@ -13,11 +13,11 @@ The `create ssdCache` command creates a read cache for a storage array using Sol
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Support Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Support Admin role.
 
 == Context
 
@@ -25,6 +25,7 @@ Using high performance SSDs to cache read data improves the application I/O perf
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 create ssdCache userLabel=pass:quotes[_"ssdCacheName"_]
 drives=pass:quotes[_(trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1 ... trayIDn,[drawerIDn,_]]pass:quotes[_slotIDn_)]

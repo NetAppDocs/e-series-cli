@@ -13,6 +13,7 @@ The `activate storageArray firmware` command activates firmware that you have pr
 
 == Syntax
 
+[source,cli]
 ----
 activate storageArray firmware
 [healthCheckMelOverride=(TRUE | FALSE)]

@@ -22,6 +22,7 @@ This command applies to the EF600 and EF300 storage arrays.
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 
 pass:quotes[ _Address1 Address2_ add storageArrayLabel label _userDefinedString_]

@@ -17,6 +17,7 @@ This command applies to the EF600 and EF300 storage arrays.
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 
 pass:quotes[_ipAddress1 ipAddress2_  trust localCertificate]

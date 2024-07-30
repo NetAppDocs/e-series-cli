@@ -13,11 +13,11 @@ The `create volume` command creates a volume group across the drives in the stor
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -28,6 +28,7 @@ If you have drives with different capacities, you cannot automatically create vo
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 create volume driveCount=pass:quotes[_numberOfDrives_]
 [volumeGroupUserLabel=pass:quotes[_"volumeGroupUserLabel"_]]
@@ -35,29 +36,6 @@ raidLevel=(0 | 1 | 3 | 5 | 6)
 userLabel=pass:quotes[_"userLabel"_]
 driveMediaType=(HDD | SSD | unknown | allMedia)
 [driveType=(SAS | NVMe4K)]
-[capacity=pass:quotes[_volumeCapacity_]]
-[owner=(a|b)]
-[mapping=(none | default)]
-[cacheReadPrefetch=(TRUE | FALSE)]
-[segmentSize=pass:quotes[_segmentSizeValue_]]
-[usageHint=(fileSystem | dataBase | multiMedia)]
-[trayLossProtect=(TRUE | FALSE)]
-[drawerLossProtect=(TRUE | FALSE)]
-[dssPreAllocate=(TRUE | FALSE)]
-[securityType=(none | capable | enabled)]
-[secureDrives=(fips | fde )]
-[dataAssurance=(none | enabled)]
-[resourceProvisioningCapable=(TRUE | FALSE)]
-[blockSize=blockSizeValue]
-----
-[subs=+macros]
-----
-create volume driveCount=pass:quotes[_numberOfDrives_]
-[volumeGroupUserLabel=pass:quotes[_"volumeGroupName"_]]
-raidLevel=(0 | 1 | 5 | 6)
-userLabel=pass:quotes[_"volumeName"_]
-driveMediaType=(HDD | SSD | unknown | allMedia)
-[driveType=SAS]
 [capacity=pass:quotes[_volumeCapacity_]]
 [owner=(a|b)]
 [mapping=(none | default)]

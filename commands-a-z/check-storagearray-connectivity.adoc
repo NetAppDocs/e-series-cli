@@ -17,7 +17,7 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-If you are running the command on the E2800 or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+If you are running the command on the E4000, E2800, or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
 ====
 
 == Roles
@@ -35,6 +35,7 @@ Connectivity is tested using all possible channels, and if it is a dual controll
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 check storageArray connectivity
 (remoteStorageArrayName=pass:quotes[_"storageArrayName"_]|
