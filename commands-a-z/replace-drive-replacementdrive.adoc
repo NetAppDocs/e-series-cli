@@ -13,17 +13,18 @@ The `replace drive replacementDrive` command replaces a drive in a volume group.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
 Replacing a drive in a volume group redefines the composition of a volume group. You can use this command to replace a drive with either an unassigned drive or a fully integrated hot spare.
 
 == Syntax
+[source,cli]
 ----
 replace (drive \[trayID,[drawerID,]slotID\] \| drives\[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn\]
  | <"wwID">)

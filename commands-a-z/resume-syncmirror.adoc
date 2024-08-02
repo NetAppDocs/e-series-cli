@@ -13,11 +13,11 @@ The `resume syncMirror` command resumes a suspended synchronous mirroring operat
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, and E5700 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, or E5700 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -28,6 +28,7 @@ In previous versions of this command, the feature identifier was `remoteMirror`.
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 resume syncMirror (primary pass:quotes[[_volumeName_]] |
 primaries pass:quotes[[_volumeName1 ... volumeNameN_]])

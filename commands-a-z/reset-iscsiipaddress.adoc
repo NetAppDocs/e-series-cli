@@ -17,12 +17,12 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-If you are running the command on the E2800, E5700, EF600, and EF300 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+If you are running the command on the E4000, E2800, E5700, EF600, and EF300 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
 ====
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -35,7 +35,7 @@ The storage array with the changed IP address sends a message to each remote sto
 If the storage array with the changed IP address is unable to send its inter-controller message to a remote storage array, the system sends you an alert of the connectivity issue. Use the `reset` command to re-establish connection with the local storage array.
 
 == Syntax
-
+[source,cli]
 ----
 reset (remoteStorageArrayName="storageArrayName" | remoteStorageArrayWwid=<wwID>)
 iscsiIpAddress
