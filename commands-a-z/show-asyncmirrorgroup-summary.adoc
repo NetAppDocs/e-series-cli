@@ -13,11 +13,11 @@ The `show asyncMirrorGroup summary` command displays configuration information f
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -26,8 +26,8 @@ This command also displays the asynchronous mirrored pairs associated with each 
 You also can use this command to show the progress of periodic data synchronization on all of the mirrored pairs within the asynchronous mirror group.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 show (allAsyncMirrorGroups |
 asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]] |

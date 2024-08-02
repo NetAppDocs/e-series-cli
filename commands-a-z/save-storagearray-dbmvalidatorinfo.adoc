@@ -13,19 +13,19 @@ The `save storageArray dbmValidatorInfo` command saves the database management (
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
 == Context
 
 Technical support can use this XML file to generate a validator string (a security code). The validator string must be included in the `load storageArray dbmDatabase` command when restoring a storage array back to a pre-existing configuration.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 save storageArray dbmValidatorInfo file=pass:quotes["_filename_"] dbmDatabase=pass:quotes["_filename_"]
 ----

@@ -25,7 +25,7 @@ This command is valid only for E2700, E5600, or EF560 (and other previous genera
 ====
 
 == Syntax
-
+[source,cli]
 ----
 set controller [(a| b)]
 serviceAllowedIndicator=(on | off)

@@ -13,11 +13,11 @@ The `Show array label` command returns information about whether a storage array
 
 == Supported Arrays
 
-This command applies to the EF600 storage arrays.
+This command applies to the EF600 and EF300 storage arrays.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 pass:quotes[show storageArrayLabel label _userDefinedString_]
 show storageArrayLabel all

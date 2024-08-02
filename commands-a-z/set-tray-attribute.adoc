@@ -12,8 +12,8 @@ summary: "The set tray command sets user-defined attributes for an tray."
 The `set tray` command sets user-defined attributes for an tray.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 set tray pass:quotes[[_trayID_]] (chassisName | assetTag)=pass:quotes["_userID_"]
 ----

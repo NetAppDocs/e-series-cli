@@ -21,6 +21,7 @@ To execute this command on an EF600 and EF300 storage array, you must have the S
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 save check volume parity job parityErrors jobId=<job_id> parityErrorFile=<parity_error_file>;
 ----

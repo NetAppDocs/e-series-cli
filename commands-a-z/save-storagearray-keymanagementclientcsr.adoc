@@ -13,11 +13,11 @@ The `save storageArray keyManagementClientCSR` command requests a generated CSR 
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
 == Context
 
@@ -27,8 +27,8 @@ This command applies only to external key management.
 ====
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 
 save storageArray keyManagementClientCSR commonName=pass:quotes["_common_name_"]

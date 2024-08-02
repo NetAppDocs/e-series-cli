@@ -43,15 +43,15 @@ Non-alertable events cannot be made alertable using this command.
 ====
 
 == Syntax to block an event alert
-
 [subs=+macros]
+[source,cli]
 ----
 set blockEventAlert pass:quotes[_eventType_]
 ----
 
 == Syntax to unblock an event alert
-
 [subs=+macros]
+[source,cli]
 ----
 set unBlockEventAlert pass:quotes[_eventType_]
 ----

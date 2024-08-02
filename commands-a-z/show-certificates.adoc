@@ -13,10 +13,10 @@ The `Show certificates` command allows you to view the certificates installed on
 
 == Supported Arrays
 
-This command applies to the EF600 storage arrays.
+This command applies to the EF600 and EF300 storage arrays.
 
 == Syntax
-
+[source,cli]
 ----
 show localCertificate all | alias alias
 ----

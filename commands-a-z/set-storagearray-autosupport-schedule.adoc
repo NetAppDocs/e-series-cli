@@ -13,11 +13,11 @@ The `set storageArray autoSupport schedule` command sets the daily and weekly ti
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Context
 
@@ -26,8 +26,8 @@ To execute this command on an E2800, E5700, EF600, or EF300 storage array, you m
 * For the weekly schedule, you select preferred days of the week for AutoSupport collection and transmission.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 set storageArray autoSupport schedule dailyTime=pass:quotes[_startTime-endTime_]
  [dayOfWeek=(Sunday Monday Tuesday Wednesday Thursday Friday Saturday)]

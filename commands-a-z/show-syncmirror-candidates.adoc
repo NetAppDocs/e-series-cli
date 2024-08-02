@@ -17,12 +17,12 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-If you are running the command on the E2800 or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+If you are running the command on the E4000, E2800, or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
 ====
 
 == Roles
 
-To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin or Storage Monitor role.
+To execute this command on an E4000, E2800, or E5700 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Context
 
@@ -33,6 +33,7 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 pass:quotes[show syncMirror candidates primary="_volumeName_"
 remoteStorageArrayName="_storageArrayName_"]

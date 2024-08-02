@@ -13,11 +13,11 @@ The `set controller NTPServers` command sets the NTP settings for the controller
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Context
 
@@ -35,9 +35,8 @@ If you configure NTP using a fully qualified domain name, you must also configur
 ====
 
 == Syntax
-
+[source,cli]
 ----
-
 set controller(a|b) NTPServers=(disabled|auto|(Address1 [Address2]))
 ----
 

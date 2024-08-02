@@ -13,11 +13,11 @@ The `show storageArray autoSupport` command displays the AutoSupport bundle coll
 
 == Supported Arrays
 
-This command is operational for either the E2800, E5700, EF600, and EF300 storage arrays.
+This command is operational for either the E4000, E2800, E5700, EF600, and EF300 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin or Storage Monitor role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin or Storage Monitor role.
 
 == Context
 
@@ -34,7 +34,7 @@ The command output from this command shows the following configuration informati
 * Information about ASUP capabilities, the chassis serial number, and the configured daily and weekly schedules
 
 == Syntax
-
+[source,cli]
 ----
 show storageArray autoSupport
 ----

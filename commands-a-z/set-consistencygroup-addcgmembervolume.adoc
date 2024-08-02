@@ -13,19 +13,19 @@ The `set consistencyGroup addCGMemberVolume` command adds a new base volume as a
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
 You can specify an existing repository volume for the new consistency group member, or create a new repository volume. When you create a new repository volume, you identify an existing volume group or an existing disk pool where you want the repository volume.
 
 == Syntax for use with an existing repository volume
-
 [subs=+macros]
+[source,cli]
 ----
 
 set consistencyGroup ["consistencyGroupName"]
@@ -34,8 +34,8 @@ repositoryVolume=pass:quotes["_volumeGroupName_"]
 ----
 
 == Syntax for use when creating a new repository volume in a volume group
-
 [subs=+macros]
+[source,cli]
 ----
 
 set consistencyGroup pass:quotes[["_consistencyGroupName_"]]
@@ -44,8 +44,8 @@ repositoryVolume=pass:quotes[("_volumeGroupName_"] capacity=pass:quotes[_capacit
 ----
 
 == Syntax for use when creating a new repository volume in a disk pool
-
 [subs=+macros]
+[source,cli]
 ----
 
 set consistencyGroup pass:quotes[["_consistencyGroupName_"]]
