@@ -13,7 +13,7 @@ The `SMcli enable autoSupportFeature` command turns on the AutoSupport (ASUP) fe
 
 == Supported Arrays
 
-This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E4000, E2800, or E5700 storage arrays.
 
 == Context
 
@@ -43,7 +43,7 @@ You must enable the three features in the following order:
 . *Enable AutoSupport Remote Diagnostics*
 
 == Syntax
-
+[source,cli]
 ----
 SMcli enable|disable autoSupportFeature
 ----

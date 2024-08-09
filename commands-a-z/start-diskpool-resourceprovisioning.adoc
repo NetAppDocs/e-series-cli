@@ -25,6 +25,7 @@ To disable resource provisioning on a disk pool, use the full provisioning comma
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 start diskPoolpass:quotes[[_diskPoolName_]] resourceProvisioning
 ----

@@ -28,7 +28,7 @@ The Persistent Monitor should be running on the management station to send sched
 ====
 
 == Syntax
-
+[source,cli]
 ----
 SMcli -autoSupportConfig test reply-toEmail<address>
 ----

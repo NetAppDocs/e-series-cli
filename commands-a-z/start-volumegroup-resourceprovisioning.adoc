@@ -25,6 +25,7 @@ To disable resource provisioning on a volume group, use the full provisioning co
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 pass:quotes[start volumeGroup[_volumeGroupName_]] resourceProvisioning
 ----

@@ -13,7 +13,7 @@ The `SMcli autoSupportSchedule reset` command resets the daily and weekly times 
 
 == Supported Arrays
 
-This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E4000, E2800 or E5700 storage arrays.
 
 == Context
 
@@ -28,7 +28,7 @@ This command is an SMcli command, not a script command. You must run this comman
 * For the weekly schedule, you select preferred days of the week for AutoSupport collection and transmission.
 
 == Syntax
-
+[source,cli]
 ----
 SMcli -autoSupportSchedule reset | (dailyTime=<startTime>-<endTime>
    dayOfWeek=[Sunday Monday Tuesday Wednesday Thursday Friday Saturday]

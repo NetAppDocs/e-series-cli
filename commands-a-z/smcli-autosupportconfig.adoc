@@ -13,7 +13,7 @@ The `SMcli -autoSupportConfig` command sets up the delivery method for sending A
 
 == Supported Arrays
 
-This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E4000, E2800, or E5700 storage arrays.
 
 == Context
 
@@ -28,7 +28,7 @@ You can create two major types of delivery methods for sending AutoSupport messa
 * HTTP/HTTPS -- Use this method when you want to send AutoSupport messages using the HTTP or HTTPS protocols. You need to use HTTPS if you want to use AutoSupport OnDemand or AutoSupport Remote Diagnostics.
 
 == Syntax for SMTP Delivery Method
-
+[source,cli]
 ----
 SMcli -autoSupportConfig deliveryMethod=SMTP
 mailRelayServer=<mailRelayServerName> senderMail=<senderEmailAddress>

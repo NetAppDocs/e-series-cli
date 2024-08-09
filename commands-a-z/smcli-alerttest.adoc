@@ -23,7 +23,7 @@ This command is an SMcli command, not a script command. You must run this comman
 ====
 
 == Syntax
-
+[source,cli]
 ----
 SMcli -alertTest
 ----

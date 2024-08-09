@@ -21,6 +21,7 @@ To execute this command on an EF600 and EF300 storage array, you must have the S
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 start check volume[<volume_label>] parity job 
 (startingLba=<start_lba> endingLba=<end_lba> scanPriority=<scan_priority> repairParityErrors=<true | false>         
