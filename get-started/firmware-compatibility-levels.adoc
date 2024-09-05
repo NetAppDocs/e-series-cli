@@ -2,13 +2,16 @@
 permalink: get-started/firmware-compatibility-levels.html
 sidebar: sidebar
 keywords: firmware, compatibility, levels
-summary: "The script commands and the command parameters do not run under all versions of the controller firmware."
+summary: "The script commands in the following sections list the minimum firmware levels under which the script commands can run."
 ---
 = Firmware compatibility levels
 :icons: font
 :imagesdir: ./media/
 
-The script commands and the command parameters do not run under all versions of the controller firmware. The script commands in the following sections list the minimum firmware levels under which the script commands can run. In the script commands, the firmware levels are listed under the heading "`Minimum Firmware Level.`" This list describes how to interpret the information about the firmware levels.
+[.lead]
+The script commands in the following sections list the minimum firmware levels under which the script commands can run.
+
+The script commands and the command parameters do not run under all versions of the controller firmware. In the script commands, the firmware levels are listed under the heading "`Minimum Firmware Level.`" This list describes how to interpret the information about the firmware levels.
 
 * If a script command does not list a minimum controller firmware level, the script command and all of the parameters associated with that script command can run under any level of controller firmware.
 * A controller firmware number without any explanatory information indicates that the controller firmware level applies to the entire script command and all of the parameters for that script command.

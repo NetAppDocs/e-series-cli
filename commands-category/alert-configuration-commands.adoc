@@ -8,6 +8,8 @@ summary: "Alert configuration commands"
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+The following list of alert configuration commands are available for your E-Series storage system. 
 
 == Embedded SNMP configuration
 link:../commands-a-z/create-snmpcommunity.html[Register SNMP community]

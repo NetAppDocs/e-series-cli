@@ -8,6 +8,9 @@ summary: "Storage, Security and Support administrators commands"
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+The following list of administrator commands are available for your E-Series storage system. 
+
 == Storage administrators commands
 
 link:../commands-a-z/activate-asynchronous-mirroring.html[Activate asynchronous mirroring]

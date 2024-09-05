@@ -8,6 +8,8 @@ summary: "Security commands"
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+The following list of security commands are available for your E-Series storage system. 
 
 == Audit log management commands
 

@@ -8,6 +8,8 @@ summary: "Mirroring commands"
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+The following list of mirroring commands are available for your E-Series storage system. 
 
 == Asynchronous mirroring commands
 

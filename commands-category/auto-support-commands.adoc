@@ -8,6 +8,8 @@ summary: "Auto support commands"
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+The following list of auto support commands are available for your E-Series storage system. 
 
 == AutoSupport bundle collection commands for the E2700 and E5600
 

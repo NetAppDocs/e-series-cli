@@ -8,8 +8,10 @@ summary: "The script engine looks for certain characters or a command to show co
 :icons: font
 :imagesdir: ./media/
 
-The script engine looks for certain characters or a command to show comments. You can add comments to a script file in three ways:
+[.lead]
+The script engine looks for certain characters or a command to show comments. You can add comments to a script file in three ways.
 
+== Methods for adding comments to a script file 
 * Add text after two forward slashes (`//` ) as a comment until an end-of-line character is reached. If the script engine does not find an end-of-line character in the script after processing a comment, an error message appears, and the script operation is terminated. This error usually occurs when a comment is placed at the end of a script and you have forgotten to press the *Enter* key.
 +
 ----

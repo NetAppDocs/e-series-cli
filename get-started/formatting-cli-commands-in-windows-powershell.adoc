@@ -8,7 +8,10 @@ summary: "The Windows PowerShell is an interactive and scripting shell that prov
 :icons: font
 :imagesdir: ./media/
 
-The Windows PowerShell is an interactive and scripting shell that provides access to command-line tools. The Windows PowerShell improves upon the Windows Command Prompt with a more robust set of commands and scripting capability. You can run all of the CLI and script commands in the Windows PowerShell; however, the Windows PowerShell has some unique formatting requirements. The requirements are these:
+[.lead]
+The Windows PowerShell is an interactive and scripting shell that provides access to command-line tools.
+
+The Windows PowerShell improves upon the Windows Command Prompt with a more robust set of commands and scripting capability. You can run all of the CLI and script commands in the Windows PowerShell; however, the Windows PowerShell has some unique formatting requirements. The requirements are these:
 
 * Begin all SMcli commands with a period and a forward slash (./)
 * SMcli wrapper must be identified as an executable command with the .exe extension (SMcli.exe)

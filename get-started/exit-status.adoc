@@ -2,13 +2,16 @@
 permalink: get-started/exit-status.html
 sidebar: sidebar
 keywords: exit, status
-summary: "This table lists the exit statuses that might be returned and the meaning of each status."
+summary: "Exit statuses are returned on executed commands. This table lists the exit statuses that might be returned and the meaning of each status."
 ---
 = Exit status
 :icons: font
 :imagesdir: ./media/
 
-This table lists the exit statuses that might be returned and the meaning of each status.
+[.lead]
+Exit statuses are returned on executed commands. The following table lists the exit statuses that might be returned and the meaning of each status.
+
+== Exit status definitions 
 
 [cols="3*",options="header"]
 |===

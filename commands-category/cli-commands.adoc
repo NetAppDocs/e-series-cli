@@ -4,6 +4,10 @@ sidebar: sidebar
 keywords: cli commands, synchronous, asynchronous, certificate, autoconfigure, storage
 summary: "CLI commands (Alphabetical List)"
 ---
+
+[.lead]
+The following is a complete list of commands are available for your E-Series storage system. 
+
 = CLI commands (Alphabetical List)
 :icons: font
 :imagesdir: ./media/

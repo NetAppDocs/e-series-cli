@@ -8,6 +8,8 @@ summary: "Volume configuration commands"
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+The following list of volume configuration commands are available for your E-Series storage system. 
 
 == Disk pool commands
 
