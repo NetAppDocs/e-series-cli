@@ -2,18 +2,19 @@
 permalink: get-started/learn-about-volume-group-migration.html
 sidebar: sidebar
 keywords: volume, group, migration, learn, data, access, export, import, component
-summary: "Learn about volume group migration"
+summary: "Volume group migration lets you export a volume group so that you can import the volume group to a different storage array. You also can export a volume group so that you can store the data offline."
 ---
 = Learn about volume group migration
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
+Volume group migration lets you export a volume group so that you can import the volume group to a different storage array. You also can export a volume group so that you can store the data offline.
+
 [CAUTION]
 ====
 If the volume group consist of NVMe or FIPS capable drives, then the security key and pass phrase will need to be recorded/saved from the source array in order to unlock the drives before the start of the migration to the target array can begin. If the security key and pass phrase is not known and/or data integrity is not needed then a security erase can be performed. Mixing of different encryption security drives is not supported on E-Series Storage Systems. For more information on how to unlock drives using a security key, erase FIPS drives, and unlock or reset locked NVMe drives, see the online help for SANtricity System Manager.
 ====
-
-Volume group migration lets you export a volume group so that you can import the volume group to a different storage array. You also can export a volume group so that you can store the data offline.
 
 [NOTE]
 ====

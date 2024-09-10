@@ -42,7 +42,7 @@ The following table list changes to the CLI and Script Commands for release 11.8
 |===
 | Command| Description of Change
 a|
-xref:./get-started/downloadable-smcli-parameters.adoc#identify-Devices[Identify devices]
+https://docs.netapp.com/us-en/e-series-cli/get-started/downloadable-smcli-parameters.html#identify-devices[Identify devices]
 a|
 Added `identifyDevices` parameter.
 |===

@@ -8,7 +8,10 @@ summary: "The command line interface (CLI) is a software application that provid
 :icons: font
 :imagesdir: ./media/
 
-The command line interface (CLI) is a software application that provides a way to configure and monitor storage arrays. Using the CLI, you can run commands from an operating system prompt, such as the DOS `C:` prompt, a Linux operating system path, or a Solaris operating system path.
+[.lead]
+The command line interface (CLI) is a software application that provides a way to configure and monitor storage arrays.
+
+Using the CLI, you can run commands from an operating system prompt, such as the DOS `C:` prompt, a Linux operating system path, or a Solaris operating system path.
 
 The CLI gives you direct access to a script engine that is a utility in the storage management software. The script engine runs commands that configure and manage the storage arrays. The script engine reads the commands, either through a script file or directly from the command line, and performs the operations instructed by the commands.
 

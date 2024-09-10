@@ -8,6 +8,7 @@ summary: "Syntax unique to a specific script command is explained in the Notes s
 :icons: font
 :imagesdir: ./media/
 
+[.lead]
 Syntax unique to a specific script command is explained in the Notes section at the end of each script command description.
 
 *Case sensitivity* -- The script commands are not case sensitive. You can type the script commands in lowercase, uppercase, or mixed case. (In the following command descriptions, mixed case is used as an aid to reading the command names and understanding the purpose of the command.)

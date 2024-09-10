@@ -2,7 +2,7 @@
 permalink: get-started/formatting-cli-commands.html
 sidebar: sidebar
 keywords: format, rules, cli, commands
-summary: "Based on the value or name entered, certain format rules are enforced CLI commands."
+summary: "Based on the value or name entered, certain format rules are enforced for CLI commands."
 ---
 = Format rules for CLI commands
 :icons: font
