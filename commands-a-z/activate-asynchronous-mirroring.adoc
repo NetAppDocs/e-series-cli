@@ -6,7 +6,7 @@ summary: "The activate storageArray feature command activates the Asynchronous M
 ---
 = Activate asynchronous mirroring
 :icons: font
-:imagesdir: /media/
+:imagesdir: ./media/
 
 [.lead]
 The `activate storageArray feature` command activates the Asynchronous Mirroring feature.
