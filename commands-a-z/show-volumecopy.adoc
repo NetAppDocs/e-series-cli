@@ -6,7 +6,7 @@ summary: "The show volumeCopy command returns information about volume copy oper
 ---
 = Show volume copy
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show volumeCopy` command returns information about volume copy operations.

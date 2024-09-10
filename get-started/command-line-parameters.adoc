@@ -6,7 +6,7 @@ summary: "The SANtricity OS 11.40 release introduced, for the E2800 and E5700 co
 ---
 = Legacy command line parameters
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The SANtricity OS 11.40 release introduced, for the E2800 and E5700 controllers with embedded web services, the ability to interact on the Command Line using a secure HTTPS protocol. These controllers can optionally use the SYMbol protocol for Command Line interactions instead.

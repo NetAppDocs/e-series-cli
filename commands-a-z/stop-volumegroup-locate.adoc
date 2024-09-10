@@ -6,7 +6,7 @@ summary: "The stop volumeGroup locate command turns off the indicator lights on 
 ---
 = Stop volume group locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop volumeGroup locate` command turns off the indicator lights on the drives that were turned on by the `start volumeGroup locate` command.

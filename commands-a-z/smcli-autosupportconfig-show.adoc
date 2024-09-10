@@ -6,7 +6,7 @@ summary: "The SMcli -autoSupportConfig show command displays the AutoSupport bun
 ---
 = Display AutoSupport bundle collection settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli -autoSupportConfig show` command displays the AutoSupport bundle collection settings for the management domain. These settings apply to all of the storage arrays in your management domain for which you have enabled AutoSupport.

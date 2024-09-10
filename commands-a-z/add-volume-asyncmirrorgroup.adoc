@@ -6,7 +6,7 @@ summary: "The add volume asyncMirrorGroup command adds a primary volume to an as
 ---
 = Add volume to asynchronous mirror group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `add volume asyncMirrorGroup` command adds a primary volume to an asynchronous mirror group.

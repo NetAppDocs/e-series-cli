@@ -6,7 +6,7 @@ summary: "The Show certificates command allows you to view the certificates inst
 ---
 = Show certificates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `Show certificates` command allows you to view the certificates installed on the CLI package trust store.

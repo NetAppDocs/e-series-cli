@@ -6,7 +6,7 @@ summary: 'The clear allDriveChannels stats command resets the statistics for all
 ---
 = Clear drive channel statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `clear allDriveChannels stats` command resets the statistics for all of the drive channels.

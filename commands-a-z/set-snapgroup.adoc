@@ -6,7 +6,7 @@ summary: "The set snapGroup command defines the properties for a snapshot group.
 ---
 = Set snapshot group attributes
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set snapGroup` command defines the properties for a snapshot group.

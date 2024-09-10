@@ -6,7 +6,7 @@ summary: "The create consistencyGroup command creates a new, empty consistency g
 ---
 = Create consistency group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create consistencyGroup` command creates a new, empty consistency group that can contain snapshot groups. You must add the snapshot groups using the `set consistencyGroup addCGMember` command.

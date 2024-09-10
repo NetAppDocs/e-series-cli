@@ -6,7 +6,7 @@ summary: "The show asyncMirrorGroup synchronizationProgress command displays the
 ---
 = Show asynchronous mirror group synchronization progress
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show asyncMirrorGroup synchronizationProgress` command displays the progress of _periodic_ synchronization of the asynchronous mirror group between the local and remote storage array.

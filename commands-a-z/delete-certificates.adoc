@@ -6,7 +6,7 @@ summary: "The Delete certificates command allows you to delete a certificate fro
 ---
 = Delete certificates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `Delete certificates` command allows you to delete a certificate from the CLI package trust store.

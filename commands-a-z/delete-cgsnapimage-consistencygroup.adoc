@@ -6,7 +6,7 @@ summary: "The delete cgSnapImage consistencyGroup command deletes the snapshot i
 ---
 = Delete consistency group snapshot image
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete cgSnapImage consistencyGroup` command deletes the snapshot images in a consistency group.

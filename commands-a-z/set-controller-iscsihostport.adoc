@@ -6,7 +6,7 @@ summary: "The set controller iscsiHostPort command changes the network propertie
 ---
 = Set iSCSI host port networking properties
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set controller iscsiHostPort` command changes the network properties for a host port, including IPv4 and IPv6 properties, port speed, and maximum frame payload.

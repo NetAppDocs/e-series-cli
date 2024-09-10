@@ -6,7 +6,7 @@ summary: "The save storageArray SOCCounts command saves the SOC error statistics
 ---
 = Save storage array SOC counts
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray SOCCounts` command saves the SOC error statistics to a file.

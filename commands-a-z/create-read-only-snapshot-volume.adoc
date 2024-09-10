@@ -6,7 +6,7 @@ summary: "The create snapVolume command creates a read-only snapshot volume for 
 ---
 = Create read-only snapshot volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create snapVolume` command creates a read-only snapshot volume for the snapshot images of a base volume. To change a read-only snapshot volume to a read/write volume, use the `set snapVolume convertToReadWrite` command.

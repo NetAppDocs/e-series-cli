@@ -6,7 +6,7 @@ summary: "The show storageArray odxsetting command returns the current settings 
 ---
 = Show storage array ODX setting
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray odxsetting` command returns the current settings for Offloaded Data Transfer (ODX) and VMware vStorage API Array Architecture (VAAI) on the storage array.

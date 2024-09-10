@@ -6,7 +6,7 @@ summary: "The show storageArray hostConnectivityReporting command returns the en
 ---
 = Show storage array host connectivity reporting
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray hostConnectivityReporting` command returns the enablement status of the host connectivity reporting feature.

@@ -6,7 +6,7 @@ summary: "The save storageArray hostPortStatistics command saves the storage arr
 ---
 = Save storage array host port statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray hostPortStatistics` command saves the storage array host port statistics.

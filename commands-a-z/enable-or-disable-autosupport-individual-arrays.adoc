@@ -6,7 +6,7 @@ summary: "This command enables or disables AutoSupport (ASUP) feature for the st
 ---
 = Enable or disable AutoSupport (all individual arrays)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 This command enables or disables AutoSupport (ASUP) feature for the storage array and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, the ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis.

@@ -6,7 +6,7 @@ summary: "The reset controller command resets a controller, and is disruptive to
 ---
 = Reset controller
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset controller` command resets a controller, and is disruptive to I/O operations.

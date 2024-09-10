@@ -6,7 +6,7 @@ summary: "The show asyncMirrorGroup summary command displays configuration infor
 ---
 = Show asynchronous mirror groups
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show asyncMirrorGroup summary` command displays configuration information for one or more asynchronous mirror groups.

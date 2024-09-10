@@ -6,7 +6,7 @@ summary: "The start volume initialize command starts the formatting of a volume 
 ---
 = Start volume initialization
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start volume initialize` command starts the formatting of a volume in a storage array.

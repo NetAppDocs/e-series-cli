@@ -6,7 +6,7 @@ summary: "The show volume performanceStats command returns information about vol
 ---
 = Show volume performance statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show volume performanceStats` command returns information about volume performance.

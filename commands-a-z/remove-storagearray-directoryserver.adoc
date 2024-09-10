@@ -6,7 +6,7 @@ summary: "The remove storageArray directoryServer command removes the defined ro
 ---
 = Remove storage array directory server role mapping
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `remove storageArray directoryServer` command removes the defined role mappings for the specified directory server.

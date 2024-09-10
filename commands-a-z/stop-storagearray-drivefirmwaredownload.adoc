@@ -6,7 +6,7 @@ summary: "The stop storageArray driveFirmwareDownload command stops a firmware d
 ---
 = Stop storage array drive firmware download
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop storageArray driveFirmwareDownload` command stops a firmware download to the drives in a storage array that was started with the `download storageArray driveFirmware` command.

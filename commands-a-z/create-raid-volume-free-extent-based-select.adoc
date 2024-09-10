@@ -6,7 +6,7 @@ summary: "The create volume command creates a volume in the free space of a volu
 ---
 = Create RAID volume (free extent based select)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create volume` command creates a volume in the free space of a volume group.

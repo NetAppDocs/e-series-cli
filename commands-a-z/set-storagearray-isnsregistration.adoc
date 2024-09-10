@@ -6,7 +6,7 @@ summary: "The set storageArray isnsRegistration command enables you to list a st
 ---
 = Set storage array iSNS registration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray isnsRegistration` command enables you to list a storage array on either an IPv4 or an IPv6 Internet Storage Name Service (iSNS) server.

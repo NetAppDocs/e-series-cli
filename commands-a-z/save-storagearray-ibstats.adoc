@@ -6,7 +6,7 @@ summary: "The save storageArray ibStats command saves the InfiniBand performance
 ---
 = Save storage array InfiniBand statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray ibStats` command saves the InfiniBand performance statistics of the storage array to a file.

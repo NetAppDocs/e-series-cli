@@ -6,7 +6,7 @@ summary: "The stop pendingSnapImageCreation command cancels all of the pending s
 ---
 = Stop snapshot group pending snapshot images
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop pendingSnapImageCreation` command cancels all of the pending snapshot images that are to be created on a snapshot or snapshot consistency group.

@@ -6,7 +6,7 @@ summary: "The start snapImage rollback command starts a rollback operation for a
 ---
 = Start snapshot image rollback
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start snapImage rollback` command starts a rollback operation for a set of snapshot images.

@@ -6,7 +6,7 @@ summary: "The clear volume unreadableSectors command clears unreadable sector in
 ---
 = Clear volume unreadable sectors
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `clear volume unreadableSectors` command clears unreadable sector information from one or more volumes.

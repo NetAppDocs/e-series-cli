@@ -6,7 +6,7 @@ summary: "The delete consistencyGroup command deletes a snapshot consistency gro
 ---
 = Delete consistency group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete consistencyGroup` command deletes a snapshot consistency group.

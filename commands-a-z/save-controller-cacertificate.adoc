@@ -6,7 +6,7 @@ summary: "The save controller caCertificate command retrieves the installed CA c
 ---
 = Retrieve installed CA certificates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save controller caCertificate` command retrieves the installed CA certificates from the specified controller. Included in the retrieved certificates are any requested CA certificates from the controller's web server.

@@ -6,7 +6,7 @@ summary: "The show check volume parity jobs command shows all check volume parit
 ---
 = Show Check Volume Parity Jobs
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show check volume parity jobs` command shows all check volume parity jobs and their status.

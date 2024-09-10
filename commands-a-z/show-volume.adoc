@@ -6,7 +6,7 @@ summary: "The show volume command returns the expansion history or the consumed 
 ---
 = Show thin volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show volume` command returns the expansion history or the consumed capacity for the specified thin volume or volumes.

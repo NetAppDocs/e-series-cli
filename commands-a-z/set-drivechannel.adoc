@@ -6,7 +6,7 @@ summary: "The set driveChannel command defines how the drive channel performs."
 ---
 = Set drive channel status
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set driveChannel` command defines how the drive channel performs.

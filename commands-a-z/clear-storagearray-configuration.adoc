@@ -6,7 +6,7 @@ summary: "The clear storageArray configuration command clears an entire storage 
 ---
 = Clear storage array configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `clear storageArray configuration` command clears an entire storage array configuration or part of a storage array configuration, or clears volume group and volume configuration only.

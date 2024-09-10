@@ -6,7 +6,7 @@ summary: "The validate storageArray securityKey command validates the security k
 ---
 = Validate storage array security key
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `validate storageArray securityKey` command validates the security key for a storage array that has security-capable drives to make sure that the back-up security key file is not corrupt.

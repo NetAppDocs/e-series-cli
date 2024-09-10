@@ -6,7 +6,7 @@ summary: "The show emailAlert summary command displays the email alert configura
 ---
 = Show email alert configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show emailAlert summary` command displays the email alert configuration information.

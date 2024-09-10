@@ -6,7 +6,7 @@ summary: "The reset controller arrayManagementSignedCertificate command resets t
 ---
 = Reset installed signed certificate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset controller arrayManagementSignedCertificate` command resets the installed signed certificate and root/intermediate certificates on the controller. All root and intermediate certificates as well as any signed certificates will be replaced by a single self-signed certificate.

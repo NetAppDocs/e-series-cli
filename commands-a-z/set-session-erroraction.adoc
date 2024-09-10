@@ -6,7 +6,7 @@ summary: "The set session errorAction command defines how you want the current s
 ---
 = Set session
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set session errorAction` command defines how you want the current script engine session to run.

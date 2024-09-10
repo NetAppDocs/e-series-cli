@@ -6,7 +6,7 @@ summary: "The start controller command starts an operation that saves debug trac
 ---
 = Start controller trace
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start controller` command starts an operation that saves debug trace information to a compressed file.

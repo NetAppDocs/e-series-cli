@@ -6,7 +6,7 @@ summary: "Storage monitor personnel commands"
 ---
 = Storage monitor personnel commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The following list of storage monitor personnel commands are available for your E-Series storage system. 

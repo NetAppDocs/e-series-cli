@@ -6,7 +6,7 @@ summary: "The stop storageArray locate command turns off the indicator lights on
 ---
 = Stop storage array locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop storageArray locate` command turns off the indicator lights on the storage array that were turned on by the `start storageArray locate` command.

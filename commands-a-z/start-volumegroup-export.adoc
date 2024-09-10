@@ -6,7 +6,7 @@ summary: "The start volumeGroup export command moves a volume group into an Expo
 ---
 = Start volume group export
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start volumeGroup export` command moves a volume group into an Exported state.

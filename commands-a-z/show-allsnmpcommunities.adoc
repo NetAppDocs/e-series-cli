@@ -6,7 +6,7 @@ summary: "The show allSnmpCommunities command returns information about the Simp
 ---
 = Show SNMP communities
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show allSnmpCommunities` command returns information about the Simple Network Management Protocol (SNMP) communities defined for the storage array. SNMP communities are collections of devices, such as routers, switches, printers, storage devices, grouped together to manage and monitor the devices.

@@ -6,7 +6,7 @@ summary: "The reset iscsiIpAddress command resets the IP address of the remote s
 ---
 = Reset iSCSI IP address
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset iscsiIpAddress` command resets the IP address of the remote storage array to re-establish connection with the local storage array.

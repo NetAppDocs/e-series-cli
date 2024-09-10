@@ -6,7 +6,7 @@ summary: "The start ssdCache locate command identifies the Solid State Disks (SS
 ---
 = Start SSD cache locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start ssdCache locate` command identifies the Solid State Disks (SSDs) that are logically grouped together to form the SSD cache by blinking the indicator lights on the SSDs.

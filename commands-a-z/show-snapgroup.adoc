@@ -6,7 +6,7 @@ summary: "The show snapGroup command returns information about one or more snaps
 ---
 = Show snapshot group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show snapGroup` command returns information about one or more snapshot image groups.

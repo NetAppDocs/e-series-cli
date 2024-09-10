@@ -6,7 +6,7 @@ summary: "The set consistencyGroup command removes a member volume from an exist
 ---
 = Remove member volume from consistency group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set consistencyGroup` command removes a member volume from an existing snapshot consistency group.

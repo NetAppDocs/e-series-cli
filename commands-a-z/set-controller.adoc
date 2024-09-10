@@ -6,7 +6,7 @@ summary: "The set controller command defines the attributes for the controllers.
 ---
 = Set controller
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set controller` command defines the attributes for the controllers.

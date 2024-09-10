@@ -6,7 +6,7 @@ summary: "The set volume command defines the properties for a thin volume."
 ---
 = Set thin volume attributes
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set volume` command defines the properties for a thin volume.

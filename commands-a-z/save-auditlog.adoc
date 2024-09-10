@@ -6,7 +6,7 @@ summary: "The save auditLog command retrieves the audit log records."
 ---
 = Save audit log records
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save auditLog` command retrieves the audit log records.

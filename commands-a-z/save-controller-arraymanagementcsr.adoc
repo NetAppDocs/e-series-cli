@@ -6,7 +6,7 @@ summary: "The save controller arrayManagementCSR command generates a Certificate
 ---
 = Generate web server Certificate Signing Request (CSR)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save controller arrayManagementCSR` command generates a Certificate Signing Request (CSR) for the controller.

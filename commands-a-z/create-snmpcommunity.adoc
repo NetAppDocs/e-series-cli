@@ -6,7 +6,7 @@ summary: "The create snmpCommunity command creates a new Simple Network Manageme
 ---
 = Register SNMP community
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create snmpCommunity` command creates a new Simple Network Management Protocol (SNMP) community, community name string and registers the new community as a known entity to the SNMP agent. Any attempt to register a new community with the same name as that of an existing community is rejected and the firmware returns an error message.

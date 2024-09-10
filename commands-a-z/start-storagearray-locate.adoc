@@ -6,7 +6,7 @@ summary: "The start storageArray locate command locates a storage array by turni
 ---
 = Start storage array locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start storageArray locate` command locates a storage array by turning on the indicator lights for the storage array.

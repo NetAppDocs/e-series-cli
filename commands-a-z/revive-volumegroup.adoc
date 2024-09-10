@@ -6,7 +6,7 @@ summary: "The revive volumeGroup command forces the specified volume group and i
 ---
 = Revive volume group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `revive volumeGroup` command forces the specified volume group and its associated failed drives to the Optimal state.

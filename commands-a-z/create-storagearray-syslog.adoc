@@ -6,7 +6,7 @@ summary: "The create storageArray syslog command allows you to archive audit log
 ---
 = Create storage array syslog configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create storageArray syslog` command allows you to archive audit logs onto an external syslog server. After a connection is established between the storage array and syslog server, audit logs are automatically saved to the syslog server.

@@ -6,7 +6,7 @@ summary: "The show iscsiSessions command returns information about an iSCSI sess
 ---
 = Show current iSCSI sessions
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show iscsiSessions` command returns information about an iSCSI session for either an iSCSI initiator or an iSCSI target.

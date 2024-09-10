@@ -6,7 +6,7 @@ summary: "The start check volume parity job command starts a new check volume pa
 ---
 = Start check volume parity job
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start check volume parity job` command starts a new check volume parity operation on a given volume.

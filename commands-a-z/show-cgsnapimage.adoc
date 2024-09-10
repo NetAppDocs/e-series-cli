@@ -6,7 +6,7 @@ summary: "The show CGSnapImage command shows one snapshot image or several snaps
 ---
 = Show consistency group snapshot image
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show CGSnapImage` command shows one snapshot image or several snapshot images that are in one or more snapshot consistency groups.

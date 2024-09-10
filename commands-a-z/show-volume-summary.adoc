@@ -6,7 +6,7 @@ summary: "The show volume summary command returns information about a volume."
 ---
 = Show volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show volume summary` command returns information about a volume.

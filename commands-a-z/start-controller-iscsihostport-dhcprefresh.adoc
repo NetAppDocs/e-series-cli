@@ -6,7 +6,7 @@ summary: "The start controller iscsiHostPort dhcpRefresh command initiates a ref
 ---
 = Start iSCSI DHCP refresh
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start controller iscsiHostPort dhcpRefresh` command initiates a refresh of the DHCP parameters for the iSCSI interface.

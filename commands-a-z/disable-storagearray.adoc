@@ -6,7 +6,7 @@ summary: "The disable storageArray command disables a storage array feature."
 ---
 = Disable storage array feature
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `disable storageArray` command disables a storage array feature.

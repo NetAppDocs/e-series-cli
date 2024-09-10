@@ -6,7 +6,7 @@ summary: "The set storageArray vaaiEnabled command turns on or turns off VMware 
 ---
 = Enable or disable VAAI
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray vaaiEnabled` command turns on or turns off VMware vStorage API Array Architecture (VAAI) for a storage array.

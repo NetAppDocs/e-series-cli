@@ -6,7 +6,7 @@ summary: "The start storageArray controllerHealthImage controller command produc
 ---
 = Start storage array controller health image
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start storageArray controllerHealthImage controller` command produces a storage array controller health image on storage arrays that support the controller health image feature.

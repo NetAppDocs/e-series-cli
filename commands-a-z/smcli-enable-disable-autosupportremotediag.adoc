@@ -6,7 +6,7 @@ summary: "The SMcli enable|disable autoSupportRemoteDiag command turns on or tur
 ---
 = Enable or disable the AutoSupport remote diagnostics feature at the EMW management domain level (SMcli only)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli enable|disable autoSupportRemoteDiag` command turns on or turns off the AutoSupport Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely.

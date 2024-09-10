@@ -6,7 +6,7 @@ summary: "The Add certificate from file command allows you to take a certificate
 ---
 = Add certificate from file
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `Add certificate from file` command allows you to take a certificate from the file and add it to the CLI package's trust store. The certificate added will only be used by the CLI package.

@@ -6,7 +6,7 @@ summary: "The create mapping cgSnapVolume command creates a logical mapping from
 ---
 = Create consistency group snapshot volume mapping
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create mapping cgSnapVolume` command creates a logical mapping from a consistency group snapshot volume to a host or a host group.

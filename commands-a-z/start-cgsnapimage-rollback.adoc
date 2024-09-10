@@ -6,7 +6,7 @@ summary: "The start cgSnapImage rollback command starts a rollback operation to 
 ---
 = Start consistency group snapshot rollback
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start cgSnapImage rollback` command starts a rollback operation to the member base volumes in a snapshot consistency group.

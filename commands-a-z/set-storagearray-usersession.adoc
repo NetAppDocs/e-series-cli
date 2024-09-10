@@ -6,7 +6,7 @@ summary: "The set storageArray userSession command allows you to set a timeout i
 ---
 = Set storage array user session
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray userSession` command allows you to set a timeout in System Manager, so that users' inactive sessions are disconnected after a specified time.

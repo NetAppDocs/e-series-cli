@@ -6,7 +6,7 @@ summary: "The show allDrives command returns information about the drives in the
 ---
 = Show drive
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show allDrives` command returns information about the drives in the storage array.

@@ -6,7 +6,7 @@ summary: "The create snapGroup command creates a new snapshot group and the asso
 ---
 = Create snapshot group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create snapGroup` command creates a new snapshot group and the associated repository volume.

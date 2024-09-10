@@ -6,7 +6,7 @@ summary: "The start storageArray directoryServices test command checks communica
 ---
 = Test storage array directory server
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start storageArray directoryServices test` command checks communication with all configured directory servers and validates the server domain configurations.

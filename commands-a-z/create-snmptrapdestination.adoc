@@ -6,7 +6,7 @@ summary: "The create snmpTrapDestination command creates a new Simple Network Ma
 ---
 = Register SNMP trap destination
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create snmpTrapDestination` command creates a new Simple Network Management Protocol (SNMP) trap destination. A trap destination is the SNMP manager to receive the trap messages.

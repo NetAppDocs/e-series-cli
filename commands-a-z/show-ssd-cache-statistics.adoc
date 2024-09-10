@@ -6,7 +6,7 @@ summary: "The show ssdCache command displays data about the SSD cache usage."
 ---
 = Show SSD cache statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show ssdCache` command displays data about the SSD cache usage.

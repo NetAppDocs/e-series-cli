@@ -6,7 +6,7 @@ summary: "The set storageArray syslog command allows you to change the syslog se
 ---
 = Update storage array syslog configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray syslog` command allows you to change the syslog server address, protocol, or port number.

@@ -6,7 +6,7 @@ summary: "Exit statuses are returned on executed commands. This table lists the 
 ---
 = Exit status
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Exit statuses are returned on executed commands. The following table lists the exit statuses that might be returned and the meaning of each status.

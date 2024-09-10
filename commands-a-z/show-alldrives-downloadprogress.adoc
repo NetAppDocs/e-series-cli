@@ -6,7 +6,7 @@ summary: "The show allDrives downloadProgress command returns the status of firm
 ---
 = Show drive download progress
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show allDrives downloadProgress` command returns the status of firmware downloads for the drives that are targeted by the `download drive firmware` command or the `download storageArray driveFirmware` command.

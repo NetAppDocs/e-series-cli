@@ -6,7 +6,7 @@ summary: "The set drive nativeState command adds the missing (foreign) drives ba
 ---
 = Set foreign drive to native
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set drive nativeState` command adds the missing (foreign) drives back into their original volume group and to make them part of the volume group in the new storage array.

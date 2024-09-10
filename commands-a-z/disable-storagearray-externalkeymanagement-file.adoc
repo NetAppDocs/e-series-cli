@@ -6,7 +6,7 @@ summary: "The disable storageArray externalKeyManagement file command disables e
 ---
 = Disable external security key management
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `disable storageArray externalKeyManagement file` command disables external security key management for a storage array that has Full Disk Encryption drives.

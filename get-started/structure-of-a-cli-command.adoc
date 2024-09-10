@@ -6,7 +6,7 @@ summary: "The CLI commands are in the form of a command wrapper and elements emb
 ---
 = Structure of CLI commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The CLI commands are in the form of a command wrapper and elements embedded into the wrapper. 

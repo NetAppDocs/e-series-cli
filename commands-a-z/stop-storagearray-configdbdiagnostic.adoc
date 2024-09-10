@@ -6,7 +6,7 @@ summary: "The stop storageArray configDbDiagnostic command stops the diagnostic 
 ---
 = Stop storage array configuration database diagnostic
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop storageArray configDbDiagnostic` command stops the diagnostic test to validate the configuration database in the controller firmware that was started by the `start storageArray configDbDiagnostic` command.

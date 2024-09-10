@@ -6,7 +6,7 @@ summary: "The clear storageArray firmwarePendingArea command deletes a firmware 
 ---
 = Clear storage array firmware pending area
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `clear storageArray firmwarePendingArea` command deletes a firmware image or NVSRAM values that you have previously downloaded from the pending area buffer.

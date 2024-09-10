@@ -6,7 +6,7 @@ summary: "The set host command assigns a host to a host group or moves a host to
 ---
 = Set host
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set host` command assigns a host to a host group or moves a host to a different host group.

@@ -6,7 +6,7 @@ summary: "The reset storageArray arvmStats asyncMirrorGroup command resets the s
 ---
 = Reset asynchronous mirror group statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset storageArray arvmStats asyncMirrorGroup` command resets the synchronization statistics for one or more member volumes in an asynchronous mirror group to a relative 0.

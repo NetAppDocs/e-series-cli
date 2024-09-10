@@ -6,7 +6,7 @@ summary: "The download storageArray NVSRAM command downloads the NVSRAM values f
 ---
 = Download storage array NVSRAM
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `download storageArray NVSRAM` command downloads the NVSRAM values for the storage array controller.

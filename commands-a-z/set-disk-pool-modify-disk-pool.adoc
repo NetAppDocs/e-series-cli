@@ -6,7 +6,7 @@ summary: "The set diskPool command adds capacity to a disk pool (Dynamic Capacit
 ---
 = Set disk pool (modify disk pool)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set diskPool` command adds capacity to a disk pool (Dynamic Capacity Expansion or DCE) or changes the controller ownership for the entire disk pool.

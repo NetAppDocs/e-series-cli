@@ -6,7 +6,7 @@ summary: "The show volumeGroup importDependencies command shows a list of depend
 ---
 = Show volume group import dependencies
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show volumeGroup importDependencies` command shows a list of dependencies for the drives in a volume group that you want to move from one storage array to a second storage array.

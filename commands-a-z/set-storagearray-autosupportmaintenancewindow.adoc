@@ -6,7 +6,7 @@ summary: "The set storageArray autoSupportMaintenanceWindow command turns on or 
 ---
 = Enable or disable AutoSupport maintenance window (for individual E2800 or E5700 arrays)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray autoSupportMaintenanceWindow` command turns on or turns off the AutoSupport maintenance window feature.

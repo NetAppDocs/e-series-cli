@@ -6,7 +6,7 @@ summary: "The create hostGroup command creates a new host group."
 ---
 = Create host group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create hostGroup` command creates a new host group.

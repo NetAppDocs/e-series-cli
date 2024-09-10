@@ -6,7 +6,7 @@ summary: "The set snmpSystemVariables command changes the system variables for t
 ---
 = Update SNMP MIB II system group variables
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set snmpSystemVariables` command changes the system variables for the Simple Network Management Protocol (SNMP).

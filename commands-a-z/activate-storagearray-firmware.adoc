@@ -6,7 +6,7 @@ summary: "The activate storageArray firmware command activates firmware that you
 ---
 = Activate storage array firmware
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `activate storageArray firmware` command activates firmware that you have previously downloaded to the pending configuration area on the controllers in the storage array.

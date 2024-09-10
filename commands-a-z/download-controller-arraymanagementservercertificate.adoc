@@ -6,7 +6,7 @@ summary: "The download controller arrayManagementServerCertificate command insta
 ---
 = Install server signed certificate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `download controller arrayManagementServerCertificate` command installs the server certificate on the controller.

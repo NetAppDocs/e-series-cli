@@ -6,7 +6,7 @@ summary: "The save controller arrayManagementSignedCertificate command retrieves
 ---
 = Retrieve installed server certificate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save controller arrayManagementSignedCertificate` command retrieves the installed server certificate for the controller so you can view certificate details.

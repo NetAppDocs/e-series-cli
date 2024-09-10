@@ -6,7 +6,7 @@ summary: "The delete snapImage command deletes one or more snapshot images from 
 ---
 = Delete snapshot image
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete snapImage` command deletes one or more snapshot images from a snapshot group.

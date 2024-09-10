@@ -6,7 +6,7 @@ summary: "The start secureErase drive command erases all of the data from one or
 ---
 = Start FDE secure drive erase
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start secureErase drive` command erases all of the data from one or more full disk encryption (FDE) drives so that they can be reused as FDE drives.

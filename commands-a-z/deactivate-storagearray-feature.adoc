@@ -6,7 +6,7 @@ summary: "The deactivate storageArray feature command deactivates the synchronou
 ---
 = Deactivate synchronous mirroring
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `deactivate storageArray feature` command deactivates the synchronous mirroring feature, disassembles the mirror repository volume, and releases the controller owner of the secondary volume.

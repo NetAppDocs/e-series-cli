@@ -6,7 +6,7 @@ summary: "The set storageArray loginBanner command allows you to upload a text f
 ---
 = Set storage array login banner
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray loginBanner` command allows you to upload a text file to be used as a login banner. The banner text can include an advisory notice and consent message, which is presented to users before they establish sessions in SANtricity System Manager or before they run commands.

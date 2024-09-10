@@ -6,7 +6,7 @@ summary: "The set snapGroup increase/decreaseRepositoryCapacity command increase
 ---
 = Set snapshot group repository volume capacity
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set snapGroup increase/decreaseRepositoryCapacity` command increases or decreases the capacity of a snapshot group repository volume.

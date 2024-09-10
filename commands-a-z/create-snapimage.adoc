@@ -6,7 +6,7 @@ summary: "The create snapImage command creates a new snapshot image in one or mo
 ---
 = Create snapshot image
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create snapImage` command creates a new snapshot image in one or more existing snapshot groups.

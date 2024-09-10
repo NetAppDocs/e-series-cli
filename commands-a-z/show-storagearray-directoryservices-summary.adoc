@@ -6,7 +6,7 @@ summary: "The show storageArray directoryServices summary command displays the d
 ---
 = Show storage array directory services summary
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray directoryServices summary` command displays the directory services configuration summary.

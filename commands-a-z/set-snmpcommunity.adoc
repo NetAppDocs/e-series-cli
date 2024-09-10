@@ -6,7 +6,7 @@ summary: "The set snmpCommunity command creates a new name for an existing Simpl
 ---
 = Update SNMP community
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set snmpCommunity` command creates a new name for an existing Simple Network Management Protocol (SNMP) community.

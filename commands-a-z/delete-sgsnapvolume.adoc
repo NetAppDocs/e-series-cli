@@ -6,7 +6,7 @@ summary: "The delete sgSnapVolume command deletes the snapshot volume of a consi
 ---
 = Delete consistency group snapshot volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete sgSnapVolume` command deletes the snapshot volume of a consistency group. Optionally, you can also delete the repository members.

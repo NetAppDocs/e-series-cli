@@ -6,7 +6,7 @@ summary: "The reset storageArray iserStatsBaseline command resets the iSER basel
 ---
 = Reset storage array iSER baseline
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset storageArray iserStatsBaseline` command resets the iSER baseline to 0 for the storage array.

@@ -6,7 +6,7 @@ summary: "The set ssdCache command increases the capacity of an existing SSD cac
 ---
 = Add drives to SSD cache
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set ssdCache` command increases the capacity of an existing SSD cache by adding more solid state disks (SSDs).

@@ -6,7 +6,7 @@ summary: "The set diskPool command reduces the capacity of the disk pool by logi
 ---
 = Reduce disk pool capacity
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set diskPool` command reduces the capacity of the disk pool by logically removing the drives from the pool.

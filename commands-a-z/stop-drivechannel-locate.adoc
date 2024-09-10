@@ -6,7 +6,7 @@ summary: "The stop driveChannel locate command turns off the indicator lights on
 ---
 = Stop drive channel locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop driveChannel locate` command turns off the indicator lights on the drive trays that were turned on by the `start driveChannel locate` command.

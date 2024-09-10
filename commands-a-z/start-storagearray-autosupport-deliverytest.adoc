@@ -6,7 +6,7 @@ summary: "The start storageArray autoSupport deliveryTest command sends a sample
 ---
 = Test AutoSupport delivery settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start storageArray autoSupport deliveryTest` command sends a sample AutoSupport bundle collection message so you can test the connection to the destination technical support system using the specified delivery parameters.

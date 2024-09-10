@@ -6,7 +6,7 @@ summary: "The SMcli alertTest command sends out a test alert to the Windows Even
 ---
 = Test alerts
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli alertTest` command sends out a test alert to the Windows Event Log and all configured syslog receivers.

@@ -6,7 +6,7 @@ summary: "The set storageArray autoSupport deliveryMethod command sets up the de
 ---
 = Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray autoSupport deliveryMethod` command sets up the delivery method for sending AutoSupport messages to HTTP(S).

@@ -6,7 +6,7 @@ summary: "The show storageArray controllerHealthImage command shows details of t
 ---
 = Show storage array controller health image
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray controllerHealthImage` command shows details of the controller health image on the controller cache, if a controller health image is available, on storage arrays that support the controller health image.

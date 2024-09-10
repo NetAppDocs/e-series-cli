@@ -6,7 +6,7 @@ summary: "The save storageArray dbmValidatorInfo command saves the database mana
 ---
 = Save storage array DBM validator information file
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray dbmValidatorInfo` command saves the database management (DBM) validation information for a storage array in an XML file.

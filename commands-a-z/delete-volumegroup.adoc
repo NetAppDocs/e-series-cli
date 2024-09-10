@@ -6,7 +6,7 @@ summary: "The delete volumeGroup command deletes an entire volume group and its 
 ---
 = Delete volume group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete volumeGroup` command deletes an entire volume group and its associated volumes.

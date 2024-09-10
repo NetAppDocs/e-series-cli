@@ -6,7 +6,7 @@ summary: "The start drive erase command erases all of the data from one or more 
 ---
 = Start drive erase
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start drive erase` command erases all of the data from one or more drives.

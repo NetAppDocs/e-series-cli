@@ -6,7 +6,7 @@ summary: "The delete snapGroup command an entire snapshot group and optionally t
 ---
 = Delete snapshot group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete snapGroup` command an entire snapshot group and optionally the associated repository volumes.

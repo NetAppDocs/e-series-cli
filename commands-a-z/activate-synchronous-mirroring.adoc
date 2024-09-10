@@ -6,7 +6,7 @@ summary: "The activate storageArray feature command activates the Synchronous Mi
 ---
 = Activate synchronous mirroring
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `activate storageArray feature` command activates the Synchronous Mirroring feature and creates the mirror repository volume.

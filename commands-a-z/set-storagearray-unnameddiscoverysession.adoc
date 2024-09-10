@@ -6,7 +6,7 @@ summary: "The set storageArray unnamedDiscoverySession command enables the stora
 ---
 = Set storage array unnamed discovery session
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray unnamedDiscoverySession` command enables the storage array to participate in unnamed discovery sessions.

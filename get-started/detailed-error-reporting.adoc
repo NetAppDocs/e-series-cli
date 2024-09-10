@@ -6,7 +6,7 @@ summary: "Data collected from an error encountered by the CLI is written to a fi
 ---
 = Detailed error reporting
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Data collected from an error encountered by the CLI is written to a file. 

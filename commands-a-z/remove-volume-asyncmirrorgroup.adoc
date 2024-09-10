@@ -6,7 +6,7 @@ summary: "The remove volume asyncMirrorGroup command removes a member volume fro
 ---
 = Remove volume from asynchronous mirror group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `remove volume asyncMirrorGroup` command removes a member volume from an existing asynchronous mirror group.

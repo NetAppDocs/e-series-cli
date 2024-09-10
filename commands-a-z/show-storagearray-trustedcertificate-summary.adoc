@@ -6,7 +6,7 @@ summary: "The show storageArray trustedCertificate summary command displays the 
 ---
 = Show installed trusted CA certificates summary
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray trustedCertificate summary` command displays the trusted installed CA certificates summary from the array. This command is useful to use before performing the `delete storageArray trustedCertificate` command so that you know the alias names of the certificates to delete.

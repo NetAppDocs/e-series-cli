@@ -6,7 +6,7 @@ summary: "The reset storageArray RLSBaseline command resets the read link status
 ---
 = Reset storage array RLS baseline
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset storageArray RLSBaseline` command resets the read link status (RLS) baseline for all devices by setting all of the RLS counts to 0.

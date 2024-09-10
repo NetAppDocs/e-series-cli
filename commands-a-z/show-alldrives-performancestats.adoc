@@ -6,7 +6,7 @@ summary: "The show allDrives performanceStats command returns information about 
 ---
 = Show drive performance statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show allDrives performanceStats` command returns information about drive performance.

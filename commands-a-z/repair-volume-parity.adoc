@@ -6,7 +6,7 @@ summary: "The repair volume parity command repairs the parity errors on a volume
 ---
 = Repair volume parity
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `repair volume parity` command repairs the parity errors on a volume.

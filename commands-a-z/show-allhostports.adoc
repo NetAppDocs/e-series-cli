@@ -6,7 +6,7 @@ summary: "The show allHostPorts command returns information about configured hos
 ---
 = Show host ports
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show allHostPorts` command returns information about configured host ports.

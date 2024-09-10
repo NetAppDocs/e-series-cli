@@ -6,7 +6,7 @@ summary: "The create cgSnapVolume command creates a snapshot volume of specific 
 ---
 = Create consistency group snapshot volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create cgSnapVolume` command creates a snapshot volume of specific images in the base volumes in a consistency group.

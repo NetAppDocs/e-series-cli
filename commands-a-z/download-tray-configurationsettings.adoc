@@ -6,7 +6,7 @@ summary: "The download tray configurationSettings command downloads the factory 
 ---
 = Download tray configuration settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `download tray configurationSettings` command downloads the factory default settings to all of the drive trays in a storage array or to a specific drive tray in a storage array.

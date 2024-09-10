@@ -6,7 +6,7 @@ summary: "The delete volume command deletes one or more standard volumes."
 ---
 = Delete volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete volume` command deletes one or more standard volumes.

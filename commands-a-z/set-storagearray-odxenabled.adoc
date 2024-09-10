@@ -6,7 +6,7 @@ summary: "The set storageArray odxEnabled command turns on or turns off Offloade
 ---
 = Enable or disable ODX
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray odxEnabled` command turns on or turns off Offloaded Data Transfer (ODX) for a storage array.

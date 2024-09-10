@@ -6,7 +6,7 @@ summary: "Specific rules must be adhered to for names used in CLI commands."
 ---
 = Naming conventions
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Specific rules must be adhered to for names used in CLI commands. 

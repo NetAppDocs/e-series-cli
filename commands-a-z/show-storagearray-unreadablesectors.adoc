@@ -6,7 +6,7 @@ summary: "The show storageArray unreadableSectors command returns a table of the
 ---
 = Show storage array unreadable sectors
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray unreadableSectors` command returns a table of the addresses of all of the sectors in the storage array that cannot be read.

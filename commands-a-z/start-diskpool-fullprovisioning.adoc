@@ -6,7 +6,7 @@ summary: "The start diskPool fullProvisioning command starts a full provisioning
 ---
 = Start Disk Pool Full Provisioning
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start diskPool fullProvisioning` command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the disk pool.

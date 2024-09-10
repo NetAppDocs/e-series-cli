@@ -6,7 +6,7 @@ summary: "The save storageArray iscsiStatistics command saves the iSCSI performa
 ---
 = Save storage array iSCSI statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray iscsiStatistics` command saves the iSCSI performance statistics of the storage array to a file.

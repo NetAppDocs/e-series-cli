@@ -6,7 +6,7 @@ summary: "The show driveChannel stats command shows the cumulative data transfer
 ---
 = Show drive channel statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show driveChannel stats` command shows the cumulative data transfer for the drive channel and error information.

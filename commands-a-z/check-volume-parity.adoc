@@ -6,7 +6,7 @@ summary: "The check volume parity command checks a volume for parity and media e
 ---
 = Check volume parity
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `check volume parity` command checks a volume for parity and media errors, and then writes the results of the check to a file.

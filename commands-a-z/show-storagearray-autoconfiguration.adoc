@@ -6,7 +6,7 @@ summary: "The show storageArray autoConfiguration command shows the default auto
 ---
 = Show storage array auto configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray autoConfiguration` command shows the default auto-configuration that the storage array creates if you run the `autoConfigure storageArray` command.

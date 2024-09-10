@@ -6,7 +6,7 @@ summary: "The start drive locate command locates a drive by turning on an indica
 ---
 = Start drive locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start drive locate` command locates a drive by turning on an indicator light on the drive.

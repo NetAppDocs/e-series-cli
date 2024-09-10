@@ -6,7 +6,7 @@ summary: "The remove asyncMirrorGroup command removes an orphaned mirrored pair 
 ---
 = Remove incomplete asynchronous mirrored pair from asynchronous mirror group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `remove asyncMirrorGroup` command removes an orphaned mirrored pair volume on the storage array.

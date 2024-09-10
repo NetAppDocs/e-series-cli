@@ -6,7 +6,7 @@ summary: "The Remove array label command allows you to remove a user-defined lab
 ---
 = Remove array label
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `Remove array label` command allows you to remove a user-defined label for a storage array.

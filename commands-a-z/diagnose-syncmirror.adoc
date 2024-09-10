@@ -6,7 +6,7 @@ summary: "The diagnose syncMirror command tests the connection between the speci
 ---
 = Diagnose synchronous mirroring
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `diagnose syncMirror` command tests the connection between the specified primary volumes and the mirror volumes on a storage array with the synchronous mirroring feature enabled.

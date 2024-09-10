@@ -6,7 +6,7 @@ summary: "The set storageArray trayPositions command defines the position of the
 ---
 = Set storage array tray positions
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray trayPositions` command defines the position of the trays in a storage array. You must include all of the trays in the storage array when you enter this command.

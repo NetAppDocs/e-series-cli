@@ -6,7 +6,7 @@ summary: "The save storageArray warningEvents command saves events from the Majo
 ---
 = Save storage array events
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray warningEvents` command saves events from the Major Event Log to a file.

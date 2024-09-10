@@ -6,7 +6,7 @@ summary: "Volume group migration lets you export a volume group so that you can 
 ---
 = Learn about volume group migration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Volume group migration lets you export a volume group so that you can import the volume group to a different storage array. You also can export a volume group so that you can store the data offline.

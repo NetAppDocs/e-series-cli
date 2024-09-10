@@ -6,7 +6,7 @@ summary: "The show storageArray iscsiNegotiationDefaults command returns informa
 ---
 = Show storage array negotiation defaults
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray iscsiNegotiationDefaults` command returns information about connection-level settings that are subject to initiator-target negotiation.

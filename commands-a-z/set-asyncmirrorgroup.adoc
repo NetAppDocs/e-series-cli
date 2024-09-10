@@ -6,7 +6,7 @@ summary: "The set asyncMirrorGroup command changes the synchronization settings 
 ---
 = Set asynchronous mirror group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set asyncMirrorGroup` command changes the synchronization settings and warning thresholds that the controller owner of the primary side of the asynchronous mirror group uses when it performs an initial synchronization or resynchronization.

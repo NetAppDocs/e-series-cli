@@ -6,7 +6,7 @@ summary: "The reset storageArray volumeDistribution command reassigns (moves) al
 ---
 = Reset storage array volume distribution
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset storageArray volumeDistribution` command reassigns (moves) all of the volumes to their preferred controller.

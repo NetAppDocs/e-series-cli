@@ -6,7 +6,7 @@ summary: "To ensure successful execution, script commands must be written in the
 ---
 = Structure of a script command
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 To ensure successful execution, script commands must be written in the proper structure. 

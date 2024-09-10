@@ -6,7 +6,7 @@ summary: "The stop drive replace command stops a data copy operation that was st
 ---
 = Stop drive replace
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop drive replace` command stops a data copy operation that was started by either a `set drive` command or a `replace drive` command with the `*copyDrive*` user input.

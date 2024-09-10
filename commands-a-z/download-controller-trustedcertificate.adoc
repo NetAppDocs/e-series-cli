@@ -6,7 +6,7 @@ summary: "The download controller trustedCertificate command installs the truste
 ---
 = Install trusted CA certificates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `download controller trustedCertificate` command installs the trusted CA certificates on the controllers' web servers to validate the LDAP server signed certificate.

@@ -6,7 +6,7 @@ summary: "The save storageArray trustedCertificate command retrieves the install
 ---
 = Retrieve installed trusted CA certificates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray trustedCertificate` command retrieves the installed trusted CA certificates for the array. Included in the retrieved files are any requested CA certificates from the array's web servers.

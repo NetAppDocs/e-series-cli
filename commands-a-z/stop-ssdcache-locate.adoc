@@ -6,7 +6,7 @@ summary: "The stop ssdCache locate command turns off the indicator lights on the
 ---
 = Stop SSD cache locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop ssdCache locate` command turns off the indicator lights on the Solid State Disks (SSDs) that were turned on by the `start ssdCache locate` command.

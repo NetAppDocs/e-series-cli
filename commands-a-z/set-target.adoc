@@ -6,7 +6,7 @@ summary: "The set target command changes the properties for an iSCSI/iSER target
 ---
 = Set target properties
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set target` command changes the properties for an iSCSI/iSER target, including authentication method and alias name.

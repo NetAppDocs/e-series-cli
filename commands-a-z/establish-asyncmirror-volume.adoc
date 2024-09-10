@@ -6,7 +6,7 @@ summary: "The establish asyncMirror volume command completes an asynchronous mir
 ---
 = Establish asynchronous mirrored pair
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `establish asyncMirror volume` command completes an asynchronous mirrored pair on the remote storage array by adding a secondary volume to an existing asynchronous mirror group.

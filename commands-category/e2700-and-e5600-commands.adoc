@@ -10,7 +10,7 @@ The following list of commands are available for your E2700 and E5600 system.
 
 = E2700 and E5600 commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 
 link:../commands-a-z/activate-asynchronous-mirroring.html[Activate asynchronous mirroring]

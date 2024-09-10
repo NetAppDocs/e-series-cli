@@ -6,7 +6,7 @@ summary: "The show storageArray dbmDatabase command retrieves and shows metadata
 ---
 = Show storage array DBM database
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray dbmDatabase` command retrieves and shows metadata for the on-board backup locations of a storage array. When there are multiple backup locations, metadata is shown for each location.

@@ -6,7 +6,7 @@ summary: "The recover volume command creates a RAID volume with the given proper
 ---
 = Recover RAID volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `recover volume` command creates a RAID volume with the given properties without initializing any of the user data areas on the drives.

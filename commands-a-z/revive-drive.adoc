@@ -6,7 +6,7 @@ summary: "The revive drive command forces the specified drive to the Optimal sta
 ---
 = Revive drive
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `revive drive` command forces the specified drive to the Optimal state.

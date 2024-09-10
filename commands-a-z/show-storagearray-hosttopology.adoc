@@ -6,7 +6,7 @@ summary: "The show storageArray hostTopology command returns the storage partiti
 ---
 = Show storage array host topology
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray hostTopology` command returns the storage partition topology, the host type labels, and the host type index for the host storage array.

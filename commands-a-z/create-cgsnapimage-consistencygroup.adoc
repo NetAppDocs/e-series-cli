@@ -6,7 +6,7 @@ summary: "he create cgSnapImage consistencyGroup command creates a new snapshot 
 ---
 = Create consistency group snapshot image
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create cgSnapImage consistencyGroup` command creates a new snapshot image for each base volume that is a member of a snapshot consistency group.

@@ -6,7 +6,7 @@ summary: "The set storageArray icmpPingResponse command returns the default valu
 ---
 = Set storage array ICMP response
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray icmpPingResponse` command returns the default values for negotiable settings for sessions and connections, which represent the starting point for the storage array for negotiations.

@@ -6,7 +6,7 @@ summary: "The download drive firmware command downloads a firmware image to a dr
 ---
 = Download drive firmware
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `download drive firmware` command downloads a firmware image to a drive.

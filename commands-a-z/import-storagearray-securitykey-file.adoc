@@ -6,7 +6,7 @@ summary: "The import storageArray securityKey file command unlocks one or more f
 ---
 = Import storage array security key
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `import storageArray securityKey file` command unlocks one or more full disk encryption (FDE) drives that you have moved from one storage array to another storage array.

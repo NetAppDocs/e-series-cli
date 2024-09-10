@@ -6,7 +6,7 @@ summary: "The delete ssdCache command deletes the SSD cache. All data in the SSD
 ---
 = Delete SSD cache
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete ssdCache` command deletes the SSD cache. All data in the SSD cache is purged.

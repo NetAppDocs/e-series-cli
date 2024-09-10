@@ -6,7 +6,7 @@ summary: "The script commands in the following sections list the minimum firmwar
 ---
 = Firmware compatibility levels
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The script commands in the following sections list the minimum firmware levels under which the script commands can run.

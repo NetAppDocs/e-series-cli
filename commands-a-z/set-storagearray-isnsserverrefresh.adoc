@@ -6,7 +6,7 @@ summary: "The set storageArray isnsServerRefresh command refreshes the network a
 ---
 = Set storage array iSNS server refresh
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray isnsServerRefresh` command refreshes the network address information for the iSNS server.

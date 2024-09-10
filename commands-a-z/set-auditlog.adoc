@@ -6,7 +6,7 @@ summary: "The set auditLog command configures the audit log settings."
 ---
 = Set audit log settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set auditLog` command configures the audit log settings.

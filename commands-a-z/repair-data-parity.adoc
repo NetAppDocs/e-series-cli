@@ -6,7 +6,7 @@ summary: "The Repair Data Parity command repairs data parity errors."
 ---
 = Repair Data Parity
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `Repair Data Parity` command repairs data parity errors.

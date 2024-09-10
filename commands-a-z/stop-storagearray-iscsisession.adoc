@@ -6,7 +6,7 @@ summary: "The stop storageArray iscsiSession command forces the termination of a
 ---
 = Stop storage array iSCSI session
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop storageArray iscsiSession` command forces the termination of a storage array iSCSI session.

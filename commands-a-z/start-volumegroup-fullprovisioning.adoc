@@ -6,7 +6,7 @@ summary: "The start volumeGroup fullProvisioning command starts a full provision
 ---
 = Start Volume Group Full Provisioning
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start volumeGroup fullProvisioning` command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the volume group.

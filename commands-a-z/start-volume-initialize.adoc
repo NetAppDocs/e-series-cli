@@ -6,7 +6,7 @@ summary: "The start volume initialize command initializes or re-initializes a th
 ---
 = Initialize thin volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start volume initialize` command initializes or re-initializes a thin volume.

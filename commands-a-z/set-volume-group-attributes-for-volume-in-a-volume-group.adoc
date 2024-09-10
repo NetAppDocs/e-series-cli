@@ -6,7 +6,7 @@ summary: "The set volume command defines the properties for volumes in a volume 
 ---
 = Set volume attributes for a volume in a volume group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set volume` command defines the properties for volumes in a volume group.

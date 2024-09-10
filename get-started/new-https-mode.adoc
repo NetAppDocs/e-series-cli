@@ -6,7 +6,7 @@ summary: "The new SMcli can operate in an https mode that offers additional secu
 ---
 = SMcli https mode
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The SMcli can operate in an `*https*` mode that offers additional security features.

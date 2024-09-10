@@ -6,7 +6,7 @@ summary: "The stop cgSnapImage rollback command stops a rollback operation to me
 ---
 = Stop consistency group snapshot rollback
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop cgSnapImage rollback` command stops a rollback operation to member base volumes in a snapshot consistency group.

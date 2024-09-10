@@ -6,7 +6,7 @@ summary: "The delete iscsiInitiator command deletes a specific iSCSI initiator o
 ---
 = Delete iSCSI initiator
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete iscsiInitiator` command deletes a specific iSCSI initiator object.

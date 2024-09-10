@@ -6,7 +6,7 @@ summary: "The set storageArray controllerHealthImageAllowOverWrite command sets 
 ---
 = Set storage array controller health image allow overwrite
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray controllerHealthImageAllowOverWrite` command sets a flag on a controller to allow a new controller health image to overwrite an existing controller health image on storage arrays that support the controller health image feature.

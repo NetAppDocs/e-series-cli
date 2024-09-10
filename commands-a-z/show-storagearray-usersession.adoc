@@ -6,7 +6,7 @@ summary: "The show storageArray userSession command allows you to view the sessi
 ---
 = Display storage array user session
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray userSession` command allows you to view the session timeout period for System Manager.

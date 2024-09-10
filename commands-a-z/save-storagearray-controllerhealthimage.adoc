@@ -6,7 +6,7 @@ summary: "The save storageArray controllerHealthImage command saves a controller
 ---
 = Save storage array controller health image
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray controllerHealthImage` command saves a controller health image to a specified file on a host, for storage arrays that support the controller health image feature.

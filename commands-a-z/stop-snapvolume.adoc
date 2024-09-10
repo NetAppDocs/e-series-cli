@@ -6,7 +6,7 @@ summary: "The stop snapVolume command stops a snapshot volume operation."
 ---
 = Stop snapshot volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop snapVolume` command stops a snapshot volume operation.

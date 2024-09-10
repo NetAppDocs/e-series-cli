@@ -6,7 +6,7 @@ summary: "The start emailAlert test command allows you to test the alert configu
 ---
 = Test email alert configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start emailAlert test` command allows you to test the alert configuration by sending a sample email message.

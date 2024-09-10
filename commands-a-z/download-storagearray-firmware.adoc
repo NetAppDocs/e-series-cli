@@ -6,7 +6,7 @@ summary: "The download storageArray firmware command downloads firmware and, opt
 ---
 = Download storage array firmware/NVSRAM
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `download storageArray firmware` command downloads firmware and, optionally, NVSRAM values for the storage array controller.

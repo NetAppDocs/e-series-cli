@@ -6,7 +6,7 @@ summary: "The set drive serviceAllowedIndicator command turns on or turns off th
 ---
 = Set drive service action allowed indicator
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set drive serviceAllowedIndicator` command turns on or turns off the Service Action Allowed indicator light on a drive or drives in drive trays that support the Service Action Allowed indicator light feature.

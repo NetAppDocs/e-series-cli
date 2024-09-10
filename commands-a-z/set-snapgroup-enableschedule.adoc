@@ -6,7 +6,7 @@ summary: "The set snapGroup enableSchedule command defines the schedule for taki
 ---
 = Set snapshot group schedule
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set snapGroup enableSchedule` command defines the schedule for taking snapshot images for a snapshot group.

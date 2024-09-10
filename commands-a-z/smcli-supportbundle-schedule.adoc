@@ -6,7 +6,7 @@ summary: "The SMcli -supportBundle schedule command creates or removes a schedul
 ---
 = Schedule automatic support bundle collection configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli -supportBundle schedule` command creates or removes a schedule for saving a support bundle on one or more storage arrays. You collect system and configuration information in support bundles to transmit the information to technical support for analysis and diagnostics.

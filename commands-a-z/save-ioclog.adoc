@@ -6,7 +6,7 @@ summary: "The save IOCLog command saves the IOC dumps from the controllers in a 
 ---
 = Save input output controller (IOC) dump
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save IOCLog` command saves the IOC dumps from the controllers in a storage array to a file on a host.

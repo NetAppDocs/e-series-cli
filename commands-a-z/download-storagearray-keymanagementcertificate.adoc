@@ -6,7 +6,7 @@ summary: "The download storageArray keyManagementCertificate command installs th
 ---
 = Install storage array external key management certificate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `download storageArray keyManagementCertificate` command installs the external key management certificates on the storage array.

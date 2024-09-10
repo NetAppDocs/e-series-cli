@@ -6,7 +6,7 @@ summary: "The show storageArray syslog command allows you to view the configurat
 ---
 = Display storage array syslog configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray syslog` command allows you to view the configuration of a syslog server used for storing audit logs. Configuration information includes a server ID, along with its address, protocol, and port number.

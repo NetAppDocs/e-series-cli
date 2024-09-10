@@ -6,7 +6,7 @@ summary: "The reset storageArray ibStatsBaseline command resets the InfiniBand s
 ---
 = Reset storage array InfiniBand statistics baseline
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset storageArray ibStatsBaseline` command resets the InfiniBand statistics baseline to 0 for the storage array.

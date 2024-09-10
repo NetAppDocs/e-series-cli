@@ -6,7 +6,7 @@ summary: "The show syncMirror candidates command returns information about the c
 ---
 = Show synchronous mirroring volume candidates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show syncMirror candidates` command returns information about the candidate volumes on a remote storage array that you can use as secondary volumes in a Synchronous Mirroring configuration.

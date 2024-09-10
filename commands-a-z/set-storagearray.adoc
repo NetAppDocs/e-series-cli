@@ -6,7 +6,7 @@ summary: "The set storageArray command defines the properties of the storage arr
 ---
 = Set storage array
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray` command defines the properties of the storage array.

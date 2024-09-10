@@ -6,7 +6,7 @@ summary: "The stop cgSnapVolume command stops the copy-on-write operation for cr
 ---
 = Stop consistency group snapshot volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop cgSnapVolume` command stops the copy-on-write operation for creating a consistency group snapshot volume.

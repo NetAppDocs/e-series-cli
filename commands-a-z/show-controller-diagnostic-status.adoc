@@ -6,7 +6,7 @@ summary: "The show controller command returns the status of controller diagnosti
 ---
 = Show controller diagnostic status
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show controller` command returns the status of controller diagnostics started by the `start controller diagnostic` command.

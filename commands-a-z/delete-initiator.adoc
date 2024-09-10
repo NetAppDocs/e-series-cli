@@ -6,7 +6,7 @@ summary: "The delete initiator command deletes the initiator object."
 ---
 = Delete initiator
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete initiator` command deletes the initiator object.

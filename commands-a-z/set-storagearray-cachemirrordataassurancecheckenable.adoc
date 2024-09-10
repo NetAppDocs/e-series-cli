@@ -6,7 +6,7 @@ summary: "The set storageArray cacheMirrorDataAssuranceCheckEnable command allow
 ---
 = Set storage array to enable or disable cache mirror data assurance check
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray cacheMirrorDataAssuranceCheckEnable` command allows you to enable or disable the cache mirror data assurance check.

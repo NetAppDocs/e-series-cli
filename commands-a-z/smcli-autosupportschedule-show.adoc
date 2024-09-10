@@ -6,7 +6,7 @@ summary: "The SMcli -autoSupportSchedule show command shows the schedule for col
 ---
 = Display AutoSupport message collection schedule
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli -autoSupportSchedule show` command shows the schedule for collection and processing of both daily and weekly AutoSupport messages.

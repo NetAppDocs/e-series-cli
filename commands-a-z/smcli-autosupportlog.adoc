@@ -6,7 +6,7 @@ summary: "The SMcli -autoSupportLog command allows you to view an AutoSupport lo
 ---
 = Capture or view an AutoSupport log
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli -autoSupportLog` command allows you to view an AutoSupport log file. This file provides information about status, history of transmission activity, and any errors encountered during delivery of the AutoSupport messages. The log is available for all AutoSupport-capable and AutoSupport-enabled storage arrays.

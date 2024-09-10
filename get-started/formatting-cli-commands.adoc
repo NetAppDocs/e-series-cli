@@ -6,7 +6,7 @@ summary: "Based on the value or name entered, certain format rules are enforced 
 ---
 = Format rules for CLI commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Based on the value or name entered, certain format rules are enforced for CLI commands. 

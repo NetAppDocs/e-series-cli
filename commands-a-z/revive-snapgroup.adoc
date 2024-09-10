@@ -6,7 +6,7 @@ summary: "The revive snapGroup command forces the specified snapshot group to th
 ---
 = Revive snapshot group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `revive snapGroup` command forces the specified snapshot group to the Optimal state.

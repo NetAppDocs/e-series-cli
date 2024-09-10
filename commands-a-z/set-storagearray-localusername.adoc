@@ -6,7 +6,7 @@ summary: "The set storageArray localUsername command and the set storageArray sy
 ---
 = Set storage array local user password or SYMbol password
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray localUsername` command and the `set storageArray symbol` command allow you to set a local user name password or a SYMbol password for a particular role.

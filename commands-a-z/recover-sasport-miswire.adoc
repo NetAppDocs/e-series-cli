@@ -6,7 +6,7 @@ summary: "The recover sasPort miswire command tells a controller that corrective
 ---
 = Recover SAS port mis-wire
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `recover sasPort miswire` command tells a controller that corrective action has been taken to recover from a mis-wire condition.

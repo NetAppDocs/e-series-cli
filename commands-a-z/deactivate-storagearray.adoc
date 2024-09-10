@@ -6,7 +6,7 @@ summary: "The deactivate storageArray feature deactivates the Asynchronous Mirro
 ---
 = Deactivate asynchronous mirroring
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `deactivate storageArray feature` deactivates the Asynchronous Mirroring feature.

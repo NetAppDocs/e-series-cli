@@ -6,7 +6,7 @@ summary: "The resume snapImage rollback command resumes a rollback operation tha
 ---
 = Resume snapshot image rollback
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `resume snapImage rollback` command resumes a rollback operation that has entered a paused state.

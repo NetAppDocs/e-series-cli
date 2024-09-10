@@ -6,7 +6,7 @@ summary: "The save allDrives logFile command saves the drive logs to a file."
 ---
 = Save drive log
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save allDrives logFile` command saves the drive logs to a file.

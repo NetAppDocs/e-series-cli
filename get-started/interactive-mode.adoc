@@ -6,7 +6,7 @@ summary: "Interactive mode lets you run individual commands without prefixing th
 ---
 = Interactive mode
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Interactive mode lets you run individual commands without prefixing the commands with `SMcli`.

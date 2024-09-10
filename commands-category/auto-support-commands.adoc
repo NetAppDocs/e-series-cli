@@ -6,7 +6,7 @@ summary: "Auto support commands"
 ---
 = Auto support commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The following list of auto support commands are available for your E-Series storage system. 

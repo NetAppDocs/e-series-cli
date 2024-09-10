@@ -6,7 +6,7 @@ summary: "The set tray command sets user-defined attributes for an tray."
 ---
 = Set tray attribute
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set tray` command sets user-defined attributes for an tray.

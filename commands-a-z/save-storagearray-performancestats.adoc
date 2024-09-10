@@ -6,7 +6,7 @@ summary: "The save storageArray performanceStats command saves the performance s
 ---
 = Save storage array performance statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray performanceStats` command saves the performance statistics to a file.

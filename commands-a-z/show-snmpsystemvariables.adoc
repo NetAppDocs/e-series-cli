@@ -6,7 +6,7 @@ summary: "The show snmpSystemVariables command returns information about the Sim
 ---
 = Show SNMP MIB II system group variables
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show snmpSystemVariables` command returns information about the Simple Network Management Protocol (SNMP) system variables. The system variables are maintained in a Management Information Base II (MIB-II) database.

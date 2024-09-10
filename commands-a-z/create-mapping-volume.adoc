@@ -6,7 +6,7 @@ summary: "The create mapping volume command creates a logical mapping from a vol
 ---
 = Create Volume Mapping
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create mapping volume` command creates a logical mapping from a volume to a host or a host group.

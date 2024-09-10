@@ -6,7 +6,7 @@ summary: "The start increaseVolumeCapacity volume command increases the capacity
 ---
 = Increase capacity of volume in disk pool or volume group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start increaseVolumeCapacity volume` command increases the capacity of either a standard volume or a repository volume in a disk pool or volume group.

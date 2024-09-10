@@ -6,7 +6,7 @@ summary: "The start tray locate command locates a tray by turning on the indicat
 ---
 = Start tray locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start tray locate` command locates a tray by turning on the indicator light.

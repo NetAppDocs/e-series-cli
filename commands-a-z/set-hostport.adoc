@@ -6,7 +6,7 @@ summary: "The set hostPort command changes the properties for a host port."
 ---
 = Set host port
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set hostPort` command changes the properties for a host port.

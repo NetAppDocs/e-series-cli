@@ -6,7 +6,7 @@ summary: "The start asyncMirrorGroup synchronize command starts Asynchronous Mir
 ---
 = Start asynchronous mirroring synchronization
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start asyncMirrorGroup synchronize` command starts Asynchronous Mirroring synchronization.

@@ -6,7 +6,7 @@ summary: "The save storageArray autoSupport log command allows you to view an Au
 ---
 = Retrieve an AutoSupport log
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray autoSupport log` command allows you to view an AutoSupport log file. This file provides information about status, history of transmission activity, and any errors encountered during delivery of the AutoSupport messages. The log is available for all AutoSupport-capable and AutoSupport-enabled storage arrays.

@@ -6,7 +6,7 @@ summary: "The show snapVolume command returns information about one or more snap
 ---
 = Show snapshot volumes
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show snapVolume` command returns information about one or more snapshot volumes.

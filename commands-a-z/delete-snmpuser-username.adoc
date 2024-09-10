@@ -6,7 +6,7 @@ summary: "The delete snmpUser userName command deletes an existing Simple Networ
 ---
 = Unregister SNMPv3 USM user
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete snmpUser userName` command deletes an existing Simple Network Management Protocol (SNMP) USM user that you previously created and registered using the "[.code]``create snmpUser``" command. Deleting an SNMP user effectively unregisters the user. Any trap destinations associated with that user are also removed.

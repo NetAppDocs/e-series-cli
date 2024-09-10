@@ -6,7 +6,7 @@ summary: "The start IOCLog command produces a dump of the IOC log of data transm
 ---
 = Start input output controller (IOC) dump
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start IOCLog` command produces a dump of the IOC log of data transmissions between a host and a controller.

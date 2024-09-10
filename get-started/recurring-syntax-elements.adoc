@@ -6,7 +6,7 @@ summary: "Recurring syntax elements are a general category of parameters and opt
 ---
 = Recurring syntax elements
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Recurring syntax elements are a general category of parameters and options that you can use in the script commands. The following table lists the conventions used in the recurring syntax elements.

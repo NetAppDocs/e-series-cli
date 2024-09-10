@@ -6,7 +6,7 @@ summary: "The show consistencyGroup command returns information about one or mor
 ---
 = Show consistency group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show consistencyGroup` command returns information about one or more consistency groups.

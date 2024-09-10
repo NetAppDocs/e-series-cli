@@ -6,7 +6,7 @@ summary: "The set consistencyGroup addCGMemberVolume command adds a new base vol
 ---
 = Add member to consistency group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set consistencyGroup addCGMemberVolume` command adds a new base volume as a member to an existing consistency group.

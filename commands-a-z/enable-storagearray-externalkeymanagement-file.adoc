@@ -6,7 +6,7 @@ summary: "The enable storageArray externalKeyManagement file command enables ext
 ---
 = Enable external security key management
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `enable storageArray externalKeyManagement file` command enables external security key management for a storage array that has Full Disk Encryption drives, and creates the initial drive security key.

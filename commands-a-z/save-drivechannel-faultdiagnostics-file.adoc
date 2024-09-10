@@ -6,7 +6,7 @@ summary: "The save driveChannel faultDiagnostics file command saves the drive ch
 ---
 = Save drive channel fault isolation diagnostic status
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save driveChannel faultDiagnostics file` command saves the drive channel fault isolation diagnostic data that is returned from the `start driveChannel faultDiagnostics` command.

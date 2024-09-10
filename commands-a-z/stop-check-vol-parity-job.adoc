@@ -6,7 +6,7 @@ summary: "The stop check volume parity job command stops an in-progress check vo
 ---
 = Stop check volume parity job
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop check volume parity job` command stops an in-progress check volume parity job.

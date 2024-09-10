@@ -6,7 +6,7 @@ summary: "The set tray command sets the tray ID of a controller tray, a controll
 ---
 = Set tray identification
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set tray` command sets the tray ID of a controller tray, a controller-drive tray, or a drive tray in a storage array.

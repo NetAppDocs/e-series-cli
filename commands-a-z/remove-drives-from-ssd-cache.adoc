@@ -6,7 +6,7 @@ summary: "The set ssdCache command decreases the capacity of the SSD cache by re
 ---
 = Remove drives from SSD cache
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set ssdCache` command decreases the capacity of the SSD cache by removing Solid State Disks (SSDs).

@@ -6,7 +6,7 @@ summary: "The download tray firmware file command downloads environmental servic
 ---
 = Download environmental card firmware
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `download tray firmware file` command downloads environmental services module (ESM) firmware.

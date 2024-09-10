@@ -6,7 +6,7 @@ summary: "The show diskPool command returns information about a disk pool."
 ---
 = Show disk pool
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show diskPool` command returns information about a disk pool.

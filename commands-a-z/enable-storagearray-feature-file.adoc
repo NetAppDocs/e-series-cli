@@ -6,7 +6,7 @@ summary: "The enable storageArray feature file command enables a feature for eit
 ---
 = Enable storage array feature
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `enable storageArray feature file` command enables a feature for either a permanent upgrade to the storage array or a trial period.

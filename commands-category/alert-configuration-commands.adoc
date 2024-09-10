@@ -6,7 +6,7 @@ summary: "Alert configuration commands"
 ---
 = Alert configuration commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The following list of alert configuration commands are available for your E-Series storage system. 

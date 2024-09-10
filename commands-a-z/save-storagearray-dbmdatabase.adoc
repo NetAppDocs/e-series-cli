@@ -6,7 +6,7 @@ summary: "The save storageArray dbmDatabase command backs up RAID configuration 
 ---
 = Save storage array DBM database
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray dbmDatabase` command backs up RAID configuration data or all data to a file on the host. You can specify multiple data locations and controllers.

@@ -6,7 +6,7 @@ summary: "The delete controller caCertificate command removes the installed root
 ---
 = Remove installed root/intermediate CA certificates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete controller caCertificate` command removes the installed root/intermediate CA certificate from the specified controller.

@@ -6,7 +6,7 @@ summary: "The enable controller dataTransfer command revives a controller that h
 ---
 = Enable controller data transfer
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `enable controller dataTransfer` command revives a controller that has become quiesced while running diagnostics.

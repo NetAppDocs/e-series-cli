@@ -6,7 +6,7 @@ summary: "The resume asyncMirrorGroup command resumes data transfer between all 
 ---
 = Resume asynchronous mirror group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `resume asyncMirrorGroup` command resumes data transfer between all mirrored pairs in an asynchronous mirror group.

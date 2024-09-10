@@ -6,7 +6,7 @@ summary: "The save storageArray keyManagementClientCSR command requests a genera
 ---
 = Generate Key Management Certificate Signing Request (CSR)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray keyManagementClientCSR` command requests a generated CSR for the storage array that you can save to a file.

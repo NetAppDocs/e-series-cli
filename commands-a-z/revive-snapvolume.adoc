@@ -6,7 +6,7 @@ summary: "The revive snapVolume command forces a specified snapshot volume to th
 ---
 = Revive snapshot volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `revive snapVolume` command forces a specified snapshot volume to the Optimal state.

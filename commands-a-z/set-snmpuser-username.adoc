@@ -6,7 +6,7 @@ summary: "The set snmpUser userName command updates an existing Simple Network M
 ---
 = Update SNMPv3 USM user
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set snmpUser userName` command updates an existing Simple Network Management Protocol (SNMP) USM user. The USM user to be changed is identified using the user name if there is only one user with the user name. The user is identified using the user name and engine ID if there is more than one user with the same user name and different engine ID.

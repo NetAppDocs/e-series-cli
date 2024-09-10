@@ -6,7 +6,7 @@ summary: "The save check volume parity job parity errors command saves the parit
 ---
 = Save check volume parity job parity errors
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save check volume parity job parity errors` command saves the parity errors logged by a check volume parity job to the specified file. The output file is written in the same format as the deprecated check volume parity command, and therefore can be used as input to the existing repair volume parity command.

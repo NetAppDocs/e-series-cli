@@ -6,7 +6,7 @@ summary: "The set storageArray isnsListeningPort command sets the iSNS server li
 ---
 = Set storage array iSNS server listening port
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray isnsListeningPort` command sets the iSNS server listening port.

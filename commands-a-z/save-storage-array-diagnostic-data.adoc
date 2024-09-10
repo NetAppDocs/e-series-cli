@@ -6,7 +6,7 @@ summary: "The save storageArray diagnosticData command saves the storage array d
 ---
 = Save storage array diagnostic data
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray diagnosticData` command saves the storage array diagnostic data from either the controllers or the environmental services modules (ESMs) to a file.

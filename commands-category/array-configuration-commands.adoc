@@ -6,7 +6,7 @@ summary: "Array configuration commands"
 ---
 = Array configuration commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The following list of array configuration commands are available for your E-Series storage system. 

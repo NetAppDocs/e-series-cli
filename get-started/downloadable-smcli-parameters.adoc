@@ -6,7 +6,7 @@ summary: "The SANtricity OS 11.60 and newer releases include the ability to down
 ---
 = Downloadable SMcli command line parameters
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The SANtricity OS 11.60 and newer releases include the ability to download and install the http-based version of CLI (also referred to as "Secure CLI" or SMcli) directly through the SANtricity System Manager.

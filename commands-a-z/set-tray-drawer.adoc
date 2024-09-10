@@ -6,7 +6,7 @@ summary: "The set tray drawer command turns on or turns off the Service Action A
 ---
 = Set drawer service action allowed indicator
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set tray drawer` command turns on or turns off the Service Action Allowed indicator light on a drawer that holds drives.

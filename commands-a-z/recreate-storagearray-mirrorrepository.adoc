@@ -6,7 +6,7 @@ summary: "The recreate storageArray mirrorRepository command creates a new Synch
 ---
 = Re-create synchronous mirroring repository volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `recreate storageArray mirrorRepository` command creates a new Synchronous Mirroring repository volume (also called a mirror repository volume) by using the parameters defined for a previous mirror repository volume.

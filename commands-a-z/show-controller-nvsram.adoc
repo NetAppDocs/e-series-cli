@@ -6,7 +6,7 @@ summary: "The show controller NVSRAM command returns information about NVSRAM by
 ---
 = Show controller NVSRAM
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show controller NVSRAM` command returns information about NVSRAM byte values.

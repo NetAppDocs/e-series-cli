@@ -6,7 +6,7 @@ summary: "The show controller arrayManagementSignedCertificate summary command d
 ---
 = Show signed certificate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show controller arrayManagementSignedCertificate summary` command displays the current signed certificate summary from the specified controller.

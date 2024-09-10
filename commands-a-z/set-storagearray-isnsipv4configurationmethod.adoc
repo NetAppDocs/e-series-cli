@@ -6,7 +6,7 @@ summary: "The set storageArray isnsIPv4ConfigurationMethod command sets the conf
 ---
 = Set storage array iSNS server IPv4 address
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray isnsIPv4ConfigurationMethod` command sets the configuration method and address for an IPv4 Internet Storage Name Service (iSNS).

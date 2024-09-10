@@ -6,7 +6,7 @@ summary: "The set storageArray learnCycleDate controller command sets controller
 ---
 = Set storage array controller battery learn cycle
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray learnCycleDate controller` command sets controller battery learn cycles.

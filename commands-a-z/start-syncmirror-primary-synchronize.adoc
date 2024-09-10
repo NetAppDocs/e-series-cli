@@ -6,7 +6,7 @@ summary: "The start syncMirror primary synchronize command starts synchronous mi
 ---
 = Start synchronous mirroring synchronization
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start syncMirror primary synchronize` command starts synchronous mirroring synchronization.

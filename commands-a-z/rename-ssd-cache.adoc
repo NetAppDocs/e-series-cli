@@ -6,7 +6,7 @@ summary: "The set ssdCache command changes the name of the SSD cache."
 ---
 = Rename SSD cache
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set ssdCache` command changes the name of the SSD cache.

@@ -6,7 +6,7 @@ summary: "The remove volumeCopy target command removes a volume copy pair."
 ---
 = Remove volume copy
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `remove volumeCopy target` command removes a volume copy pair.

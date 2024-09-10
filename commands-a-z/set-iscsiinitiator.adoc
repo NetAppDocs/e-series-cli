@@ -6,7 +6,7 @@ summary: "The set iscsiInitiator command sets the attributes for an iSCSI initia
 ---
 = Set iSCSI initiator
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set iscsiInitiator` command sets the attributes for an iSCSI initiator.

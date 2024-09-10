@@ -6,7 +6,7 @@ summary: "The show volumeCopy sourceCandidates command returns information about
 ---
 = Show volume copy source candidates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show volumeCopy sourceCandidates` command returns information about the candidate volumes that you can use as the source for a volume copy operation. This command is valid for snapshot volume copy pairs.

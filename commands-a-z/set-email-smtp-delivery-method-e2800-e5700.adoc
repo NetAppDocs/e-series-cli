@@ -6,7 +6,7 @@ summary: "The set storageArray autoSupport deliveryMethod command sets up the de
 ---
 = Specify the Email (SMTP) delivery method
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray autoSupport deliveryMethod` command sets up the delivery method for sending AutoSupport messages to email (SMTP).

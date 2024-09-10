@@ -6,7 +6,7 @@ summary: "The create hostPort command creates a new host port identification on 
 ---
 = Create host port
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create hostPort` command creates a new host port identification on a host bus adapter (HBA) or on a host channel adapter (HCA).

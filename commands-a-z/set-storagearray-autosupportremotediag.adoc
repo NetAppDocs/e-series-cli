@@ -6,7 +6,7 @@ summary: "The set storageArray autoSupportRemoteDiag command turns on or turns o
 ---
 = Enable or disable the AutoSupport Remote Diagnostics feature
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray autoSupportRemoteDiag` command turns on or turns off the AutoSupport OnDemand Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely.

@@ -6,7 +6,7 @@ summary: "The create syncMirror command creates both the primary volume and the 
 ---
 = Create synchronous mirroring
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create syncMirror` command creates both the primary volume and the secondary volume for a synchronous remote mirrored pair. This command also sets the write mode (synchronous write mode or asynchronous write mode) and the synchronization priority.

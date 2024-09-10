@@ -6,7 +6,7 @@ summary: "The enable volumeGroup security command converts a non-secure volume g
 ---
 = Enable volume group security
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `enable volumeGroup security` command converts a non-secure volume group to a secure volume group.

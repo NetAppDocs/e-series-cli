@@ -6,7 +6,7 @@ summary: "The set storageArray autoSupport schedule command sets the daily and w
 ---
 = Set AutoSupport message collection schedule
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray autoSupport schedule` command sets the daily and weekly times and days of the week that AutoSupport messages are sent.

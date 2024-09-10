@@ -6,7 +6,7 @@ summary: "The create snapVolume command creates a snapshot volume with read-writ
 ---
 = Create snapshot volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create snapVolume` command creates a snapshot volume with read-write capabilities for snapshot images of a base volume.

@@ -6,7 +6,7 @@ summary: "Security commands"
 ---
 = Security commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The following list of security commands are available for your E-Series storage system. 

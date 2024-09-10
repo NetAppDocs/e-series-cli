@@ -6,7 +6,7 @@ summary: "The remove syncMirror command removes the mirror relationship between 
 ---
 = Remove synchronous mirroring
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `remove syncMirror` command removes the mirror relationship between the primary volume and the secondary volume in a remote-mirrored pair.

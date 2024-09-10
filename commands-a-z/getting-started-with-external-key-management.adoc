@@ -6,7 +6,7 @@ summary: "A security key is a string of characters, which is shared between the 
 ---
 = Getting started with external key management
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 A security key is a string of characters, which is shared between the secure-enabled drives and controllers in a storage array. When using external key management, you create and maintain security keys on a key management server

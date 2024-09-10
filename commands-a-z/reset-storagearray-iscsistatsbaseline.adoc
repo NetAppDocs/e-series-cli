@@ -6,7 +6,7 @@ summary: "The reset storageArray iscsiStatsBaseline command resets the iSCSI bas
 ---
 = Reset storage array iSCSI baseline
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset storageArray iscsiStatsBaseline` command resets the iSCSI baseline to 0 for the storage array.

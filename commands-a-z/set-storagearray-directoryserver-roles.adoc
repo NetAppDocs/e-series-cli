@@ -6,7 +6,7 @@ summary: "The set storageArray directoryServer roles command allows you to defin
 ---
 = Set storage array directory server role mapping
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray directoryServer roles` command allows you to define role mappings for a specified directory server. These role mappings are used to authenticate users that attempt to execute various SMcli commands.

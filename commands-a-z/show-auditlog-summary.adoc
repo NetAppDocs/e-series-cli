@@ -6,7 +6,7 @@ summary: "The show auditLog summary command displays the audit log summary infor
 ---
 = Show audit log summary
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show auditLog summary` command displays the audit log summary information.

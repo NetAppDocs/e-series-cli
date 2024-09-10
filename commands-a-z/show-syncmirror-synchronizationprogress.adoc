@@ -6,7 +6,7 @@ summary: "The show syncMirror synchronizationProgress command returns the progre
 ---
 = Show synchronous mirroring volume synchronization progress
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show syncMirror synchronizationProgress` command returns the progress of data synchronization between the primary volume and the secondary volume in a Synchronous Mirroring configuration.

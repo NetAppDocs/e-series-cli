@@ -6,7 +6,7 @@ summary: "The show storageArray lunMappings command returns information from the
 ---
 = Show storage array LUN mappings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray lunMappings` command returns information from the storage array profile about the logical unit number (LUN) or namespace ID (NSID) mappings in the storage array.

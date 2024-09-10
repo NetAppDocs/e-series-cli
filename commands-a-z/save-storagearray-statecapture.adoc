@@ -6,7 +6,7 @@ summary: "The save storageArray stateCapture command saves the state capture of 
 ---
 = Save storage array state capture
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray stateCapture` command saves the state capture of a storage array to a file.

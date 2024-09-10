@@ -6,7 +6,7 @@ summary: "The delete hostGroup command deletes a host group."
 ---
 = Delete host group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete hostGroup` command deletes a host group.

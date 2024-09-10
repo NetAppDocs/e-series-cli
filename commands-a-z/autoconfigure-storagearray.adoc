@@ -6,7 +6,7 @@ summary: "The autoConfigure storageArray command automatically configures a stor
 ---
 = Autoconfigure storage array
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `autoConfigure storageArray` command automatically configures a storage array.

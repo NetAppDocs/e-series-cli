@@ -6,7 +6,7 @@ summary: "The start volumeGroup import command moves a volume group into a Compl
 ---
 = Start volume group import
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start volumeGroup import` command moves a volume group into a Complete state to make a newly introduced volume group available to its new storage array.

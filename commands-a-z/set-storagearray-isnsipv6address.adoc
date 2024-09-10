@@ -6,7 +6,7 @@ summary: "The set storageArray isnsIPv6Address command sets the IPv6 address for
 ---
 = Set storage array iSNS server IPv6 address
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray isnsIPv6Address` command sets the IPv6 address for the iSNS server.

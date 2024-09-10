@@ -6,7 +6,7 @@ summary: "The delete storageArray loginBanner command allows you to delete the l
 ---
 = Delete storage array login banner
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete storageArray loginBanner` command allows you to delete the login banner text file that was previously uploaded and saved.

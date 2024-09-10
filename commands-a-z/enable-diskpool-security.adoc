@@ -6,7 +6,7 @@ summary: "The enable diskPool security command converts a non-secure disk pool t
 ---
 = Enable disk pool security
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `enable diskPool security` command converts a non-secure disk pool to a secure disk pool.

@@ -6,7 +6,7 @@ summary: "The set emailAlert command configures the email to send an email to a 
 ---
 = Configure email alert settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set emailAlert` command configures the email to send an email to a specified technical support or organization. The email alert contains a summary of the event, detailed information about the affected storage, and customer contact information.

@@ -6,7 +6,7 @@ summary: "The set syslog command configures the syslog alert information. You ca
 ---
 = Configure syslog settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set syslog` command configures the syslog alert information. You can configure the event monitor to send alerts to the syslog server whenever an alertable event occurs.

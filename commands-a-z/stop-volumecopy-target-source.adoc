@@ -6,7 +6,7 @@ summary: "The stop volumeCopy target source command stops a volume copy operatio
 ---
 = Stop volume copy
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop volumeCopy target source` command stops a volume copy operation. This command is valid for snapshot volume copy pairs.

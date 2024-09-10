@@ -6,7 +6,7 @@ summary: "The start volumeGroup defragment command starts a defragment operation
 ---
 = Start volume group defragment
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start volumeGroup defragment` command starts a defragment operation on the specified volume group.

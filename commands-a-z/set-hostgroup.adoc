@@ -6,7 +6,7 @@ summary: "The set hostGroup command renames a host group."
 ---
 = Set host group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set hostGroup` command renames a host group.

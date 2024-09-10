@@ -6,7 +6,7 @@ summary: "The delete snapVolume command deletes a snapshot volume and optionally
 ---
 = Delete snapshot volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete snapVolume` command deletes a snapshot volume and optionally the associated snapshot repository members.

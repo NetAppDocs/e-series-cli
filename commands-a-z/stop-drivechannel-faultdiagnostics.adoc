@@ -6,7 +6,7 @@ summary: "The stop driveChannel faultDiagnostics command stops the drive channel
 ---
 = Stop drive channel fault isolation diagnostics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop driveChannel faultDiagnostics` command stops the drive channel fault isolation diagnostics, which stops the `start drive channel fault isolation diagnostics` command before it completes.

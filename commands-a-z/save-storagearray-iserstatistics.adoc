@@ -6,7 +6,7 @@ summary: "The save storageArray iserStatistics command saves the iSER performanc
 ---
 = Save storage array iSER statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray iserStatistics` command saves the iSER performance statistics of the storage array to a file.

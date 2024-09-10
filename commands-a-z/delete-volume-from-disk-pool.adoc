@@ -6,7 +6,7 @@ summary: "The delete volume command deletes either normal or thin volumes from a
 ---
 = Delete volume from disk pool
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete volume` command deletes either normal or thin volumes from a disk pool.

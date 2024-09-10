@@ -6,7 +6,7 @@ summary: "The save storageArray supportData command saves the support-related in
 ---
 = Save storage array support data
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray supportData` command saves the support-related information of the storage array to a file.

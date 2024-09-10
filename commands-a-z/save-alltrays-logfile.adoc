@@ -6,7 +6,7 @@ summary: "The save allTrays logFile command saves the log sense data to a file."
 ---
 = Save tray log
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save allTrays logFile` command saves the log sense data to a file.

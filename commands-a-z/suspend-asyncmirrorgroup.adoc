@@ -6,7 +6,7 @@ summary: "The suspend asyncMirrorGroup command suspends the synchronization of d
 ---
 = Suspend asynchronous mirror group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `suspend asyncMirrorGroup` command suspends the synchronization of data on all mirrored pairs at the asynchronous mirror group level.

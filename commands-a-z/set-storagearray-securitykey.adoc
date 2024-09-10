@@ -6,7 +6,7 @@ summary: "The set storageArray securityKey command sets the security key that is
 ---
 = Set internal storage array security key
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray securityKey` command sets the security key that is used throughout the storage array to implement the Drive Security feature.

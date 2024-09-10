@@ -6,7 +6,7 @@ summary: "The start storageArray isnsServerRefresh command initiates a refresh o
 ---
 = Start storage array iSNS server refresh
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start storageArray isnsServerRefresh` command initiates a refresh of the network address information for the iSNS server.

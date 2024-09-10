@@ -10,7 +10,7 @@ The following is a complete list of commands are available for your E-Series sto
 
 = CLI commands (Alphabetical List)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 link:../commands-a-z/activate-asynchronous-mirroring.html[Activate asynchronous mirroring]
 

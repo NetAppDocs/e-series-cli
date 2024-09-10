@@ -6,7 +6,7 @@ summary: "The clear asyncMirrorFault command clears an asynchronous mirroring 's
 ---
 = Clear asynchronous mirroring fault
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `clear asyncMirrorFault` command clears an asynchronous mirroring "sticky" fault from one or more asynchronous mirror groups and from one or more asynchronous mirror group member volumes.

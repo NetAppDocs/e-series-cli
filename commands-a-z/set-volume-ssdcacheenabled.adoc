@@ -6,7 +6,7 @@ summary: "The set volume ssdCacheEnabled command turns on or off caching using t
 ---
 = Set SSD cache for a volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set volume ssdCacheEnabled` command turns on or off caching using the SSD cache feature for a specific volume.

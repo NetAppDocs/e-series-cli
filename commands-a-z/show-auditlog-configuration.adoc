@@ -6,7 +6,7 @@ summary: "The show auditLog configuration command shows the audit log configurat
 ---
 = Show audit log configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show auditLog configuration` command shows the audit log configuration settings for the storage array.

@@ -6,7 +6,7 @@ summary: "The stop drive locate command turns off the indicator light on the dri
 ---
 = Stop drive locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop drive locate` command turns off the indicator light on the drive that was turned on by the `start drive locate` command.

@@ -6,7 +6,7 @@ summary: "The set storageArray autoLoadBalancingEnable command enables or disabl
 ---
 = Set storage array to enable or disable automatic load balancing
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray autoLoadBalancingEnable` command enables or disables the Automatic Load Balancing feature.

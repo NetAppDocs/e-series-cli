@@ -6,7 +6,7 @@ summary: "Adhere to the following guidelines when writing script commands."
 ---
 = Script command guidelines
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Adhere to the following guidelines when writing script commands.

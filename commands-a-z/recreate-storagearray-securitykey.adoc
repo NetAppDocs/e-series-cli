@@ -6,7 +6,7 @@ summary: "The recreate storageArray securityKey command regenerates a storage ar
 ---
 = Re-create external security key
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `recreate storageArray securityKey` command regenerates a storage array security key for use with the external security key management feature.

@@ -6,7 +6,7 @@ summary: "The show storageArray revocationCheckSettings command allows you to vi
 ---
 = Show certificate revocation check settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray revocationCheckSettings` command allows you to view the certificate revocation settings for the storage array.

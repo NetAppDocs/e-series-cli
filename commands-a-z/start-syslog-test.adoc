@@ -6,7 +6,7 @@ summary: "The start syslog test command sends a sample message to test the syslo
 ---
 = Test syslog configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start syslog test` command sends a sample message to test the syslog configuration.

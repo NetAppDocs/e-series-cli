@@ -6,7 +6,7 @@ summary: "The create host command creates a new host."
 ---
 = Create host
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create host` command creates a new host.

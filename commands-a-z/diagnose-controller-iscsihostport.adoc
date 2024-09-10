@@ -6,7 +6,7 @@ summary: "The diagnose controller iscsiHostPort command runs diagnostic tests on
 ---
 = Diagnose controller iSCSI host cable
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `diagnose controller iscsiHostPort` command runs diagnostic tests on the copper cables between iSCSI host interface cards and a controller.

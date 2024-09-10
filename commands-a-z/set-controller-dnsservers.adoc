@@ -6,7 +6,7 @@ summary: "The set controller DNSServers command updates the Domain Name System (
 ---
 = Set controller DNS settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set controller DNSServers` command updates the Domain Name System (DNS) settings for a controller. DNS is used to resolve fully qualified domain names for the controllers and a Network Time Protocol (NTP) server.

@@ -6,7 +6,7 @@ summary: "The set drive operationalState command sets a drive to the Failed stat
 ---
 = Set drive state
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set drive operationalState` command sets a drive to the Failed state.

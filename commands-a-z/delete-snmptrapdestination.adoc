@@ -6,7 +6,7 @@ summary: "The delete snmpTrapDestination command deletes an existing Simple Netw
 ---
 = Unregister SNMP trap destination
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete snmpTrapDestination` command deletes an existing Simple Network Management Protocol (SNMP) trap destination that you previously created and registered using the `create snmpTrapDestination` command.

@@ -6,7 +6,7 @@ summary: "The show volumeGroup command returns information about a volume group.
 ---
 = Show volume group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show volumeGroup` command returns information about a volume group.

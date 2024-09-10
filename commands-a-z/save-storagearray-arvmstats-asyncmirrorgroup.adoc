@@ -6,7 +6,7 @@ summary: "The save storageArray arvmStats asyncMirrorGroup command saves the syn
 ---
 = Save asynchronous mirror group statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray arvmStats asyncMirrorGroup` command saves the synchronization statistics to a file for one or more member volumes in an asynchronous mirror group.

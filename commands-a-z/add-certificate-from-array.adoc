@@ -6,7 +6,7 @@ summary: "The Add certificate from array command allows you to take a certificat
 ---
 = Add certificate from array
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `Add certificate from array` command allows you to take a certificate from the array and add it to the CLI package's trust store. The certificate added will only be used by the CLI package.

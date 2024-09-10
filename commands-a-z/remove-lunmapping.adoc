@@ -6,7 +6,7 @@ summary: "The remove lunMapping command removes the logical unit number (LUN) or
 ---
 = Remove volume LUN mapping
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `remove lunMapping` command removes the logical unit number (LUN) or namespace ID (NSID) mapping from one or more volumes.

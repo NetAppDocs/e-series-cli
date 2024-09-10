@@ -6,7 +6,7 @@ summary: "The show storageArray command returns configuration information about 
 ---
 = Show storage array
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray` command returns configuration information about the storage array.

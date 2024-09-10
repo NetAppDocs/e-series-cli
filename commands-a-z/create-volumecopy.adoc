@@ -6,7 +6,7 @@ summary: "The create volumeCopy command creates a volume copy and starts the vol
 ---
 = Create volume copy
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create volumeCopy` command creates a volume copy and starts the volume copy operation. This command is valid for snapshot image volume copy pairs.

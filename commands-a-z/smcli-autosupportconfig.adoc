@@ -6,7 +6,7 @@ summary: "The SMcli -autoSupportConfig command sets up the delivery method for s
 ---
 = Specify the AutoSupport delivery method
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli -autoSupportConfig` command sets up the delivery method for sending AutoSupport messages.

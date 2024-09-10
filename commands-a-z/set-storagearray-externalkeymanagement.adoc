@@ -6,7 +6,7 @@ summary: "The set storageArray externalKeyManagement command configures the exte
 ---
 = Set external key management settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray externalKeyManagement` command configures the external key management server address and port number.

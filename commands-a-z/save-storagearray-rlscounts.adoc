@@ -6,7 +6,7 @@ summary: "The save storageArray RLSCounts command saves the read link status (RL
 ---
 = Save storage array RLS counts
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray RLSCounts` command saves the read link status (RLS) counters to a file.

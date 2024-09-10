@@ -6,7 +6,7 @@ summary: "Syntax unique to a specific script command is explained in the Notes s
 ---
 = Format rules for script commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Syntax unique to a specific script command is explained in the Notes section at the end of each script command description.

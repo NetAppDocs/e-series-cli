@@ -6,7 +6,7 @@ summary: "The set drive hotSpare command assigns or de-assigns one or more drive
 ---
 = Set drive hot spare
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set drive hotSpare` command assigns or de-assigns one or more drives as a hot spare.

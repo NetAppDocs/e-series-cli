@@ -6,7 +6,7 @@ summary: "The set volume logicalUnitNumber command defines the logical unit numb
 ---
 = Set volume mapping
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set volume logicalUnitNumber` command defines the logical unit number (LUN) or namespace ID (NSID) mapping between a volume and a host or host group.

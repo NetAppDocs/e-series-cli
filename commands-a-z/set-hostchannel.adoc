@@ -6,7 +6,7 @@ summary: "The set hostChannel command defines the loop ID for the host channel."
 ---
 = Set host channel
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set hostChannel` command defines the loop ID for the host channel.

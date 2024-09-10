@@ -6,7 +6,7 @@ summary: "The start storageArray autoSupport manualDispatch command initiates a 
 ---
 = Start Storage Array AutoSupport Manual Dispatch
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start storageArray autoSupport manualDispatch` command initiates a complete support bundle and ASUP dispatch for the bundle.

@@ -6,7 +6,7 @@ summary: "The reset storageArray diagnosticData command resets the NVSRAM that c
 ---
 = Reset storage array diagnostic data
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset storageArray diagnosticData` command resets the NVSRAM that contains the diagnostic data for the storage array.

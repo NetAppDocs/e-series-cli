@@ -6,7 +6,7 @@ summary: "The create storageArray securityKey command creates or changes a new s
 ---
 = Create storage array security key
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create storageArray securityKey` command creates or changes a new security key for a storage array that has full disk encryption (FDE) drives.

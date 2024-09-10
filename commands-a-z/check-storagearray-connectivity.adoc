@@ -6,7 +6,7 @@ summary: "The check storageArray connectivity command verifies that the local st
 ---
 = Check storage array connectivity
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `check storageArray connectivity` command verifies that the local storage array and the remote storage array have a communication path and displays the connection details between the local and remote storage array.

@@ -6,7 +6,7 @@ summary: "The save storageArray configuration command creates a script file that
 ---
 = Save storage array configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray configuration` command creates a script file that you can use to re-create the current storage array volume configuration.

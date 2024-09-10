@@ -6,7 +6,7 @@ summary: "The start drive reconstruct command starts reconstructing a drive."
 ---
 = Start drive reconstruction
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start drive reconstruct` command starts reconstructing a drive.

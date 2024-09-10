@@ -6,7 +6,7 @@ summary: "The set iscsiTarget command defines properties for an iSCSI target."
 ---
 = Set iSCSI target properties
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set iscsiTarget` command defines properties for an iSCSI target.

@@ -6,7 +6,7 @@ summary: "The show storageArray unconfiguredIscsiInitiators command returns a li
 ---
 = Show storage array unconfigured iSCSI initiators
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show storageArray unconfiguredIscsiInitiators` command returns a list of initiators that have been detected by the storage array but are not yet configured into the storage array topology.

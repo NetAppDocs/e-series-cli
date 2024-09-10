@@ -6,7 +6,7 @@ summary: "The create diskPool command creates a new disk pool based on the speci
 ---
 = Create disk pool
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create diskPool` command creates a new disk pool based on the specified parameters.

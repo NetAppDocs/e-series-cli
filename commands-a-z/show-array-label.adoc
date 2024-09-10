@@ -6,7 +6,7 @@ summary: "The Show array label command returns information about whether a stora
 ---
 = Show array label
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `Show array label` command returns information about whether a storage array label has been defined or all existing storage array labels.

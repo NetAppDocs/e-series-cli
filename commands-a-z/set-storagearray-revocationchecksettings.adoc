@@ -6,7 +6,7 @@ summary: "The set storageArray revocationCheckSettings command allows you to ena
 ---
 = Set certificate revocation check settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray revocationCheckSettings` command allows you to enable or disable revocation checking, and configure an Online Certificate Status Protocol (OCSP) server.

@@ -6,7 +6,7 @@ summary: "The show volume actionProgress command returns information about the v
 ---
 = Show volume action progress
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show volume actionProgress` command returns information about the volume action and amount of the long-running operation that is completed for a long-running operation on a volume.

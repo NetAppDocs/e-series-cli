@@ -6,7 +6,7 @@ summary: "The suspend ssdCache command temporarily stops caching for all of the 
 ---
 = Suspend SSD cache
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `suspend ssdCache` command temporarily stops caching for all of the volumes that are using the SSD cache.

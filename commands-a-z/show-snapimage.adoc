@@ -6,7 +6,7 @@ summary: "The show snapImage command returns information about the snapshot imag
 ---
 = Show snapshot image
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show snapImage` command returns information about the snapshot images that a user had previously created.

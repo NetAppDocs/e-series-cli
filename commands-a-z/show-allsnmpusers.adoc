@@ -6,7 +6,7 @@ summary: "The show allsnmpUsers command returns information about the Simple Net
 ---
 = Show SNMPv3 USM user
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show allsnmpUsers` command returns information about the Simple Network Management (SNMP) USM users defined for the storage array.

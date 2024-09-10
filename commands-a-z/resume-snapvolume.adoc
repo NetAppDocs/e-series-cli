@@ -6,7 +6,7 @@ summary: "The resume snapVolume command resumes a snapshot volume operation that
 ---
 = Resume snapshot volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `resume snapVolume` command resumes a snapshot volume operation that was stopped.

@@ -6,7 +6,7 @@ summary: "The clear storageArray recoveryMode command forces a storage array to 
 ---
 = Clear storage array recovery mode
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `clear storageArray recoveryMode` command forces a storage array to exit recovery mode.

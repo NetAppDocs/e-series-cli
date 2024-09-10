@@ -6,7 +6,7 @@ summary: "The start volumeGroup locate command identifies the drives that are lo
 ---
 = Start volume group locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start volumeGroup locate` command identifies the drives that are logically grouped together to form the specified volume group by blinking the indicator lights on the drives.

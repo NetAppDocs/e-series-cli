@@ -6,7 +6,7 @@ summary: "The create volumeGroup command creates either a free-capacity volume g
 ---
 = Create volume group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create volumeGroup` command creates either a free-capacity volume group or a volume group with one volume when you enter a set of unassigned drives.

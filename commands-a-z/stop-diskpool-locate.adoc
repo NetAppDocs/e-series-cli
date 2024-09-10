@@ -6,7 +6,7 @@ summary: "The stop diskPool locate command turns off the indicator lights on the
 ---
 = Stop disk pool locate
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop diskPool locate` command turns off the indicator lights on the drives that were turned on by the `start diskPool locate` command.

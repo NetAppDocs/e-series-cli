@@ -6,7 +6,7 @@ summary: "The delete storageArray trustedCertificate command removes the specifi
 ---
 = Remove installed trusted CA certificates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete storageArray trustedCertificate` command removes the specified user installed CA certificates from the array's web servers.

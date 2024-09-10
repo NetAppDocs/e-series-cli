@@ -6,7 +6,7 @@ summary: "The stop ssdCache performanceModeling command stops the performance mo
 ---
 = Stop SSD cache performance modeling
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop ssdCache performanceModeling` command stops the performance modeling operation and displays the performance modeling data for the SSD cache.

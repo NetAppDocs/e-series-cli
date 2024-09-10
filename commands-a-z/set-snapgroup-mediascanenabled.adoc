@@ -6,7 +6,7 @@ summary: "The set snapGroup mediaScanEnabled command runs a media scan on a snap
 ---
 = Set snapshot group media scan
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set snapGroup mediaScanEnabled` command runs a media scan on a snapshot group.

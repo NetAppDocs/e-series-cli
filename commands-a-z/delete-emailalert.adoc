@@ -6,7 +6,7 @@ summary: "The delete emailAlert command deletes recipient email address(es) from
 ---
 = Delete email alert recipient
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete emailAlert` command deletes recipient email address(es) from the Email alert configuration.

@@ -6,7 +6,7 @@ summary: "The set storageArray pqValidateOnReconstruct command sets the storage 
 ---
 = Set storage array PQ validation on reconstruct
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray pqValidateOnReconstruct` command sets the storage array P/Q validation state on reconstruction. When this capability is enabled, data is reconstructed using both data+P and data+Q, and the results checked for consistency before determining how to proceed.

@@ -6,7 +6,7 @@ summary: "The save controller NVSRAM file command saves a selected set of contro
 ---
 = Save controller NVSRAM
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save controller NVSRAM file` command saves a selected set of controller NVSRAM regions to a file.
