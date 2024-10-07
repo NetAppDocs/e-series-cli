@@ -29,9 +29,9 @@ The following table list changes to the CLI and Script Commands for release 11.9
 |===
 | Command| Description of Change
 a|
-INSERT
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/save-controller-arraymanagementcsr.html[save controller arrayManagementCSR]
 a|
-INSERT
+Added `KeySize` parameter.
 |===
 
 == SANtricity 11.81

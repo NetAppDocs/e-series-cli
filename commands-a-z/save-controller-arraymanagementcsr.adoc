@@ -37,6 +37,7 @@ save controller [(a|b)] arrayManagementCSR
      locality=pass:quotes["_cityOrLocality_"]
      [stateProvince=pass:quotes["_stateOrRegion_"]]
      country=pass:quotes["_string_"]
+     keySize=["2048 | 3072 | 4096 "]
      file=pass:quotes["_filename_"]
 ----
 
@@ -81,6 +82,10 @@ a|
 `country`
 a|
 Allows you to specify your country's two-digit ISO (International Organization for Standardization) code, such as US.
+a|
+`keySize`
+a|
+Allows you to specify a value of `2048`, `3072`, or `4096`. 
 a|
 `file`
 a|

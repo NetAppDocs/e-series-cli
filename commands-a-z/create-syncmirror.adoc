@@ -17,12 +17,12 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-If you are running the command on the E4000, E2800, or E5700 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+This command is not supported on E4000, E2800, E5700, EF600, and EF300 platforms.
 ====
 
 == Roles
 
-To execute this command on an E4000, E2800, or E5700 storage array, you must have the Storage Admin role.
+N/A
 
 == Context
 
