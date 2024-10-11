@@ -17,7 +17,7 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-If you are running the command on the E2800, E5700, EF600, or EF300 array, the client type must be set to `symbol`. This command will not execute if they client type is set to `https`.
+This command is not supported on E2800, E5700, EF600, and EF300 platforms.
 ====
 
 == Roles
