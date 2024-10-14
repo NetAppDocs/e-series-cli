@@ -15,6 +15,11 @@ The `activate storageArray feature` command activates the Asynchronous Mirroring
 
 This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
 
+[NOTE]
+====
+This command is only applicable for asynchronous mirroring over Fibre Channel. 
+====
+
 == Roles
 
 To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
@@ -27,10 +32,6 @@ After you activate the asynchronous mirroring feature, you must set up an asynch
 
 ----
 activate storageArray feature=asyncRemoteMirror
-----
-
-----
-activate storageArray feature=asyncMirror
 ----
 
 == Parameters
