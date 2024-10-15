@@ -426,6 +426,8 @@ link:../commands-a-z/set-asyncmirrorgroup.html[Set asynchronous mirror group]
 
 link:../commands-a-z/set-auditlog.html[Set Audit Log settings]
 
+link:../commands-a-z/set-autosupport-dispatch-limit.html[Set AutoSupport Dispatch Size Limit]
+
 link:../commands-a-z/set-storagearray-autosupport-schedule.html[Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
 
 link:../commands-a-z/set-storagearray-revocationchecksettings.html[Set certificate revocation check settings]

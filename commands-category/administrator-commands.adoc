@@ -355,6 +355,8 @@ link:../commands-a-z/smcli-supportbundle-schedule.html[Schedule automatic suppor
 
 link:../commands-a-z/set-asyncmirrorgroup.html[Set asynchronous mirror group]
 
+link:../commands-a-z/set-autosupport-dispatch-limit.html[Set AutoSupport Dispatch Size Limit]
+
 link:../commands-a-z/set-storagearray-autosupport-schedule.html[Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
 
 link:../commands-a-z/set-consistency-group-attributes.html[Set consistency group attributes]

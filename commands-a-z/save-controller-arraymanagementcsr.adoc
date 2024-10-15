@@ -85,7 +85,7 @@ Allows you to specify your country's two-digit ISO (International Organization f
 a|
 `keySize`
 a|
-Allows you to specify a value of `2048`, `3072`, or `4096`. 
+Allows you to specify a value of `2048`, `3072`, or `4096` for the server's key size. The default key size is 3072 if no key size is selected.  
 a|
 `file`
 a|
