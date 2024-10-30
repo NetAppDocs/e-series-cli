@@ -54,7 +54,7 @@ set storageArray
 [localUsername=local user name parameters]|
 [loginBanner file="path_to_login_banner"]|
 [managementInterface restOnly={true | false}]|
-[mediaScanRate=(disabled | 1-30)]|
+[mediaScanRate=(disabled | 1-210)]|
 [odxEnabled=(TRUE | FALSE)]|
 [password="password"]|
 [passwordLength=<INTEGER>]|
@@ -226,7 +226,7 @@ Changes the management interface of the controller. Change the management interf
 a|
 `mediaScanRate`
 a|
-The number of days over which the media scan runs. Valid values are `disabled` , which turns off the media scan, or `1` day to `30` days, where `1` day is the fastest scan rate, and `30` days is the slowest scan rate. A value other than `disabled` or `1` to `30` does not allow the media scan to function.
+The number of days over which the media scan runs. Valid values are `disabled` , which turns off the media scan, or `1` day to `210` days, where `1` day is the fastest scan rate, and `120` days is the slowest scan rate. A value other than `disabled` or `1` to `210` does not allow the media scan to function.
 a|
 `odxEnabled`
 a|

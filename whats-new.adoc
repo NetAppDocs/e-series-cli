@@ -44,6 +44,10 @@ a|
 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/show-storagearray-autosupport.html#examples[Show AutoSuppot Settings]
 a|
 Added dispatch size limits and destination email addresses to example output for command.
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-storagearray.html[Set storage array]
+a|
+Updated `mediaScanRate` parameter range to 1 - 210 days.  
 |===
 
 == SANtricity 11.81
