@@ -48,7 +48,7 @@ Allows you to specify the client signed certificate or server root/intermediate 
 a|
 `privateKeyFile`
 a|
-Allows you to download of a private key alongside a signed certificate. The `privateKeyFile` parameter must be used with `certificateType=client` value.
+Allows you to download a private key alongside a signed certificate. The `privateKeyFile` parameter must be used with `certificateType=client` value.
 |===
 
 == Examples
