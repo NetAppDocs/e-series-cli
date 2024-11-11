@@ -226,7 +226,7 @@ Changes the management interface of the controller. Change the management interf
 a|
 `mediaScanRate`
 a|
-The number of days over which the media scan runs. Valid values are `disabled` , which turns off the media scan, or `1` day to `210` days, where `1` day is the fastest scan rate, and `210` days is the slowest scan rate. A value other than `disabled` or `1` through `210` does not allow the media scan to function. The default value is set to `120` days. 
+The number of days over which the media scan runs. Valid values are `disabled` , which turns off the media scan, or `1` day to `210` days, where `1` day is the fastest scan rate, and `210` days is the slowest scan rate. A value other than `disabled` or `1` through `210` does not allow the media scan to function. 
 a|
 `odxEnabled`
 a|
