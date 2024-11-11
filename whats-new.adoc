@@ -41,7 +41,7 @@ https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-email-smtp-delivery-
 a|
 Added `destinationAddress` parameter.
 a|
-https://docs.netapp.com/us-en/e-series-cli/commands-a-z/show-storagearray-autosupport.html#examples[Show AutoSuppot Settings]
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/show-storagearray-autosupport.html#examples[Show AutoSupport Settings]
 a|
 Added dispatch size limits and destination email addresses to example output for command.
  a|
