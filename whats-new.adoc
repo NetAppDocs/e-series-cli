@@ -37,7 +37,7 @@ https://docs.netapp.com/us-en/e-series-cli/commands-a-z/save-controller-arrayman
 a|
 Added `KeySize` parameter.
 a|
-https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html[Set AutoSupport delivery configuration]
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-autosupport-https-delivery-method.html[Set AutoSupport delivery configuration]
 a|
 Added `destinationAddress` parameter.
 a|

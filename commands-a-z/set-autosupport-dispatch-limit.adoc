@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: Autosupport, bundle, dispatch, delivery type, size
 summary: "Sets the maximum size of AutoSupport bundles and dispatches for different delivery types."
 ---
-= Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)
+= Set AutoSupport Dispatch Size Limit
 :icons: font
 :imagesdir: ../media/
 

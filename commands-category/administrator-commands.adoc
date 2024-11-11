@@ -191,15 +191,15 @@ link:../commands-a-z/smcli-enable-autosupportfeature.html[Enable or disable Auto
 
 link:../commands-a-z/enable-or-disable-autosupport-individual-arrays.html[Enable or disable AutoSupport (all individual arrays)]
 
-link:../commands-a-z/set-storagearray-autosupportmaintenancewindow.html[Enable or disable AutoSupport maintenance window (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportmaintenancewindow.html[Enable or disable AutoSupport maintenance window ]
 
 link:../commands-a-z/smcli-enable-disable-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature at the EMW...]
 
-link:../commands-a-z/set-storagearray-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature ]
 
 link:../commands-a-z/smcli-enable-disable-autosupportremotediag.html[Enable or disable the AutoSupport OnDemand Remote Diagnostics feature at...]
 
-link:../commands-a-z/set-storagearray-autosupportremotediag.html[Enable or disable the AutoSupport Remote Diagnostics feature (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportremotediag.html[Enable or disable the AutoSupport Remote Diagnostics feature]
 
 link:../commands-a-z/set-storagearray-hostconnectivityreporting.html[Enable or disable host connectivity reporting]
 
@@ -257,7 +257,7 @@ link:../commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.html[Reset as
 
 link:../commands-a-z/smcli-autosupportschedule-reset.html[Reset AutoSupport message collection schedule]
 
-link:../commands-a-z/reset-storagearray-autosupport-schedule.html[Reset AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/reset-storagearray-autosupport-schedule.html[Reset AutoSupport message collection schedule]
 
 link:../commands-a-z/reset-controller.html[Reset controller]
 
@@ -295,7 +295,7 @@ link:../commands-a-z/resume-ssdcache.html[Resume SSD cache]
 
 link:../commands-a-z/resume-syncmirror.html[Resume synchronous mirroring]
 
-link:../commands-a-z/save-storagearray-autosupport-log.html[Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/save-storagearray-autosupport-log.html[Retrieve an AutoSupport log]
 
 link:../commands-a-z/revive-drive.html[Revive drive]
 
@@ -357,7 +357,7 @@ link:../commands-a-z/set-asyncmirrorgroup.html[Set asynchronous mirror group]
 
 link:../commands-a-z/set-autosupport-dispatch-limit.html[Set AutoSupport Dispatch Size Limit]
 
-link:../commands-a-z/set-storagearray-autosupport-schedule.html[Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupport-schedule.html[Set AutoSupport message collection schedule ]
 
 link:../commands-a-z/set-consistency-group-attributes.html[Set consistency group attributes]
 
@@ -597,9 +597,9 @@ link:../commands-a-z/start-asyncmirrorgroup-synchronize.html[Start asynchronous 
 
 link:../commands-a-z/smcli-autosupportconfig.html[Specify the AutoSupport delivery method]
 
-link:../commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html[Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-email-smtp-delivery-method.html[Specify the Email (SMTP) delivery method]
 
-link:../commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html[Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-autosupport-https-delivery-method.html[Specify AutoSupport HTTP(S) delivery method]
 
 link:../commands-a-z/start-cgsnapimage-rollback.html[Start consistency group snapshot rollback]
 
@@ -703,7 +703,7 @@ link:../commands-a-z/diagnose-asyncmirrorgroup.html[Test asynchronous mirror gro
 
 link:../commands-a-z/smcli-autosupportconfig-test.html[Test the AutoSupport configuration]
 
-link:../commands-a-z/start-storagearray-autosupport-deliverytest.html[Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/start-storagearray-autosupport-deliverytest.html[Test AutoSupport delivery settings]
 
 link:../commands-a-z/start-emailalert-test.html[Test email alert configuration]
 
@@ -761,11 +761,11 @@ link:../commands-a-z/set-storagearray-odxenabled.html[Enable or disable ODX]
 
 link:../commands-a-z/smcli-enable-disable-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature at the EMW...]
 
-link:../commands-a-z/set-storagearray-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature ]
 
 link:../commands-a-z/smcli-enable-disable-autosupportremotediag.html[Enable or disable the AutoSupport OnDemand Remote Diagnostics feature at...]
 
-link:../commands-a-z/set-storagearray-autosupportremotediag.html[Enable or disable the AutoSupport Remote Diagnostics feature (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportremotediag.html[Enable or disable the AutoSupport Remote Diagnostics feature]
 
 link:../commands-a-z/enable-storagearray-feature-file.html[Enable storage array feature]
 
@@ -777,9 +777,9 @@ link:../commands-a-z/create-snmpuser-username.html[Register SNMPv3 USM user]
 
 link:../commands-a-z/create-snmptrapdestination.html[Register SNMP trap destination]
 
-link:../commands-a-z/reset-storagearray-autosupport-schedule.html[Reset AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/reset-storagearray-autosupport-schedule.html[Reset AutoSupport message collection schedule]
 
-link:../commands-a-z/save-storagearray-autosupport-log.html[Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/save-storagearray-autosupport-log.html[Retrieve an AutoSupport log]
 
 link:../commands-a-z/revive-drive.html[Revive drive]
 
@@ -793,7 +793,7 @@ link:../commands-a-z/save-controller-nvsram-file.html[Save controller NVSRAM]
 
 link:../commands-a-z/set-asyncmirrorgroup.html[Set asynchronous mirror group]
 
-link:../commands-a-z/set-storagearray-autosupport-schedule.html[Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupport-schedule.html[Set AutoSupport message collection schedule]
 
 link:../commands-a-z/set-controller-ntpservers.html[Set controller NTP settings]
 
@@ -807,7 +807,7 @@ link:../commands-a-z/set-storagearray-localusername.html[Set storage array local
 
 link:../commands-a-z/set-tray-serviceallowedindicator.html[Set tray service action allowed indicator]
 
-link:../commands-a-z/show-storagearray-autosupport.html[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
+link:../commands-a-z/show-storagearray-autosupport.html[Show AutoSupport configuration ]
 
 link:../commands-a-z/show-blockedeventalertlist.html[Show blocked events]
 
@@ -821,11 +821,11 @@ link:../commands-a-z/show-allsnmpusers.html[Show SNMPv3 USM user]
 
 link:../commands-a-z/show-syslog-summary.html[Show syslog configuration]
 
-link:../commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html[Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-email-smtp-delivery-method.html[Specify the Email (SMTP) delivery method]
 
-link:../commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html[Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-autosupport-https-delivery-method.html[Specify AutoSupport HTTP(S) delivery method]
 
-link:../commands-a-z/start-storagearray-autosupport-deliverytest.html[Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/start-storagearray-autosupport-deliverytest.html[Test AutoSupport delivery settings ]
 
 link:../commands-a-z/start-emailalert-test.html[Test email alert configuration]
 

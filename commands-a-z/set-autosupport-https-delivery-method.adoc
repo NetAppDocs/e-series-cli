@@ -1,10 +1,10 @@
 ---
-permalink: commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html
+permalink: commands-a-z/set-autosupport-https-delivery-method.html
 sidebar: sidebar
-keywords: Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)
+keywords: Specify AutoSupport HTTP(S) delivery method
 summary: "The set storageArray autoSupport deliveryMethod command sets up the delivery method for sending AutoSupport messages to HTTP(S)."
 ---
-= Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)
+= Specify AutoSupport HTTP(S) delivery method 
 :icons: font
 :imagesdir: ../media/
 
@@ -24,7 +24,7 @@ To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array
 [source,cli]
 ----
 
-set storageArray autoSupport deliveryMethod=email mailRelayServer="mail.example.com" senderEmail="sender@example.com" destinationAddress="destination1@example.com" destinationAddress="destination2@example.com";
+set storageArray autoSupport deliveryMethod=email mailRelayServer="mail.example.com" senderEmail="sender@example.com" 
 ----
 
 == Parameters
@@ -38,7 +38,6 @@ a|
 Allows the user to specify the delivery method for AutoSupport collection. Valid choices are:
 
 * email
-* HTTP
 * HTTPS
 
 [NOTE]
@@ -74,10 +73,6 @@ a|
 `password`
 a|
 Allows the user to specify the proxy server's password if it is configured.
-a|
-`destinationAddress`
-a|
-Email address where AutoSupport dispatches will be sent. This parameter may be provided multiple times to allow dispatches to be sent to multiple addresses.
 |===
 
 == Minimum Firmware Level

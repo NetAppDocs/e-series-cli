@@ -419,8 +419,10 @@ entries:
         url: /commands-a-z/set-asyncmirrorgroup.html
       - title: set auditlog
         url: /commands-a-z/set-auditlog.html
-      - title: set autosupport https delivery method e2800 or e5700
-        url: /commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html
+      - title: set autosupport dispatch size limit
+        url: /commands-a-z/set-autosupport-dispatch-limit.html
+      - title: set autosupport https delivery method
+        url: /commands-a-z/set-autosupport-https-delivery-method.html
       - title: set cgsnapvolume
         url: /commands-a-z/set-cgsnapvolume.html
       - title: set consistency group attributes
@@ -456,7 +458,7 @@ entries:
       - title: set drivechannel
         url: /commands-a-z/set-drivechannel.html
       - title: set email smtp delivery method e2800 or e5700
-        url: /commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html
+        url: /commands-a-z/set-email-smtp-delivery-method.html
       - title: set emailalert
         url: /commands-a-z/set-emailalert.html
       - title: set event alert
