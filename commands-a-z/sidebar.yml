@@ -457,7 +457,7 @@ entries:
         url: /commands-a-z/set-drive-serviceallowedindicator.html
       - title: set drivechannel
         url: /commands-a-z/set-drivechannel.html
-      - title: set email smtp delivery method e2800 or e5700
+      - title: set email smtp delivery method
         url: /commands-a-z/set-email-smtp-delivery-method.html
       - title: set emailalert
         url: /commands-a-z/set-emailalert.html
