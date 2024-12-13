@@ -6,7 +6,7 @@ summary: "The set event alert commands manage alert event notification by either
 ---
 = Set event alert filtering
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set event alert` commands manage alert event notification by either disabling or enabling notification related to a specific alertable event. To prevent notification about a specific alertable event, you _block_ it. To enable notification about a specific alertable event, you _unblock_ it.
@@ -43,15 +43,15 @@ Non-alertable events cannot be made alertable using this command.
 ====
 
 == Syntax to block an event alert
-
 [subs=+macros]
+[source,cli]
 ----
 set blockEventAlert pass:quotes[_eventType_]
 ----
 
 == Syntax to unblock an event alert
-
 [subs=+macros]
+[source,cli]
 ----
 set unBlockEventAlert pass:quotes[_eventType_]
 ----

@@ -6,9 +6,12 @@ summary: "Data collected from an error encountered by the CLI is written to a fi
 ---
 = Detailed error reporting
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
-Data collected from an error encountered by the CLI is written to a file. Detailed error reporting under the CLI works as follows:
+[.lead]
+Data collected from an error encountered by the CLI is written to a file. 
+
+Detailed error reporting under the CLI works as follows:
 
 * If the CLI must abnormally end running CLI commands and script commands, error data is collected and saved before the CLI finishes.
 * The CLI saves the error data by writing the data to a standard file name.

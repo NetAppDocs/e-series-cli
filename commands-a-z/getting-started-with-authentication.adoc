@@ -6,7 +6,7 @@ summary: "Authentication requires that users access the system with assigned log
 ---
 = Getting started with authentication
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 Authentication requires that users access the system with assigned login credentials. Each user login is associated with a user profile that includes specific roles and access permissions.

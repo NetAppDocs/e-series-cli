@@ -6,18 +6,18 @@ summary: "The show volumeCopy command returns information about volume copy oper
 ---
 = Show volume copy
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show volumeCopy` command returns information about volume copy operations.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Context
 
@@ -34,6 +34,7 @@ You can retrieve information about a specific volume copy pair or all of the vol
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 show volumeCopy (allVolumes | source pass:quotes[["_sourceName_"]] |
 target pass:quotes[["_targetName_"]])

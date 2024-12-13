@@ -6,18 +6,18 @@ summary: "The show volume actionProgress command returns information about the v
 ---
 = Show volume action progress
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show volume actionProgress` command returns information about the volume action and amount of the long-running operation that is completed for a long-running operation on a volume.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Storage Monitor role.
 
 == Context
 
@@ -30,6 +30,7 @@ The amount of the long-running operation that is completed is shown as a percent
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 show volume pass:quotes[[_volumeName_]] actionProgress
 ----

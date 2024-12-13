@@ -6,14 +6,14 @@ summary: "The SMcli enable|disable autoSupportOnDemand command turns on or turns
 ---
 = Enable or disable the AutoSupport OnDemand feature at the EMW management domain level (SMcli only)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli enable|disable autoSupportOnDemand` command turns on or turns off the AutoSupport OnDemand feature. This feature allows technical support to coordinate AutoSupport data transmission, and allows them to request the re-transmission of missing support data.
 
 == Supported Arrays
 
-This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E4000, E2800, or E5700 storage arrays.
 
 == Context
 
@@ -25,7 +25,7 @@ This command is an SMcli command, not a script command. You must run this comman
 Before enabling this feature, you must first enable the AutoSupport feature on the management domain. After enabling this feature, you can next enable the AutoSupport Remote Diagnostics feature (if desired). The AutoSupport Remote Diagnostics features is enabled, by default, when the AutoSupport OnDemand feature is enabled.
 
 == Syntax
-
+[source,cli]
 ----
 SMcli enable|disable autoSupportOnDemand
 ----

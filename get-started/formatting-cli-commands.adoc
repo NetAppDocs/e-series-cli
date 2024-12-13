@@ -2,12 +2,16 @@
 permalink: get-started/formatting-cli-commands.html
 sidebar: sidebar
 keywords: format, rules, cli, commands
-summary: "Double quotation marks that are used as part of a name or label require special consideration when you run the CLI commands and the script commands on a Windows, Linux, or Solaris operating system."
+summary: "Based on the value or name entered, certain format rules are enforced for CLI commands."
 ---
 = Format rules for CLI commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
+[.lead]
+Based on the value or name entered, certain format rules are enforced for CLI commands. 
+
+== CLI format rules 
 Double quotation marks (" ") that are used as part of a name or label require special consideration when you run the CLI commands and the script commands on a Windows, Linux, or Solaris operating system.
 
 When double quotation marks (" ") are part of a name or value, you must insert a backslash (\) before each double quotation mark character.

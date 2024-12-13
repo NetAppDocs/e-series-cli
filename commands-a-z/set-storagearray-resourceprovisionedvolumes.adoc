@@ -6,7 +6,7 @@ summary: "The set storageArray resourceProvisionedVolumes command disables the D
 ---
 = Set Storage Array Resource Provisioned Volumes
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray resourceProvisionedVolumes` command disables the DULBE feature.
@@ -28,7 +28,7 @@ A resource provisioned volume is a thick volume in an SSD volume group or pool, 
 Resource provisioned volumes are supported only on SSD volume groups and pools, where all drives in the group or pool support the NVMe Deallocated or Unwritten Logical Block Error Enable (DULBE) error recovery capability. When a resource provisioned volume is created, all drive blocks assigned to the volume are deallocated (unmapped). Deallocating blocks can improve SSD wear life and increase maximum write performance. The improvement varies with each drive model and capacity.
 
 == Syntax
-
+[source,cli]
 ----
 set storageArray resourceProvisionedVolumes=(enable|disable)
 ----

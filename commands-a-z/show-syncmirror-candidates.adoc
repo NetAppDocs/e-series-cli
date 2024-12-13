@@ -6,7 +6,7 @@ summary: "The show syncMirror candidates command returns information about the c
 ---
 = Show synchronous mirroring volume candidates
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show syncMirror candidates` command returns information about the candidate volumes on a remote storage array that you can use as secondary volumes in a Synchronous Mirroring configuration.
@@ -17,12 +17,11 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-This command is not supported on E2800, E5700, EF600, and EF300 platforms.
+This command is not supported on E4000, E2800, E5700, EF600, and EF300 platforms.
 ====
 
 == Roles
-
-To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin or Storage Monitor role.
+N/A
 
 == Context
 
@@ -33,6 +32,7 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 pass:quotes[show syncMirror candidates primary="_volumeName_"
 remoteStorageArrayName="_storageArrayName_"]

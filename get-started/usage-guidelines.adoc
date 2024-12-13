@@ -2,11 +2,14 @@
 permalink: get-started/usage-guidelines.html
 sidebar: sidebar
 keywords: script command, guidelines
-summary: "This list provides guidelines for writing script commands on the command line."
+summary: "Adhere to the following guidelines when writing script commands."
 ---
 = Script command guidelines
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
+
+[.lead]
+Adhere to the following guidelines when writing script commands.
 
 This list provides guidelines for writing script commands on the command line:
 

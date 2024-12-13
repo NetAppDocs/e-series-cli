@@ -1,0 +1,51 @@
+---
+permalink: commands-a-z/set-autosupport-dispatch-limit.html
+sidebar: sidebar
+keywords: Autosupport, bundle, dispatch, delivery type, size
+summary: "Sets the maximum size of AutoSupport bundles and dispatches for different delivery types."
+---
+= Set AutoSupport Dispatch Size Limit
+:icons: font
+:imagesdir: ../media/
+
+[.lead]
+The `set storageArray autoSupport dispatchSizeLimit` sets the maximum size of AutoSupport bundles and dispatches for different delivery types.
+
+Through this command, users can configure the email size based on what their email server supports. Larger sizes reduce the chance of the support bundle being truncated. 
+
+NOTE: Users should generally not configure HTTPS sizes unless directed by NetApp Support.
+
+== Supported Arrays
+
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+
+== Roles
+
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+
+== Syntax
+[subs=+macros]
+[source,cli]
+----
+
+set storageArray autoSupport dispatchSizeLimit (https=(<sizeInBytes>|unlimited)|email=(<sizeInBytes>|unlimited));
+----
+
+== Parameters
+
+[cols="2*",options="header"]
+|===
+| Parameter| Description
+a|
+`https`
+a|
+The maximum HTTPS dispatch size in bytes. If the maximum size is not configured, the default is 50 MiB. A value of "unlimited" or 0 allows for no size restriction. The minimum size allowed is 2 MiB..
+a|
+`email`
+a|
+The maximum email (SMTP) delivery size in bytes. If the maximum size is not configured, the default is 5 MiB. A value of "unlimited" or 0 allows for no size restriction. The minimum size allowed is 2 MiB.
+|===
+
+== Minimum firmware level
+
+8.90

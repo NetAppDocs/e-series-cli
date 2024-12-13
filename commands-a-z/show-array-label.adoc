@@ -6,18 +6,18 @@ summary: "The Show array label command returns information about whether a stora
 ---
 = Show array label
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `Show array label` command returns information about whether a storage array label has been defined or all existing storage array labels.
 
 == Supported Arrays
 
-This command applies to the EF600 storage arrays.
+This command applies to the EF600 and EF300 storage arrays.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 pass:quotes[show storageArrayLabel label _userDefinedString_]
 show storageArrayLabel all

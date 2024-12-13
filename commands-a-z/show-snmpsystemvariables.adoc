@@ -6,21 +6,21 @@ summary: "The show snmpSystemVariables command returns information about the Sim
 ---
 = Show SNMP MIB II system group variables
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show snmpSystemVariables` command returns information about the Simple Network Management Protocol (SNMP) system variables. The system variables are maintained in a Management Information Base II (MIB-II) database.
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin or Storage Monitor role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin or Storage Monitor role.
 
 == Syntax
-
+[source,cli]
 ----
 show snmpSystemVariables
 ----

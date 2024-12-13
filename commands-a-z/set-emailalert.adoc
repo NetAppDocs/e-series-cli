@@ -6,20 +6,19 @@ summary: "The set emailAlert command configures the email to send an email to a 
 ---
 = Configure email alert settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set emailAlert` command configures the email to send an email to a specified technical support or organization. The email alert contains a summary of the event, detailed information about the affected storage, and customer contact information.
 
 == Supported Arrays
 
-This command applies to the E2800, E5700, EF600, and EF300 storage arrays. However, you can use the command as an SMcli command, not a script command, for E2700 or E5600 arrays. In this case, the command applies to all of the arrays in the management domain.
+This command applies to the E4000, E2800, E5700, EF600, and EF300 storage arrays. However, you can use the command as an SMcli command, not a script command, for E2700 or E5600 arrays. In this case, the command applies to all of the arrays in the management domain.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
-
 set emailAlert
     serverAddress=pass:quotes["_serverAddress_"] |
     serverEncryption=pass:quotes[_none_ | _smtps_ | _starttls_ |]

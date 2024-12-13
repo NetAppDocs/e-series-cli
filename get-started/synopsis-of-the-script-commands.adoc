@@ -6,9 +6,12 @@ summary: "Because you can use the script commands to define and manage the diffe
 ---
 = Synopsis of the script commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
-Because you can use the script commands to define and manage the different aspects of a storage array (such as host topology, drive configuration, controller configuration, volume definitions, and volume group definitions), the actual number of commands is extensive. The commands, however, fall into general categories that are reused when you apply the commands to configure or maintain a storage array. The following table lists the general form of the script commands and a definition of each command.
+[.lead]
+Because you can use the script commands to define and manage the different aspects of a storage array (such as host topology, drive configuration, controller configuration, volume definitions, and volume group definitions), the actual number of commands is extensive. 
+
+The commands fall into general categories that are reused when you apply the commands to configure or maintain a storage array. The following table lists the general form of the script commands and a definition of each command.
 
 [cols="2*",options="header"]
 |===

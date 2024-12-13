@@ -2,11 +2,14 @@
 permalink: get-started/naming-conventions.html
 sidebar: sidebar
 keywords: name, conventions
-summary: "Names can have a maximum of 30 characters."
+summary: "Specific rules must be adhered to for names used in CLI commands."
 ---
 = Naming conventions
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
+
+[.lead]
+Specific rules must be adhered to for names used in CLI commands. 
 
 * Names can have a maximum of 30 characters.
 * You can use any combination of alphanumeric characters, hyphens, and underscores for the names of the following components:

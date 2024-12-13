@@ -6,9 +6,12 @@ summary: "The CLI commands are in the form of a command wrapper and elements emb
 ---
 = Structure of CLI commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
-The CLI commands are in the form of a command wrapper and elements embedded into the wrapper. A CLI command consists of these elements:
+[.lead]
+The CLI commands are in the form of a command wrapper and elements embedded into the wrapper. 
+
+A CLI command consists of the following elements:
 
 * A command wrapper identified by the term `SMcli`
 * The storage array identifier

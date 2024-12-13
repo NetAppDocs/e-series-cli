@@ -6,7 +6,7 @@ summary: "The start volumeGroup fullProvisioning command starts a full provision
 ---
 = Start Volume Group Full Provisioning
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start volumeGroup fullProvisioning` command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the volume group.
@@ -28,7 +28,7 @@ Resource Provisioned volumes are supported only on SSD volume groups and pools, 
 The full provisioning format ensures all blocks needed by the volumes in the volume group are fully mapped on the drives. This command is only applicable to resource provisioned volume group. If the option to `disableResourceProvisioning` is not set to `FALSE`, then the volumes will still be resource provisioned and new volumes created on the volume group will be resource provisioned. If the option to disable resource provisioning is set to `TRUE`, then the volumes will no longer be resource provisioned and new volumes created on the volume group will not be resource provisioned.
 
 == Syntax
-
+[source,cli]
 ----
 start volumeGroup[volumeGroupName] fullProvisioning [disableResourceProvisioning=(TRUE | FALSE)]
 ----

@@ -6,18 +6,18 @@ summary: "The remove asyncMirrorGroup command removes an orphaned mirrored pair 
 ---
 = Remove incomplete asynchronous mirrored pair from asynchronous mirror group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `remove asyncMirrorGroup` command removes an orphaned mirrored pair volume on the storage array.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -29,6 +29,7 @@ Use this command when the mirror relationship is successfully removed on the loc
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 remove asyncMirrorGroup pass:quotes[[_"asyncMirrorGroupName"_]]
 incompleteMirror volume=pass:quotes[_"volumeName"_]

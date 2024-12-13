@@ -6,8 +6,10 @@ summary: "Auto support commands"
 ---
 = Auto support commands
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
+[.lead]
+The following list of auto support commands are available for your E-Series storage system. 
 
 == AutoSupport bundle collection commands for the E2700 and E5600
 
@@ -37,24 +39,26 @@ link:../commands-a-z/enable-or-disable-autosupport-individual-arrays.html[Enable
 
 link:../commands-a-z/save-storagearray-supportdata.html[Save storage array support data]
 
-== AutoSupport Commands for the E2800, E5700
+== AutoSupport Commands for the E4000, EF300, EF400, E2800, E5700
 
-link:../commands-a-z/set-storagearray-autosupportmaintenancewindow.html[Enable or disable AutoSupport maintenance window (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-autosupport-dispatch-limit.html[Set AutoSupport Dispatch Size Limit]
 
-link:../commands-a-z/set-storagearray-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportmaintenancewindow.html[Enable or disable AutoSupport maintenance window]
 
-link:../commands-a-z/set-storagearray-autosupportremotediag.html[Enable or disable the AutoSupport Remote Diagnostics feature (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature]
 
-link:../commands-a-z/save-storagearray-autosupport-log.html[Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportremotediag.html[Enable or disable the AutoSupport Remote Diagnostics feature]
 
-link:../commands-a-z/reset-storagearray-autosupport-schedule.html[Reset AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/save-storagearray-autosupport-log.html[Retrieve an AutoSupport log]
+
+link:../commands-a-z/reset-storagearray-autosupport-schedule.html[Reset AutoSupport message collection schedule]
 
 link:../commands-a-z/show-storagearray-autosupport.html[Show AutoSupport configuration (for E2800 or E5700 storage arrays)]
 
-link:../commands-a-z/set-storagearray-autosupport-schedule.html[Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupport-schedule.html[Set AutoSupport message collection schedule]
 
-link:../commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html[Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-autosupport-https-delivery-method.html[Specify AutoSupport HTTP(S) delivery method]
 
-link:../commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html[Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-email-smtp-delivery-method.html[Specify the Email (SMTP) delivery method]
 
-link:../commands-a-z/start-storagearray-autosupport-deliverytest.html[Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/start-storagearray-autosupport-deliverytest.html[Test AutoSupport delivery settings]

@@ -6,18 +6,18 @@ summary: "The delete asyncMirrorGroup command deletes one or more asynchronous m
 ---
 = Delete asynchronous mirror group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete asyncMirrorGroup` command deletes one or more asynchronous mirror groups from the local storage array and the remote storage array.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -25,6 +25,7 @@ The asynchronous mirror group must be empty before it can be successfully delete
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 delete (allAsyncMirrorGroups | asyncMirrorGrouppass:quotes[[_"asyncMirrorGroupName"_] |
 asyncMirrorGroups pass:quotes[[_"asyncMirrorGroupName_1" ... "asyncMirrorGroupName_n"_]])

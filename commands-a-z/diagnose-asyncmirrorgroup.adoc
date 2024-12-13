@@ -6,7 +6,7 @@ summary: "The diagnose asyncMirrorGroup command tests possible communication pro
 ---
 = Test asynchronous mirror group connectivity
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `diagnose asyncMirrorGroup` command tests possible communication problems between the local storage array and the remote storage array associated with an asynchronous mirror group.
@@ -17,15 +17,15 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-This command is not supported on E2800, E5700, EF600, and EF300 platforms.
+This command is not supported on E4000, E2800, E5700, EF600, and EF300 platforms.
 ====
 
 == Roles
-
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+N/A
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 pass:quotes[diagnose asyncMirrorGroup [_asyncMirrorGroupName_]]
 testID=(all | connectivity | latency | bandwidth | portConnections)

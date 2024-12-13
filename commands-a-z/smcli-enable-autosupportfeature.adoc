@@ -6,14 +6,14 @@ summary: "The SMcli enable autoSupportFeature command turns on the AutoSupport (
 ---
 = Enable or disable AutoSupport at the EMW management domain level (SMcli only)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli enable autoSupportFeature` command turns on the AutoSupport (ASUP) feature for all managed storage arrays and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, any ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis.
 
 == Supported Arrays
 
-This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E4000, E2800, or E5700 storage arrays.
 
 == Context
 
@@ -43,7 +43,7 @@ You must enable the three features in the following order:
 . *Enable AutoSupport Remote Diagnostics*
 
 == Syntax
-
+[source,cli]
 ----
 SMcli enable|disable autoSupportFeature
 ----

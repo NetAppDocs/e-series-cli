@@ -6,21 +6,22 @@ summary: "The delete snmpCommunity command deletes an existing Simple Network Ma
 ---
 = Unregister SNMP community
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete snmpCommunity` command deletes an existing Simple Network Management Protocol (SNMP) community that you previously created and registered using the `create snmpCommunity` command. Deleting an SNMP community effectively unregisters the community. Any trap destinations associated with that community are also removed.
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 pass:quotes[delete snmpCommunity communityName="_snmpCommunityName_"]
 ----

@@ -6,18 +6,18 @@ summary: "This command enables or disables AutoSupport (ASUP) feature for the st
 ---
 = Enable or disable AutoSupport (all individual arrays)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 This command enables or disables AutoSupport (ASUP) feature for the storage array and makes it possible to transmit messages to the technical support site. After you enable the ASUP feature, the ASUP-capable storage array is automatically prepared to collect and send support-related data to technical support. The data can then be used for remote troubleshooting and problem analysis.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -30,7 +30,7 @@ You must enable the three features in this order:
 . *Enable AutoSupport Remote Diagnostics*
 
 == Syntax
-
+[source,cli]
 ----
 set storageArray autoSupport (enable | disable)
 ----

@@ -6,7 +6,7 @@ summary: "The show controller command returns the status of controller diagnosti
 ---
 = Show controller diagnostic status
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show controller` command returns the status of controller diagnostics started by the `start controller diagnostic` command.
@@ -14,8 +14,8 @@ The `show controller` command returns the status of controller diagnostics start
 If the diagnostics have finished, the entire results of the diagnostic tests are shown. If the diagnostic tests have not finished, only the results of the tests that are finished are shown. The results of the test are shown on the terminal, or you can write the results to a file.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 show controller [(a| b)] diagnosticStatus pass:quotes[[file=_filename_]]
 ----

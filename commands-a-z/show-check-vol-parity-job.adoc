@@ -6,7 +6,7 @@ summary: "The show check volume parity job command shows a specified check volum
 ---
 = Show check volume parity job
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show check volume parity job` command shows a specified check volume parity job and the job's status.
@@ -21,6 +21,7 @@ To execute this command on an EF600 and EF300 storage array, you must have the S
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 show check volume parity job jobId=<job_id>;
 ----
