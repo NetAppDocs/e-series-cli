@@ -6,7 +6,7 @@ summary: "This topic lists changes in the latest SANtricity System Manager relea
 ---
 = What's new
 :icons: font
-:imagesdir: ../media/
+:imagesdir: ./media/
 
 [.lead]
 This topic lists changes in the latest SANtricity System Manager releases of the CLI command and Script commands.
