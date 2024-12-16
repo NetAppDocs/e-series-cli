@@ -6,7 +6,7 @@ summary: "The SMcli -autoSupportConfig show command displays the AutoSupport bun
 ---
 = Display AutoSupport bundle collection settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli -autoSupportConfig show` command displays the AutoSupport bundle collection settings for the management domain. These settings apply to all of the storage arrays in your management domain for which you have enabled AutoSupport.
@@ -37,11 +37,11 @@ This command is an SMcli command, not a script command. You must run this comman
 
 [NOTE]
 ====
-This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E4000, E2800, or E5700 storage arrays.
 ====
 
 == Syntax
-
+[source,cli]
 ----
 SMcli -autoSupportConfig show
 ----

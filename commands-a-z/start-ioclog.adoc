@@ -6,25 +6,25 @@ summary: "The start IOCLog command produces a dump of the IOC log of data transm
 ---
 = Start input output controller (IOC) dump
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start IOCLog` command produces a dump of the IOC log of data transmissions between a host and a controller.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
 Controllers are identified as "a " or "b". Each controller can have up to four host channels; each channel is uniquely identified by a number from 1 through 8.
 
 == Syntax
-
+[source,cli]
 ----
 start IOCLog [(a1 | a2 | a3 | a4 | a5 | a6 | a7 | a8 | b1 | b2 | b3 | b4 | b5 | b6 | b7 | b8)]
 [overwrite=(TRUE | FALSE)]

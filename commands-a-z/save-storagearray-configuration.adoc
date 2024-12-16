@@ -6,18 +6,18 @@ summary: "The save storageArray configuration command creates a script file that
 ---
 = Save storage array configuration
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray configuration` command creates a script file that you can use to re-create the current storage array volume configuration.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role. However, the use of this command with the LDAP parameter is restricted to those with the Security Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role. However, the use of this command with the LDAP parameter is restricted to those with the Security Admin role.
 
 == Context
 
@@ -27,8 +27,8 @@ This command does not save remote mirroring or volume copy configuration data on
 ====
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 save storageArray configuration file=pass:quotes["_filename_"]
 (allconfig|[globalSettings=(TRUE | FALSE)]

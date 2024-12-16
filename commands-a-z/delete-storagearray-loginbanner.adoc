@@ -6,21 +6,21 @@ summary: "The delete storageArray loginBanner command allows you to delete the l
 ---
 = Delete storage array login banner
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `delete storageArray loginBanner` command allows you to delete the login banner text file that was previously uploaded and saved.
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
 == Syntax
-
+[source,cli]
 ----
 delete storageArray loginBanner
 ----

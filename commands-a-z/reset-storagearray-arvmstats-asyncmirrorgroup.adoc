@@ -6,21 +6,22 @@ summary: "The reset storageArray arvmStats asyncMirrorGroup command resets the s
 ---
 = Reset asynchronous mirror group statistics
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `reset storageArray arvmStats asyncMirrorGroup` command resets the synchronization statistics for one or more member volumes in an asynchronous mirror group to a relative 0.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 reset storageArray arvmStats asyncMirrorGroup pass:quotes[[_asyncMirrorGroupName_]]
 volume=pass:quotes[_"volumeName"_] sampleType=(all | mostRecent | longestSyncTime | errors)

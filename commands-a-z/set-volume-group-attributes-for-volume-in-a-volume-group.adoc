@@ -6,18 +6,18 @@ summary: "The set volume command defines the properties for volumes in a volume 
 ---
 = Set volume attributes for a volume in a volume group
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set volume` command defines the properties for volumes in a volume group.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -29,8 +29,8 @@ In configurations where volume groups consist of more than 32 volumes, the opera
 ====
 
 == Syntax applicable to one or more volumes
-
 [subs=+macros]
+[source,cli]
 ----
 set (allVolumes | volume pass:quotes[[_volumeName_]] |
 volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]] | volume <"wwID">)
@@ -48,6 +48,7 @@ dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
 [subs=+macros]
+[source,cli]
 ----
 set (allVolumes | volume pass:quotes[[_volumeName_]] |
 volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]] | volume <"wwID">)
@@ -65,6 +66,7 @@ dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
 [subs=+macros]
+[source,cli]
 ----
 set (allVolumes | volume pass:quotes[["_volumeName_"]] |
 volumes pass:quotes[["_volumeName1_" ... "_volumeNameN_"]] | volume <"wwID">)
@@ -82,6 +84,7 @@ dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
 [subs=+macros]
+[source,cli]
 ----
 set (allVolumes | volume pass:quotes[[_volumeName_]] |
 volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]] | volume <"wwID">)
@@ -98,6 +101,7 @@ dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
 [subs=+macros]
+[source,cli]
 ----
 set (allVolumes | volume pass:quotes[["_volumeName_"]] |
 volumes pass:quotes[["_volumeName1_" ... "_volumeNameN_"]] | volume <"wwID">)
@@ -114,6 +118,7 @@ dataAssuranceDisabled=(TRUE | FALSE)
 ----
 
 [subs=+macros]
+[source,cli]
 ----
 set (allVolumes | volume pass:quotes[[_volumeName_]] |
 volumes pass:quotes[[_volumeName1_ ... _volumeNameN_]] | volume <"wwID">)
@@ -132,6 +137,7 @@ reservedFutureOption1=(TRUE | FALSE)
 == Syntax applicable to only one volume
 
 [subs=+macros]
+[source,cli]
 ----
 set (volume pass:quotes[[_volumeName_]] | volume <wwID>)
 pass:quotes[addCapacity=_volumeCapacity_]
@@ -143,6 +149,7 @@ preReadRedundancyCheck=(TRUE | FALSE)
 ----
 
 [subs=+macros]
+[source,cli]
 ----
 set (volume pass:quotes[["_volumeName_"]] | volume <wwID>)
 pass:quotes[addCapacity=_volumeCapacity_]
@@ -155,6 +162,7 @@ preReadRedundancyCheck=(TRUE | FALSE)
 ----
 
 [subs=+macros]
+[source,cli]
 ----
 set (volume pass:quotes[[_volumeName_]] | volume <wwID>)
 pass:quotes[addCapacity=_volumeCapacity_]

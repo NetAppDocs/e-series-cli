@@ -6,23 +6,23 @@ summary: "The remove storageArray directoryServer command removes the defined ro
 ---
 = Remove storage array directory server role mapping
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `remove storageArray directoryServer` command removes the defined role mappings for the specified directory server.
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
-
 remove storageArray directoryServer pass:quotes[[_domainId_]]
     (allGroupDNs | groupDNs=pass:quotes[(_groupDN1 ... groupDNN_))]
 ----

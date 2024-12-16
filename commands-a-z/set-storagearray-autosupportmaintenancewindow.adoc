@@ -4,9 +4,9 @@ sidebar: sidebar
 keywords: enable, disable, autosupport, maintenance, window, individual, E2800, E5700, arrays
 summary: "The set storageArray autoSupportMaintenanceWindow command turns on or turns off the AutoSupport maintenance window feature."
 ---
-= Enable or disable AutoSupport maintenance window (for individual E2800 or E5700 arrays)
+= Enable or disable AutoSupport maintenance window 
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray autoSupportMaintenanceWindow` command turns on or turns off the AutoSupport maintenance window feature.
@@ -15,14 +15,14 @@ Use a maintenance window to suppress automatic ticket creation on error events. 
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Syntax
-
+[source,cli]
 ----
 set storageArray autoSupportMaintenanceWindow (enable | disable)
     emailAddresses=("emailAddress1" "emailAddress2" ...)

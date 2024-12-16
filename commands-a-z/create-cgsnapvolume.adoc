@@ -6,18 +6,18 @@ summary: "The create cgSnapVolume command creates a snapshot volume of specific 
 ---
 = Create consistency group snapshot volume
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create cgSnapVolume` command creates a snapshot volume of specific images in the base volumes in a consistency group.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -25,6 +25,7 @@ You can select one base volume or more than one base volume from the consistency
 
 == Syntax with user specified base volumes
 [subs=+macros]
+[source,cli]
 ----
 create cgSnapVolume userLabel=pass:quotes[_"cgVolumeName"_]
 cgSnapImageID=pass:quotes[_"snapCGID:imageID"_]
@@ -33,6 +34,7 @@ members=pass:quotes[_(baseVolume1:repos_XXXX ... baseVolumen:repos_YYYY)_]
 
 == Syntax when setting the consistency group snapshot volume to read only
 [subs=+macros]
+[source,cli]
 ----
 create cgSnapVolume userLabel=pass:quotes[_"cgVolumeName"_]
 cgSnapImageID=pass:quotes[_"snapCGID:imageID"_]
@@ -41,6 +43,7 @@ readOnly
 
 == Syntax when setting the repository full limit
 [subs=+macros]
+[source,cli]
 ----
 create cgSnapVolume userLabel=pass:quotes[_"cgVolumeName"_]
 cgSnapImageID=pass:quotes[_"snapCGID:imageID"_]

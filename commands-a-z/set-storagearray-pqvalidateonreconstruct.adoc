@@ -6,18 +6,18 @@ summary: "The set storageArray pqValidateOnReconstruct command sets the storage 
 ---
 = Set storage array PQ validation on reconstruct
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray pqValidateOnReconstruct` command sets the storage array P/Q validation state on reconstruction. When this capability is enabled, data is reconstructed using both data+P and data+Q, and the results checked for consistency before determining how to proceed.
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, 2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -26,7 +26,7 @@ This feature applies to disk pools and RAID 6 volume groups, which have dual par
 The validation may increase reconstruction times for SSD drives, so this feature can be enabled or disabled based on media type. If enabled for a given media type, the feature is applied to all pools and RAID 6 volume groups using that media type.
 
 == Syntax
-
+[source,cli]
 ----
 set storageArray pqValidateOnReconstruct (enable | disable) driveMediaType=(hdd | ssd | allMedia)
 ----

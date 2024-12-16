@@ -6,18 +6,18 @@ summary: "The show allDrives command returns information about the drives in the
 ---
 = Show drive
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show allDrives` command returns information about the drives in the storage array.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -32,7 +32,7 @@ For each drive in the storage array, this command returns the following informat
  ** The data transfer rate
  ** The product ID
  ** The firmware level
-* Information about wear life of SSD drives (this information is only valid for the E2800 and E5700/EF570 and is not shown if the array does not contain SSD drives):
+* Information about wear life of SSD drives (this information is not shown if the array does not contain SSD drives):
  ** The average erase count.
  ** The spare blocks remaining.
  ** The percent endurance used (new in the 11.41 release). The percent endurance used is the amount of data written to the SSD drives to date divided by the total theoretical write limit for the drives.
@@ -49,8 +49,8 @@ Date of Manufacture information is not available for NVMe drives.
 ====
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 show ((allDrives
 [driveMediaType=(HDD | SSD | unknown | allMedia)] |

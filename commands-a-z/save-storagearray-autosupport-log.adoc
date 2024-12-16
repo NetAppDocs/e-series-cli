@@ -6,18 +6,18 @@ summary: "The save storageArray autoSupport log command allows you to view an Au
 ---
 = Retrieve an AutoSupport log
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray autoSupport log` command allows you to view an AutoSupport log file. This file provides information about status, history of transmission activity, and any errors encountered during delivery of the AutoSupport messages. The log is available for all AutoSupport-capable and AutoSupport-enabled storage arrays.
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Context
 
@@ -27,8 +27,8 @@ This command allows you to view two types of logs:
 * Archive log -- View the log from an archived file.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 save storageArray autoSupport log [inputArchive=n]
 file=pass:quotes["_filename_"]

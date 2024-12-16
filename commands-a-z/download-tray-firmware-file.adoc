@@ -6,18 +6,18 @@ summary: "The download tray firmware file command downloads environmental servic
 ---
 = Download environmental card firmware
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `download tray firmware file` command downloads environmental services module (ESM) firmware.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Context
 
@@ -28,6 +28,7 @@ On duplex systems managed by System Manager (for example, E2800), there is an IO
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 download (allTrays | tray [trayID])
 pass:quotes[firmware file="_filename_"]

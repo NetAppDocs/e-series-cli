@@ -6,7 +6,7 @@ summary: "The show blockedEventAlertList command returns a list of events that a
 ---
 = Show blocked events
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show blockedEventAlertList` command returns a list of events that are currently blocked by the `set blockEventAlert` command. The events in this list are the events that will not send any notifications that you have configured using the alert terminals and parameters; that is, the email, syslog, and trap notifications.
@@ -23,7 +23,7 @@ This command is an SMcli command, not a script command. You must run this comman
 ====
 
 == Syntax
-
+[source,cli]
 ----
 show blockedEventAlertList
 ----

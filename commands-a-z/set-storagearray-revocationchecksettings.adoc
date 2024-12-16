@@ -6,18 +6,18 @@ summary: "The set storageArray revocationCheckSettings command allows you to ena
 ---
 = Set certificate revocation check settings
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set storageArray revocationCheckSettings` command allows you to enable or disable revocation checking, and configure an Online Certificate Status Protocol (OCSP) server.
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
 
 == Context
 
@@ -31,7 +31,7 @@ Make sure a DNS server is configured on both controllers, which allows you to us
 After you enable revocation checking, the storage array denies an attempted connection to a server with a revoked certificate.
 
 == Syntax
-
+[source,cli]
 ----
 set storageArray revocationCheckSettings ([revocationCheckEnable = boolean] &| [ocspResponderUrl=stringLiteral])
 ----

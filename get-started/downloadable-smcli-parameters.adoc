@@ -2,14 +2,17 @@
 permalink: get-started/downloadable-smcli-parameters.html
 sidebar: sidebar
 keywords: downloadable, smcli, command line, parameters, identify, devices, SAML, multifactor, authentication, https, certificate, array, 
-summary: "The SANtricity OS 11.60 release included the ability to download and install the http-based version of CLI (also referred to as Secure CLI or SMcli) directly through the SANtricity System Manager."
+summary: "The SANtricity OS 11.60 and newer releases include the ability to download and install the http-based version of CLI (also referred to as Secure CLI or SMcli) directly through the SANtricity System Manager."
 ---
 = Downloadable SMcli command line parameters
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
+
+[.lead]
+The SANtricity OS 11.60 and newer releases include the ability to download and install the http-based version of CLI (also referred to as "Secure CLI" or SMcli) directly through the SANtricity System Manager.
 
 == 11.60 and newer downloadable SMcli command line parameters
-The SANtricity OS 11.60 release includes the ability to download and install the http-based version of CLI (also referred to as "Secure CLI" or SMcli) directly through the SANtricity System Manager. This downloadable version of the SMcli is available on EF600, EF300, E5700, EF570, E2800, and EF280 controllers. To download the SMcli within the SANtricity System Manager, select *Settings* > *System* and *Add-ons* > *Command Line Interface* .
+The downloadable version of the SMcli is available on E4000, EF600, EF300, E5700, EF570, E2800, and EF280 controllers. To download the SMcli within the SANtricity System Manager, select *Settings* > *System* and *Add-ons* > *Command Line Interface* .
 
 NOTE: A Java Runtime Environment (JRE), version 8 and above, must be available on the management system where you plan to run the CLI commands.
 

@@ -6,9 +6,12 @@ summary: "General syntax forms of the CLI command wrappers are listed in this se
 ---
 = CLI command wrapper syntax
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
+[.lead]
 General syntax forms of the CLI command wrappers are listed in this section. The conventions used in the CLI command wrapper syntax are listed in the following table.
+
+== Conventions for CLI command wrapper syntax
 
 [cols="2*",options="header"]
 |===

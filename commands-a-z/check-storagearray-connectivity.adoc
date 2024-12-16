@@ -6,7 +6,7 @@ summary: "The check storageArray connectivity command verifies that the local st
 ---
 = Check storage array connectivity
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `check storageArray connectivity` command verifies that the local storage array and the remote storage array have a communication path and displays the connection details between the local and remote storage array.
@@ -17,12 +17,11 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-This command is not supported on E2800, E5700, EF600, and EF300 platforms.
+This command is not supported on E4000, E2800, E5700, EF600, and EF300 platforms.
 ====
 
 == Roles
-
-To execute this command on an E2800 or E5700 storage array, you must have the Storage Admin role.
+N/A
 
 == Context
 
@@ -35,6 +34,7 @@ Connectivity is tested using all possible channels, and if it is a dual controll
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 check storageArray connectivity
 (remoteStorageArrayName=pass:quotes[_"storageArrayName"_]|

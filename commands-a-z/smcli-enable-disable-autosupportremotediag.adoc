@@ -6,14 +6,14 @@ summary: "The SMcli enable|disable autoSupportRemoteDiag command turns on or tur
 ---
 = Enable or disable the AutoSupport remote diagnostics feature at the EMW management domain level (SMcli only)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli enable|disable autoSupportRemoteDiag` command turns on or turns off the AutoSupport Remote Diagnostics feature. This feature enables technical support to request support data to diagnose problems remotely.
 
 == Supported Arrays
 
-This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E4000, E2800, or E5700 storage arrays.
 
 == Context
 
@@ -36,7 +36,7 @@ You must enable the three features in this order.
 . *Enable AutoSupport Remote Diagnostics*
 
 == Syntax
-
+[source,cli]
 ----
 SMcli enable|disable autoSupportRemoteDiag
 ----

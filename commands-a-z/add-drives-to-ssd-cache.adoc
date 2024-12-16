@@ -6,23 +6,24 @@ summary: "The set ssdCache command increases the capacity of an existing SSD cac
 ---
 = Add drives to SSD cache
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `set ssdCache` command increases the capacity of an existing SSD cache by adding more solid state disks (SSDs).
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
 
 [NOTE]
 ====
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Support Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Support Admin role.
 ====
 
 == Syntax
 
 [subs=+macros]
+[source,cli]
 ----
 pass:quotes[set ssdCache [_ssdCacheName_]]
 pass:quotes[addDrives=(_trayID1_,[_drawerID1_,]]pass:quotes[_slotID1 ... trayIDn_,]pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_)]

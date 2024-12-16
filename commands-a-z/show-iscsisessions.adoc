@@ -6,27 +6,28 @@ summary: "The show iscsiSessions command returns information about an iSCSI sess
 ---
 = Show current iSCSI sessions
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `show iscsiSessions` command returns information about an iSCSI session for either an iSCSI initiator or an iSCSI target.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 show iscsiInitiator pass:quotes[["_initiatorName_"] | <"iqn">] iscsiSessions
 ----
 
 [subs=+macros]
+[source,cli]
 ----
 show iscsiTarget pass:quotes[["_targetName_"] | <"iqn">] iscsiSessions
 ----

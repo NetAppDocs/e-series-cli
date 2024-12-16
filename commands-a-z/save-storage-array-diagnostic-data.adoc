@@ -6,18 +6,18 @@ summary: "The save storageArray diagnosticData command saves the storage array d
 ---
 = Save storage array diagnostic data
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save storageArray diagnosticData` command saves the storage array diagnostic data from either the controllers or the environmental services modules (ESMs) to a file.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -31,8 +31,8 @@ Run this command only with the assistance of technical support.
 ====
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 save storageArray diagnosticData [(controller | tray)]
 file=pass:quotes["_filename_"]

@@ -6,7 +6,7 @@ summary: "The save check volume parity job parity errors command saves the parit
 ---
 = Save check volume parity job parity errors
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save check volume parity job parity errors` command saves the parity errors logged by a check volume parity job to the specified file. The output file is written in the same format as the deprecated check volume parity command, and therefore can be used as input to the existing repair volume parity command.
@@ -21,6 +21,7 @@ To execute this command on an EF600 and EF300 storage array, you must have the S
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 save check volume parity job parityErrors jobId=<job_id> parityErrorFile=<parity_error_file>;
 ----

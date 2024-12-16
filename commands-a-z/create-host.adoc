@@ -6,18 +6,18 @@ summary: "The create host command creates a new host."
 ---
 = Create host
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create host` command creates a new host.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -25,6 +25,7 @@ For E2700 and E5600 storage arrays, if you do not specify a host group in which 
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 create host userLabel=pass:quotes[_"hostName"_]
 [hostGroup=pass:quotes[(_"hostGroupName"_] | defaultGroup)]

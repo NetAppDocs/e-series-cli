@@ -6,14 +6,14 @@ summary: "The SMcli -autoSupportSchedule show command shows the schedule for col
 ---
 = Display AutoSupport message collection schedule
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `SMcli -autoSupportSchedule show` command shows the schedule for collection and processing of both daily and weekly AutoSupport messages.
 
 == Supported Arrays
 
-This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E2800 or E5700 storage arrays.
+This command applies to all E2700 and E5600 storage arrays in the management domain at once. It does not apply to E4000, E2800, or E5700 storage arrays.
 
 == Context
 
@@ -30,7 +30,7 @@ Note the following with regard to the scheduling of Automatic Support Bundle col
 * Using the `SMcli -autoSupportSchedule reset` command, you can specify a range (hour-level granularity) of preferred times to send both daily and weekly messages for the storage arrays in your management domain. For the weekly messages schedule, you use the command to select preferred days of the week.
 
 == Syntax
-
+[source,cli]
 ----
 SMcli -autoSupportSchedule show
 ----

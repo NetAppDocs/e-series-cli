@@ -6,7 +6,7 @@ summary: "The create syncMirror command creates both the primary volume and the 
 ---
 = Create synchronous mirroring
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `create syncMirror` command creates both the primary volume and the secondary volume for a synchronous remote mirrored pair. This command also sets the write mode (synchronous write mode or asynchronous write mode) and the synchronization priority.
@@ -17,12 +17,12 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-This command is not supported on E2800, E5700, EF600, and EF300 platforms.
+This command is not supported on E4000, E2800, E5700, EF600, and EF300 platforms.
 ====
 
 == Roles
 
-To execute this command on an E2800 or E5700storage array, you must have the Storage Admin role.
+N/A
 
 == Context
 
@@ -33,6 +33,7 @@ In previous versions of this command the feature identifier was `remoteMirror`. 
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 create syncMirror primary=pass:quotes[_"primaryVolumeName_"
 secondary="_secondaryVolumeName_"

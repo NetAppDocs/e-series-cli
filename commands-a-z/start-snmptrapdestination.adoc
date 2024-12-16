@@ -6,21 +6,22 @@ summary: "The start snmpTrapDestination command tests the connection and identif
 ---
 = Test SNMP trap destination
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `start snmpTrapDestination` command tests the connection and identification of the trap receiver for a specific Simple Network Management Protocol (SNMP) community or user. This command tests the trap destination by sending a trap message to the trap receiver.
 
 == Supported Arrays
 
-This command applies to an individual E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 start snmpTrapDestination trapReceiverIP=ipAddress
     pass:quotes[(communityName="_communityName_" | (userName="_userName_"] [engineId=(local | engineId)]))

@@ -6,18 +6,18 @@ summary: "The save driveChannel faultDiagnostics file command saves the drive ch
 ---
 = Save drive channel fault isolation diagnostic status
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `save driveChannel faultDiagnostics file` command saves the drive channel fault isolation diagnostic data that is returned from the `start driveChannel faultDiagnostics` command.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -29,8 +29,8 @@ With firmware version 8.10, the `save driveChannel faultDiagnostics` command is 
 You can save the diagnostic data to a file as standard text or as XML.
 
 == Syntax
-
 [subs=+macros]
+[source,cli]
 ----
 save driveChannel faultDiagnostics file=pass:quotes["_filename_"]
 ----

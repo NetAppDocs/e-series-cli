@@ -6,18 +6,18 @@ summary: "The stop ssdCache performanceModeling command stops the performance mo
 ---
 = Stop SSD cache performance modeling
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 [.lead]
 The `stop ssdCache performanceModeling` command stops the performance modeling operation and displays the performance modeling data for the SSD cache.
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600, and EF300 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E2800, E5700, EF600, or EF300 storage array, you must have the Support Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Support Admin role.
 
 == Context
 
@@ -25,6 +25,7 @@ Before running this command, you must start the performance modeling operation w
 
 == Syntax
 [subs=+macros]
+[source,cli]
 ----
 
 pass:quotes[stop ssdCache [_ssdCacheName_]] performanceModeling pass:quotes[[file="_filename_"]]

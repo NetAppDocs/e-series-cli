@@ -4,9 +4,13 @@ sidebar: sidebar
 keywords: cli commands, synchronous, asynchronous, certificate, autoconfigure, storage
 summary: "CLI commands (Alphabetical List)"
 ---
+
+[.lead]
+The following is a complete list of commands are available for your E-Series storage system. 
+
 = CLI commands (Alphabetical List)
 :icons: font
-:imagesdir: ./media/
+:imagesdir: ../media/
 
 link:../commands-a-z/activate-asynchronous-mirroring.html[Activate asynchronous mirroring]
 
@@ -216,19 +220,19 @@ link:../commands-a-z/enable-or-disable-autosupport-individual-arrays.html[Enable
 
 link:../commands-a-z/smcli-enable-autosupportfeature.html[Enable or disable AutoSupport at the EMW management domain level...]
 
-link:../commands-a-z/set-storagearray-autosupportmaintenancewindow.html[Enable or disable AutoSupport maintenance window (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportmaintenancewindow.html[Enable or disable AutoSupport maintenance window]
 
 link:../commands-a-z/set-storagearray-hostconnectivityreporting.html[Enable or disable host connectivity reporting]
 
 link:../commands-a-z/set-storagearray-odxenabled.html[Enable or disable ODX]
 
-link:../commands-a-z/set-storagearray-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature]
 
 link:../commands-a-z/smcli-enable-disable-autosupportondemand.html[Enable or disable the AutoSupport OnDemand feature at the EMW...]
 
 link:../commands-a-z/smcli-enable-disable-autosupportremotediag.html[Enable or disable the AutoSupport OnDemand Remote Diagnostics feature at...]
 
-link:../commands-a-z/set-storagearray-autosupportremotediag.html[Enable or disable the AutoSupport remote diagnostics feature (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-storagearray-autosupportremotediag.html[Enable or disable the AutoSupport remote diagnostics feature]
 
 link:../commands-a-z/set-storagearray-vaaienabled.html[Enable or disable VAAI]
 
@@ -316,7 +320,7 @@ link:../commands-a-z/reset-storagearray-arvmstats-asyncmirrorgroup.html[Reset as
 
 link:../commands-a-z/smcli-autosupportschedule-reset.html[Reset AutoSupport message collection schedule]
 
-link:../commands-a-z/reset-storagearray-autosupport-schedule.html[Reset AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/reset-storagearray-autosupport-schedule.html[Reset AutoSupport message collection schedule]
 
 link:../commands-a-z/reset-controller.html[Reset controller]
 
@@ -356,7 +360,7 @@ link:../commands-a-z/resume-ssdcache.html[Resume SSD cache]
 
 link:../commands-a-z/resume-syncmirror.html[Resume synchronous mirroring]
 
-link:../commands-a-z/save-storagearray-autosupport-log.html[Retrieve an AutoSupport log (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/save-storagearray-autosupport-log.html[Retrieve an AutoSupport log]
 
 link:../commands-a-z/save-controller-cacertificate.html[Retrieve installed CA certificates]
 
@@ -434,7 +438,9 @@ link:../commands-a-z/set-asyncmirrorgroup.html[Set asynchronous mirror group]
 
 link:../commands-a-z/set-auditlog.html[Set audit log settings]
 
-link:../commands-a-z/set-storagearray-autosupport-schedule.html[Set AutoSupport message collection schedule (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-autosupport-dispatch-limit.html[Set AutoSupport Dispatch Size Limit]
+
+link:../commands-a-z/set-storagearray-autosupport-schedule.html[Set AutoSupport message collection schedule]
 
 link:../commands-a-z/set-storagearray-revocationchecksettings.html[Set certificate revocation check settings]
 
@@ -710,11 +716,11 @@ link:../commands-a-z/show-volume-performancestats.html[Show volume performance s
 
 link:../commands-a-z/show-volume-reservations.html[Show volume reservations]
 
-link:../commands-a-z/set-autosupport-https-delivery-method-e2800-e5700.html[Specify AutoSupport HTTP(S) delivery method (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-autosupport-https-delivery-method.html[Specify AutoSupport HTTP(S) delivery method]
 
 link:../commands-a-z/smcli-autosupportconfig.html[Specify the AutoSupport delivery method]
 
-link:../commands-a-z/set-email-smtp-delivery-method-e2800-e5700.html[Specify the Email (SMTP) delivery method (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/set-email-smtp-delivery-method.html[Specify the Email (SMTP) delivery method]
 
 link:../commands-a-z/start-asyncmirrorgroup-synchronize.html[Start asynchronous mirroring synchronization]
 
@@ -828,7 +834,7 @@ link:../commands-a-z/smcli-alerttest.html[Test alerts]
 
 link:../commands-a-z/diagnose-asyncmirrorgroup.html[Test asynchronous mirror group connectivity]
 
-link:../commands-a-z/start-storagearray-autosupport-deliverytest.html[Test AutoSupport delivery settings (for individual E2800 or E5700 arrays)]
+link:../commands-a-z/start-storagearray-autosupport-deliverytest.html[Test AutoSupport delivery settings]
 
 link:../commands-a-z/start-emailalert-test.html[Test email alert configuration]
 
