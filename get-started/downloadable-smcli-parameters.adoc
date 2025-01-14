@@ -12,7 +12,7 @@ summary: "The SANtricity OS 11.60 and newer releases include the ability to down
 The SANtricity OS 11.60 and newer releases include the ability to download and install the http-based version of CLI (also referred to as "Secure CLI" or SMcli) directly through the SANtricity System Manager.
 
 == 11.60 and newer downloadable SMcli command line parameters
-The downloadable version of the SMcli is available on E4000, EF600, EF300, E5700, EF570, E2800, and EF280 controllers. To download the SMcli within the SANtricity System Manager, select *Settings* > *System* and *Add-ons* > *Command Line Interface* .
+The downloadable version of the SMcli is available on E4000, EF600, EF300, E5700, EF570, E2800, EF280, EF300C, and EF600C controllers. To download the SMcli within the SANtricity System Manager, select *Settings* > *System* and *Add-ons* > *Command Line Interface* .
 
 NOTE: A Java Runtime Environment (JRE), version 8 and above, must be available on the management system where you plan to run the CLI commands.
 
