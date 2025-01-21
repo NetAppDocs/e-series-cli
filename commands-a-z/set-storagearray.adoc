@@ -308,7 +308,7 @@ Turns on or turns off VMware vStorage API Array Architecture (VAAI) for a storag
 
 Except for the `isnsRegistration`, when you use this command you can specify one or more of the optional parameters.
 
-== Auto Support data
+== AutoSupport data
 
 [NOTE]
 ====
