@@ -2,14 +2,14 @@
 permalink: commands-category/auto-support-commands.html
 sidebar: sidebar
 keywords: support, commands, bundle, collection, autosupport
-summary: "Auto support commands"
+summary: "AutoSupport commands"
 ---
-= Auto support commands
+= AutoSupport commands
 :icons: font
 :imagesdir: ../media/
 
 [.lead]
-The following list of auto support commands are available for your E-Series storage system. 
+The following list of AutoSupport commands are available for your E-Series storage system. 
 
 == AutoSupport bundle collection commands for the E2700 and E5600
 
@@ -39,7 +39,7 @@ link:../commands-a-z/enable-or-disable-autosupport-individual-arrays.html[Enable
 
 link:../commands-a-z/save-storagearray-supportdata.html[Save storage array support data]
 
-== AutoSupport Commands for the E4000, EF300, EF400, E2800, E5700
+== AutoSupport commands for the E4000, EF300, EF400, E2800, E5700
 
 link:../commands-a-z/set-autosupport-dispatch-limit.html[Set AutoSupport Dispatch Size Limit]
 
