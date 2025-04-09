@@ -1,6 +1,6 @@
 indexpage:
   title: SANtricity System Manager commands
-  lead: Welcome to the SANtricity System Manager Embedded CLI User Assistance, where you can find out how to configure, monitor, and tune your storage array using the Command Line Interface (CLI).'
+  lead: Welcome to the SANtricity System Manager Embedded CLI User Assistance, where you can find out how to configure, monitor, and tune your storage array using the Command Line Interface (CLI).
   summary: 'Describes syntax and usage of SANtricity commands.'
   keywords: santricity, syntax, commands, user assistance
   tiles:
