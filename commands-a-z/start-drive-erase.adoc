@@ -32,7 +32,7 @@ The erase operation cannot be undone. Make sure you select the correct drive whe
 [subs=+macros]
 [source,cli]
 ----
-start drive pass:quotes[[_trayID_],pass:quotes[[_drawerID_,]]pass:quotes[_slotID_]] | drivespass:quotes[[_trayID1_],pass:quotes[[_drawerID1_,]]pass:quotes[_slotID1_] ... pass:quotes[_trayIDn_],pass:quotes[[_drawerIDn_,]]pass:quotes[_slotIDn_]] erase
+start (drive [trayID,[drawerID,]slotID] | drives[trayID1,[drawerID1,]slotID1 ... trayIDn,[drawerIDn,]slotIDn]) erase
 ----
 
 == Parameters
