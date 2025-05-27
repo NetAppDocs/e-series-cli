@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, consistency, group
 summary: "The delete consistencyGroup command deletes a snapshot consistency group."
 ---
-= Delete consistency group
+= Delete consistency group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

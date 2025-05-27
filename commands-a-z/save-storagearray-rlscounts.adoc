@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, storage, array, rls, counts
 summary: "The save storageArray RLSCounts command saves the read link status (RLS) counters to a file."
 ---
-= Save storage array RLS counts
+= Save storage array RLS counts - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

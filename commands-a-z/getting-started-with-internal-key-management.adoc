@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: security key, string, characters, secure enabled, drive, controllers, storage, array, internal, key, management, create, maintain, persistent, memory
 summary: "A security key is a string of characters, which is shared between the secure-enabled drives and controllers in a storage array. When using internal key management, you create and maintain security keys on the controller’s persistent memory."
 ---
-= Getting started with internal key management
+= Getting started with internal key management - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

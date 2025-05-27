@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, storage, array, firmware, inventory
 summary: "The save storageArray firmwareInventory command saves a report to a file of all of the firmware currently running on the storage array."
 ---
-= Save storage array firmware inventory
+= Save storage array firmware inventory - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

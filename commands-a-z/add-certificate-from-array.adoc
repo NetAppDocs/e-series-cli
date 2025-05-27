@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add certificate array, supported, syntax, parameters, minimum firmware level
 summary: "The Add certificate from array command allows you to take a certificate from the array and add it to the CLI package’s trust store. The certificate added will only be used by the CLI package."
 ---
-= Add certificate from array
+= Add certificate from array - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

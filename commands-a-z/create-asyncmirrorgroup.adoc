@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, asynchronous, mirror, group
 summary: "The create asyncMirrorGroup command creates a new, empty asynchronous mirror group on both the local storage array and the remote storage array."
 ---
-= Create asynchronous mirror group
+= Create asynchronous mirror group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, snapshot, group
 summary: "The show snapGroup command returns information about one or more snapshot image groups."
 ---
-= Show snapshot group
+= Show snapshot group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

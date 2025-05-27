@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, storage, array, trusted, certificate, command, remove, specified, installed, web, servers
 summary: "The delete storageArray trustedCertificate command removes the specified user installed CA certificates from the array’s web servers."
 ---
-= Remove installed trusted CA certificates
+= Remove installed trusted CA certificates - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

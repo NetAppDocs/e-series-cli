@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: security, key, string, characters, shared, secure, drives, controllers, storage, array, external, management, maintain, server
 summary: "A security key is a string of characters, which is shared between the secure-enabled drives and controllers in a storage array. When using external key management, you create and maintain security keys on a key management server"
 ---
-= Getting started with external key management
+= Getting started with external key management - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

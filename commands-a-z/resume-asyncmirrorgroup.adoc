@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: resume, asynchronous, mirror, group
 summary: "The resume asyncMirrorGroup command resumes data transfer between all mirrored pairs in an asynchronous mirror group."
 ---
-= Resume asynchronous mirror group
+= Resume asynchronous mirror group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

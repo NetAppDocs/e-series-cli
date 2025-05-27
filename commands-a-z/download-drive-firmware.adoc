@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: download, drive, firmware, array, support, role, context, level
 summary: "The download drive firmware command downloads a firmware image to a drive."
 ---
-= Download drive firmware
+= Download drive firmware - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, disk pool
 summary: "The set diskPool command sets the attributes associated with a disk pool based on the specified parameters."
 ---
-= Set disk pool
+= Set disk pool - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

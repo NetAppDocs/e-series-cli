@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: enable, volumegroup, security, command, non secure, volume, group
 summary: "The enable volumeGroup security command converts a non-secure volume group to a secure volume group."
 ---
-= Enable volume group security
+= Enable volume group security - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

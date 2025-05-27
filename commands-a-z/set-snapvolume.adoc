@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: rename, snapshot, volume
 summary: "The set snapVolume command renames an existing snapshot volume."
 ---
-= Rename snapshot volume
+= Rename snapshot volume - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

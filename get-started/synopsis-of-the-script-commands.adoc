@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: synopsis, script commands
 summary: "Because you can use the script commands to define and manage the different aspects of a storage array (such as host topology, drive configuration, controller configuration, volume definitions, and volume group definitions), the actual number of commands is extensive."
 ---
-= Synopsis of the script commands
+= Learn about SANtricity CLI script commands
 :icons: font
 :imagesdir: ../media/
 

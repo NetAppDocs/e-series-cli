@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add certificate file, supported arrays, syntax, parameters, minimum firmware level
 summary: "The Add certificate from file command allows you to take a certificate from the file and add it to the CLI package’s trust store. The certificate added will only be used by the CLI package."
 ---
-= Add certificate from file
+= Add certificate from file - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

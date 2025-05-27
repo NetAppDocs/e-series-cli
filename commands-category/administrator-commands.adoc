@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: storage, security, support, administrator, commands, autosupport, array, volume, asynchronous, application
 summary: "Storage, Security and Support administrators commands"
 ---
-= Administrators commands
+= SANtricity CLI administrators commands
 :icons: font
 :imagesdir: ../media/
 

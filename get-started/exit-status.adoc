@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: exit, status
 summary: "Exit statuses are returned on executed commands. This table lists the exit statuses that might be returned and the meaning of each status."
 ---
-= Exit status
+= Learn about SANtricity CLI exit status
 :icons: font
 :imagesdir: ../media/
 

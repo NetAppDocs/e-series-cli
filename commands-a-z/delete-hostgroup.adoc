@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, hostgroup, command, support, role
 summary: "The delete hostGroup command deletes a host group."
 ---
-= Delete host group
+= Delete host group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, storage, array, security, key
 summary: "The create storageArray securityKey command creates or changes a new security key for a storage array that has full disk encryption (FDE) drives."
 ---
-= Create storage array security key
+= Create storage array security key - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

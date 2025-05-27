@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add volume, asynchronous, mirror group, supported arrays, roles, context, syntax, parameter, minimum firmware level
 summary: "The add volume asyncMirrorGroup command adds a primary volume to an asynchronous mirror group."
 ---
-= Add volume to asynchronous mirror group
+= Add volume to asynchronous mirror group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

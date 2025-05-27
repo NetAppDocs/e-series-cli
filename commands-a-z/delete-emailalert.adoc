@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, email, alert, recipient
 summary: "The delete emailAlert command deletes recipient email address(es) from the Email alert configuration."
 ---
-= Delete email alert recipient
+= Delete email alert recipient - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

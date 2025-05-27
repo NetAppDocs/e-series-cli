@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, internal, storage, array, security key
 summary: "The set storageArray securityKey command sets the security key that is used throughout the storage array to implement the Drive Security feature."
 ---
-= Set internal storage array security key
+= Set internal storage array security key - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

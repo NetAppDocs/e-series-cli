@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remove, array, label
 summary: "The Remove array label command allows you to remove a user-defined label for a storage array."
 ---
-= Remove array label
+= Remove array label - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, thin, volume
 summary: "The show volume command returns the expansion history or the consumed capacity for the specified thin volume or volumes."
 ---
-= Show thin volume
+= Show thin volume - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

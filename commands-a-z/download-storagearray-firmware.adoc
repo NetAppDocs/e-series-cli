@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: download, storage, array, firmware, command, downloads, optionally, values, controllers, role, context, parameter
 summary: "The download storageArray firmware command downloads firmware and, optionally, NVSRAM values for the storage array controller."
 ---
-= Download storage array firmware/NVSRAM
+= Download storage array firmware/NVSRAM - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, audit log, records
 summary: "The save auditLog command retrieves the audit log records."
 ---
-= Save audit log records
+= Save audit log records - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

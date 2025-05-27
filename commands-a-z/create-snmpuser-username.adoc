@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: register, snmpv3 usm, user
 summary: "The create snmpUser userName command creates a new Simple Network Management Protocol (SNMP) user and registers the new user as a known entity to the SNMP agent. Any attempt to register a new user with the same name and engine ID as that of an existing user is rejected."
 ---
-= Register SNMPv3 USM user
+= Register SNMPv3 USM user - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

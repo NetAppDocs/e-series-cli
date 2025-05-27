@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: reset, controller
 summary: "The reset controller command resets a controller, and is disruptive to I/O operations."
 ---
-= Reset controller
+= Reset controller - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

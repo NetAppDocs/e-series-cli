@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: firmware, compatibility, levels
 summary: "The script commands in the following sections list the minimum firmware levels under which the script commands can run."
 ---
-= Firmware compatibility levels
+= Learn about SANtricity CLI firmware compatibility levels
 :icons: font
 :imagesdir: ../media/
 

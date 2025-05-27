@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, volume, group, locate 
 summary: "The stop volumeGroup locate command turns off the indicator lights on the drives that were turned on by the start volumeGroup locate command."
 ---
-= Stop volume group locate
+= Stop volume group locate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

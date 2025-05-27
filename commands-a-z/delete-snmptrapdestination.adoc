@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, command, snmptrapdestination, existing, simple, network, management, protocol, trap, destination, previous, create, registered
 summary: "The delete snmpTrapDestination command deletes an existing Simple Network Management Protocol (SNMP) trap destination that you previously created and registered using the create snmpTrapDestination command."
 ---
-= Unregister SNMP trap destination
+= Unregister SNMP trap destination - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, drive, reconstruction
 summary: "The start drive reconstruct command starts reconstructing a drive."
 ---
-= Start drive reconstruction
+= Start drive reconstruction - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

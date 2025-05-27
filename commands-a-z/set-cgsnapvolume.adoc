@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, consistency, group, snapshot, volume
 summary: "The set cgSnapVolume command creates a unique name for a snapshot volume of a consistency group."
 ---
-= Set consistency group snapshot volume
+= Set consistency group snapshot volume - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

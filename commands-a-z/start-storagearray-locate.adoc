@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, storage, array, locate
 summary: "The start storageArray locate command locates a storage array by turning on the indicator lights for the storage array."
 ---
-= Start storage array locate
+= Start storage array locate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

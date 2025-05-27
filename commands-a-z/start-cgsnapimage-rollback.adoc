@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, consistency, group, snapshot, rollback
 summary: "The start cgSnapImage rollback command starts a rollback operation to the member base volumes in a snapshot consistency group."
 ---
-= Start consistency group snapshot rollback
+= Start consistency group snapshot rollback - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

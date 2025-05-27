@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, consistency, group, snapshot, volume
 summary: "The stop cgSnapVolume command stops the copy-on-write operation for creating a consistency group snapshot volume."
 ---
-= Stop consistency group snapshot volume
+= Stop consistency group snapshot volume - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

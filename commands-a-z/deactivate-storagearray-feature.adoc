@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: deactivate, synchronous, mirror
 summary: "The deactivate storageArray feature command deactivates the synchronous mirroring feature, disassembles the mirror repository volume, and releases the controller owner of the secondary volume."
 ---
-= Deactivate synchronous mirroring
+= Deactivate synchronous mirroring - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

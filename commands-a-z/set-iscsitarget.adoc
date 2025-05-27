@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, iscsi, target, properties
 summary: "The set iscsiTarget command defines properties for an iSCSI target."
 ---
-= Set iSCSI target properties
+= Set iSCSI target properties - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: recover, disable, drive ports
 summary: "The recover disabled drivePorts command recovers disabled drive ports."
 ---
-= Recover disabled drive ports
+= Recover disabled drive ports - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

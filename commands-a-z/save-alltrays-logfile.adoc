@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, tray log
 summary: "The save allTrays logFile command saves the log sense data to a file."
 ---
-= Save tray log
+= Save tray log - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

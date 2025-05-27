@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: activate, storage array, firmware, syntax, parameter, minimum, level
 summary: "The activate storageArray firmware command activates firmware that you have previously downloaded to the pending configuration area on the controllers in the storage array."
 ---
-= Activate storage array firmware
+= Activate storage array firmware - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

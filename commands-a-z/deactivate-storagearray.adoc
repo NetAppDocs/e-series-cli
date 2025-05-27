@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: deactivate, asynchronous, mirroring
 summary: "The deactivate storageArray feature deactivates the Asynchronous Mirroring feature."
 ---
-= Deactivate asynchronous mirroring
+= Deactivate asynchronous mirroring - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: recreate, synchronous, mirror, repository, volume
 summary: "The recreate storageArray mirrorRepository command creates a new Synchronous Mirroring repository volume (also called a mirror repository volume) by using the parameters defined for a previous mirror repository volume."
 ---
-= Re-create synchronous mirroring repository volume
+= Re-create synchronous mirroring repository volume - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

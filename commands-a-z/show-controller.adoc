@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, controller
 summary: "The show controller command returns information about a controller."
 ---
-= Show controller
+= Show controller - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

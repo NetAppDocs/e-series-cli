@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, volume, copy, source, candidates
 summary: "The show volumeCopy sourceCandidates command returns information about the candidate volumes that you can use as the source for a volume copy operation. This command is valid for snapshot volume copy pairs."
 ---
-= Show volume copy source candidates
+= Show volume copy source candidates - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

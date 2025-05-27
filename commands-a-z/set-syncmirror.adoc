@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, synchronous, mirror
 summary: "The set syncMirror command defines the properties for a remote-mirrored pair."
 ---
-= Set synchronous mirroring
+= Set synchronous mirroring - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, volume, group, export
 summary: "The start volumeGroup export command moves a volume group into an Exported state."
 ---
-= Start volume group export
+= Start volume group export - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

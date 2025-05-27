@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: enable, disable, odx
 summary: "The set storageArray odxEnabled command turns on or turns off Offloaded Data Transfer (ODX) for a storage array."
 ---
-= Enable or disable ODX
+= Enable or disable ODX - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

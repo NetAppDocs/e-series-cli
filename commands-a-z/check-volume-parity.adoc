@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: check, volume, parity
 summary: "The check volume parity command checks a volume for parity and media errors, and then writes the results of the check to a file."
 ---
-= Check volume parity
+= Check volume parity - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

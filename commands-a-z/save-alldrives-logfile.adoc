@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, drive log
 summary: "The save allDrives logFile command saves the drive logs to a file."
 ---
-= Save drive log
+= Save drive log - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

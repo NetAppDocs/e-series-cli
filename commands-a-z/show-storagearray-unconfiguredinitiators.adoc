@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, unconfigured, initiators
 summary: "The show storageArray unconfiguredInitiators command returns a list of initiators that have been detected by the storage array but are not yet configured into the storage array topology."
 ---
-= Show unconfigured initiators
+= Show unconfigured initiators - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

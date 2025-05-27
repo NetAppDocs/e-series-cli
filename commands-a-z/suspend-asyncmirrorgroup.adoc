@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: suspend, asynchronous, mirror, group
 summary: "The suspend asyncMirrorGroup command suspends the synchronization of data on all mirrored pairs at the asynchronous mirror group level."
 ---
-= Suspend asynchronous mirror group
+= Suspend asynchronous mirror group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

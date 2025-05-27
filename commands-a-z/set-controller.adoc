@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, controller
 summary: "The set controller command defines the attributes for the controllers."
 ---
-= Set controller
+= Set controller - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

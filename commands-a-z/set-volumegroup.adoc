@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, volume, group
 summary: "The set volumeGroup command defines the properties for a volume group."
 ---
-= Set volume group
+= Set volume group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

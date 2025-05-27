@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, storage, array, state, capture
 summary: "The save storageArray stateCapture command saves the state capture of a storage array to a file."
 ---
-= Save storage array state capture
+= Save storage array state capture - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

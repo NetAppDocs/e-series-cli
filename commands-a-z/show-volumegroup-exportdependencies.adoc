@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, volume, group, export, dependencies
 summary: "The show volumeGroup exportDependencies command shows a list of dependencies for the drives in a volume group that you want to move from one storage array to a second storage array."
 ---
-= Show volume group export dependencies
+= Show volume group export dependencies - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

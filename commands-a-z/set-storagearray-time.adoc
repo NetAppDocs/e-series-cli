@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, time
 summary: "The set storageArray time command sets the clocks on both controllers in a storage array by synchronizing the controller clocks with the clock of the host from which you run this command."
 ---
-= Set storage array time
+= Set storage array time - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

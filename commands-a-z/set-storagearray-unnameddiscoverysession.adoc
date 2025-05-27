@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, unnamed, discovery, session
 summary: "The set storageArray unnamedDiscoverySession command enables the storage array to participate in unnamed discovery sessions."
 ---
-= Set storage array unnamed discovery session
+= Set storage array unnamed discovery session - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

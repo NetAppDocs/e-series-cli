@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: diagnose, controller, command, run, diagnostic, tests, arrays, roles, context
 summary: "The diagnose controller command runs diagnostic tests on the controller."
 ---
-= Diagnose controller
+= Diagnose controller - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, drive, performance, statistics
 summary: "The show allDrives performanceStats command returns information about drive performance."
 ---
-= Show drive performance statistics
+= Show drive performance statistics - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

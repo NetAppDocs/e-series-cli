@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, storage, array, iscsi, statistics
 summary: "The save storageArray iscsiStatistics command saves the iSCSI performance statistics of the storage array to a file."
 ---
-= Save storage array iSCSI statistics
+= Save storage array iSCSI statistics - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

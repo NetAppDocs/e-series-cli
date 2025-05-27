@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, consistency, group, snapshot, volume, map
 summary: "The create mapping cgSnapVolume command creates a logical mapping from a consistency group snapshot volume to a host or a host group."
 ---
-= Create consistency group snapshot volume mapping
+= Create consistency group snapshot volume mapping - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

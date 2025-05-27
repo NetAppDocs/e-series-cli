@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: check, asynchronous mirror group, consistency
 summary: "The check asyncMirrorGroup repositoryConsistency command produces a report based on analysis of the data in the underlying repository volume of the specified asynchronous mirror group."
 ---
-= Check asynchronous mirror group consistency
+= Check asynchronous mirror group consistency - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

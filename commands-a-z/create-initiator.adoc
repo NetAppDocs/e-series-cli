@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, initiator
 summary: "The create initiator command creates the initiator object."
 ---
-= Create initiator
+= Create initiator - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

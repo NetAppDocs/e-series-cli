@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: recover, sas, port, mis-wire
 summary: "The recover sasPort miswire command tells a controller that corrective action has been taken to recover from a mis-wire condition."
 ---
-= Recover SAS port mis-wire
+= Recover SAS port mis-wire - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

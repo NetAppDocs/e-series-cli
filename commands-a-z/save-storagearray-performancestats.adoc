@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, storage, array, performance, statistics
 summary: "The save storageArray performanceStats command saves the performance statistics to a file."
 ---
-= Save storage array performance statistics
+= Save storage array performance statistics - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: support, commands, bundle, collection, autosupport
 summary: "AutoSupport commands"
 ---
-= AutoSupport commands
+= SANtricity AutoSupport commands
 :icons: font
 :imagesdir: ../media/
 

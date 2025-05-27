@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: import, storage, array, security, file, command, unlock, disk, encryption, context, syntax, firmware level, role, context
 summary: "The import storageArray securityKey file command unlocks one or more full disk encryption (FDE) drives that you have moved from one storage array to another storage array."
 ---
-= Import storage array security key
+= Import storage array security key - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

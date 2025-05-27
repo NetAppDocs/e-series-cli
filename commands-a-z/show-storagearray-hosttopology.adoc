@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, storage, array, host, topology
 summary: "The show storageArray hostTopology command returns the storage partition topology, the host type labels, and the host type index for the host storage array."
 ---
-= Show storage array host topology
+= Show storage array host topology - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

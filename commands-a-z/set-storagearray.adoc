@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array
 summary: "The set storageArray command defines the properties of the storage array."
 ---
-= Set storage array
+= Set storage array - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

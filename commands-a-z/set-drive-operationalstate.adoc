@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, drive, state
 summary: "The set drive operationalState command sets a drive to the Failed state."
 ---
-= Set drive state
+= Set drive state - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

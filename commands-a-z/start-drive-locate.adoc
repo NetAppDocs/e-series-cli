@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, drive, locate
 summary: "The start drive locate command locates a drive by turning on an indicator light on the drive."
 ---
-= Start drive locate
+= Start drive locate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

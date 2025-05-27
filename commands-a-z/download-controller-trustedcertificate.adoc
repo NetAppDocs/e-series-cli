@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: download, controller, trusted, certificate, command, install, web, servers, validate, array, roles, context
 summary: "The download controller trustedCertificate command installs the trusted CA certificates on the controllers’ web servers to validate the LDAP server signed certificate."
 ---
-= Install trusted CA certificates
+= Install trusted CA certificates - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

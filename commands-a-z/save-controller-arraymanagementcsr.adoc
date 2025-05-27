@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: generate, web server, certificate, sign, request, csr
 summary: "The save controller arrayManagementCSR command generates a Certificate Signing Request (CSR) for the controller."
 ---
-= Generate web server Certificate Signing Request (CSR)
+= Generate web server Certificate Signing Request (CSR) - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

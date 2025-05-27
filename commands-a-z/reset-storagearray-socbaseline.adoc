@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: reset, storage array, soc, baseline
 summary: "The reset storageArray SOCBaseline command resets the baseline for all switch-on-a-chip (SOC) devices that are accessed through the controllers."
 ---
-= Reset storage array SOC baseline
+= Reset storage array SOC baseline - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

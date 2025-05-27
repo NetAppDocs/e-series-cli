@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, isns, server, ipv6, address
 summary: "The set storageArray isnsIPv6Address command sets the IPv6 address for the iSNS server."
 ---
-= Set storage array iSNS server IPv6 address
+= Set storage array iSNS server IPv6 address - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

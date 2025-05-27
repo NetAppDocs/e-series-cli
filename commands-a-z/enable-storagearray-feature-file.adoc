@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: enable, storage, array, feature, file, command, permanent, upgrade, trial period
 summary: "The enable storageArray feature file command enables a feature for either a permanent upgrade to the storage array or a trial period."
 ---
-= Enable storage array feature
+= Enable storage array feature - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

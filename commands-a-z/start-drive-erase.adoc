@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, drive, erase
 summary: "The start drive erase command erases all of the data from one or more drives."
 ---
-= Start drive erase
+= Start drive erase - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

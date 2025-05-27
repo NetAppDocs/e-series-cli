@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: download, tray, configuration, settings, commands, factory, default, drive, array, specific, storage, roles, support
 summary: "The download tray configurationSettings command downloads the factory default settings to all of the drive trays in a storage array or to a specific drive tray in a storage array."
 ---
-= Download tray configuration settings
+= Download tray configuration settings - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

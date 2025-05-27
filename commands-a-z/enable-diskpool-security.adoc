@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: enable, diskpool, security, command, convert, non secure, diskpool, support, arrays, role, context
 summary: "The enable diskPool security command converts a non-secure disk pool to a secure disk pool."
 ---
-= Enable disk pool security
+= Enable disk pool security - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

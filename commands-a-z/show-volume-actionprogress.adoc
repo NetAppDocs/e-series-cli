@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, volume, action, progress
 summary: "The show volume actionProgress command returns information about the volume action and amount of the long-running operation that is completed for a long-running operation on a volume."
 ---
-= Show volume action progress
+= Show volume action progress - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

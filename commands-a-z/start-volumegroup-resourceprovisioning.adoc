@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, volume, group, resource, provision
 summary: "The start volumeGroup resourceProvisioning command enables resource provisioning on a given volume group and starts a resource provisioning enablement asynchronous operation on each volume in the volume group. Resource provisioning requires that all the drives in the volume group support NVMe’s DULBE feature."
 ---
-= Start Volume Group Resource Provisioning
+= Start volume group resource provisioning - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

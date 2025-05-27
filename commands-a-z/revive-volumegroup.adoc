@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: revive, volume, group
 summary: "The revive volumeGroup command forces the specified volume group and its associated failed drives to the Optimal state."
 ---
-= Revive volume group
+= Revive volume group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

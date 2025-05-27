@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, storage, array, auto, configuration
 summary: "The show storageArray autoConfiguration command shows the default auto-configuration that the storage array creates if you run the autoConfigure storageArray command."
 ---
-= Show storage array auto configuration
+= Show storage array auto configuration - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

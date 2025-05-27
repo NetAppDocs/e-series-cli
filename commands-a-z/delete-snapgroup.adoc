@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, snapgroup, command, entire, snapshot, group, option, associate, repository, volume
 summary: "The delete snapGroup command an entire snapshot group and optionally the associated repository volumes."
 ---
-= Delete snapshot group
+= Delete snapshot group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 
