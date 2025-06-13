@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, volume, group, full provision
 summary: "The start volumeGroup fullProvisioning command starts a full provisioning operation on all volumes in the disk pool and optionally disables resource provisioning on the volume group."
 ---
-= Start Volume Group Full Provisioning
+= Start volume group full provisioning - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

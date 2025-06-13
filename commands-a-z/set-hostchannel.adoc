@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, host, channel
 summary: "The set hostChannel command defines the loop ID for the host channel."
 ---
-= Set host channel
+= Set host channel - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

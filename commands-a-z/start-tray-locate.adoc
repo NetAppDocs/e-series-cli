@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, tray, locate
 summary: "The start tray locate command locates a tray by turning on the indicator light."
 ---
-= Start tray locate
+= Start tray locate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

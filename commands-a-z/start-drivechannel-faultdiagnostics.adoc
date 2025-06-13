@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, drive channel, fault, isolation, diagnostics
 summary: "The start driveChannel faultDiagnostics command runs the drive channel fault isolation diagnostics and stores the results."
 ---
-= Start drive channel fault isolation diagnostics
+= Start drive channel fault isolation diagnostics - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

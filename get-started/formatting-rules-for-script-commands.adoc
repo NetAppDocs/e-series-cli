@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: format, rules, script, commands
 summary: "Syntax unique to a specific script command is explained in the Notes section at the end of each script command description."
 ---
-= Format rules for script commands
+= Format rules for SANtricity CLI script commands
 :icons: font
 :imagesdir: ../media/
 

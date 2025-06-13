@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, resource, provisioned, volumes
 summary: "The set storageArray resourceProvisionedVolumes command disables the DULBE feature."
 ---
-= Set Storage Array Resource Provisioned Volumes
+= Set storage array resource provisioned volumes - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

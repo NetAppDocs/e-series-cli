@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: authentication, users, access, system, assign, login credentials, associated, profile, include, specific, role, access, permissions, start
 summary: "Authentication requires that users access the system with assigned login credentials. Each user login is associated with a user profile that includes specific roles and access permissions."
 ---
-= Getting started with authentication
+= Getting started with authentication - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

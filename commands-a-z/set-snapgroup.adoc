@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, snapshot, group, attributes
 summary: "The set snapGroup command defines the properties for a snapshot group."
 ---
-= Set snapshot group attributes
+= Set snapshot group attributes - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

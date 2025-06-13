@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, asynchronous, mirror, group, synchronization, progress
 summary: "The show asyncMirrorGroup synchronizationProgress command displays the progress of periodic synchronization of the asynchronous mirror group between the local and remote storage array."
 ---
-= Show asynchronous mirror group synchronization progress
+= Show asynchronous mirror group synchronization progress - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

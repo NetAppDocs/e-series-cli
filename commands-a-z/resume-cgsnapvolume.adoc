@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: resume, consistency, group, snapshot, volume
 summary: "The resume cgSnapVolume command restarts a copy-on-write operation for creating a consistency group snapshot volume that you stopped using the stop cgSnapVolume command."
 ---
-= Resume consistency group snapshot volume
+= Resume consistency group snapshot volume - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

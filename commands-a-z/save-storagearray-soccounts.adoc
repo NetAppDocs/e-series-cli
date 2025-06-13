@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, storage, array, soc, counts
 summary: "The save storageArray SOCCounts command saves the SOC error statistics to a file."
 ---
-= Save storage array SOC counts
+= Save storage array SOC counts - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

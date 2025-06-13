@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: recreate, external, security key
 summary: "The recreate storageArray securityKey command regenerates a storage array security key for use with the external security key management feature."
 ---
-= Re-create external security key
+= Re-create external security key - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

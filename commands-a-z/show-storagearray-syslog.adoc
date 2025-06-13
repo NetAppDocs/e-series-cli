@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: display, storage, array, syslog, configuration
 summary: "The show storageArray syslog command allows you to view the configuration of a syslog server used for storing audit logs. Configuration information includes a server ID, along with its address, protocol, and port number."
 ---
-= Display storage array syslog configuration
+= Display storage array syslog configuration - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

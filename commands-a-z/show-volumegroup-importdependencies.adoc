@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, volume, group, import, dependencies
 summary: "The show volumeGroup importDependencies command shows a list of dependencies for the drives in a volume group that you want to move from one storage array to a second storage array."
 ---
-= Show volume group import dependencies
+= Show volume group import dependencies - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, disk pool, locate
 summary: "The stop diskPool locate command turns off the indicator lights on the drives that were turned on by the start diskPool locate command."
 ---
-= Stop disk pool locate
+= Stop disk pool locate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, snapshot, image, rollback
 summary: "The stop snapImage rollback command stops a snapshot image rollback operation that was initiated by the start snapImage rollback command."
 ---
-= Stop snapshot image rollback
+= Stop snapshot image rollback - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

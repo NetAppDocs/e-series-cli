@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, volume, copy
 summary: "The set volumeCopy target command defines the properties for a volume copy pair."
 ---
-= Set volume copy
+= Set volume copy - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

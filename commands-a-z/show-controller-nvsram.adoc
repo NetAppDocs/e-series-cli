@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, controller, nvsram
 summary: "The show controller NVSRAM command returns information about NVSRAM byte values."
 ---
-= Show controller NVSRAM
+= Show controller NVSRAM - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

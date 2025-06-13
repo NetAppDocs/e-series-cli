@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, icmp, response
 summary: "The set storageArray icmpPingResponse command returns the default values for negotiable settings for sessions and connections, which represent the starting point for the storage array for negotiations."
 ---
-= Set storage array ICMP response
+= Set storage array ICMP response - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

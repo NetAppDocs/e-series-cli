@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, consistency, group
 summary: "The create consistencyGroup command creates a new, empty consistency group that can contain snapshot groups. You must add the snapshot groups using the set consistencyGroup addCGMember command."
 ---
-= Create consistency group
+= Create consistency group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, disk pool, locate
 summary: "The start diskPool locate command identifies the drives that are logically grouped together to form the specified disk pool by blinking the indicator lights on the drives."
 ---
-= Start disk pool locate
+= Start disk pool locate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, initiator, command, specific, object, supported, array, role
 summary: "The delete iscsiInitiator command deletes a specific iSCSI initiator object."
 ---
-= Delete iSCSI initiator
+= Delete iSCSI initiator - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

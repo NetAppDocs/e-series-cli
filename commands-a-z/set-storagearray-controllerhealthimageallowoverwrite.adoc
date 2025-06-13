@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, controller, health, image, allow, overwrite
 summary: "The set storageArray controllerHealthImageAllowOverWrite command sets a flag on a controller to allow a new controller health image to overwrite an existing controller health image on storage arrays that support the controller health image feature."
 ---
-= Set storage array controller health image allow overwrite
+= Set storage array controller health image allow overwrite - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

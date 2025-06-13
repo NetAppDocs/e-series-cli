@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, syslog, configuration
 summary: "The show syslog summary command displays the syslog alert configuration information."
 ---
-= Show syslog configuration
+= Show syslog configuration - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

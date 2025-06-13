@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: clear, volume, reservations
 summary: "The clear volume reservations command clears persistent volume reservations."
 ---
-= Clear volume reservations
+= Clear volume reservations - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

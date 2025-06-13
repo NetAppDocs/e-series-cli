@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, installed, root, intermediate, ca, certificates, summary
 summary: "The show controller caCertificate command displays the installed CA certificates summary from the specified controller. This command is useful to use before performing the delete controller caCertificate command so that you know the alias names of the certificates to delete."
 ---
-= Show installed root/intermediate CA certificates summary
+= Show installed root/intermediate CA certificates summary - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

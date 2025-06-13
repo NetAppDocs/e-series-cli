@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, replaceable, drives
 summary: "The show replaceableDrives command shows all replaceable drives in a storage array."
 ---
-= Show replaceable drives
+= Show replaceable drives - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remove, volume, lun map
 summary: "The remove lunMapping command removes the logical unit number (LUN) or namespace ID (NSID) mapping from one or more volumes."
 ---
-= Remove volume LUN mapping
+= Remove volume LUN mapping - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

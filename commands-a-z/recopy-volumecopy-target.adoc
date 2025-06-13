@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: volumecopy, target, command, operation, volume, copy, pair, reinitiate, array, role, context
 summary: "The recopy volumeCopy target command reinitiates a volume copy operation using an existing volume copy pair."
 ---
-= Recopy volume copy
+= Recopy volume copy - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, storage, array, autosupport, manual, dispatch
 summary: "The start storageArray autoSupport manualDispatch command initiates a complete support bundle and ASUP dispatch for the bundle."
 ---
-= Start Storage Array AutoSupport Manual Dispatch
+= Start storage array AutoSupport manual dispatch - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

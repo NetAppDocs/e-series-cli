@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, host, group
 summary: "The set hostGroup command renames a host group."
 ---
-= Set host group
+= Set host group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

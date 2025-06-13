@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: check, synchronous, mirroring status
 summary: "The check syncMirror command returns the status of a remote-mirror volume. Use this command to determine when the status of the remote-mirror volume becomes Optimal."
 ---
-= Check synchronous mirroring status
+= Check synchronous mirroring status - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

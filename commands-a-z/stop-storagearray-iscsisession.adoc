@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, storage, array, iscsi session
 summary: "The stop storageArray iscsiSession command forces the termination of a storage array iSCSI session."
 ---
-= Stop storage array iSCSI session
+= Stop storage array iSCSI session - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

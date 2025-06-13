@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, drive, channel, fault, isolation, diagnostics
 summary: "The stop driveChannel faultDiagnostics command stops the drive channel fault isolation diagnostics, which stops the start drive channel fault isolation diagnostics command before it completes."
 ---
-= Stop drive channel fault isolation diagnostics
+= Stop drive channel fault isolation diagnostics - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

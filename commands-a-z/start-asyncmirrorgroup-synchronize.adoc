@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, asynchronous, mirror, synchronization
 summary: "The start asyncMirrorGroup synchronize command starts Asynchronous Mirroring synchronization."
 ---
-= Start asynchronous mirroring synchronization
+= Start asynchronous mirroring synchronization - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

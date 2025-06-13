@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, session
 summary: "The set session errorAction command defines how you want the current script engine session to run."
 ---
-= Set session
+= Set session - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: test, email, alert, configuration
 summary: "The start emailAlert test command allows you to test the alert configuration by sending a sample email message."
 ---
-= Test email alert configuration
+= Test email alert configuration - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

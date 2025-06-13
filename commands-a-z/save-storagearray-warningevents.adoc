@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, storage, array, events
 summary: "The save storageArray warningEvents command saves events from the Major Event Log to a file."
 ---
-= Save storage array events
+= Save storage array events - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

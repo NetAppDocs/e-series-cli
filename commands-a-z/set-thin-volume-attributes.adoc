@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, thin, volume, attributes
 summary: "The set volume command defines the properties for a thin volume."
 ---
-= Set thin volume attributes
+= Set thin volume attributes - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

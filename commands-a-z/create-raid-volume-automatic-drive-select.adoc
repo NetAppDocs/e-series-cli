@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, raid, volume, automatic, drive, select
 summary: "The create volume command creates a volume group across the drives in the storage array and a new volume in the volume group. The storage array controllers choose the drives to be included in the volume."
 ---
-= Create RAID volume (automatic drive select)
+= Create RAID volume (automatic drive select) - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

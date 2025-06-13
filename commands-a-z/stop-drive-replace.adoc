@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, drive, replace
 summary: "The stop drive replace command stops a data copy operation that was started by either a set drive command or a replace drive command with the copyDrive user input."
 ---
-= Stop drive replace
+= Stop drive replace - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

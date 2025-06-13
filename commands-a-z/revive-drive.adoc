@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: revive, drive
 summary: "The revive drive command forces the specified drive to the Optimal state."
 ---
-= Revive drive
+= Revive drive - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

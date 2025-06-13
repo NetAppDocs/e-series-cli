@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, storage, array, lun, map
 summary: "The show storageArray lunMappings command returns information from the storage array profile about the logical unit number (LUN) or namespace ID (NSID) mappings in the storage array."
 ---
-= Show storage array LUN mappings
+= Show storage array LUN mappings - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

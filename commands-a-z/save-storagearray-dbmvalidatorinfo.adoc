@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, storage, array, dbm, validator, information, file
 summary: "The save storageArray dbmValidatorInfo command saves the database management (DBM) validation information for a storage array in an XML file."
 ---
-= Save storage array DBM validator information file
+= Save storage array DBM validator information file - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

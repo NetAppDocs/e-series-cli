@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: overview, cli
 summary: "The command line interface (CLI) is a software application that provides a way to configure and monitor storage arrays."
 ---
-= Overview of CLI
+= Learn about the SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

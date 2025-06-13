@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, drawer, service, action, allowed, indicator
 summary: "The set tray drawer command turns on or turns off the Service Action Allowed indicator light on a drawer that holds drives."
 ---
-= Set drawer service action allowed indicator
+= Set drawer service action allowed indicator - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

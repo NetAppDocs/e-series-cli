@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, drive
 summary: "The show allDrives command returns information about the drives in the storage array."
 ---
-= Show drive
+= Show drive - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

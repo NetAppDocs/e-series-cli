@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: validate, storage array, security key
 summary: "The validate storageArray securityKey command validates the security key for a storage array that has security-capable drives to make sure that the back-up security key file is not corrupt."
 ---
-= Validate storage array security key
+= Validate storage array security key - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

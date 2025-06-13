@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: retrieve, installed, external, key management, certificate
 summary: "The save storageArray keyManagementCertificate command retrieves the installed certificate."
 ---
-= Retrieve installed external key management certificate
+= Retrieve installed external key management certificate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

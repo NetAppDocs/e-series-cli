@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: recur, syntax, elements
 summary: "Recurring syntax elements are a general category of parameters and options that you can use in the script commands."
 ---
-= Recurring syntax elements
+= Learn about recurring SANtricity CLI syntax elements
 :icons: font
 :imagesdir: ../media/
 

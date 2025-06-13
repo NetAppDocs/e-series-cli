@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: disable, storage, array, command, storage, feature
 summary: "The disable storageArray command disables a storage array feature."
 ---
-= Disable storage array feature
+= Disable storage array feature - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, volume, reservations
 summary: "The show volume reservations command returns information about the volumes that have persistent reservations."
 ---
-= Show volume reservations
+= Show volume reservations - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

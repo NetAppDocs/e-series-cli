@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: establish, asynmirror, volume, asynchronous, mirrored, remote, storage, array, secondary, existing
 summary: "The establish asyncMirror volume command completes an asynchronous mirrored pair on the remote storage array by adding a secondary volume to an existing asynchronous mirror group."
 ---
-= Establish asynchronous mirrored pair
+= Establish asynchronous mirrored pair - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

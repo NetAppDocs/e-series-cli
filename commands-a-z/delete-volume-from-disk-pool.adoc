@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, volume, command, normal, thin, disk pool, roles, support
 summary: "The delete volume command deletes either normal or thin volumes from a disk pool."
 ---
-= Delete volume from disk pool
+= Delete volume from disk pool - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

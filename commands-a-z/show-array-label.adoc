@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, array, label
 summary: "The Show array label command returns information about whether a storage array label has been defined or all existing storage array labels."
 ---
-= Show array label
+= Show array label - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

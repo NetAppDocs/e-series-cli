@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, ssd, cache
 summary: "The show ssdCache command displays information about the SSD cache."
 ---
-= Show SSD cache
+= Show SSD cache - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

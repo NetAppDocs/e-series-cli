@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, enable, disable, automatic, load, balance
 summary: "The set storageArray autoLoadBalancingEnable command enables or disables the Automatic Load Balancing feature."
 ---
-= Set storage array to enable or disable automatic load balancing
+= Set storage array to enable or disable automatic load balancing - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

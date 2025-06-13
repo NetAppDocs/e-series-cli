@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remove, drives, ssd, cache
 summary: "The set ssdCache command decreases the capacity of the SSD cache by removing Solid State Disks (SSDs)."
 ---
-= Remove drives from SSD cache
+= Remove drives from SSD cache - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

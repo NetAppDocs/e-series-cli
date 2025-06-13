@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, controller, dns
 summary: "The set controller DNSServers command updates the Domain Name System (DNS) settings for a controller. DNS is used to resolve fully qualified domain names for the controllers and a Network Time Protocol (NTP) server."
 ---
-= Set controller DNS settings
+= Set controller DNS settings - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 
