@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, storage, array, directory, services, summary
 summary: "The show storageArray directoryServices summary command displays the directory services configuration summary."
 ---
-= Show storage array directory services summary
+= Show storage array directory services summary - SANtricity CLI 
 :icons: font
 :imagesdir: ../media/
 

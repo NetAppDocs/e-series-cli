@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remove, storage array, directory, server, role, mapping
 summary: "The remove storageArray directoryServer command removes the defined role mappings for the specified directory server."
 ---
-= Remove storage array directory server role mapping
+= Remove storage array directory server role mapping - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 
