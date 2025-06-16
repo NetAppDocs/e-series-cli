@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: specify, autosupport, delivery, method
 summary: "The SMcli -autoSupportConfig command sets up the delivery method for sending AutoSupport messages."
 ---
-= Specify the AutoSupport delivery method
+= Specify the AutoSupport delivery method - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

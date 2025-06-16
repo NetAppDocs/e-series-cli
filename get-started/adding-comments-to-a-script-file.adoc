@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add, comments, script file
 summary: "The script engine looks for certain characters or a command to show comments. You can add comments to a script file in three ways."
 ---
-= Add comments to a script file
+= Add comments to a SANtricity CLI script file
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, email, alert, configuration
 summary: "The show emailAlert summary command displays the email alert configuration information."
 ---
-= Show email alert configuration
+= Show email alert configuration - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

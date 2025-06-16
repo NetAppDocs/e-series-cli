@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remove, incomplete, asynchronous, mirror, pair, group
 summary: "The remove asyncMirrorGroup command removes an orphaned mirrored pair volume on the storage array."
 ---
-= Remove incomplete asynchronous mirrored pair from asynchronous mirror group
+= Remove incomplete asynchronous mirrored pair from asynchronous mirror group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

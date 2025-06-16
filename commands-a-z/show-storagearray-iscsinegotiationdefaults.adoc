@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, storage, array, negotiation, defaults
 summary: "The show storageArray iscsiNegotiationDefaults command returns information about connection-level settings that are subject to initiator-target negotiation."
 ---
-= Show storage array negotiation defaults
+= Show storage array negotiation defaults - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: clear, volume, unreadable, sectors
 summary: "The clear volume unreadableSectors command clears unreadable sector information from one or more volumes."
 ---
-= Clear volume unreadable sectors
+= Clear volume unreadable sectors - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

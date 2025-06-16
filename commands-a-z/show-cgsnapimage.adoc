@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, consistency, group, snapshot, image
 summary: "The show CGSnapImage command shows one snapshot image or several snapshot images that are in one or more snapshot consistency groups."
 ---
-= Show consistency group snapshot image
+= Show consistency group snapshot image - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

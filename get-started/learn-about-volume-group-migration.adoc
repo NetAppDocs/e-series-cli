@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: volume, group, migration, learn, data, access, export, import, component
 summary: "Volume group migration lets you export a volume group so that you can import the volume group to a different storage array. You also can export a volume group so that you can store the data offline."
 ---
-= Learn about volume group migration
+= Learn about volume group migration in SANtricity software
 :icons: font
 :imagesdir: ../media/
 

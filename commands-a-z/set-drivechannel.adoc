@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, drive, channel, status
 summary: "The set driveChannel command defines how the drive channel performs."
 ---
-= Set drive channel status
+= Set drive channel status - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, consistency, group
 summary: "The show consistencyGroup command returns information about one or more consistency groups."
 ---
-= Show consistency group
+= Show consistency group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

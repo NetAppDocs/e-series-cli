@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cli, command, wrapper, syntax
 summary: "General syntax forms of the CLI command wrappers are listed in this section."
 ---
-= CLI command wrapper syntax
+= Learn about SANtricity CLI command wrapper syntax
 :icons: font
 :imagesdir: ../media/
 

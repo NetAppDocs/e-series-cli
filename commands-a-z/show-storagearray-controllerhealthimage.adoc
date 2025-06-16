@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, storage, array, controller, health, image
 summary: "The show storageArray controllerHealthImage command shows details of the controller health image on the controller cache, if a controller health image is available, on storage arrays that support the controller health image."
 ---
-= Show storage array controller health image
+= Show storage array controller health image - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

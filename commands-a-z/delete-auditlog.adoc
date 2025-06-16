@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, audit, log, records
 summary: "The delete auditLog command deletes some or all of the records in the audit log."
 ---
-= Delete audit log records
+= Delete audit log records - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

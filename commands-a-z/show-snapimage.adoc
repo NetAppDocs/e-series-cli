@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, snapshot, image
 summary: "The show snapImage command returns information about the snapshot images that a user had previously created."
 ---
-= Show snapshot image
+= Show snapshot image - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

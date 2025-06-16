@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, snapshot, group, snapshot, images
 summary: "The stop pendingSnapImageCreation command cancels all of the pending snapshot images that are to be created on a snapshot or snapshot consistency group."
 ---
-= Stop snapshot group pending snapshot images
+= Stop snapshot group pending snapshot images - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

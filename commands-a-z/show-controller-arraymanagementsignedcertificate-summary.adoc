@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, signed, certificate
 summary: "The show controller arrayManagementSignedCertificate summary command displays the current signed certificate summary from the specified controller."
 ---
-= Show signed certificate
+= Show signed certificate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

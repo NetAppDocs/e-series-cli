@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, volume, group
 summary: "The create volumeGroup command creates either a free-capacity volume group or a volume group with one volume when you enter a set of unassigned drives."
 ---
-= Create volume group
+= Create volume group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

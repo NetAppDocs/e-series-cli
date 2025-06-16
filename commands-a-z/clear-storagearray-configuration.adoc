@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: clear, storage array, configuration
 summary: "The clear storageArray configuration command clears an entire storage array configuration or part of a storage array configuration, or clears volume group and volume configuration only."
 ---
-= Clear storage array configuration
+= Clear storage array configuration - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

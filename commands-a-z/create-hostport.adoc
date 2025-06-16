@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, host, port
 summary: "The create hostPort command creates a new host port identification on a host bus adapter (HBA) or on a host channel adapter (HCA)."
 ---
-= Create host port
+= Create host port - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

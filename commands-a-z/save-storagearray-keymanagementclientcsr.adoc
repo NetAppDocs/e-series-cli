@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: generate, key, management, certificate, sign, request, csr
 summary: "The save storageArray keyManagementClientCSR command requests a generated CSR for the storage array that you can save to a file."
 ---
-= Generate Key Management Certificate Signing Request (CSR)
+= Generate key management certificate signing request (CSR) - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

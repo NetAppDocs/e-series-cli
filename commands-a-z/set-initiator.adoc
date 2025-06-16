@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, initiator
 summary: "The set initiator command updates the initiator object."
 ---
-= Set initiator
+= Set initiator - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

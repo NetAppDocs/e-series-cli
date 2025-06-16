@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, tray, attribute
 summary: "The set tray command sets user-defined attributes for an tray."
 ---
-= Set tray attribute
+= Set tray attribute - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

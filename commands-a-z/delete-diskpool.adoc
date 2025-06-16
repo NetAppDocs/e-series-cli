@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, disk pool
 summary: "The delete diskPool command deletes a disk pool."
 ---
-= Delete disk pool
+= Delete disk pool - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

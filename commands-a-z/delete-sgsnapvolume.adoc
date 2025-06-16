@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delte, snapvolume, command, snapshot, consistency, group, optionally, repository, members
 summary: "The delete sgSnapVolume command deletes the snapshot volume of a consistency group. Optionally, you can also delete the repository members."
 ---
-= Delete consistency group snapshot volume
+= Delete consistency group snapshot volume - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

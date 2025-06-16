@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: resume, snapshot, volume
 summary: "The resume snapVolume command resumes a snapshot volume operation that was stopped."
 ---
-= Resume snapshot volume
+= Resume snapshot volume - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

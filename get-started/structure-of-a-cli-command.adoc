@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: structure, cli, commands
 summary: "The CLI commands are in the form of a command wrapper and elements embedded into the wrapper."
 ---
-= Structure of CLI commands
+= Learn about the structure of SANtricity CLI commands
 :icons: font
 :imagesdir: ../media/
 

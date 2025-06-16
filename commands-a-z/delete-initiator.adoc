@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, initiator, command, object, supported, array, role
 summary: "The delete initiator command deletes the initiator object."
 ---
-= Delete initiator
+= Delete initiator - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

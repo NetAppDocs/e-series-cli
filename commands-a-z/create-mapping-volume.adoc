@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, volume, map
 summary: "The create mapping volume command creates a logical mapping from a volume to a host or a host group."
 ---
-= Create Volume Mapping
+= Create volume mapping - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

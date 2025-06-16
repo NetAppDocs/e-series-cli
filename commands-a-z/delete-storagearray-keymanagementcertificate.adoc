@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, storage, array, key, management, certificate, command, remove, install, external
 summary: "The delete storageArray keyManagementCertificate command removes the installed external key management certificate from the storage array."
 ---
-= Remove installed external key management certificate
+= Remove installed external key management certificate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

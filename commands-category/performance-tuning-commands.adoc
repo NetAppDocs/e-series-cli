@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: performance, tuning, commands, automatic, load balance, cache commands
 summary: "Performance tuning commands"
 ---
-= Performance tuning commands
+= SANtricity CLI performance tuning commands
 :icons: font
 :imagesdir: ../media/
 

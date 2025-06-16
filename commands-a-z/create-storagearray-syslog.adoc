@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: create, storage, array, syslog, configuration
 summary: "The create storageArray syslog command allows you to archive audit logs onto an external syslog server. After a connection is established between the storage array and syslog server, audit logs are automatically saved to the syslog server."
 ---
-= Create storage array syslog configuration
+= Create storage array syslog configuration - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

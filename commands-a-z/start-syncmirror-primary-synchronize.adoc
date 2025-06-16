@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, synchronous, mirror, synchronization
 summary: "The start syncMirror primary synchronize command starts synchronous mirroring synchronization."
 ---
-= Start synchronous mirroring synchronization
+= Start synchronous mirroring synchronization - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

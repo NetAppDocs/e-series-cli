@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: delete, storage, array, syslog, command, allow, delete, specified, configuration, storing, audit, logs, role
 summary: "The delete storageArray syslog command allows you to delete the specified syslog configuration used for storing audit logs."
 ---
-= Delete storage array syslog configuration
+= Delete storage array syslog configuration - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

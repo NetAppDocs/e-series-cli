@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, audit, log, summary
 summary: "The show auditLog summary command displays the audit log summary information."
 ---
-= Show audit log summary
+= Show audit log summary - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

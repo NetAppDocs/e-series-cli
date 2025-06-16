@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, snapshot, group, media, scan
 summary: "The set snapGroup mediaScanEnabled command runs a media scan on a snapshot group."
 ---
-= Set snapshot group media scan
+= Set snapshot group media scan - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

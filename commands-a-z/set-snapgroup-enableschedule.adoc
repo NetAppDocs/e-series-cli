@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, snapshot, group, schedule
 summary: "The set snapGroup enableSchedule command defines the schedule for taking snapshot images for a snapshot group."
 ---
-= Set snapshot group schedule
+= Set snapshot group schedule - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

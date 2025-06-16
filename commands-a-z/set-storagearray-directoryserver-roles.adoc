@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, directory, server, role, map
 summary: "The set storageArray directoryServer roles command allows you to define role mappings for a specified directory server. These role mappings are used to authenticate users that attempt to execute various SMcli commands."
 ---
-= Set storage array directory server role mapping
+= Set storage array directory server role mapping - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

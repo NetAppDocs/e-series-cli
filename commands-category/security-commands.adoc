@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: security, commands, audit, log management, authentication, certificate, management, embedded, external, key
 summary: "Security commands"
 ---
-= Security commands
+= SANtricity CLI security commands
 :icons: font
 :imagesdir: ../media/
 

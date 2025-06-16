@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, consistency, group, snapshot, rollback
 summary: "The stop cgSnapImage rollback command stops a rollback operation to member base volumes in a snapshot consistency group."
 ---
-= Stop consistency group snapshot rollback
+= Stop consistency group snapshot rollback - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: export, storage, array, security, key, command, save, drive, securitykey, file, context, role
 summary: "The export storageArray securityKey command saves a drive security key to a file."
 ---
-= Export storage array security key
+= Export storage array security key - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

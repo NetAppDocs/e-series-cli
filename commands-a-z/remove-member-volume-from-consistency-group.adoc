@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remove, member, volume, consistency group
 summary: "The set consistencyGroup command removes a member volume from an existing snapshot consistency group."
 ---
-= Remove member volume from consistency group
+= Remove member volume from consistency group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

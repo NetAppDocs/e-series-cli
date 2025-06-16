@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: cancel, asynchronous, mirror, group, role, reversal
 summary: "The stop asyncMirrorGroup rolechange command cancels a pending role reversal operation between asynchronous mirror groups."
 ---
-= Cancel asynchronous mirror group role reversal
+= Cancel asynchronous mirror group role reversal - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, volume, group, import
 summary: "The start volumeGroup import command moves a volume group into a Complete state to make a newly introduced volume group available to its new storage array."
 ---
-= Start volume group import
+= Start volume group import - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

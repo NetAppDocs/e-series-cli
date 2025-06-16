@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: script command, guidelines
 summary: "Adhere to the following guidelines when writing script commands."
 ---
-= Script command guidelines
+= Learn about SANtricity CLI script command guidelines
 :icons: font
 :imagesdir: ../media/
 

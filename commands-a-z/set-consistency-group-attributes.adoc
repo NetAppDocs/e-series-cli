@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, consistency, group, attributes
 summary: "The set consistencyGroup command defines the properties for a snapshot consistency group."
 ---
-= Set consistency group attributes
+= Set consistency group attributes - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

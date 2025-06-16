@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, iscsi, host, port, network, properties
 summary: "The set controller iscsiHostPort command changes the network properties for a host port, including IPv4 and IPv6 properties, port speed, and maximum frame payload."
 ---
-= Set iSCSI host port networking properties
+= Set iSCSI host port networking properties - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

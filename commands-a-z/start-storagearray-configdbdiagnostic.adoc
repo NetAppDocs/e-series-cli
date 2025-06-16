@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, storage, array, configuration, database, diagnostic
 summary: "The start storageArray configDbDiagnostic command runs a consistency check against a configuration database."
 ---
-= Start storage array configuration database diagnostic
+= Start storage array configuration database diagnostic - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: remove, install, root, intermediate, ca, certificates
 summary: "The delete controller caCertificate command removes the installed root or intermediate CA certificate from the specified controller."
 ---
-= Remove installed root/intermediate CA certificates
+= Remove installed root/intermediate CA certificates - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

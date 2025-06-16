@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: structure, script command
 summary: "To ensure successful execution, script commands must be written in the proper structure. "
 ---
-= Structure of a script command
+= Learn about the structure of a SANtricity CLI script commands
 :icons: font
 :imagesdir: ../media/
 

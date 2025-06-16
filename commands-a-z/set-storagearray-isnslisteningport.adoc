@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, isns, server, listen, port
 summary: "The set storageArray isnsListeningPort command sets the iSNS server listening port."
 ---
-= Set storage array iSNS server listening port
+= Set storage array iSNS server listening port - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

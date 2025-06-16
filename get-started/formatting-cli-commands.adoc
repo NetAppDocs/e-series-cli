@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: format, rules, cli, commands
 summary: "Based on the value or name entered, certain format rules are enforced for CLI commands."
 ---
-= Format rules for CLI commands
+= Format rules for SANtricity CLI commands
 :icons: font
 :imagesdir: ../media/
 

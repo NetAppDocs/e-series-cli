@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: enable, disable, host, connectivity, report
 summary: "The set storageArray hostConnectivityReporting command enables or disables host connectivity reporting on the controller."
 ---
-= Enable or disable host connectivity reporting
+= Enable or disable host connectivity reporting - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

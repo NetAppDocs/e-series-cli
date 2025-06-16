@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, storage, array, support, data
 summary: "The save storageArray supportData command saves the support-related information of the storage array to a file."
 ---
-= Save storage array support data
+= Save storage array support data - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: interactive mode
 summary: "Interactive mode lets you run individual commands without prefixing the commands with `SMcli`."
 ---
-= Interactive mode
+= Learn about SANtricity CLI interactive mode
 :icons: font
 :imagesdir: ../media/
 

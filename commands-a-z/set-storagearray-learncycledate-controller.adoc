@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, controller, battery, learn, cycle
 summary: "The set storageArray learnCycleDate controller command sets controller battery learn cycles."
 ---
-= Set storage array controller battery learn cycle
+= Set storage array controller battery learn cycle - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

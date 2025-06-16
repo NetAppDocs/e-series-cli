@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: clear, storage array, firmware, pending, area
 summary: "The clear storageArray firmwarePendingArea command deletes a firmware image or NVSRAM values that you have previously downloaded from the pending area buffer."
 ---
-= Clear storage array firmware pending area
+= Clear storage array firmware pending area - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

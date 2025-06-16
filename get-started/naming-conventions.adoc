@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: name, conventions
 summary: "Specific rules must be adhered to for names used in CLI commands."
 ---
-= Naming conventions
+= Learn about SANtricity CLI naming conventions
 :icons: font
 :imagesdir: ../media/
 

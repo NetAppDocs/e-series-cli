@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, isns, server, refresh
 summary: "The set storageArray isnsServerRefresh command refreshes the network address information for the iSNS server."
 ---
-= Set storage array iSNS server refresh
+= Set storage array iSNS server refresh - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

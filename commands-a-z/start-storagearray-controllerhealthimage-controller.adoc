@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, storage, array, controller, health, image
 summary: "The start storageArray controllerHealthImage controller command produces a storage array controller health image on storage arrays that support the controller health image feature."
 ---
-= Start storage array controller health image
+= Start storage array controller health image - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, iser, target
 summary: "The set iserTarget command defines properties for an iSER target."
 ---
-= Set iSER target
+= Set iSER target - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: add array label, supported, syntax, parameters, minimum firmware level
 summary: "The Add array label command allows you to add a storage array to the configuration with a user-defined label. This allows later commands to address the storage array by the user-defined label rather than by IP address or host name."
 ---
-= Add array label
+= Add array label - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: register, snmp, trap, destination
 summary: "The create snmpTrapDestination command creates a new Simple Network Management Protocol (SNMP) trap destination. A trap destination is the SNMP manager to receive the trap messages."
 ---
-= Register SNMP trap destination
+= Register SNMP trap destination - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

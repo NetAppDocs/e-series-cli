@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, audit log, configuration
 summary: "The show auditLog configuration command shows the audit log configuration settings for the storage array."
 ---
-= Show audit log configuration
+= Show audit log configuration - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

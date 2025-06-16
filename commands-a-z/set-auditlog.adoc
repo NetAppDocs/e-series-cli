@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, audit log
 summary: "The set auditLog command configures the audit log settings."
 ---
-= Set audit log settings
+= Set audit log settings - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

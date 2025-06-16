@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, storage, array, locate
 summary: "The stop storageArray locate command turns off the indicator lights on the storage array that were turned on by the start storageArray locate command."
 ---
-= Stop storage array locate
+= Stop storage array locate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

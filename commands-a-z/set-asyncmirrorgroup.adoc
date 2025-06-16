@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, asynchronous, mirror, group
 summary: "The set asyncMirrorGroup command changes the synchronization settings and warning thresholds that the controller owner of the primary side of the asynchronous mirror group uses when it performs an initial synchronization or resynchronization."
 ---
-= Set asynchronous mirror group
+= Set asynchronous mirror group - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

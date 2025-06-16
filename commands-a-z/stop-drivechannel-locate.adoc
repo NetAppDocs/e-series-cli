@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: stop, drive, channel, locate
 summary: "The stop driveChannel locate command turns off the indicator lights on the drive trays that were turned on by the start driveChannel locate command."
 ---
-= Stop drive channel locate
+= Stop drive channel locate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

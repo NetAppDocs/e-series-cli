@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: save, storage, array, controller, health, image
 summary: "The save storageArray controllerHealthImage command saves a controller health image to a specified file on a host, for storage arrays that support the controller health image feature."
 ---
-= Save storage array controller health image
+= Save storage array controller health image - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

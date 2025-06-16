@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: download, storage, array, management, key, certificate, command, intall, external, support, role
 summary: "The download storageArray keyManagementCertificate command installs the external key management certificates on the storage array."
 ---
-= Install storage array external key management certificate
+= Install storage array external key management certificate - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

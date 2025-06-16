@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: start, fde, secure, drive, erase
 summary: "The start secureErase drive command erases all of the data from one or more full disk encryption (FDE) drives so that they can be reused as FDE drives."
 ---
-= Start FDE secure drive erase
+= Start FDE secure drive erase - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: replace, drive
 summary: "The replace drive replacementDrive command replaces a drive in a volume group."
 ---
-= Replace drive
+= Replace drive - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 

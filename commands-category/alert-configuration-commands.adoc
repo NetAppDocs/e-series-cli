@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: configuration, commands, alert, embedded
 summary: "Alert configuration commands"
 ---
-= Alert configuration commands
+= SANtricity CLI alert configuration commands
 :icons: font
 :imagesdir: ../media/
 
