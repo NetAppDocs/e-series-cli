@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, management, interface
 summary: "The set storageArray managementInterface command changes the management interface of the controller. Change the management interface type to enforce confidentiality between the storage array and its management software or to access external tools."
 ---
-= Set storage array management interface
+= Set storage array management interface - SANtricity CLI 
 :icons: font
 :imagesdir: ../media/
 
