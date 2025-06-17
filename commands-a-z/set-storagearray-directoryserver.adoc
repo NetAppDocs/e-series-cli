@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: set, storage, array, directory, server
 summary: "The set storageArray directoryServer command updates the directory server configuration."
 ---
-= Set storage array directory server
+= Set storage array directory server - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 
