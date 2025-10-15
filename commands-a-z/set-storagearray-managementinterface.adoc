@@ -49,3 +49,7 @@ SMcli -n Array1 -c "set storageArray managementInterface restOnly=true;"
 
 SMcli completed successfully.
 ----
+
+== Minimum firmware level
+
+12.00 - This command is deprecated. Starting with SANtricity 12.00, the storage array will always operate in the `restOnly=true` mode.

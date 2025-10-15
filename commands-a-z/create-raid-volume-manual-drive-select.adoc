@@ -121,7 +121,7 @@ The setting to specify the security level when creating the volume groups and al
 a|
 `resourceProvisioningCapable`
 a|
-The setting to specify if resource provisioning capabilities are enabled. To disable resource provisioning, set this parameter to `FALSE`. The default value is `TRUE`.
+If this parameter is set to `TRUE`, only DULBE-capable drives will be used to create disk pools or volume groups. If the parameter is set to `FALSE` or not provided, no checking for DULBE capability is performed. If all the drives selected for the volume group or disk pool are DULBE-capable, then the storage array level flag determines whether the volume group or disk pool is created as resource provisioned.
 
 a|
 `mapping`
