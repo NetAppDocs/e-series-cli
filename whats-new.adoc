@@ -29,6 +29,14 @@ The following table list changes to the CLI and Script Commands for release 12.0
 |===
 | Command| Description of Change
 a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-storagearray-host-io-protocol.html[Set Storage Array Host I/O Protocol]
+a|
+Added command.
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/show-storage-array-host-io-protocol.html[Show Storage Array Host I/O Protocol]
+a|
+Added command. 
+a|
 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/start-storagearray-externalkeymanagement-test.html[Test external key management communication]
 a|
 Added test KMS communication results to command output. 
