@@ -35,7 +35,7 @@ Added test KMS communication results to command output.
 a|
 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-storagearray-managementinterface.html[Set storage array management interface]
 a|
-Deprecated command. 
+Removed command. 
 a|
 
 |===
