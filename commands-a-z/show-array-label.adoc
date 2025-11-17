@@ -13,7 +13,7 @@ The `Show array label` command returns information about whether a storage array
 
 == Supported Arrays
 
-This command applies to the EF600 and EF300 storage arrays.
+This command applies to the EF600, EF300, EF50, and EF80 storage arrays.
 
 == Syntax
 [subs=+macros]
