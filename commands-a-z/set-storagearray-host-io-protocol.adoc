@@ -40,6 +40,6 @@ Allows you to specify which host I/O protocol to use for your storage array. Val
 
 == Minimum firmware level
 
-12.0
+12.00
 
 
