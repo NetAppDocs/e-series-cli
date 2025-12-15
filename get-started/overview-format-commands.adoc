@@ -19,4 +19,4 @@ The script commands configure and manage a storage array. The script commands ar
 
 Some software features described in this document might not be available for your E-Series Storage System. For questions about available features, contact your account representative.
 
-The CLI is a feature of the SANtricity Storage Manager software.
+The CLI is a feature of the SANtricity System Manager software.
