@@ -60,8 +60,6 @@ You might want to disable Automatic Load Balancing on your storage array for the
 * You do not want to automatically change a particular volume's controller ownership to balance workload.
 * You are operating in a highly tuned environment where load distribution is purposefully set up to achieve a specific distribution between the controllers.
 
-In SANtricity Storage Manager, select the *Storage Array* > *Configuration* > *Automatic Load Balancing* menu option to enable or disable the Automatic Load Balancing feature for an individual storage array.
-
 In SANtricity System Manager, select *Settings* > *System*, scroll down to the *Additional Settings* section, click the E**nable/Disable Automatic Load Balancing** link, and select the**Enable/Disable automatic load balancing** checkbox to enable or disable the feature for an individual storage array.
 
 == Examples
