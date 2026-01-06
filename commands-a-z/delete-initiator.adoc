@@ -13,11 +13,11 @@ The `delete initiator` command deletes the initiator object.
 
 == Supported Arrays
 
-This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600, EF300, EF50, and EF80 storage arrays. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, EF300, EF50, or EF80 storage array, you must have the Storage Admin role.
 
 == Context
 
