@@ -33,5 +33,5 @@ None.
 
 == Minimum firmware level
 
-12.00
+12.0
 
