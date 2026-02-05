@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-storagearray-host-io
 a|
 Added command.
 a|
-https://docs.netapp.com/us-en/e-series-cli/commands-a-z/show-storage-array-host-io-protocol.html[Show Storage Array Host I/O Protocol]
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/show-storage-array-host-io-protocol.html[Show Storage Array Host I/O Protocol Information]
 a|
 Added command. 
 a|
