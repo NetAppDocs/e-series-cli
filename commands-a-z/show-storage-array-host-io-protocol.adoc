@@ -4,7 +4,7 @@ sidebar: sidebar
 keywords: show, storage, array, host, io, protocol
 summary: "The show storageArray hostIoProtocolInformation command displays information about the I/O protocol settings for a specific storage array."
 ---
-= Show Storage Array Host I/O Protocol - SANtricity CLI
+= Show Storage Array Host I/O Protocol Information - SANtricity CLI
 :icons: font
 :imagesdir: ../media/
 
@@ -23,7 +23,7 @@ To execute this command on an E4000, E2800, E5700, EF600, EF300, EF50, or EF80 s
 [subs=+macros]
 [source,cli]
 ----
-show storageArray hostIoProtocolInformation;
+show storageArray hostIoProtocolInfo;
 ----
 
 == Parameter
@@ -33,5 +33,5 @@ None.
 
 == Minimum firmware level
 
-12.00
+12.0
 

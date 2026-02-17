@@ -21,9 +21,9 @@ When issuing SMcli commands at the command prompt, you must enter an additional 
 If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to the latest version of SANtricity through the legacy CLI. Upgrades from SANtricity 11.52 to later versions can only be performed through the SMcli.
 ====
 
-== SANtricity 12.00
+== SANtricity 12.0
 
-The following table list changes to the CLI and Script Commands for release 12.00.
+The following table list changes to the CLI and Script Commands for release 12.0.
 
 [cols="2*",options="header"]
 |===
@@ -33,7 +33,7 @@ https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-storagearray-host-io
 a|
 Added command.
 a|
-https://docs.netapp.com/us-en/e-series-cli/commands-a-z/show-storage-array-host-io-protocol.html[Show Storage Array Host I/O Protocol]
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/show-storage-array-host-io-protocol.html[Show Storage Array Host I/O Protocol Information]
 a|
 Added command. 
 a|
