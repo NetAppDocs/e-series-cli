@@ -13,11 +13,11 @@ The `start volumeGroup export` command moves a volume group into an Exported sta
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600, EF300, EF50, and EF80 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, EF300, EF50, or EF80 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -25,7 +25,7 @@ Then you can remove the drives that comprise the volume group and reinstall the 
 
 [CAUTION]
 ====
-Do not perform these steps without first performing the steps listed in xref:../get-started/learn-about-volume-group-migration.html[Learn about volume group migration.]
+Do not perform these steps without first performing the steps listed in xref:../get-started/learn-about-volume-group-migration.adoc[Learn about volume group migration.]
 ====
 
 [NOTE]

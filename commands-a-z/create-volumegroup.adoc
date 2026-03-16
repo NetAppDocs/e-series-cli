@@ -13,11 +13,11 @@ The `create volumeGroup` command creates either a free-capacity volume group or 
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600, EF300, EF50, and EF80 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, EF300, EF50, or EF80 storage array, you must have the Storage Admin role.
 
 == Syntax
 [subs=+macros]
@@ -105,7 +105,7 @@ The setting to specify the security level when creating the volume groups and al
 a|
 `resourceProvisioningCapable`
 a|
-The setting to specify if resource provisioning capabilities are enabled. To disable resource provisioning, set this parameter to `FALSE`. The default value is `TRUE`.
+If this parameter is set to `TRUE`, only DULBE-capable drives will be used to create disk pools or volume groups. If the parameter is set to `FALSE` or not provided, no checking for DULBE capability is performed. If all the drives selected for the volume group or disk pool are DULBE-capable, then the storage array level flag determines whether the volume group or disk pool is created as resource provisioned.
 
 |===
 

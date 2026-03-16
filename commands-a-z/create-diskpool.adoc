@@ -17,7 +17,7 @@ This command applies to any individual storage array, including the E4000, E2700
 
 == Roles
 
-To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, EF300, EF50, or EF80 storage array, you must have the Storage Admin role.
 
 == Context
 
@@ -60,7 +60,7 @@ a|
 a|
 The drives you want to assign to the disk pool that you want to create. For high-capacity drive trays, specify the tray ID value, the drawer ID value, and the slot ID value for the drive. For low-capacity drive trays, specify the tray ID value and the slot ID value for the drive. Tray ID values are `0` to `99`. Drawer ID values are `1` to `5`.
 
-All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800, E5700, EF600, and EF300 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
+All slot ID maximums are 24. Slot ID values either begin at 0 or 1, depending on the tray model. Drive trays compatible with E2800, E5700, EF600, EF300, EF50, and EF80 controllers have slot ID numbers starting at 0. Drive trays compatible with E2700 and E5600 controllers have slot ID numbers starting at 1.
 
 a|
 `userLabel`
@@ -177,7 +177,7 @@ The controller firmware does not mix `hdd` and `ssd` drive media in the same dis
 a|
 `resourceProvisioningCapable`
 a|
-The setting to specify if resource provisioning capabilities are enabled. To disable resource provisioning, set this parameter to `FALSE`. The default value is `TRUE`.
+If this parameter is set to `TRUE`, only DULBE-capable drives will be used to create disk pools or volume groups. If the parameter is set to `FALSE` or not provided, no checking for DULBE capability is performed. If all the drives selected for the volume group or disk pool are DULBE-capable, then the storage array level flag determines whether the volume group or disk pool is created as resource provisioned.
 
 |===
 

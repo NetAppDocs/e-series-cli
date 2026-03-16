@@ -18,7 +18,7 @@ The `Add array label` command allows you to add a storage array to the configura
 The user-defined label provided does not need to match the storage array's name as displayed in System Manager. This is a local label that is only used for referencing the storage array from the CLI.
 ====
 
-This command applies to the EF600 and EF300 storage arrays.
+This command applies to the EF600, EF300, EF50, and EF80 storage arrays.
 
 == Syntax
 [subs=+macros]

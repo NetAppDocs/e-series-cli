@@ -13,11 +13,11 @@ The `set storageArray odxEnabled` command turns on or turns off Offloaded Data T
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600 and EF300 arrays, as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the E4000, E2700, E5600, E2800, E5700, EF600, EF300, EF50, and EF80 arrays, as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Storage Admin or Support Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, EF300, EF50, or EF80 storage array, you must have the Storage Admin or Support Admin role.
 
 == Context
 
@@ -42,7 +42,7 @@ The setting to turn on or turn off ODX. To turn on ODX set this parameter to `TR
 
 == Notes
 
-ODX provides a way to transfer data without using buffered read and buffered write operations and does not require direct host involvement with the data transfer operation. When ODX is not enabled, data is read from the source storage to the host, and then written to the target storage from the host. With ODX enabled, the data transfer operations are directly managed by the storage infrastructure. The data is moved directly from the source storage to the target storage without going through the host.
+ODX provides a way to transfer data without using buffered read and buffered write operations and does not require direct host involvement with the data transfer operation. When ODX is not enabled, data is read from the source storage to the host, and then written to the target storage from the host. With ODX enabled, the data transfer operations are directly managed by the storage infrastructure. The data is moved directly from the source storage to the target storage within the same array, bypassing the host.
 
 == Minimum firmware level
 

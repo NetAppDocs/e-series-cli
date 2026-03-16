@@ -89,6 +89,8 @@ link:../commands-a-z/reset-storagearray-hostportstatisticsbaseline.html[Reset st
 
 link:../commands-a-z/save-storagearray-hostportstatistics.html[Save storage array host port statistics]
 
+link:../commands-a-z/set-storagearray-host-io-protocol.html[Set storage array host I/O protocol]
+
 link:../commands-a-z/set-controller-hostport.html[Set controller host port properties]
 
 link:../commands-a-z/set-target.html[Set target properties]
@@ -98,6 +100,8 @@ link:../commands-a-z/set-controller-iscsihostport.html[Set iSCSI host port netwo
 link:../commands-a-z/set-iscsiinitiator.html[Set iSCSI initiator]
 
 link:../commands-a-z/show-storagearray-unconfigurediscsiinitiators.html[Show storage array unconfigured iSCSI initiators]
+
+link:../commands-a-z/show-storage-array-host-io-protocol.html[Show Storage Array Host I/O Protocol]
 
 link:../commands-a-z/show-storagearray-unconfiguredinitiators.html[Show unconfigured initiators]
 
