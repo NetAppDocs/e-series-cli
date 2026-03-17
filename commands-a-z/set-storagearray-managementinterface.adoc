@@ -11,13 +11,15 @@ summary: "The set storageArray managementInterface command changes the managemen
 [.lead]
 The `set storageArray managementInterface` command changes the management interface of the controller. Change the management interface type to enforce confidentiality between the storage array and its management software or to access external tools.
 
+NOTE: Starting with SANtricity 12.0, this command is removed as the storage array will always operate in the `restOnly=true` mode.
+
 == Supported Arrays
 
-This command applies to an individual E4000, E2800, E5700, EF600 or EF300 storage array. It does not operate on E2700 or E5600 storage arrays.
+This command applies to an individual E4000, E2800, E5700, EF600, EF300, EF50, and EF80 storage arrays. It does not operate on E2700 or E5600 storage arrays.
 
 == Roles
 
-To execute this command on an E4000, E2800, E5700, EF600, or EF300 storage array, you must have the Security Admin role.
+To execute this command on an E4000, E2800, E5700, EF600, EF300, EF50, or EF80 storage array, you must have the Security Admin role.
 
 == Syntax
 [source,cli]
@@ -49,3 +51,6 @@ SMcli -n Array1 -c "set storageArray managementInterface restOnly=true;"
 
 SMcli completed successfully.
 ----
+
+== Minimum firmware level
+Not applicable.

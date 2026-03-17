@@ -13,11 +13,11 @@ The `start diskPool fullProvisioning` command starts a full provisioning operati
 
 == Supported Arrays
 
-This command applies to any individual storage array, including the EF600 and EF300 arrays; as long as all SMcli packages are installed.
+This command applies to any individual storage array, including the EF600, EF300, EF50, and EF80 arrays; as long as all SMcli packages are installed.
 
 == Roles
 
-To execute this command on an EF600 and EF300 storage array, you must have the Storage Admin role.
+To execute this command on an EF600, EF300, EF50, and EF80 storage array, you must have the Storage Admin role.
 
 == Context
 

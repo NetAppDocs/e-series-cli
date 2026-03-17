@@ -21,6 +21,34 @@ When issuing SMcli commands at the command prompt, you must enter an additional 
 If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to the latest version of SANtricity through the legacy CLI. Upgrades from SANtricity 11.52 to later versions can only be performed through the SMcli.
 ====
 
+== SANtricity 12.0
+
+The following table list changes to the CLI and Script Commands for release 12.0.
+
+[cols="2*",options="header"]
+|===
+| Command| Description of Change
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-storagearray-host-io-protocol.html[Set Storage Array Host I/O Protocol]
+a|
+Added command.
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/show-storage-array-host-io-protocol.html[Show Storage Array Host I/O Protocol Information]
+a|
+Added command. 
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/start-storagearray-externalkeymanagement-test.html[Test external key management communication]
+a|
+Added test KMS communication results to command output. 
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-storagearray-managementinterface.html[Set storage array management interface]
+a|
+Removed command. 
+a|
+
+|===
+
+
 == SANtricity 11.90
 
 The following table list changes to the CLI and Script Commands for release 11.90.
@@ -145,11 +173,11 @@ xref:./commands-a-z/start-volumegroup-fullprovisioning.adoc[Start Volume Group F
 a|
 Updated `disableResourceProvisioning` parameter description.
 a|
-xref:./commands-a-z/recreate-storagearray-securitykey.html[Re-create external security key]
+xref:./commands-a-z/recreate-storagearray-securitykey.adoc[Re-create external security key]
 a|
 Added `deleteOldKey` parameter.
 a|
-xref:./commands-a-z/create-diskpool.html[Create disk pool]
+xref:./commands-a-z/create-diskpool.adoc[Create disk pool]
 a|
 Updated `driveCount` parameter description.
 |===
