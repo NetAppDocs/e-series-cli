@@ -11,7 +11,7 @@ summary: "The set storageArray managementInterface command changes the managemen
 [.lead]
 The `set storageArray managementInterface` command changes the management interface of the controller. Change the management interface type to enforce confidentiality between the storage array and its management software or to access external tools.
 
-NOTE: Starting with SANtricity 12.0, this command is removed as the storage array will always operate in the `restOnly=true` mode.
+NOTE: Starting with SANtricity 12.00, this command is removed as the storage array will always operate in the `restOnly=true` mode.
 
 == Supported Arrays
 
