@@ -91,6 +91,9 @@ userLabel="engdata"
 volumeWWN=60080E500017B4320000000049887D77
 ----
 
+NOTE: The character limit for the volume name is 60 characters. The volume name can contain any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#).
+
+
 a|
 `capacity`
 a|
@@ -141,7 +144,7 @@ The `drive` parameter supports both high-capacity drive trays and low-capacity d
 
 If you attempt to recover a volume using the `drive` parameter or the `drives` parameter and the drives are in an unassigned state, the controller automatically creates a new volume group. Use the `newVolumeGroup` parameter to specify a name for the new volume group.
 
-You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 60 characters.
 
 The `owner` parameter defines which controller owns the volume. The preferred controller ownership of a volume is the controller that currently owns the volume group.
 
