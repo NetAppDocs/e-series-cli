@@ -62,6 +62,12 @@ a|
 Increased character limit for the `userLabel` parameter from 30 to 60 characters.
 
 NOTE: Downgrade from SANtricity 12.10 to earlier versions is not supported if the `userLabel` parameter exceeds 30 characters.
+
+a|
+Create volume commands
+a|
+The character limit for volume names has been increased from 30 to 60 characters.
+
 |===
 
 == SANtricity 12.00
