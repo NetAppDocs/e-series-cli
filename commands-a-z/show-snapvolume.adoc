@@ -59,7 +59,7 @@ The parameter to return a concise list of information about the snapshot volumes
 
 == Notes
 
-You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 60 characters.
 
 This command returns snapshot volume information as shown in this example:
 
