@@ -81,7 +81,7 @@ The number of volumes that you want to remove. Use integer values.
 
 == Notes
 
-You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 60 characters.
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
 
 A snapshot repository volume is an expandable volume that is structured as a concatenated collection of up to 16 standard volume entities. Initially, an expandable repository volume has only a single element. The capacity of the expandable repository volume is exactly that of the single element. You can increase the capacity of an expandable repository volume by attaching additional standard volumes to it. The composite expandable repository volume capacity then becomes the sum of the capacities of all of the concatenated standard volumes.
 

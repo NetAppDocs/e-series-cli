@@ -77,7 +77,7 @@ The name that you want to give the new volume. Enclose the new volume name in do
 This parameter is required.
 ====
 
-NOTE: The character limit for the volume name is 60 characters. The volume name can contain any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#).
+NOTE: The character limit for the standard and thin volumes names is 60 characters. The volume name can contain any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#).
 
 a|
 `capacity`
@@ -147,7 +147,7 @@ If you set the `raidLevel` parameter to RAID level 1:
 * The first half of the group, in listed order (and in stripe order), are primary drives
 * The second half of the group, in listed order (and in stripe order), are the corresponding mirror drives
 
-You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 60 characters.
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Standard and thin volumes names can have a maximum of 60 characters.
 
 The `owner` parameter defines which controller owns the volume. The preferred controller ownership of a volume is the controller that currently owns the volume group.
 

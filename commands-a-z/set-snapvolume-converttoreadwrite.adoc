@@ -79,7 +79,7 @@ The percentage of repository volume capacity at which you receive a warning that
 
 == Notes
 
-You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. User labels can have a maximum of 60 characters.
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. User labels can have a maximum of 30 characters.
 
 The repository volume name is automatically created by the storage management software and the firmware when you create a new snapshot group. You cannot rename the repository volume because renaming the repository volume will break the linkage with the snapshot images.
 
