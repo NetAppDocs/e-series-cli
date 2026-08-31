@@ -17,7 +17,7 @@ This command applies to any individual storage array, with some restrictions. If
 
 [NOTE]
 ====
-This command is not supported on E4000, E2800, E5700, EF600, EF300, EF50, and EF80 platforms.
+This command is not supported on E4000, E2800, E5700, EF600, and EF300 platforms.
 ====
 
 == Roles
@@ -104,7 +104,7 @@ The role reversal is forced if the communications link between the storage array
 
 == Notes
 
-You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Names can have a maximum of 60 characters.
+You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Names can have a maximum of 30 characters.
 
 When you choose the primary volume and the secondary volume, the secondary volume must be of equal or greater size than the primary volume. The RAID level of the secondary volume does not have to be the same as the primary volume.
 

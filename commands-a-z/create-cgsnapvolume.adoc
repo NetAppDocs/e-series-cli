@@ -127,7 +127,7 @@ The setting to determine whether you can write to the snapshot volume or only re
 
 == Notes
 
-You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 60 characters.
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
 
 The name of a snapshot image has two parts separated by a colon (:):
 

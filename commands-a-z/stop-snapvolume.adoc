@@ -40,7 +40,7 @@ The name of the snapshot volume that you want to stop. Enclose the snapshot volu
 
 == Notes
 
-You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 60 characters.
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Names can have a maximum of 30 characters.
 
 == Minimum firmware level
 
