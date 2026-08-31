@@ -104,6 +104,6 @@ You must use the `copyType` parameter with the `repositoryGroupPreference` param
 
 == Notes
 
-You can use any combination of alphanumeric characters, happens, and underscores for the names. Standard and thin volumes names can have a maximum of 60 characters.
+You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Standard and thin volume names can have a maximum of 60 characters.
 
 Copy priority defines the amount of system resources that are used to copy the data between the source volume and the target volume of a volume copy pair. If you select the highest priority level, the volume copy uses the most system resources to perform volume copy, which decreases performance for host data transfers.
