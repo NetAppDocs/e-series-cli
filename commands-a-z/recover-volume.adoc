@@ -91,7 +91,7 @@ userLabel="engdata"
 volumeWWN=60080E500017B4320000000049887D77
 ----
 
-NOTE: The character limit for standard and thin volumes names is 60 characters. The volume name can contain any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#).
+NOTE: The character limit for standard and thin volume names is 60 characters. The volume name can contain any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#).
 
 
 a|
