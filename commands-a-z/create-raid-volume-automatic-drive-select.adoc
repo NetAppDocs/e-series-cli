@@ -82,7 +82,7 @@ The name that you want to give to the new volume. Enclose the new volume name in
 This parameter is required.
 ====
 
-NOTE: The character limit for standard and thin volumes names is 60 characters. The volume name can contain any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#).
+NOTE: The character limit for standard and thin volume names is 60 characters. The volume name can contain any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#).
 
 
 a|
