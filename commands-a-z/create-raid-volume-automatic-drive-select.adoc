@@ -170,7 +170,7 @@ This parameter sets the block size of the volume being created. A value of 0 or 
 
 == Notes
 
-You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Standard and thin volumes names can have a maximum of 60 characters.
+You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Standard and thin volume names can have a maximum of 60 characters; all other component names can have a maximum of 30 characters.
 
 The `driveCount` parameter lets you choose the number of drives that you want to use in the volume group. You do not need to specify the drives by tray ID and slot ID. The controllers choose the specific drives to use for the volume group.
 
