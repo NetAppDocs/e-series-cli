@@ -31,7 +31,7 @@ The following table lists changes to the CLI and Script Commands for release 12.
 a|
 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-storagearray-host-io-protocol.html[Set Storage Array Host I/O Protocol]
 a|
-Added `nvmetcp` option to the command.
+Added `nvmeTcp` option to the command.
 a|
 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/create-raid-volume-automatic-drive-select.html[Create RAID volume (automatic drive select)]
 a|
