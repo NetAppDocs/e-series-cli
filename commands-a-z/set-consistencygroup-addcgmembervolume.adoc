@@ -88,7 +88,7 @@ The size of a new repository volume in either a volume group or a disk pool. Siz
 
 == Notes
 
-You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Standard and thin volumes names can have a maximum of 60 characters.
+You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the names. Standard and thin volume names can have a maximum of 60 characters; all other component names can have a maximum of 30 characters.
 
 A consistency group is a collection of base volumes that are the source volumes for snapshots. You collect the base volumes in a consistency group so that you can perform the same snapshot operations on each of the base volumes. In the context of this command, the term _member_ means a base volume for snapshot operations. You can manipulate snapshot images associated with members of a consistency group through batch-style operations, while maintaining consistency across the snapshot images.
 
