@@ -23,7 +23,7 @@ If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to th
 
 == SANtricity 12.10
 
-The following table list changes to the CLI and Script Commands for release 12.10.
+The following table lists changes to the CLI and Script Commands for release 12.10.
 
 [cols="2*",options="header"]
 |===
