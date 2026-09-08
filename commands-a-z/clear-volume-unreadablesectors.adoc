@@ -53,4 +53,4 @@ The names of several volumes for which you are clearing unreadable sector inform
 
 == Notes
 
-You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Standard and thin volumes names can have a maximum of 60 characters.
+You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Standard and thin volume names can have a maximum of 60 characters.
