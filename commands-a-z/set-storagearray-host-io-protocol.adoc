@@ -34,7 +34,7 @@ set storageArray hostIoProtocol={"FC" | "ISCSI" | "ISER" | "nvmeIb" | "nvmeFc" |
 a|
 `set storageArray hostIoProtocol`
 a|
-Allows you to specify which host I/O protocol to use for your storage array. Valid choices are: FC, ISCSI, ISER, nvmeIb, nvmeFc, nvmeRoce, nvmetcp, SAS, or SRP.
+Allows you to specify which host I/O protocol to use for your storage array. Valid choices are: FC, ISCSI, ISER, nvmeIb, nvmeFc, nvmeRoce, nvmeTcp, SAS, or SRP.
 |===
 
 
