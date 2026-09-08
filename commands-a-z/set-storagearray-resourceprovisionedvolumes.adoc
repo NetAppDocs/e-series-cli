@@ -50,7 +50,7 @@ Changing this value only applies to volume groups and pools that are created in 
 
 [NOTE]
 ====
-You cannot set up mirroring on a volume while DULBE is enabled. To use mirroring, set the the `resourceProvisionedVolumes` to `disable`.
+You cannot set up mirroring on a volume while DULBE is enabled. To use mirroring, set `resourceProvisionedVolumes` to `disable`.
 ====
 
 |===
