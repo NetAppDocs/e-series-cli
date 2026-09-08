@@ -24,19 +24,19 @@ To execute this command on an E4000, E2800, E5700, EF600, EF300, EF50, or EF80 s
 For each volume in the storage array, this command returns the following information:
 
 * Storage Arrays
-* Total IOs/s
+* Total IOs
 * Read %
 * Primary Read Cache Hit %
 * Primary Write Cache Hit %
 * SSD Cache Hit %
-* Current MBs/s
-* Maximum MBs/s
-* Current IOs/s
-* Maximum IOs/s
-* Minimum IOs/s
-* Average IOs/s
-* Minimum MBs/s
-* Average MBs/s
+* Current MBs/sec
+* Maximum MBs/sec
+* Current IOs/sec
+* Maximum IOs/sec
+* Minimum IOs/sec
+* Average IOs/sec
+* Minimum MBs/sec
+* Average MBs/sec
 * Current IO Latency
 * Maximum IO Latency
 * Minimum IO Latency

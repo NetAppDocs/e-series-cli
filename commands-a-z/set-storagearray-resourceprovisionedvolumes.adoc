@@ -48,6 +48,11 @@ The setting to specify if resource provisioning capabilities are enabled. To dis
 Changing this value only applies to volume groups and pools that are created in the future. It does not change the value of any existing volume groups and pools.
 ====
 
+[NOTE]
+====
+You cannot set up mirroring on a volume while DULBE is enabled. To use mirroring, set `resourceProvisionedVolumes` to `disable`.
+====
+
 |===
 
 == Minimum firmware level

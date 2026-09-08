@@ -73,6 +73,8 @@ a|
 `userLabel`
 a|
 The name that you want to give the new volume. Enclose the volume name in double quotation marks (" ").
+
+NOTE: The character limit for standard and thin volume names is 60 characters. The volume name can contain any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#).
 a|
 `capacity`
 a|
@@ -161,7 +163,7 @@ This parameter sets the block size of the volume being created. A value of `0` o
 
 == Notes
 
-Each volume name must be unique. You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. User labels can have a maximum of 30 characters.
+Each volume name must be unique. You can use any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#) for the user label. Standard and thin volume names can have a maximum of 60 characters.
 
 For thin volumes, the `capacity` parameter specifies the virtual capacity of the volume, and the `repositoryCapacity` parameter specifies the capacity of the volume created as the repository volume. Use the `existingRepositoryLabel` parameter to specify an existing unused repository volume instead of creating a new volume.
 

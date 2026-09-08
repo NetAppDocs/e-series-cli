@@ -53,4 +53,4 @@ The names of several volumes for which you are clearing persistent reservations.
 
 == Notes
 
-You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Names can have a maximum of 30 characters.
+You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Standard and thin volume names can have a maximum of 60 characters.
