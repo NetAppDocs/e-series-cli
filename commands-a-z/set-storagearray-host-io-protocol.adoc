@@ -23,7 +23,7 @@ To execute this command on an EF50 or EF80 storage array, you must have the Supp
 [subs=+macros]
 [source,cli]
 ----
-set storageArray hostIoProtocol={"FC" | "ISCSI" | "ISER" | "nvmeIb" | "nvmeFc" | "nvmeRoce" | "SAS" | "SRP"}
+set storageArray hostIoProtocol={"FC" | "ISCSI" | "ISER" | "nvmeIb" | "nvmeFc" | "nvmeRoce" | "nvmeTcp" | "SAS" | "SRP"}
 ----
 
 == Parameter
@@ -34,7 +34,7 @@ set storageArray hostIoProtocol={"FC" | "ISCSI" | "ISER" | "nvmeIb" | "nvmeFc" |
 a|
 `set storageArray hostIoProtocol`
 a|
-Allows you to specify which host I/O protocol to use for your storage array. Valid choices are: FC, ISCSI, ISER, nvmeIb, nvmeFc, nvmeRoce, SAS, or SRP.
+Allows you to specify which host I/O protocol to use for your storage array. Valid choices are: FC, ISCSI, ISER, nvmeIb, nvmeFc, nvmeRoce, nvmeTcp, SAS, or SRP.
 |===
 
 

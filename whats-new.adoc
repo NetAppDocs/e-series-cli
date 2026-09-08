@@ -21,6 +21,50 @@ When issuing SMcli commands at the command prompt, you must enter an additional 
 If you are currently using SANtricity 11.52 or earlier, you cannot upgrade to the latest version of SANtricity through the legacy CLI. Upgrades from SANtricity 11.52 to later versions can only be performed through the SMcli.
 ====
 
+== SANtricity 12.10
+
+The following table lists changes to the CLI and Script Commands for release 12.10.
+
+[cols="2*",options="header"]
+|===
+| Command| Description of Change
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-storagearray-host-io-protocol.html[Set Storage Array Host I/O Protocol]
+a|
+Added `nvmeTcp` option to the command.
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/create-raid-volume-automatic-drive-select.html[Create RAID volume (automatic drive select)]
+a|
+Increased character limit for the `userLabel` parameter from 30 to 60 characters. 
+
+NOTE: Downgrade from SANtricity 12.10 to earlier versions is not supported if the `userLabel` parameter exceeds 30 characters.
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/create-raid-volume-free-extent-based-select.html[Create RAID volume (free extent based select)]
+a|
+Increased character limit for the `userLabel` parameter from 30 to 60 characters.
+
+NOTE: Downgrade from SANtricity 12.10 to earlier versions is not supported if the `userLabel` parameter exceeds 30 characters.
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/create-raid-volume-manual-drive-select.html[Create RAID volume (manual drive select)]
+a|
+Increased character limit for the `userLabel` parameter from 30 to 60 characters.
+
+NOTE: Downgrade from SANtricity 12.10 to earlier versions is not supported if the `userLabel` parameter exceeds 30 characters.
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/create-volume-diskpool.html[Create volume in disk pool]
+a|
+Increased character limit for the `userLabel` parameter from 30 to 60 characters.
+
+NOTE: Downgrade from SANtricity 12.10 to earlier versions is not supported if the `userLabel` parameter exceeds 30 characters.
+a|
+https://docs.netapp.com/us-en/e-series-cli/commands-a-z/recover-volume.html[Recover RAID volume]
+a|
+Increased character limit for the `userLabel` parameter from 30 to 60 characters.
+
+NOTE: Downgrade from SANtricity 12.10 to earlier versions is not supported if the `userLabel` parameter exceeds 30 characters.
+
+|===
+
 == SANtricity 12.00
 
 The following table list changes to the CLI and Script Commands for release 12.00.
@@ -44,7 +88,6 @@ a|
 https://docs.netapp.com/us-en/e-series-cli/commands-a-z/set-storagearray-managementinterface.html[Set storage array management interface]
 a|
 Removed command. 
-a|
 
 |===
 

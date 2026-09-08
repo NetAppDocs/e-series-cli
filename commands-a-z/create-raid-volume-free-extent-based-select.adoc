@@ -55,6 +55,8 @@ The name that you want to give the new volume. Enclose the new volume name in do
 This parameter is required.
 ====
 
+NOTE: The character limit for standard and thin volume names is 60 characters. The volume name can contain any combination of alphanumeric characters, underscore (_), hyphen (-), and pound (#).
+
 a|
 `freeCapacityArea`
 a|
@@ -121,7 +123,7 @@ This parameter sets the block size of the volume being created. A value of 0 or 
 
 == Notes
 
-You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Names can have a maximum of 30 characters.
+You can use any combination of alphanumeric characters, hyphens, and underscores for the names. Standard and thin volume names can have a maximum of 60 characters; all other component names can have a maximum of 30 characters.
 
 The `owner` parameter defines which controller owns the volume. The preferred controller ownership of a volume is the controller that currently owns the volume group.
 

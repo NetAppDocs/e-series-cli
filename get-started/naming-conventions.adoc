@@ -11,7 +11,7 @@ summary: "Specific rules must be adhered to for names used in CLI commands."
 [.lead]
 Specific rules must be adhered to for names used in CLI commands. 
 
-* Names can have a maximum of 30 characters.
+* Standard and thin volume names can have a maximum of 60 characters. All other component names can have a maximum of 30 characters.
 * You can use any combination of alphanumeric characters, hyphens, and underscores for the names of the following components:
  ** Storage arrays
  ** Host groups
