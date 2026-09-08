@@ -29,14 +29,14 @@ For each volume in the storage array, this command returns the following informa
 * Primary Read Cache Hit %
 * Primary Write Cache Hit %
 * SSD Cache Hit %
-* Current MBs
-* Maximum MBs
-* Current IOs
-* Maximum IOs
-* Minimum IOs
-* Average IOs
-* Minimum MBs
-* Average MBs
+* Current MBs/sec
+* Maximum MBs/sec
+* Current IOs/sec
+* Maximum IOs/sec
+* Minimum IOs/sec
+* Average IOs/sec
+* Minimum MBs/sec
+* Average MBs/sec
 * Current IO Latency
 * Maximum IO Latency
 * Minimum IO Latency
